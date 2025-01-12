@@ -1,0 +1,28 @@
+.list-group-standings-item {
+	padding: 1rem;
+	transition: all 0.3s ease;
+}
+
+.list-group-standings-item a {
+	color: #000;
+	transition: all 0.3s ease;
+}
+
+.list-group-standings-item .team-name {
+	color: $gray-600;
+  font-size: small;
+  margin-left: .4rem;
+	transition: all 0.3s ease;
+}
+
+.list-group-standings-item:hover {
+	background-color: $gray-900;
+}
+
+.list-group-standings-item:hover a {
+	color: #fff;
+}
+
+.list-group-standings-item:hover .team-name {
+	color: $gray-500;
+}
