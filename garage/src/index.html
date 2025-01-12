@@ -356,273 +356,684 @@
   </section>
 
   <!-- standings -->
-  <section class="container-fluid" style="background-color: hsl(0.00,0.00%,96.08%);">
-    <div class="container">
+		<section class="container my-5">
       <div class="row">
-        <h2 class="display-4 text-center fw-bold mt-5">2022 Championship Standings</h2>
+				<h2 class="display-4 text-center fw-bold mt-5">
+					2024 Championship Standings
+				</h2>
         <!-- Drivers, Constructors Nav -->
         <div class="container container-drivernav" id="driver-nav">
+					<!-- standings nav -->
           <div id="container-driver-nav" class="container mb-3">
-            <ul class="nav nav-pills justify-content-center pt-5" id="pills-tab" role="tablist">
+						<ul
+							class="nav nav-pills justify-content-center pt-5"
+							id="pills-tab"
+							role="tablist"
+						>
               <li class="nav-item" role="presentation">
-                <button class="nav-link active" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home"
-                  type="button" role="tab" aria-controls="pills-home" aria-selected="true">Drivers</button>
+								<button
+									class="nav-link active"
+									id="pills-home-tab"
+									data-bs-toggle="pill"
+									data-bs-target="#pills-home"
+									type="button"
+									role="tab"
+									aria-controls="pills-home"
+									aria-selected="true"
+								>
+									Drivers
+								</button>
               </li>
               <li class="nav-link" role="presentation">
                 <span>|</span>
               </li>
               <li class="nav-item" role="presentation">
-                <button class="nav-link" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-profile"
-                  type="button" role="tab" aria-controls="pills-profile" aria-selected="false">Constructors</button>
+								<button
+									class="nav-link"
+									id="pills-profile-tab"
+									data-bs-toggle="pill"
+									data-bs-target="#pills-profile"
+									type="button"
+									role="tab"
+									aria-controls="pills-profile"
+									aria-selected="false"
+								>
+									Constructors
+								</button>
               </li>
               <li class="nav-link" role="presentation">
                 <span>|</span>
               </li>
               <li class="nav-item" role="presentation">
-                <button class="nav-link" id="pills-race-tab" data-bs-toggle="pill" data-bs-target="#pills-last-race"
-                  type="button" role="tab" aria-controls="pills-last-race" aria-selected="false">Last Race</button>
-                </span>
+								<button
+									class="nav-link"
+									id="pills-race-tab"
+									data-bs-toggle="pill"
+									data-bs-target="#pills-last-race"
+									type="button"
+									role="tab"
+									aria-controls="pills-last-race"
+									aria-selected="false"
+								>
+									Last Race
+								</button>
+								<span>|</span>
               </li>
             </ul>
           </div>
           <!-- Pill Nav Content -->
           <div class="tab-content" id="pills-tabContent">
             <!-- Pill Nav Content 1 -->
-            <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab"
-              tabindex="0">
+						<div
+							class="tab-pane fade show active"
+							id="pills-home"
+							role="tabpanel"
+							aria-labelledby="pills-home-tab"
+							tabindex="0"
+						>
               <div class="container">
                 <!-- Driver Standings Cards -->
-                <div class="row justify-content-md-center mb-5">
+								<div class="row justify-content-md-center gap-3 mb-5">
                   <h3 class="text-center p-3 mb-4">Driver Standings</h3>
-                  <div class="card card-driver" style="width: 18rem;">
+									<div
+										class="d-none d-md-block col-md mt-md-4 card card-driver"
+									>
                     <span class="card-standings-position">2</span>
-                    <img src="assets/img/teams/drivers/ferrari/leclerc-portrait.png" class="card-img-top" alt="...">
+										<img
+											src="assets/img/teams/drivers/ferrari/leclerc-portrait.png"
+											class="card-img-top"
+											alt="..."
+										/>
                     <div class="card-body">
-                      <h5 class="card-title">Charles <span class="fw-bold">Leclerc</span></h5>
+											<h5 class="card-title">
+												Charles <span class="fw-bold">Leclerc</span>
+											</h5>
                     </div>
                   </div>
-                  <div class="card card-driver first-place" style="width: 18rem;">
+									<div class="card card-driver col-md first-place">
                     <span class="card-standings-position">1</span>
-                    <img src="assets/img/teams/drivers/redbull/verstappen-portrait.png" class="card-img-top" alt="...">
+										<img
+											src="assets/img/teams/drivers/redbull/verstappen-portrait.png"
+											class="card-img-top"
+											alt="..."
+										/>
                     <div class="card-body">
-                      <h5 class="card-title">Max <span class="fw-bold">Verstappen</span></h5>
+											<h5 class="card-title">
+												Max <span class="fw-bold">Verstappen</span>
+											</h5>
                     </div>
                   </div>
-                  <div class="card card-driver" style="width: 18rem;">
+									<div
+										class="d-none d-md-block col-md mt-md-4 card card-driver"
+									>
                     <span class="card-standings-position">3</span>
-                    <img src="assets/img/teams/drivers/redbull/checo-portrait.png" class="card-img-top" alt="...">
+										<img
+											src="assets/img/teams/drivers/redbull/checo-portrait.png"
+											class="card-img-top"
+											alt="..."
+										/>
                     <div class="card-body">
-                      <h5 class="card-title">Sergio <span class="fw-bold">Perez</span></h5>
+											<h5 class="card-title">
+												Sergio <span class="fw-bold">Perez</span>
+											</h5>
                     </div>
                   </div>
                 </div>
                 <!-- End Driver Standings Cards -->
                 <!-- Driver Standings list -->
-                <div class="container">
+								<div class="row">
                   <ul class="list-group list-group-flush">
-                    <li class="list-group-item list-group-standings-item rounded">
-                      <a href="drivers/verstappen.html" class="text-decoration-none text-black">
+										<li class="list-group-item list-group-standings-item">
+											<a
+												href="drivers/verstappen.html"
+												class="text-decoration-none stretched-link d-flex"
+											>
                         <span class="standings-position">1</span>
-                        <div class="list-group-standings-divider-redbull ms-1 me-1"></div>
-                        <span class="driver-name">Max <span class="fw-bold text-uppercase">Verstappen</span> <span class="team-name">Red Bull Racing RBPT</span></span>
-                        <div class="d-flex align-items-center float-end">
-                          <span class="badge badge-points rounded-pill fw-medium">454 PTS</span>
+												<div
+													class="list-group-standings-divider ms-2 me-2"
+												>
+													<svg
+														xmlns="http://www.w3.org/2000/svg"
+														width="16"
+														height="16"
+														fill="#0000ff"
+														class="bi bi-square-fill"
+														viewBox="0 0 16 16"
+													>
+														<path
+															d="M0 2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2z"
+														/>
+													</svg>
+												</div>
+												<span class="driver-name"
+													>Max
+													<span class="fw-bold text-uppercase">Verstappen</span>
+													<span class="team-name "
+														>Red Bull Racing RBPT</span
+													></span
+												>
+												<div class="d-flex align-items-center ms-auto">
+													<span class="badge text-bg-danger rounded-pill"
+														>454 PTS</span
+													>
                           <i class="bi bi-chevron-right ps-2 text-danger"></i>
                         </div>
                       </a>
                     </li>
-                    <li class="list-group-item list-group-standings-item rounded">
-                     <a href="#">
+                    <li class="list-group-item list-group-standings-item">
+											<a
+												href="drivers/verstappen.html"
+												class="text-decoration-none stretched-link d-flex"
+											>
                       <span class="standings-position">2</span>
-                      <div class="list-group-standings-divider-ferrari ms-1 me-1"></div>
-                      <span class="driver-name">Charles <span class="fw-bold text-uppercase">Leclerc</span> <span
-                          class="team-name">Ferrari</span></span>
-                      <div class="d-flex align-items-center float-end">
-                        <span class="badge badge-points rounded-pill fw-medium">308 PTS</span>
+												<div
+													class="list-group-standings-divider ms-2 me-2"
+												>
+													<svg
+														xmlns="http://www.w3.org/2000/svg"
+														width="16"
+														height="16"
+														fill="#ffa500"
+														class="bi bi-square-fill"
+														viewBox="0 0 16 16"
+													>
+														<path
+															d="M0 2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2z"
+														/>
+													</svg>
+												</div>
+												<span class="driver-name"
+													>Lando
+													<span class="fw-bold text-uppercase">Norris</span>
+													<span class="team-name "
+														>McLaren</span
+													></span
+												>
+												<div class="d-flex align-items-center ms-auto">
+													<span class="badge text-bg-danger rounded-pill"
+														>374 PTS</span
+													>
                         <i class="bi bi-chevron-right ps-2 text-danger"></i>
                       </div>
                      </a>
                     </li>
-                    <li class="list-group-item list-group-standings-item rounded">
+                    <li class="list-group-item list-group-standings-item">
+											<a
+												href="drivers/verstappen.html"
+												class="text-decoration-none stretched-link d-flex"
+											>
                       <span class="standings-position">3</span>
-                      <div class="list-group-standings-divider-redbull ms-1 me-1"></div>
-                      <span class="driver-name">Sergio <span class="fw-bold text-uppercase">Perez</span> <span
-                          class="team-name">Red Bull Racing RBPT</span></span>
-                      <div class="d-flex align-items-center float-end">
-                        <span class="badge badge-points rounded-pill fw-medium">305 PTS</span>
+												<div
+													class="list-group-standings-divider ms-2 me-2"
+												>
+													<svg
+														xmlns="http://www.w3.org/2000/svg"
+														width="16"
+														height="16"
+														fill="#f00"
+														class="bi bi-square-fill"
+														viewBox="0 0 16 16"
+													>
+														<path
+															d="M0 2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2z"
+														/>
+													</svg>
+												</div>
+												<span class="driver-name"
+													>Charles
+													<span class="fw-bold text-uppercase">Leclerc</span>
+													<span class="team-name "
+														>Ferrari</span
+													></span
+												>
+												<div class="d-flex align-items-center ms-auto">
+													<span class="badge text-bg-danger rounded-pill"
+														>356 PTS</span
+													>
                         <i class="bi bi-chevron-right ps-2 text-danger"></i>
                       </div>
+											</a>
                     </li>
-                    <li class="list-group-item list-group-standings-item rounded">
+                    <li class="list-group-item list-group-standings-item">
+											<a
+												href="drivers/verstappen.html"
+												class="text-decoration-none stretched-link d-flex"
+											>
                       <span class="standings-position">4</span>
-                      <div class="list-group-standings-divider-mercedes ms-1 me-1"></div>
-                      <span class="driver-name">George <span class="fw-bold text-uppercase">Russel</span> <span
-                          class="team-name">Mercedes</span></span>
-                      <div class="d-flex align-items-center float-end">
-                        <span class="badge badge-points rounded-pill fw-medium">275 PTS</span>
+												<div
+													class="list-group-standings-divider ms-2 me-2"
+												>
+													<svg
+														xmlns="http://www.w3.org/2000/svg"
+														width="16"
+														height="16"
+														fill="#ffa500"
+														class="bi bi-square-fill"
+														viewBox="0 0 16 16"
+													>
+														<path
+															d="M0 2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2z"
+														/>
+													</svg>
+												</div>
+												<span class="driver-name"
+													>Oscar
+													<span class="fw-bold text-uppercase">Piastri</span>
+													<span class="team-name "
+														>McLaren</span
+													></span
+												>
+												<div class="d-flex align-items-center ms-auto">
+													<span class="badge text-bg-danger rounded-pill"
+													>292 PTS</span
+													>
                         <i class="bi bi-chevron-right ps-2 text-danger"></i>
                       </div>
+											</a>
                     </li>
-                    <li class="list-group-item list-group-standings-item rounded">
+                    <li class="list-group-item list-group-standings-item">
+											<a
+												href="drivers/verstappen.html"
+												class="text-decoration-none stretched-link d-flex"
+											>
                       <span class="standings-position">5</span>
-                      <div class="list-group-standings-divider-ferrari ms-1 me-1"></div>
-                      <span class="driver-name">Carlos <span class="fw-bold text-uppercase">Sainz</span> <span
-                          class="team-name">Ferrari</span></span>
-                      <div class="d-flex align-items-center float-end">
-                        <span class="badge badge-points rounded-pill fw-medium">246 PTS</span>
+												<div
+													class="list-group-standings-divider ms-2 me-2"
+												>
+													<svg
+														xmlns="http://www.w3.org/2000/svg"
+														width="16"
+														height="16"
+														fill="#f00"
+														class="bi bi-square-fill"
+														viewBox="0 0 16 16"
+													>
+														<path
+															d="M0 2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2z"
+														/>
+													</svg>
+												</div>
+												<span class="driver-name"
+													>Carlos
+													<span class="fw-bold text-uppercase">Sainz</span>
+													<span class="team-name "
+														>Ferrari</span
+													></span
+												>
+												<div class="d-flex align-items-center ms-auto">
+													<span class="badge text-bg-danger rounded-pill"
+														>290 PTS</span
+													>
                         <i class="bi bi-chevron-right ps-2 text-danger"></i>
                       </div>
+											</a>
                     </li>
-                    <li class="list-group-item list-group-standings-item rounded">
+                    <li class="list-group-item list-group-standings-item">
+											<a
+												href="drivers/verstappen.html"
+												class="text-decoration-none stretched-link d-flex"
+											>
                       <span class="standings-position">6</span>
-                      <div class="list-group-standings-divider-mercedes ms-1 me-1"></div>
-                      <span class="driver-name">Lewis <span class="fw-bold text-uppercase">Hamilton</span> <span
-                          class="team-name">Mercedes</span></span>
-                      <div class="d-flex align-items-center float-end">
-                        <span class="badge badge-points rounded-pill fw-medium">240 PTS</span>
+												<div
+													class="list-group-standings-divider ms-2 me-2"
+												>
+													<svg
+														xmlns="http://www.w3.org/2000/svg"
+														width="16"
+														height="16"
+														fill="#00ffff"
+														class="bi bi-square-fill"
+														viewBox="0 0 16 16"
+													>
+														<path
+															d="M0 2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2z"
+														/>
+													</svg>
+												</div>
+												<span class="driver-name"
+													>George
+													<span class="fw-bold text-uppercase">Russell</span>
+													<span class="team-name "
+														>Mercedes</span
+													></span
+												>
+												<div class="d-flex align-items-center ms-auto">
+													<span class="badge text-bg-danger rounded-pill"
+														>245 PTS</span
+													>
                         <i class="bi bi-chevron-right ps-2 text-danger"></i>
                       </div>
+											</a>
                     </li>
-                    <li class="list-group-item list-group-standings-item rounded">
+                    <li class="list-group-item list-group-standings-item">
+											<a
+												href="drivers/verstappen.html"
+												class="text-decoration-none stretched-link d-flex"
+											>
                       <span class="standings-position">7</span>
-                      <div class="list-group-standings-divider-mclaren ms-1 me-1"></div>
-                      <span class="driver-name">Lando <span class="fw-bold text-uppercase">Norris</span> <span
-                          class="team-name">McLaren Mercedes</span></span>
-                      <div class="d-flex align-items-center float-end">
-                        <span class="badge badge-points rounded-pill fw-medium">122 PTS</span>
+												<div
+													class="list-group-standings-divider ms-2 me-2"
+												>
+													<svg
+														xmlns="http://www.w3.org/2000/svg"
+														width="16"
+														height="16"
+														fill="#00ffff"
+														class="bi bi-square-fill"
+														viewBox="0 0 16 16"
+													>
+														<path
+															d="M0 2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2z"
+														/>
+													</svg>
+												</div>
+												<span class="driver-name"
+													>Lewis
+													<span class="fw-bold text-uppercase">Hamilton</span>
+													<span class="team-name "
+														>Mercedes</span
+													></span
+												>
+												<div class="d-flex align-items-center ms-auto">
+													<span class="badge text-bg-danger rounded-pill"
+														>223 PTS</span
+													>
                         <i class="bi bi-chevron-right ps-2 text-danger"></i>
                       </div>
+											</a>
                     </li>
-                    <li class="list-group-item list-group-standings-item rounded">
+                    <li class="list-group-item list-group-standings-item">
+											<a
+												href="drivers/verstappen.html"
+												class="text-decoration-none stretched-link d-flex"
+											>
                       <span class="standings-position">8</span>
-                      <div class="list-group-standings-divider-alpine ms-1 me-1"></div>
-                      <span class="driver-name">Esteban <span class="fw-bold text-uppercase">Ocon</span> <span
-                          class="team-name">Alpine Renault</span></span>
-                      <div class="d-flex align-items-center float-end">
-                        <span class="badge badge-points rounded-pill fw-medium">92 PTS</span>
+												<div
+													class="list-group-standings-divider ms-2 me-2"
+												>
+													<svg
+														xmlns="http://www.w3.org/2000/svg"
+														width="16"
+														height="16"
+														fill="#0000ff"
+														class="bi bi-square-fill"
+														viewBox="0 0 16 16"
+													>
+														<path
+															d="M0 2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2z"
+														/>
+													</svg>
+												</div>
+												<span class="driver-name"
+													>Sergio
+													<span class="fw-bold text-uppercase">Perez</span>
+													<span class="team-name "
+														>Red Bull Racing RBPT</span
+													></span
+												>
+												<div class="d-flex align-items-center ms-auto">
+													<span class="badge text-bg-danger rounded-pill"
+														>152 PTS</span
+													>
                         <i class="bi bi-chevron-right ps-2 text-danger"></i>
                       </div>
+											</a>
                     </li>
-                    <li class="list-group-item list-group-standings-item rounded">
+                    <li class="list-group-item list-group-standings-item">
+											<a
+												href="drivers/verstappen.html"
+												class="text-decoration-none stretched-link d-flex"
+											>
                       <span class="standings-position">9</span>
-                      <div class="list-group-standings-divider-alpine ms-1 me-1"></div>
-                      <span class="driver-name">Fernando <span class="fw-bold text-uppercase">Alonso</span> <span
-                          class="team-name">Alpine Renault</span></span>
-                      <div class="d-flex align-items-center float-end">
-                        <span class="badge badge-points rounded-pill fw-medium">81 PTS</span>
+												<div
+													class="list-group-standings-divider ms-2 me-2"
+												>
+													<svg
+														xmlns="http://www.w3.org/2000/svg"
+														width="16"
+														height="16"
+														fill="#008000"
+														class="bi bi-square-fill"
+														viewBox="0 0 16 16"
+													>
+														<path
+															d="M0 2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2z"
+														/>
+													</svg>
+												</div>
+												<span class="driver-name"
+													>Alonso
+													<span class="fw-bold text-uppercase">Alonso</span>
+													<span class="team-name "
+														>Aston Martin</span
+													></span
+												>
+												<div class="d-flex align-items-center ms-auto">
+													<span class="badge text-bg-danger rounded-pill"
+														>70 PTS</span
+													>
                         <i class="bi bi-chevron-right ps-2 text-danger"></i>
                       </div>
+											</a>
+										</li>
+                    <li class="list-group-item list-group-standings-item">
+											<a
+												href="drivers/verstappen.html"
+												class="text-decoration-none stretched-link d-flex"
+											>
+												<span class="standings-position">10</span>
+												<div
+													class="list-group-standings-divider ms-2 me-2"
+												>
+													<svg
+														xmlns="http://www.w3.org/2000/svg"
+														width="16"
+														height="16"
+														fill="#ff47aa"
+														class="bi bi-square-fill"
+														viewBox="0 0 16 16"
+													>
+														<path
+															d="M0 2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2z"
+														/>
+													</svg>
+												</div>
+												<span class="driver-name"
+													>Pierre
+													<span class="fw-bold text-uppercase">Gasly</span>
+													<span class="team-name "
+														>Alpine</span
+													></span
+												>
+												<div class="d-flex align-items-center ms-auto">
+													<span class="badge text-bg-danger rounded-pill"
+														>42 PTS</span
+													>
+													<i class="bi bi-chevron-right ps-2 text-danger"></i>
+												</div>
+											</a>
                     </li>
                   </ul>
                 </div>
                 <span class="d-flex justify-content-center align-items-center">
-                  <a class="btn btn-danger m-5" href="racecalendar.html" role="button">View Full Results <i
-                      class="bi bi-chevron-right"></i></a>
+									<a
+										class="btn btn-danger m-5"
+										href="racecalendar.html"
+										role="button"
+										>View Full Results <i class="bi bi-chevron-right"></i
+									></a>
                 </span>
               </div>
             </div>
             <!-- Pill Nav Content Constructors -->
-            <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab"
-              tabindex="1">
+						<div
+							class="tab-pane fade"
+							id="pills-profile"
+							role="tabpanel"
+							aria-labelledby="pills-profile-tab"
+							tabindex="1"
+						>
               <div class="container mb-5">
                 <ul class="list-group list-group-flush">
                   <li class="list-group-item list-group-standings-item rounded">
                     <span class="standings-position">1</span>
-                    <div class="list-group-standings-divider-redbull ms-1 me-1"></div>
-                    <span class="driver-name">Red Bull Racing RBPT <span
-                        class="team-name">Verstappen / Perez</span></span>
+										<div
+											class="list-group-standings-divider-redbull ms-1 me-1"
+										></div>
+										<span class="driver-name"
+											>Red Bull Racing RBPT
+											<span class="team-name">Verstappen / Perez</span></span
+										>
                     <div class="d-flex align-items-center float-end">
-                      <span class="badge badge-points rounded-pill fw-medium">759 PTS</span>
+											<span class="badge badge-points rounded-pill fw-medium"
+												>759 PTS</span
+											>
                       <i class="bi bi-chevron-right ps-2 text-danger"></i>
                     </div>
                   </li>
                   <li class="list-group-item list-group-standings-item rounded">
                     <span class="standings-position">2</span>
-                    <div class="list-group-standings-divider-ferrari ms-1 me-1"></div>
-                    <span class="driver-name">Ferrari <span
-                        class="team-name">Leclerc / Sainz</span></span>
+										<div
+											class="list-group-standings-divider-ferrari ms-1 me-1"
+										></div>
+										<span class="driver-name"
+											>Ferrari
+											<span class="team-name">Leclerc / Sainz</span></span
+										>
                     <div class="d-flex align-items-center float-end">
-                      <span class="badge badge-points rounded-pill fw-medium">554 PTS</span>
+											<span class="badge badge-points rounded-pill fw-medium"
+												>554 PTS</span
+											>
                       <i class="bi bi-chevron-right ps-2 text-danger"></i>
                     </div>
                   </li>
                   <li class="list-group-item list-group-standings-item rounded">
                     <span class="standings-position">3</span>
-                    <div class="list-group-standings-divider-mercedes ms-1 me-1"></div>
-                    <span class="driver-name">Mercedes <span
-                        class="team-name">Hamilton / Russel</span></span>
+										<div
+											class="list-group-standings-divider-mercedes ms-1 me-1"
+										></div>
+										<span class="driver-name"
+											>Mercedes
+											<span class="team-name">Hamilton / Russel</span></span
+										>
                     <div class="d-flex align-items-center float-end">
-                      <span class="badge badge-points rounded-pill fw-medium">515 PTS</span>
+											<span class="badge badge-points rounded-pill fw-medium"
+												>515 PTS</span
+											>
                       <i class="bi bi-chevron-right ps-2 text-danger"></i>
                     </div>
                   </li>
                   <li class="list-group-item list-group-standings-item rounded">
                     <span class="standings-position">4</span>
-                    <div class="list-group-standings-divider-alpine ms-1 me-1"></div>
-                    <span class="driver-name">Alpine Renault <span
-                        class="team-name">Alonso / Ocon</span></span>
+										<div
+											class="list-group-standings-divider-alpine ms-1 me-1"
+										></div>
+										<span class="driver-name"
+											>Alpine Renault
+											<span class="team-name">Alonso / Ocon</span></span
+										>
                     <div class="d-flex align-items-center float-end">
-                      <span class="badge badge-points rounded-pill fw-medium">173 PTS</span>
+											<span class="badge badge-points rounded-pill fw-medium"
+												>173 PTS</span
+											>
                       <i class="bi bi-chevron-right ps-2 text-danger"></i>
                     </div>
                   </li>
                   <li class="list-group-item list-group-standings-item rounded">
                     <span class="standings-position">5</span>
-                    <div class="list-group-standings-divider-mclaren ms-1 me-1"></div>
-                    <span class="driver-name">McLaren <span
-                        class="team-name">Norris / Ricciardo</span></span>
+										<div
+											class="list-group-standings-divider-mclaren ms-1 me-1"
+										></div>
+										<span class="driver-name"
+											>McLaren
+											<span class="team-name">Norris / Ricciardo</span></span
+										>
                     <div class="d-flex align-items-center float-end">
-                      <span class="badge badge-points rounded-pill fw-medium">159 PTS</span>
+											<span class="badge badge-points rounded-pill fw-medium"
+												>159 PTS</span
+											>
                       <i class="bi bi-chevron-right ps-2 text-danger"></i>
                     </div>
                   </li>
                   <li class="list-group-item list-group-standings-item rounded">
                     <span class="standings-position">6</span>
-                    <div class="list-group-standings-divider-mercedes ms-1 me-1"></div>
-                    <span class="driver-name">Alfa Romeo <span
-                        class="team-name">Bottas / Guanyu</span></span>
+										<div
+											class="list-group-standings-divider-mercedes ms-1 me-1"
+										></div>
+										<span class="driver-name"
+											>Alfa Romeo
+											<span class="team-name">Bottas / Guanyu</span></span
+										>
                     <div class="d-flex align-items-center float-end">
-                      <span class="badge badge-points rounded-pill fw-medium">55 PTS</span>
+											<span class="badge badge-points rounded-pill fw-medium"
+												>55 PTS</span
+											>
                       <i class="bi bi-chevron-right ps-2 text-danger"></i>
                     </div>
                   </li>
                   <li class="list-group-item list-group-standings-item rounded">
                     <span class="standings-position">7</span>
-                    <div class="list-group-standings-divider-astonmartin ms-1 me-1"></div>
-                    <span class="driver-name">Aston Martin <span
-                        class="team-name">Vettel / Stroll</span></span>
+										<div
+											class="list-group-standings-divider-astonmartin ms-1 me-1"
+										></div>
+										<span class="driver-name"
+											>Aston Martin
+											<span class="team-name">Vettel / Stroll</span></span
+										>
                     <div class="d-flex align-items-center float-end">
-                      <span class="badge badge-points rounded-pill fw-medium">55 PTS</span>
+											<span class="badge badge-points rounded-pill fw-medium"
+												>55 PTS</span
+											>
                       <i class="bi bi-chevron-right ps-2 text-danger"></i>
                     </div>
                   </li>
                   <li class="list-group-item list-group-standings-item rounded">
                     <span class="standings-position">8</span>
-                    <div class="list-group-standings-divider-alpine ms-1 me-1"></div>
-                    <span class="driver-name">Haas <span
-                        class="team-name">Magnussen / Schumacher</span></span>
+										<div
+											class="list-group-standings-divider-alpine ms-1 me-1"
+										></div>
+										<span class="driver-name"
+											>Haas
+											<span class="team-name"
+												>Magnussen / Schumacher</span
+											></span
+										>
                     <div class="d-flex align-items-center float-end">
-                      <span class="badge badge-points rounded-pill fw-medium">37 PTS</span>
+											<span class="badge badge-points rounded-pill fw-medium"
+												>37 PTS</span
+											>
                       <i class="bi bi-chevron-right ps-2 text-danger"></i>
                     </div>
                   </li>
                   <li class="list-group-item list-group-standings-item rounded">
                     <span class="standings-position">9</span>
-                    <div class="list-group-standings-divider-alphatauri ms-1 me-1"></div>
-                    <span class="driver-name">AlphaTauri <span
-                        class="team-name">Gasly / Tsunoda</span></span>
+										<div
+											class="list-group-standings-divider-alphatauri ms-1 me-1"
+										></div>
+										<span class="driver-name"
+											>AlphaTauri
+											<span class="team-name">Gasly / Tsunoda</span></span
+										>
                     <div class="d-flex align-items-center float-end">
-                      <span class="badge badge-points rounded-pill fw-medium">35 PTS</span>
+											<span class="badge badge-points rounded-pill fw-medium"
+												>35 PTS</span
+											>
                       <i class="bi bi-chevron-right ps-2 text-danger"></i>
                     </div>
                   </li>
                   <li class="list-group-item list-group-standings-item rounded">
                     <span class="standings-position">10</span>
-                    <div class="list-group-standings-divider-williams ms-1 me-1"></div>
-                    <span class="driver-name">Williams <span
-                        class="team-name">Laitfi / Albon</span></span>
+										<div
+											class="list-group-standings-divider-williams ms-1 me-1"
+										></div>
+										<span class="driver-name"
+											>Williams
+											<span class="team-name">Laitfi / Albon</span></span
+										>
                     <div class="d-flex align-items-center float-end">
-                      <span class="badge badge-points rounded-pill fw-medium">8 PTS</span>
+											<span class="badge badge-points rounded-pill fw-medium"
+												>8 PTS</span
+											>
                       <i class="bi bi-chevron-right ps-2 text-danger"></i>
                     </div>
                   </li>
@@ -630,78 +1041,128 @@
               </div>
             </div>
             <!-- Pill Nav Content Last Race -->
-            <div class="tab-pane fade" id="pills-last-race" role="tabpanel" aria-labelledby="pills-race-tab"
-              tabindex="2">
+						<div
+							class="tab-pane fade"
+							id="pills-last-race"
+							role="tabpanel"
+							aria-labelledby="pills-race-tab"
+							tabindex="2"
+						>
               <div class="container container-last-race rounded">
                 <div class="row p-3">
                   <h2 class="fw-bold">Abu Dhabi 2022</h2>
-                  <h5 class=" small">FORMULA 1 ETIHAD AIRWAYS ABU DHABI GRAND PRIX 2022</h5>
+									<h5 class="small">
+										FORMULA 1 ETIHAD AIRWAYS ABU DHABI GRAND PRIX 2022
+									</h5>
                   <div class="col-lg-6">
-                    <img src="assets/img/racei1.png" class="img-fluid" alt="">
+										<img src="assets/img/racei1.png" class="img-fluid" alt="" />
                   </div>
                   <div class="col-lg-6">
                     <h3>Dramatic Finale at Abu Dhabi Grand Prix 2022</h3>
-                    <p>In a nail-biting final lap, a controversial decision by race officials led to Verstappen clinching the championship, leaving fans and pundits divided over the fairness of the outcome and sparking intense debates within the F1 community.</p>
-                    <button class="btn btn-danger">Read More <i class="bi bi-chevron-right ps-2"></i></button>
+										<p>
+											In a nail-biting final lap, a controversial decision by
+											race officials led to Verstappen clinching the
+											championship, leaving fans and pundits divided over the
+											fairness of the outcome and sparking intense debates
+											within the F1 community.
+										</p>
+										<button class="btn btn-danger">
+											Read More <i class="bi bi-chevron-right ps-2"></i>
+										</button>
                   </div>
                 </div>
                 <h3 class="text-center p-3">Race Results</h3>
                 <ul class="list-group list-group-flush">
                   <li class="list-group-item list-group-standings-item rounded">
                     <span class="standings-position">1</span>
-                    <div class="list-group-standings-divider-redbull ms-1 me-1"></div>
-                    <span class="driver-name">Max <span class="fw-bold text-uppercase">Verstappen</span> <span
-                        class="team-name">Red Bull Racing RBPT</span></span>
+										<div
+											class="list-group-standings-divider-redbull ms-1 me-1"
+										></div>
+										<span class="driver-name"
+											>Max
+											<span class="fw-bold text-uppercase">Verstappen</span>
+											<span class="team-name">Red Bull Racing RBPT</span></span
+										>
                     <div class="d-flex align-items-center float-end">
-                      <span class="badge badge-points rounded-pill fw-medium">1.27.45.914</span>
+											<span class="badge badge-points rounded-pill fw-medium"
+												>1.27.45.914</span
+											>
                       <i class="bi bi-chevron-right ps-2 text-danger"></i>
                     </div>
                   </li>
                   <li class="list-group-item list-group-standings-item rounded">
                     <span class="standings-position">2</span>
-                    <div class="list-group-standings-divider-ferrari ms-1 me-1"></div>
-                    <span class="driver-name">Charles <span class="fw-bold text-uppercase">Leclerc</span> <span
-                        class="team-name">Ferrari</span></span>
+										<div
+											class="list-group-standings-divider-ferrari ms-1 me-1"
+										></div>
+										<span class="driver-name"
+											>Charles
+											<span class="fw-bold text-uppercase">Leclerc</span>
+											<span class="team-name">Ferrari</span></span
+										>
                     <div class="d-flex align-items-center float-end">
-                      <span class="badge badge-points rounded-pill fw-medium">+8.771s</span>
+											<span class="badge badge-points rounded-pill fw-medium"
+												>+8.771s</span
+											>
                       <i class="bi bi-chevron-right ps-2 text-danger"></i>
                     </div>
                   </li>
                   <li class="list-group-item list-group-standings-item rounded">
                     <span class="standings-position">3</span>
-                    <div class="list-group-standings-divider-redbull ms-1 me-1"></div>
-                    <span class="driver-name">Sergio <span class="fw-bold text-uppercase">Perez</span> <span
-                        class="team-name">Red Bull Racing RBPT</span></span>
+										<div
+											class="list-group-standings-divider-redbull ms-1 me-1"
+										></div>
+										<span class="driver-name"
+											>Sergio
+											<span class="fw-bold text-uppercase">Perez</span>
+											<span class="team-name">Red Bull Racing RBPT</span></span
+										>
                     <div class="d-flex align-items-center float-end">
-                      <span class="badge badge-points rounded-pill fw-medium">+10.093s</span>
+											<span class="badge badge-points rounded-pill fw-medium"
+												>+10.093s</span
+											>
                       <i class="bi bi-chevron-right ps-2 text-danger"></i>
                     </div>
                   </li>
                   <li class="list-group-item list-group-standings-item rounded">
                     <span class="standings-position">4</span>
-                    <div class="list-group-standings-divider-mercedes ms-1 me-1"></div>
-                    <span class="driver-name">Carlos <span class="fw-bold text-uppercase">Sainz</span> <span
-                        class="team-name">Ferrari</span></span>
+										<div
+											class="list-group-standings-divider-mercedes ms-1 me-1"
+										></div>
+										<span class="driver-name"
+											>Carlos
+											<span class="fw-bold text-uppercase">Sainz</span>
+											<span class="team-name">Ferrari</span></span
+										>
                     <div class="d-flex align-items-center float-end">
-                      <span class="badge badge-points rounded-pill fw-medium">+24.892s</span>
+											<span class="badge badge-points rounded-pill fw-medium"
+												>+24.892s</span
+											>
                       <i class="bi bi-chevron-right ps-2 text-danger"></i>
                     </div>
                   </li>
                   <li class="list-group-item list-group-standings-item rounded">
                     <span class="standings-position">5</span>
-                    <div class="list-group-standings-divider-ferrari ms-1 me-1"></div>
-                    <span class="driver-name">George <span class="fw-bold text-uppercase">Russel</span> <span
-                        class="team-name">Mercedes</span></span>
+										<div
+											class="list-group-standings-divider-ferrari ms-1 me-1"
+										></div>
+										<span class="driver-name"
+											>George
+											<span class="fw-bold text-uppercase">Russel</span>
+											<span class="team-name">Mercedes</span></span
+										>
                     <div class="d-flex align-items-center float-end">
-                      <span class="badge badge-points rounded-pill fw-medium">+35.888s</span>
+											<span class="badge badge-points rounded-pill fw-medium"
+												>+35.888s</span
+											>
                       <i class="bi bi-chevron-right ps-2 text-danger"></i>
                     </div>
                   </li>
-                 
                 </ul>
                 <span class="d-flex justify-content-center align-items-center">
-                  <a class="btn btn-danger m-5" href="teams.html" role="button">View Race Results <i
-                      class="bi bi-arrow-right-circle"></i></a>
+									<a class="btn btn-danger m-5" href="teams.html" role="button"
+										>View Race Results <i class="bi bi-arrow-right-circle"></i
+									></a>
                 </span>
               </div>
             </div>
@@ -709,7 +1170,6 @@
           <!-- End - Pill Nav Content -->
         </div>
         <!-- End Drivers Constructors Nav -->
-      </div>
     </div>
   </section>
 
