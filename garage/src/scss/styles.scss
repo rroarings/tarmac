@@ -42,5 +42,7 @@
 @import "bootstrap/scss/utilities/api";
 
 // 8. Add additional custom code here
+@import "../../node_modules/flag-icons/css/flag-icons.min.css";
 @import "./cards";
-@import "./list-groups"
+@import "./list-groups";
+@import "./swiper"
