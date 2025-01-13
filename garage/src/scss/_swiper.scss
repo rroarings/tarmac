@@ -4,16 +4,15 @@
 }
 
 .swiper {
-  width: 80rem;
-  height: 25rem;
+  width: 90rem;
+  height: 30rem;
 }
 
 .swiper-slide {
   padding: 1rem;
-  border: solid 1px $gray-800;
-  border-left: none;
-  border-bottom-right-radius: 15px;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border-right: 1px solid $red-500;
+  border-top: 1px solid $red-500;
+  border-top-right-radius: 2rem;
 }
 
 .swiper-slide-title {
@@ -22,7 +21,7 @@
 }
 
 .calendar-race-date {
-  color: hsl(0, 0%, 80%);
+  color: $gray-500
 }
 
 .btn-outline-danger {
