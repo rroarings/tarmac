@@ -1,0 +1,36 @@
+.container-swiper {
+  color: #fff;
+  background-color: $gray-900;
+}
+
+.swiper {
+  width: 80rem;
+  height: 25rem;
+}
+
+.swiper-slide {
+  padding: 1rem;
+  border: solid 1px $gray-800;
+  border-left: none;
+  border-bottom-right-radius: 15px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.swiper-slide-title {
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.calendar-race-date {
+  color: hsl(0, 0%, 80%);
+}
+
+.btn-outline-danger {
+  font-weight: bold;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.btn-outline-danger:hover {
+  background-color: hsl(0, 80%, 50%);
+  color: #fff;
+}
