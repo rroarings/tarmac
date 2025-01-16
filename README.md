@@ -1,5 +1,3 @@
-<img src="https://img.shields.io/badge/Bootstrap-563D7C?style=for-the-badge&logo=bootstrap&logoColor=white">
-
 # Formula Bootstrap
 Formula Bootstrap is a a Bootstrap built website that explores some areas of Formula One. Currently in development.
 
@@ -91,8 +89,8 @@ This project is built with the *Bootstrap 5* framework along with *Parcel* to bu
 [![Git](https://img.shields.io/badge/Git-F05032?logo=git&logoColor=fff)](#)
 [![HTML](https://img.shields.io/badge/HTML-%23E34F26.svg?logo=html5&logoColor=white)](#)
 [![CSS](https://img.shields.io/badge/CSS-1572B6?logo=css3&logoColor=fff)](#)
-[![Bootstrap](https://img.shields.io/badge/Bootstrap-7952B3?logo=bootstrap&logoColor=fff)](#)
-[![Parcel][Parceljs.com]][Parcel-url]
+[![Bootstrap 5.3.3](https://img.shields.io/badge/Bootstrap_5.3.3-blueviolet?logo=bootstrap&logoColor=white)](https://)
+[![Parcel 2.13.3](https://img.shields.io/badge/Parcel_2.13.3-orange?logo=npm&logoColor=white)](https://)
 [![Visual Studio](https://custom-icon-badges.demolab.com/badge/Visual%20Studio-5C2D91.svg?&logo=visual-studio&logoColor=white)](#)
 [![Linear](https://img.shields.io/badge/Linear-5E6AD2?logo=linear&logoColor=fff)](#)
 [![Flag Icons](https://img.shields.io/badge/Flag_Icons-5E6AD2?logo=flags&logoColor=fff)](#)
@@ -214,12 +212,11 @@ Distributed under the MIT License. See `LICENSE.txt` for more information.
 
 <!-- CONTACT -->
 ## Contact
-
-[Personal wesbite](https://notnickcalvo.com) 
-
-[@NickkThough](https://twitter.com/your_username)
-
 Project Link: [https://github.com/rroarings/trackside](https://github.com/yrroarings/trackside)
+
+[My personal wesbite - www.notnickcalvo.com](https://notnickcalvo.com) 
+
+Social Media
 
 [![GitHub](https://img.shields.io/badge/GitHub-%23121011.svg?logo=github&logoColor=white)](#)
 [![X](https://img.shields.io/badge/X-%23000000.svg?logo=X&logoColor=white)](#)
@@ -243,14 +240,6 @@ Thanks to the following organizations and their partners for making this project
 
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
-[contributors-shield]: https://img.shields.io/github/contributors/othneildrew/Best-README-Template.svg?style=for-the-badge
-[contributors-url]: https://github.com/othneildrew/Best-README-Template/graphs/contributors
-[forks-shield]: https://img.shields.io/github/forks/othneildrew/Best-README-Template.svg?style=for-the-badge
-[forks-url]: https://github.com/othneildrew/Best-README-Template/network/members
-[stars-shield]: https://img.shields.io/github/stars/othneildrew/Best-README-Template.svg?style=for-the-badge
-[stars-url]: https://github.com/othneildrew/Best-README-Template/stargazers
-[issues-shield]: https://img.shields.io/github/issues/othneildrew/Best-README-Template.svg?style=for-the-badge
-[issues-url]: https://github.com/othneildrew/Best-README-Template/issues
 [license-shield]: https://img.shields.io/github/license/othneildrew/Best-README-Template.svg?style=for-the-badge
 [license-url]: https://github.com/othneildrew/Best-README-Template/blob/master/LICENSE.txt
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
@@ -261,5 +250,3 @@ Thanks to the following organizations and their partners for making this project
 [Parcel-url]: https://parceljs.org
 [Flagicons.lipis.dev]: https://img.shields.io/badge/Flags-d69b5e?style=for-the-badge&logo=flags&logoColor=white
 [Flags-url]: https://flagicons.lipis.dev
-
-<img src="oD5LMSJPEi.png" alt="Team contender cards">
