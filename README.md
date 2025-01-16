@@ -1,31 +1,10 @@
-# Formula Bootstrap
-Formula Bootstrap is a a Bootstrap built website that explores some areas of Formula One. Currently in development.
-
-## Features
-<p>Built using the Bootstrap framework, including icons.</p>
-<p>Text 2</p>
-
-### To Do's
-<ul>
-<li>Finish custom styles</li>
-<li>Write content</li> 
-<li>Update image file sizes</li> 
-</ul>
-
-### Issues
-<ul>
-<li>None at the moment</li>
-</ul>
-
 <!-- PROJECT LOGO -->
-<br />
 <div align="center">
-  <a href="https://github.com/rroarings/trackside">
-    <img src="images/logo.png" alt="Logo" width="80" height="80">
+  <a href="https://github.com/rroarings/tarmac">
+    <img src="/garage/src/assets/img/logos/trackside-logowhite.png" alt="Logo" width="80" height="80">
   </a>
 
   <h3 align="center">Trackside</h3>
-
   <p align="center">
     Explore the track side of Formula 1 from a fan perspective
     <br />
@@ -61,7 +40,6 @@ Formula Bootstrap is a a Bootstrap built website that explores some areas of For
     </li>
     <li><a href="#usage">Usage</a></li>
     <li><a href="#roadmap">Roadmap</a></li>
-    <li><a href="#contributing">Contributing</a></li>
     <li><a href="#license">License</a></li>
     <li><a href="#contact">Contact</a></li>
     <li><a href="#acknowledgments">Acknowledgments</a></li>
@@ -75,7 +53,7 @@ Formula Bootstrap is a a Bootstrap built website that explores some areas of For
 
 [![Trackside video][product-screenshot]](https://example.com)
 
-Dive into the garages, feel the rush of the paddock, and explore the trackside excitement like never before. Built with Bootstrap 5, bundled with Parcel, and managed through Linear, this project is your ticket to the fast lane of F1 fandom.
+Dive into the garages, feel the rush of the paddock, and explore the trackside excitement like never before. Built with Bootstrap 5.3, bundled with Parcel, and managed through Linear, this project is your ticket to the fast lane of F1 fandom.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
