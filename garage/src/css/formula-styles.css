@@ -96,7 +96,7 @@ h5 {
 }
 
 .hero-content-one {
-  background-image: url("../assets/img/racei1.png");
+  background-image: url("../assets/img/section/racei1.png");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -106,7 +106,7 @@ h5 {
 }
 
 .hero-content-two {
-  background-image: url("../assets/img/racei1.png");
+  background-image: url("../assets/img/section/racei1.png");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -115,7 +115,7 @@ h5 {
 }
 
 .hero-content-three {
-  background-image: url("../assets/img/racei1.png");
+  background-image: url("../assets/img/section/racei1.png");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -135,19 +135,6 @@ h5 {
 .card-title,
 .card-text {
   font-family: 'Barlow', sans-serif;
-}
-
-#fantasy-banner {
-  background-image: url("../assets/img/formula-fantasy-banner.png");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: 100% 100%;
-  padding: 2%;
-  color: #FAFAFA;
-
-  & a {
-    font-size: small;
-  }
 }
 
 .card-featured-race {
@@ -475,17 +462,17 @@ h5 {
 }
 
 .card-article1 {
-  background-image: url('../assets/teams/redbull/redbull1.png');
+  background-image: url('../assets/img/cars/car-redbull-side.png');
   background-repeat: no-repeat;
   background-size: cover;
 }
 .card-article2 {
-  background-image: url('../assets/teams/redbull/redbull1.png');
+  background-image: url('../assets/img/cars/car-redbull-side.png');
   background-repeat: no-repeat;
   background-size: cover;
 }
 .card-article3 {
-  background-image: url('../assets/teams/redbull/redbull1.png');
+  background-image: url('../assets/img/cars/car-redbull-side.png');
   background-repeat: no-repeat;
   background-size: cover;
 }
