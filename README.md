@@ -19,9 +19,6 @@ Formula Bootstrap is a a Bootstrap built website that explores some areas of For
 <li>None at the moment</li>
 </ul>
 
-<<<<<<< Updated upstream
-## Previews
-=======
 <!-- PROJECT LOGO -->
 <br />
 <div align="center">
@@ -264,6 +261,5 @@ Thanks to the following organizations and their partners for making this project
 [Parcel-url]: https://parceljs.org
 [Flagicons.lipis.dev]: https://img.shields.io/badge/Flags-d69b5e?style=for-the-badge&logo=flags&logoColor=white
 [Flags-url]: https://flagicons.lipis.dev
->>>>>>> Stashed changes
 
 <img src="oD5LMSJPEi.png" alt="Team contender cards">
