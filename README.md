@@ -128,13 +128,13 @@ Once you start the dev server, check the terminal for
 Server running at http://localhost:1234
 ```
 
-Alt (Cmd for Mac) + Click the localhost link to open our `index.html` in your default browser. You can start now exploring the website.
+Alt (Cmd for Mac) + Click the ```http://localhost:1234``` link to open our site in the default browser.
 
 ```
-Server running at http://localhost:1234Server running at http://localhost:1234
+Server running at http://localhost:1234
 ```
 
-Any changes you make are hot-reloaded with Parcel on file saves.
+Any changes you make are hot-reloaded with Parcel on saves.
 
 
 ### Build (Production)
