@@ -1,1993 +1,2650 @@
 <!DOCTYPE html>
 <html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<meta
+			name="viewport"
+			content="width=device-width, initial-scale=1, shrink-to-fit=no"
+		/>
+		<meta
+			name="description"
+			content="Formula Bootstrap is a a Bootstrap built website that explores some areas of Formula One."
+		/>
+		<meta name="author" content="Nick Calvo" />
+		<title>Trackside | Home</title>
+		<link
+			rel="stylesheet"
+			href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+		/>
+		<link rel="stylesheet" href="scss/styles.scss" />
+	</head>
 
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta name="description"
-    content="Formula Bootstrap is a a Bootstrap built website that explores some areas of Formula One.">
-  <meta name="author" content="Nick Calvo">
-  <title>F1: Bootstrapped | Home</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link
-    href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Barlow:wght@400;500&family=Michroma&display=swap"
-    rel="stylesheet">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
-  <link rel="stylesheet" href="scss/styles.scss">
-</head>
+	<body>
+		<!-- site header -->
+		<div class="container-fluid">
+			<nav class="navbar navbar-expand-lg sticky-top" id="mainNav">
+				<div class="container bg-danger">
+					<a class="navbar-brand" href="#page-top"
+						><img
+							src="assets/img/logos/sitelogo.png"
+							class="img-fluid"
+							style="width: 15%"
+							alt="..."
+					/></a>
+					<button
+						class="navbar-toggler"
+						type="button"
+						data-bs-toggle="collapse"
+						data-bs-target="#navbarResponsive"
+						aria-controls="navbarResponsive"
+						aria-expanded="false"
+						aria-label="Toggle navigation"
+					>
+						Menu
+						<i class="fas fa-bars ms-1"></i>
+					</button>
+					<div class="collapse navbar-collapse" id="navbarResponsive">
+						<ul class="navbar-nav text-uppercase ms-auto py-4 py-lg-0">
+							<li class="nav-item">
+								<a class="nav-link" href="index.html">Home</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="teams.html">Teams</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="racecalendar.html">Calendar</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="technologies.html">Technology</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="future.html">Future</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</nav>
+		</div>
 
-<body>
+		<!-- index hero -->
+		<div class="px-4 py-5 text-center border-bottom">
+			<h1 class="display-4 fw-bold text-body-emphasis">
+				Explore the Trackside
+			</h1>
+			<div class="col-lg-6 mx-auto">
+				<p class="lead mb-4">
+					Quickly design and customize responsive mobile-first sites with
+					Bootstrap, the world’s most popular front-end open source toolkit,
+					featuring Sass variables and mixins, responsive grid system, extensive
+					prebuilt components, and powerful JavaScript plugins.
+				</p>
+				<div class="d-grid gap-2 d-sm-flex justify-content-sm-center mb-5">
+					<button type="button" class="btn btn-primary btn-lg px-4 me-sm-3">
+						Primary button
+					</button>
+					<button type="button" class="btn btn-outline-secondary btn-lg px-4">
+						Secondary
+					</button>
+				</div>
+			</div>
+			<div class="overflow-hidden">
+				<div class="container px-5">
+					<video
+						src="assets/videos/raceseq.webm"
+						class="img-fluid"
+						muted
+						autoplay
+						playsinline
+						loop
+					></video>
+				</div>
+			</div>
+		</div>
 
-  <!-- site header -->
-  <div class="container-fluid">
-    <nav class="navbar navbar-expand-lg fixed-top" id="mainNav">
-      <div class="container bg-danger">
-        <a class="navbar-brand" href="#page-top"><img src="assets/img/logo-black.png" class="img-fluid w-25" alt="..."></a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive"
-          aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-          Menu
-          <i class="fas fa-bars ms-1"></i>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarResponsive">
-          <ul class="navbar-nav text-uppercase ms-auto py-4 py-lg-0">
-            <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
-            <li class="nav-item"><a class="nav-link" href="teams.html">Teams</a></li>
-            <li class="nav-item"><a class="nav-link" href="racecalendar.html">Calendar</a></li>
-            <li class="nav-item"><a class="nav-link" href="technologies.html">Technology</a></li>
-            <li class="nav-item"><a class="nav-link" href="future.html">Future</a></li>
-          </ul>
-        </div>
-      </div>
-    </nav>
-  </div>
+		<!-- news -->
+		<div
+			class="container px-4 py-5 my-5 border border-10 border-black border-start-0 rounded-end-4"
+		>
+			<h2 class="fw-bold pb-2">Custom cards</h2>
 
-  <!-- index hero -->
-  <div class="container p-5 mt-5">
-    <div id="container-fluid-hero-content" class="container-fluid">
-      <div class="d-grid gap-3" style="grid-template-columns: 2fr 1fr 1fr;">
-        <div class="bg-body-tertiary hero-content-one border rounded-3">
-          <br><br><br><br><br><br><br><br><br><br>
-          <h2 class="hero-content-title">RedBull Dominate COTA</h2>
-        </div>
-        <div class="bg-body-tertiary hero-content-two border rounded-3">
-          <br><br><br><br><br><br><br><br><br><br>
-          <h2 class="hero-content-title">McLaren Race It All</h2>
-        </div>
-        <div class="bg-body-tertiary hero-content-three border rounded-3">
-          <br><br><br><br><br><br><br><br><br><br>
-          <h2 class="hero-content-title">Ricciardo Places In Points</h2>
-        </div>
-      </div>
-    </div>
-  </div>
+			<div class="row row-cols-1 row-cols-lg-3 align-items-stretch g-4">
+				<div class="col">
+					<div
+						class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg"
+						style="background-image: url('assets/img/section/racei1.png')"
+					>
+						<div
+							class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1"
+						>
+							<h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">
+								Short title, long jacket
+							</h3>
+							<ul class="d-flex list-unstyled mt-auto">
+								<li class="me-auto">
+									<img
+										src="https://github.com/twbs.png"
+										alt="Bootstrap"
+										width="32"
+										height="32"
+										class="rounded-circle border border-white"
+									/>
+								</li>
+								<li class="d-flex align-items-center me-3">
+									<svg class="bi me-2" width="1em" height="1em">
+										<use xlink:href="#geo-fill"></use>
+									</svg>
+									<small>Earth</small>
+								</li>
+								<li class="d-flex align-items-center">
+									<svg class="bi me-2" width="1em" height="1em">
+										<use xlink:href="#calendar3"></use>
+									</svg>
+									<small>3d</small>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
 
-  <!-- featured news -->
-  <section class="container p-5">
-    <div id="secondary-news" class="container-fluid border-open-top">
-      <h2>More News <i class="bi bi-chevron-double-right"></i></h2>
-      <div class="row mt-3 pe-3">
-        <div class="col-lg-3">
-          <div class="card" style="width: 18rem;">
-            <img
-              src="https://media.formula1.com/image/upload/t_16by9Centre/f_auto/q_auto/v1698356958/fom-website/2023/Mexico/GettyImages-1758416883.jpg.transform/6col/image.jpg"
-              class="card-img-top" alt="...">
-            <div class="card-body">
-              <p class="card-title-super">news</p>
-              <h5 class="card-title">Card title</h5>
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
-                content.</p>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-3">
-          <div class="card" style="width: 18rem;">
-            <img
-              src="https://media.formula1.com/image/upload/t_16by9Centre/f_auto/q_auto/v1698356958/fom-website/2023/Mexico/GettyImages-1758416883.jpg.transform/6col/image.jpg"
-              class="card-img-top" alt="...">
-            <div class="card-body">
-              <p class="card-title-super">news</p>
-              <h5 class="card-title">Card title</h5>
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
-                content.</p>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-3 mb-3">
-          <div class="card" style="width: 18rem;">
-            <img
-              src="https://media.formula1.com/image/upload/t_16by9Centre/f_auto/q_auto/v1698356958/fom-website/2023/Mexico/GettyImages-1758416883.jpg.transform/6col/image.jpg"
-              class="card-img-top" alt="...">
-            <div class="card-body">
-              <p class="card-title-super">news</p>
-              <h5 class="card-title">Card title</h5>
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
-                content.</p>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-3 mb-3">
-          <div class="card" style="width: 18rem;">
-            <img
-              src="https://media.formula1.com/image/upload/t_16by9Centre/f_auto/q_auto/v1698356958/fom-website/2023/Mexico/GettyImages-1758416883.jpg.transform/6col/image.jpg"
-              class="card-img-top" alt="...">
-            <div class="card-body">
-              <p class="card-title-super">news</p>
-              <h5 class="card-title">Card title</h5>
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
-                content.</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
+				<div class="col">
+					<div
+						class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg"
+						style="background-image: url('assets/img/section/racei1.png')"
+					>
+						<div
+							class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1"
+						>
+							<h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">
+								Much longer title that wraps to multiple lines
+							</h3>
+							<ul class="d-flex list-unstyled mt-auto">
+								<li class="me-auto">
+									<img
+										src="https://github.com/twbs.png"
+										alt="Bootstrap"
+										width="32"
+										height="32"
+										class="rounded-circle border border-white"
+									/>
+								</li>
+								<li class="d-flex align-items-center me-3">
+									<svg class="bi me-2" width="1em" height="1em">
+										<use xlink:href="#geo-fill"></use>
+									</svg>
+									<small>Pakistan</small>
+								</li>
+								<li class="d-flex align-items-center">
+									<svg class="bi me-2" width="1em" height="1em">
+										<use xlink:href="#calendar3"></use>
+									</svg>
+									<small>4d</small>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
 
-  <!-- fantasy -->
-  <section class="container p-5">
-    <div class="container-fluid p-3 border-open-left">
-      <div id="fantasy-banner" class="container-fluid rounded">
-        <div class="row">
-          <div class="col-md-12 col-lg-6 my-auto">
-            <h2 class="fw-bold">Fantasy Lives Here</h2>
-            <p>Velit esse in consequat pariatur minim consequat aliquip. Ad cillum qui velit officia enim tempor commodo
-              nostrud cupidatat incididunt. Culpa magna enim veniam ex duis et excepteur officia dolor.</p>
-            <a href="#" class="btn btn-warning text-uppercase" target="_blank">Play Now</a>
-          </div>
-          <div class="col-md-12 col-lg-6 mt-3 mt-lg-0">
-            <picture>
-              <img src="assets/img/formula-fantasy-banner-img.png" class="img-fluid" alt="">
-            </picture>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
+				<div class="col">
+					<div
+						class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg"
+						style="background-image: url('assets/img/section/racei1.png')"
+					>
+						<div class="d-flex flex-column h-100 p-5 pb-3 text-shadow-1">
+							<h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">
+								Another longer title belongs here
+							</h3>
+							<ul class="d-flex list-unstyled mt-auto">
+								<li class="me-auto">
+									<img
+										src="https://github.com/twbs.png"
+										alt="Bootstrap"
+										width="32"
+										height="32"
+										class="rounded-circle border border-white"
+									/>
+								</li>
+								<li class="d-flex align-items-center me-3">
+									<svg class="bi me-2" width="1em" height="1em">
+										<use xlink:href="#geo-fill"></use>
+									</svg>
+									<small>California</small>
+								</li>
+								<li class="d-flex align-items-center">
+									<svg class="bi me-2" width="1em" height="1em">
+										<use xlink:href="#calendar3"></use>
+									</svg>
+									<small>5d</small>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
 
-  <!-- featured elements -->
-  <section class="container-fluid bg-danger text-white p-5">
-    <div class="container-fluid border-open-top p-3">
-      <h2 class="">Featured Races</h2>
-      <div class="row mt-3">
-        <div class="col-lg-6">
-          <video src="assets/videos/raceseq.webm" muted autoplay loop class="img-fluid w-75"></video>
-          <h3>Race Day Goes Hard</h3>
-          <p>Enim ut cupidatat eiusmod sit. Cupidatat deserunt non non magna elit sint sunt id velit adipisicing
-            laboris ea do excepteur.</p>
-        </div>
-        <div class="col-lg-6">
-          <div class="row">
-            <div class="col-md-6 col-sm-12 mb-3">
-              <div class="card-featured-race card-with-image">
-                <img src="assets/img/racei1.png" class="card-img-top" alt="Race 1">
-                <div class="card-body">
-                  <p class="card-title-super">feature</p>
-                  <h5>Baku</h5>
-                  <p>Proident do minim ad eiusmod aliqua est pariatur reprehenderit.</p>
-                </div>
-              </div>
-            </div>
-            <div class="col-md-6 col-sm-12 mb-3">
-              <div class="card-featured-race card-with-image">
-                <img src="assets/img/racei2.png" class=" card-img-top" alt="Race 2">
-                <div class="card-body">
-                  <p class="card-title-super">feature</p>
-                  <h5>Singapore</h5>
-                  <p>Proident do minim ad eiusmod aliqua est pariatur reprehenderit.</p>
-                </div>
-              </div>
-            </div>
-            <div class="col-md-6 col-sm-12 mb-3">
-              <div class="card-featured-race">
-                <p class="card-title-super">feature</p>
-                <h5>COTA</h5>
-                <p>Proident do minim ad eiusmod aliqua est pariatur reprehenderit.</p>
-              </div>
-            </div>
-            <div class="col-md-6 col-sm-12 mb-3">
-              <div class="card-featured-race">
-                <p class="card-title-super">feature</p>
-                <h5>Francor-Spa</h5>
-                <p>Proident do minim ad eiusmod aliqua est pariatur reprehenderit.</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
+		<!-- 2024 race highlights -->
+		<section
+			class="container border border-10 border-red border-start-0 rounded-end-4 py-3 my-5"
+		>
+			<div
+				id="fantasy-banner"
+				class="text-white rounded"
+				style="
+					background-image: url('assets/img/section/formula-fantasy-banner.png');
+					background-repeat: no-repeat;
+					background-size: cover;
+				"
+			>
+				<div class="row p-4">
+					<div class="col-md-12 col-lg-8 my-auto">
+						<h2 class="fw-bold">2024 Race Highlights</h2>
+						<p>
+							The 2024 FORMULA 1™ season delivered unforgettable moments, from
+							dramatic overtakes to strategic masterclasses on the track. Relive
+							the standout performances that defined the season.
+						</p>
+						<a
+							href="#"
+							class="btn btn-warning text-uppercase fw-bold"
+							target="_blank"
+							>Explore clips</a
+						>
+					</div>
+					<div class="col-md-12 col-lg mt-3 mt-lg-0">
+						<picture>
+							<img
+								src="assets/img/section/formula-fantasy-banner-img.png"
+								class="img-fluid"
+								alt=""
+							/>
+						</picture>
+					</div>
+				</div>
+			</div>
+		</section>
 
-  <!-- standings -->
-  <section class="container-fluid" style="background-color: hsl(0.00,0.00%,96.08%);">
-    <div class="container">
-      <div class="row">
-        <h2 class="display-4 text-center fw-bold mt-5">2022 Championship Standings</h2>
-        <!-- Drivers, Constructors Nav -->
-        <div class="container container-drivernav" id="driver-nav">
-          <div id="container-driver-nav" class="container mb-3">
-            <ul class="nav nav-pills justify-content-center pt-5" id="pills-tab" role="tablist">
-              <li class="nav-item" role="presentation">
-                <button class="nav-link active" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home"
-                  type="button" role="tab" aria-controls="pills-home" aria-selected="true">Drivers</button>
-              </li>
-              <li class="nav-link" role="presentation">
-                <span>|</span>
-              </li>
-              <li class="nav-item" role="presentation">
-                <button class="nav-link" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-profile"
-                  type="button" role="tab" aria-controls="pills-profile" aria-selected="false">Constructors</button>
-              </li>
-              <li class="nav-link" role="presentation">
-                <span>|</span>
-              </li>
-              <li class="nav-item" role="presentation">
-                <button class="nav-link" id="pills-race-tab" data-bs-toggle="pill" data-bs-target="#pills-last-race"
-                  type="button" role="tab" aria-controls="pills-last-race" aria-selected="false">Last Race</button>
-                </span>
-              </li>
-            </ul>
-          </div>
-          <!-- Pill Nav Content -->
-          <div class="tab-content" id="pills-tabContent">
-            <!-- Pill Nav Content 1 -->
-            <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab"
-              tabindex="0">
-              <div class="container">
-                <!-- Driver Standings Cards -->
-                <div class="row justify-content-md-center mb-5">
-                  <h3 class="text-center p-3 mb-4">Driver Standings</h3>
-                  <div class="card card-driver" style="width: 18rem;">
-                    <span class="card-standings-position">2</span>
-                    <img src="assets/img/teams/drivers/ferrari/leclerc-portrait.png" class="card-img-top" alt="...">
-                    <div class="card-body">
-                      <h5 class="card-title">Charles <span class="fw-bold">Leclerc</span></h5>
-                    </div>
-                  </div>
-                  <div class="card card-driver first-place" style="width: 18rem;">
-                    <span class="card-standings-position">1</span>
-                    <img src="assets/img/teams/drivers/redbull/verstappen-portrait.png" class="card-img-top" alt="...">
-                    <div class="card-body">
-                      <h5 class="card-title">Max <span class="fw-bold">Verstappen</span></h5>
-                    </div>
-                  </div>
-                  <div class="card card-driver" style="width: 18rem;">
-                    <span class="card-standings-position">3</span>
-                    <img src="assets/img/teams/drivers/redbull/checo-portrait.png" class="card-img-top" alt="...">
-                    <div class="card-body">
-                      <h5 class="card-title">Sergio <span class="fw-bold">Perez</span></h5>
-                    </div>
-                  </div>
-                </div>
-                <!-- End Driver Standings Cards -->
-                <!-- Driver Standings list -->
-                <div class="container">
-                  <ul class="list-group list-group-flush">
-                    <li class="list-group-item list-group-standings-item rounded">
-                      <a href="drivers/verstappen.html" class="text-decoration-none text-black">
-                        <span class="standings-position">1</span>
-                        <div class="list-group-standings-divider-redbull ms-1 me-1"></div>
-                        <span class="driver-name">Max <span class="fw-bold text-uppercase">Verstappen</span> <span class="team-name">Red Bull Racing RBPT</span></span>
-                        <div class="d-flex align-items-center float-end">
-                          <span class="badge badge-points rounded-pill fw-medium">454 PTS</span>
-                          <i class="bi bi-chevron-right ps-2 text-danger"></i>
-                        </div>
-                      </a>
-                    </li>
-                    <li class="list-group-item list-group-standings-item rounded">
-                     <a href="#">
-                      <span class="standings-position">2</span>
-                      <div class="list-group-standings-divider-ferrari ms-1 me-1"></div>
-                      <span class="driver-name">Charles <span class="fw-bold text-uppercase">Leclerc</span> <span
-                          class="team-name">Ferrari</span></span>
-                      <div class="d-flex align-items-center float-end">
-                        <span class="badge badge-points rounded-pill fw-medium">308 PTS</span>
-                        <i class="bi bi-chevron-right ps-2 text-danger"></i>
-                      </div>
-                     </a>
-                    </li>
-                    <li class="list-group-item list-group-standings-item rounded">
-                      <span class="standings-position">3</span>
-                      <div class="list-group-standings-divider-redbull ms-1 me-1"></div>
-                      <span class="driver-name">Sergio <span class="fw-bold text-uppercase">Perez</span> <span
-                          class="team-name">Red Bull Racing RBPT</span></span>
-                      <div class="d-flex align-items-center float-end">
-                        <span class="badge badge-points rounded-pill fw-medium">305 PTS</span>
-                        <i class="bi bi-chevron-right ps-2 text-danger"></i>
-                      </div>
-                    </li>
-                    <li class="list-group-item list-group-standings-item rounded">
-                      <span class="standings-position">4</span>
-                      <div class="list-group-standings-divider-mercedes ms-1 me-1"></div>
-                      <span class="driver-name">George <span class="fw-bold text-uppercase">Russel</span> <span
-                          class="team-name">Mercedes</span></span>
-                      <div class="d-flex align-items-center float-end">
-                        <span class="badge badge-points rounded-pill fw-medium">275 PTS</span>
-                        <i class="bi bi-chevron-right ps-2 text-danger"></i>
-                      </div>
-                    </li>
-                    <li class="list-group-item list-group-standings-item rounded">
-                      <span class="standings-position">5</span>
-                      <div class="list-group-standings-divider-ferrari ms-1 me-1"></div>
-                      <span class="driver-name">Carlos <span class="fw-bold text-uppercase">Sainz</span> <span
-                          class="team-name">Ferrari</span></span>
-                      <div class="d-flex align-items-center float-end">
-                        <span class="badge badge-points rounded-pill fw-medium">246 PTS</span>
-                        <i class="bi bi-chevron-right ps-2 text-danger"></i>
-                      </div>
-                    </li>
-                    <li class="list-group-item list-group-standings-item rounded">
-                      <span class="standings-position">6</span>
-                      <div class="list-group-standings-divider-mercedes ms-1 me-1"></div>
-                      <span class="driver-name">Lewis <span class="fw-bold text-uppercase">Hamilton</span> <span
-                          class="team-name">Mercedes</span></span>
-                      <div class="d-flex align-items-center float-end">
-                        <span class="badge badge-points rounded-pill fw-medium">240 PTS</span>
-                        <i class="bi bi-chevron-right ps-2 text-danger"></i>
-                      </div>
-                    </li>
-                    <li class="list-group-item list-group-standings-item rounded">
-                      <span class="standings-position">7</span>
-                      <div class="list-group-standings-divider-mclaren ms-1 me-1"></div>
-                      <span class="driver-name">Lando <span class="fw-bold text-uppercase">Norris</span> <span
-                          class="team-name">McLaren Mercedes</span></span>
-                      <div class="d-flex align-items-center float-end">
-                        <span class="badge badge-points rounded-pill fw-medium">122 PTS</span>
-                        <i class="bi bi-chevron-right ps-2 text-danger"></i>
-                      </div>
-                    </li>
-                    <li class="list-group-item list-group-standings-item rounded">
-                      <span class="standings-position">8</span>
-                      <div class="list-group-standings-divider-alpine ms-1 me-1"></div>
-                      <span class="driver-name">Esteban <span class="fw-bold text-uppercase">Ocon</span> <span
-                          class="team-name">Alpine Renault</span></span>
-                      <div class="d-flex align-items-center float-end">
-                        <span class="badge badge-points rounded-pill fw-medium">92 PTS</span>
-                        <i class="bi bi-chevron-right ps-2 text-danger"></i>
-                      </div>
-                    </li>
-                    <li class="list-group-item list-group-standings-item rounded">
-                      <span class="standings-position">9</span>
-                      <div class="list-group-standings-divider-alpine ms-1 me-1"></div>
-                      <span class="driver-name">Fernando <span class="fw-bold text-uppercase">Alonso</span> <span
-                          class="team-name">Alpine Renault</span></span>
-                      <div class="d-flex align-items-center float-end">
-                        <span class="badge badge-points rounded-pill fw-medium">81 PTS</span>
-                        <i class="bi bi-chevron-right ps-2 text-danger"></i>
-                      </div>
-                    </li>
-                  </ul>
-                </div>
-                <span class="d-flex justify-content-center align-items-center">
-                  <a class="btn btn-danger m-5" href="racecalendar.html" role="button">View Full Results <i
-                      class="bi bi-chevron-right"></i></a>
-                </span>
-              </div>
-            </div>
-            <!-- Pill Nav Content Constructors -->
-            <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab"
-              tabindex="1">
-              <div class="container mb-5">
-                <ul class="list-group list-group-flush">
-                  <li class="list-group-item list-group-standings-item rounded">
-                    <span class="standings-position">1</span>
-                    <div class="list-group-standings-divider-redbull ms-1 me-1"></div>
-                    <span class="driver-name">Red Bull Racing RBPT <span
-                        class="team-name">Verstappen / Perez</span></span>
-                    <div class="d-flex align-items-center float-end">
-                      <span class="badge badge-points rounded-pill fw-medium">759 PTS</span>
-                      <i class="bi bi-chevron-right ps-2 text-danger"></i>
-                    </div>
-                  </li>
-                  <li class="list-group-item list-group-standings-item rounded">
-                    <span class="standings-position">2</span>
-                    <div class="list-group-standings-divider-ferrari ms-1 me-1"></div>
-                    <span class="driver-name">Ferrari <span
-                        class="team-name">Leclerc / Sainz</span></span>
-                    <div class="d-flex align-items-center float-end">
-                      <span class="badge badge-points rounded-pill fw-medium">554 PTS</span>
-                      <i class="bi bi-chevron-right ps-2 text-danger"></i>
-                    </div>
-                  </li>
-                  <li class="list-group-item list-group-standings-item rounded">
-                    <span class="standings-position">3</span>
-                    <div class="list-group-standings-divider-mercedes ms-1 me-1"></div>
-                    <span class="driver-name">Mercedes <span
-                        class="team-name">Hamilton / Russel</span></span>
-                    <div class="d-flex align-items-center float-end">
-                      <span class="badge badge-points rounded-pill fw-medium">515 PTS</span>
-                      <i class="bi bi-chevron-right ps-2 text-danger"></i>
-                    </div>
-                  </li>
-                  <li class="list-group-item list-group-standings-item rounded">
-                    <span class="standings-position">4</span>
-                    <div class="list-group-standings-divider-alpine ms-1 me-1"></div>
-                    <span class="driver-name">Alpine Renault <span
-                        class="team-name">Alonso / Ocon</span></span>
-                    <div class="d-flex align-items-center float-end">
-                      <span class="badge badge-points rounded-pill fw-medium">173 PTS</span>
-                      <i class="bi bi-chevron-right ps-2 text-danger"></i>
-                    </div>
-                  </li>
-                  <li class="list-group-item list-group-standings-item rounded">
-                    <span class="standings-position">5</span>
-                    <div class="list-group-standings-divider-mclaren ms-1 me-1"></div>
-                    <span class="driver-name">McLaren <span
-                        class="team-name">Norris / Ricciardo</span></span>
-                    <div class="d-flex align-items-center float-end">
-                      <span class="badge badge-points rounded-pill fw-medium">159 PTS</span>
-                      <i class="bi bi-chevron-right ps-2 text-danger"></i>
-                    </div>
-                  </li>
-                  <li class="list-group-item list-group-standings-item rounded">
-                    <span class="standings-position">6</span>
-                    <div class="list-group-standings-divider-mercedes ms-1 me-1"></div>
-                    <span class="driver-name">Alfa Romeo <span
-                        class="team-name">Bottas / Guanyu</span></span>
-                    <div class="d-flex align-items-center float-end">
-                      <span class="badge badge-points rounded-pill fw-medium">55 PTS</span>
-                      <i class="bi bi-chevron-right ps-2 text-danger"></i>
-                    </div>
-                  </li>
-                  <li class="list-group-item list-group-standings-item rounded">
-                    <span class="standings-position">7</span>
-                    <div class="list-group-standings-divider-astonmartin ms-1 me-1"></div>
-                    <span class="driver-name">Aston Martin <span
-                        class="team-name">Vettel / Stroll</span></span>
-                    <div class="d-flex align-items-center float-end">
-                      <span class="badge badge-points rounded-pill fw-medium">55 PTS</span>
-                      <i class="bi bi-chevron-right ps-2 text-danger"></i>
-                    </div>
-                  </li>
-                  <li class="list-group-item list-group-standings-item rounded">
-                    <span class="standings-position">8</span>
-                    <div class="list-group-standings-divider-alpine ms-1 me-1"></div>
-                    <span class="driver-name">Haas <span
-                        class="team-name">Magnussen / Schumacher</span></span>
-                    <div class="d-flex align-items-center float-end">
-                      <span class="badge badge-points rounded-pill fw-medium">37 PTS</span>
-                      <i class="bi bi-chevron-right ps-2 text-danger"></i>
-                    </div>
-                  </li>
-                  <li class="list-group-item list-group-standings-item rounded">
-                    <span class="standings-position">9</span>
-                    <div class="list-group-standings-divider-alphatauri ms-1 me-1"></div>
-                    <span class="driver-name">AlphaTauri <span
-                        class="team-name">Gasly / Tsunoda</span></span>
-                    <div class="d-flex align-items-center float-end">
-                      <span class="badge badge-points rounded-pill fw-medium">35 PTS</span>
-                      <i class="bi bi-chevron-right ps-2 text-danger"></i>
-                    </div>
-                  </li>
-                  <li class="list-group-item list-group-standings-item rounded">
-                    <span class="standings-position">10</span>
-                    <div class="list-group-standings-divider-williams ms-1 me-1"></div>
-                    <span class="driver-name">Williams <span
-                        class="team-name">Laitfi / Albon</span></span>
-                    <div class="d-flex align-items-center float-end">
-                      <span class="badge badge-points rounded-pill fw-medium">8 PTS</span>
-                      <i class="bi bi-chevron-right ps-2 text-danger"></i>
-                    </div>
-                  </li>
-                </ul>
-              </div>
-            </div>
-            <!-- Pill Nav Content Last Race -->
-            <div class="tab-pane fade" id="pills-last-race" role="tabpanel" aria-labelledby="pills-race-tab"
-              tabindex="2">
-              <div class="container container-last-race rounded">
-                <div class="row p-3">
-                  <h2 class="fw-bold">Abu Dhabi 2022</h2>
-                  <h5 class=" small">FORMULA 1 ETIHAD AIRWAYS ABU DHABI GRAND PRIX 2022</h5>
-                  <div class="col-lg-6">
-                    <img src="assets/img/racei1.png" class="img-fluid" alt="">
-                  </div>
-                  <div class="col-lg-6">
-                    <h3>Dramatic Finale at Abu Dhabi Grand Prix 2022</h3>
-                    <p>In a nail-biting final lap, a controversial decision by race officials led to Verstappen clinching the championship, leaving fans and pundits divided over the fairness of the outcome and sparking intense debates within the F1 community.</p>
-                    <button class="btn btn-danger">Read More <i class="bi bi-chevron-right ps-2"></i></button>
-                  </div>
-                </div>
-                <h3 class="text-center p-3">Race Results</h3>
-                <ul class="list-group list-group-flush">
-                  <li class="list-group-item list-group-standings-item rounded">
-                    <span class="standings-position">1</span>
-                    <div class="list-group-standings-divider-redbull ms-1 me-1"></div>
-                    <span class="driver-name">Max <span class="fw-bold text-uppercase">Verstappen</span> <span
-                        class="team-name">Red Bull Racing RBPT</span></span>
-                    <div class="d-flex align-items-center float-end">
-                      <span class="badge badge-points rounded-pill fw-medium">1.27.45.914</span>
-                      <i class="bi bi-chevron-right ps-2 text-danger"></i>
-                    </div>
-                  </li>
-                  <li class="list-group-item list-group-standings-item rounded">
-                    <span class="standings-position">2</span>
-                    <div class="list-group-standings-divider-ferrari ms-1 me-1"></div>
-                    <span class="driver-name">Charles <span class="fw-bold text-uppercase">Leclerc</span> <span
-                        class="team-name">Ferrari</span></span>
-                    <div class="d-flex align-items-center float-end">
-                      <span class="badge badge-points rounded-pill fw-medium">+8.771s</span>
-                      <i class="bi bi-chevron-right ps-2 text-danger"></i>
-                    </div>
-                  </li>
-                  <li class="list-group-item list-group-standings-item rounded">
-                    <span class="standings-position">3</span>
-                    <div class="list-group-standings-divider-redbull ms-1 me-1"></div>
-                    <span class="driver-name">Sergio <span class="fw-bold text-uppercase">Perez</span> <span
-                        class="team-name">Red Bull Racing RBPT</span></span>
-                    <div class="d-flex align-items-center float-end">
-                      <span class="badge badge-points rounded-pill fw-medium">+10.093s</span>
-                      <i class="bi bi-chevron-right ps-2 text-danger"></i>
-                    </div>
-                  </li>
-                  <li class="list-group-item list-group-standings-item rounded">
-                    <span class="standings-position">4</span>
-                    <div class="list-group-standings-divider-mercedes ms-1 me-1"></div>
-                    <span class="driver-name">Carlos <span class="fw-bold text-uppercase">Sainz</span> <span
-                        class="team-name">Ferrari</span></span>
-                    <div class="d-flex align-items-center float-end">
-                      <span class="badge badge-points rounded-pill fw-medium">+24.892s</span>
-                      <i class="bi bi-chevron-right ps-2 text-danger"></i>
-                    </div>
-                  </li>
-                  <li class="list-group-item list-group-standings-item rounded">
-                    <span class="standings-position">5</span>
-                    <div class="list-group-standings-divider-ferrari ms-1 me-1"></div>
-                    <span class="driver-name">George <span class="fw-bold text-uppercase">Russel</span> <span
-                        class="team-name">Mercedes</span></span>
-                    <div class="d-flex align-items-center float-end">
-                      <span class="badge badge-points rounded-pill fw-medium">+35.888s</span>
-                      <i class="bi bi-chevron-right ps-2 text-danger"></i>
-                    </div>
-                  </li>
-                 
-                </ul>
-                <span class="d-flex justify-content-center align-items-center">
-                  <a class="btn btn-danger m-5" href="teams.html" role="button">View Race Results <i
-                      class="bi bi-arrow-right-circle"></i></a>
-                </span>
-              </div>
-            </div>
-          </div>
-          <!-- End - Pill Nav Content -->
-        </div>
-        <!-- End Drivers Constructors Nav -->
-      </div>
-    </div>
-  </section>
+		<!-- featured elements -->
+		<section class="container py-5 my-5">
+			<div
+				class="border border-10 border-black border-start-0 rounded-4 rounded-start-0 p-4"
+			>
+				<h2 class="fw-bold mb-4">Featured Races</h2>
+				<div class="row g-4">
+					<!-- Left Column with Video Card -->
+					<div class="col-12 col-lg-4">
+						<div class="card h-100">
+							<video
+								src="assets/videos/raceseq.webm"
+								class="card-img-top rounded-top"
+								muted
+								autoplay
+								playsinline
+								loop
+							></video>
+							<div class="card-body">
+								<h5 class="card-title">Exciting Race Highlights</h5>
+								<p class="card-text">
+									Experience the thrill of the race with our exclusive video
+									footage.
+								</p>
+								<a href="#" class="btn btn-primary">Watch Now</a>
+							</div>
+						</div>
+					</div>
 
-  <!-- swiper -->
-  <div id="container-swiper" class="container-fluid">
-    <!-- Slider main container -->
-    <div class="swiper">
-      <!-- Additional required wrapper -->
-      <div class="swiper-wrapper m-2">
-        <!-- Slides -->
-        <div class="swiper-slide border-calendar-race" data-hash="slide1">
-          <div class="my-auto">
-            <img src="assets/img/flags/spain.png" class="img-fluid rounded-3 mb-3" style="height: 100px;width: 100px;" alt="">
-            <p class="animate__animated animate__slideInUp swiper-slide-title">Bahrain</p>
-            <div class="row">
-              <p class="calendar-race-date">18 MAR - 20 MAR 2022</p>
-            </div>
-            <div class="animate__animated animate__slideInDown practice-grid justify-content-center">
-              <div class="practice-column">
-                <div class="practice-item">
-                  <div class="row">
-                    <p class="calendar-race-information">Practice 1</p>
-                  </div>
-                  <div class="row calendar-race-time"><span>Mar 18</span></div>
-                </div>
-                <div class="practice-item">
-                  <div class="row">
-                    <p class="calendar-race-information">Practice 2</p>
-                  </div>
-                  <div class="row calendar-race-time"><span>Mar 18</span></div>
-                </div>
-                <div class="practice-item">
-                  <div class="row">
-                    <p class="calendar-race-information">Practice 3</p>
-                  </div>
-                  <div class="row calendar-race-time"><span>Mar 19</span></div>
-                </div>
-              </div>
-              <div class="practice-column">
-                <div class="practice-item">
-                  <div class="row">
-                    <p class="calendar-race-information">Qualifying</p>
-                  </div>
-                  <div class="row calendar-race-time"><span>Mar 19</span></div>
-                </div>
-                <div class="practice-item">
-                  <div class="row">
-                    <p class="calendar-race-information">Race</p>
-                  </div>
-                  <div class="row calendar-race-time"><span>Mar 20</span></div>
-                </div>
-              </div>
-            </div>
-            <a class="btn btn-outline-danger" href="#" role="button">View Results</a>
-          </div>
-        </div>
-        <div class="swiper-slide" data-hash="slide2">
-          <div class="my-auto">
-            <img src="assets/img/flags/spain.png" class="img-fluid rounded-3 mb-3" style="height: 100px;width: 100px;" alt="">
-            <p class="animate__animated animate__slideInUp swiper-slide-title">Australia</p>
-            <div class="row">
-              <p class="calendar-race-date">18 MAR - 20 MAR 2022</p>
-            </div>
-            <div class="animate__animated animate__slideInDown practice-grid justify-content-center">
-              <div class="practice-column">
-                <div class="practice-item">
-                  <div class="row">
-                    <p class="calendar-race-information">Practice 1</p>
-                  </div>
-                  <div class="row calendar-race-time"><span>Mar 18</span></div>
-                </div>
-                <div class="practice-item">
-                  <div class="row">
-                    <p class="calendar-race-information">Practice 2</p>
-                  </div>
-                  <div class="row calendar-race-time"><span>Mar 18</span></div>
-                </div>
-                <div class="practice-item">
-                  <div class="row">
-                    <p class="calendar-race-information">Practice 3</p>
-                  </div>
-                  <div class="row calendar-race-time"><span>Mar 19</span></div>
-                </div>
-              </div>
-              <div class="practice-column">
-                <div class="practice-item">
-                  <div class="row">
-                    <p class="calendar-race-information">Qualifying</p>
-                  </div>
-                  <div class="row calendar-race-time"><span>Mar 19</span></div>
-                </div>
-                <div class="practice-item">
-                  <div class="row">
-                    <p class="calendar-race-information">Race</p>
-                  </div>
-                  <div class="row calendar-race-time"><span>Mar 20</span></div>
-                </div>
-              </div>
-            </div>
-            <a class="btn btn-outline-danger" href="#" role="button">View Results</a>
-          </div>
-        </div>
-        <div class="swiper-slide" data-hash="slide3">
-          <div class="my-auto">
-            <img src="assets/img/flags/spain.png" class="img-fluid rounded-3 mb-3" style="height: 100px;width: 100px;" alt="">
-            <p class="swiper-slide-title">Formula 1 Gulf Air Bahrain Grand Prix 2022</p>
-            <div class="row">
-              <p class="calendar-race-date">18 MAR - 20 MAR 2022</p>
-            </div>
-            <div class="animate__animated animate__backInUp practice-grid justify-content-center">
-              <div class="practice-column">
-                <div class="practice-item">
-                  <div class="row">
-                    <p class="calendar-race-information">Practice 1</p>
-                  </div>
-                  <div class="row calendar-race-time"><span>Mar 18</span></div>
-                </div>
-                <div class="practice-item">
-                  <div class="row">
-                    <p class="calendar-race-information">Practice 2</p>
-                  </div>
-                  <div class="row calendar-race-time"><span>Mar 18</span></div>
-                </div>
-                <div class="practice-item">
-                  <div class="row">
-                    <p class="calendar-race-information">Practice 3</p>
-                  </div>
-                  <div class="row calendar-race-time"><span>Mar 19</span></div>
-                </div>
-              </div>
-              <div class="practice-column">
-                <div class="practice-item">
-                  <div class="row">
-                    <p class="calendar-race-information">Qualifying</p>
-                  </div>
-                  <div class="row calendar-race-time"><span>Mar 19</span></div>
-                </div>
-                <div class="practice-item">
-                  <div class="row">
-                    <p class="calendar-race-information">Race</p>
-                  </div>
-                  <div class="row calendar-race-time"><span>Mar 20</span></div>
-                </div>
-              </div>
-            </div>
-            <a class="btn btn-outline-danger" href="#" role="button">View Results</a>
-          </div>
-        </div>
-        <div class="swiper-slide" data-hash="slide4">
-          <div class="my-auto">
-            <img src="assets/img/flags/spain.png" class="img-fluid rounded-3 mb-3" style="height: 100px;width: 100px;" alt="">
-            <p class="swiper-slide-title">Formula 1 Gulf Air Bahrain Grand Prix 2022</p>
-            <div class="row">
-              <p class="calendar-race-date">18 MAR - 20 MAR 2022</p>
-            </div>
-            <div class="animate__animated animate__backInUp practice-grid justify-content-center">
-              <div class="practice-column">
-                <div class="practice-item">
-                  <div class="row">
-                    <p class="calendar-race-information">Practice 1</p>
-                  </div>
-                  <div class="row calendar-race-time"><span>Mar 18</span></div>
-                </div>
-                <div class="practice-item">
-                  <div class="row">
-                    <p class="calendar-race-information">Practice 2</p>
-                  </div>
-                  <div class="row calendar-race-time"><span>Mar 18</span></div>
-                </div>
-                <div class="practice-item">
-                  <div class="row">
-                    <p class="calendar-race-information">Practice 3</p>
-                  </div>
-                  <div class="row calendar-race-time"><span>Mar 19</span></div>
-                </div>
-              </div>
-              <div class="practice-column">
-                <div class="practice-item">
-                  <div class="row">
-                    <p class="calendar-race-information">Qualifying</p>
-                  </div>
-                  <div class="row calendar-race-time"><span>Mar 19</span></div>
-                </div>
-                <div class="practice-item">
-                  <div class="row">
-                    <p class="calendar-race-information">Race</p>
-                  </div>
-                  <div class="row calendar-race-time"><span>Mar 20</span></div>
-                </div>
-              </div>
-            </div>
-            <a class="btn btn-outline-danger" href="#" role="button">View Results</a>
-          </div>
-        </div>
-        <div class="swiper-slide" data-hash="slide5">
-          <div class="my-auto">
-            <img src="assets/img/flags/spain.png" class="img-fluid rounded-3 mb-3" style="height: 100px;width: 100px;" alt="">
-            <p class="swiper-slide-title">Formula 1 Gulf Air Bahrain Grand Prix 2022</p>
-            <div class="row">
-              <p class="calendar-race-date">18 MAR - 20 MAR 2022</p>
-            </div>
-            <div class="animate__animated animate__backInUp practice-grid justify-content-center">
-              <div class="practice-column">
-                <div class="practice-item">
-                  <div class="row">
-                    <p class="calendar-race-information">Practice 1</p>
-                  </div>
-                  <div class="row calendar-race-time"><span>Mar 18</span></div>
-                </div>
-                <div class="practice-item">
-                  <div class="row">
-                    <p class="calendar-race-information">Practice 2</p>
-                  </div>
-                  <div class="row calendar-race-time"><span>Mar 18</span></div>
-                </div>
-                <div class="practice-item">
-                  <div class="row">
-                    <p class="calendar-race-information">Practice 3</p>
-                  </div>
-                  <div class="row calendar-race-time"><span>Mar 19</span></div>
-                </div>
-              </div>
-              <div class="practice-column">
-                <div class="practice-item">
-                  <div class="row">
-                    <p class="calendar-race-information">Qualifying</p>
-                  </div>
-                  <div class="row calendar-race-time"><span>Mar 19</span></div>
-                </div>
-                <div class="practice-item">
-                  <div class="row">
-                    <p class="calendar-race-information">Race</p>
-                  </div>
-                  <div class="row calendar-race-time"><span>Mar 20</span></div>
-                </div>
-              </div>
-            </div>
-            <a class="btn btn-outline-danger" href="#" role="button">View Results</a>
-          </div>
-        </div>
-        <div class="swiper-slide" data-hash="slide6">
-          <div class="my-auto">
-            <img src="assets/img/flags/spain.png" class="img-fluid rounded-3 mb-3" style="height: 100px;width: 100px;" alt="">
-            <p class="swiper-slide-title">Formula 1 Gulf Air Bahrain Grand Prix 2022</p>
-            <div class="row">
-              <p class="calendar-race-date">18 MAR - 20 MAR 2022</p>
-            </div>
-            <div class="animate__animated animate__backInUp practice-grid justify-content-center">
-              <div class="practice-column">
-                <div class="practice-item">
-                  <div class="row">
-                    <p class="calendar-race-information">Practice 1</p>
-                  </div>
-                  <div class="row calendar-race-time"><span>Mar 18</span></div>
-                </div>
-                <div class="practice-item">
-                  <div class="row">
-                    <p class="calendar-race-information">Practice 2</p>
-                  </div>
-                  <div class="row calendar-race-time"><span>Mar 18</span></div>
-                </div>
-                <div class="practice-item">
-                  <div class="row">
-                    <p class="calendar-race-information">Practice 3</p>
-                  </div>
-                  <div class="row calendar-race-time"><span>Mar 19</span></div>
-                </div>
-              </div>
-              <div class="practice-column">
-                <div class="practice-item">
-                  <div class="row">
-                    <p class="calendar-race-information">Qualifying</p>
-                  </div>
-                  <div class="row calendar-race-time"><span>Mar 19</span></div>
-                </div>
-                <div class="practice-item">
-                  <div class="row">
-                    <p class="calendar-race-information">Race</p>
-                  </div>
-                  <div class="row calendar-race-time"><span>Mar 20</span></div>
-                </div>
-              </div>
-            </div>
-            <a class="btn btn-outline-danger" href="#" role="button">View Results</a>
-          </div>
-        </div>
-        <div class="swiper-slide" data-hash="slide7">
-          <div class="my-auto">
-            <img src="assets/img/flags/spain.png" class="img-fluid rounded-3 mb-3" style="height: 100px;width: 100px;" alt="">
-            <p class="swiper-slide-title">Formula 1 Gulf Air Bahrain Grand Prix 2022</p>
-            <div class="row">
-              <p class="calendar-race-date">18 MAR - 20 MAR 2022</p>
-            </div>
-            <div class="animate__animated animate__backInUp practice-grid justify-content-center">
-              <div class="practice-column">
-                <div class="practice-item">
-                  <div class="row">
-                    <p class="calendar-race-information">Practice 1</p>
-                  </div>
-                  <div class="row calendar-race-time"><span>Mar 18</span></div>
-                </div>
-                <div class="practice-item">
-                  <div class="row">
-                    <p class="calendar-race-information">Practice 2</p>
-                  </div>
-                  <div class="row calendar-race-time"><span>Mar 18</span></div>
-                </div>
-                <div class="practice-item">
-                  <div class="row">
-                    <p class="calendar-race-information">Practice 3</p>
-                  </div>
-                  <div class="row calendar-race-time"><span>Mar 19</span></div>
-                </div>
-              </div>
-              <div class="practice-column">
-                <div class="practice-item">
-                  <div class="row">
-                    <p class="calendar-race-information">Qualifying</p>
-                  </div>
-                  <div class="row calendar-race-time"><span>Mar 19</span></div>
-                </div>
-                <div class="practice-item">
-                  <div class="row">
-                    <p class="calendar-race-information">Race</p>
-                  </div>
-                  <div class="row calendar-race-time"><span>Mar 20</span></div>
-                </div>
-              </div>
-            </div>
-            <a class="btn btn-outline-danger" href="#" role="button">View Results</a>
-          </div>
-        </div>
-        <div class="swiper-slide" data-hash="slide8">
-          <div class="my-auto">
-            <img src="assets/img/flags/spain.png" class="img-fluid rounded-3 mb-3" style="height: 100px;width: 100px;" alt="">
-            <p class="swiper-slide-title">Formula 1 Gulf Air Bahrain Grand Prix 2022</p>
-            <div class="row">
-              <p class="calendar-race-date">18 MAR - 20 MAR 2022</p>
-            </div>
-            <div class="animate__animated animate__backInUp practice-grid justify-content-center">
-              <div class="practice-column">
-                <div class="practice-item">
-                  <div class="row">
-                    <p class="calendar-race-information">Practice 1</p>
-                  </div>
-                  <div class="row calendar-race-time"><span>Mar 18</span></div>
-                </div>
-                <div class="practice-item">
-                  <div class="row">
-                    <p class="calendar-race-information">Practice 2</p>
-                  </div>
-                  <div class="row calendar-race-time"><span>Mar 18</span></div>
-                </div>
-                <div class="practice-item">
-                  <div class="row">
-                    <p class="calendar-race-information">Practice 3</p>
-                  </div>
-                  <div class="row calendar-race-time"><span>Mar 19</span></div>
-                </div>
-              </div>
-              <div class="practice-column">
-                <div class="practice-item">
-                  <div class="row">
-                    <p class="calendar-race-information">Qualifying</p>
-                  </div>
-                  <div class="row calendar-race-time"><span>Mar 19</span></div>
-                </div>
-                <div class="practice-item">
-                  <div class="row">
-                    <p class="calendar-race-information">Race</p>
-                  </div>
-                  <div class="row calendar-race-time"><span>Mar 20</span></div>
-                </div>
-              </div>
-            </div>
-            <a class="btn btn-outline-danger" href="#" role="button">View Results</a>
-          </div>
-        </div>
-        <div class="swiper-slide" data-hash="slide9">
-          <div class="my-auto">
-            <img src="assets/img/flags/spain.png" class="img-fluid rounded-3 mb-3" style="height: 100px;width: 100px;" alt="">
-            <p class="swiper-slide-title">Formula 1 Gulf Air Bahrain Grand Prix 2022</p>
-            <div class="row">
-              <p class="calendar-race-date">18 MAR - 20 MAR 2022</p>
-            </div>
-            <div class="animate__animated animate__backInUp practice-grid justify-content-center">
-              <div class="practice-column">
-                <div class="practice-item">
-                  <div class="row">
-                    <p class="calendar-race-information">Practice 1</p>
-                  </div>
-                  <div class="row calendar-race-time"><span>Mar 18</span></div>
-                </div>
-                <div class="practice-item">
-                  <div class="row">
-                    <p class="calendar-race-information">Practice 2</p>
-                  </div>
-                  <div class="row calendar-race-time"><span>Mar 18</span></div>
-                </div>
-                <div class="practice-item">
-                  <div class="row">
-                    <p class="calendar-race-information">Practice 3</p>
-                  </div>
-                  <div class="row calendar-race-time"><span>Mar 19</span></div>
-                </div>
-              </div>
-              <div class="practice-column">
-                <div class="practice-item">
-                  <div class="row">
-                    <p class="calendar-race-information">Qualifying</p>
-                  </div>
-                  <div class="row calendar-race-time"><span>Mar 19</span></div>
-                </div>
-                <div class="practice-item">
-                  <div class="row">
-                    <p class="calendar-race-information">Race</p>
-                  </div>
-                  <div class="row calendar-race-time"><span>Mar 20</span></div>
-                </div>
-              </div>
-            </div>
-            <a class="btn btn-outline-danger" href="#" role="button">View Results</a>
-          </div>
-        </div>
-        <div class="swiper-slide" data-hash="slide10">
-          <div class="my-auto">
-            <img src="assets/img/flags/spain.png" class="img-fluid rounded-3 mb-3" style="height: 100px;width: 100px;" alt="">
-            <p class="swiper-slide-title">Formula 1 Gulf Air Bahrain Grand Prix 2022</p>
-            <div class="row">
-              <p class="calendar-race-date">18 MAR - 20 MAR 2022</p>
-            </div>
-            <div class="animate__animated animate__backInUp practice-grid justify-content-center">
-              <div class="practice-column">
-                <div class="practice-item">
-                  <div class="row">
-                    <p class="calendar-race-information">Practice 1</p>
-                  </div>
-                  <div class="row calendar-race-time"><span>Mar 18</span></div>
-                </div>
-                <div class="practice-item">
-                  <div class="row">
-                    <p class="calendar-race-information">Practice 2</p>
-                  </div>
-                  <div class="row calendar-race-time"><span>Mar 18</span></div>
-                </div>
-                <div class="practice-item">
-                  <div class="row">
-                    <p class="calendar-race-information">Practice 3</p>
-                  </div>
-                  <div class="row calendar-race-time"><span>Mar 19</span></div>
-                </div>
-              </div>
-              <div class="practice-column">
-                <div class="practice-item">
-                  <div class="row">
-                    <p class="calendar-race-information">Qualifying</p>
-                  </div>
-                  <div class="row calendar-race-time"><span>Mar 19</span></div>
-                </div>
-                <div class="practice-item">
-                  <div class="row">
-                    <p class="calendar-race-information">Race</p>
-                  </div>
-                  <div class="row calendar-race-time"><span>Mar 20</span></div>
-                </div>
-              </div>
-            </div>
-            <a class="btn btn-outline-danger" href="#" role="button">View Results</a>
-          </div>
-        </div>
-        <div class="swiper-slide" data-hash="slide11">
-          <div class="my-auto">
-            <img src="assets/img/flags/spain.png" class="img-fluid rounded-3 mb-3" style="height: 100px;width: 100px;" alt="">
-            <p class="swiper-slide-title">Formula 1 Gulf Air Bahrain Grand Prix 2022</p>
-            <div class="row">
-              <p class="calendar-race-date">18 MAR - 20 MAR 2022</p>
-            </div>
-            <div class="animate__animated animate__backInUp practice-grid justify-content-center">
-              <div class="practice-column">
-                <div class="practice-item">
-                  <div class="row">
-                    <p class="calendar-race-information">Practice 1</p>
-                  </div>
-                  <div class="row calendar-race-time"><span>Mar 18</span></div>
-                </div>
-                <div class="practice-item">
-                  <div class="row">
-                    <p class="calendar-race-information">Practice 2</p>
-                  </div>
-                  <div class="row calendar-race-time"><span>Mar 18</span></div>
-                </div>
-                <div class="practice-item">
-                  <div class="row">
-                    <p class="calendar-race-information">Practice 3</p>
-                  </div>
-                  <div class="row calendar-race-time"><span>Mar 19</span></div>
-                </div>
-              </div>
-              <div class="practice-column">
-                <div class="practice-item">
-                  <div class="row">
-                    <p class="calendar-race-information">Qualifying</p>
-                  </div>
-                  <div class="row calendar-race-time"><span>Mar 19</span></div>
-                </div>
-                <div class="practice-item">
-                  <div class="row">
-                    <p class="calendar-race-information">Race</p>
-                  </div>
-                  <div class="row calendar-race-time"><span>Mar 20</span></div>
-                </div>
-              </div>
-            </div>
-            <a class="btn btn-outline-danger" href="#" role="button">View Results</a>
-          </div>
-        </div>
-        <div class="swiper-slide" data-hash="slide12">
-          <div class="my-auto">
-            <img src="assets/img/flags/spain.png" class="img-fluid rounded-3 mb-3" style="height: 100px;width: 100px;" alt="">
-            <p class="swiper-slide-title">Formula 1 Gulf Air Bahrain Grand Prix 2022</p>
-            <div class="row">
-              <p class="calendar-race-date">18 MAR - 20 MAR 2022</p>
-            </div>
-            <div class="animate__animated animate__backInUp practice-grid justify-content-center">
-              <div class="practice-column">
-                <div class="practice-item">
-                  <div class="row">
-                    <p class="calendar-race-information">Practice 1</p>
-                  </div>
-                  <div class="row calendar-race-time"><span>Mar 18</span></div>
-                </div>
-                <div class="practice-item">
-                  <div class="row">
-                    <p class="calendar-race-information">Practice 2</p>
-                  </div>
-                  <div class="row calendar-race-time"><span>Mar 18</span></div>
-                </div>
-                <div class="practice-item">
-                  <div class="row">
-                    <p class="calendar-race-information">Practice 3</p>
-                  </div>
-                  <div class="row calendar-race-time"><span>Mar 19</span></div>
-                </div>
-              </div>
-              <div class="practice-column">
-                <div class="practice-item">
-                  <div class="row">
-                    <p class="calendar-race-information">Qualifying</p>
-                  </div>
-                  <div class="row calendar-race-time"><span>Mar 19</span></div>
-                </div>
-                <div class="practice-item">
-                  <div class="row">
-                    <p class="calendar-race-information">Race</p>
-                  </div>
-                  <div class="row calendar-race-time"><span>Mar 20</span></div>
-                </div>
-              </div>
-            </div>
-            <a class="btn btn-outline-danger" href="#" role="button">View Results</a>
-          </div>
-        </div>
-        <div class="swiper-slide" data-hash="slide13">
-          <div class="my-auto">
-            <img src="assets/img/flags/spain.png" class="img-fluid rounded-3 mb-3" style="height: 100px;width: 100px;" alt="">
-            <p class="swiper-slide-title">Formula 1 Gulf Air Bahrain Grand Prix 2022</p>
-            <div class="row">
-              <p class="calendar-race-date">18 MAR - 20 MAR 2022</p>
-            </div>
-            <div class="animate__animated animate__backInUp practice-grid justify-content-center">
-              <div class="practice-column">
-                <div class="practice-item">
-                  <div class="row">
-                    <p class="calendar-race-information">Practice 1</p>
-                  </div>
-                  <div class="row calendar-race-time"><span>Mar 18</span></div>
-                </div>
-                <div class="practice-item">
-                  <div class="row">
-                    <p class="calendar-race-information">Practice 2</p>
-                  </div>
-                  <div class="row calendar-race-time"><span>Mar 18</span></div>
-                </div>
-                <div class="practice-item">
-                  <div class="row">
-                    <p class="calendar-race-information">Practice 3</p>
-                  </div>
-                  <div class="row calendar-race-time"><span>Mar 19</span></div>
-                </div>
-              </div>
-              <div class="practice-column">
-                <div class="practice-item">
-                  <div class="row">
-                    <p class="calendar-race-information">Qualifying</p>
-                  </div>
-                  <div class="row calendar-race-time"><span>Mar 19</span></div>
-                </div>
-                <div class="practice-item">
-                  <div class="row">
-                    <p class="calendar-race-information">Race</p>
-                  </div>
-                  <div class="row calendar-race-time"><span>Mar 20</span></div>
-                </div>
-              </div>
-            </div>
-            <a class="btn btn-outline-danger" href="#" role="button">View Results</a>
-          </div>
-        </div>
-        <div class="swiper-slide" data-hash="slide14">
-          <div class="my-auto">
-            <img src="assets/img/flags/spain.png" class="img-fluid rounded-3 mb-3" style="height: 100px;width: 100px;" alt="">
-            <p class="swiper-slide-title">Formula 1 Gulf Air Bahrain Grand Prix 2022</p>
-            <div class="row">
-              <p class="calendar-race-date">18 MAR - 20 MAR 2022</p>
-            </div>
-            <div class="animate__animated animate__backInUp practice-grid justify-content-center">
-              <div class="practice-column">
-                <div class="practice-item">
-                  <div class="row">
-                    <p class="calendar-race-information">Practice 1</p>
-                  </div>
-                  <div class="row calendar-race-time"><span>Mar 18</span></div>
-                </div>
-                <div class="practice-item">
-                  <div class="row">
-                    <p class="calendar-race-information">Practice 2</p>
-                  </div>
-                  <div class="row calendar-race-time"><span>Mar 18</span></div>
-                </div>
-                <div class="practice-item">
-                  <div class="row">
-                    <p class="calendar-race-information">Practice 3</p>
-                  </div>
-                  <div class="row calendar-race-time"><span>Mar 19</span></div>
-                </div>
-              </div>
-              <div class="practice-column">
-                <div class="practice-item">
-                  <div class="row">
-                    <p class="calendar-race-information">Qualifying</p>
-                  </div>
-                  <div class="row calendar-race-time"><span>Mar 19</span></div>
-                </div>
-                <div class="practice-item">
-                  <div class="row">
-                    <p class="calendar-race-information">Race</p>
-                  </div>
-                  <div class="row calendar-race-time"><span>Mar 20</span></div>
-                </div>
-              </div>
-            </div>
-            <a class="btn btn-outline-danger" href="#" role="button">View Results</a>
-          </div>
-        </div>
-        <div class="swiper-slide" data-hash="slide15">
-          <div class="my-auto">
-            <img src="assets/img/flags/spain.png" class="img-fluid rounded-3 mb-3" style="height: 100px;width: 100px;" alt="">
-            <p class="swiper-slide-title">Formula 1 Gulf Air Bahrain Grand Prix 2022</p>
-            <div class="row">
-              <p class="calendar-race-date">18 MAR - 20 MAR 2022</p>
-            </div>
-            <div class="animate__animated animate__backInUp practice-grid justify-content-center">
-              <div class="practice-column">
-                <div class="practice-item">
-                  <div class="row">
-                    <p class="calendar-race-information">Practice 1</p>
-                  </div>
-                  <div class="row calendar-race-time"><span>Mar 18</span></div>
-                </div>
-                <div class="practice-item">
-                  <div class="row">
-                    <p class="calendar-race-information">Practice 2</p>
-                  </div>
-                  <div class="row calendar-race-time"><span>Mar 18</span></div>
-                </div>
-                <div class="practice-item">
-                  <div class="row">
-                    <p class="calendar-race-information">Practice 3</p>
-                  </div>
-                  <div class="row calendar-race-time"><span>Mar 19</span></div>
-                </div>
-              </div>
-              <div class="practice-column">
-                <div class="practice-item">
-                  <div class="row">
-                    <p class="calendar-race-information">Qualifying</p>
-                  </div>
-                  <div class="row calendar-race-time"><span>Mar 19</span></div>
-                </div>
-                <div class="practice-item">
-                  <div class="row">
-                    <p class="calendar-race-information">Race</p>
-                  </div>
-                  <div class="row calendar-race-time"><span>Mar 20</span></div>
-                </div>
-              </div>
-            </div>
-            <a class="btn btn-outline-danger" href="#" role="button">View Results</a>
-          </div>
-        </div>
-        <div class="swiper-slide" data-hash="slide16">
-          <div class="my-auto">
-            <img src="assets/img/flags/spain.png" class="img-fluid rounded-3 mb-3" style="height: 100px;width: 100px;" alt="">
-            <p class="swiper-slide-title">Formula 1 Gulf Air Bahrain Grand Prix 2022</p>
-            <div class="row">
-              <p class="calendar-race-date">18 MAR - 20 MAR 2022</p>
-            </div>
-            <div class="animate__animated animate__backInUp practice-grid justify-content-center">
-              <div class="practice-column">
-                <div class="practice-item">
-                  <div class="row">
-                    <p class="calendar-race-information">Practice 1</p>
-                  </div>
-                  <div class="row calendar-race-time"><span>Mar 18</span></div>
-                </div>
-                <div class="practice-item">
-                  <div class="row">
-                    <p class="calendar-race-information">Practice 2</p>
-                  </div>
-                  <div class="row calendar-race-time"><span>Mar 18</span></div>
-                </div>
-                <div class="practice-item">
-                  <div class="row">
-                    <p class="calendar-race-information">Practice 3</p>
-                  </div>
-                  <div class="row calendar-race-time"><span>Mar 19</span></div>
-                </div>
-              </div>
-              <div class="practice-column">
-                <div class="practice-item">
-                  <div class="row">
-                    <p class="calendar-race-information">Qualifying</p>
-                  </div>
-                  <div class="row calendar-race-time"><span>Mar 19</span></div>
-                </div>
-                <div class="practice-item">
-                  <div class="row">
-                    <p class="calendar-race-information">Race</p>
-                  </div>
-                  <div class="row calendar-race-time"><span>Mar 20</span></div>
-                </div>
-              </div>
-            </div>
-            <a class="btn btn-outline-danger" href="#" role="button">View Results</a>
-          </div>
-        </div>
-        <div class="swiper-slide" data-hash="slide17">
-          <div class="my-auto">
-            <img src="assets/img/flags/spain.png" class="img-fluid rounded-3 mb-3" style="height: 100px;width: 100px;" alt="">
-            <p class="swiper-slide-title">Formula 1 Gulf Air Bahrain Grand Prix 2022</p>
-            <div class="row">
-              <p class="calendar-race-date">18 MAR - 20 MAR 2022</p>
-            </div>
-            <div class="animate__animated animate__backInUp practice-grid justify-content-center">
-              <div class="practice-column">
-                <div class="practice-item">
-                  <div class="row">
-                    <p class="calendar-race-information">Practice 1</p>
-                  </div>
-                  <div class="row calendar-race-time"><span>Mar 18</span></div>
-                </div>
-                <div class="practice-item">
-                  <div class="row">
-                    <p class="calendar-race-information">Practice 2</p>
-                  </div>
-                  <div class="row calendar-race-time"><span>Mar 18</span></div>
-                </div>
-                <div class="practice-item">
-                  <div class="row">
-                    <p class="calendar-race-information">Practice 3</p>
-                  </div>
-                  <div class="row calendar-race-time"><span>Mar 19</span></div>
-                </div>
-              </div>
-              <div class="practice-column">
-                <div class="practice-item">
-                  <div class="row">
-                    <p class="calendar-race-information">Qualifying</p>
-                  </div>
-                  <div class="row calendar-race-time"><span>Mar 19</span></div>
-                </div>
-                <div class="practice-item">
-                  <div class="row">
-                    <p class="calendar-race-information">Race</p>
-                  </div>
-                  <div class="row calendar-race-time"><span>Mar 20</span></div>
-                </div>
-              </div>
-            </div>
-            <a class="btn btn-outline-danger" href="#" role="button">View Results</a>
-          </div>
-        </div>
-        <div class="swiper-slide" data-hash="slide18">
-          <div class="my-auto">
-            <img src="assets/img/flags/spain.png" class="img-fluid rounded-3 mb-3" style="height: 100px;width: 100px;" alt="">
-            <p class="swiper-slide-title">Formula 1 Gulf Air Bahrain Grand Prix 2022</p>
-            <div class="row">
-              <p class="calendar-race-date">18 MAR - 20 MAR 2022</p>
-            </div>
-            <div class="animate__animated animate__backInUp practice-grid justify-content-center">
-              <div class="practice-column">
-                <div class="practice-item">
-                  <div class="row">
-                    <p class="calendar-race-information">Practice 1</p>
-                  </div>
-                  <div class="row calendar-race-time"><span>Mar 18</span></div>
-                </div>
-                <div class="practice-item">
-                  <div class="row">
-                    <p class="calendar-race-information">Practice 2</p>
-                  </div>
-                  <div class="row calendar-race-time"><span>Mar 18</span></div>
-                </div>
-                <div class="practice-item">
-                  <div class="row">
-                    <p class="calendar-race-information">Practice 3</p>
-                  </div>
-                  <div class="row calendar-race-time"><span>Mar 19</span></div>
-                </div>
-              </div>
-              <div class="practice-column">
-                <div class="practice-item">
-                  <div class="row">
-                    <p class="calendar-race-information">Qualifying</p>
-                  </div>
-                  <div class="row calendar-race-time"><span>Mar 19</span></div>
-                </div>
-                <div class="practice-item">
-                  <div class="row">
-                    <p class="calendar-race-information">Race</p>
-                  </div>
-                  <div class="row calendar-race-time"><span>Mar 20</span></div>
-                </div>
-              </div>
-            </div>
-            <a class="btn btn-outline-danger" href="#" role="button">View Results</a>
-          </div>
-        </div>
-        <div class="swiper-slide" data-hash="slide19">
-          <div class="my-auto">
-            <img src="assets/img/flags/spain.png" class="img-fluid rounded-3 mb-3" style="height: 100px;width: 100px;" alt="">
-            <p class="swiper-slide-title">Formula 1 Gulf Air Bahrain Grand Prix 2022</p>
-            <div class="row">
-              <p class="calendar-race-date">18 MAR - 20 MAR 2022</p>
-            </div>
-            <div class="animate__animated animate__backInUp practice-grid justify-content-center">
-              <div class="practice-column">
-                <div class="practice-item">
-                  <div class="row">
-                    <p class="calendar-race-information">Practice 1</p>
-                  </div>
-                  <div class="row calendar-race-time"><span>Mar 18</span></div>
-                </div>
-                <div class="practice-item">
-                  <div class="row">
-                    <p class="calendar-race-information">Practice 2</p>
-                  </div>
-                  <div class="row calendar-race-time"><span>Mar 18</span></div>
-                </div>
-                <div class="practice-item">
-                  <div class="row">
-                    <p class="calendar-race-information">Practice 3</p>
-                  </div>
-                  <div class="row calendar-race-time"><span>Mar 19</span></div>
-                </div>
-              </div>
-              <div class="practice-column">
-                <div class="practice-item">
-                  <div class="row">
-                    <p class="calendar-race-information">Qualifying</p>
-                  </div>
-                  <div class="row calendar-race-time"><span>Mar 19</span></div>
-                </div>
-                <div class="practice-item">
-                  <div class="row">
-                    <p class="calendar-race-information">Race</p>
-                  </div>
-                  <div class="row calendar-race-time"><span>Mar 20</span></div>
-                </div>
-              </div>
-            </div>
-            <a class="btn btn-outline-danger" href="#" role="button">View Results</a>
-          </div>
-        </div>
-        <div class="swiper-slide" data-hash="slide20">
-          <div class="my-auto">
-            <img src="assets/img/flags/spain.png" class="img-fluid rounded-3 mb-3" style="height: 100px;width: 100px;" alt="">
-            <p class="swiper-slide-title">Formula 1 Gulf Air Bahrain Grand Prix 2022</p>
-            <div class="row">
-              <p class="calendar-race-date">18 MAR - 20 MAR 2022</p>
-            </div>
-            <div class="animate__animated animate__backInUp practice-grid justify-content-center">
-              <div class="practice-column">
-                <div class="practice-item">
-                  <div class="row">
-                    <p class="calendar-race-information">Practice 1</p>
-                  </div>
-                  <div class="row calendar-race-time"><span>Mar 18</span></div>
-                </div>
-                <div class="practice-item">
-                  <div class="row">
-                    <p class="calendar-race-information">Practice 2</p>
-                  </div>
-                  <div class="row calendar-race-time"><span>Mar 18</span></div>
-                </div>
-                <div class="practice-item">
-                  <div class="row">
-                    <p class="calendar-race-information">Practice 3</p>
-                  </div>
-                  <div class="row calendar-race-time"><span>Mar 19</span></div>
-                </div>
-              </div>
-              <div class="practice-column">
-                <div class="practice-item">
-                  <div class="row">
-                    <p class="calendar-race-information">Qualifying</p>
-                  </div>
-                  <div class="row calendar-race-time"><span>Mar 19</span></div>
-                </div>
-                <div class="practice-item">
-                  <div class="row">
-                    <p class="calendar-race-information">Race</p>
-                  </div>
-                  <div class="row calendar-race-time"><span>Mar 20</span></div>
-                </div>
-              </div>
-            </div>
-            <a class="btn btn-outline-danger" href="#" role="button">View Results</a>
-          </div>
-        </div>
-        <div class="swiper-slide" data-hash="slide21">
-          <div class="my-auto">
-            <img src="assets/img/flags/spain.png" class="img-fluid rounded-3 mb-3" style="height: 100px;width: 100px;" alt="">
-            <p class="swiper-slide-title">Formula 1 Gulf Air Bahrain Grand Prix 2022</p>
-            <div class="row">
-              <p class="calendar-race-date">18 MAR - 20 MAR 2022</p>
-            </div>
-            <div class="animate__animated animate__backInUp practice-grid justify-content-center">
-              <div class="practice-column">
-                <div class="practice-item">
-                  <div class="row">
-                    <p class="calendar-race-information">Practice 1</p>
-                  </div>
-                  <div class="row calendar-race-time"><span>Mar 18</span></div>
-                </div>
-                <div class="practice-item">
-                  <div class="row">
-                    <p class="calendar-race-information">Practice 2</p>
-                  </div>
-                  <div class="row calendar-race-time"><span>Mar 18</span></div>
-                </div>
-                <div class="practice-item">
-                  <div class="row">
-                    <p class="calendar-race-information">Practice 3</p>
-                  </div>
-                  <div class="row calendar-race-time"><span>Mar 19</span></div>
-                </div>
-              </div>
-              <div class="practice-column">
-                <div class="practice-item">
-                  <div class="row">
-                    <p class="calendar-race-information">Qualifying</p>
-                  </div>
-                  <div class="row calendar-race-time"><span>Mar 19</span></div>
-                </div>
-                <div class="practice-item">
-                  <div class="row">
-                    <p class="calendar-race-information">Race</p>
-                  </div>
-                  <div class="row calendar-race-time"><span>Mar 20</span></div>
-                </div>
-              </div>
-            </div>
-            <a class="btn btn-outline-danger" href="#" role="button">View Results</a>
-          </div>
-        </div>
-        <div class="swiper-slide" data-hash="slide22">
-          <div class="my-auto">
-            <img src="assets/img/flags/spain.png" class="img-fluid rounded-3 mb-3" style="height: 100px;width: 100px;" alt="">
-            <p class="swiper-slide-title">Formula 1 Gulf Air Bahrain Grand Prix 2022</p>
-            <div class="row">
-              <p class="calendar-race-date">18 MAR - 20 MAR 2022</p>
-            </div>
-            <div class="animate__animated animate__backInUp practice-grid justify-content-center">
-              <div class="practice-column">
-                <div class="practice-item">
-                  <div class="row">
-                    <p class="calendar-race-information">Practice 1</p>
-                  </div>
-                  <div class="row calendar-race-time"><span>Mar 18</span></div>
-                </div>
-                <div class="practice-item">
-                  <div class="row">
-                    <p class="calendar-race-information">Practice 2</p>
-                  </div>
-                  <div class="row calendar-race-time"><span>Mar 18</span></div>
-                </div>
-                <div class="practice-item">
-                  <div class="row">
-                    <p class="calendar-race-information">Practice 3</p>
-                  </div>
-                  <div class="row calendar-race-time"><span>Mar 19</span></div>
-                </div>
-              </div>
-              <div class="practice-column">
-                <div class="practice-item">
-                  <div class="row">
-                    <p class="calendar-race-information">Qualifying</p>
-                  </div>
-                  <div class="row calendar-race-time"><span>Mar 19</span></div>
-                </div>
-                <div class="practice-item">
-                  <div class="row">
-                    <p class="calendar-race-information">Race</p>
-                  </div>
-                  <div class="row calendar-race-time"><span>Mar 20</span></div>
-                </div>
-              </div>
-            </div>
-            <a class="btn btn-outline-danger" href="#" role="button">View Results</a>
-          </div>
-        </div>
-      </div>
-      <!-- If we need scrollbar -->
-      <div class="swiper-scrollbar"></div>
-    </div>
-  </div>
+					<!-- Right Column with Multiple Cards -->
+					<div class="col-12 col-lg-8">
+						<div class="row g-4">
+							<!-- Image Card 1 -->
+							<div class="col-md-6">
+								<div class="card h-100">
+									<img
+										src="assets/img/section/racei1.png"
+										class="card-img-top rounded-top"
+										alt="Race Image 1"
+									/>
+									<div class="card-body">
+										<h5 class="card-title">Race Highlights</h5>
+										<p class="card-text">
+											Check out the amazing moments from this thrilling race.
+										</p>
+										<a href="#" class="link-primary">Learn More</a>
+									</div>
+								</div>
+							</div>
+							<!-- Image Card 2 -->
+							<div class="col-md-6">
+								<div class="card h-100">
+									<img
+										src="assets/img/section/racei1.png"
+										class="card-img-top rounded-top"
+										alt="Race Image 2"
+									/>
+									<div class="card-body">
+										<h5 class="card-title">Unforgettable Moments</h5>
+										<p class="card-text">
+											Relive the most iconic parts of this incredible race.
+										</p>
+										<a href="#" class="link-primary">Discover More</a>
+									</div>
+								</div>
+							</div>
+							<!-- Text Card 1 -->
+							<div class="col-md-6">
+								<div class="card h-100">
+									<div class="card-body">
+										<h5 class="card-title">Upcoming Events</h5>
+										<p class="card-text">
+											Stay updated on upcoming races and events. Don't miss out!
+										</p>
+										<a href="#" class="link-primary">See Schedule</a>
+									</div>
+								</div>
+							</div>
+							<!-- Text Card 2 -->
+							<div class="col-md-6">
+								<div class="card h-100">
+									<div class="card-body">
+										<h5 class="card-title">Join the Community</h5>
+										<p class="card-text">
+											Connect with fellow race enthusiasts and share your
+											passion.
+										</p>
+										<a href="#" class="link-primary">Join Now</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
 
-  <!-- Portfolio Grid-->
-  <div class="container-fluid bg-shaded p-5" id="portfolio">
-    <div class="container">
-      <div class="text-center">
-        <h2 class="text-black text-center" id="teams-heading">A Grid Filled With Competition</h2>
-        <h6 class="section-subheading pb-4">It's a season-long battle for first in the fight place in the prestigious
-          Drivers' and Constructors' Championships.</h6>
-      </div>
-      <div class="row">
-        <!-- Portfolio item 1 - Red Bull Racing-->
-        <div class="col-lg-4 col-sm-6 mb-4">
-          <div class="portfolio-item">
-            <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal1">
-              <div class="portfolio-hover">
-                <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
-              </div>
-              <!-- Portfolio item 1 - team logo -->
-              <img class="img-fluid" src="assets/img/teams/redbull/redbull1.png" alt="...">
-            </a>
-            <div class="portfolio-caption">
-              <div class="portfolio-caption-heading">Red Bull Racing</div>
-              <div class="portfolio-caption-subheading">
-                <span class="portfolio-caption-driver">Verstappen</span>
-                <span>|</span>
-                <span class="portfolio-caption-driver">Perez</span>
-              </div>
-            </div>
-          </div>
-        </div>
-        <!-- Portfolio item 2 - Ferrari-->
-        <div class="col-lg-4 col-sm-6 mb-4 mb-lg-0">
-          <div class="portfolio-item">
-            <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal4">
-              <div class="portfolio-hover">
-                <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
-              </div>
-              <img class="img-fluid" src="assets/img/teams/redbull/redbull1.png" alt="...">
-            </a>
-            <div class="portfolio-caption">
-              <div class="portfolio-caption-heading">Ferrari</div>
-              <div class="portfolio-caption-subheading">
-                <span class="portfolio-caption-custom">Leclerc</span>
-                <span>|</span>
-                <span class="portfolio-caption-custom">Sainz</span>
-              </div>
-            </div>
-          </div>
-        </div>
-        <!-- Portfolio item 3 - Mercedes -->
-        <div class="col-lg-4 col-sm-6 mb-4">
-          <div class="portfolio-item">
-            <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal3">
-              <div class="portfolio-hover green">
-                <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
-              </div>
-              <img class="img-fluid" src="assets/img/teams/redbull/redbull1.png" alt="...">
-            </a>
-            <div class="portfolio-caption">
-              <div class="portfolio-caption-heading">Mercedes</div>
-              <div class="portfolio-caption-subheading">
-                <span class="portfolio-caption-custom">Hamilton</span>
-                <span>|</span>
-                <span class="portfolio-caption-custom">Russell</span>
-              </div>
-            </div>
-          </div>
-        </div>
-        <!-- Portfolio item 4 Alpine -->
-        <div class="col-lg-4 col-sm-6 mb-4 mb-lg-0">
-          <div class="portfolio-item">
-            <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal6">
-              <div class="portfolio-hover">
-                <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
-              </div>
-              <img class="img-fluid" src="assets/img/teams/redbull/redbull1.png" alt="...">
-            </a>
-            <div class="portfolio-caption">
-              <div class="portfolio-caption-heading">Alpine</div>
-              <div class="portfolio-caption-subheading">
-                <span class="portfolio-caption-custom">Alonso</span>
-                <span>|</span>
-                <span class="portfolio-caption-custom">Ocon</span>
-              </div>
-            </div>
-          </div>
-        </div>
-        <!-- Portfolio item 5 - McLaren -->
-        <div class="col-lg-4 col-sm-6 mb-4 mb-sm-0">
-          <div class="portfolio-item">
-            <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal5">
-              <div class="portfolio-hover">
-                <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
-              </div>
-              <img class="img-fluid" src="assets/img/teams/redbull/redbull1.png" alt="...">
-            </a>
-            <div class="portfolio-caption">
-              <div class="portfolio-caption-heading">McLaren</div>
-              <div class="portfolio-caption-subheading">
-                <span class="portfolio-caption-custom">Ricciardo</span>
-                <span>|</span>
-                <span class="portfolio-caption-custom">Norris</span>
-              </div>
-            </div>
-          </div>
-        </div>
-        <!-- Portfolio item 6 - Alfa Romeo -->
-        <div class="col-lg-4 col-sm-6 mb-4 mb-sm-0">
-          <div class="portfolio-item">
-            <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal8">
-              <div class="portfolio-hover purple">
-                <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
-              </div>
-              <img class="img-fluid" src="assets/img/teams/redbull/redbull1.png" alt="...">
-            </a>
-            <div class="portfolio-caption">
-              <div class="portfolio-caption-heading">Alfa Romeo</div>
-              <div class="portfolio-caption-subheading">
-                <span class="portfolio-caption-custom">Zhou</span>
-                <span>|</span>
-                <span class="portfolio-caption-custom">Bottas</span>
-              </div>
-            </div>
-          </div>
-        </div>
-        <!-- Portfolio item 7 - Aston Martin-->
-        <div class="col-lg-4 col-sm-6 mb-4">
-          <div class="portfolio-item">
-            <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal2">
-              <div class="portfolio-hover blue">
-                <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
-              </div>
-              <img class="img-fluid" src="assets/img/teams/redbull/redbull1.png" alt="...">
-            </a>
-            <div class="portfolio-caption">
-              <div class="portfolio-caption-heading">Aston Martin</div>
-              <div class="portfolio-caption-subheading">
-                <span class="portfolio-caption-custom">Vettel</span>
-                <span>|</span>
-                <span class="portfolio-caption-custom">Stroll</span>
-              </div>
-            </div>
-          </div>
-        </div>
-        <!-- Portfolio item 8 - Haas -->
-        <div class="col-lg-4 col-sm-6 mb-4 mb-lg-0">
-          <div class="portfolio-item">
-            <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal7">
-              <div class="portfolio-hover yellow">
-                <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
-              </div>
-              <img class="img-fluid" src="assets/img/teams/redbull/redbull1.png" alt="...">
-            </a>
-            <div class="portfolio-caption">
-              <div class="portfolio-caption-heading">Haas</div>
-              <div class="portfolio-caption-subheading">
-                <span class="portfolio-caption-custom">Magnussen</span>
-                <span>|</span>
-                <span class="portfolio-caption-custom">Schumacher</span>
-              </div>
-            </div>
-          </div>
-        </div>
-        <!-- Portfolio item 9 - AlphaTauri -->
-        <div class="col-lg-4 col-sm-6 mb-4 mb-sm-0">
-          <div class="portfolio-item">
-            <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal9">
-              <div class="portfolio-hover orange">
-                <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
-              </div>
-              <img class="img-fluid" src="assets/img/teams/redbull/redbull1.png" alt="...">
-            </a>
-            <div class="portfolio-caption">
-              <div class="portfolio-caption-heading">AlphaTauri</div>
-              <div class="portfolio-caption-subheading">
-                <span class="portfolio-caption-custom">Gasly</span>
-                <span>|</span>
-                <span class="portfolio-caption-custom">Tsunoda</span>
-              </div>
-            </div>
-          </div>
-        </div>
-        <!-- Portfolio item 10 - Williams -->
-        <div class="col-lg-4 col-sm-6 mb-4 mb-sm-0">
-          <div class="portfolio-item ">
-            <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal10">
-              <div class="portfolio-item">
-                <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
-              </div>
-              <img class="img-fluid" src="assets/img/teams/redbull/redbull1.png" alt="...">
-            </a>
-            <div class="portfolio-caption">
-              <div class="portfolio-caption-heading">Williams</div>
-              <div class="portfolio-caption-subheading">
-                <span class="portfolio-caption-custom">Latifi</span>
-                <span>|</span>
-                <span class="portfolio-caption-custom">Albon</span>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
+		<!-- features grid -->
+		<section class="container py-5 my-5">
+			<div class="container px-4">
+				<h2 class="fw-bold pb-2 border-dark-subtle border-bottom">
+					What Trackside is About
+				</h2>
 
-  <!-- read more news -->
-  <div class="container mt-5 mb-5 border-open-bottom">
-    <div class="row pt-3 pe-2">
-      <h2 class="mb-4">Read More</h2>
-      <div class="col-lg-4 mx-auto my-auto">
-        <div class="card card-article1">
-          <div class="card-body">
-            <div class="card-title">Culpa ipsum ea nulla proident esse do duis labore</div>
-            <p class="card-text opacity-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam nec urna vel
-              tortor commodo pharetra eget ac orci.</p>
-            <button button type="button" class="btn btn-link">Read More</button>
-          </div>
-        </div>
-      </div>
-      <div class="col-lg-4">
-        <div class="card card-article2">
-          <div class="card-body">
-            <div class="card-title">Culpa ipsum ea nulla proident esse do duis labore</div>
-            <p class="card-text opacity-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam nec urna vel
-              tortor commodo pharetra eget ac orci.</p>
-            <button button type="button" class="btn btn-link">Read More</button>
-          </div>
-        </div>
-      </div>
-      <div class="col-lg-4">
-        <div class="card card-article3">
-          <div class="card-body">
-            <div class="card-title">Culpa ipsum ea nulla proident esse do duis labore</div>
-            <p class="card-text opacity-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam nec urna vel
-              tortor commodo pharetra eget ac orci.</p>
-            <button button type="button" class="btn btn-link">Read More</button>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
+				<div class="row row-cols-1 row-cols-sm-2 g-4 py-5">
+					<div class="col d-flex align-items-start">
+						<div
+							class="icon-square d-inline-flex align-items-center justify-content-center fs-4 flex-shrink-0 me-3"
+						>
+							<svg
+								xmlns="http://www.w3.org/2000/svg"
+								width="1em"
+								height="1em"
+								fill="currentColor"
+								class="bi bi-asterisk"
+								viewBox="0 0 16 16"
+							>
+								<path
+									d="M8 0a1 1 0 0 1 1 1v5.268l4.562-2.634a1 1 0 1 1 1 1.732L10 8l4.562 2.634a1 1 0 1 1-1 1.732L9 9.732V15a1 1 0 1 1-2 0V9.732l-4.562 2.634a1 1 0 1 1-1-1.732L6 8 1.438 5.366a1 1 0 0 1 1-1.732L7 6.268V1a1 1 0 0 1 1-1"
+								/>
+							</svg>
+						</div>
+						<div>
+							<h3 class="fw-bold mb-0 fs-4 text-body-emphasis">
+								Driver Profiles
+							</h3>
+							<p>
+								Explore in-depth profiles of the drivers competing in the
+								FORMULA 1™ championship.
+							</p>
+						</div>
+					</div>
+					<div class="col d-flex align-items-start">
+						<div
+							class="icon-square d-inline-flex align-items-center justify-content-center fs-4 flex-shrink-0 me-3"
+						>
+							<svg
+								xmlns="http://www.w3.org/2000/svg"
+								width="1em"
+								height="1em"
+								fill="currentColor"
+								class="bi bi-asterisk"
+								viewBox="0 0 16 16"
+							>
+								<path
+									d="M8 0a1 1 0 0 1 1 1v5.268l4.562-2.634a1 1 0 1 1 1 1.732L10 8l4.562 2.634a1 1 0 1 1-1 1.732L9 9.732V15a1 1 0 1 1-2 0V9.732l-4.562 2.634a1 1 0 1 1-1-1.732L6 8 1.438 5.366a1 1 0 0 1 1-1.732L7 6.268V1a1 1 0 0 1 1-1"
+								/>
+							</svg>
+						</div>
+						<div>
+							<h3 class="fw-bold mb-0 fs-4 text-body-emphasis">
+								Constructor Profiles
+							</h3>
+							<p>
+								Discover the constructors shaping the FORMULA 1™ grid in the
+								recent seasons.
+							</p>
+						</div>
+					</div>
+					<div class="col d-flex align-items-start">
+						<div
+							class="icon-square d-inline-flex align-items-center justify-content-center fs-4 flex-shrink-0 me-3"
+						>
+							<svg
+								xmlns="http://www.w3.org/2000/svg"
+								width="1em"
+								height="1em"
+								fill="currentColor"
+								class="bi bi-asterisk"
+								viewBox="0 0 16 16"
+							>
+								<path
+									d="M8 0a1 1 0 0 1 1 1v5.268l4.562-2.634a1 1 0 1 1 1 1.732L10 8l4.562 2.634a1 1 0 1 1-1 1.732L9 9.732V15a1 1 0 1 1-2 0V9.732l-4.562 2.634a1 1 0 1 1-1-1.732L6 8 1.438 5.366a1 1 0 0 1 1-1.732L7 6.268V1a1 1 0 0 1 1-1"
+								/>
+							</svg>
+						</div>
+						<div>
+							<h3 class="fw-bold mb-0 fs-4 text-body-emphasis">
+								Championship Standings
+							</h3>
+							<p>
+								Follow the latest driver and constructor standings as the
+								FORMULA 1™ season unfolds.
+							</p>
+						</div>
+					</div>
+					<div class="col d-flex align-items-start">
+						<div
+							class="icon-square d-inline-flex align-items-center justify-content-center fs-4 flex-shrink-0 me-3"
+						>
+							<svg
+								xmlns="http://www.w3.org/2000/svg"
+								width="1em"
+								height="1em"
+								fill="currentColor"
+								class="bi bi-asterisk"
+								viewBox="0 0 16 16"
+							>
+								<path
+									d="M8 0a1 1 0 0 1 1 1v5.268l4.562-2.634a1 1 0 1 1 1 1.732L10 8l4.562 2.634a1 1 0 1 1-1 1.732L9 9.732V15a1 1 0 1 1-2 0V9.732l-4.562 2.634a1 1 0 1 1-1-1.732L6 8 1.438 5.366a1 1 0 0 1 1-1.732L7 6.268V1a1 1 0 0 1 1-1"
+								/>
+							</svg>
+						</div>
+						<div>
+							<h3 class="fw-bold mb-0 fs-4 text-body-emphasis">
+								Race Highlights
+							</h3>
+							<p>
+								Relive key moments and pivotal decisions from recent FORMULA 1™
+								races.
+							</p>
+						</div>
+					</div>
+					<div class="col d-flex align-items-start">
+						<div
+							class="icon-square d-inline-flex align-items-center justify-content-center fs-4 flex-shrink-0 me-3"
+						>
+							<svg
+								xmlns="http://www.w3.org/2000/svg"
+								width="1em"
+								height="1em"
+								fill="currentColor"
+								class="bi bi-asterisk"
+								viewBox="0 0 16 16"
+							>
+								<path
+									d="M8 0a1 1 0 0 1 1 1v5.268l4.562-2.634a1 1 0 1 1 1 1.732L10 8l4.562 2.634a1 1 0 1 1-1 1.732L9 9.732V15a1 1 0 1 1-2 0V9.732l-4.562 2.634a1 1 0 1 1-1-1.732L6 8 1.438 5.366a1 1 0 0 1 1-1.732L7 6.268V1a1 1 0 0 1 1-1"
+								/>
+							</svg>
+						</div>
+						<div>
+							<h3 class="fw-bold mb-0 fs-4 text-body-emphasis">
+								Season breakdowns
+							</h3>
+							<p>
+								Analyze team and driver performances across the FORMULA 1™
+								season with insights and reviews.
+							</p>
+						</div>
+					</div>
+					<div class="col d-flex align-items-start">
+						<div
+							class="icon-square d-inline-flex align-items-center justify-content-center fs-4 flex-shrink-0 me-3"
+						>
+							<svg
+								xmlns="http://www.w3.org/2000/svg"
+								width="1em"
+								height="1em"
+								fill="currentColor"
+								class="bi bi-asterisk"
+								viewBox="0 0 16 16"
+							>
+								<path
+									d="M8 0a1 1 0 0 1 1 1v5.268l4.562-2.634a1 1 0 1 1 1 1.732L10 8l4.562 2.634a1 1 0 1 1-1 1.732L9 9.732V15a1 1 0 1 1-2 0V9.732l-4.562 2.634a1 1 0 1 1-1-1.732L6 8 1.438 5.366a1 1 0 0 1 1-1.732L7 6.268V1a1 1 0 0 1 1-1"
+								/>
+							</svg>
+						</div>
+						<div>
+							<h3 class="fw-bold mb-0 fs-4 text-body-emphasis">
+								F1 technologies
+							</h3>
+							<p>
+								Trackside covers the cutting-edge technology driving Formula 1’s
+								rapid evolution.
+							</p>
+						</div>
+					</div>
+					<div class="col d-flex align-items-start">
+						<div
+							class="icon-square d-inline-flex align-items-center justify-content-center fs-4 flex-shrink-0 me-3"
+						>
+							<svg
+								xmlns="http://www.w3.org/2000/svg"
+								width="1em"
+								height="1em"
+								fill="currentColor"
+								class="bi bi-asterisk"
+								viewBox="0 0 16 16"
+							>
+								<path
+									d="M8 0a1 1 0 0 1 1 1v5.268l4.562-2.634a1 1 0 1 1 1 1.732L10 8l4.562 2.634a1 1 0 1 1-1 1.732L9 9.732V15a1 1 0 1 1-2 0V9.732l-4.562 2.634a1 1 0 1 1-1-1.732L6 8 1.438 5.366a1 1 0 0 1 1-1.732L7 6.268V1a1 1 0 0 1 1-1"
+								/>
+							</svg>
+						</div>
+						<div>
+							<h3 class="fw-bold mb-0 fs-4 text-body-emphasis">
+								Past season archive
+							</h3>
+							<p>
+								Travel through the rich history of F1 with a look at the 2023,
+								2024 and 2025 seasons.
+							</p>
+						</div>
+					</div>
+					<div class="col d-flex align-items-start">
+						<div
+							class="icon-square d-inline-flex align-items-center justify-content-center fs-4 flex-shrink-0 me-3"
+						>
+							<svg
+								xmlns="http://www.w3.org/2000/svg"
+								width="1em"
+								height="1em"
+								fill="currentColor"
+								class="bi bi-asterisk"
+								viewBox="0 0 16 16"
+							>
+								<path
+									d="M8 0a1 1 0 0 1 1 1v5.268l4.562-2.634a1 1 0 1 1 1 1.732L10 8l4.562 2.634a1 1 0 1 1-1 1.732L9 9.732V15a1 1 0 1 1-2 0V9.732l-4.562 2.634a1 1 0 1 1-1-1.732L6 8 1.438 5.366a1 1 0 0 1 1-1.732L7 6.268V1a1 1 0 0 1 1-1"
+								/>
+							</svg>
+						</div>
+						<div>
+							<h3 class="fw-bold mb-0 fs-4 text-body-emphasis">
+								Fan community
+							</h3>
+							<p>
+								Trackside celebrates the passion and excitement of Formula 1
+								culture.
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
 
-  <!-- site disclaimer -->
-  <div class="container-fluid cf-pinfo">
-    <div class="container p-2 text-center">
-      <div class="row">
-        <div class="col-lg-6">
-          <p class="my-sm-2 text-start">This is a fan made site. Trademarks are owned by their respective owners.</p>
-        </div>
-        <div class="col-lg-6 text-end">
-          <i class="bi bi-linkedin fs-4 p-2"></i>
-          <i class="bi bi-github fs-4 p-2"></i>
-          <i class="bi bi-twitter-x fs-4 p-2"></i>
-          <i class="bi bi-youtube fs-4 p-2"></i>
-          <i class="bi bi-behance fs-4 p-2"></i>
-        </div>
-      </div>
-    </div>
-  </div>
+		<!-- swiper -->
+		<div class="container-fluid container-swiper py-3">
+			<!-- Slider main container -->
+			<div class="swiper">
+				<!-- Additional required wrapper -->
+				<div class="swiper-wrapper m-2">
+					<!-- Slides -->
+					<div
+						class="swiper-slide d-flex flex-column align-items-center justify-content-center text-center"
+						data-hash="slide1"
+					>
+						<span class="fi fi-ae fis fs-1 mb-3"></span>
+						<h3 class="swiper-slide-title mb-2">
+							FORMULA 1 GULF AIR BAHRAIN GRAND PRIX 2024
+						</h3>
+						<p class="calendar-race-date mb-4">29 FEB - 02 MAR 2024</p>
+						<a class="btn btn-outline-danger" href="#" role="button">
+							View Results
+						</a>
+					</div>
+					<div
+						class="swiper-slide d-flex flex-column align-items-center justify-content-center text-center"
+						data-hash="slide2"
+					>
+						<span class="fi fi-sa fis fs-1 mb-3"></span>
+						<h3 class="swiper-slide-title mb-2">
+							FORMULA 1 STC SAUDI ARABIAN GRAND PRIX 2024
+						</h3>
+						<p class="calendar-race-date mb-4">7 - 9 MAR 2024</p>
+						<a class="btn btn-outline-danger" href="#" role="button">
+							View Results
+						</a>
+					</div>
+					<div
+						class="swiper-slide d-flex flex-column align-items-center justify-content-center text-center"
+						data-hash="slide3"
+					>
+						<span class="fi fi-au fis fs-1 mb-3"></span>
+						<h3 class="swiper-slide-title mb-2">
+							FORMULA 1 ROLEX AUSTRALIAN GRAND PRIX 2024
+						</h3>
+						<p class="calendar-race-date mb-4">22 - 24 MAR 2024</p>
+						<a class="btn btn-outline-danger" href="#" role="button">
+							View Results
+						</a>
+					</div>
+					<div
+						class="swiper-slide d-flex flex-column align-items-center justify-content-center text-center"
+						data-hash="slide4"
+					>
+						<span class="fi fi-jp fis fs-1 mb-3"></span>
+						<h3 class="swiper-slide-title mb-2">
+							FORMULA 1 MSC CRUISES JAPANESE GRAND PRIX 2024
+						</h3>
+						<p class="calendar-race-date mb-4">5 - 7 APR 2024</p>
+						<a class="btn btn-outline-danger" href="#" role="button">
+							View Results
+						</a>
+					</div>
+					<div
+						class="swiper-slide d-flex flex-column align-items-center justify-content-center text-center"
+						data-hash="slide5"
+					>
+						<span class="fi fi-cn fis fs-1 mb-3"></span>
+						<h3 class="swiper-slide-title mb-2">
+							FORMULA 1 LENOVO CHINESE GRAND PRIX 2024
+						</h3>
+						<p class="calendar-race-date mb-4">19 MAR - 21 APR 2024</p>
+						<a class="btn btn-outline-danger" href="#" role="button">
+							View Results
+						</a>
+					</div>
+					<div
+						class="swiper-slide d-flex flex-column align-items-center justify-content-center text-center"
+						data-hash="slide6"
+					>
+						<span class="fi fi-us fis fs-1 mb-3"></span>
+						<h3 class="swiper-slide-title mb-2">
+							FORMULA 1 CRYPTO.COM MIAMI GRAND PRIX 2024
+						</h3>
+						<p class="calendar-race-date mb-4">3 - 5 MAY 2024</p>
+						<a class="btn btn-outline-danger" href="#" role="button">
+							View Results
+						</a>
+					</div>
+					<div
+						class="swiper-slide d-flex flex-column align-items-center justify-content-center text-center"
+						data-hash="slide7"
+					>
+						<span class="fi fi-it fis fs-1 mb-3"></span>
+						<h3 class="swiper-slide-title mb-2">
+							FORMULA 1 MSC CRUISES GRAN PREMIO DEL MADE IN ITALY E
+							DELL'EMILIA-ROMAGNA 2024
+						</h3>
+						<p class="calendar-race-date mb-4">17 - 19 MAY 2024</p>
+						<a class="btn btn-outline-danger" href="#" role="button">
+							View Results
+						</a>
+					</div>
+					<div
+						class="swiper-slide d-flex flex-column align-items-center justify-content-center text-center"
+						data-hash="slide8"
+					>
+						<span class="fi fi-mc fis fs-1 mb-3"></span>
+						<h3 class="swiper-slide-title mb-2">
+							FORMULA 1 GRAND PRIX DE MONACO 2024
+						</h3>
+						<p class="calendar-race-date mb-4">24- 26 MAY 2024</p>
+						<a class="btn btn-outline-danger" href="#" role="button">
+							View Results
+						</a>
+					</div>
+					<div
+						class="swiper-slide d-flex flex-column align-items-center justify-content-center text-center"
+						data-hash="slide9"
+					>
+						<span class="fi fi-ca fis fs-1 mb-3"></span>
+						<h3 class="swiper-slide-title mb-2">
+							FORMULA 1 AWS GRAND PRIX DU CANADA 2024
+						</h3>
+						<p class="calendar-race-date mb-4">7 - 9 JUN 2024</p>
+						<a class="btn btn-outline-danger" href="#" role="button">
+							View Results
+						</a>
+					</div>
+					<div
+						class="swiper-slide d-flex flex-column align-items-center justify-content-center text-center"
+						data-hash="slide10"
+					>
+						<span class="fi fi-es fis fs-1 mb-3"></span>
+						<h3 class="swiper-slide-title mb-2">
+							FORMULA 1 ARAMCO GRAN PREMIO DE ESPAÑA 2024
+						</h3>
+						<p class="calendar-race-date mb-4">21 - 23 JUN 2023</p>
+						<a class="btn btn-outline-danger" href="#" role="button">
+							View Results
+						</a>
+					</div>
+					<div
+						class="swiper-slide d-flex flex-column align-items-center justify-content-center text-center"
+						data-hash="slide11"
+					>
+						<span class="fi fi-at fis fs-1 mb-3"></span>
+						<h3 class="swiper-slide-title mb-2">
+							FORMULA 1 QATAR AIRWAYS AUSTRIAN GRAND PRIX 2024
+						</h3>
+						<p class="calendar-race-date mb-4">28 - 30 JUN 2024</p>
+						<a class="btn btn-outline-danger" href="#" role="button">
+							View Results
+						</a>
+					</div>
+					<div
+						class="swiper-slide d-flex flex-column align-items-center justify-content-center text-center"
+						data-hash="slide12"
+					>
+						<span class="fi fi-gb fis fs-1 mb-3"></span>
+						<h3 class="swiper-slide-title mb-2">
+							FORMULA 1 QATAR AIRWAYS BRITISH GRAND PRIX 2024
+						</h3>
+						<p class="calendar-race-date mb-4">5 - 7 JUL 2024</p>
+						<a class="btn btn-outline-danger" href="#" role="button">
+							View Results
+						</a>
+					</div>
+					<div
+						class="swiper-slide d-flex flex-column align-items-center justify-content-center text-center"
+						data-hash="slide13"
+					>
+						<span class="fi fi-hu fis fs-1 mb-3"></span>
+						<h3 class="swiper-slide-title mb-2">
+							FORMULA 1 HUNGARIAN GRAND PRIX 2024
+						</h3>
+						<p class="calendar-race-date mb-4">19 - 21 JUL 2024</p>
+						<a class="btn btn-outline-danger" href="#" role="button">
+							View Results
+						</a>
+					</div>
+					<div
+						class="swiper-slide d-flex flex-column align-items-center justify-content-center text-center"
+						data-hash="slide14"
+					>
+						<span class="fi fi-be fis fs-1 mb-3"></span>
+						<h3 class="swiper-slide-title mb-2">
+							FORMULA 1 ROLEX BELGIAN GRAND PRIX 2024
+						</h3>
+						<p class="calendar-race-date mb-4">26 - 28 JUL 2024</p>
+						<a class="btn btn-outline-danger" href="#" role="button">
+							View Results
+						</a>
+					</div>
+					<div
+						class="swiper-slide d-flex flex-column align-items-center justify-content-center text-center"
+						data-hash="slide15"
+					>
+						<span class="fi fi-nl fis fs-1 mb-3"></span>
+						<h3 class="swiper-slide-title mb-2">
+							FORMULA 1 HEINEKEN DUTCH GRAND PRIX 2024
+						</h3>
+						<p class="calendar-race-date mb-4">23 - 25 AUG 2024</p>
+						<a class="btn btn-outline-danger" href="#" role="button">
+							View Results
+						</a>
+					</div>
+					<div
+						class="swiper-slide d-flex flex-column align-items-center justify-content-center text-center"
+						data-hash="slide16"
+					>
+						<span class="fi fi-it fis fs-1 mb-3"></span>
+						<h3 class="swiper-slide-title mb-2">
+							FORMULA 1 PIRELLI GRAN PREMIO D’ITALIA 2024
+						</h3>
+						<p class="calendar-race-date mb-4">30 AUG - 1 SEPT 2024</p>
+						<a class="btn btn-outline-danger" href="#" role="button">
+							View Results
+						</a>
+					</div>
+					<div
+						class="swiper-slide d-flex flex-column align-items-center justify-content-center text-center"
+						data-hash="slide17"
+					>
+						<span class="fi fi-az fis fs-1 mb-3"></span>
+						<h3 class="swiper-slide-title mb-2">
+							FORMULA 1 QATAR AIRWAYS AZERBAIJAN GRAND PRIX 2024
+						</h3>
+						<p class="calendar-race-date mb-4">13 - 15 SEPT 2024</p>
+						<a class="btn btn-outline-danger" href="#" role="button">
+							View Results
+						</a>
+					</div>
+					<div
+						class="swiper-slide d-flex flex-column align-items-center justify-content-center text-center"
+						data-hash="slide18"
+					>
+						<span class="fi fi-sg fis fs-1 mb-3"></span>
+						<h3 class="swiper-slide-title mb-2">
+							FORMULA 1 SINGAPORE AIRLINES SINGAPORE GRAND PRIX 2024
+						</h3>
+						<p class="calendar-race-date mb-4">20 - 22 SEPT 2024</p>
+						<a class="btn btn-outline-danger" href="#" role="button">
+							View Results
+						</a>
+					</div>
+					<div
+						class="swiper-slide d-flex flex-column align-items-center justify-content-center text-center"
+						data-hash="slide19"
+					>
+						<span class="fi fi-us fis fs-1 mb-3"></span>
+						<h3 class="swiper-slide-title mb-2">
+							FORMULA 1 PIRELLI UNITED STATES GRAND PRIX 2024
+						</h3>
+						<p class="calendar-race-date mb-4">18 - 20 OCT 2024</p>
+						<a class="btn btn-outline-danger" href="#" role="button">
+							View Results
+						</a>
+					</div>
+					<div
+						class="swiper-slide d-flex flex-column align-items-center justify-content-center text-center"
+						data-hash="slide20"
+					>
+						<span class="fi fi-mx fis fs-1 mb-3"></span>
+						<h3 class="swiper-slide-title mb-2">
+							FORMULA 1 GRAN PREMIO DE LA CIUDAD DE MÉXICO 2024
+						</h3>
+						<p class="calendar-race-date mb-4">25 - 27 OCT 2024</p>
+						<a class="btn btn-outline-danger" href="#" role="button">
+							View Results
+						</a>
+					</div>
+					<div
+						class="swiper-slide d-flex flex-column align-items-center justify-content-center text-center"
+						data-hash="slide21"
+					>
+						<span class="fi fi-br fis fs-1 mb-3"></span>
+						<h3 class="swiper-slide-title mb-2">
+							FORMULA 1 LENOVO GRANDE PRÊMIO DE SÃO PAULO 2024
+						</h3>
+						<p class="calendar-race-date mb-4">1 - 3 NOV 2024</p>
+						<a class="btn btn-outline-danger" href="#" role="button">
+							View Results
+						</a>
+					</div>
+					<div
+						class="swiper-slide d-flex flex-column align-items-center justify-content-center text-center"
+						data-hash="slide22"
+					>
+						<span class="fi fi-us fis fs-1 mb-3"></span>
+						<h3 class="swiper-slide-title mb-2">
+							FORMULA 1 HEINEKEN SILVER LAS VEGAS GRAND PRIX 2024
+						</h3>
+						<p class="calendar-race-date mb-4">21 - 23 NOV 2024</p>
+						<a class="btn btn-outline-danger" href="#" role="button">
+							View Results
+						</a>
+					</div>
+					<div
+						class="swiper-slide d-flex flex-column align-items-center justify-content-center text-center"
+						data-hash="slide22"
+					>
+						<span class="fi fi-qa fis fs-1 mb-3"></span>
+						<h3 class="swiper-slide-title mb-2">
+							FORMULA 1 QATAR AIRWAYS QATAR GRAND PRIX 2024
+						</h3>
+						<p class="calendar-race-date mb-4">29 NOV - 1 DEC 2024</p>
+						<a class="btn btn-outline-danger" href="#" role="button">
+							View Results
+						</a>
+					</div>
+					<div
+						class="swiper-slide d-flex flex-column align-items-center justify-content-center text-center"
+						data-hash="slide22"
+					>
+						<span class="fi fi-ae fis fs-1 mb-3"></span>
+						<h3 class="swiper-slide-title mb-2">
+							FORMULA 1 ETIHAD AIRWAYS ABU DHABI GRAND PRIX 2024
+						</h3>
+						<p class="calendar-race-date mb-4">6 - 8 DEC 2024</p>
+						<a class="btn btn-outline-danger" href="#" role="button">
+							View Results
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
 
-  <!-- footer -->
-  <footer>
-    <div class="container-fluid cf-footer">
-      <div class="container p-3">
-        <div class="row mt-4 p-3 border-open-top">
-          <div class="col-lg-6">
-            <ul class="list-group list-group-footer">
-              <li class="list-group-item list-item-footer">F1 Bootstrapped</li>
-              <li class="list-group-item list-item-footer">What Is F1</li>
-              <li class="list-group-item list-item-footer">Calendar</li>
-              <li class="list-group-item list-item-footer">Teams</li>
-              <li class="list-group-item list-item-footer">Drivers</li>
-            </ul>
-          </div>
-          <div class="col-lg-2">
-            <ul class="list-group list-group-footer">
-              <li class="list-group-item list-item-footer">F1</li>
-              <li class="list-group-item list-item-footer">What Is F1</li>
-              <li class="list-group-item list-item-footer">Calendar</li>
-              <li class="list-group-item list-item-footer">Teams</li>
-              <li class="list-group-item list-item-footer">Drivers</li>
-            </ul>
-          </div>
-          <div class="col-lg-2">
-            <ul class="list-group list-group-footer">
-              <li class="list-group-item list-item-footer">F1</li>
-              <li class="list-group-item list-item-footer">What Is F1</li>
-              <li class="list-group-item list-item-footer">Calendar</li>
-              <li class="list-group-item list-item-footer">Teams</li>
-              <li class="list-group-item list-item-footer">Drivers</li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </div>
-  </footer>
+		<!-- standings -->
+		<section class="container py-5">
+			<div class="row">
+				<h2 class="display-4 text-center fw-bold mt-5">
+					2024 Championship Standings
+				</h2>
+				<!-- Drivers, Constructors Nav -->
+				<div class="container container-drivernav" id="driver-nav">
+					<!-- standings nav -->
+					<div id="container-driver-nav" class="mb-3">
+						<ul
+							class="nav nav-pills justify-content-center pt-5"
+							id="pills-tab"
+							role="tablist"
+						>
+							<li class="nav-item" role="presentation">
+								<button
+									class="nav-link active"
+									id="pills-home-tab"
+									data-bs-toggle="pill"
+									data-bs-target="#pills-home"
+									type="button"
+									role="tab"
+									aria-controls="pills-home"
+									aria-selected="true"
+								>
+									Drivers
+								</button>
+							</li>
+							<li class="nav-link" role="presentation">
+								<span>|</span>
+							</li>
+							<li class="nav-item" role="presentation">
+								<button
+									class="nav-link"
+									id="pills-profile-tab"
+									data-bs-toggle="pill"
+									data-bs-target="#pills-profile"
+									type="button"
+									role="tab"
+									aria-controls="pills-profile"
+									aria-selected="false"
+								>
+									Constructors
+								</button>
+							</li>
+							<li class="nav-link" role="presentation">
+								<span>|</span>
+							</li>
+							<li class="nav-item" role="presentation">
+								<button
+									class="nav-link"
+									id="pills-race-tab"
+									data-bs-toggle="pill"
+									data-bs-target="#pills-last-race"
+									type="button"
+									role="tab"
+									aria-controls="pills-last-race"
+									aria-selected="false"
+								>
+									Last Race
+								</button>
+							</li>
+						</ul>
+					</div>
+					<!-- Pill Nav Content -->
+					<div class="tab-content" id="pills-tabContent">
+						<!-- Pill Nav Content Drivers -->
+						<div
+							class="tab-pane fade show active"
+							id="pills-home"
+							role="tabpanel"
+							aria-labelledby="pills-home-tab"
+							tabindex="0"
+						>
+							<div class="container">
+								<!-- Driver Standings Cards -->
+								<div class="row justify-content-md-center gap-3 mb-5">
+									<h3 class="text-center p-3 mb-4">Driver Standings</h3>
+									<div
+										class="d-none d-md-block col-md mt-md-4 card card-driver"
+									>
+										<span class="card-standings-position fw-bold fs-1 p-2"
+											>2</span
+										>
+										<img
+											src="assets/img/drivers/driver-norris-portrait-min.png"
+											class="card-img-top"
+											alt="..."
+										/>
+										<div class="card-body">
+											<h5 class="card-title">
+												Lando <span class="fw-bold">Norris</span>
+											</h5>
+										</div>
+									</div>
+									<div class="card card-driver col-md first-place">
+										<span class="card-standings-position fw-bold fs-1 p-2"
+											>1</span
+										>
+										<img
+											src="assets/img/drivers/driver-verstappen-portrait-min.png"
+											class="card-img-top"
+											alt="..."
+										/>
+										<div class="card-body">
+											<h5 class="card-title">
+												Max <span class="fw-bold">Verstappen</span>
+											</h5>
+										</div>
+									</div>
+									<div
+										class="d-none d-md-block col-md mt-md-4 card card-driver"
+									>
+										<span class="card-standings-position fw-bold fs-1 p-2"
+											>3</span
+										>
+										<img
+											src="assets/img/drivers/driver-leclerc-portrait-min.png"
+											class="card-img-top"
+											alt="..."
+										/>
+										<div class="card-body">
+											<h5 class="card-title">
+												Charles <span class="fw-bold">Leclerc</span>
+											</h5>
+										</div>
+									</div>
+								</div>
+								<!-- End Driver Standings Cards -->
+								<!-- Driver Standings list -->
+								<div class="row">
+									<ul class="list-group list-group-flush">
+										<li class="list-group-item list-group-standings-item">
+											<a
+												href="drivers/verstappen.html"
+												class="text-decoration-none stretched-link d-flex"
+											>
+												<span class="standings-position">1</span>
+												<div class="list-group-standings-divider ms-2 me-2">
+													<svg
+														xmlns="http://www.w3.org/2000/svg"
+														width="16"
+														height="16"
+														fill="#0000ff"
+														class="bi bi-square-fill"
+														viewBox="0 0 16 16"
+													>
+														<path
+															d="M0 2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2z"
+														/>
+													</svg>
+												</div>
+												<span class="driver-name"
+													>Max
+													<span class="fw-bold text-uppercase">Verstappen</span>
+													<span class="team-name"
+														>Red Bull Racing RBPT</span
+													></span
+												>
+												<div class="d-flex align-items-center ms-auto">
+													<span class="badge text-bg-danger rounded-pill"
+														>454 PTS</span
+													>
+													<i class="bi bi-chevron-right ps-2 text-danger"></i>
+												</div>
+											</a>
+										</li>
+										<li class="list-group-item list-group-standings-item">
+											<a
+												href="drivers/verstappen.html"
+												class="text-decoration-none stretched-link d-flex"
+											>
+												<span class="standings-position">2</span>
+												<div class="list-group-standings-divider ms-2 me-2">
+													<svg
+														xmlns="http://www.w3.org/2000/svg"
+														width="16"
+														height="16"
+														fill="#ffa500"
+														class="bi bi-square-fill"
+														viewBox="0 0 16 16"
+													>
+														<path
+															d="M0 2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2z"
+														/>
+													</svg>
+												</div>
+												<span class="driver-name"
+													>Lando
+													<span class="fw-bold text-uppercase">Norris</span>
+													<span class="team-name">McLaren</span></span
+												>
+												<div class="d-flex align-items-center ms-auto">
+													<span class="badge text-bg-secondary rounded-pill"
+														>374 PTS</span
+													>
+													<i class="bi bi-chevron-right ps-2 text-danger"></i>
+												</div>
+											</a>
+										</li>
+										<li class="list-group-item list-group-standings-item">
+											<a
+												href="drivers/verstappen.html"
+												class="text-decoration-none stretched-link d-flex"
+											>
+												<span class="standings-position">3</span>
+												<div class="list-group-standings-divider ms-2 me-2">
+													<svg
+														xmlns="http://www.w3.org/2000/svg"
+														width="16"
+														height="16"
+														fill="#f00"
+														class="bi bi-square-fill"
+														viewBox="0 0 16 16"
+													>
+														<path
+															d="M0 2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2z"
+														/>
+													</svg>
+												</div>
+												<span class="driver-name"
+													>Charles
+													<span class="fw-bold text-uppercase">Leclerc</span>
+													<span class="team-name">Ferrari</span></span
+												>
+												<div class="d-flex align-items-center ms-auto">
+													<span class="badge text-bg-secondary rounded-pill"
+														>356 PTS</span
+													>
+													<i class="bi bi-chevron-right ps-2 text-danger"></i>
+												</div>
+											</a>
+										</li>
+										<li class="list-group-item list-group-standings-item">
+											<a
+												href="drivers/verstappen.html"
+												class="text-decoration-none stretched-link d-flex"
+											>
+												<span class="standings-position">4</span>
+												<div class="list-group-standings-divider ms-2 me-2">
+													<svg
+														xmlns="http://www.w3.org/2000/svg"
+														width="16"
+														height="16"
+														fill="#ffa500"
+														class="bi bi-square-fill"
+														viewBox="0 0 16 16"
+													>
+														<path
+															d="M0 2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2z"
+														/>
+													</svg>
+												</div>
+												<span class="driver-name"
+													>Oscar
+													<span class="fw-bold text-uppercase">Piastri</span>
+													<span class="team-name">McLaren</span></span
+												>
+												<div class="d-flex align-items-center ms-auto">
+													<span class="badge text-bg-secondary rounded-pill"
+														>292 PTS</span
+													>
+													<i class="bi bi-chevron-right ps-2 text-danger"></i>
+												</div>
+											</a>
+										</li>
+										<li class="list-group-item list-group-standings-item">
+											<a
+												href="drivers/verstappen.html"
+												class="text-decoration-none stretched-link d-flex"
+											>
+												<span class="standings-position">5</span>
+												<div class="list-group-standings-divider ms-2 me-2">
+													<svg
+														xmlns="http://www.w3.org/2000/svg"
+														width="16"
+														height="16"
+														fill="#f00"
+														class="bi bi-square-fill"
+														viewBox="0 0 16 16"
+													>
+														<path
+															d="M0 2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2z"
+														/>
+													</svg>
+												</div>
+												<span class="driver-name"
+													>Carlos
+													<span class="fw-bold text-uppercase">Sainz</span>
+													<span class="team-name">Ferrari</span></span
+												>
+												<div class="d-flex align-items-center ms-auto">
+													<span class="badge text-bg-secondary rounded-pill"
+														>290 PTS</span
+													>
+													<i class="bi bi-chevron-right ps-2 text-danger"></i>
+												</div>
+											</a>
+										</li>
+										<li class="list-group-item list-group-standings-item">
+											<a
+												href="drivers/verstappen.html"
+												class="text-decoration-none stretched-link d-flex"
+											>
+												<span class="standings-position">6</span>
+												<div class="list-group-standings-divider ms-2 me-2">
+													<svg
+														xmlns="http://www.w3.org/2000/svg"
+														width="16"
+														height="16"
+														fill="#00ffff"
+														class="bi bi-square-fill"
+														viewBox="0 0 16 16"
+													>
+														<path
+															d="M0 2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2z"
+														/>
+													</svg>
+												</div>
+												<span class="driver-name"
+													>George
+													<span class="fw-bold text-uppercase">Russell</span>
+													<span class="team-name">Mercedes</span></span
+												>
+												<div class="d-flex align-items-center ms-auto">
+													<span class="badge text-bg-secondary rounded-pill"
+														>245 PTS</span
+													>
+													<i class="bi bi-chevron-right ps-2 text-danger"></i>
+												</div>
+											</a>
+										</li>
+										<li class="list-group-item list-group-standings-item">
+											<a
+												href="drivers/verstappen.html"
+												class="text-decoration-none stretched-link d-flex"
+											>
+												<span class="standings-position">7</span>
+												<div class="list-group-standings-divider ms-2 me-2">
+													<svg
+														xmlns="http://www.w3.org/2000/svg"
+														width="16"
+														height="16"
+														fill="#00ffff"
+														class="bi bi-square-fill"
+														viewBox="0 0 16 16"
+													>
+														<path
+															d="M0 2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2z"
+														/>
+													</svg>
+												</div>
+												<span class="driver-name"
+													>Lewis
+													<span class="fw-bold text-uppercase">Hamilton</span>
+													<span class="team-name">Mercedes</span></span
+												>
+												<div class="d-flex align-items-center ms-auto">
+													<span class="badge text-bg-secondary rounded-pill"
+														>223 PTS</span
+													>
+													<i class="bi bi-chevron-right ps-2 text-danger"></i>
+												</div>
+											</a>
+										</li>
+										<li class="list-group-item list-group-standings-item">
+											<a
+												href="drivers/verstappen.html"
+												class="text-decoration-none stretched-link d-flex"
+											>
+												<span class="standings-position">8</span>
+												<div class="list-group-standings-divider ms-2 me-2">
+													<svg
+														xmlns="http://www.w3.org/2000/svg"
+														width="16"
+														height="16"
+														fill="#0000ff"
+														class="bi bi-square-fill"
+														viewBox="0 0 16 16"
+													>
+														<path
+															d="M0 2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2z"
+														/>
+													</svg>
+												</div>
+												<span class="driver-name"
+													>Sergio
+													<span class="fw-bold text-uppercase">Perez</span>
+													<span class="team-name"
+														>Red Bull Racing RBPT</span
+													></span
+												>
+												<div class="d-flex align-items-center ms-auto">
+													<span class="badge text-bg-secondary rounded-pill"
+														>152 PTS</span
+													>
+													<i class="bi bi-chevron-right ps-2 text-danger"></i>
+												</div>
+											</a>
+										</li>
+										<li class="list-group-item list-group-standings-item">
+											<a
+												href="drivers/verstappen.html"
+												class="text-decoration-none stretched-link d-flex"
+											>
+												<span class="standings-position">9</span>
+												<div class="list-group-standings-divider ms-2 me-2">
+													<svg
+														xmlns="http://www.w3.org/2000/svg"
+														width="16"
+														height="16"
+														fill="#008000"
+														class="bi bi-square-fill"
+														viewBox="0 0 16 16"
+													>
+														<path
+															d="M0 2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2z"
+														/>
+													</svg>
+												</div>
+												<span class="driver-name"
+													>Alonso
+													<span class="fw-bold text-uppercase">Alonso</span>
+													<span class="team-name">Aston Martin</span></span
+												>
+												<div class="d-flex align-items-center ms-auto">
+													<span class="badge text-bg-secondary rounded-pill"
+														>70 PTS</span
+													>
+													<i class="bi bi-chevron-right ps-2 text-danger"></i>
+												</div>
+											</a>
+										</li>
+										<li class="list-group-item list-group-standings-item">
+											<a
+												href="drivers/verstappen.html"
+												class="text-decoration-none stretched-link d-flex"
+											>
+												<span class="standings-position">10</span>
+												<div class="list-group-standings-divider ms-2 me-2">
+													<svg
+														xmlns="http://www.w3.org/2000/svg"
+														width="16"
+														height="16"
+														fill="#ff47aa"
+														class="bi bi-square-fill"
+														viewBox="0 0 16 16"
+													>
+														<path
+															d="M0 2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2z"
+														/>
+													</svg>
+												</div>
+												<span class="driver-name"
+													>Pierre
+													<span class="fw-bold text-uppercase">Gasly</span>
+													<span class="team-name">Alpine</span></span
+												>
+												<div class="d-flex align-items-center ms-auto">
+													<span class="badge text-bg-secondary rounded-pill"
+														>42 PTS</span
+													>
+													<i class="bi bi-chevron-right ps-2 text-danger"></i>
+												</div>
+											</a>
+										</li>
+									</ul>
+								</div>
+								<!-- End Driver Standings list -->
+								<span class="d-flex justify-content-center align-items-center">
+									<a
+										class="btn btn-danger m-5"
+										href="racecalendar.html"
+										role="button"
+										>View Full Results <i class="bi bi-chevron-right"></i
+									></a>
+								</span>
+							</div>
+						</div>
+						<!-- Pill Nav Content Constructors -->
+						<div
+							class="tab-pane fade"
+							id="pills-profile"
+							role="tabpanel"
+							aria-labelledby="pills-profile-tab"
+							tabindex="1"
+						>
+							<div class="container">
+								<!-- Constructor Standings Cards -->
+								<div class="row justify-content-md-center gap-3 mb-5">
+									<h3 class="text-center p-3 mb-4">Driver Standings</h3>
+									<div
+										class="d-none d-md-block col-md mt-md-4 card card-driver"
+									>
+										<span class="card-standings-position fw-bold fs-1 p-2"
+											>2</span
+										>
+										<img
+											src="assets/img/cars/car-ferrari-side.png"
+											class="card-img-top"
+											alt="..."
+										/>
+										<div class="card-body">
+											<h5 class="card-title">Ferrari</h5>
+										</div>
+									</div>
+									<div class="card card-driver col-md first-place">
+										<span class="card-standings-position fw-bold fs-1 p-2"
+											>1</span
+										>
+										<img
+											src="assets/img/cars/car-mclaren-side.png"
+											class="card-img-top"
+											alt="..."
+										/>
+										<div class="card-body">
+											<h5 class="card-title">McLaren</h5>
+										</div>
+									</div>
+									<div
+										class="d-none d-md-block col-md mt-md-4 card card-driver"
+									>
+										<span class="card-standings-position fw-bold fs-1 p-2"
+											>3</span
+										>
+										<img
+											src="assets/img/cars/car-redbull-side.png"
+											class="card-img-top"
+											alt="..."
+										/>
+										<div class="card-body">
+											<h5 class="card-title">Red Bull Racing RBPT</h5>
+										</div>
+									</div>
+								</div>
+								<!-- End Constructor Standings Cards -->
+								<!-- Constructor Standings list -->
+								<div class="row">
+									<ul class="list-group list-group-flush">
+										<li class="list-group-item list-group-standings-item">
+											<a
+												href="drivers/verstappen.html"
+												class="text-decoration-none stretched-link d-flex"
+											>
+												<span class="standings-position">1</span>
+												<div class="list-group-standings-divider ms-2 me-2">
+													<svg
+														xmlns="http://www.w3.org/2000/svg"
+														width="16"
+														height="16"
+														fill="#ffa500"
+														class="bi bi-square-fill"
+														viewBox="0 0 16 16"
+													>
+														<path
+															d="M0 2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2z"
+														/>
+													</svg>
+												</div>
+												<span class="driver-name"
+													>McLaren
+													<span class="team-name">Norris / Piastri</span></span
+												>
+												<div class="d-flex align-items-center ms-auto">
+													<span class="badge text-bg-danger rounded-pill"
+														>666 PTS</span
+													>
+													<i class="bi bi-chevron-right ps-2 text-danger"></i>
+												</div>
+											</a>
+										</li>
+										<li class="list-group-item list-group-standings-item">
+											<a
+												href="drivers/verstappen.html"
+												class="text-decoration-none stretched-link d-flex"
+											>
+												<span class="standings-position">2</span>
+												<div class="list-group-standings-divider ms-2 me-2">
+													<svg
+														xmlns="http://www.w3.org/2000/svg"
+														width="16"
+														height="16"
+														fill="#f00"
+														class="bi bi-square-fill"
+														viewBox="0 0 16 16"
+													>
+														<path
+															d="M0 2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2z"
+														/>
+													</svg>
+												</div>
+												<span class="driver-name"
+													>Ferrari
+													<span class="team-name">Leclerc / Sainz</span></span
+												>
+												<div class="d-flex align-items-center ms-auto">
+													<span class="badge text-bg-secondary rounded-pill"
+														>652 PTS</span
+													>
+													<i class="bi bi-chevron-right ps-2 text-danger"></i>
+												</div>
+											</a>
+										</li>
+										<li class="list-group-item list-group-standings-item">
+											<a
+												href="drivers/verstappen.html"
+												class="text-decoration-none stretched-link d-flex"
+											>
+												<span class="standings-position">3</span>
+												<div class="list-group-standings-divider ms-2 me-2">
+													<svg
+														xmlns="http://www.w3.org/2000/svg"
+														width="16"
+														height="16"
+														fill="#0000ff"
+														class="bi bi-square-fill"
+														viewBox="0 0 16 16"
+													>
+														<path
+															d="M0 2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2z"
+														/>
+													</svg>
+												</div>
+												<span class="driver-name"
+													>Red Bull Racing RBPT
+													<span class="team-name"
+														>Verstappen / Perez</span
+													></span
+												>
+												<div class="d-flex align-items-center ms-auto">
+													<span class="badge text-bg-secondary rounded-pill"
+														>589 PTS</span
+													>
+													<i class="bi bi-chevron-right ps-2 text-danger"></i>
+												</div>
+											</a>
+										</li>
+										<li class="list-group-item list-group-standings-item">
+											<a
+												href="drivers/verstappen.html"
+												class="text-decoration-none stretched-link d-flex"
+											>
+												<span class="standings-position">4</span>
+												<div class="list-group-standings-divider ms-2 me-2">
+													<svg
+														xmlns="http://www.w3.org/2000/svg"
+														width="16"
+														height="16"
+														fill="#00ffff"
+														class="bi bi-square-fill"
+														viewBox="0 0 16 16"
+													>
+														<path
+															d="M0 2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2z"
+														/>
+													</svg>
+												</div>
+												<span class="driver-name"
+													>Merecedes
+													<span class="team-name"
+														>Hamilton / Russell</span
+													></span
+												>
+												<div class="d-flex align-items-center ms-auto">
+													<span class="badge text-bg-secondary rounded-pill"
+														>468 PTS</span
+													>
+													<i class="bi bi-chevron-right ps-2 text-danger"></i>
+												</div>
+											</a>
+										</li>
+										<li class="list-group-item list-group-standings-item">
+											<a
+												href="drivers/verstappen.html"
+												class="text-decoration-none stretched-link d-flex"
+											>
+												<span class="standings-position">5</span>
+												<div class="list-group-standings-divider ms-2 me-2">
+													<svg
+														xmlns="http://www.w3.org/2000/svg"
+														width="16"
+														height="16"
+														fill="#008000"
+														class="bi bi-square-fill"
+														viewBox="0 0 16 16"
+													>
+														<path
+															d="M0 2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2z"
+														/>
+													</svg>
+												</div>
+												<span class="driver-name"
+													>Aston Martin
+													<span class="team-name">Alonso / Stroll</span></span
+												>
+												<div class="d-flex align-items-center ms-auto">
+													<span class="badge text-bg-secondary rounded-pill"
+														>94 PTS</span
+													>
+													<i class="bi bi-chevron-right ps-2 text-danger"></i>
+												</div>
+											</a>
+										</li>
+										<li class="list-group-item list-group-standings-item">
+											<a
+												href="drivers/verstappen.html"
+												class="text-decoration-none stretched-link d-flex"
+											>
+												<span class="standings-position">6</span>
+												<div class="list-group-standings-divider ms-2 me-2">
+													<svg
+														xmlns="http://www.w3.org/2000/svg"
+														width="16"
+														height="16"
+														fill="#ff47aa"
+														class="bi bi-square-fill"
+														viewBox="0 0 16 16"
+													>
+														<path
+															d="M0 2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2z"
+														/>
+													</svg>
+												</div>
+												<span class="driver-name"
+													>Alpine
+													<span class="team-name">Gasly / Ocon</span></span
+												>
+												<div class="d-flex align-items-center ms-auto">
+													<span class="badge text-bg-secondary rounded-pill"
+														>65 PTS</span
+													>
+													<i class="bi bi-chevron-right ps-2 text-danger"></i>
+												</div>
+											</a>
+										</li>
+										<li class="list-group-item list-group-standings-item">
+											<a
+												href="drivers/verstappen.html"
+												class="text-decoration-none stretched-link d-flex"
+											>
+												<span class="standings-position">7</span>
+												<div class="list-group-standings-divider ms-2 me-2">
+													<svg
+														xmlns="http://www.w3.org/2000/svg"
+														width="16"
+														height="16"
+														fill="#c0c0c0"
+														class="bi bi-square-fill"
+														viewBox="0 0 16 16"
+													>
+														<path
+															d="M0 2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2z"
+														/>
+													</svg>
+												</div>
+												<span class="driver-name"
+													>Haas
+													<span class="team-name"
+														>Hulkenberg / Magnussen</span
+													></span
+												>
+												<div class="d-flex align-items-center ms-auto">
+													<span class="badge text-bg-secondary rounded-pill"
+														>58 PTS</span
+													>
+													<i class="bi bi-chevron-right ps-2 text-danger"></i>
+												</div>
+											</a>
+										</li>
+										<li class="list-group-item list-group-standings-item">
+											<a
+												href="drivers/verstappen.html"
+												class="text-decoration-none stretched-link d-flex"
+											>
+												<span class="standings-position">8</span>
+												<div class="list-group-standings-divider ms-2 me-2">
+													<svg
+														xmlns="http://www.w3.org/2000/svg"
+														width="16"
+														height="16"
+														fill="#0000ff"
+														class="bi bi-square-fill"
+														viewBox="0 0 16 16"
+													>
+														<path
+															d="M0 2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2z"
+														/>
+													</svg>
+												</div>
+												<span class="driver-name"
+													>RB Honda RBPT
+													<span class="team-name"
+														>Tsuonda / Ricciardo / Lawson</span
+													></span
+												>
+												<div class="d-flex align-items-center ms-auto">
+													<span class="badge text-bg-secondary rounded-pill"
+														>46 PTS</span
+													>
+													<i class="bi bi-chevron-right ps-2 text-danger"></i>
+												</div>
+											</a>
+										</li>
+										<li class="list-group-item list-group-standings-item">
+											<a
+												href="drivers/verstappen.html"
+												class="text-decoration-none stretched-link d-flex"
+											>
+												<span class="standings-position">9</span>
+												<div class="list-group-standings-divider ms-2 me-2">
+													<svg
+														xmlns="http://www.w3.org/2000/svg"
+														width="16"
+														height="16"
+														fill="#0000b3"
+														class="bi bi-square-fill"
+														viewBox="0 0 16 16"
+													>
+														<path
+															d="M0 2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2z"
+														/>
+													</svg>
+												</div>
+												<span class="driver-name"
+													>Williams
+													<span class="team-name"
+														>Albon / Sargeant / Colapinto</span
+													></span
+												>
+												<div class="d-flex align-items-center ms-auto">
+													<span class="badge text-bg-secondary rounded-pill"
+														>17 PTS</span
+													>
+													<i class="bi bi-chevron-right ps-2 text-danger"></i>
+												</div>
+											</a>
+										</li>
+										<li class="list-group-item list-group-standings-item">
+											<a
+												href="drivers/verstappen.html"
+												class="text-decoration-none stretched-link d-flex"
+											>
+												<span class="standings-position">10</span>
+												<div class="list-group-standings-divider ms-2 me-2">
+													<svg
+														xmlns="http://www.w3.org/2000/svg"
+														width="16"
+														height="16"
+														fill="#3fff00"
+														class="bi bi-square-fill"
+														viewBox="0 0 16 16"
+													>
+														<path
+															d="M0 2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2z"
+														/>
+													</svg>
+												</div>
+												<span class="driver-name"
+													>Kick Sauber
+													<span class="team-name">Bottas / Zhou</span></span
+												>
+												<div class="d-flex align-items-center ms-auto">
+													<span class="badge text-bg-secondary rounded-pill"
+														>4 PTS</span
+													>
+													<i class="bi bi-chevron-right ps-2 text-danger"></i>
+												</div>
+											</a>
+										</li>
+										<li class="list-group-item list-group-standings-item">
+											<a
+												href="drivers/verstappen.html"
+												class="text-decoration-none stretched-link d-flex"
+											>
+												<span class="standings-position">10</span>
+												<div class="list-group-standings-divider ms-2 me-2">
+													<svg
+														xmlns="http://www.w3.org/2000/svg"
+														width="16"
+														height="16"
+														fill="#3fff00"
+														class="bi bi-square-fill"
+														viewBox="0 0 16 16"
+													>
+														<path
+															d="M0 2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2z"
+														/>
+													</svg>
+												</div>
+												<span class="driver-name">Kick Sauber </span>
+												<div class="d-flex align-items-center ms-auto">
+													<span class="badge text-bg-secondary rounded-pill"
+														>4 PTS</span
+													>
+													<i class="bi bi-chevron-right ps-2 text-danger"></i>
+												</div>
+											</a>
+										</li>
+									</ul>
+								</div>
+								<!-- End Constructor Standings list -->
+								<span class="d-flex justify-content-center align-items-center">
+									<a
+										class="btn btn-danger m-5"
+										href="racecalendar.html"
+										role="button"
+										>View Full Results <i class="bi bi-chevron-right"></i
+									></a>
+								</span>
+							</div>
+						</div>
+						<!-- Pill Nav Content Last Race -->
+						<div
+							class="tab-pane fade"
+							id="pills-last-race"
+							role="tabpanel"
+							aria-labelledby="pills-race-tab"
+							tabindex="2"
+						>
+							<div class="container">
+								<div class="row text-bg-dark p-4 mb-5 gap-2 gap-lg-0">
+									<div>
+										<h2 class="fw-bold">Abu Dhabi Grand Prix 2024</h2>
+										<h5 class="small">
+											FORMULA 1 ETIHAD AIRWAYS ABU DHABI GRAND PRIX 2024
+										</h5>
+									</div>
+									<div class="col-12 col-lg-6 my-auto">
+										<img
+											src="assets/img/section/racei1.png"
+											class="img-fluid"
+											alt=""
+										/>
+									</div>
+									<div class="col-12 col-lg-6">
+										<h3>Dramatic Finale at Abu Dhabi Grand Prix 2024</h3>
+										<p>
+											In a nail-biting final lap, a controversial decision by
+											race officials led to Verstappen clinching the
+											championship, leaving fans and pundits divided over the
+											fairness of the outcome and sparking intense debates
+											within the F1 community.
+										</p>
+									</div>
+								</div>
+								<!-- Last Race Standings list -->
+								<div class="row">
+									<ul class="list-group list-group-flush">
+										<li class="list-group-item list-group-standings-item">
+											<a
+												href="drivers/verstappen.html"
+												class="text-decoration-none stretched-link d-flex"
+											>
+												<span class="standings-position">1</span>
+												<div class="list-group-standings-divider ms-2 me-2">
+													<svg
+														xmlns="http://www.w3.org/2000/svg"
+														width="16"
+														height="16"
+														fill="#ffa500"
+														class="bi bi-square-fill"
+														viewBox="0 0 16 16"
+													>
+														<path
+															d="M0 2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2z"
+														/>
+													</svg>
+												</div>
+												<span class="driver-name"
+													>Lando
+													<span class="fw-bold text-uppercase">Norris</span>
+													<span class="team-name">McLaren</span></span
+												>
+												<div class="d-flex align-items-center ms-auto">
+													<span class="badge text-bg-danger rounded-pill"
+														>1:26.99.291</span
+													>
+													<i class="bi bi-chevron-right ps-2 text-danger"></i>
+												</div>
+											</a>
+										</li>
+										<li class="list-group-item list-group-standings-item">
+											<a
+												href="drivers/verstappen.html"
+												class="text-decoration-none stretched-link d-flex"
+											>
+												<span class="standings-position">2</span>
+												<div class="list-group-standings-divider ms-2 me-2">
+													<svg
+														xmlns="http://www.w3.org/2000/svg"
+														width="16"
+														height="16"
+														fill="#f00"
+														class="bi bi-square-fill"
+														viewBox="0 0 16 16"
+													>
+														<path
+															d="M0 2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2z"
+														/>
+													</svg>
+												</div>
+												<span class="driver-name"
+													>Carlos
+													<span class="fw-bold text-uppercase">Sainz</span>
+													<span class="team-name">Ferrari</span></span
+												>
+												<div class="d-flex align-items-center ms-auto">
+													<span class="badge text-bg-secondary rounded-pill"
+														>+5.832s</span
+													>
+													<i class="bi bi-chevron-right ps-2 text-danger"></i>
+												</div>
+											</a>
+										</li>
+										<li class="list-group-item list-group-standings-item">
+											<a
+												href="drivers/verstappen.html"
+												class="text-decoration-none stretched-link d-flex"
+											>
+												<span class="standings-position">3</span>
+												<div class="list-group-standings-divider ms-2 me-2">
+													<svg
+														xmlns="http://www.w3.org/2000/svg"
+														width="16"
+														height="16"
+														fill="#f00"
+														class="bi bi-square-fill"
+														viewBox="0 0 16 16"
+													>
+														<path
+															d="M0 2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2z"
+														/>
+													</svg>
+												</div>
+												<span class="driver-name"
+													>Charles
+													<span class="fw-bold text-uppercase">Leclerc</span>
+													<span class="team-name">Ferrari</span></span
+												>
+												<div class="d-flex align-items-center ms-auto">
+													<span class="badge text-bg-secondary rounded-pill"
+														>+31.928s</span
+													>
+													<i class="bi bi-chevron-right ps-2 text-danger"></i>
+												</div>
+											</a>
+										</li>
+										<li class="list-group-item list-group-standings-item">
+											<a
+												href="drivers/verstappen.html"
+												class="text-decoration-none stretched-link d-flex"
+											>
+												<span class="standings-position">4</span>
+												<div class="list-group-standings-divider ms-2 me-2">
+													<svg
+														xmlns="http://www.w3.org/2000/svg"
+														width="16"
+														height="16"
+														fill="#00ffff"
+														class="bi bi-square-fill"
+														viewBox="0 0 16 16"
+													>
+														<path
+															d="M0 2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2z"
+														/>
+													</svg>
+												</div>
+												<span class="driver-name"
+													>Lewis
+													<span class="fw-bold text-uppercase">Hamilton</span>
+													<span class="team-name">Mercedes</span></span
+												>
+												<div class="d-flex align-items-center ms-auto">
+													<span class="badge text-bg-secondary rounded-pill"
+														>+36.481s</span
+													>
+													<i class="bi bi-chevron-right ps-2 text-danger"></i>
+												</div>
+											</a>
+										</li>
+										<li class="list-group-item list-group-standings-item">
+											<a
+												href="drivers/verstappen.html"
+												class="text-decoration-none stretched-link d-flex"
+											>
+												<span class="standings-position">5</span>
+												<div class="list-group-standings-divider ms-2 me-2">
+													<svg
+														xmlns="http://www.w3.org/2000/svg"
+														width="16"
+														height="16"
+														fill="#00ffff"
+														class="bi bi-square-fill"
+														viewBox="0 0 16 16"
+													>
+														<path
+															d="M0 2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2z"
+														/>
+													</svg>
+												</div>
+												<span class="driver-name"
+													>George
+													<span class="fw-bold text-uppercase">Russell</span>
+													<span class="team-name">Mercedes</span></span
+												>
+												<div class="d-flex align-items-center ms-auto">
+													<span class="badge text-bg-secondary rounded-pill"
+														>+37.538s</span
+													>
+													<i class="bi bi-chevron-right ps-2 text-danger"></i>
+												</div>
+											</a>
+										</li>
+									</ul>
+								</div>
+								<!-- End Last Race Standings list -->
+								<span class="d-flex justify-content-center align-items-center">
+									<a
+										class="btn btn-danger m-5"
+										href="racecalendar.html"
+										role="button"
+										>View Full Results <i class="bi bi-chevron-right"></i
+									></a>
+								</span>
+							</div>
+						</div>
+					</div>
+					<!-- End - Pill Nav Content -->
+				</div>
+				<!-- End Drivers Constructors Nav -->
+			</div>
+		</section>
 
-  <!-- Portfolio Red Bull modal popup-->
-  <div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" role="dialog" aria-hidden="true">
-    <div class="modal-dialog">
-      <div class="modal-content">
-        <div class="close-modal" data-bs-dismiss="modal"><img
-            src="https://cdn-icons-png.flaticon.com/128/5735/5735775.png" class="img-fluid p-3"
-            style="height: 64px;width: 64px;" alt="Close modal"></div>
-        <div class="container-fluid">
-          <div class="row justify-content-center">
-            <h2 class="text-uppercase">Red Bull Racing</h2>
-            <p class="item-intro">Lorem ipsum dolor sit amet consectetur.</p>
-            <div class="col-lg-12">
-              <div class="modal-body">
-                <!-- Project details-->
+		<!-- Portfolio Grid-->
+		<div class="container-fluid py-5 my-5">
+			<div class="container">
+				<div class="text-center">
+					<h2 class="fw-bold" id="teams-heading">
+						A Grid Filled With Competition
+					</h2>
+					<p class="section-subheading pb-4">
+						It's a season-long battle for first in the fight place in the
+						prestigious Drivers' and Constructors' Championships.
+					</p>
+				</div>
+				<div class="row">
+					<!-- Portfolio item 1 - Red Bull Racing-->
+					<div class="col-lg-4 col-sm-6 mb-4">
+						<div class="portfolio-item">
+							<a
+								class="portfolio-link"
+								data-bs-toggle="modal"
+								href="#portfolioModal1"
+							>
+								<div class="portfolio-hover">
+									<div class="portfolio-hover-content">
+										<i class="fas fa-plus fa-3x"></i>
+									</div>
+								</div>
+								<!-- Portfolio item 1 - team logo -->
+								<img
+									class="img-fluid"
+									src="assets/img/cars/car-redbull-side.png"
+									alt="..."
+								/>
+							</a>
+							<div class="portfolio-caption">
+								<div class="portfolio-caption-heading">Red Bull Racing</div>
+								<div class="portfolio-caption-subheading">
+									<span class="portfolio-caption-driver">Verstappen</span>
+									<span>|</span>
+									<span class="portfolio-caption-driver">Perez</span>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- Portfolio item 2 - Ferrari-->
+					<div class="col-lg-4 col-sm-6 mb-4 mb-lg-0">
+						<div class="portfolio-item">
+							<a
+								class="portfolio-link"
+								data-bs-toggle="modal"
+								href="#portfolioModal4"
+							>
+								<div class="portfolio-hover">
+									<div class="portfolio-hover-content">
+										<i class="fas fa-plus fa-3x"></i>
+									</div>
+								</div>
+								<img
+									class="img-fluid"
+									src="assets/img/cars/car-redbull-side.png"
+									alt="..."
+								/>
+							</a>
+							<div class="portfolio-caption">
+								<div class="portfolio-caption-heading">Ferrari</div>
+								<div class="portfolio-caption-subheading">
+									<span class="portfolio-caption-custom">Leclerc</span>
+									<span>|</span>
+									<span class="portfolio-caption-custom">Sainz</span>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- Portfolio item 3 - Mercedes -->
+					<div class="col-lg-4 col-sm-6 mb-4">
+						<div class="portfolio-item">
+							<a
+								class="portfolio-link"
+								data-bs-toggle="modal"
+								href="#portfolioModal3"
+							>
+								<div class="portfolio-hover green">
+									<div class="portfolio-hover-content">
+										<i class="fas fa-plus fa-3x"></i>
+									</div>
+								</div>
+								<img
+									class="img-fluid"
+									src="assets/img/cars/car-redbull-side.png"
+									alt="..."
+								/>
+							</a>
+							<div class="portfolio-caption">
+								<div class="portfolio-caption-heading">Mercedes</div>
+								<div class="portfolio-caption-subheading">
+									<span class="portfolio-caption-custom">Hamilton</span>
+									<span>|</span>
+									<span class="portfolio-caption-custom">Russell</span>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- Portfolio item 4 Alpine -->
+					<div class="col-lg-4 col-sm-6 mb-4 mb-lg-0">
+						<div class="portfolio-item">
+							<a
+								class="portfolio-link"
+								data-bs-toggle="modal"
+								href="#portfolioModal6"
+							>
+								<div class="portfolio-hover">
+									<div class="portfolio-hover-content">
+										<i class="fas fa-plus fa-3x"></i>
+									</div>
+								</div>
+								<img
+									class="img-fluid"
+									src="assets/img/cars/car-ferrari-side.png"
+									alt="..."
+								/>
+							</a>
+							<div class="portfolio-caption">
+								<div class="portfolio-caption-heading">Alpine</div>
+								<div class="portfolio-caption-subheading">
+									<span class="portfolio-caption-custom">Alonso</span>
+									<span>|</span>
+									<span class="portfolio-caption-custom">Ocon</span>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- Portfolio item 5 - McLaren -->
+					<div class="col-lg-4 col-sm-6 mb-4 mb-sm-0">
+						<div class="portfolio-item">
+							<a
+								class="portfolio-link"
+								data-bs-toggle="modal"
+								href="#portfolioModal5"
+							>
+								<div class="portfolio-hover">
+									<div class="portfolio-hover-content">
+										<i class="fas fa-plus fa-3x"></i>
+									</div>
+								</div>
+								<img
+									class="img-fluid"
+									src="assets/img/cars/car-ferrari-side.png"
+									alt="..."
+								/>
+							</a>
+							<div class="portfolio-caption">
+								<div class="portfolio-caption-heading">McLaren</div>
+								<div class="portfolio-caption-subheading">
+									<span class="portfolio-caption-custom">Ricciardo</span>
+									<span>|</span>
+									<span class="portfolio-caption-custom">Norris</span>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- Portfolio item 6 - Alfa Romeo -->
+					<div class="col-lg-4 col-sm-6 mb-4 mb-sm-0">
+						<div class="portfolio-item">
+							<a
+								class="portfolio-link"
+								data-bs-toggle="modal"
+								href="#portfolioModal8"
+							>
+								<div class="portfolio-hover purple">
+									<div class="portfolio-hover-content">
+										<i class="fas fa-plus fa-3x"></i>
+									</div>
+								</div>
+								<img
+									class="img-fluid"
+									src="assets/img/cars/car-ferrari-side.png"
+									alt="..."
+								/>
+							</a>
+							<div class="portfolio-caption">
+								<div class="portfolio-caption-heading">Alfa Romeo</div>
+								<div class="portfolio-caption-subheading">
+									<span class="portfolio-caption-custom">Zhou</span>
+									<span>|</span>
+									<span class="portfolio-caption-custom">Bottas</span>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- Portfolio item 7 - Aston Martin-->
+					<div class="col-lg-4 col-sm-6 mb-4">
+						<div class="portfolio-item">
+							<a
+								class="portfolio-link"
+								data-bs-toggle="modal"
+								href="#portfolioModal2"
+							>
+								<div class="portfolio-hover blue">
+									<div class="portfolio-hover-content">
+										<i class="fas fa-plus fa-3x"></i>
+									</div>
+								</div>
+								<img
+									class="img-fluid"
+									src="assets/img/cars/car-ferrari-side.png"
+									alt="..."
+								/>
+							</a>
+							<div class="portfolio-caption">
+								<div class="portfolio-caption-heading">Aston Martin</div>
+								<div class="portfolio-caption-subheading">
+									<span class="portfolio-caption-custom">Vettel</span>
+									<span>|</span>
+									<span class="portfolio-caption-custom">Stroll</span>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- Portfolio item 8 - Haas -->
+					<div class="col-lg-4 col-sm-6 mb-4 mb-lg-0">
+						<div class="portfolio-item">
+							<a
+								class="portfolio-link"
+								data-bs-toggle="modal"
+								href="#portfolioModal7"
+							>
+								<div class="portfolio-hover yellow">
+									<div class="portfolio-hover-content">
+										<i class="fas fa-plus fa-3x"></i>
+									</div>
+								</div>
+								<img
+									class="img-fluid"
+									src="assets/img/cars/car-ferrari-side.png"
+									alt="..."
+								/>
+							</a>
+							<div class="portfolio-caption">
+								<div class="portfolio-caption-heading">Haas</div>
+								<div class="portfolio-caption-subheading">
+									<span class="portfolio-caption-custom">Magnussen</span>
+									<span>|</span>
+									<span class="portfolio-caption-custom">Schumacher</span>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- Portfolio item 9 - AlphaTauri -->
+					<div class="col-lg-4 col-sm-6 mb-4 mb-sm-0">
+						<div class="portfolio-item">
+							<a
+								class="portfolio-link"
+								data-bs-toggle="modal"
+								href="#portfolioModal9"
+							>
+								<div class="portfolio-hover orange">
+									<div class="portfolio-hover-content">
+										<i class="fas fa-plus fa-3x"></i>
+									</div>
+								</div>
+								<img
+									class="img-fluid"
+									src="assets/img/cars/car-ferrari-side.png"
+									alt="..."
+								/>
+							</a>
+							<div class="portfolio-caption">
+								<div class="portfolio-caption-heading">AlphaTauri</div>
+								<div class="portfolio-caption-subheading">
+									<span class="portfolio-caption-custom">Gasly</span>
+									<span>|</span>
+									<span class="portfolio-caption-custom">Tsunoda</span>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- Portfolio item 10 - Williams -->
+					<div class="col-lg-4 col-sm-6 mb-4 mb-sm-0">
+						<div class="portfolio-item">
+							<a
+								class="portfolio-link"
+								data-bs-toggle="modal"
+								href="#portfolioModal10"
+							>
+								<div class="portfolio-item">
+									<div class="portfolio-hover-content">
+										<i class="fas fa-plus fa-3x"></i>
+									</div>
+								</div>
+								<img
+									class="img-fluid"
+									src="assets/img/cars/car-ferrari-side.png"
+									alt="..."
+								/>
+							</a>
+							<div class="portfolio-caption">
+								<div class="portfolio-caption-heading">Williams</div>
+								<div class="portfolio-caption-subheading">
+									<span class="portfolio-caption-custom">Latifi</span>
+									<span>|</span>
+									<span class="portfolio-caption-custom">Albon</span>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
 
-                <div class="container stats">
-                  <div class="container text-center">
-                    <div class="row">
-                      <div class="col-lg-8">
-                        <picture>
-                          <img src="assets/img/teams/redbull/oraceredredbull-logo.png" alt="" class="img-fluid w-75">
-                        </picture>
-                      </div>
-                      <div class="col-lg-2 mx-auto">
-                        <div class="d-flex flex-column justify-content-center">
-                          <ul class="list-group-flush list-unstyled mx-auto">
-                            <li class="mt-5 text-nowrap"><a href="#teams-heading" class="teams-info-links">Website
-                                <span><i class="bi bi-arrow-up-right"></i></span></a></li>
-                            <li class="text-nowrap"><a href="#teams-heading" class="teams-info-links">Wikipedia <span><i
-                                    class="bi bi-arrow-up-right"></i></span></a></li>
-                            <li><span></span></li>
-                          </ul>
-                        </div>
-                      </div>
-                      <div class="col">
-                        <div class="d-flex flex-column justify-content-center">
-                          <span><img class="mx-auto img-fluid" src="assets/img/teams/redbull/verstappen-portrait.png"
-                              alt="..."></span>
-                          <span class="text-nowrap modal-driver-name">Max Verstappen</span>
-                        </div>
-                      </div>
-                      <div class="col">
-                        <div class="d-flex flex-column justify-content-center">
-                          <span><img class="mx-auto img-fluid" src="assets/img/teams/redbull/perez-portrait.png"
-                              alt="..."></span>
-                          <span class="text-nowrap modal-driver-name">Sergio Perez</span>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="row">
-                      <div class="col-md-2 team-portfolio-modal-info">
-                        <div class="text-start">
-                          <table class="table table-hover table-hover text-nowrap portfolio-table">
-                            <tbody>
-                              <tr>
-                                <td class="">Full Team Name</td>
-                                <td>Oracle Red Bull Racing</td>
-                              </tr>
-                              <tr>
-                                <td class="">Base</td>
-                                <td>Milton Keynes, United Kingdom</td>
-                              </tr>
-                              <tr>
-                                <td class="">Team Chief</td>
-                                <td>Christian Horner</td>
-                              </tr>
-                              <tr>
-                                <td class="">Chassis</td>
-                                <td>RB19</td>
-                              </tr>
-                            </tbody>
-                          </table>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <br>
-                <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal" type="button">
-                  <i class="fas fa-xmark me-1"></i>
-                  Close View
-                </button>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
+		<!-- news -->
+		<div
+			class="container px-4 py-5 my-5 border border-10 border-black border-start-0 rounded-end-4"
+		>
+			<h2 class="fw-bold pb-2">Custom cards</h2>
 
-  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-  <script type="module" src="js/main.js"></script>
+			<div class="row row-cols-1 row-cols-lg-3 align-items-stretch g-4">
+				<div class="col">
+					<div
+						class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg"
+						style="background-image: url('assets/img/section/racei1.png')"
+					>
+						<div
+							class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1"
+						>
+							<h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">
+								Short title, long jacket
+							</h3>
+							<ul class="d-flex list-unstyled mt-auto">
+								<li class="me-auto">
+									<img
+										src="https://github.com/twbs.png"
+										alt="Bootstrap"
+										width="32"
+										height="32"
+										class="rounded-circle border border-white"
+									/>
+								</li>
+								<li class="d-flex align-items-center me-3">
+									<svg class="bi me-2" width="1em" height="1em">
+										<use xlink:href="#geo-fill"></use>
+									</svg>
+									<small>Earth</small>
+								</li>
+								<li class="d-flex align-items-center">
+									<svg class="bi me-2" width="1em" height="1em">
+										<use xlink:href="#calendar3"></use>
+									</svg>
+									<small>3d</small>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
 
-  <script>
-    document.addEventListener('DOMContentLoaded', function () {
-      // Initialize Swiper
-      var swiper = new Swiper('.swiper', {
+				<div class="col">
+					<div
+						class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg"
+						style="background-image: url('assets/img/section/racei1.png')"
+					>
+						<div
+							class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1"
+						>
+							<h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">
+								Much longer title that wraps to multiple lines
+							</h3>
+							<ul class="d-flex list-unstyled mt-auto">
+								<li class="me-auto">
+									<img
+										src="https://github.com/twbs.png"
+										alt="Bootstrap"
+										width="32"
+										height="32"
+										class="rounded-circle border border-white"
+									/>
+								</li>
+								<li class="d-flex align-items-center me-3">
+									<svg class="bi me-2" width="1em" height="1em">
+										<use xlink:href="#geo-fill"></use>
+									</svg>
+									<small>Pakistan</small>
+								</li>
+								<li class="d-flex align-items-center">
+									<svg class="bi me-2" width="1em" height="1em">
+										<use xlink:href="#calendar3"></use>
+									</svg>
+									<small>4d</small>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
 
-        centeredSlides: true,
-        slidesPerView: 6,
-        spaceBetween: 0,
-        direction: 'horizontal',
-        initialSlide: 0,
-        slideToClickedSlide: true,
-        slideActiveClass: 'active',
-        slideVisibleClass: 'visible',
-        loop: false, // Disable loop mode
-      });
+				<div class="col">
+					<div
+						class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg"
+						style="background-image: url('assets/img/section/racei1.png')"
+					>
+						<div class="d-flex flex-column h-100 p-5 pb-3 text-shadow-1">
+							<h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">
+								Another longer title belongs here
+							</h3>
+							<ul class="d-flex list-unstyled mt-auto">
+								<li class="me-auto">
+									<img
+										src="https://github.com/twbs.png"
+										alt="Bootstrap"
+										width="32"
+										height="32"
+										class="rounded-circle border border-white"
+									/>
+								</li>
+								<li class="d-flex align-items-center me-3">
+									<svg class="bi me-2" width="1em" height="1em">
+										<use xlink:href="#geo-fill"></use>
+									</svg>
+									<small>California</small>
+								</li>
+								<li class="d-flex align-items-center">
+									<svg class="bi me-2" width="1em" height="1em">
+										<use xlink:href="#calendar3"></use>
+									</svg>
+									<small>5d</small>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
 
-    });
-  </script>
+		<!-- site disclaimer -->
+		<div
+			class="container-fluid text-bg-dark border border-dark-subtle border-top-0 border-start-0 border-end-0"
+		>
+			<div class="container">
+				<div class="row">
+					<div class="col-12">
+						<p class="my-2">
+							<strong>DISCLAIMER:</strong> This website is unofficial and is not
+							associated in any way with the Formula 1 companies. F1, FORMULA
+							ONE, FORMULA 1, FIA FORMULA ONE WORLD CHAMPIONSHIP, GRAND PRIX and
+							related marks are trade marks of Formula One Licensing B.V.
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
 
-</body>
+		<!-- footer -->
+		<div class="container-fluid text-bg-dark">
+			<div class="container">
+				<footer class="py-5">
+					<div class="row">
+						<div class="col-6 col-md-2 mb-3">
+							<h5>Trackside</h5>
+							<ul class="nav flex-column">
+								<li class="nav-item mb-2">
+									<a href="#" class="nav-link p-0">Home</a>
+								</li>
+								<li class="nav-item mb-2">
+									<a href="#" class="nav-link p-0">About Trackside</a>
+								</li>
+								<li class="nav-item mb-2">
+									<a href="#" class="nav-link p-0">Site Attributions</a>
+								</li>
+								<li class="nav-item mb-2">
+									<a href="#" class="nav-link p-0">Learn More</a>
+								</li>
+								<li class="nav-item mb-2">
+									<a href="#" class="nav-link p-0">Contact Us</a>
+								</li>
+							</ul>
+						</div>
 
+						<div class="col-6 col-md-2 mb-3">
+							<h5>Discover</h5>
+							<ul class="nav flex-column">
+								<li class="nav-item mb-2">
+									<a href="#" class="nav-link p-0">2023 Breakdown</a>
+								</li>
+								<li class="nav-item mb-2">
+									<a href="#" class="nav-link p-0">2024 Breakdown</a>
+								</li>
+								<li class="nav-item mb-2">
+									<a href="#" class="nav-link p-0">2025 Theories</a>
+								</li>
+								<li class="nav-item mb-2">
+									<a href="#" class="nav-link p-0">Trackside FAQs</a>
+								</li>
+								<li class="nav-item mb-2">
+									<a href="#" class="nav-link p-0">Learn About F1</a>
+								</li>
+							</ul>
+						</div>
+
+						<!-- TODO add or update example links -->
+						<!-- todo weep -->
+						<div class="col-6 col-md-2 mb-3">
+							<h5>Pitwall</h5>
+							<ul class="nav flex-column">
+								<li class="nav-item mb-2">
+									<a href="#" class="nav-link p-0">Technologies</a>
+								</li>
+								<li class="nav-item mb-2">
+									<a href="#" class="nav-link p-0">The Future</a>
+								</li>
+								<li class="nav-item mb-2">
+									<a href="#" class="nav-link p-0">Example</a>
+								</li>
+								<li class="nav-item mb-2">
+									<a href="#" class="nav-link p-0">Example</a>
+								</li>
+								<li class="nav-item mb-2">
+									<a href="#" class="nav-link p-0">Example</a>
+								</li>
+							</ul>
+						</div>
+
+						<div class="col-md-5 offset-md-1 mb-3">
+							<form>
+								<h5>Subscribe to our newsletter</h5>
+								<p>Monthly digest of what's new and exciting from us.</p>
+								<div class="d-flex flex-column flex-sm-row w-100 gap-2">
+									<label for="newsletter1" class="visually-hidden"
+										>Email address</label
+									>
+									<input
+										id="newsletter1"
+										type="text"
+										class="form-control"
+										placeholder="Email address"
+									/>
+									<button class="btn btn-primary" type="button">
+										Subscribe
+									</button>
+								</div>
+							</form>
+						</div>
+					</div>
+
+					<div
+						class="d-flex flex-column flex-sm-row justify-content-between py-4 my-4 border-top"
+					>
+						<p>© 2025 Nick Calvo All rights reserved.</p>
+						<ul class="list-unstyled d-flex">
+							<li class="ms-3">
+								<a class="link-body-emphasis" href="#"
+									><svg class="bi" width="24" height="24">
+										<use xlink:href="#twitter"></use></svg
+								></a>
+							</li>
+							<li class="ms-3">
+								<a class="link-body-emphasis" href="#"
+									><svg class="bi" width="24" height="24">
+										<use xlink:href="#instagram"></use></svg
+								></a>
+							</li>
+							<li class="ms-3">
+								<a class="link-body-emphasis" href="#"
+									><svg class="bi" width="24" height="24">
+										<use xlink:href="#facebook"></use></svg
+								></a>
+							</li>
+						</ul>
+					</div>
+				</footer>
+			</div>
+		</div>
+
+		<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+		<script type="module" src="js/main.js"></script>
+
+		<script>
+			var swiper = new Swiper(".swiper", {
+				centeredSlides: true,
+				direction: "horizontal",
+				initialSlide: 0,
+				slidesPerView: 1.5,
+				slideToClickedSlide: true,
+				slideActiveClass: "active",
+				slideVisibleClass: "visible",
+				loop: false,
+				breakpoints: {
+					768: {
+						// md: ≥768px
+						slidesPerView: 2.5,
+						spaceBetween: 30,
+					},
+					992: {
+						// lg: ≥992px
+						slidesPerView: 4,
+						spaceBetween: 30,
+					},
+					1200: {
+						// xl: ≥1200px
+						slidesPerView: 5,
+						spaceBetween: 30,
+					},
+				},
+			})
+		</script>
+	</body>
 </html>
