@@ -1,7 +1,7 @@
 <!-- PROJECT LOGO -->
 <div align="center">
   <a href="https://github.com/rroarings/tarmac">
-    <img src="/garage/src/assets/img/logos/trackside-logowhite.png" alt="Logo" width="80" height="80">
+    <img src="/garage/src/assets/img/logos/trackside-logowhite.png" alt="Logo">
   </a>
 
   <h3 align="center">Trackside</h3>
