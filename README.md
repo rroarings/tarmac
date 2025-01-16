@@ -51,7 +51,6 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-[![Trackside video][product-screenshot]](https://example.com)
 
 Dive into the garages, feel the rush of the paddock, and explore the trackside excitement like never before. Built with Bootstrap 5.3, bundled with Parcel, and managed through Linear, this project is your ticket to the fast lane of F1 fandom.
 
