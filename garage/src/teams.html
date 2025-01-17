@@ -12,48 +12,21 @@
 		/>
 		<meta name="author" content="Nick Calvo" />
 		<title>Trackside | Competition</title>
-
 		<link rel="stylesheet" href="scss/styles.scss" />
-
-		<style>
-			.driver {
-				border-bottom: 1px solid #ccc;
-				padding: 10px;
-				display: flex;
-				align-items: center;
-			}
-			.driver:last-child {
-				border-bottom: none;
-			}
-			.driver img {
-				margin-right: 10px;
-				height: 50px;
-				width: 50px;
-				border-radius: 50%;
-			}
-			.driver .name {
-				font-size: 20px;
-				font-weight: bold;
-			}
-			.driver .points {
-				margin-left: auto;
-				font-weight: bold;
-			}
-		</style>
 	</head>
 
 	<body id="page-top">
 		<!-- site header -->
 		<div class="container-fluid">
 			<nav class="navbar navbar-expand-lg sticky-top" id="mainNav">
-				<div class="container bg-danger">
-					<a class="navbar-brand" href="#page-top"
-						><img
-							src="assets/img/logos/sitelogo.png"
-							class="img-fluid"
-							style="width: 15%"
-							alt="..."
-					/></a>
+				<div class="container">
+					<a class="navbar-brand" href="#page-top">
+						<img
+							src="assets/img/logos/trackside-logoblack.png"
+							class="img-fluid w-50"
+							alt="Trackside Logo"
+						/>
+					</a>
 					<button
 						class="navbar-toggler"
 						type="button"
@@ -67,21 +40,107 @@
 						<i class="fas fa-bars ms-1"></i>
 					</button>
 					<div class="collapse navbar-collapse" id="navbarResponsive">
-						<ul class="navbar-nav text-uppercase ms-auto py-4 py-lg-0">
-							<li class="nav-item">
+						<ul class="navbar-nav ms-auto me-4 py-4 py-lg-0">
+							<li class="nav-item fw-bold">
 								<a class="nav-link" href="index.html">Home</a>
 							</li>
-							<li class="nav-item">
-								<a class="nav-link" href="teams.html">Teams</a>
+							<li class="nav-item dropdown">
+								<a
+									class="nav-link dropdown-toggle"
+									href="#"
+									id="aboutDropdown"
+									role="button"
+									data-bs-toggle="dropdown"
+									aria-expanded="false"
+								>
+									About F1
+								</a>
+								<ul class="dropdown-menu" aria-labelledby="aboutDropdown">
+									<li>
+										<a class="dropdown-item" href="#">What is Formula 1</a>
+									</li>
+									<li>
+										<a class="dropdown-item" href="#">Technology of F1</a>
+									</li>
+									<li><a class="dropdown-item" href="#">Future of F1</a></li>
+								</ul>
 							</li>
-							<li class="nav-item">
-								<a class="nav-link" href="racecalendar.html">Calendar</a>
+							<li class="nav-item dropdown">
+								<a
+									class="nav-link dropdown-toggle"
+									href="#"
+									id="aboutDropdown"
+									role="button"
+									data-bs-toggle="dropdown"
+									aria-expanded="false"
+								>
+									Race Calendars
+								</a>
+								<ul class="dropdown-menu" aria-labelledby="aboutDropdown">
+									<li>
+										<a class="dropdown-item" href="#">2025 Race Calendar</a>
+									</li>
+									<li>
+										<a class="dropdown-item" href="#">2024 Race Calendar</a>
+									</li>
+									<li>
+										<a class="dropdown-item" href="#">2023 Race Calendar</a>
+									</li>
+								</ul>
 							</li>
-							<li class="nav-item">
-								<a class="nav-link" href="technologies.html">Technology</a>
+							<li class="nav-item dropdown">
+								<a
+									class="nav-link dropdown-toggle"
+									href="#"
+									id="seasonsDropdown"
+									role="button"
+									data-bs-toggle="dropdown"
+									aria-expanded="false"
+								>
+									Results
+								</a>
+								<ul class="dropdown-menu" aria-labelledby="seasonsDropdown">
+									<li><a class="dropdown-item" href="#">2025 Standings</a></li>
+									<li><a class="dropdown-item" href="#">2024 Standings</a></li>
+									<li><a class="dropdown-item" href="#">2023 Standings</a></li>
+								</ul>
 							</li>
-							<li class="nav-item">
-								<a class="nav-link" href="future.html">Future</a>
+							<li class="nav-item dropdown">
+								<a
+									class="nav-link dropdown-toggle"
+									href="#"
+									id="seasonsDropdown"
+									role="button"
+									data-bs-toggle="dropdown"
+									aria-expanded="false"
+								>
+									Season Talk
+								</a>
+								<ul class="dropdown-menu" aria-labelledby="seasonsDropdown">
+									<li><a class="dropdown-item" href="#">2025 Coverage</a></li>
+									<li><a class="dropdown-item" href="#">2024 Breakdown</a></li>
+									<li><a class="dropdown-item" href="#">2023 Breakdown</a></li>
+								</ul>
+							</li>
+							<li class="nav-item dropdown">
+								<a
+									class="nav-link dropdown-toggle"
+									href="#"
+									id="fanZoneDropdown"
+									role="button"
+									data-bs-toggle="dropdown"
+									aria-expanded="false"
+								>
+									Site
+								</a>
+								<ul class="dropdown-menu" aria-labelledby="fanZoneDropdown">
+									<li><a class="dropdown-item" href="#">Trackside FAQs</a></li>
+									<li><a class="dropdown-item" href="#">Learn More</a></li>
+									<li><a class="dropdown-item" href="#">Contact Us</a></li>
+									<li>
+										<a class="dropdown-item" href="#">Site Attributions</a>
+									</li>
+								</ul>
 							</li>
 						</ul>
 					</div>
@@ -90,7 +149,7 @@
 		</div>
 
 		<!-- hero carousel -->
-		<div id="myCarousel" class="carousel slide mb-6" data-bs-ride="carousel">
+		<div id="myCarousel" class="carousel slide mb-5" data-bs-ride="carousel">
 			<div class="carousel-indicators">
 				<button
 					type="button"
@@ -179,434 +238,404 @@
 			</button>
 		</div>
 
+		<!-- todo update this ugly section! -->
 		<!-- Quick Team Info -->
-		<div class="container mx-auto py-5 text-center">
+		<div class="container mx-auto py-3 text-center">
 			<div class="row gap-3">
-				<div class="col-12 col-md">
+				<div class="col-12 col-md border border-5 border-dark-subtle rounded-4">
 					<img
 						src="assets/img/section/merchelmet.png"
+						class="img-fluid w-50"
 						alt="helmet"
-						width="140"
-						height="140"
+					/>
+					<h2 class="fw-normal">McLaren</h2>
+					<p>
+						New Zealand (or British) underdogs with technical prowess who flipped a switch to turn out on top and take first place.
+					</p>
+				</div>
+				<div class="col-12 col-md border border-5 border-dark-subtle rounded-4">
+					<img
+						src="assets/img/section/merchelmet.png"
+						class="img-fluid w-50"
+						alt="helmet"
 					/>
 					<h2 class="fw-normal">Ferrari</h2>
 					<p>
-						British underdogs with technical prowess aiming for podium finishes
-						in 2023.
+						With upgrades making statements through the season, Ferrari find themselves in second place in the 2024 Constructor standings.
 					</p>
 				</div>
-				<div class="col-12 col-md">
+				<div class="col-12 col-md border border-5 border-dark-subtle rounded-4">
 					<img
 						src="assets/img/section/merchelmet.png"
+						class="img-fluid w-50"
 						alt="helmet"
-						width="140"
-						height="140"
 					/>
 					<h2 class="fw-normal">Red Bull Racing</h2>
 					<p>
 						Reigning Constructors' Champions set to dominate and defend their
-						title in 2023.
-					</p>
-				</div>
-				<div class="col-12 col-md">
-					<img
-						src="assets/img/section/merchelmet.png"
-						alt="helmet"
-						width="140"
-						height="140"
-					/>
-					<h2 class="fw-normal">Mercedes</h2>
-					<p>
-						Lewis Hamilton and George Russell seek to reclaim their throne as
-						champions in 2023.
+						title in 2024.
 					</p>
 				</div>
 			</div>
 			<!-- /.row -->
 		</div>
 
-		<!-- Featurette -->
-		<div class="p-5 bg-shaded">
-			<div class="container py-5">
-				<div class="row featurette">
-					<div class="col-md-5">
-						<img
-							src="assets/img/ai/ai-driver3.jpg"
-							class="img-thumbnail mt-lg-5"
-							alt="AI-generated future F1 car"
-						/>
-					</div>
-					<div class="col-md-7 my-auto">
-						<h2 class="featurette-heading fw-normal lh-1">
-							Sustainability goals taking center stage.
-						</h2>
-						<p>
-							The 2022 F1 season is set to be one of the most exciting and
-							anticipated seasons in recent years. With a number of major
-							changes to the technical regulations, including new aerodynamic
-							rules, increased weight limits and the introduction of sustainable
-							fuels, there is a sense of unpredictability and excitement around
-							the grid. Teams and drivers have been hard at work developing new
-							cars and testing them in preparation for the upcoming season.
-						</p>
-					</div>
-				</div>
-			</div>
-		</div>
-
-		<div class="p-5">
+		<!-- teams Grid-->
+		<div class="container-fluid py-5 my-2">
 			<div class="container">
-				<div class="row featurette">
-					<div class="col-md-7 my-auto">
-						<h2 class="featurette-heading fw-normal lh-1">
-							A budget cap introduces unseen events.
-						</h2>
-						<p class="">
-							One of the biggest changes for the 2022 F1 season is the redesign
-							of the cars to improve overtaking opportunities. The new
-							regulations aim to reduce the amount of dirty air produced by the
-							cars, which makes it difficult for drivers to follow each other
-							closely. This should result in more exciting and competitive
-							races, with more overtaking opportunities and fewer processions.
-							Teams have been working hard to adapt to the new regulations, with
-							some predicting that it will lead to a significant shake-up in the
-							pecking order.
-						</p>
-					</div>
-					<div class="col-md-5">
-						<img
-							src="assets/img/ai/ai-driver.jpg"
-							class="img-thumbnail mt-lg-5"
-							alt="..."
-						/>
-					</div>
-				</div>
-			</div>
-		</div>
-
-		<!-- Featurette 3 -->
-		<div class="container-fluid bg-shaded">
-			<div class="container mb-5">
-				<div class="row featurette">
-					<div class="col-md-5">
-						<img
-							src="assets/img/ai/ai-engineer4.jpg"
-							class="img-fluid mt-lg-5 mb-lg-5 p-3"
-							alt="..."
-						/>
-					</div>
-					<div class="col-md-7 my-auto">
-						<h2 class="featurette-heading fw-normal lh-1">
-							New engineering and aerodynamics.
-						</h2>
-						<p>
-							One of the biggest changes for the 2022 F1 season is the redesign
-							of the cars to improve overtaking opportunities. The new
-							regulations aim to reduce the amount of dirty air produced by the
-							cars, which makes it difficult for drivers to follow each other
-							closely. This should result in more exciting and competitive
-							races, with more overtaking opportunities and fewer processions.
-							Teams have been working hard to adapt to the new regulations, with
-							some predicting that it will lead to a significant shake-up in the
-							pecking order.
-						</p>
-					</div>
-				</div>
-			</div>
-		</div>
-		<!-- End - Featurettes -->
-
-		<div class="container-fluid py-5">
-			<!-- Team cards start -->
-			<div class="container pt-3 shadow-lg bg-body-tertiary rounded">
-				<div class="text-center fw-bold mb-5">
-					<p style="font-family: 'Ubuntu'; font-size: 72px">
-						Meet Your Top Contenders
+				<div class="text-center">
+					<h2 class="fw-bold" id="teams-heading">
+						Racing to Glory: The 2024 Season Competitors
+					</h2>
+					<p class="pb-4">
+						The 2024 season delivered an intense battle for supremacy in the prestigious Drivers' and Constructors' Championships.
 					</p>
 				</div>
-				<div class="alpharow row row-cols-3 g-4">
-					<div class="col mt-5">
+				<div class="row row-cols-1 row-cols-sm-2">
+					<!-- Portfolio item 1 - Red Bull Racing-->
+					<div class="col mb-4">
 						<div class="card">
-							<div class="position-relative">
-								<img
-									src="https://media.formula1.com/d_team_car_fallback_image.png/content/dam/fom-website/teams/2023/ferrari.png.transform/6col/image.png"
-									class="card-img-top car-full"
-									alt="Ferrari car image"
-								/>
-								<span
-									class="position-absolute top-0 start-50 translate-middle badge bg-success"
-									>2nd Place</span
-								>
-							</div>
+							<img
+								src="assets/img/cars/car-mclaren-side.png"
+								class="card-img-top"
+								alt="..."
+							/>
 							<div class="card-body">
-								<h2 class="card-title">2</h2>
-								<h5 class="card-title">
-									Ferrari
-									<img
-										src="assets/img/logos/aramco-corp-reg.webp"
-										alt="Red Bull Racing Logo"
-									/>
-								</h5>
-								<p class="card-text fs-6">Team Points: 554</p>
+								<h5 class="card-title">McLaren</h5>
+								<div class="d-flex justify-content-between">
+									<div>
+										<p>Lando Norris</p>
+									</div>
+									<p>Oscar Piastri</p>
+								</div>
+								<a href="#" class="btn btn-primary">Visit team page</a>
 							</div>
-							<ul class="list-group list-group-flush">
-								<li class="list-group-item">Charles Leclerc</li>
-								<li class="list-group-item">Carlos Sainz</li>
-							</ul>
 						</div>
 					</div>
-					<div class="col">
-						<div class="card cardredbull">
-							<div class="position-relative">
-								<img
-									src="https://media.formula1.com/d_team_car_fallback_image.png/content/dam/fom-website/teams/2023/red-bull-racing.png.transform/6col/image.png"
-									class="card-img-top car-full"
-									alt="Team Image"
-								/>
-								<span
-									class="position-absolute top-0 start-50 translate-middle badge bg-danger"
-									>1st Place</span
-								>
-							</div>
-							<div class="card-body">
-								<h2 class="card-title">1</h2>
-								<h5 class="card-title">
-									Red Bull Racing
-									<img
-										src="https://media.formula1.com/content/dam/fom-website/teams/2023/red-bull-racing-logo.png.transform/2col/image.png"
-										alt="Red Bull Racing Logo"
-									/>
-								</h5>
-								<p class="card-text fs-6">Team Points: 759</p>
-							</div>
-							<ul class="list-group list-group-flush">
-								<li class="list-group-item">Max Verstappen</li>
-								<li class="list-group-item">Sergio Perez</li>
-							</ul>
-						</div>
-					</div>
-					<div class="col mt-5">
+					<!-- Portfolio item 2 - Ferrari-->
+					<div class="col mb-4 mb-lg-0">
 						<div class="card">
-							<div class="position-relative">
-								<img
-									src="https://media.formula1.com/d_team_car_fallback_image.png/content/dam/fom-website/teams/2023/mercedes.png.transform/6col/image.png"
-									class="card-img-top car-full"
-									alt="Team Image"
-								/>
-								<span
-									class="position-absolute top-0 start-50 translate-middle badge bg-info"
-									>3rd Place</span
-								>
-							</div>
+							<img
+								src="assets/img/cars/car-ferrari-side.png"
+								class="card-img-top"
+								alt="..."
+							/>
 							<div class="card-body">
-								<h2 class="card-title">3</h2>
-								<h5 class="card-title" style="font-weight: 900">
-									Mercedes
-									<img
-										src="https://media.formula1.com/content/dam/fom-website/teams/2023/mercedes-logo.png.transform/2col/image.png"
-										alt="Red Bull Racing Logo"
-									/>
-								</h5>
-								<p class="card-text fs-6">Team Points: 515</p>
+								<h5 class="card-title">Ferrari</h5>
+								<p class="card-text">Leclerc / Sainz</p>
+								<a href="#" class="btn btn-primary">Visit team page</a>
 							</div>
-							<ul class="list-group list-group-flush">
-								<li class="list-group-item">Lewis Hamilton</li>
-								<li class="list-group-item">George Russell</li>
-							</ul>
 						</div>
 					</div>
-				</div>
-				<hr class="featurette-divider" />
-				<div class="row row-cols-3 g-4">
-					<div class="col">
+					<!-- Portfolio item 3 - Mercedes -->
+					<div class="col mb-4">
 						<div class="card">
-							<div class="position-relative">
-								<img
-									src="https://media.formula1.com/d_team_car_fallback_image.png/content/dam/fom-website/teams/2023/alpine.png.transform/6col/image.png"
-									class="card-img-top car-full"
-									alt="Team Image"
-								/>
-							</div>
+							<img
+								src="assets/img/cars/car-redbull-side.png"
+								class="card-img-top"
+								alt="..."
+							/>
 							<div class="card-body">
-								<h2 class="card-title">4</h2>
-								<h5 class="card-title" style="font-weight: 900">
-									Alpine
-									<img
-										src="https://media.formula1.com/content/dam/fom-website/teams/2023/alpine-logo.png.transform/2col/image.png"
-										alt="Red Bull Racing Logo"
-									/>
-								</h5>
-								<p class="card-text">Team Points: 173</p>
+								<h5 class="card-title">Red Bull Racing</h5>
+								<p class="card-text">Verstappen / Perez</p>
+								<a href="#" class="btn btn-primary">Visit team page</a>
 							</div>
-							<ul class="list-group list-group-flush">
-								<li class="list-group-item">Fernando Alonso</li>
-								<li class="list-group-item">Esteban Ocon</li>
-							</ul>
 						</div>
 					</div>
-					<div class="col">
+					<!-- Portfolio item 4 Alpine -->
+					<div class="col mb-4 mb-lg-0">
 						<div class="card">
-							<div class="position-relative">
-								<img
-									src="https://media.formula1.com/d_team_car_fallback_image.png/content/dam/fom-website/teams/2023/mclaren.png.transform/6col/image.png"
-									class="card-img-top car-full"
-									alt="Team Image"
-								/>
-							</div>
+							<img
+								src="assets/img/cars/car-mercedes-side.png"
+								class="card-img-top"
+								alt="..."
+							/>
 							<div class="card-body">
-								<h2 class="card-title">5</h2>
-								<h5 class="card-title" style="font-weight: 900">
-									McLaren
-									<img
-										src="https://media.formula1.com/content/dam/fom-website/teams/2023/mclaren-logo.png.transform/2col/image.png"
-										alt="Red Bull Racing Logo"
-									/>
-								</h5>
-								<p class="card-text">Team Points: 159</p>
+								<h5 class="card-title">Mercedes</h5>
+								<p class="card-text">Hamilton / Russell</p>
+								<a href="#" class="btn btn-primary">Visit team page</a>
 							</div>
-							<ul class="list-group list-group-flush">
-								<li class="list-group-item">Daniel Ricciardo</li>
-								<li class="list-group-item">Lando Norris</li>
-							</ul>
 						</div>
 					</div>
-					<div class="col">
+					<!-- Portfolio item 5 - McLaren -->
+					<div class="col mb-4 mb-sm-0">
 						<div class="card">
-							<div class="position-relative">
-								<img
-									src="https://media.formula1.com/d_team_car_fallback_image.png/content/dam/fom-website/teams/2023/alfa-romeo.png.transform/6col/image.png"
-									class="card-img-top car-full"
-									alt="Team Image"
-								/>
-							</div>
+							<img
+								src="assets/img/cars/car-astonmartin-side.png"
+								class="card-img-top"
+								alt="..."
+							/>
 							<div class="card-body">
-								<h2 class="card-title">6</h2>
-								<h5 class="card-title" style="font-weight: 900">
-									Alfa Romeo
-									<img
-										src="https://media.formula1.com/content/dam/fom-website/teams/2023/alfa-romeo-logo.png.transform/2col/image.png"
-										alt=""
-									/>
-								</h5>
-								<p class="card-text">Team Points: 55</p>
+								<h5 class="card-title">Aston Martin</h5>
+								<p class="card-text">Alonso / Stroll</p>
+								<a href="#" class="btn btn-primary">Visit team page</a>
 							</div>
-							<ul class="list-group list-group-flush">
-								<li class="list-group-item">Valtteri Bottas</li>
-								<li class="list-group-item">Zhou Guanyu</li>
-							</ul>
 						</div>
 					</div>
-				</div>
-				<div class="row row-cols-3 g-4">
-					<div class="col">
+					<!-- Portfolio item 6 - Alfa Romeo -->
+					<div class="col mb-4 mb-sm-0">
 						<div class="card">
-							<div class="position-relative">
-								<img
-									src="https://media.formula1.com/d_team_car_fallback_image.png/content/dam/fom-website/teams/2023/haas-f1-team.png.transform/6col/image.png"
-									class="card-img-top car-full"
-									alt="Team Image"
-								/>
-							</div>
+							<img
+								src="assets/img/cars/car-alpine-side.png"
+								class="card-img-top"
+								alt="..."
+							/>
 							<div class="card-body">
-								<h2 class="card-title">7</h2>
-								<h5 class="card-title" style="font-weight: 900">
-									Aston Martin
-									<img
-										src="https://media.formula1.com/content/dam/fom-website/teams/2023/haas-f1-team-logo.png.transform/2col/image.png"
-										alt="Red Bull Racing Logo"
-									/>
-								</h5>
-								<p class="card-text">Team Points: 55</p>
+								<h5 class="card-title">Alpine</h5>
+								<p class="card-text">Gasly / Ocon</p>
+								<a href="#" class="btn btn-primary">Visit team page</a>
 							</div>
-							<ul class="list-group list-group-flush">
-								<li class="list-group-item">Sebastian Vettel</li>
-								<li class="list-group-item">Lance Stroll</li>
-							</ul>
 						</div>
 					</div>
-					<div class="col">
+					<!-- Portfolio item 7 - Aston Martin-->
+					<div class="col mb-4">
 						<div class="card">
-							<div class="position-relative">
-								<img
-									src="https://media.formula1.com/d_team_car_fallback_image.png/content/dam/fom-website/teams/2023/haas-f1-team.png.transform/6col/image.png"
-									class="card-img-top car-full"
-									alt="Team Image"
-								/>
-							</div>
+							<img
+								src="assets/img/cars/car-haas-side.png"
+								class="card-img-top"
+								alt="..."
+							/>
 							<div class="card-body">
-								<h2 class="card-title">8</h2>
-								<h5 class="card-title" style="font-weight: 900">
-									Haas<img
-										src="https://media.formula1.com/content/dam/fom-website/teams/2023/haas-f1-team-logo.png.transform/2col/image.png"
-										alt="Haas Logo"
-									/>
-								</h5>
-								<p class="card-text">Team Points: 37</p>
+								<h5 class="card-title">Haas</h5>
+								<p class="card-text">Hulkenberg / Magnussen</p>
+								<a href="#" class="btn btn-primary">Visit team page</a>
 							</div>
-							<ul class="list-group list-group-flush">
-								<li class="list-group-item">Nico Hulkenberg</li>
-								<li class="list-group-item">Mick Schumacher</li>
-							</ul>
 						</div>
 					</div>
-					<div class="col">
+					<!-- Portfolio item 8 - Haas -->
+					<div class="col mb-4 mb-lg-0">
 						<div class="card">
-							<div class="position-relative">
-								<img
-									src="https://media.formula1.com/d_team_car_fallback_image.png/content/dam/fom-website/teams/2023/alphatauri.png.transform/6col/image.png"
-									class="card-img-top car-full"
-									alt="Team Image"
-								/>
-							</div>
+							<img
+								src="assets/img/cars/car-alphatauri-side.png"
+								class="card-img-top"
+								alt="..."
+							/>
 							<div class="card-body">
-								<h2 class="card-title">9</h2>
-								<h5 class="card-title" style="font-weight: 900">
-									AlphaTauri
-									<img
-										src="https://media.formula1.com/content/dam/fom-website/teams/2023/alphatauri-logo.png.transform/2col/image.png"
-										alt="AlphaTauri Racing Logo"
-									/>
-								</h5>
-								<p class="card-text">Team Points: 35</p>
+								<h5 class="card-title">AlphaTauri</h5>
+								<p class="card-text">Tsunoda / Ricciardo</p>
+								<a href="#" class="btn btn-primary">Visit team page</a>
 							</div>
-							<ul class="list-group list-group-flush">
-								<li class="list-group-item">Pierre Gasly</li>
-								<li class="list-group-item">Yuki Tsunoda</li>
-							</ul>
 						</div>
 					</div>
-				</div>
-				<div class="row row-cols-3 g-4">
-					<div class="col">
+					<!-- Portfolio item 9 - AlphaTauri -->
+					<div class="col mb-4 mb-sm-0">
 						<div class="card">
-							<div class="position-relative">
-								<img
-									src="https://media.formula1.com/d_team_car_fallback_image.png/content/dam/fom-website/teams/2023/williams.png.transform/6col/image.png"
-									class="card-img-top car-full"
-									alt="Williams car image"
-								/>
-							</div>
+							<img
+								src="assets/img/cars/car-williams-side.png"
+								class="card-img-top"
+								alt="..."
+							/>
 							<div class="card-body">
-								<h2 class="card-title">4</h2>
-								<h5 class="card-title" style="font-weight: 900">
-									Williams
-									<img
-										src="https://media.formula1.com/content/dam/fom-website/teams/2023/williams-logo.png.transform/2col/image.png"
-										alt="Red Bull Racing Logo"
-									/>
-								</h5>
-								<p class="card-text">Team Points: 8</p>
+								<h5 class="card-title">Williams</h5>
+								<p class="card-text">Albon / Sargeant</p>
+								<a href="#" class="btn btn-primary">Visit team page</a>
 							</div>
-							<ul class="list-group list-group-flush">
-								<li class="list-group-item">Nicholas Latifi</li>
-								<li class="list-group-item">Alexander Albon</li>
-							</ul>
 						</div>
 					</div>
-					<!-- Repeat the above card structure for each team -->
+					<!-- Portfolio item 10 - Williams -->
+					<div class="col mb-4 mb-sm-0">
+						<div class="card">
+							<img
+								src="assets/img/cars/car-alfaromeo-side.png"
+								class="card-img-top"
+								alt="..."
+							/>
+							<div class="card-body">
+								<h5 class="card-title">Alfa Romeo</h5>
+								<p class="card-text">Bottas / Zhou</p>
+								<a href="#" class="btn btn-primary">Visit team page</a>
+							</div>
+						</div>
+					</div>
 				</div>
 			</div>
-			<!-- Team cards end  -->
+		</div>
+
+		<!-- news -->
+		<div
+			class="container px-4 py-5 my-5 border border-10 border-black border-start-0 rounded-end-4"
+		>
+			<h2 class="fw-bold pb-2">Don't Miss These Summaries</h2>
+
+			<div class="row row-cols-1 row-cols-lg-3 align-items-stretch g-4">
+				<div class="col">
+					<div
+						class="card card-cover card-news h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg"
+						style="background-image: url('assets/img/section/racei1.png')"
+					>
+						<div
+							class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1"
+						>
+							<h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">
+								Unmissable Moments From the 2023 Racing Season
+							</h3>
+							<ul class="d-flex list-unstyled mt-auto">
+								<li class="me-auto">
+									<svg
+										xmlns="http://www.w3.org/2000/svg"
+										width="16"
+										height="16"
+										fill="currentColor"
+										class="bi bi-box-arrow-up-right"
+										viewBox="0 0 16 16"
+									>
+										<path
+											fill-rule="evenodd"
+											d="M8.636 3.5a.5.5 0 0 0-.5-.5H1.5A1.5 1.5 0 0 0 0 4.5v10A1.5 1.5 0 0 0 1.5 16h10a1.5 1.5 0 0 0 1.5-1.5V7.864a.5.5 0 0 0-1 0V14.5a.5.5 0 0 1-.5.5h-10a.5.5 0 0 1-.5-.5v-10a.5.5 0 0 1 .5-.5h6.636a.5.5 0 0 0 .5-.5"
+										/>
+										<path
+											fill-rule="evenodd"
+											d="M16 .5a.5.5 0 0 0-.5-.5h-5a.5.5 0 0 0 0 1h3.793L6.146 9.146a.5.5 0 1 0 .708.708L15 1.707V5.5a.5.5 0 0 0 1 0z"
+										/>
+									</svg>
+								</li>
+								<li class="d-flex align-items-center me-3">
+									<svg class="bi me-2" width="1em" height="1em">
+										<use xlink:href="#geo-fill"></use>
+									</svg>
+									<small>Earth</small>
+								</li>
+								<li class="d-flex align-items-center">
+									<svg
+										xmlns="http://www.w3.org/2000/svg"
+										width="16"
+										height="16"
+										fill="currentColor"
+										class="bi bi-calendar-event me-2"
+										viewBox="0 0 16 16"
+									>
+										<path
+											d="M11 6.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5z"
+										/>
+										<path
+											d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5M1 4v10a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V4z"
+										/>
+									</svg>
+									<small>2023</small>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+
+				<div class="col">
+					<div
+						class="card card-cover card-news h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg"
+						style="background-image: url('assets/img/section/racei1.png')"
+					>
+						<div
+							class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1"
+						>
+							<h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">
+								Pinnacle Moments: 2023 to 2025 a Retrospective Breakdown
+							</h3>
+							<ul class="d-flex list-unstyled mt-auto">
+								<li class="me-auto">
+									<svg
+										xmlns="http://www.w3.org/2000/svg"
+										width="16"
+										height="16"
+										fill="currentColor"
+										class="bi bi-box-arrow-up-right"
+										viewBox="0 0 16 16"
+									>
+										<path
+											fill-rule="evenodd"
+											d="M8.636 3.5a.5.5 0 0 0-.5-.5H1.5A1.5 1.5 0 0 0 0 4.5v10A1.5 1.5 0 0 0 1.5 16h10a1.5 1.5 0 0 0 1.5-1.5V7.864a.5.5 0 0 0-1 0V14.5a.5.5 0 0 1-.5.5h-10a.5.5 0 0 1-.5-.5v-10a.5.5 0 0 1 .5-.5h6.636a.5.5 0 0 0 .5-.5"
+										/>
+										<path
+											fill-rule="evenodd"
+											d="M16 .5a.5.5 0 0 0-.5-.5h-5a.5.5 0 0 0 0 1h3.793L6.146 9.146a.5.5 0 1 0 .708.708L15 1.707V5.5a.5.5 0 0 0 1 0z"
+										/>
+									</svg>
+								</li>
+								<li class="d-flex align-items-center me-3">
+									<svg class="bi me-2" width="1em" height="1em">
+										<use xlink:href="#geo-fill"></use>
+									</svg>
+									<small>Pakistan</small>
+								</li>
+								<li class="d-flex align-items-center">
+									<svg
+										xmlns="http://www.w3.org/2000/svg"
+										width="16"
+										height="16"
+										fill="currentColor"
+										class="bi bi-calendar-event me-2"
+										viewBox="0 0 16 16"
+									>
+										<path
+											d="M11 6.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5z"
+										/>
+										<path
+											d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5M1 4v10a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V4z"
+										/>
+									</svg>
+									<small>2023 - 2025</small>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+
+				<div class="col">
+					<div
+						class="card card-cover card-news h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg"
+						style="background-image: url('assets/img/section/racei1.png')"
+					>
+						<div class="d-flex flex-column h-100 p-5 pb-3 text-shadow-1">
+							<h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">
+								2025 on the Horizon: A Preview of Racing’s Future
+							</h3>
+							<ul class="d-flex list-unstyled mt-auto">
+								<li class="me-auto">
+									<svg
+										xmlns="http://www.w3.org/2000/svg"
+										width="16"
+										height="16"
+										fill="currentColor"
+										class="bi bi-box-arrow-up-right"
+										viewBox="0 0 16 16"
+									>
+										<path
+											fill-rule="evenodd"
+											d="M8.636 3.5a.5.5 0 0 0-.5-.5H1.5A1.5 1.5 0 0 0 0 4.5v10A1.5 1.5 0 0 0 1.5 16h10a1.5 1.5 0 0 0 1.5-1.5V7.864a.5.5 0 0 0-1 0V14.5a.5.5 0 0 1-.5.5h-10a.5.5 0 0 1-.5-.5v-10a.5.5 0 0 1 .5-.5h6.636a.5.5 0 0 0 .5-.5"
+										/>
+										<path
+											fill-rule="evenodd"
+											d="M16 .5a.5.5 0 0 0-.5-.5h-5a.5.5 0 0 0 0 1h3.793L6.146 9.146a.5.5 0 1 0 .708.708L15 1.707V5.5a.5.5 0 0 0 1 0z"
+										/>
+									</svg>
+								</li>
+								<li class="d-flex align-items-center me-3">
+									<svg class="bi me-2" width="1em" height="1em">
+										<use xlink:href="#geo-fill"></use>
+									</svg>
+									<small>California</small>
+								</li>
+								<li class="d-flex align-items-center">
+									<svg
+										xmlns="http://www.w3.org/2000/svg"
+										width="16"
+										height="16"
+										fill="currentColor"
+										class="bi bi-calendar-event me-2"
+										viewBox="0 0 16 16"
+									>
+										<path
+											d="M11 6.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5z"
+										/>
+										<path
+											d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5M1 4v10a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V4z"
+										/>
+									</svg>
+									<small>2025</small>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
 		</div>
 
 		<!-- site disclaimer -->
@@ -628,124 +657,104 @@
 		</div>
 
 		<!-- footer -->
-		<div class="container-fluid text-bg-dark">
-			<div class="container">
-				<footer class="py-5">
-					<div class="row">
-						<div class="col-6 col-md-2 mb-3">
-							<h5>Trackside</h5>
-							<ul class="nav flex-column">
-								<li class="nav-item mb-2">
-									<a href="#" class="nav-link p-0">Home</a>
-								</li>
-								<li class="nav-item mb-2">
-									<a href="#" class="nav-link p-0">About Trackside</a>
-								</li>
-								<li class="nav-item mb-2">
-									<a href="#" class="nav-link p-0">Site Attributions</a>
-								</li>
-								<li class="nav-item mb-2">
-									<a href="#" class="nav-link p-0">Learn More</a>
-								</li>
-								<li class="nav-item mb-2">
-									<a href="#" class="nav-link p-0">Contact Us</a>
-								</li>
-							</ul>
-						</div>
-
-						<div class="col-6 col-md-2 mb-3">
-							<h5>Discover</h5>
-							<ul class="nav flex-column">
-								<li class="nav-item mb-2">
-									<a href="#" class="nav-link p-0">2023 Breakdown</a>
-								</li>
-								<li class="nav-item mb-2">
-									<a href="#" class="nav-link p-0">2024 Breakdown</a>
-								</li>
-								<li class="nav-item mb-2">
-									<a href="#" class="nav-link p-0">2025 Theories</a>
-								</li>
-								<li class="nav-item mb-2">
-									<a href="#" class="nav-link p-0">Trackside FAQs</a>
-								</li>
-								<li class="nav-item mb-2">
-									<a href="#" class="nav-link p-0">Learn About F1</a>
-								</li>
-							</ul>
-						</div>
-
-						<!-- TODO add or update example links -->
-						<!-- todo weep -->
-						<div class="col-6 col-md-2 mb-3">
-							<h5>Pitwall</h5>
-							<ul class="nav flex-column">
-								<li class="nav-item mb-2">
-									<a href="#" class="nav-link p-0">Technologies</a>
-								</li>
-								<li class="nav-item mb-2">
-									<a href="#" class="nav-link p-0">The Future</a>
-								</li>
-								<li class="nav-item mb-2">
-									<a href="#" class="nav-link p-0">Example</a>
-								</li>
-								<li class="nav-item mb-2">
-									<a href="#" class="nav-link p-0">Example</a>
-								</li>
-								<li class="nav-item mb-2">
-									<a href="#" class="nav-link p-0">Example</a>
-								</li>
-							</ul>
-						</div>
-
-						<div class="col-md-5 offset-md-1 mb-3">
-							<form>
-								<h5>Subscribe to our newsletter</h5>
-								<p>Monthly digest of what's new and exciting from us.</p>
-								<div class="d-flex flex-column flex-sm-row w-100 gap-2">
-									<label for="newsletter1" class="visually-hidden"
-										>Email address</label
-									>
-									<input
-										id="newsletter1"
-										type="text"
-										class="form-control"
-										placeholder="Email address"
-									/>
-									<button class="btn btn-primary" type="button">
-										Subscribe
-									</button>
-								</div>
-							</form>
+		<div class="container-fluid text-bg-dark p-3">
+			<footer
+				class="container border border-10 border-red border-start-0 border-top-0 rounded-bottom-4 rounded-start-0 pt-5 pb-0"
+			>
+				<!-- TODO update links -->
+				<div class="row">
+					<div class="col-md-5 mb-3">
+						<div>
+							<img
+								src="assets/img/logos/trackside-logowhite.png"
+								class="img-fluid w-50 mb-3"
+								alt=""
+							/>
+							<p>Discover Formula 1 from a fan perspective.</p>
 						</div>
 					</div>
 
-					<div
-						class="d-flex flex-column flex-sm-row justify-content-between py-4 my-4 border-top"
-					>
-						<p>© 2025 Nick Calvo All rights reserved.</p>
-						<ul class="list-unstyled d-flex">
-							<li class="ms-3">
-								<a class="link-body-emphasis" href="#"
-									><svg class="bi" width="24" height="24">
-										<use xlink:href="#twitter"></use></svg
-								></a>
+					<div class="col-6 col-md-2 offset-md-1 mb-3">
+						<h5>Trackside</h5>
+						<ul class="nav flex-column">
+							<li class="nav-item mb-2">
+								<a href="#" class="nav-link p-0">Home</a>
 							</li>
-							<li class="ms-3">
-								<a class="link-body-emphasis" href="#"
-									><svg class="bi" width="24" height="24">
-										<use xlink:href="#instagram"></use></svg
-								></a>
+							<li class="nav-item mb-2">
+								<a href="#" class="nav-link p-0">What is Formula 1</a>
 							</li>
-							<li class="ms-3">
-								<a class="link-body-emphasis" href="#"
-									><svg class="bi" width="24" height="24">
-										<use xlink:href="#facebook"></use></svg
-								></a>
+							<li class="nav-item mb-2">
+								<a href="#" class="nav-link p-0">Competitors</a>
+							</li>
+							<li class="nav-item mb-2">
+								<a href="#" class="nav-link p-0">Future</a>
 							</li>
 						</ul>
 					</div>
-				</footer>
-			</div>
+
+					<div class="col-6 col-md-2 mb-3">
+						<h5>Seasonal</h5>
+						<ul class="nav flex-column">
+							<li class="nav-item mb-2">
+								<a href="#" class="nav-link p-0">2025 Race Calendar</a>
+							</li>
+							<li class="nav-item mb-2">
+								<a href="#" class="nav-link p-0">2025 Coverage</a>
+							</li>
+							<li class="nav-item mb-2">
+								<a href="#" class="nav-link p-0">2024 Breakdown</a>
+							</li>
+							<li class="nav-item mb-2">
+								<a href="#" class="nav-link p-0">2023 Breakdown</a>
+							</li>
+						</ul>
+					</div>
+
+					<div class="col-6 col-md-2 mb-3">
+						<h5>Pitwall</h5>
+						<ul class="nav flex-column">
+							<li class="nav-item mb-2">
+								<a href="#" class="nav-link p-0">Trackside FAQs</a>
+							</li>
+							<li class="nav-item mb-2">
+								<a href="#" class="nav-link p-0">Site Attributions</a>
+							</li>
+							<li class="nav-item mb-2">
+								<a href="#" class="nav-link p-0">Learn More</a>
+							</li>
+							<li class="nav-item mb-2">
+								<a href="#" class="nav-link p-0">Contact Us</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+
+				<div
+					class="d-flex flex-column flex-sm-row justify-content-between py-4 my-2 border-top"
+				>
+					<p>© 2025 Nick Calvo All rights reserved.</p>
+					<ul class="list-unstyled d-flex">
+						<li class="ms-3">
+							<a class="link-body-emphasis" href="#"
+								><svg class="bi" width="24" height="24">
+									<use xlink:href="#twitter"></use></svg
+							></a>
+						</li>
+						<li class="ms-3">
+							<a class="link-body-emphasis" href="#"
+								><svg class="bi" width="24" height="24">
+									<use xlink:href="#instagram"></use></svg
+							></a>
+						</li>
+						<li class="ms-3">
+							<a class="link-body-emphasis" href="#"
+								><svg class="bi" width="24" height="24">
+									<use xlink:href="#facebook"></use></svg
+							></a>
+						</li>
+					</ul>
+				</div>
+			</footer>
 		</div>
 
 		<script>
