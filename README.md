@@ -62,15 +62,16 @@ Dive into the garages, feel the rush of the paddock, and explore the trackside e
 
 This project is built with the *Bootstrap 5* framework along with *Parcel* to bundle the package, maintained in *vscode*. I am using *Linear* as a project management tool.
 
-[![npm](https://img.shields.io/badge/npm-CB3837?logo=npm&logoColor=fff)](#)
-[![Git](https://img.shields.io/badge/Git-F05032?logo=git&logoColor=fff)](#)
-[![HTML](https://img.shields.io/badge/HTML-%23E34F26.svg?logo=html5&logoColor=white)](#)
-[![CSS](https://img.shields.io/badge/CSS-1572B6?logo=css3&logoColor=fff)](#)
-[![Bootstrap 5.3.3](https://img.shields.io/badge/Bootstrap_5.3.3-blueviolet?logo=bootstrap&logoColor=white)](https://)
-[![Parcel 2.13.3](https://img.shields.io/badge/Parcel_2.13.3-orange?logo=npm&logoColor=white)](https://)
-[![Visual Studio](https://custom-icon-badges.demolab.com/badge/Visual%20Studio-5C2D91.svg?&logo=visual-studio&logoColor=white)](#)
-[![Linear](https://img.shields.io/badge/Linear-5E6AD2?logo=linear&logoColor=fff)](#)
-[![Flag Icons](https://img.shields.io/badge/Flag_Icons-5E6AD2?logo=flags&logoColor=fff)](#)
+[![Node.js](https://img.shields.io/badge/Node.js-339933?logo=Node.js&logoColor=white)](https://nodejs.org/en/download)
+[![Git](https://img.shields.io/badge/Git-F05032?logo=git&logoColor=fff)](https://git-scm.com/)
+[![HTML](https://img.shields.io/badge/HTML-%23E34F26.svg?logo=html5&logoColor=white)](https://developer.mozilla.org/en-US/docs/Web/HTML)
+[![CSS](https://img.shields.io/badge/CSS-1572B6?logo=css3&logoColor=fff)](https://developer.mozilla.org/en-US/docs/Web/CSS)
+[![Bootstrap 5.3.3](https://img.shields.io/badge/Bootstrap_5.3.3-blueviolet?logo=bootstrap&logoColor=white)](https://getbootstrap.com/)
+[![Parcel 2.13.3](https://img.shields.io/badge/Parcel_2.13.3-orange?logo=npm&logoColor=white)](https://parceljs.org/)
+[![Visual Studio](https://custom-icon-badges.demolab.com/badge/Visual%20Studio-5C2D91.svg?&logo=visual-studio&logoColor=white)](https://visualstudio.microsoft.com/)
+[![Linear](https://img.shields.io/badge/Linear-5E6AD2?logo=linear&logoColor=fff)](https://linear.app/)
+[![Flag Icons](https://img.shields.io/badge/Flag_Icons-918b22?logo=flag&logoColor=fff)](https://flagicons.lipis.dev/)
+
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
@@ -189,16 +190,14 @@ Distributed under the MIT License. See `LICENSE.txt` for more information.
 
 <!-- CONTACT -->
 ## Contact
-Project Link: [https://github.com/rroarings/trackside](https://github.com/yrroarings/trackside)
+Project Link: [https://github.com/rroarings/tarmac](https://github.com/rroarings/tarmac)
 
 [My personal wesbite - www.notnickcalvo.com](https://notnickcalvo.com) 
 
-Social Media
 
-[![GitHub](https://img.shields.io/badge/GitHub-%23121011.svg?logo=github&logoColor=white)](#)
-[![X](https://img.shields.io/badge/X-%23000000.svg?logo=X&logoColor=white)](#)
-[![Behance](https://img.shields.io/badge/Behance-0054F7?logo=behance&logoColor=white)](#)
-[![YouTube](https://img.shields.io/badge/YouTube-%23FF0000.svg?logo=YouTube&logoColor=white)](#)
+[![GitHub](https://img.shields.io/badge/GitHub-%23121011.svg?logo=github&logoColor=white)](https://github.com/rroarings/tarmac)
+[![Behance](https://img.shields.io/badge/Behance-0054F7?logo=behance&logoColor=white)](https://www.behance.net/nickcalvo)
+[![YouTube](https://img.shields.io/badge/YouTube-%23FF0000.svg?logo=YouTube&logoColor=white)](https://www.youtube.com/@ovlack)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -217,13 +216,3 @@ Thanks to the following organizations and their partners for making this project
 
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
-[license-shield]: https://img.shields.io/github/license/othneildrew/Best-README-Template.svg?style=for-the-badge
-[license-url]: https://github.com/othneildrew/Best-README-Template/blob/master/LICENSE.txt
-[linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
-[linkedin-url]: https://linkedin.com/in/othneildrew
-[Bootstrap.com]: https://img.shields.io/badge/Bootstrap-563D7C?style=for-the-badge&logo=bootstrap&logoColor=white
-[Bootstrap-url]: https://getbootstrap.com
-[Parceljs.com]: https://img.shields.io/badge/Parcel-d69b5e?style=for-the-badge&logo=parcel&logoColor=white
-[Parcel-url]: https://parceljs.org
-[Flagicons.lipis.dev]: https://img.shields.io/badge/Flags-d69b5e?style=for-the-badge&logo=flags&logoColor=white
-[Flags-url]: https://flagicons.lipis.dev
