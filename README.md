@@ -21,6 +21,9 @@
 
 
 
+
+
+
 <!-- TABLE OF CONTENTS -->
 <details>
   <summary>Table of Contents</summary>
@@ -52,6 +55,9 @@
 ## About The Project
 
 
+![Static Badge](https://img.shields.io/badge/alpha-alpha?label=status&color=red)
+
+
 Dive into the garages, feel the rush of the paddock, and explore the trackside excitement like never before. Built with Bootstrap 5.3, bundled with Parcel, and managed through Linear, this project is your ticket to the fast lane of F1 fandom.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
@@ -59,6 +65,7 @@ Dive into the garages, feel the rush of the paddock, and explore the trackside e
 
 
 ### Built With
+
 
 This project is built with the *Bootstrap 5* framework along with *Parcel* to bundle the package, maintained in *vscode*. I am using *Linear* as a project management tool.
 
@@ -71,6 +78,7 @@ This project is built with the *Bootstrap 5* framework along with *Parcel* to bu
 [![Visual Studio](https://custom-icon-badges.demolab.com/badge/Visual%20Studio-5C2D91.svg?&logo=visual-studio&logoColor=white)](https://visualstudio.microsoft.com/)
 [![Linear](https://img.shields.io/badge/Linear-5E6AD2?logo=linear&logoColor=fff)](https://linear.app/)
 [![Flag Icons](https://img.shields.io/badge/Flag_Icons-918b22?logo=flag&logoColor=fff)](https://flagicons.lipis.dev/)
+
 
 
 
@@ -121,7 +129,7 @@ Below is an example of how you can install a local copy of the project on your m
 
 ### Development
 
-Once you start the dev server, check the terminal for
+1. Once you start the dev server, check the terminal for
 ```
 > garage@1.0.0 start
 > parcel serve src/index.html --public-url / --dist-dir dist
@@ -129,23 +137,26 @@ Once you start the dev server, check the terminal for
 Server running at http://localhost:1234
 ```
 
-Alt (Cmd for Mac) + Click the ```http://localhost:1234``` link to open our site in the default browser.
+2. Alt (Cmd for Mac) + Click the ```http://localhost:1234``` link to open our site in the default browser.
 
 ```
 Server running at http://localhost:1234
 ```
 
-Any changes you make are hot-reloaded with Parcel on saves.
+3. Any changes you make are hot-reloaded with Parcel on saves.
 
 
 ### Build (Production)
 
-Make sure you are in the *garage* directory
+Please note that this project is currently in **ALPHA**.
+
+
+1. Make sure you are in the *garage* directory
 ```
 cd ./garage
 ```
 
-Run the Parcel build script
+2. Run the Parcel build script
 ```
 npm build
 ```
