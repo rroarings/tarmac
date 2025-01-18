@@ -11,41 +11,22 @@
 			content="Formula Bootstrap is a a Bootstrap built website that explores some areas of Formula One."
 		/>
 		<meta name="author" content="Nick Calvo" />
-		<title>F1: Bootstrapped | Future</title>
-		<!-- Favicon-->
-		<!-- Font Awesome icons (free version)-->
-		<script
-			src="https://kit.fontawesome.com/a0229737f2.js"
-			crossorigin="anonymous"
-		></script>
-		<!-- Bootstrap Icons v1.10.4 -->
-		<link
-			rel="stylesheet"
-			href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css"
-		/>
-		<!-- Google fonts-->
-		<link
-			href="https://fonts.googleapis.com/css?family=Montserrat:400,700"
-			rel="stylesheet"
-			type="text/css"
-		/>
-		<link
-			href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700"
-			rel="stylesheet"
-			type="text/css"
-		/>
-		<!-- Bootstrap 5 CSS -->
-		<link href="css/styles.css" rel="stylesheet" />
+		<title>Trackside | Future of F1</title>
+		<link rel="stylesheet" href="scss/styles.scss" />
 	</head>
 
 	<body id="page-top">
-		<!-- Navigation-->
+		<!-- site header -->
 		<div class="container-fluid">
-			<nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
+			<nav class="navbar navbar-expand-lg sticky-top" id="mainNav">
 				<div class="container">
-					<a class="navbar-brand" href="#page-top"
-						><img src="assets/img/logos/sitelogo.png" alt="..."
-					/></a>
+					<a class="navbar-brand" href="#page-top">
+						<img
+							src="assets/img/logos/trackside-logoblack.png"
+							class="img-fluid w-50"
+							alt="Trackside Logo"
+						/>
+					</a>
 					<button
 						class="navbar-toggler"
 						type="button"
@@ -59,31 +40,116 @@
 						<i class="fas fa-bars ms-1"></i>
 					</button>
 					<div class="collapse navbar-collapse" id="navbarResponsive">
-						<ul class="navbar-nav text-uppercase ms-auto py-4 py-lg-0">
-							<li class="nav-item">
+						<ul class="navbar-nav ms-auto me-4 py-4 py-lg-0">
+							<li class="nav-item fw-bold">
 								<a class="nav-link" href="index.html">Home</a>
 							</li>
-							<li class="nav-item">
-								<a class="nav-link" href="teams.html">Teams</a>
+							<li class="nav-item dropdown">
+								<a
+									class="nav-link dropdown-toggle"
+									href="#"
+									id="aboutDropdown"
+									role="button"
+									data-bs-toggle="dropdown"
+									aria-expanded="false"
+								>
+									About F1
+								</a>
+								<ul class="dropdown-menu" aria-labelledby="aboutDropdown">
+									<li>
+										<a class="dropdown-item" href="#">What is Formula 1</a>
+									</li>
+									<li>
+										<a class="dropdown-item" href="#">Technology of F1</a>
+									</li>
+									<li><a class="dropdown-item" href="#">Future of F1</a></li>
+								</ul>
 							</li>
-							<li class="nav-item">
-								<a class="nav-link" href="racecalendar.html">Calendar</a>
+							<li class="nav-item dropdown">
+								<a
+									class="nav-link dropdown-toggle"
+									href="#"
+									id="aboutDropdown"
+									role="button"
+									data-bs-toggle="dropdown"
+									aria-expanded="false"
+								>
+									Race Calendars
+								</a>
+								<ul class="dropdown-menu" aria-labelledby="aboutDropdown">
+									<li>
+										<a class="dropdown-item" href="#">2025 Race Calendar</a>
+									</li>
+									<li>
+										<a class="dropdown-item" href="#">2024 Race Calendar</a>
+									</li>
+									<li>
+										<a class="dropdown-item" href="#">2023 Race Calendar</a>
+									</li>
+								</ul>
 							</li>
-							<li class="nav-item">
-								<a class="nav-link" href="technologies.html">Technology</a>
+							<li class="nav-item dropdown">
+								<a
+									class="nav-link dropdown-toggle"
+									href="#"
+									id="seasonsDropdown"
+									role="button"
+									data-bs-toggle="dropdown"
+									aria-expanded="false"
+								>
+									Results
+								</a>
+								<ul class="dropdown-menu" aria-labelledby="seasonsDropdown">
+									<li><a class="dropdown-item" href="#">2025 Standings</a></li>
+									<li><a class="dropdown-item" href="#">2024 Standings</a></li>
+									<li><a class="dropdown-item" href="#">2023 Standings</a></li>
+								</ul>
 							</li>
-							<li class="nav-item">
-								<a class="nav-link" href="future.html">Future</a>
+							<li class="nav-item dropdown">
+								<a
+									class="nav-link dropdown-toggle"
+									href="#"
+									id="seasonsDropdown"
+									role="button"
+									data-bs-toggle="dropdown"
+									aria-expanded="false"
+								>
+									Season Talk
+								</a>
+								<ul class="dropdown-menu" aria-labelledby="seasonsDropdown">
+									<li><a class="dropdown-item" href="#">2025 Coverage</a></li>
+									<li><a class="dropdown-item" href="#">2024 Breakdown</a></li>
+									<li><a class="dropdown-item" href="#">2023 Breakdown</a></li>
+								</ul>
+							</li>
+							<li class="nav-item dropdown">
+								<a
+									class="nav-link dropdown-toggle"
+									href="#"
+									id="fanZoneDropdown"
+									role="button"
+									data-bs-toggle="dropdown"
+									aria-expanded="false"
+								>
+									Site
+								</a>
+								<ul class="dropdown-menu" aria-labelledby="fanZoneDropdown">
+									<li><a class="dropdown-item" href="#">Trackside FAQs</a></li>
+									<li><a class="dropdown-item" href="#">Learn More</a></li>
+									<li><a class="dropdown-item" href="#">Contact Us</a></li>
+									<li>
+										<a class="dropdown-item" href="#">Site Attributions</a>
+									</li>
+								</ul>
 							</li>
 						</ul>
 					</div>
 				</div>
 			</nav>
 		</div>
-		<!-- End - Navigation-->
 
 		<!-- Hero -->
-		<div class="container-fluid">
+		<div class="container-fluid my-5">
 			<header class="masthead">
 				<div class="container text-start">
 					<div
@@ -138,7 +204,6 @@
 									alt="AI-generated car engineer"
 								/>
 							</div>
-							∂
 						</div>
 					</div>
 				</div>
@@ -295,130 +360,109 @@
 		</div>
 
 		<!-- footer -->
-		<div class="container-fluid text-bg-dark">
-			<div class="container">
-				<footer class="py-5">
-					<div class="row">
-						<div class="col-6 col-md-2 mb-3">
-							<h5>Trackside</h5>
-							<ul class="nav flex-column">
-								<li class="nav-item mb-2">
-									<a href="#" class="nav-link p-0">Home</a>
-								</li>
-								<li class="nav-item mb-2">
-									<a href="#" class="nav-link p-0">About Trackside</a>
-								</li>
-								<li class="nav-item mb-2">
-									<a href="#" class="nav-link p-0">Site Attributions</a>
-								</li>
-								<li class="nav-item mb-2">
-									<a href="#" class="nav-link p-0">Learn More</a>
-								</li>
-								<li class="nav-item mb-2">
-									<a href="#" class="nav-link p-0">Contact Us</a>
-								</li>
-							</ul>
-						</div>
-
-						<div class="col-6 col-md-2 mb-3">
-							<h5>Discover</h5>
-							<ul class="nav flex-column">
-								<li class="nav-item mb-2">
-									<a href="#" class="nav-link p-0">2023 Breakdown</a>
-								</li>
-								<li class="nav-item mb-2">
-									<a href="#" class="nav-link p-0">2024 Breakdown</a>
-								</li>
-								<li class="nav-item mb-2">
-									<a href="#" class="nav-link p-0">2025 Theories</a>
-								</li>
-								<li class="nav-item mb-2">
-									<a href="#" class="nav-link p-0">Trackside FAQs</a>
-								</li>
-								<li class="nav-item mb-2">
-									<a href="#" class="nav-link p-0">Learn About F1</a>
-								</li>
-							</ul>
-						</div>
-
-						<!-- TODO add or update example links -->
-						<!-- todo weep -->
-						<div class="col-6 col-md-2 mb-3">
-							<h5>Pitwall</h5>
-							<ul class="nav flex-column">
-								<li class="nav-item mb-2">
-									<a href="#" class="nav-link p-0">Technologies</a>
-								</li>
-								<li class="nav-item mb-2">
-									<a href="#" class="nav-link p-0">The Future</a>
-								</li>
-								<li class="nav-item mb-2">
-									<a href="#" class="nav-link p-0">Example</a>
-								</li>
-								<li class="nav-item mb-2">
-									<a href="#" class="nav-link p-0">Example</a>
-								</li>
-								<li class="nav-item mb-2">
-									<a href="#" class="nav-link p-0">Example</a>
-								</li>
-							</ul>
-						</div>
-
-						<div class="col-md-5 offset-md-1 mb-3">
-							<form>
-								<h5>Subscribe to our newsletter</h5>
-								<p>Monthly digest of what's new and exciting from us.</p>
-								<div class="d-flex flex-column flex-sm-row w-100 gap-2">
-									<label for="newsletter1" class="visually-hidden"
-										>Email address</label
-									>
-									<input
-										id="newsletter1"
-										type="text"
-										class="form-control"
-										placeholder="Email address"
-									/>
-									<button class="btn btn-primary" type="button">
-										Subscribe
-									</button>
-								</div>
-							</form>
+		<div class="container-fluid text-bg-dark p-3">
+			<footer
+				class="container border border-10 border-red border-start-0 border-top-0 rounded-bottom-4 rounded-start-0 pt-5 pb-0"
+			>
+				<!-- TODO update links -->
+				<div class="row">
+					<div class="col-md-5 mb-3">
+						<div>
+							<img
+								src="assets/img/logos/trackside-logowhite.png"
+								class="img-fluid w-50 mb-3"
+								alt=""
+							/>
+							<p>Discover Formula 1 from a fan perspective.</p>
 						</div>
 					</div>
 
-					<div
-						class="d-flex flex-column flex-sm-row justify-content-between py-4 my-4 border-top"
-					>
-						<p>© 2025 Nick Calvo All rights reserved.</p>
-						<ul class="list-unstyled d-flex">
-							<li class="ms-3">
-								<a class="link-body-emphasis" href="#"
-									><svg class="bi" width="24" height="24">
-										<use xlink:href="#twitter"></use></svg
-								></a>
+					<div class="col-6 col-md-2 offset-md-1 mb-3">
+						<h5>Trackside</h5>
+						<ul class="nav flex-column">
+							<li class="nav-item mb-2">
+								<a href="#" class="nav-link p-0">Home</a>
 							</li>
-							<li class="ms-3">
-								<a class="link-body-emphasis" href="#"
-									><svg class="bi" width="24" height="24">
-										<use xlink:href="#instagram"></use></svg
-								></a>
+							<li class="nav-item mb-2">
+								<a href="#" class="nav-link p-0">What is Formula 1</a>
 							</li>
-							<li class="ms-3">
-								<a class="link-body-emphasis" href="#"
-									><svg class="bi" width="24" height="24">
-										<use xlink:href="#facebook"></use></svg
-								></a>
+							<li class="nav-item mb-2">
+								<a href="#" class="nav-link p-0">Competitors</a>
+							</li>
+							<li class="nav-item mb-2">
+								<a href="#" class="nav-link p-0">Future</a>
 							</li>
 						</ul>
 					</div>
-				</footer>
-			</div>
+
+					<div class="col-6 col-md-2 mb-3">
+						<h5>Seasonal</h5>
+						<ul class="nav flex-column">
+							<li class="nav-item mb-2">
+								<a href="#" class="nav-link p-0">2025 Race Calendar</a>
+							</li>
+							<li class="nav-item mb-2">
+								<a href="#" class="nav-link p-0">2025 Coverage</a>
+							</li>
+							<li class="nav-item mb-2">
+								<a href="#" class="nav-link p-0">2024 Breakdown</a>
+							</li>
+							<li class="nav-item mb-2">
+								<a href="#" class="nav-link p-0">2023 Breakdown</a>
+							</li>
+						</ul>
+					</div>
+
+					<div class="col-6 col-md-2 mb-3">
+						<h5>Pitwall</h5>
+						<ul class="nav flex-column">
+							<li class="nav-item mb-2">
+								<a href="#" class="nav-link p-0">Trackside FAQs</a>
+							</li>
+							<li class="nav-item mb-2">
+								<a href="#" class="nav-link p-0">Site Attributions</a>
+							</li>
+							<li class="nav-item mb-2">
+								<a href="#" class="nav-link p-0">Learn More</a>
+							</li>
+							<li class="nav-item mb-2">
+								<a href="#" class="nav-link p-0">Contact Us</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+
+				<div
+					class="d-flex flex-column flex-sm-row justify-content-between py-4 my-2 border-top"
+				>
+					<p>© 2025 Nick Calvo All rights reserved.</p>
+					<ul class="list-unstyled d-flex">
+						<li class="ms-3">
+							<a class="link-body-emphasis" href="#"
+								><svg class="bi" width="24" height="24">
+									<use xlink:href="#twitter"></use></svg
+							></a>
+						</li>
+						<li class="ms-3">
+							<a class="link-body-emphasis" href="#"
+								><svg class="bi" width="24" height="24">
+									<use xlink:href="#instagram"></use></svg
+							></a>
+						</li>
+						<li class="ms-3">
+							<a class="link-body-emphasis" href="#"
+								><svg class="bi" width="24" height="24">
+									<use xlink:href="#facebook"></use></svg
+							></a>
+						</li>
+					</ul>
+				</div>
+			</footer>
 		</div>
 
 		<script>
 			document.getElementById("date").innerHTML = document.lastModified
 		</script>
-		<!-- Bootstrap core JS-->
-		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+		<script type="module" src="js/main.js"></script>
 	</body>
 </html>
