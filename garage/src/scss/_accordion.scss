@@ -1,0 +1,33 @@
+.accordion-item-faq {
+	padding: 1.1em;
+	border: none;
+	border-bottom: 3px solid $gray-800;
+	border-right: 3px solid $gray-800;
+	border-radius: 0;
+	border-bottom-right-radius: 1rem;
+	transition: all 0.3s ease;
+}
+
+.accordion-item-faq:first-child {
+	border-top: none;
+	border-radius: 0;
+}
+
+.accordion-item-faq:first-of-type,
+.accordion-item-faq:last-of-type {
+	border-radius: 0;
+	border-bottom-right-radius: 1rem;
+}
+
+.accordion-item-faq:hover {
+	border-color: $red-500;
+}
+
+.accordion-button:focus {
+	box-shadow: 5px 5px 5px $red-100;
+}
+
+.accordion-button:not(.collapsed) {
+	background-color: transparent;
+	box-shadow: none;
+}
