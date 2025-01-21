@@ -1,0 +1,599 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta
+			name="description"
+			content="Formula Bootstrap is a a Bootstrap built website that explores some areas of Formula One."
+		/>
+		<meta name="author" content="Nick Calvo" />
+		<title>Trackside | FAQs</title>
+		<link rel="stylesheet" href="scss/styles.scss" />
+	</head>
+	<body>
+		<!-- site header -->
+		<div class="container-fluid">
+			<nav class="navbar navbar-expand-lg sticky-top" id="mainNav">
+				<div class="container">
+					<a class="navbar-brand" href="#page-top">
+						<img
+							src="assets/img/logos/trackside-logoblack.png"
+							class="img-fluid w-50"
+							alt="Trackside Logo"
+						/>
+					</a>
+					<button
+						class="navbar-toggler"
+						type="button"
+						data-bs-toggle="collapse"
+						data-bs-target="#navbarResponsive"
+						aria-controls="navbarResponsive"
+						aria-expanded="false"
+						aria-label="Toggle navigation"
+					>
+						Menu
+						<i class="fas fa-bars ms-1"></i>
+					</button>
+					<div class="collapse navbar-collapse" id="navbarResponsive">
+						<ul class="navbar-nav ms-auto me-4 py-4 py-lg-0">
+							<li class="nav-item fw-bold">
+								<a class="nav-link" href="index.html">Home</a>
+							</li>
+							<li class="nav-item dropdown">
+								<a
+									class="nav-link dropdown-toggle"
+									href="#"
+									id="aboutDropdown"
+									role="button"
+									data-bs-toggle="dropdown"
+									aria-expanded="false"
+								>
+									About F1
+								</a>
+								<ul class="dropdown-menu" aria-labelledby="aboutDropdown">
+									<li>
+										<a class="dropdown-item" href="#">What is Formula 1</a>
+									</li>
+									<li>
+										<a class="dropdown-item" href="technologies.html"
+											>Technology of F1</a
+										>
+									</li>
+									<li>
+										<a class="dropdown-item" href="future.html">Future of F1</a>
+									</li>
+								</ul>
+							</li>
+							<li class="nav-item dropdown">
+								<a
+									class="nav-link dropdown-toggle"
+									href="#"
+									id="aboutDropdown"
+									role="button"
+									data-bs-toggle="dropdown"
+									aria-expanded="false"
+								>
+									Race Calendars
+								</a>
+								<ul class="dropdown-menu" aria-labelledby="aboutDropdown">
+									<li>
+										<a class="dropdown-item" href="#">2025 Calendar</a>
+									</li>
+									<li>
+										<a class="dropdown-item" href="#">2024 Calendar</a>
+									</li>
+									<li>
+										<a class="dropdown-item" href="#">2023 Calendar</a>
+									</li>
+								</ul>
+							</li>
+							<li class="nav-item dropdown">
+								<a
+									class="nav-link dropdown-toggle"
+									href="#"
+									id="seasonsDropdown"
+									role="button"
+									data-bs-toggle="dropdown"
+									aria-expanded="false"
+								>
+									Season Talk
+								</a>
+								<ul class="dropdown-menu" aria-labelledby="seasonsDropdown">
+									<li><a class="dropdown-item" href="#">2025 Coverage</a></li>
+									<li><a class="dropdown-item" href="#">2024 Results</a></li>
+									<li><a class="dropdown-item" href="#">2023 Results</a></li>
+								</ul>
+							</li>
+							<li class="nav-item dropdown">
+								<a
+									class="nav-link dropdown-toggle"
+									href="#"
+									id="seasonsDropdown"
+									role="button"
+									data-bs-toggle="dropdown"
+									aria-expanded="false"
+								>
+									Standings
+								</a>
+								<ul class="dropdown-menu" aria-labelledby="seasonsDropdown">
+									<li><a class="dropdown-item" href="#">2025 Coverage</a></li>
+									<li><a class="dropdown-item" href="#">2024 Breakdown</a></li>
+									<li><a class="dropdown-item" href="#">2023 Breakdown</a></li>
+								</ul>
+							</li>
+							<li class="nav-item dropdown">
+								<a
+									class="nav-link dropdown-toggle"
+									href="#"
+									id="fanZoneDropdown"
+									role="button"
+									data-bs-toggle="dropdown"
+									aria-expanded="false"
+								>
+									Site
+								</a>
+								<ul class="dropdown-menu" aria-labelledby="fanZoneDropdown">
+									<li>
+										<a
+											class="dropdown-item active"
+											href="faqs.html"
+											aria-current="page"
+											>Trackside FAQs</a
+										>
+									</li>
+									<li><a class="dropdown-item" href="#">Learn More</a></li>
+									<li><a class="dropdown-item" href="#">Contact Us</a></li>
+									<li>
+										<a class="dropdown-item" href="#">Site Attributions</a>
+									</li>
+								</ul>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</nav>
+		</div>
+
+		<!-- faqs hero -->
+		<div class="container px-4 py-2 my-5 text-center">
+			<h1 class="display-5 fw-bold text-body-emphasis">Trackside FAQs</h1>
+			<div class="col-lg-8 mx-auto">
+				<p class="lead mb-4">
+					Welcome to the FAQs hub for Trackside, your dedicated Formula 1 fan
+					site. Here, you'll find answers about navigating the site,
+					season-specific details, and what we are about.
+				</p>
+				<div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
+					<button type="button" class="btn btn-primary btn-lg px-4 gap-3">
+						Contact Us
+					</button>
+					<button type="button" class="btn btn-outline-secondary btn-lg px-4">
+						Secondary
+					</button>
+				</div>
+			</div>
+		</div>
+
+		<!-- general site faqs -->
+		<div class="container my-5">
+			<div class="row justify-content-center">
+				<div class="col-10">
+					<h2 class="fw-bold mb-4">General FAQs</h2>
+					<div class="accordion" id="accordionExample">
+						<div class="accordion-item accordion-item-faq">
+							<h2 class="accordion-header">
+								<button
+									class="accordion-button"
+									type="button"
+									data-bs-toggle="collapse"
+									data-bs-target="#collapseOne"
+									aria-expanded="true"
+									aria-controls="collapseOne"
+								>
+									What is Trackside?
+								</button>
+							</h2>
+							<div
+								id="collapseOne"
+								class="accordion-collapse collapse show"
+								data-bs-parent="#accordionExample"
+							>
+								<div class="accordion-body">
+									Trackside is a fan-driven platform offering in-depth coverage
+									of Formula 1, focusing on the 2023-2025 seasons with race
+									calendars, standings, and more.
+								</div>
+							</div>
+						</div>
+						<div class="accordion-item accordion-item-faq">
+							<h2 class="accordion-header">
+								<button
+									class="accordion-button collapsed"
+									type="button"
+									data-bs-toggle="collapse"
+									data-bs-target="#collapseTwo"
+									aria-expanded="false"
+									aria-controls="collapseTwo"
+								>
+									What can I find on the site?
+								</button>
+							</h2>
+							<div
+								id="collapseTwo"
+								class="accordion-collapse collapse"
+								data-bs-parent="#accordionExample"
+							>
+								<div class="accordion-body">
+									You can explore race calendars, driver and constructor
+									standings, as well as detailed profiles and stats for each
+									season from 2023 to 2025.
+								</div>
+							</div>
+						</div>
+						<div class="accordion-item accordion-item-faq">
+							<h2 class="accordion-header">
+								<button
+									class="accordion-button collapsed"
+									type="button"
+									data-bs-toggle="collapse"
+									data-bs-target="#collapseThree"
+									aria-expanded="false"
+									aria-controls="collapseThree"
+								>
+									How frequently is Trackside updated?
+								</button>
+							</h2>
+							<div
+								id="collapseThree"
+								class="accordion-collapse collapse"
+								data-bs-parent="#accordionExample"
+							>
+								<div class="accordion-body">
+									The website and all its features are currently in active
+									development. Some features and insights may not be fully added
+									into the website yet.
+								</div>
+							</div>
+						</div>
+						<div class="accordion-item accordion-item-faq">
+							<h2 class="accordion-header">
+								<button
+									class="accordion-button collapsed"
+									type="button"
+									data-bs-toggle="collapse"
+									data-bs-target="#collapseFour"
+									aria-expanded="false"
+									aria-controls="collapseFour"
+								>
+									Is Trackside an official F1 website?
+								</button>
+							</h2>
+							<div
+								id="collapseFour"
+								class="accordion-collapse collapse"
+								data-bs-parent="#accordionExample"
+							>
+								<div class="accordion-body">
+									No, Trackside is an independent fan site. This website is
+									unofficial and is not associated in any way with the Formula 1
+									companies. F1, FORMULA ONE, FORMULA 1, FIA FORMULA ONE WORLD
+									CHAMPIONSHIP, GRAND PRIX and related marks are trade marks of
+									Formula One Licensing B.V.
+								</div>
+							</div>
+						</div>
+						<div class="accordion-item accordion-item-faq">
+							<h2 class="accordion-header">
+								<button
+									class="accordion-button collapsed"
+									type="button"
+									data-bs-toggle="collapse"
+									data-bs-target="#collapseFive"
+									aria-expanded="false"
+									aria-controls="collapseFive"
+								>
+									How do I contact the Trackside team?
+								</button>
+							</h2>
+							<div
+								id="collapseFive"
+								class="accordion-collapse collapse"
+								data-bs-parent="#accordionExample"
+							>
+								<div class="accordion-body">
+									For any inquiries or feedback, visit our Contact page, where
+									you'll find a form to get in touch with us directly.
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- race info faqs -->
+		<div class="container my-5">
+			<div class="row justify-content-center">
+				<div class="col-10">
+					<h2 class="fw-bold mb-4">Race Information FAQs</h2>
+					<div class="accordion" id="accordionExample2">
+						<div class="accordion-item accordion-item-faq">
+							<h2 class="accordion-header">
+								<button
+									class="accordion-button collapsed"
+									type="button"
+									data-bs-toggle="collapse"
+									data-bs-target="#collapseSix"
+									aria-expanded="false"
+									aria-controls="collapseSix"
+								>
+									Where can I find the full race calendar for each season?
+								</button>
+							</h2>
+							<div
+								id="collapseSix"
+								class="accordion-collapse collapse collapsed"
+								data-bs-parent="#accordionExample2"
+							>
+								<div class="accordion-body">
+									Trackside offers fans a look back into a few of the most
+									recent and current Formula 1 championship seasons. This
+									includes 2023, 2024, and 2025. This site is not built with a
+									CMS, therefore, writing that much does not sound too
+									enjoyable. It was built to be a static site.
+								</div>
+							</div>
+						</div>
+						<div class="accordion-item accordion-item-faq">
+							<h2 class="accordion-header">
+								<button
+									class="accordion-button collapsed"
+									type="button"
+									data-bs-toggle="collapse"
+									data-bs-target="#collapseSeven"
+									aria-expanded="false"
+									aria-controls="collapseSeven"
+								>
+									What time are Formula 1 races held, and how can I convert them
+									to my local time zone?
+								</button>
+							</h2>
+							<div
+								id="collapseSeven"
+								class="accordion-collapse collapse"
+								data-bs-parent="#accordionExample2"
+							>
+								<div class="accordion-body">
+									We do not have the times of the races in local times. You can
+									find the date of the race on the website but we do not provide
+									any tools or features for time conversion.
+								</div>
+							</div>
+						</div>
+						<div class="accordion-item accordion-item-faq">
+							<h2 class="accordion-header">
+								<button
+									class="accordion-button collapsed"
+									type="button"
+									data-bs-toggle="collapse"
+									data-bs-target="#collapseEight"
+									aria-expanded="false"
+									aria-controls="collapseEight"
+								>
+									Where can I find detailed race results, including lap times
+									and driver performance?
+								</button>
+							</h2>
+							<div
+								id="collapseEight"
+								class="accordion-collapse collapse"
+								data-bs-parent="#accordionExample2"
+							>
+								<div class="accordion-body">
+									Check out one of the specific race pages found in one of the
+									yearly Race Calender pages to learn more about a specific
+									race.
+								</div>
+							</div>
+						</div>
+						<div class="accordion-item accordion-item-faq">
+							<h2 class="accordion-header">
+								<button
+									class="accordion-button collapsed"
+									type="button"
+									data-bs-toggle="collapse"
+									data-bs-target="#collapseNine"
+									aria-expanded="false"
+									aria-controls="collapseNine"
+								>
+									How do I stay updated on race news and updates?
+								</button>
+							</h2>
+							<div
+								id="collapseNine"
+								class="accordion-collapse collapse"
+								data-bs-parent="#accordionExample2"
+							>
+								<div class="accordion-body">
+									As much as we would like to include some sort of "live
+									alerts/news" feature, it would be too hard since the website
+									is intended to be static and sort of an 'archive' for three
+									seasons of Formula 1 history. To stay up to date with the
+									latest Formula 1 news, please refer to their website and
+									social media.
+								</div>
+							</div>
+						</div>
+						<div class="accordion-item accordion-item-faq">
+							<h2 class="accordion-header">
+								<button
+									class="accordion-button collapsed"
+									type="button"
+									data-bs-toggle="collapse"
+									data-bs-target="#collapseTen"
+									aria-expanded="false"
+									aria-controls="collapseTen"
+								>
+									How can I access race highlights and replays on the site?
+								</button>
+							</h2>
+							<div
+								id="collapseTen"
+								class="accordion-collapse collapse"
+								data-bs-parent="#accordionExample2"
+							>
+								<div class="accordion-body">
+									We do not offer any 'race highlights' or 'race replay'
+									features through the website. Some race pages might feature
+									some video clips of original footage captured within
+									<i>F1 2023</i> and <i>F1 2024</i> by Trackside. These are
+									recreations of moments in the race. To see official race
+									highlights and replays, please refer to the official Formula 1
+									website.
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- Still Have Questions -->
+		<div class="container text-bg-dark text-center my-5 py-5">
+			<div class="row">
+				<div class="col-12">
+					<h2 class="mb-3">Still have questions?</h2>
+					<p class="lead mb-4">
+						We're here to help. If you can't find what you need, reach out to us
+						directly!
+					</p>
+					<a href="#" class="btn btn-primary">Contact Us</a>
+				</div>
+			</div>
+		</div>
+
+		<!-- site disclaimer -->
+		<div
+			class="container-fluid text-bg-dark border border-dark-subtle border-top-0 border-start-0 border-end-0"
+		>
+			<div class="container">
+				<div class="row">
+					<div class="col-12">
+						<p class="my-2">
+							<strong>DISCLAIMER:</strong> This website is unofficial and is not
+							associated in any way with the Formula 1 companies. F1, FORMULA
+							ONE, FORMULA 1, FIA FORMULA ONE WORLD CHAMPIONSHIP, GRAND PRIX and
+							related marks are trade marks of Formula One Licensing B.V.
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- footer -->
+		<div class="container-fluid text-bg-dark p-3">
+			<footer
+				class="container border border-10 border-red border-start-0 border-top-0 rounded-bottom-4 rounded-start-0 pt-5 pb-0"
+			>
+				<!-- TODO update links -->
+				<div class="row">
+					<div class="col-md-5 mb-3">
+						<div>
+							<img
+								src="assets/img/logos/trackside-logowhite.png"
+								class="img-fluid w-50 mb-3"
+								alt=""
+							/>
+							<p>Discover Formula 1 from a fan perspective.</p>
+						</div>
+					</div>
+
+					<div class="col-6 col-md-2 offset-md-1 mb-3">
+						<h5>Trackside</h5>
+						<ul class="nav flex-column">
+							<li class="nav-item mb-2">
+								<a href="#" class="nav-link p-0">Home</a>
+							</li>
+							<li class="nav-item mb-2">
+								<a href="#" class="nav-link p-0">What is Formula 1</a>
+							</li>
+							<li class="nav-item mb-2">
+								<a href="technologies.html" class="nav-link p-0"
+									>Technology of F1</a
+								>
+							</li>
+							<li class="nav-item mb-2">
+								<a href="future.html" class="nav-link p-0">Future of F1</a>
+							</li>
+						</ul>
+					</div>
+
+					<div class="col-6 col-md-2 mb-3">
+						<h5>Seasonal</h5>
+						<ul class="nav flex-column">
+							<li class="nav-item mb-2">
+								<a href="#" class="nav-link p-0">2025 Race Calendar</a>
+							</li>
+							<li class="nav-item mb-2">
+								<a href="#" class="nav-link p-0">2025 Coverage</a>
+							</li>
+							<li class="nav-item mb-2">
+								<a href="#" class="nav-link p-0">2024 Breakdown</a>
+							</li>
+							<li class="nav-item mb-2">
+								<a href="#" class="nav-link p-0">2023 Breakdown</a>
+							</li>
+						</ul>
+					</div>
+
+					<div class="col-6 col-md-2 mb-3">
+						<h5>Pitwall</h5>
+						<ul class="nav flex-column">
+							<li class="nav-item mb-2">
+								<a href="#" class="nav-link p-0">Trackside FAQs</a>
+							</li>
+							<li class="nav-item mb-2">
+								<a href="#" class="nav-link p-0">Site Attributions</a>
+							</li>
+							<li class="nav-item mb-2">
+								<a href="#" class="nav-link p-0">Learn More</a>
+							</li>
+							<li class="nav-item mb-2">
+								<a href="#" class="nav-link p-0">Contact Us</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+
+				<div
+					class="d-flex flex-column flex-sm-row justify-content-between py-4 my-2 border-top"
+				>
+					<p>© 2025 Nick Calvo All rights reserved.</p>
+					<ul class="list-unstyled d-flex">
+						<li class="ms-3">
+							<a class="link-body-emphasis" href="#"
+								><svg class="bi" width="24" height="24">
+									<use xlink:href="#twitter"></use></svg
+							></a>
+						</li>
+						<li class="ms-3">
+							<a class="link-body-emphasis" href="#"
+								><svg class="bi" width="24" height="24">
+									<use xlink:href="#instagram"></use></svg
+							></a>
+						</li>
+						<li class="ms-3">
+							<a class="link-body-emphasis" href="#"
+								><svg class="bi" width="24" height="24">
+									<use xlink:href="#facebook"></use></svg
+							></a>
+						</li>
+					</ul>
+				</div>
+			</footer>
+		</div>
+
+		<script type="module" src="js/main.js"></script>
+	</body>
+</html>
