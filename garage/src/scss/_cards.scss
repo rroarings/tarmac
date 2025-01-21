@@ -5,9 +5,10 @@
 }
 
 .card-news .bi-box-arrow-up-right {
+  transform-origin: center center;
   transition: all .3s ease;
 }
 
 .card-news:hover .bi-box-arrow-up-right {
-  transform: translateY(-5px) scale(1.2);
+  transform: scale(1.1);
 }
