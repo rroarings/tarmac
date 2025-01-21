@@ -40,49 +40,137 @@
 	</head>
 
 	<body>
-		<div class="container-fluid" id="container-nav">
-			<nav class="navbar navbar-expand-lg fixed-top" id="mainNav">
-				<div class="container bg-danger">
-					<a class="navbar-brand" href="#page-top"
-						><img
-							src="../assets/img/logos/Heineken-logo-3.svg"
-							class="img-fluid w-25"
-							alt="..."
-					/></a>
-					<button
-						class="navbar-toggler"
-						type="button"
-						data-bs-toggle="collapse"
-						data-bs-target="#navbarResponsive"
-						aria-controls="navbarResponsive"
-						aria-expanded="false"
-						aria-label="Toggle navigation"
-					>
-						Menu
-						<i class="fas fa-bars ms-1"></i>
-					</button>
-					<div class="collapse navbar-collapse" id="navbarResponsive">
-						<ul class="navbar-nav text-uppercase ms-auto py-4 py-lg-0">
-							<li class="nav-item">
-								<a class="nav-link" href="../index.html">Home</a>
-							</li>
-							<li class="nav-item">
-								<a class="nav-link" href="../teams.html">Teams</a>
-							</li>
-							<li class="nav-item">
-								<a class="nav-link" href="../racecalendar.html">Calendar</a>
-							</li>
-							<li class="nav-item">
-								<a class="nav-link" href="../technologies.html">Technology</a>
-							</li>
-							<li class="nav-item">
-								<a class="nav-link" href="../future.html">Future</a>
-							</li>
-						</ul>
-					</div>
+	<!-- site header -->
+	<div class="container-fluid">
+		<nav class="navbar navbar-expand-lg sticky-top" id="mainNav">
+			<div class="container">
+				<a class="navbar-brand" href="#page-top">
+					<img
+						src="../assets/img/logos/trackside-logoblack.png"
+						class="img-fluid w-50"
+						alt="Trackside Logo"
+					/>
+				</a>
+				<button
+					class="navbar-toggler"
+					type="button"
+					data-bs-toggle="collapse"
+					data-bs-target="#navbarResponsive"
+					aria-controls="navbarResponsive"
+					aria-expanded="false"
+					aria-label="Toggle navigation"
+				>
+					Menu
+					<i class="fas fa-bars ms-1"></i>
+				</button>
+				<div class="collapse navbar-collapse" id="navbarResponsive">
+					<ul class="navbar-nav ms-auto me-4 py-4 py-lg-0">
+						<li class="nav-item fw-bold">
+							<a class="nav-link" href="../index.html">Home</a>
+						</li>
+						<li class="nav-item dropdown">
+							<a
+								class="nav-link dropdown-toggle"
+								href="#"
+								id="aboutDropdown"
+								role="button"
+								data-bs-toggle="dropdown"
+								aria-expanded="false"
+							>
+								About F1
+							</a>
+							<ul class="dropdown-menu" aria-labelledby="aboutDropdown">
+								<li>
+									<a class="dropdown-item" href="#">What is Formula 1</a>
+								</li>
+								<li>
+									<a class="dropdown-item" href="../technologies.html">Technology of F1</a>
+								</li>
+								<li><a class="dropdown-item" href="../future.html">Future of F1</a></li>
+							</ul>
+						</li>
+						<li class="nav-item dropdown">
+							<a
+								class="nav-link dropdown-toggle"
+								href="#"
+								id="aboutDropdown"
+								role="button"
+								data-bs-toggle="dropdown"
+								aria-expanded="false"
+							>
+								Race Calendars
+							</a>
+							<ul class="dropdown-menu" aria-labelledby="aboutDropdown">
+								<li>
+									<a class="dropdown-item" href="#">2025 Calendar</a>
+								</li>
+								<li>
+									<a class="dropdown-item" href="#">2024 Calendar</a>
+								</li>
+								<li>
+									<a class="dropdown-item" href="#">2023 Calendar</a>
+								</li>
+							</ul>
+						</li>
+						<li class="nav-item dropdown">
+							<a
+								class="nav-link dropdown-toggle"
+								href="#"
+								id="seasonsDropdown"
+								role="button"
+								data-bs-toggle="dropdown"
+								aria-expanded="false"
+							>
+								Season Talk
+							</a>
+							<ul class="dropdown-menu" aria-labelledby="seasonsDropdown">
+								<li><a class="dropdown-item" href="#">2025 Coverage</a></li>
+								<li><a class="dropdown-item" href="#">2024 Results</a></li>
+								<li><a class="dropdown-item" href="#">2023 Results</a></li>
+							</ul>
+						</li>
+						<li class="nav-item dropdown">
+							<a
+								class="nav-link dropdown-toggle"
+								href="#"
+								id="seasonsDropdown"
+								role="button"
+								data-bs-toggle="dropdown"
+								aria-expanded="false"
+							>
+								Standings
+							</a>
+							<ul class="dropdown-menu" aria-labelledby="seasonsDropdown">
+								<li><a class="dropdown-item" href="#">2025 Coverage</a></li>
+								<li><a class="dropdown-item" href="#">2024 Breakdown</a></li>
+								<li><a class="dropdown-item" href="#">2023 Breakdown</a></li>
+							</ul>
+						</li>
+						<li class="nav-item dropdown">
+							<a
+								class="nav-link dropdown-toggle"
+								href="#"
+								id="fanZoneDropdown"
+								role="button"
+								data-bs-toggle="dropdown"
+								aria-expanded="false"
+							>
+								Site
+							</a>
+							<ul class="dropdown-menu" aria-labelledby="fanZoneDropdown">
+								<li><a class="dropdown-item" href="#">Trackside FAQs</a></li>
+								<li><a class="dropdown-item" href="#">Learn More</a></li>
+								<li><a class="dropdown-item" href="#">Contact Us</a></li>
+								<li>
+									<a class="dropdown-item" href="#">Site Attributions</a>
+								</li>
+							</ul>
+						</li>
+					</ul>
 				</div>
-			</nav>
-		</div>
+			</div>
+		</nav>
+	</div>
 
 		<div class="container-lg bg-light-subtle p-5 mt-5">
 			<div class="row">
