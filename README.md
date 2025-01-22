@@ -4,7 +4,10 @@
     <img src="/garage/src/assets/img/logos/trackside-logowhite.png" alt="Logo">
   </a>
 
-  <h3 align="center">Trackside</h3>
+<br>
+
+![Static Badge](https://img.shields.io/badge/alpha-alpha?label=status&color=red)
+
   <p align="center">
     Explore the track side of Formula 1 from a fan perspective
     <br />
@@ -18,10 +21,6 @@
     <a href="#">Request Feature</a>
   </p>
 </div>
-
-
-
-
 
 
 <!-- TABLE OF CONTENTS -->
@@ -50,12 +49,8 @@
 </details>
 
 
-
 <!-- ABOUT THE PROJECT -->
 ## About The Project
-
-
-![Static Badge](https://img.shields.io/badge/alpha-alpha?label=status&color=red)
 
 
 Dive into the garages, feel the rush of the paddock, and explore the trackside excitement like never before. Built with Bootstrap 5.3, bundled with Parcel, and managed through Linear, this project is your ticket to the fast lane of F1 fandom.
