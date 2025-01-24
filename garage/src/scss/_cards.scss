@@ -13,6 +13,15 @@
   transform: translateY(-5);
 }
 
+.card-news {
+  background-image: url('../assets/img/section/racei1.png');
+  background-size: cover;
+  background-position: center;
+  color: white;
+}
+
+
+
 .card-circuit {
   padding: 1rem;
   border: none;
@@ -27,7 +36,24 @@
   }
 }
 
+.card.card-circuit:hover svg.bi-box-arrow-up-right {
+  color: red;
+}
+
 .circuit-name {
   text-wrap-style: balance;
-  font-size: small;
+}
+
+.card-racecalender-section {
+  transition: all .3s ease;
+}
+
+.card-racecalender-section:hover {
+  color: $gray-100;
+  background-color: $gray-700;
+}
+
+.card-racecalender-section:hover .btn {
+  background-color: $red;
+  border-color: $red !important
 }
