@@ -10,152 +10,265 @@
 			name="description"
 			content="Formula Bootstrap is a a Bootstrap built website that explores some areas of Formula One."
 		/>
-		<meta name="author" content="Nick Calvo" />
+		<meta
+			name="author"
+			content="Nick Calvo"
+		/>
 		<title>Trackside | Home</title>
 		<link
 			rel="stylesheet"
 			href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
 		/>
-		<link rel="stylesheet" href="scss/styles.scss" />
+		<link
+			rel="stylesheet"
+			href="scss/styles.scss"
+		/>
 	</head>
 
 	<body>
 		<!-- TODO update page links soon™ -->
 		<!-- site header -->
-		<div class="container-fluid">
-			<nav class="navbar navbar-expand-lg sticky-top" id="mainNav">
-				<div class="container">
-					<a class="navbar-brand" href="#page-top">
-						<img
-							src="assets/img/logos/trackside-logoblack.png"
-							class="img-fluid w-50"
-							alt="Trackside Logo"
-						/>
-					</a>
-					<button
-						class="navbar-toggler"
-						type="button"
-						data-bs-toggle="collapse"
-						data-bs-target="#navbarResponsive"
-						aria-controls="navbarResponsive"
-						aria-expanded="false"
-						aria-label="Toggle navigation"
-					>
-						Menu
-						<i class="fas fa-bars ms-1"></i>
-					</button>
-					<div class="collapse navbar-collapse" id="navbarResponsive">
-						<ul class="navbar-nav ms-auto me-4 py-4 py-lg-0">
-							<li class="nav-item fw-bold">
-								<a class="nav-link active" href="index.html" aria-current="page">Home</a>
-							</li>
-							<li class="nav-item dropdown">
-								<a
-									class="nav-link dropdown-toggle"
-									href="#"
-									id="aboutDropdown"
-									role="button"
-									data-bs-toggle="dropdown"
-									aria-expanded="false"
-								>
-									About F1
-								</a>
-								<ul class="dropdown-menu" aria-labelledby="aboutDropdown">
-									<li>
-										<a class="dropdown-item" href="#">What is Formula 1</a>
-									</li>
-									<li>
-										<a class="dropdown-item" href="technologies.html"
-											>Technology of F1</a
-										>
-									</li>
-									<li>
-										<a class="dropdown-item" href="future.html">Future of F1</a>
-									</li>
-								</ul>
-							</li>
-							<li class="nav-item dropdown">
-								<a
-									class="nav-link dropdown-toggle"
-									href="#"
-									id="aboutDropdown"
-									role="button"
-									data-bs-toggle="dropdown"
-									aria-expanded="false"
-								>
-									Race Calendars
-								</a>
-								<ul class="dropdown-menu" aria-labelledby="aboutDropdown">
-									<li>
-										<a class="dropdown-item" href="#">2025 Calendar</a>
-									</li>
-									<li>
-										<a class="dropdown-item" href="#">2024 Calendar</a>
-									</li>
-									<li>
-										<a class="dropdown-item" href="#">2023 Calendar</a>
-									</li>
-								</ul>
-							</li>
-							<li class="nav-item dropdown">
-								<a
-									class="nav-link dropdown-toggle"
-									href="#"
-									id="seasonsDropdown"
-									role="button"
-									data-bs-toggle="dropdown"
-									aria-expanded="false"
-								>
-									Season Talk
-								</a>
-								<ul class="dropdown-menu" aria-labelledby="seasonsDropdown">
-									<li><a class="dropdown-item" href="#">2025 Coverage</a></li>
-									<li><a class="dropdown-item" href="#">2024 Results</a></li>
-									<li><a class="dropdown-item" href="#">2023 Results</a></li>
-								</ul>
-							</li>
-							<li class="nav-item dropdown">
-								<a
-									class="nav-link dropdown-toggle"
-									href="#"
-									id="seasonsDropdown"
-									role="button"
-									data-bs-toggle="dropdown"
-									aria-expanded="false"
-								>
-									Standings
-								</a>
-								<ul class="dropdown-menu" aria-labelledby="seasonsDropdown">
-									<li><a class="dropdown-item" href="#">2025 Coverage</a></li>
-									<li><a class="dropdown-item" href="#">2024 Breakdown</a></li>
-									<li><a class="dropdown-item" href="#">2023 Breakdown</a></li>
-								</ul>
-							</li>
-							<li class="nav-item dropdown">
-								<a
-									class="nav-link dropdown-toggle"
-									href="#"
-									id="fanZoneDropdown"
-									role="button"
-									data-bs-toggle="dropdown"
-									aria-expanded="false"
-								>
-									Site
-								</a>
-								<ul class="dropdown-menu" aria-labelledby="fanZoneDropdown">
-									<li><a class="dropdown-item" href="faqs.html">Trackside FAQs</a></li>
-									<li><a class="dropdown-item" href="#">Learn More</a></li>
-									<li><a class="dropdown-item" href="#">Contact Us</a></li>
-									<li>
-										<a class="dropdown-item" href="#">Site Attributions</a>
-									</li>
-								</ul>
-							</li>
-						</ul>
-					</div>
+		<nav
+			class="navbar navbar-expand-lg sticky-top"
+			id="mainNav"
+		>
+			<div class="container">
+				<a
+					class="navbar-brand"
+					href="#page-top"
+				>
+					<img
+						src="assets/img/logos/trackside-logoblack.png"
+						class="img-fluid w-50"
+						alt="Trackside Logo"
+					/>
+				</a>
+				<button
+					class="navbar-toggler"
+					type="button"
+					data-bs-toggle="collapse"
+					data-bs-target="#navbarResponsive"
+					aria-controls="navbarResponsive"
+					aria-expanded="false"
+					aria-label="Toggle navigation"
+				>
+					Menu
+					<i class="fas fa-bars ms-1"></i>
+				</button>
+				<div
+					class="collapse navbar-collapse"
+					id="navbarResponsive"
+				>
+					<ul class="navbar-nav ms-auto me-4 py-4 py-lg-0">
+						<li class="nav-item fw-bold">
+							<a
+								class="nav-link active"
+								href="index.html"
+								aria-current="page"
+								>Home</a
+							>
+						</li>
+						<li class="nav-item dropdown">
+							<a
+								class="nav-link dropdown-toggle"
+								href="#"
+								id="aboutDropdown"
+								role="button"
+								data-bs-toggle="dropdown"
+								aria-expanded="false"
+							>
+								About F1
+							</a>
+							<ul
+								class="dropdown-menu"
+								aria-labelledby="aboutDropdown"
+							>
+								<li>
+									<a
+										class="dropdown-item"
+										href="#"
+										>What is Formula 1</a
+									>
+								</li>
+								<li>
+									<a
+										class="dropdown-item"
+										href="technologies.html"
+										>Technology of F1</a
+									>
+								</li>
+								<li>
+									<a
+										class="dropdown-item"
+										href="future.html"
+										>Future of F1</a
+									>
+								</li>
+							</ul>
+						</li>
+						<li class="nav-item dropdown">
+							<a
+								class="nav-link dropdown-toggle"
+								href="#"
+								id="aboutDropdown"
+								role="button"
+								data-bs-toggle="dropdown"
+								aria-expanded="false"
+							>
+								Race Calendars
+							</a>
+							<ul
+								class="dropdown-menu"
+								aria-labelledby="aboutDropdown"
+							>
+								<li>
+									<a
+										class="dropdown-item"
+										href="results/2025-calendar.html"
+										>2025 Calendar</a
+									>
+								</li>
+								<li>
+									<a
+										class="dropdown-item"
+										href="results/2024-calendar.html"
+										>2024 Calendar</a
+									>
+								</li>
+								<li>
+									<a
+										class="dropdown-item"
+										href="results/2023-calendar.html"
+										>2023 Calendar</a
+									>
+								</li>
+							</ul>
+						</li>
+						<li class="nav-item dropdown">
+							<a
+								class="nav-link dropdown-toggle"
+								href="#"
+								id="seasonsDropdown"
+								role="button"
+								data-bs-toggle="dropdown"
+								aria-expanded="false"
+							>
+								Standings
+							</a>
+							<ul
+								class="dropdown-menu"
+								aria-labelledby="seasonsDropdown"
+							>
+								<li>
+									<a
+										class="dropdown-item"
+										href="#"
+										>2025 Coverage</a
+									>
+								</li>
+								<li>
+									<a
+										class="dropdown-item"
+										href="#"
+										>2024 Results</a
+									>
+								</li>
+								<li>
+									<a
+										class="dropdown-item"
+										href="#"
+										>2023 Results</a
+									>
+								</li>
+							</ul>
+						</li>
+						<li class="nav-item dropdown">
+							<a
+								class="nav-link dropdown-toggle"
+								href="#"
+								id="seasonsDropdown"
+								role="button"
+								data-bs-toggle="dropdown"
+								aria-expanded="false"
+							>
+								Season Talk
+							</a>
+							<ul
+								class="dropdown-menu"
+								aria-labelledby="seasonsDropdown"
+							>
+								<li>
+									<a
+										class="dropdown-item"
+										href="#"
+										>2025 Coverage</a
+									>
+								</li>
+								<li>
+									<a
+										class="dropdown-item"
+										href="#"
+										>2024 Breakdown</a
+									>
+								</li>
+								<li>
+									<a
+										class="dropdown-item"
+										href="#"
+										>2023 Breakdown</a
+									>
+								</li>
+							</ul>
+						</li>
+						<li class="nav-item dropdown">
+							<a
+								class="nav-link dropdown-toggle"
+								href="#"
+								id="fanZoneDropdown"
+								role="button"
+								data-bs-toggle="dropdown"
+								aria-expanded="false"
+							>
+								Site
+							</a>
+							<ul
+								class="dropdown-menu"
+								aria-labelledby="fanZoneDropdown"
+							>
+								<li>
+									<a
+										class="dropdown-item"
+										href="faqs.html"
+										>Trackside FAQs</a
+									>
+								</li>
+								<li>
+									<a
+										class="dropdown-item"
+										href="#"
+										>Learn More</a
+									>
+								</li>
+								<li>
+									<a
+										class="dropdown-item"
+										href="#"
+										>Contact Us</a
+									>
+								</li>
+								<li>
+									<a
+										class="dropdown-item"
+										href="#"
+										>Site Attributions</a
+									>
+								</li>
+							</ul>
+						</li>
+					</ul>
 				</div>
-			</nav>
-		</div>
+			</div>
+		</nav>
 
 		<!-- index hero -->
 		<div class="px-4 py-5 text-center">
@@ -169,11 +282,17 @@
 					one place.
 				</p>
 				<div class="d-grid gap-2 d-sm-flex justify-content-sm-center mb-5">
-					<button type="button" class="btn btn-primary btn-lg px-4 me-sm-3">
-						Explore 2024 Standings
+					<button
+						type="button"
+						class="btn btn-primary btn-lg px-4 me-sm-3"
+					>
+						Explore 2024 Results
 					</button>
-					<button type="button" class="btn btn-outline-secondary btn-lg px-4">
-						View 2025 Race Calendar
+					<button
+						type="button"
+						class="btn btn-outline-secondary btn-lg px-4"
+					>
+						Explore the 2025 Race Calendar
 					</button>
 				</div>
 			</div>
@@ -193,19 +312,16 @@
 
 		<!-- news -->
 		<div
-			class="container px-4 py-5 my-5 border border-10 border-black border-start-0 rounded-end-4"
+			class="container px-4 py-3 my-5 border border-10 border-black border-start-0 rounded-end-4"
 		>
 			<h2 class="fw-bold pb-2">Don't Miss These Summaries</h2>
 
 			<div class="row row-cols-1 row-cols-lg-3 align-items-stretch g-4">
 				<div class="col">
 					<div
-						class="card card-cover card-news h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg"
-						style="background-image: url('assets/img/section/racei1.png')"
+						class="card card-cover card-news h-100 overflow-hidden rounded-4"
 					>
-						<div
-							class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1"
-						>
+						<div class="d-flex flex-column h-100 p-5 pb-3">
 							<h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">
 								Unmissable Moments From the 2023 Racing Season
 							</h3>
@@ -230,8 +346,17 @@
 									</svg>
 								</li>
 								<li class="d-flex align-items-center me-3">
-									<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-tools me-2" viewBox="0 0 16 16">
-										<path d="M1 0 0 1l2.2 3.081a1 1 0 0 0 .815.419h.07a1 1 0 0 1 .708.293l2.675 2.675-2.617 2.654A3.003 3.003 0 0 0 0 13a3 3 0 1 0 5.878-.851l2.654-2.617.968.968-.305.914a1 1 0 0 0 .242 1.023l3.27 3.27a.997.997 0 0 0 1.414 0l1.586-1.586a.997.997 0 0 0 0-1.414l-3.27-3.27a1 1 0 0 0-1.023-.242L10.5 9.5l-.96-.96 2.68-2.643A3.005 3.005 0 0 0 16 3q0-.405-.102-.777l-2.14 2.141L12 4l-.364-1.757L13.777.102a3 3 0 0 0-3.675 3.68L7.462 6.46 4.793 3.793a1 1 0 0 1-.293-.707v-.071a1 1 0 0 0-.419-.814zm9.646 10.646a.5.5 0 0 1 .708 0l2.914 2.915a.5.5 0 0 1-.707.707l-2.915-2.914a.5.5 0 0 1 0-.708M3 11l.471.242.529.026.287.445.445.287.026.529L5 13l-.242.471-.026.529-.445.287-.287.445-.529.026L3 15l-.471-.242L2 14.732l-.287-.445L1.268 14l-.026-.529L1 13l.242-.471.026-.529.445-.287.287-.445.529-.026z"/>
+									<svg
+										xmlns="http://www.w3.org/2000/svg"
+										width="16"
+										height="16"
+										fill="currentColor"
+										class="bi bi-tools me-2"
+										viewBox="0 0 16 16"
+									>
+										<path
+											d="M1 0 0 1l2.2 3.081a1 1 0 0 0 .815.419h.07a1 1 0 0 1 .708.293l2.675 2.675-2.617 2.654A3.003 3.003 0 0 0 0 13a3 3 0 1 0 5.878-.851l2.654-2.617.968.968-.305.914a1 1 0 0 0 .242 1.023l3.27 3.27a.997.997 0 0 0 1.414 0l1.586-1.586a.997.997 0 0 0 0-1.414l-3.27-3.27a1 1 0 0 0-1.023-.242L10.5 9.5l-.96-.96 2.68-2.643A3.005 3.005 0 0 0 16 3q0-.405-.102-.777l-2.14 2.141L12 4l-.364-1.757L13.777.102a3 3 0 0 0-3.675 3.68L7.462 6.46 4.793 3.793a1 1 0 0 1-.293-.707v-.071a1 1 0 0 0-.419-.814zm9.646 10.646a.5.5 0 0 1 .708 0l2.914 2.915a.5.5 0 0 1-.707.707l-2.915-2.914a.5.5 0 0 1 0-.708M3 11l.471.242.529.026.287.445.445.287.026.529L5 13l-.242.471-.026.529-.445.287-.287.445-.529.026L3 15l-.471-.242L2 14.732l-.287-.445L1.268 14l-.026-.529L1 13l.242-.471.026-.529.445-.287.287-.445.529-.026z"
+										/>
 									</svg>
 									<small class="text-uppercase">tech</small>
 								</li>
@@ -260,12 +385,9 @@
 
 				<div class="col">
 					<div
-						class="card card-cover card-news h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg"
-						style="background-image: url('assets/img/section/racei1.png')"
+						class="card card-cover card-news h-100 overflow-hidden text-bg-dark rounded-4"
 					>
-						<div
-							class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1"
-						>
+						<div class="d-flex flex-column h-100 p-5 pb-3">
 							<h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">
 								Pinnacle Moments: 2023 to 2025 a Retrospective Breakdown
 							</h3>
@@ -290,8 +412,17 @@
 									</svg>
 								</li>
 								<li class="d-flex align-items-center me-3">
-									<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-tools me-2" viewBox="0 0 16 16">
-										<path d="M1 0 0 1l2.2 3.081a1 1 0 0 0 .815.419h.07a1 1 0 0 1 .708.293l2.675 2.675-2.617 2.654A3.003 3.003 0 0 0 0 13a3 3 0 1 0 5.878-.851l2.654-2.617.968.968-.305.914a1 1 0 0 0 .242 1.023l3.27 3.27a.997.997 0 0 0 1.414 0l1.586-1.586a.997.997 0 0 0 0-1.414l-3.27-3.27a1 1 0 0 0-1.023-.242L10.5 9.5l-.96-.96 2.68-2.643A3.005 3.005 0 0 0 16 3q0-.405-.102-.777l-2.14 2.141L12 4l-.364-1.757L13.777.102a3 3 0 0 0-3.675 3.68L7.462 6.46 4.793 3.793a1 1 0 0 1-.293-.707v-.071a1 1 0 0 0-.419-.814zm9.646 10.646a.5.5 0 0 1 .708 0l2.914 2.915a.5.5 0 0 1-.707.707l-2.915-2.914a.5.5 0 0 1 0-.708M3 11l.471.242.529.026.287.445.445.287.026.529L5 13l-.242.471-.026.529-.445.287-.287.445-.529.026L3 15l-.471-.242L2 14.732l-.287-.445L1.268 14l-.026-.529L1 13l.242-.471.026-.529.445-.287.287-.445.529-.026z"/>
+									<svg
+										xmlns="http://www.w3.org/2000/svg"
+										width="16"
+										height="16"
+										fill="currentColor"
+										class="bi bi-tools me-2"
+										viewBox="0 0 16 16"
+									>
+										<path
+											d="M1 0 0 1l2.2 3.081a1 1 0 0 0 .815.419h.07a1 1 0 0 1 .708.293l2.675 2.675-2.617 2.654A3.003 3.003 0 0 0 0 13a3 3 0 1 0 5.878-.851l2.654-2.617.968.968-.305.914a1 1 0 0 0 .242 1.023l3.27 3.27a.997.997 0 0 0 1.414 0l1.586-1.586a.997.997 0 0 0 0-1.414l-3.27-3.27a1 1 0 0 0-1.023-.242L10.5 9.5l-.96-.96 2.68-2.643A3.005 3.005 0 0 0 16 3q0-.405-.102-.777l-2.14 2.141L12 4l-.364-1.757L13.777.102a3 3 0 0 0-3.675 3.68L7.462 6.46 4.793 3.793a1 1 0 0 1-.293-.707v-.071a1 1 0 0 0-.419-.814zm9.646 10.646a.5.5 0 0 1 .708 0l2.914 2.915a.5.5 0 0 1-.707.707l-2.915-2.914a.5.5 0 0 1 0-.708M3 11l.471.242.529.026.287.445.445.287.026.529L5 13l-.242.471-.026.529-.445.287-.287.445-.529.026L3 15l-.471-.242L2 14.732l-.287-.445L1.268 14l-.026-.529L1 13l.242-.471.026-.529.445-.287.287-.445.529-.026z"
+										/>
 									</svg>
 									<small class="text-uppercase">tech</small>
 								</li>
@@ -320,10 +451,10 @@
 
 				<div class="col">
 					<div
-						class="card card-cover card-news h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg"
+						class="card card-cover card-news h-100 overflow-hidden text-bg-dark rounded-4"
 						style="background-image: url('assets/img/section/racei1.png')"
 					>
-						<div class="d-flex flex-column h-100 p-5 pb-3 text-shadow-1">
+						<div class="d-flex flex-column h-100 p-5 pb-3">
 							<h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">
 								2025 on the Horizon: A Preview of Racing’s Future
 							</h3>
@@ -348,10 +479,23 @@
 									</svg>
 								</li>
 								<li class="d-flex align-items-center me-3">
-									<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-rocket-takeoff me-2" viewBox="0 0 16 16">
-										<path d="M9.752 6.193c.599.6 1.73.437 2.528-.362s.96-1.932.362-2.531c-.599-.6-1.73-.438-2.528.361-.798.8-.96 1.933-.362 2.532"/>
-										<path d="M15.811 3.312c-.363 1.534-1.334 3.626-3.64 6.218l-.24 2.408a2.56 2.56 0 0 1-.732 1.526L8.817 15.85a.51.51 0 0 1-.867-.434l.27-1.899c.04-.28-.013-.593-.131-.956a9 9 0 0 0-.249-.657l-.082-.202c-.815-.197-1.578-.662-2.191-1.277-.614-.615-1.079-1.379-1.275-2.195l-.203-.083a10 10 0 0 0-.655-.248c-.363-.119-.675-.172-.955-.132l-1.896.27A.51.51 0 0 1 .15 7.17l2.382-2.386c.41-.41.947-.67 1.524-.734h.006l2.4-.238C9.005 1.55 11.087.582 12.623.208c.89-.217 1.59-.232 2.08-.188.244.023.435.06.57.093q.1.026.16.045c.184.06.279.13.351.295l.029.073a3.5 3.5 0 0 1 .157.721c.055.485.051 1.178-.159 2.065m-4.828 7.475.04-.04-.107 1.081a1.54 1.54 0 0 1-.44.913l-1.298 1.3.054-.38c.072-.506-.034-.993-.172-1.418a9 9 0 0 0-.164-.45c.738-.065 1.462-.38 2.087-1.006M5.205 5c-.625.626-.94 1.351-1.004 2.09a9 9 0 0 0-.45-.164c-.424-.138-.91-.244-1.416-.172l-.38.054 1.3-1.3c.245-.246.566-.401.91-.44l1.08-.107zm9.406-3.961c-.38-.034-.967-.027-1.746.163-1.558.38-3.917 1.496-6.937 4.521-.62.62-.799 1.34-.687 2.051.107.676.483 1.362 1.048 1.928.564.565 1.25.941 1.924 1.049.71.112 1.429-.067 2.048-.688 3.079-3.083 4.192-5.444 4.556-6.987.183-.771.18-1.345.138-1.713a3 3 0 0 0-.045-.283 3 3 0 0 0-.3-.041Z"/>
-										<path d="M7.009 12.139a7.6 7.6 0 0 1-1.804-1.352A7.6 7.6 0 0 1 3.794 8.86c-1.102.992-1.965 5.054-1.839 5.18.125.126 3.936-.896 5.054-1.902Z"/>
+									<svg
+										xmlns="http://www.w3.org/2000/svg"
+										width="16"
+										height="16"
+										fill="currentColor"
+										class="bi bi-rocket-takeoff me-2"
+										viewBox="0 0 16 16"
+									>
+										<path
+											d="M9.752 6.193c.599.6 1.73.437 2.528-.362s.96-1.932.362-2.531c-.599-.6-1.73-.438-2.528.361-.798.8-.96 1.933-.362 2.532"
+										/>
+										<path
+											d="M15.811 3.312c-.363 1.534-1.334 3.626-3.64 6.218l-.24 2.408a2.56 2.56 0 0 1-.732 1.526L8.817 15.85a.51.51 0 0 1-.867-.434l.27-1.899c.04-.28-.013-.593-.131-.956a9 9 0 0 0-.249-.657l-.082-.202c-.815-.197-1.578-.662-2.191-1.277-.614-.615-1.079-1.379-1.275-2.195l-.203-.083a10 10 0 0 0-.655-.248c-.363-.119-.675-.172-.955-.132l-1.896.27A.51.51 0 0 1 .15 7.17l2.382-2.386c.41-.41.947-.67 1.524-.734h.006l2.4-.238C9.005 1.55 11.087.582 12.623.208c.89-.217 1.59-.232 2.08-.188.244.023.435.06.57.093q.1.026.16.045c.184.06.279.13.351.295l.029.073a3.5 3.5 0 0 1 .157.721c.055.485.051 1.178-.159 2.065m-4.828 7.475.04-.04-.107 1.081a1.54 1.54 0 0 1-.44.913l-1.298 1.3.054-.38c.072-.506-.034-.993-.172-1.418a9 9 0 0 0-.164-.45c.738-.065 1.462-.38 2.087-1.006M5.205 5c-.625.626-.94 1.351-1.004 2.09a9 9 0 0 0-.45-.164c-.424-.138-.91-.244-1.416-.172l-.38.054 1.3-1.3c.245-.246.566-.401.91-.44l1.08-.107zm9.406-3.961c-.38-.034-.967-.027-1.746.163-1.558.38-3.917 1.496-6.937 4.521-.62.62-.799 1.34-.687 2.051.107.676.483 1.362 1.048 1.928.564.565 1.25.941 1.924 1.049.71.112 1.429-.067 2.048-.688 3.079-3.083 4.192-5.444 4.556-6.987.183-.771.18-1.345.138-1.713a3 3 0 0 0-.045-.283 3 3 0 0 0-.3-.041Z"
+										/>
+										<path
+											d="M7.009 12.139a7.6 7.6 0 0 1-1.804-1.352A7.6 7.6 0 0 1 3.794 8.86c-1.102.992-1.965 5.054-1.839 5.18.125.126 3.936-.896 5.054-1.902Z"
+										/>
 									</svg>
 									<small class="text-uppercase">future</small>
 								</li>
@@ -401,7 +545,10 @@
 							dramatic overtakes to strategic masterclasses on the track. Relive
 							the standout performances that defined the season.
 						</p>
-						<a href="#" class="btn btn-warning" target="_blank"
+						<a
+							href="#"
+							class="btn btn-warning"
+							target="_blank"
 							>Explore clips</a
 						>
 					</div>
@@ -444,7 +591,11 @@
 									Dive into the adrenaline-filled moments that defined the 2024
 									FIA Formula One World Championship.
 								</p>
-								<a href="#" class="btn btn-primary">Watch Now</a>
+								<a
+									href="#"
+									class="btn btn-primary"
+									>Watch Now</a
+								>
 							</div>
 						</div>
 					</div>
@@ -467,7 +618,11 @@
 										<p class="card-text">
 											Check out the amazing moments from this thrilling race.
 										</p>
-										<a href="#" class="link-primary">Learn More</a>
+										<a
+											href="#"
+											class="link-primary"
+											>Learn More</a
+										>
 									</div>
 								</div>
 							</div>
@@ -486,7 +641,11 @@
 										<p class="card-text">
 											Relive the most iconic parts of this incredible season.
 										</p>
-										<a href="#" class="link-primary">Discover More</a>
+										<a
+											href="#"
+											class="link-primary"
+											>Discover More</a
+										>
 									</div>
 								</div>
 							</div>
@@ -498,7 +657,11 @@
 										<p class="card-text">
 											Stay updated on upcoming races and events. Don't miss out!
 										</p>
-										<a href="#" class="link-primary">See Schedule</a>
+										<a
+											href="#"
+											class="link-primary"
+											>See Schedule</a
+										>
 									</div>
 								</div>
 							</div>
@@ -513,7 +676,11 @@
 											An introduction to the 2025 FIA Formula 1 World
 											Championship.
 										</p>
-										<a href="#" class="link-primary">Join Now</a>
+										<a
+											href="#"
+											class="link-primary"
+											>Join Now</a
+										>
 									</div>
 								</div>
 							</div>
@@ -767,7 +934,11 @@
 							FORMULA 1 GULF AIR BAHRAIN GRAND PRIX 2024
 						</h3>
 						<p class="calendar-race-date mb-4">29 FEB - 02 MAR 2024</p>
-						<a class="btn btn-outline-danger" href="#" role="button">
+						<a
+							class="btn btn-outline-danger"
+							href="#"
+							role="button"
+						>
 							View Results
 						</a>
 					</div>
@@ -780,7 +951,11 @@
 							FORMULA 1 STC SAUDI ARABIAN GRAND PRIX 2024
 						</h3>
 						<p class="calendar-race-date mb-4">7 - 9 MAR 2024</p>
-						<a class="btn btn-outline-danger" href="#" role="button">
+						<a
+							class="btn btn-outline-danger"
+							href="#"
+							role="button"
+						>
 							View Results
 						</a>
 					</div>
@@ -793,7 +968,11 @@
 							FORMULA 1 ROLEX AUSTRALIAN GRAND PRIX 2024
 						</h3>
 						<p class="calendar-race-date mb-4">22 - 24 MAR 2024</p>
-						<a class="btn btn-outline-danger" href="#" role="button">
+						<a
+							class="btn btn-outline-danger"
+							href="#"
+							role="button"
+						>
 							View Results
 						</a>
 					</div>
@@ -806,7 +985,11 @@
 							FORMULA 1 MSC CRUISES JAPANESE GRAND PRIX 2024
 						</h3>
 						<p class="calendar-race-date mb-4">5 - 7 APR 2024</p>
-						<a class="btn btn-outline-danger" href="#" role="button">
+						<a
+							class="btn btn-outline-danger"
+							href="#"
+							role="button"
+						>
 							View Results
 						</a>
 					</div>
@@ -819,7 +1002,11 @@
 							FORMULA 1 LENOVO CHINESE GRAND PRIX 2024
 						</h3>
 						<p class="calendar-race-date mb-4">19 MAR - 21 APR 2024</p>
-						<a class="btn btn-outline-danger" href="#" role="button">
+						<a
+							class="btn btn-outline-danger"
+							href="#"
+							role="button"
+						>
 							View Results
 						</a>
 					</div>
@@ -832,7 +1019,11 @@
 							FORMULA 1 CRYPTO.COM MIAMI GRAND PRIX 2024
 						</h3>
 						<p class="calendar-race-date mb-4">3 - 5 MAY 2024</p>
-						<a class="btn btn-outline-danger" href="#" role="button">
+						<a
+							class="btn btn-outline-danger"
+							href="#"
+							role="button"
+						>
 							View Results
 						</a>
 					</div>
@@ -846,7 +1037,11 @@
 							DELL'EMILIA-ROMAGNA 2024
 						</h3>
 						<p class="calendar-race-date mb-4">17 - 19 MAY 2024</p>
-						<a class="btn btn-outline-danger" href="#" role="button">
+						<a
+							class="btn btn-outline-danger"
+							href="#"
+							role="button"
+						>
 							View Results
 						</a>
 					</div>
@@ -859,7 +1054,11 @@
 							FORMULA 1 GRAND PRIX DE MONACO 2024
 						</h3>
 						<p class="calendar-race-date mb-4">24- 26 MAY 2024</p>
-						<a class="btn btn-outline-danger" href="#" role="button">
+						<a
+							class="btn btn-outline-danger"
+							href="#"
+							role="button"
+						>
 							View Results
 						</a>
 					</div>
@@ -872,7 +1071,11 @@
 							FORMULA 1 AWS GRAND PRIX DU CANADA 2024
 						</h3>
 						<p class="calendar-race-date mb-4">7 - 9 JUN 2024</p>
-						<a class="btn btn-outline-danger" href="#" role="button">
+						<a
+							class="btn btn-outline-danger"
+							href="#"
+							role="button"
+						>
 							View Results
 						</a>
 					</div>
@@ -885,7 +1088,11 @@
 							FORMULA 1 ARAMCO GRAN PREMIO DE ESPAÑA 2024
 						</h3>
 						<p class="calendar-race-date mb-4">21 - 23 JUN 2023</p>
-						<a class="btn btn-outline-danger" href="#" role="button">
+						<a
+							class="btn btn-outline-danger"
+							href="#"
+							role="button"
+						>
 							View Results
 						</a>
 					</div>
@@ -898,7 +1105,11 @@
 							FORMULA 1 QATAR AIRWAYS AUSTRIAN GRAND PRIX 2024
 						</h3>
 						<p class="calendar-race-date mb-4">28 - 30 JUN 2024</p>
-						<a class="btn btn-outline-danger" href="#" role="button">
+						<a
+							class="btn btn-outline-danger"
+							href="#"
+							role="button"
+						>
 							View Results
 						</a>
 					</div>
@@ -911,7 +1122,11 @@
 							FORMULA 1 QATAR AIRWAYS BRITISH GRAND PRIX 2024
 						</h3>
 						<p class="calendar-race-date mb-4">5 - 7 JUL 2024</p>
-						<a class="btn btn-outline-danger" href="#" role="button">
+						<a
+							class="btn btn-outline-danger"
+							href="#"
+							role="button"
+						>
 							View Results
 						</a>
 					</div>
@@ -924,7 +1139,11 @@
 							FORMULA 1 HUNGARIAN GRAND PRIX 2024
 						</h3>
 						<p class="calendar-race-date mb-4">19 - 21 JUL 2024</p>
-						<a class="btn btn-outline-danger" href="#" role="button">
+						<a
+							class="btn btn-outline-danger"
+							href="#"
+							role="button"
+						>
 							View Results
 						</a>
 					</div>
@@ -937,7 +1156,11 @@
 							FORMULA 1 ROLEX BELGIAN GRAND PRIX 2024
 						</h3>
 						<p class="calendar-race-date mb-4">26 - 28 JUL 2024</p>
-						<a class="btn btn-outline-danger" href="#" role="button">
+						<a
+							class="btn btn-outline-danger"
+							href="#"
+							role="button"
+						>
 							View Results
 						</a>
 					</div>
@@ -950,7 +1173,11 @@
 							FORMULA 1 HEINEKEN DUTCH GRAND PRIX 2024
 						</h3>
 						<p class="calendar-race-date mb-4">23 - 25 AUG 2024</p>
-						<a class="btn btn-outline-danger" href="#" role="button">
+						<a
+							class="btn btn-outline-danger"
+							href="#"
+							role="button"
+						>
 							View Results
 						</a>
 					</div>
@@ -963,7 +1190,11 @@
 							FORMULA 1 PIRELLI GRAN PREMIO D’ITALIA 2024
 						</h3>
 						<p class="calendar-race-date mb-4">30 AUG - 1 SEPT 2024</p>
-						<a class="btn btn-outline-danger" href="#" role="button">
+						<a
+							class="btn btn-outline-danger"
+							href="#"
+							role="button"
+						>
 							View Results
 						</a>
 					</div>
@@ -976,7 +1207,11 @@
 							FORMULA 1 QATAR AIRWAYS AZERBAIJAN GRAND PRIX 2024
 						</h3>
 						<p class="calendar-race-date mb-4">13 - 15 SEPT 2024</p>
-						<a class="btn btn-outline-danger" href="#" role="button">
+						<a
+							class="btn btn-outline-danger"
+							href="#"
+							role="button"
+						>
 							View Results
 						</a>
 					</div>
@@ -989,7 +1224,11 @@
 							FORMULA 1 SINGAPORE AIRLINES SINGAPORE GRAND PRIX 2024
 						</h3>
 						<p class="calendar-race-date mb-4">20 - 22 SEPT 2024</p>
-						<a class="btn btn-outline-danger" href="#" role="button">
+						<a
+							class="btn btn-outline-danger"
+							href="#"
+							role="button"
+						>
 							View Results
 						</a>
 					</div>
@@ -1002,7 +1241,11 @@
 							FORMULA 1 PIRELLI UNITED STATES GRAND PRIX 2024
 						</h3>
 						<p class="calendar-race-date mb-4">18 - 20 OCT 2024</p>
-						<a class="btn btn-outline-danger" href="#" role="button">
+						<a
+							class="btn btn-outline-danger"
+							href="#"
+							role="button"
+						>
 							View Results
 						</a>
 					</div>
@@ -1015,7 +1258,11 @@
 							FORMULA 1 GRAN PREMIO DE LA CIUDAD DE MÉXICO 2024
 						</h3>
 						<p class="calendar-race-date mb-4">25 - 27 OCT 2024</p>
-						<a class="btn btn-outline-danger" href="#" role="button">
+						<a
+							class="btn btn-outline-danger"
+							href="#"
+							role="button"
+						>
 							View Results
 						</a>
 					</div>
@@ -1028,7 +1275,11 @@
 							FORMULA 1 LENOVO GRANDE PRÊMIO DE SÃO PAULO 2024
 						</h3>
 						<p class="calendar-race-date mb-4">1 - 3 NOV 2024</p>
-						<a class="btn btn-outline-danger" href="#" role="button">
+						<a
+							class="btn btn-outline-danger"
+							href="#"
+							role="button"
+						>
 							View Results
 						</a>
 					</div>
@@ -1041,7 +1292,11 @@
 							FORMULA 1 HEINEKEN SILVER LAS VEGAS GRAND PRIX 2024
 						</h3>
 						<p class="calendar-race-date mb-4">21 - 23 NOV 2024</p>
-						<a class="btn btn-outline-danger" href="#" role="button">
+						<a
+							class="btn btn-outline-danger"
+							href="#"
+							role="button"
+						>
 							View Results
 						</a>
 					</div>
@@ -1054,7 +1309,11 @@
 							FORMULA 1 QATAR AIRWAYS QATAR GRAND PRIX 2024
 						</h3>
 						<p class="calendar-race-date mb-4">29 NOV - 1 DEC 2024</p>
-						<a class="btn btn-outline-danger" href="#" role="button">
+						<a
+							class="btn btn-outline-danger"
+							href="#"
+							role="button"
+						>
 							View Results
 						</a>
 					</div>
@@ -1067,7 +1326,11 @@
 							FORMULA 1 ETIHAD AIRWAYS ABU DHABI GRAND PRIX 2024
 						</h3>
 						<p class="calendar-race-date mb-4">6 - 8 DEC 2024</p>
-						<a class="btn btn-outline-danger" href="#" role="button">
+						<a
+							class="btn btn-outline-danger"
+							href="#"
+							role="button"
+						>
 							View Results
 						</a>
 					</div>
@@ -1082,15 +1345,24 @@
 					2024 Championship Standings
 				</h2>
 				<!-- Drivers, Constructors Nav -->
-				<div class="container container-drivernav" id="driver-nav">
+				<div
+					class="container container-drivernav"
+					id="driver-nav"
+				>
 					<!-- standings nav -->
-					<div id="container-driver-nav" class="mb-3">
+					<div
+						id="container-driver-nav"
+						class="mb-3"
+					>
 						<ul
 							class="nav nav-pills justify-content-center pt-5"
 							id="pills-tab"
 							role="tablist"
 						>
-							<li class="nav-item" role="presentation">
+							<li
+								class="nav-item"
+								role="presentation"
+							>
 								<button
 									class="nav-link active"
 									id="pills-home-tab"
@@ -1104,10 +1376,16 @@
 									Drivers
 								</button>
 							</li>
-							<li class="nav-link" role="presentation">
+							<li
+								class="nav-link"
+								role="presentation"
+							>
 								<span>|</span>
 							</li>
-							<li class="nav-item" role="presentation">
+							<li
+								class="nav-item"
+								role="presentation"
+							>
 								<button
 									class="nav-link"
 									id="pills-profile-tab"
@@ -1121,10 +1399,16 @@
 									Constructors
 								</button>
 							</li>
-							<li class="nav-link" role="presentation">
+							<li
+								class="nav-link"
+								role="presentation"
+							>
 								<span>|</span>
 							</li>
-							<li class="nav-item" role="presentation">
+							<li
+								class="nav-item"
+								role="presentation"
+							>
 								<button
 									class="nav-link"
 									id="pills-race-tab"
@@ -1141,7 +1425,10 @@
 						</ul>
 					</div>
 					<!-- Pill Nav Content -->
-					<div class="tab-content" id="pills-tabContent">
+					<div
+						class="tab-content"
+						id="pills-tabContent"
+					>
 						<!-- Pill Nav Content Drivers -->
 						<div
 							class="tab-pane fade show active"
@@ -2207,7 +2494,10 @@
 		<!-- 2024 teams grid-->
 		<div class="container py-5 my-2">
 			<div class="text-center">
-				<h2 class="fw-bold" id="teams-heading">
+				<h2
+					class="fw-bold"
+					id="teams-heading"
+				>
 					A Grid Filled With Competition
 				</h2>
 				<p class="pb-4">
@@ -2531,19 +2821,16 @@
 
 		<!-- news -->
 		<div
-			class="container px-4 py-5 my-5 border border-10 border-black border-start-0 rounded-end-4"
+			class="container px-4 py-3 my-5 border border-10 border-black border-start-0 rounded-end-4"
 		>
 			<h2 class="fw-bold pb-2">Don't Miss These Summaries</h2>
 
 			<div class="row row-cols-1 row-cols-lg-3 align-items-stretch g-4">
 				<div class="col">
 					<div
-						class="card card-cover card-news h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg"
-						style="background-image: url('assets/img/section/racei1.png')"
+						class="card card-cover card-news h-100 overflow-hidden rounded-4"
 					>
-						<div
-							class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1"
-						>
+						<div class="d-flex flex-column h-100 p-5 pb-3">
 							<h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">
 								Unmissable Moments From the 2023 Racing Season
 							</h3>
@@ -2607,12 +2894,9 @@
 
 				<div class="col">
 					<div
-						class="card card-cover card-news h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg"
-						style="background-image: url('assets/img/section/racei1.png')"
+						class="card card-cover card-news h-100 overflow-hidden text-bg-dark rounded-4"
 					>
-						<div
-							class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1"
-						>
+						<div class="d-flex flex-column h-100 p-5 pb-3">
 							<h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">
 								Pinnacle Moments: 2023 to 2025 a Retrospective Breakdown
 							</h3>
@@ -2676,10 +2960,10 @@
 
 				<div class="col">
 					<div
-						class="card card-cover card-news h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg"
+						class="card card-cover card-news h-100 overflow-hidden text-bg-dark rounded-4"
 						style="background-image: url('assets/img/section/racei1.png')"
 					>
-						<div class="d-flex flex-column h-100 p-5 pb-3 text-shadow-1">
+						<div class="d-flex flex-column h-100 p-5 pb-3">
 							<h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">
 								2025 on the Horizon: A Preview of Racing’s Future
 							</h3>
@@ -2751,18 +3035,16 @@
 
 		<!-- site disclaimer -->
 		<div
-			class="container-fluid text-bg-dark border border-dark-subtle border-top-0 border-start-0 border-end-0"
+			class="container-fluid text-bg-dark border border-gray7 border-top-0 border-start-0 border-end-0"
 		>
-			<div class="container">
-				<div class="row">
-					<div class="col-12">
-						<p class="my-2">
-							<strong>DISCLAIMER:</strong> This website is unofficial and is not
-							associated in any way with the Formula 1 companies. F1, FORMULA
-							ONE, FORMULA 1, FIA FORMULA ONE WORLD CHAMPIONSHIP, GRAND PRIX and
-							related marks are trade marks of Formula One Licensing B.V.
-						</p>
-					</div>
+			<div class="row">
+				<div class="text-center">
+					<p class="my-2">
+						DISCLAIMER: This website is unofficial and is not associated in any
+						way with the Formula 1 companies. F1, FORMULA ONE, FORMULA 1, FIA
+						FORMULA ONE WORLD CHAMPIONSHIP, GRAND PRIX and related marks are
+						trade marks of Formula One Licensing B.V.
+					</p>
 				</div>
 			</div>
 		</div>
@@ -2770,7 +3052,7 @@
 		<!-- footer -->
 		<div class="container-fluid text-bg-dark p-3">
 			<footer
-				class="container border border-10 border-red border-start-0 border-top-0 rounded-bottom-4 rounded-start-0 pt-5 pb-0"
+				class="container border border-10 border-black border-start-0 border-top-0 rounded-bottom-4 rounded-start-0 pt-5 pb-0"
 			>
 				<!-- TODO update links -->
 				<div class="row">
@@ -2789,18 +3071,32 @@
 						<h5>Trackside</h5>
 						<ul class="nav flex-column">
 							<li class="nav-item mb-2">
-								<a href="#" class="nav-link p-0">Home</a>
+								<a
+									href="#"
+									class="nav-link p-0"
+									>Home</a
+								>
 							</li>
 							<li class="nav-item mb-2">
-								<a href="#" class="nav-link p-0">What is Formula 1</a>
+								<a
+									href="#"
+									class="nav-link p-0"
+									>What is Formula 1</a
+								>
 							</li>
 							<li class="nav-item mb-2">
-								<a href="technologies.html" class="nav-link p-0"
+								<a
+									href="technologies.html"
+									class="nav-link p-0"
 									>Technology of F1</a
 								>
 							</li>
 							<li class="nav-item mb-2">
-								<a href="future.html" class="nav-link p-0">Future of F1</a>
+								<a
+									href="future.html"
+									class="nav-link p-0"
+									>Future of F1</a
+								>
 							</li>
 						</ul>
 					</div>
@@ -2809,16 +3105,32 @@
 						<h5>Seasonal</h5>
 						<ul class="nav flex-column">
 							<li class="nav-item mb-2">
-								<a href="#" class="nav-link p-0">2025 Race Calendar</a>
+								<a
+									href="#"
+									class="nav-link p-0"
+									>2025 Race Calendar</a
+								>
 							</li>
 							<li class="nav-item mb-2">
-								<a href="#" class="nav-link p-0">2025 Coverage</a>
+								<a
+									href="#"
+									class="nav-link p-0"
+									>2025 Coverage</a
+								>
 							</li>
 							<li class="nav-item mb-2">
-								<a href="#" class="nav-link p-0">2024 Breakdown</a>
+								<a
+									href="#"
+									class="nav-link p-0"
+									>2024 Breakdown</a
+								>
 							</li>
 							<li class="nav-item mb-2">
-								<a href="#" class="nav-link p-0">2023 Breakdown</a>
+								<a
+									href="#"
+									class="nav-link p-0"
+									>2023 Breakdown</a
+								>
 							</li>
 						</ul>
 					</div>
@@ -2827,16 +3139,32 @@
 						<h5>Pitwall</h5>
 						<ul class="nav flex-column">
 							<li class="nav-item mb-2">
-								<a href="#" class="nav-link p-0">Trackside FAQs</a>
+								<a
+									href="#"
+									class="nav-link p-0"
+									>Trackside FAQs</a
+								>
 							</li>
 							<li class="nav-item mb-2">
-								<a href="#" class="nav-link p-0">Site Attributions</a>
+								<a
+									href="#"
+									class="nav-link p-0"
+									>Site Attributions</a
+								>
 							</li>
 							<li class="nav-item mb-2">
-								<a href="#" class="nav-link p-0">Learn More</a>
+								<a
+									href="#"
+									class="nav-link p-0"
+									>Learn More</a
+								>
 							</li>
 							<li class="nav-item mb-2">
-								<a href="#" class="nav-link p-0">Contact Us</a>
+								<a
+									href="#"
+									class="nav-link p-0"
+									>Contact Us</a
+								>
 							</li>
 						</ul>
 					</div>
@@ -2848,20 +3176,38 @@
 					<p>© 2025 Nick Calvo All rights reserved.</p>
 					<ul class="list-unstyled d-flex">
 						<li class="ms-3">
-							<a class="link-body-emphasis" href="#"
-								><svg class="bi" width="24" height="24">
+							<a
+								class="link-body-emphasis"
+								href="#"
+								><svg
+									class="bi"
+									width="24"
+									height="24"
+								>
 									<use xlink:href="#twitter"></use></svg
 							></a>
 						</li>
 						<li class="ms-3">
-							<a class="link-body-emphasis" href="#"
-								><svg class="bi" width="24" height="24">
+							<a
+								class="link-body-emphasis"
+								href="#"
+								><svg
+									class="bi"
+									width="24"
+									height="24"
+								>
 									<use xlink:href="#instagram"></use></svg
 							></a>
 						</li>
 						<li class="ms-3">
-							<a class="link-body-emphasis" href="#"
-								><svg class="bi" width="24" height="24">
+							<a
+								class="link-body-emphasis"
+								href="#"
+								><svg
+									class="bi"
+									width="24"
+									height="24"
+								>
 									<use xlink:href="#facebook"></use></svg
 							></a>
 						</li>
@@ -2871,7 +3217,10 @@
 		</div>
 
 		<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-		<script type="module" src="js/main.js"></script>
+		<script
+			type="module"
+			src="js/main.js"
+		></script>
 
 		<script>
 			var swiper = new Swiper(".swiper", {
