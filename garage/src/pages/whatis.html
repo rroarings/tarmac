@@ -1,0 +1,811 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<meta
+			name="viewport"
+			content="width=device-width, initial-scale=1, shrink-to-fit=no"
+		/>
+		<meta
+			name="description"
+			content="Formula Bootstrap is a a Bootstrap built website that explores some areas of Formula One."
+		/>
+		<meta
+			name="author"
+			content="Nick Calvo"
+		/>
+		<title>Trackside | What Is F1</title>
+		<link
+			rel="stylesheet"
+			href="../scss/styles.scss"
+		/>
+	</head>
+	<body>
+		<!-- site header -->
+		<nav
+			class="navbar navbar-expand-lg sticky-top"
+			id="mainNav"
+		>
+			<div class="container">
+				<a
+					class="navbar-brand"
+					href="#page-top"
+				>
+					<img
+						src="../assets/img/logos/trackside-logoblack.png"
+						class="img-fluid w-50"
+						alt="Trackside Logo"
+					/>
+				</a>
+				<button
+					class="navbar-toggler mt-3"
+					type="button"
+					data-bs-toggle="collapse"
+					data-bs-target="#navbarResponsive"
+					aria-controls="navbarResponsive"
+					aria-expanded="false"
+					aria-label="Toggle navigation"
+				>
+					Menu
+					<svg
+						xmlns="http://www.w3.org/2000/svg"
+						width="1em"
+						height="1em"
+						fill="currentColor"
+						class="bi bi-list ms-1"
+						viewBox="0 0 16 16"
+					>
+						<path
+							fill-rule="evenodd"
+							d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5"
+						/>
+					</svg>
+				</button>
+				<div
+					class="collapse navbar-collapse"
+					id="navbarResponsive"
+				>
+					<ul class="navbar-nav ms-auto me-4 py-4 py-lg-0">
+						<li class="nav-item fw-bold">
+							<a
+								class="nav-link active"
+								href="../index.html"
+								aria-current="page"
+								>Home</a
+							>
+						</li>
+						<li class="nav-item dropdown">
+							<a
+								class="nav-link dropdown-toggle"
+								href="#"
+								id="aboutDropdown"
+								role="button"
+								data-bs-toggle="dropdown"
+								aria-expanded="false"
+							>
+								About F1
+							</a>
+							<ul
+								class="dropdown-menu"
+								aria-labelledby="aboutDropdown"
+							>
+								<li>
+									<a
+										class="dropdown-item"
+										href="#"
+										>What is Formula 1</a
+									>
+								</li>
+								<li>
+									<a
+										class="dropdown-item"
+										href="technologies.html"
+										>Technology of F1</a
+									>
+								</li>
+								<li>
+									<a
+										class="dropdown-item"
+										href="future.html"
+										>Future of F1</a
+									>
+								</li>
+							</ul>
+						</li>
+						<li class="nav-item dropdown">
+							<a
+								class="nav-link dropdown-toggle"
+								href="#"
+								id="aboutDropdown"
+								role="button"
+								data-bs-toggle="dropdown"
+								aria-expanded="false"
+							>
+								Race Calendars
+							</a>
+							<ul
+								class="dropdown-menu"
+								aria-labelledby="aboutDropdown"
+							>
+								<li>
+									<a
+										class="dropdown-item"
+										href="../seasons/2025/2025-calendar.html"
+										>2025 Calendar</a
+									>
+								</li>
+								<li>
+									<a
+										class="dropdown-item"
+										href="../seasons/2024/2024-calendar.html"
+										>2024 Calendar</a
+									>
+								</li>
+								<li>
+									<a
+										class="dropdown-item"
+										href="../seasons/2023/2023-calendar.html"
+										>2023 Calendar</a
+									>
+								</li>
+							</ul>
+						</li>
+						<li class="nav-item dropdown">
+							<a
+								class="nav-link dropdown-toggle"
+								href="#"
+								id="seasonsDropdown"
+								role="button"
+								data-bs-toggle="dropdown"
+								aria-expanded="false"
+							>
+								Standings
+							</a>
+							<ul
+								class="dropdown-menu"
+								aria-labelledby="seasonsDropdown"
+							>
+								<li><h6 class="dropdown-header">2025</h6></li>
+								<li>
+									<a
+										class="dropdown-item"
+										href="#"
+										>2025 Drivers</a
+									>
+								</li>
+								<li>
+									<a
+										class="dropdown-item"
+										href="#"
+										>2025 Teams</a
+									>
+								</li>
+								<li><hr class="dropdown-divider" /></li>
+								<li><h6 class="dropdown-header">2024</h6></li>
+								<li>
+									<a
+										class="dropdown-item"
+										href="#"
+										>2024 Drivers</a
+									>
+								</li>
+								<li>
+									<a
+										class="dropdown-item"
+										href="#"
+										>2024 Teams</a
+									>
+								</li>
+								<li><hr class="dropdown-divider" /></li>
+								<li><h6 class="dropdown-header">2023</h6></li>
+								<li>
+									<a
+										class="dropdown-item"
+										href="#"
+										>2023 Drivers</a
+									>
+								</li>
+								<li>
+									<a
+										class="dropdown-item"
+										href="#"
+										>2023 Teams</a
+									>
+								</li>
+							</ul>
+						</li>
+						<li class="nav-item dropdown">
+							<a
+								class="nav-link dropdown-toggle"
+								href="#"
+								id="seasonsDropdown"
+								role="button"
+								data-bs-toggle="dropdown"
+								aria-expanded="false"
+							>
+								Season Talk
+							</a>
+							<ul
+								class="dropdown-menu"
+								aria-labelledby="seasonsDropdown"
+							>
+								<li>
+									<a
+										class="dropdown-item"
+										href="#"
+										>2025 Coverage</a
+									>
+								</li>
+								<li>
+									<a
+										class="dropdown-item"
+										href="#"
+										>2024 Breakdown</a
+									>
+								</li>
+								<li>
+									<a
+										class="dropdown-item"
+										href="#"
+										>2023 Breakdown</a
+									>
+								</li>
+							</ul>
+						</li>
+						<li class="nav-item dropdown">
+							<a
+								class="nav-link dropdown-toggle"
+								href="#"
+								id="fanZoneDropdown"
+								role="button"
+								data-bs-toggle="dropdown"
+								aria-expanded="false"
+							>
+								Site
+							</a>
+							<ul
+								class="dropdown-menu"
+								aria-labelledby="fanZoneDropdown"
+							>
+								<li>
+									<a
+										class="dropdown-item"
+										href="faqs.html"
+										>Trackside FAQs</a
+									>
+								</li>
+								<li>
+									<a
+										class="dropdown-item"
+										href="learnmore.html"
+										>Learn More</a
+									>
+								</li>
+								<li>
+									<a
+										class="dropdown-item"
+										href="#"
+										>Contact Us</a
+									>
+								</li>
+								<li>
+									<a
+										class="dropdown-item"
+										href="#"
+										>Site Attributions</a
+									>
+								</li>
+							</ul>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+
+		<section class="text-bg-dark text-center p-5 mb-5">
+			<div class="container">
+				<h1 class="display-4 fw-bold">What is Formula 1?</h1>
+				<p class="lead mt-3">
+					Formula 1 is the pinnacle of motorsport, where speed, innovation, and
+					strategy collide to create the ultimate racing spectacle. Experience
+					the thrill of the world's fastest cars, elite drivers, and iconic
+					circuits.
+				</p>
+			</div>
+		</section>
+
+		<!-- Key Features bento Section -->
+		<section class="container mb-5">
+			<h2 class="text-center fw-bold mb-4">Key Elements of Formula 1</h2>
+			<div class="row bento-wrapper">
+				<div class="bento-item">
+					<div>
+						<span class="small text-uppercase">the</span>
+						<h5>Essence</h5>
+						<p>Explore what makes F1 the pinnacle of motorsport.</p>
+					</div>
+
+					<img
+						src="../assets/img/drivers/driver-verstappen-ex-min.png"
+						class="img-fluid"
+						alt=""
+					/>
+				</div>
+				<div class="bento-item">
+					<div>
+						<span class="small text-uppercase">the</span>
+						<h5>Technology</h5>
+						<p>Innovations powering F1, from hybrid engines to aerodynamics.</p>
+					</div>
+
+					<img
+						src="../assets/img/cars/car-astonmartin-side.png"
+						class="img-fluid"
+						alt=""
+					/>
+				</div>
+				<div class="bento-item">
+					<div>
+						<span class="small text-uppercase">the</span>
+						<h5>Future</h5>
+						<p>
+							Discover how sustainable fuels and eco-friendly strategies are
+							shaping the sport.
+						</p>
+					</div>
+
+					<img
+						src="../assets/img/section/racei1.png"
+						class="img-fluid"
+						alt=""
+					/>
+				</div>
+				<div class="bento-item">
+					<div>
+						<span class="small text-uppercase">the</span>
+						<h5>Past Seasons</h5>
+						<p>Highlights from previous years, showcasing dramatic stories.</p>
+					</div>
+					<div
+						class="text-center justify-content-center align-items-center fs-1"
+					>
+						<svg
+							xmlns="http://www.w3.org/2000/svg"
+							width="1em"
+							height="1em"
+							fill="currentColor"
+							class="bi bi-gear-wide"
+							viewBox="0 0 16 16"
+						>
+							<path
+								d="M8.932.727c-.243-.97-1.62-.97-1.864 0l-.071.286a.96.96 0 0 1-1.622.434l-.205-.211c-.695-.719-1.888-.03-1.613.931l.08.284a.96.96 0 0 1-1.186 1.187l-.284-.081c-.96-.275-1.65.918-.931 1.613l.211.205a.96.96 0 0 1-.434 1.622l-.286.071c-.97.243-.97 1.62 0 1.864l.286.071a.96.96 0 0 1 .434 1.622l-.211.205c-.719.695-.03 1.888.931 1.613l.284-.08a.96.96 0 0 1 1.187 1.187l-.081.283c-.275.96.918 1.65 1.613.931l.205-.211a.96.96 0 0 1 1.622.434l.071.286c.243.97 1.62.97 1.864 0l.071-.286a.96.96 0 0 1 1.622-.434l.205.211c.695.719 1.888.03 1.613-.931l-.08-.284a.96.96 0 0 1 1.187-1.187l.283.081c.96.275 1.65-.918.931-1.613l-.211-.205a.96.96 0 0 1 .434-1.622l.286-.071c.97-.243.97-1.62 0-1.864l-.286-.071a.96.96 0 0 1-.434-1.622l.211-.205c.719-.695.03-1.888-.931-1.613l-.284.08a.96.96 0 0 1-1.187-1.186l.081-.284c.275-.96-.918-1.65-1.613-.931l-.205.211a.96.96 0 0 1-1.622-.434zM8 12.997a4.998 4.998 0 1 1 0-9.995 4.998 4.998 0 0 1 0 9.996z"
+							/>
+						</svg>
+					</div>
+				</div>
+				<div class="bento-item">
+					<div>
+						<span class="small text-uppercase">the</span>
+						<h5>2025 Coverage</h5>
+						<p>Up-to-date coverage of the 2025 F1 season.</p>
+					</div>
+					<div
+						class="text-center justify-content-center align-items-center fs-1"
+					>
+						<svg
+							xmlns="http://www.w3.org/2000/svg"
+							width="1em"
+							height="1em"
+							fill="currentColor"
+							class="bi bi-newspaper"
+							viewBox="0 0 16 16"
+						>
+							<path
+								d="M0 2.5A1.5 1.5 0 0 1 1.5 1h11A1.5 1.5 0 0 1 14 2.5v10.528c0 .3-.05.654-.238.972h.738a.5.5 0 0 0 .5-.5v-9a.5.5 0 0 1 1 0v9a1.5 1.5 0 0 1-1.5 1.5H1.497A1.497 1.497 0 0 1 0 13.5zM12 14c.37 0 .654-.211.853-.441.092-.106.147-.279.147-.531V2.5a.5.5 0 0 0-.5-.5h-11a.5.5 0 0 0-.5.5v11c0 .278.223.5.497.5z"
+							/>
+							<path
+								d="M2 3h10v2H2zm0 3h4v3H2zm0 4h4v1H2zm0 2h4v1H2zm5-6h2v1H7zm3 0h2v1h-2zM7 8h2v1H7zm3 0h2v1h-2zm-3 2h2v1H7zm3 0h2v1h-2zm-3 2h2v1H7zm3 0h2v1h-2z"
+							/>
+						</svg>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- Overview Section -->
+		<section class="container mb-5">
+			<div class="row align-items-center">
+				<div class="col-12 col-md-6">
+					<h2 class="fw-bold">The Basics of Formula 1</h2>
+					<p>
+						Formula 1, often abbreviated as F1, is the pinnacle of motorsport.
+						It features the world's fastest cars, elite drivers, and
+						cutting-edge technology competing on global circuits.
+					</p>
+				</div>
+				<div class="col-12 col-md-6">
+					<img
+						src="../assets/img/section/racei1.png"
+						alt="Formula 1 car"
+						class="img-fluid shadow"
+					/>
+				</div>
+			</div>
+		</section>
+
+		<!-- What Is Formula 1 Section -->
+		<section class="container mb-5">
+			<div class="row">
+				<div class="col-12 col-md-12">
+					<div class="">
+						<h2 class="fw-bold">What is Formula 1</h2>
+						<p>
+							Formula 1, often referred to as F1, is the pinnacle of motorsport
+							and one of the most thrilling and prestigious racing championships
+							in the world. It is a global phenomenon that combines cutting-edge
+							technology, incredible driver skill, and strategic brilliance to
+							create an unforgettable spectacle.
+						</p>
+					</div>
+					<div class="border-top">
+						<h4 class="mt-3">The Basics</h4>
+						<ul class="list-group list-group-flush">
+							<li class="list-group-item">
+								<h5>Cars</h5>
+								<p>
+									Formula 1 cars are open-wheel, single-seater vehicles designed
+									for maximum speed and performance. They feature advanced
+									aerodynamics, hybrid power units, and state-of-the-art
+									materials to ensure they remain the fastest racing cars in the
+									world.
+								</p>
+							</li>
+							<li class="list-group-item">
+								<h5>Drivers</h5>
+								<p>
+									Behind the wheel are some of the most talented and daring
+									drivers on the planet, competing for glory in a high-stakes
+									environment that demands precision, bravery, and focus.
+								</p>
+							</li>
+							<li class="list-group-item">
+								<h5>Tracks</h5>
+								<p>
+									Races take place on a variety of circuits, ranging from iconic
+									street tracks like Monaco to purpose-built circuits like
+									Silverstone and Suzuka. Each track presents unique challenges
+									for drivers and teams.
+								</p>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- The Championship Section -->
+		<section class="container mb-5">
+			<div class="row">
+				<div class="col-12 col-md-12">
+					<div class="">
+						<h2 class="fw-bold">The Championship</h2>
+						<p>
+							Formula 1 is not just about individual races; it’s a season-long
+							competition to crown the best. It is as much about teamwork as
+							individual skill, with every point contributing to the season’s
+							narrative.
+						</p>
+					</div>
+					<div class="border-top">
+						<ul class="list-group list-group-flush">
+							<li class="list-group-item">
+								<h5>Drivers' Championship</h5>
+								<p>
+									Awarded to the driver who accumulates the most points
+									throughout the season. Points are earned based on race
+									finishes, with higher positions earning more points.
+								</p>
+							</li>
+							<li class="list-group-item">
+								<h5>Constructors' Championship</h5>
+								<p>
+									Teams, also known as constructors, compete for this title
+									based on the combined performance of their two drivers. Famous
+									constructors include Mercedes, Ferrari, Red Bull Racing, and
+									McLaren.
+								</p>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- The Technology Section -->
+		<section class="container mb-5">
+			<div class="row">
+				<div class="col-12 col-md-12">
+					<div class="">
+						<h2 class="fw-bold">The Technology</h2>
+						<p>
+							Innovation drives Formula 1 forward, both on and off the track.
+						</p>
+					</div>
+					<div class="border-top">
+						<ul class="list-group list-group-flush">
+							<li class="list-group-item">
+								<h5>Innovation on Wheels</h5>
+								<p>
+									Formula 1 is a testing ground for automotive and engineering
+									innovations. Technologies developed in F1 often influence the
+									design and performance of road cars, pushing boundaries in
+									efficiency and speed.
+								</p>
+							</li>
+							<li class="list-group-item">
+								<h5>Sustainability</h5>
+								<p>
+									Recent years have seen a push towards sustainability, with the
+									introduction of hybrid power units and a commitment to using
+									100% sustainable fuels by 2030. These initiatives aim to
+									secure the sport's future while addressing global
+									environmental challenges.
+								</p>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- The Spectacle Section -->
+		<section class="container mb-5">
+			<div class="row">
+				<div class="col-12 col-md-12">
+					<div class="">
+						<h2 class="fw-bold">The Spectacle</h2>
+						<p>
+							More than just a race, Formula 1 delivers unforgettable
+							experiences.
+						</p>
+					</div>
+					<div class="border-top">
+						<ul class="list-group list-group-flush">
+							<li class="list-group-item">
+								<h5>Race Weekends</h5>
+								<p>
+									Each F1 race weekend includes practice sessions, a qualifying
+									session to determine the starting grid, and the main event:
+									the Grand Prix. The format keeps fans engaged and builds
+									excitement across the weekend.
+								</p>
+							</li>
+							<li class="list-group-item">
+								<h5>Global Audience</h5>
+								<p>
+									Millions of fans tune in from around the world to watch races
+									live, making Formula 1 a truly global sport and a celebration
+									of diversity and unity.
+								</p>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- Why It Matters Section -->
+		<section class="container mb-5">
+			<h2 class="fw-bold mb-4">Why It Matters</h2>
+			<p class="">
+				Formula 1 isn’t just about racing; it’s about pushing boundaries,
+				showcasing human ingenuity, and celebrating the relentless pursuit of
+				excellence. It captures the imagination of fans with its blend of speed,
+				strategy, and high-octane drama.
+			</p>
+			<p>
+				Whether you’re a lifelong fan or new to the sport, Formula 1 offers
+				something for everyone. It’s more than a race – it’s a passion, a
+				tradition, and a glimpse into the future of technology and sport.
+			</p>
+		</section>
+
+		<!-- The Future Section -->
+		<section class="container mb-5">
+			<h2 class="fw-bold mb-4">The Future of Formula 1</h2>
+			<p class="">
+				Formula 1 continues to evolve through advancements in sustainability,
+				hybrid technology, and fan engagement. The sport remains poised to be
+				the pinnacle of motorsport for generations to come.
+			</p>
+		</section>
+
+		<!-- site disclaimer -->
+		<div
+			class="container-fluid text-bg-dark border border-gray7 border-top-0 border-start-0 border-end-0"
+		>
+			<div class="row">
+				<div class="text-center">
+					<p class="my-2">
+						DISCLAIMER: This website is unofficial and is not associated in any
+						way with the Formula 1 companies. F1, FORMULA ONE, FORMULA 1, FIA
+						FORMULA ONE WORLD CHAMPIONSHIP, GRAND PRIX and related marks are
+						trade marks of Formula One Licensing B.V.
+					</p>
+				</div>
+			</div>
+		</div>
+
+		<!-- footer -->
+		<div class="container-fluid text-bg-dark p-3">
+			<footer
+				class="container border border-10 border-black border-start-0 border-top-0 rounded-bottom-4 rounded-start-0 pt-5 pb-0"
+			>
+				<!-- TODO update links -->
+				<div class="row">
+					<div class="col-md-5 mb-3">
+						<div>
+							<img
+								src="../assets/img/logos/trackside-logowhite.png"
+								class="img-fluid w-50 mb-3"
+								alt=""
+							/>
+							<p>Discover Formula 1 from a fan perspective.</p>
+						</div>
+					</div>
+
+					<div class="col-6 col-md-2 offset-md-1 mb-3">
+						<h5>Trackside</h5>
+						<ul class="nav flex-column">
+							<li class="nav-item mb-2">
+								<a
+									href="../index.html"
+									class="nav-link p-0"
+									>Home</a
+								>
+							</li>
+							<li class="nav-item mb-2">
+								<a
+									href="#"
+									class="nav-link p-0"
+									>What is Formula 1</a
+								>
+							</li>
+							<li class="nav-item mb-2">
+								<a
+									href="technologies.html"
+									class="nav-link p-0"
+									>Technology of F1</a
+								>
+							</li>
+							<li class="nav-item mb-2">
+								<a
+									href="future.html"
+									class="nav-link p-0"
+									>Future of F1</a
+								>
+							</li>
+						</ul>
+					</div>
+
+					<div class="col-6 col-md-2 mb-3">
+						<h5>Seasonal</h5>
+						<ul class="nav flex-column">
+							<li class="nav-item mb-2">
+								<a
+									href="../seasons/2025/2025-calendar.html"
+									class="nav-link p-0"
+									>2025 Race Calendar</a
+								>
+							</li>
+							<li class="nav-item mb-2">
+								<a
+									href="#"
+									class="nav-link p-0"
+									>2025 Coverage</a
+								>
+							</li>
+							<li class="nav-item mb-2">
+								<a
+									href="#"
+									class="nav-link p-0"
+									>2024 Breakdown</a
+								>
+							</li>
+							<li class="nav-item mb-2">
+								<a
+									href="#"
+									class="nav-link p-0"
+									>2023 Breakdown</a
+								>
+							</li>
+						</ul>
+					</div>
+
+					<div class="col-6 col-md-2 mb-3">
+						<h5>Pitwall</h5>
+						<ul class="nav flex-column">
+							<li class="nav-item mb-2">
+								<a
+									href="faqs.html"
+									class="nav-link p-0"
+									>Trackside FAQs</a
+								>
+							</li>
+							<li class="nav-item mb-2">
+								<a
+									href="#"
+									class="nav-link p-0"
+									>Site Attributions</a
+								>
+							</li>
+							<li class="nav-item mb-2">
+								<a
+									href="learnmore.html"
+									class="nav-link p-0"
+									>Learn More</a
+								>
+							</li>
+							<li class="nav-item mb-2">
+								<a
+									href="#"
+									class="nav-link p-0"
+									>Contact Us</a
+								>
+							</li>
+						</ul>
+					</div>
+				</div>
+
+				<div
+					class="d-flex flex-column flex-sm-row justify-content-between py-4 my-2 border-top"
+				>
+					<p>© 2025 Nick Calvo All rights reserved.</p>
+					<ul class="list-unstyled d-flex">
+						<li class="ms-3">
+							<a
+								class="link-body-emphasis"
+								href="#"
+								><svg
+									class="bi"
+									width="24"
+									height="24"
+								>
+									<use xlink:href="#twitter"></use></svg
+							></a>
+						</li>
+						<li class="ms-3">
+							<a
+								class="link-body-emphasis"
+								href="#"
+								><svg
+									class="bi"
+									width="24"
+									height="24"
+								>
+									<use xlink:href="#instagram"></use></svg
+							></a>
+						</li>
+						<li class="ms-3">
+							<a
+								class="link-body-emphasis"
+								href="#"
+								><svg
+									class="bi"
+									width="24"
+									height="24"
+								>
+									<use xlink:href="#facebook"></use></svg
+							></a>
+						</li>
+					</ul>
+				</div>
+			</footer>
+		</div>
+
+		<script
+			type="module"
+			src="../js/main.js"
+		></script>
+	</body>
+</html>
