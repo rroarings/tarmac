@@ -1,6 +1,7 @@
 footer .nav-link {
-  color: $gray-300;
-  transition:  text-decoration-color 0.4s ease;
+  color: $gray-500;
+  text-decoration: none;
+  transition: color 0.3s ease;
 
   &:hover, 
   &:focus-visible {
@@ -8,7 +9,7 @@ footer .nav-link {
     text-decoration: underline;
     text-decoration-color: $red;
     text-underline-offset: 6px;
-    text-decoration-thickness: 3px;
+    text-decoration-thickness: 4px;
   }
 }
 
