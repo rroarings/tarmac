@@ -1,0 +1,2374 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<meta
+			name="viewport"
+			content="width=device-width, initial-scale=1, shrink-to-fit=no"
+		/>
+		<meta
+			name="description"
+			content="Formula Bootstrap is a a Bootstrap built website that explores some areas of Formula One."
+		/>
+		<meta
+			name="author"
+			content="Nick Calvo"
+		/>
+		<title>Trackside | 2023 Race Calender</title>
+		<link
+			rel="stylesheet"
+			href="../../scss/styles.scss"
+		/>
+	</head>
+	<!-- todo debate with self to add some sort of standings/results for the season on the calender page as well -->
+	<!--todo eventually add specific race page with race breakdown  -->
+	<!-- site header -->
+	<nav
+		class="navbar navbar-expand-lg sticky-top"
+		id="mainNav"
+	>
+		<div class="container">
+			<a
+				class="navbar-brand"
+				href="#page-top"
+			>
+				<img
+					src="../../assets/img/logos/trackside-logoblack.png"
+					class="img-fluid w-50"
+					alt="Trackside Logo"
+				/>
+			</a>
+			<button
+				class="navbar-toggler"
+				type="button"
+				data-bs-toggle="collapse"
+				data-bs-target="#navbarResponsive"
+				aria-controls="navbarResponsive"
+				aria-expanded="false"
+				aria-label="Toggle navigation"
+			>
+				Menu
+				<i class="fas fa-bars ms-1"></i>
+			</button>
+			<div
+				class="collapse navbar-collapse"
+				id="navbarResponsive"
+			>
+				<ul class="navbar-nav ms-auto me-4 py-4 py-lg-0">
+					<li class="nav-item fw-bold">
+						<a
+							class="nav-link active"
+							href="../../index.html"
+							aria-current="page"
+							>Home</a
+						>
+					</li>
+					<li class="nav-item dropdown">
+						<a
+							class="nav-link dropdown-toggle"
+							href="#"
+							id="aboutDropdown"
+							role="button"
+							data-bs-toggle="dropdown"
+							aria-expanded="false"
+						>
+							About F1
+						</a>
+						<ul
+							class="dropdown-menu"
+							aria-labelledby="aboutDropdown"
+						>
+							<li>
+								<a
+									class="dropdown-item"
+									href="#"
+									>What is Formula 1</a
+								>
+							</li>
+							<li>
+								<a
+									class="dropdown-item"
+									href="../../pages/technologies.html"
+									>Technology of F1</a
+								>
+							</li>
+							<li>
+								<a
+									class="dropdown-item"
+									href="../../pages/future.html"
+									>Future of F1</a
+								>
+							</li>
+						</ul>
+					</li>
+					<li class="nav-item dropdown">
+						<a
+							class="nav-link dropdown-toggle"
+							href="#"
+							id="aboutDropdown"
+							role="button"
+							data-bs-toggle="dropdown"
+							aria-expanded="false"
+						>
+							Race Calendars
+						</a>
+						<ul
+							class="dropdown-menu"
+							aria-labelledby="aboutDropdown"
+						>
+							<li>
+								<a
+									class="dropdown-item"
+									href="../2025/2025-calendar.html"
+									>2025 Calendar</a
+								>
+							</li>
+							<li>
+								<a
+									class="dropdown-item"
+									href="../2024/2024-calendar.html"
+									>2024 Calendar</a
+								>
+							</li>
+							<li>
+								<a
+									class="dropdown-item"
+									href="2023-calendar.html"
+									>2023 Calendar</a
+								>
+							</li>
+						</ul>
+					</li>
+					<li class="nav-item dropdown">
+						<a
+							class="nav-link dropdown-toggle"
+							href="#"
+							id="seasonsDropdown"
+							role="button"
+							data-bs-toggle="dropdown"
+							aria-expanded="false"
+						>
+							Season Talk
+						</a>
+						<ul
+							class="dropdown-menu"
+							aria-labelledby="seasonsDropdown"
+						>
+							<li>
+								<a
+									class="dropdown-item"
+									href="#"
+									>2025 Coverage</a
+								>
+							</li>
+							<li>
+								<a
+									class="dropdown-item"
+									href="#"
+									>2024 Results</a
+								>
+							</li>
+							<li>
+								<a
+									class="dropdown-item"
+									href="#"
+									>2023 Results</a
+								>
+							</li>
+						</ul>
+					</li>
+					<li class="nav-item dropdown">
+						<a
+							class="nav-link dropdown-toggle"
+							href="#"
+							id="seasonsDropdown"
+							role="button"
+							data-bs-toggle="dropdown"
+							aria-expanded="false"
+						>
+							Standings
+						</a>
+						<ul
+							class="dropdown-menu"
+							aria-labelledby="seasonsDropdown"
+						>
+							<li>
+								<a
+									class="dropdown-item"
+									href="#"
+									>2025 Coverage</a
+								>
+							</li>
+							<li>
+								<a
+									class="dropdown-item"
+									href="#"
+									>2024 Breakdown</a
+								>
+							</li>
+							<li>
+								<a
+									class="dropdown-item"
+									href="#"
+									>2023 Breakdown</a
+								>
+							</li>
+						</ul>
+					</li>
+					<li class="nav-item dropdown">
+						<a
+							class="nav-link dropdown-toggle"
+							href="#"
+							id="fanZoneDropdown"
+							role="button"
+							data-bs-toggle="dropdown"
+							aria-expanded="false"
+						>
+							Site
+						</a>
+						<ul
+							class="dropdown-menu"
+							aria-labelledby="fanZoneDropdown"
+						>
+							<li>
+								<a
+									class="dropdown-item"
+									href="../../pages/faqs.html"
+									>Trackside FAQs</a
+								>
+							</li>
+							<li>
+								<a
+									class="dropdown-item"
+									href="../../pages/learnmore.html"
+									>Learn More</a
+								>
+							</li>
+							<li>
+								<a
+									class="dropdown-item"
+									href="#"
+									>Contact Us</a
+								>
+							</li>
+							<li>
+								<a
+									class="dropdown-item"
+									href="#"
+									>Site Attributions</a
+								>
+							</li>
+						</ul>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+
+	<!-- Hero -->
+	<div class="container-fluid text-center">
+		<div class="container">
+			<div class="row py-5">
+				<div class="col-12">
+					<h1 class="fw-bold">2023 Race Calendar</h1>
+					<p class="lead">Learn about the 2023 race season below</p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- End-  Hero -->
+
+	<!-- Race start -->
+	<div class="container mb-3">
+		<!-- Album start -->
+		<div class="album race-album">
+			<div class="row g-4 row-cols-1 row-cols-md-2 row-cols-lg-3">
+				<!-- Bahrain Card -->
+				<a
+					href="#"
+					class="text-decoration-none"
+				>
+					<div class="col d-flex align-items-stretch h-100">
+						<div class="card card-circuit">
+							<img
+								class="card-img-top"
+								src="../../assets/img/section/racei1.png"
+								alt="Race Preview"
+							/>
+							<div class="card-body d-flex flex-column justify-content-between">
+								<div
+									class="d-flex justify-content-between align-items-center border-bottom border-dark-subtle border-2"
+								>
+									<h4 class="">3 - 5 <span class="small">MAR</span></h4>
+									<svg
+										xmlns="http://www.w3.org/2000/svg"
+										width="16"
+										height="16"
+										fill="currentColor"
+										class="bi bi-box-arrow-up-right"
+										viewBox="0 0 16 16"
+									>
+										<path
+											fill-rule="evenodd"
+											d="M8.636 3.5a.5.5 0 0 0-.5-.5H1.5A1.5 1.5 0 0 0 0 4.5v10A1.5 1.5 0 0 0 1.5 16h10a1.5 1.5 0 0 0 1.5-1.5V7.864a.5.5 0 0 0-1 0V14.5a.5.5 0 0 1-.5.5h-10a.5.5 0 0 1-.5-.5v-10a.5.5 0 0 1 .5-.5h6.636a.5.5 0 0 0 .5-.5"
+										/>
+										<path
+											fill-rule="evenodd"
+											d="M16 .5a.5.5 0 0 0-.5-.5h-5a.5.5 0 0 0 0 1h3.793L6.146 9.146a.5.5 0 1 0 .708.708L15 1.707V5.5a.5.5 0 0 0 1 0z"
+										/>
+									</svg>
+								</div>
+								<h5 class="card-title fw-bold">
+									Bahrain <span class="fi fi-bh ms-2"></span>
+								</h5>
+								<p class="text-uppercase circuit-name">
+									FORMULA 1 BAHRAIN GRAND PRIX 2023
+								</p>
+								<div class="d-flex justify-content-between align-items-center">
+									<div class="d-flex align-items-center">
+										<svg
+											xmlns="http://www.w3.org/2000/svg"
+											width="16"
+											height="16"
+											fill="currentColor"
+											class="bi bi-1-circle me-2"
+											viewBox="0 0 16 16"
+										>
+											<path
+												d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8m15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0M9.283 4.002V12H7.971V5.338h-.065L6.072 6.656V5.385l1.899-1.383z"
+											/>
+										</svg>
+										Verstappen
+									</div>
+									<div class="d-flex align-items-center">
+										<svg
+											xmlns="http://www.w3.org/2000/svg"
+											width="16"
+											height="16"
+											fill="currentColor"
+											class="bi bi-stopwatch me-2"
+											viewBox="0 0 16 16"
+										>
+											<path
+												d="M8.5 5.6a.5.5 0 1 0-1 0v2.9h-3a.5.5 0 0 0 0 1H8a.5.5 0 0 0 .5-.5z"
+											/>
+											<path
+												d="M6.5 1A.5.5 0 0 1 7 .5h2a.5.5 0 0 1 0 1v.57c1.36.196 2.594.78 3.584 1.64l.012-.013.354-.354-.354-.353a.5.5 0 0 1 .707-.708l1.414 1.415a.5.5 0 1 1-.707.707l-.353-.354-.354.354-.013.012A7 7 0 1 1 7 2.071V1.5a.5.5 0 0 1-.5-.5M8 3a6 6 0 1 0 .001 12A6 6 0 0 0 8 3"
+											/>
+										</svg>
+										1:33:56.736
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</a>
+				<!-- Saudi Arabia Card -->
+				<a
+					href="#"
+					class="text-decoration-none"
+				>
+					<div class="col d-flex align-items-stretch h-100">
+						<div class="card card-circuit">
+							<img
+								class="card-img-top"
+								src="../../assets/img/section/racei1.png"
+								alt="Race Preview"
+							/>
+							<div class="card-body d-flex flex-column justify-content-between">
+								<div
+									class="d-flex justify-content-between align-items-center mb-3 border-bottom border-dark-subtle border-2"
+								>
+									<h4 class="">17 - 19 <span class="small">MAR</span></h4>
+									<svg
+										xmlns="http://www.w3.org/2000/svg"
+										width="16"
+										height="16"
+										fill="currentColor"
+										class="bi bi-box-arrow-up-right"
+										viewBox="0 0 16 16"
+									>
+										<path
+											fill-rule="evenodd"
+											d="M8.636 3.5a.5.5 0 0 0-.5-.5H1.5A1.5 1.5 0 0 0 0 4.5v10A1.5 1.5 0 0 0 1.5 16h10a1.5 1.5 0 0 0 1.5-1.5V7.864a.5.5 0 0 0-1 0V14.5a.5.5 0 0 1-.5.5h-10a.5.5 0 0 1-.5-.5v-10a.5.5 0 0 1 .5-.5h6.636a.5.5 0 0 0 .5-.5"
+										/>
+										<path
+											fill-rule="evenodd"
+											d="M16 .5a.5.5 0 0 0-.5-.5h-5a.5.5 0 0 0 0 1h3.793L6.146 9.146a.5.5 0 1 0 .708.708L15 1.707V5.5a.5.5 0 0 0 1 0z"
+										/>
+									</svg>
+								</div>
+								<h5 class="card-title fw-bold">
+									Saudi Arabia <span class="fi fi-sa ms-2"></span>
+								</h5>
+								<p class="text-uppercase circuit-name">
+									FORMULA 1 STC SAUDI ARABIAN GRAND PRIX 2023
+								</p>
+								<div class="d-flex justify-content-between align-items-center">
+									<div class="d-flex align-items-center">
+										<svg
+											xmlns="http://www.w3.org/2000/svg"
+											width="16"
+											height="16"
+											fill="currentColor"
+											class="bi bi-1-circle me-2"
+											viewBox="0 0 16 16"
+										>
+											<path
+												d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8m15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0M9.283 4.002V12H7.971V5.338h-.065L6.072 6.656V5.385l1.899-1.383z"
+											/>
+										</svg>
+										Perez
+									</div>
+									<div class="d-flex align-items-center">
+										<svg
+											xmlns="http://www.w3.org/2000/svg"
+											width="16"
+											height="16"
+											fill="currentColor"
+											class="bi bi-stopwatch me-2"
+											viewBox="0 0 16 16"
+										>
+											<path
+												d="M8.5 5.6a.5.5 0 1 0-1 0v2.9h-3a.5.5 0 0 0 0 1H8a.5.5 0 0 0 .5-.5z"
+											/>
+											<path
+												d="M6.5 1A.5.5 0 0 1 7 .5h2a.5.5 0 0 1 0 1v.57c1.36.196 2.594.78 3.584 1.64l.012-.013.354-.354-.354-.353a.5.5 0 0 1 .707-.708l1.414 1.415a.5.5 0 1 1-.707.707l-.353-.354-.354.354-.013.012A7 7 0 1 1 7 2.071V1.5a.5.5 0 0 1-.5-.5M8 3a6 6 0 1 0 .001 12A6 6 0 0 0 8 3"
+											/>
+										</svg>
+										1:21:14.894
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</a>
+				<!-- Australia Card -->
+				<a
+					href="#"
+					class="text-decoration-none"
+				>
+					<div class="col d-flex align-items-stretch h-100">
+						<div class="card card-circuit">
+							<img
+								class="card-img-top"
+								src="../../assets/img/section/racei1.png"
+								alt="Race Preview"
+							/>
+							<div class="card-body d-flex flex-column justify-content-between">
+								<div
+									class="d-flex justify-content-between align-items-center mb-3 border-bottom border-dark-subtle border-2"
+								>
+									<h4 class="">
+										31 <span class="small">MAR</span> - 2
+										<span class="small">APR</span>
+									</h4>
+									<svg
+										xmlns="http://www.w3.org/2000/svg"
+										width="16"
+										height="16"
+										fill="currentColor"
+										class="bi bi-box-arrow-up-right"
+										viewBox="0 0 16 16"
+									>
+										<path
+											fill-rule="evenodd"
+											d="M8.636 3.5a.5.5 0 0 0-.5-.5H1.5A1.5 1.5 0 0 0 0 4.5v10A1.5 1.5 0 0 0 1.5 16h10a1.5 1.5 0 0 0 1.5-1.5V7.864a.5.5 0 0 0-1 0V14.5a.5.5 0 0 1-.5.5h-10a.5.5 0 0 1-.5-.5v-10a.5.5 0 0 1 .5-.5h6.636a.5.5 0 0 0 .5-.5"
+										/>
+										<path
+											fill-rule="evenodd"
+											d="M16 .5a.5.5 0 0 0-.5-.5h-5a.5.5 0 0 0 0 1h3.793L6.146 9.146a.5.5 0 1 0 .708.708L15 1.707V5.5a.5.5 0 0 0 1 0z"
+										/>
+									</svg>
+								</div>
+								<h5 class="card-title fw-bold">
+									Australia <span class="fi fi-au ms-2"></span>
+								</h5>
+								<p class="text-uppercase circuit-name">
+									FORMULA 1 ROLEX AUSTRALIAN GRAND PRIX 2023
+								</p>
+								<div class="d-flex justify-content-between align-items-center">
+									<div class="d-flex align-items-center">
+										<svg
+											xmlns="http://www.w3.org/2000/svg"
+											width="16"
+											height="16"
+											fill="currentColor"
+											class="bi bi-1-circle me-2"
+											viewBox="0 0 16 16"
+										>
+											<path
+												d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8m15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0M9.283 4.002V12H7.971V5.338h-.065L6.072 6.656V5.385l1.899-1.383z"
+											/>
+										</svg>
+										Perez
+									</div>
+									<div class="d-flex align-items-center">
+										<svg
+											xmlns="http://www.w3.org/2000/svg"
+											width="16"
+											height="16"
+											fill="currentColor"
+											class="bi bi-stopwatch me-2"
+											viewBox="0 0 16 16"
+										>
+											<path
+												d="M8.5 5.6a.5.5 0 1 0-1 0v2.9h-3a.5.5 0 0 0 0 1H8a.5.5 0 0 0 .5-.5z"
+											/>
+											<path
+												d="M6.5 1A.5.5 0 0 1 7 .5h2a.5.5 0 0 1 0 1v.57c1.36.196 2.594.78 3.584 1.64l.012-.013.354-.354-.354-.353a.5.5 0 0 1 .707-.708l1.414 1.415a.5.5 0 1 1-.707.707l-.353-.354-.354.354-.013.012A7 7 0 1 1 7 2.071V1.5a.5.5 0 0 1-.5-.5M8 3a6 6 0 1 0 .001 12A6 6 0 0 0 8 3"
+											/>
+										</svg>
+										1:21:14.894
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</a>
+				<!-- Azerbaijan Card -->
+				<a
+					href="#"
+					class="text-decoration-none"
+				>
+					<div class="col d-flex align-items-stretch h-100">
+						<div class="card card-circuit">
+							<img
+								class="card-img-top"
+								src="../../assets/img/section/racei1.png"
+								alt="Race Preview"
+							/>
+							<div class="card-body d-flex flex-column justify-content-between">
+								<div
+									class="d-flex justify-content-between align-items-center mb-3 border-bottom border-dark-subtle border-2"
+								>
+									<h4 class="">28 - 30 <span class="small">APR</span></h4>
+									<svg
+										xmlns="http://www.w3.org/2000/svg"
+										width="16"
+										height="16"
+										fill="currentColor"
+										class="bi bi-box-arrow-up-right"
+										viewBox="0 0 16 16"
+									>
+										<path
+											fill-rule="evenodd"
+											d="M8.636 3.5a.5.5 0 0 0-.5-.5H1.5A1.5 1.5 0 0 0 0 4.5v10A1.5 1.5 0 0 0 1.5 16h10a1.5 1.5 0 0 0 1.5-1.5V7.864a.5.5 0 0 0-1 0V14.5a.5.5 0 0 1-.5.5h-10a.5.5 0 0 1-.5-.5v-10a.5.5 0 0 1 .5-.5h6.636a.5.5 0 0 0 .5-.5"
+										/>
+										<path
+											fill-rule="evenodd"
+											d="M16 .5a.5.5 0 0 0-.5-.5h-5a.5.5 0 0 0 0 1h3.793L6.146 9.146a.5.5 0 1 0 .708.708L15 1.707V5.5a.5.5 0 0 0 1 0z"
+										/>
+									</svg>
+								</div>
+								<h5 class="card-title fw-bold">
+									Azerbaijan <span class="fi fi-az ms-2"></span>
+								</h5>
+								<p class="text-uppercase circuit-name">
+									FORMULA 1 AZERBAIJAN GRAND PRIX 2023
+								</p>
+								<div class="d-flex justify-content-between align-items-center">
+									<div class="d-flex align-items-center">
+										<svg
+											xmlns="http://www.w3.org/2000/svg"
+											width="16"
+											height="16"
+											fill="currentColor"
+											class="bi bi-1-circle me-2"
+											viewBox="0 0 16 16"
+										>
+											<path
+												d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8m15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0M9.283 4.002V12H7.971V5.338h-.065L6.072 6.656V5.385l1.899-1.383z"
+											/>
+										</svg>
+										Perez
+									</div>
+									<div class="d-flex align-items-center">
+										<svg
+											xmlns="http://www.w3.org/2000/svg"
+											width="16"
+											height="16"
+											fill="currentColor"
+											class="bi bi-stopwatch me-2"
+											viewBox="0 0 16 16"
+										>
+											<path
+												d="M8.5 5.6a.5.5 0 1 0-1 0v2.9h-3a.5.5 0 0 0 0 1H8a.5.5 0 0 0 .5-.5z"
+											/>
+											<path
+												d="M6.5 1A.5.5 0 0 1 7 .5h2a.5.5 0 0 1 0 1v.57c1.36.196 2.594.78 3.584 1.64l.012-.013.354-.354-.354-.353a.5.5 0 0 1 .707-.708l1.414 1.415a.5.5 0 1 1-.707.707l-.353-.354-.354.354-.013.012A7 7 0 1 1 7 2.071V1.5a.5.5 0 0 1-.5-.5M8 3a6 6 0 1 0 .001 12A6 6 0 0 0 8 3"
+											/>
+										</svg>
+										1:32:42.436
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</a>
+				<!-- Miami Card -->
+				<a
+					href="#"
+					class="text-decoration-none"
+				>
+					<div class="col d-flex align-items-stretch h-100">
+						<div class="card card-circuit">
+							<img
+								class="card-img-top"
+								src="../../assets/img/section/racei1.png"
+								alt="Race Preview"
+							/>
+							<div class="card-body d-flex flex-column justify-content-between">
+								<div
+									class="d-flex justify-content-between align-items-center mb-3 border-bottom border-dark-subtle border-2"
+								>
+									<h4 class="">5 - 7 <span class="small">MAY</span></h4>
+									<svg
+										xmlns="http://www.w3.org/2000/svg"
+										width="16"
+										height="16"
+										fill="currentColor"
+										class="bi bi-box-arrow-up-right"
+										viewBox="0 0 16 16"
+									>
+										<path
+											fill-rule="evenodd"
+											d="M8.636 3.5a.5.5 0 0 0-.5-.5H1.5A1.5 1.5 0 0 0 0 4.5v10A1.5 1.5 0 0 0 1.5 16h10a1.5 1.5 0 0 0 1.5-1.5V7.864a.5.5 0 0 0-1 0V14.5a.5.5 0 0 1-.5.5h-10a.5.5 0 0 1-.5-.5v-10a.5.5 0 0 1 .5-.5h6.636a.5.5 0 0 0 .5-.5"
+										/>
+										<path
+											fill-rule="evenodd"
+											d="M16 .5a.5.5 0 0 0-.5-.5h-5a.5.5 0 0 0 0 1h3.793L6.146 9.146a.5.5 0 1 0 .708.708L15 1.707V5.5a.5.5 0 0 0 1 0z"
+										/>
+									</svg>
+								</div>
+								<h5 class="card-title fw-bold">
+									Miami <span class="fi fi-us ms-2"></span>
+								</h5>
+								<p class="text-uppercase circuit-name">
+									FORMULA 1 CRYPTO.COM MIAMI GRAND PRIX 2023
+								</p>
+								<div class="d-flex justify-content-between align-items-center">
+									<div class="d-flex align-items-center">
+										<svg
+											xmlns="http://www.w3.org/2000/svg"
+											width="16"
+											height="16"
+											fill="currentColor"
+											class="bi bi-1-circle me-2"
+											viewBox="0 0 16 16"
+										>
+											<path
+												d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8m15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0M9.283 4.002V12H7.971V5.338h-.065L6.072 6.656V5.385l1.899-1.383z"
+											/>
+										</svg>
+										Verstappen
+									</div>
+									<div class="d-flex align-items-center">
+										<svg
+											xmlns="http://www.w3.org/2000/svg"
+											width="16"
+											height="16"
+											fill="currentColor"
+											class="bi bi-stopwatch me-2"
+											viewBox="0 0 16 16"
+										>
+											<path
+												d="M8.5 5.6a.5.5 0 1 0-1 0v2.9h-3a.5.5 0 0 0 0 1H8a.5.5 0 0 0 .5-.5z"
+											/>
+											<path
+												d="M6.5 1A.5.5 0 0 1 7 .5h2a.5.5 0 0 1 0 1v.57c1.36.196 2.594.78 3.584 1.64l.012-.013.354-.354-.354-.353a.5.5 0 0 1 .707-.708l1.414 1.415a.5.5 0 1 1-.707.707l-.353-.354-.354.354-.013.012A7 7 0 1 1 7 2.071V1.5a.5.5 0 0 1-.5-.5M8 3a6 6 0 1 0 .001 12A6 6 0 0 0 8 3"
+											/>
+										</svg>
+										1:27:38.241
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</a>
+				<!-- Emilia-Romagna Card -->
+				<a
+					href="#"
+					class="text-decoration-none"
+				>
+					<div class="col d-flex align-items-stretch h-100">
+						<div class="card card-circuit">
+							<img
+								class="card-img-top"
+								src="../../assets/img/section/racei1.png"
+								alt="Race Preview"
+							/>
+							<div class="card-body d-flex flex-column justify-content-between">
+								<div
+									class="d-flex justify-content-between align-items-center mb-3 border-bottom border-dark-subtle border-2"
+								>
+									<h4 class="">19 - 21 <span class="small">MAY</span></h4>
+									<svg
+										xmlns="http://www.w3.org/2000/svg"
+										width="16"
+										height="16"
+										fill="currentColor"
+										class="bi bi-box-arrow-up-right"
+										viewBox="0 0 16 16"
+									>
+										<path
+											fill-rule="evenodd"
+											d="M8.636 3.5a.5.5 0 0 0-.5-.5H1.5A1.5 1.5 0 0 0 0 4.5v10A1.5 1.5 0 0 0 1.5 16h10a1.5 1.5 0 0 0 1.5-1.5V7.864a.5.5 0 0 0-1 0V14.5a.5.5 0 0 1-.5.5h-10a.5.5 0 0 1-.5-.5v-10a.5.5 0 0 1 .5-.5h6.636a.5.5 0 0 0 .5-.5"
+										/>
+										<path
+											fill-rule="evenodd"
+											d="M16 .5a.5.5 0 0 0-.5-.5h-5a.5.5 0 0 0 0 1h3.793L6.146 9.146a.5.5 0 1 0 .708.708L15 1.707V5.5a.5.5 0 0 0 1 0z"
+										/>
+									</svg>
+								</div>
+								<h5 class="card-title fw-bold">
+									Emilia-Romagna <span class="fi fi-it ms-2"></span>
+								</h5>
+								<p class="text-uppercase circuit-name">
+									FORMULA 1 QATAR AIRWAYS GRAN PREMIO DEL MADE IN ITALY E
+									DELL'EMILIA-ROMAGNA 2023
+								</p>
+								<div class="d-flex justify-content-between align-items-center">
+									<div class="d-flex align-items-center">
+										<svg
+											xmlns="http://www.w3.org/2000/svg"
+											width="16"
+											height="16"
+											fill="currentColor"
+											class="bi bi-1-circle me-2"
+											viewBox="0 0 16 16"
+										>
+											<path
+												d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8m15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0M9.283 4.002V12H7.971V5.338h-.065L6.072 6.656V5.385l1.899-1.383z"
+											/>
+										</svg>
+										NA
+									</div>
+									<div class="d-flex align-items-center">
+										<svg
+											xmlns="http://www.w3.org/2000/svg"
+											width="16"
+											height="16"
+											fill="currentColor"
+											class="bi bi-stopwatch me-2"
+											viewBox="0 0 16 16"
+										>
+											<path
+												d="M8.5 5.6a.5.5 0 1 0-1 0v2.9h-3a.5.5 0 0 0 0 1H8a.5.5 0 0 0 .5-.5z"
+											/>
+											<path
+												d="M6.5 1A.5.5 0 0 1 7 .5h2a.5.5 0 0 1 0 1v.57c1.36.196 2.594.78 3.584 1.64l.012-.013.354-.354-.354-.353a.5.5 0 0 1 .707-.708l1.414 1.415a.5.5 0 1 1-.707.707l-.353-.354-.354.354-.013.012A7 7 0 1 1 7 2.071V1.5a.5.5 0 0 1-.5-.5M8 3a6 6 0 1 0 .001 12A6 6 0 0 0 8 3"
+											/>
+										</svg>
+										NA
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</a>
+				<!-- Monaco Card -->
+				<a
+					href="#"
+					class="text-decoration-none"
+				>
+					<div class="col d-flex align-items-stretch h-100">
+						<div class="card card-circuit">
+							<img
+								class="card-img-top"
+								src="../../assets/img/section/racei1.png"
+								alt="Race Preview"
+							/>
+							<div class="card-body d-flex flex-column justify-content-between">
+								<div
+									class="d-flex justify-content-between align-items-center mb-3 border-bottom border-dark-subtle border-2"
+								>
+									<h4 class="">26 - 28 <span class="small">MAY</span></h4>
+									<svg
+										xmlns="http://www.w3.org/2000/svg"
+										width="16"
+										height="16"
+										fill="currentColor"
+										class="bi bi-box-arrow-up-right"
+										viewBox="0 0 16 16"
+									>
+										<path
+											fill-rule="evenodd"
+											d="M8.636 3.5a.5.5 0 0 0-.5-.5H1.5A1.5 1.5 0 0 0 0 4.5v10A1.5 1.5 0 0 0 1.5 16h10a1.5 1.5 0 0 0 1.5-1.5V7.864a.5.5 0 0 0-1 0V14.5a.5.5 0 0 1-.5.5h-10a.5.5 0 0 1-.5-.5v-10a.5.5 0 0 1 .5-.5h6.636a.5.5 0 0 0 .5-.5"
+										/>
+										<path
+											fill-rule="evenodd"
+											d="M16 .5a.5.5 0 0 0-.5-.5h-5a.5.5 0 0 0 0 1h3.793L6.146 9.146a.5.5 0 1 0 .708.708L15 1.707V5.5a.5.5 0 0 0 1 0z"
+										/>
+									</svg>
+								</div>
+								<h5 class="card-title fw-bold">
+									Monaco <span class="fi fi-mc ms-2"></span>
+								</h5>
+								<p class="text-uppercase circuit-name">
+									FORMULA 1 GRAND PRIX DE MONACO 2023
+								</p>
+								<div class="d-flex justify-content-between align-items-center">
+									<div class="d-flex align-items-center">
+										<svg
+											xmlns="http://www.w3.org/2000/svg"
+											width="16"
+											height="16"
+											fill="currentColor"
+											class="bi bi-1-circle me-2"
+											viewBox="0 0 16 16"
+										>
+											<path
+												d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8m15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0M9.283 4.002V12H7.971V5.338h-.065L6.072 6.656V5.385l1.899-1.383z"
+											/>
+										</svg>
+										Verstappen
+									</div>
+									<div class="d-flex align-items-center">
+										<svg
+											xmlns="http://www.w3.org/2000/svg"
+											width="16"
+											height="16"
+											fill="currentColor"
+											class="bi bi-stopwatch me-2"
+											viewBox="0 0 16 16"
+										>
+											<path
+												d="M8.5 5.6a.5.5 0 1 0-1 0v2.9h-3a.5.5 0 0 0 0 1H8a.5.5 0 0 0 .5-.5z"
+											/>
+											<path
+												d="M6.5 1A.5.5 0 0 1 7 .5h2a.5.5 0 0 1 0 1v.57c1.36.196 2.594.78 3.584 1.64l.012-.013.354-.354-.354-.353a.5.5 0 0 1 .707-.708l1.414 1.415a.5.5 0 1 1-.707.707l-.353-.354-.354.354-.013.012A7 7 0 1 1 7 2.071V1.5a.5.5 0 0 1-.5-.5M8 3a6 6 0 1 0 .001 12A6 6 0 0 0 8 3"
+											/>
+										</svg>
+										1:48:51.980
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</a>
+				<!-- Spain Card -->
+				<a
+					href="#"
+					class="text-decoration-none"
+				>
+					<div class="col d-flex align-items-stretch h-100">
+						<div class="card card-circuit">
+							<img
+								class="card-img-top"
+								src="../../assets/img/section/racei1.png"
+								alt="Race Preview"
+							/>
+							<div class="card-body d-flex flex-column justify-content-between">
+								<div
+									class="d-flex justify-content-between align-items-center mb-3 border-bottom border-dark-subtle border-2"
+								>
+									<h4 class="">2 - 4 <span class="small">JUN</span></h4>
+									<svg
+										xmlns="http://www.w3.org/2000/svg"
+										width="16"
+										height="16"
+										fill="currentColor"
+										class="bi bi-box-arrow-up-right"
+										viewBox="0 0 16 16"
+									>
+										<path
+											fill-rule="evenodd"
+											d="M8.636 3.5a.5.5 0 0 0-.5-.5H1.5A1.5 1.5 0 0 0 0 4.5v10A1.5 1.5 0 0 0 1.5 16h10a1.5 1.5 0 0 0 1.5-1.5V7.864a.5.5 0 0 0-1 0V14.5a.5.5 0 0 1-.5.5h-10a.5.5 0 0 1-.5-.5v-10a.5.5 0 0 1 .5-.5h6.636a.5.5 0 0 0 .5-.5"
+										/>
+										<path
+											fill-rule="evenodd"
+											d="M16 .5a.5.5 0 0 0-.5-.5h-5a.5.5 0 0 0 0 1h3.793L6.146 9.146a.5.5 0 1 0 .708.708L15 1.707V5.5a.5.5 0 0 0 1 0z"
+										/>
+									</svg>
+								</div>
+								<h5 class="card-title fw-bold">
+									Spain <span class="fi fi-es ms-2"></span>
+								</h5>
+								<p class="text-uppercase circuit-name">
+									FORMULA 1 AWS GRAN PREMIO DE ESPAÑA 2023
+								</p>
+								<div class="d-flex justify-content-between align-items-center">
+									<div class="d-flex align-items-center">
+										<svg
+											xmlns="http://www.w3.org/2000/svg"
+											width="16"
+											height="16"
+											fill="currentColor"
+											class="bi bi-1-circle me-2"
+											viewBox="0 0 16 16"
+										>
+											<path
+												d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8m15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0M9.283 4.002V12H7.971V5.338h-.065L6.072 6.656V5.385l1.899-1.383z"
+											/>
+										</svg>
+										Verstappen
+									</div>
+									<div class="d-flex align-items-center">
+										<svg
+											xmlns="http://www.w3.org/2000/svg"
+											width="16"
+											height="16"
+											fill="currentColor"
+											class="bi bi-stopwatch me-2"
+											viewBox="0 0 16 16"
+										>
+											<path
+												d="M8.5 5.6a.5.5 0 1 0-1 0v2.9h-3a.5.5 0 0 0 0 1H8a.5.5 0 0 0 .5-.5z"
+											/>
+											<path
+												d="M6.5 1A.5.5 0 0 1 7 .5h2a.5.5 0 0 1 0 1v.57c1.36.196 2.594.78 3.584 1.64l.012-.013.354-.354-.354-.353a.5.5 0 0 1 .707-.708l1.414 1.415a.5.5 0 1 1-.707.707l-.353-.354-.354.354-.013.012A7 7 0 1 1 7 2.071V1.5a.5.5 0 0 1-.5-.5M8 3a6 6 0 1 0 .001 12A6 6 0 0 0 8 3"
+											/>
+										</svg>
+										1:27:57.940
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</a>
+				<!-- Canada Card -->
+				<a
+					href="#"
+					class="text-decoration-none"
+				>
+					<div class="col d-flex align-items-stretch h-100">
+						<div class="card card-circuit">
+							<img
+								class="card-img-top"
+								src="../../assets/img/section/racei1.png"
+								alt="Race Preview"
+							/>
+							<div class="card-body d-flex flex-column justify-content-between">
+								<div
+									class="d-flex justify-content-between align-items-center mb-3 border-bottom border-dark-subtle border-2"
+								>
+									<h4 class="">16 - 18 <span class="small">JUN</span></h4>
+									<svg
+										xmlns="http://www.w3.org/2000/svg"
+										width="16"
+										height="16"
+										fill="currentColor"
+										class="bi bi-box-arrow-up-right"
+										viewBox="0 0 16 16"
+									>
+										<path
+											fill-rule="evenodd"
+											d="M8.636 3.5a.5.5 0 0 0-.5-.5H1.5A1.5 1.5 0 0 0 0 4.5v10A1.5 1.5 0 0 0 1.5 16h10a1.5 1.5 0 0 0 1.5-1.5V7.864a.5.5 0 0 0-1 0V14.5a.5.5 0 0 1-.5.5h-10a.5.5 0 0 1-.5-.5v-10a.5.5 0 0 1 .5-.5h6.636a.5.5 0 0 0 .5-.5"
+										/>
+										<path
+											fill-rule="evenodd"
+											d="M16 .5a.5.5 0 0 0-.5-.5h-5a.5.5 0 0 0 0 1h3.793L6.146 9.146a.5.5 0 1 0 .708.708L15 1.707V5.5a.5.5 0 0 0 1 0z"
+										/>
+									</svg>
+								</div>
+								<h5 class="card-title fw-bold">
+									Canada <span class="fi fi-ca ms-2"></span>
+								</h5>
+								<p class="text-uppercase circuit-name">
+									FORMULA 1 PIRELLI GRAND PRIX DU CANADA 2023
+								</p>
+								<div class="d-flex justify-content-between align-items-center">
+									<div class="d-flex align-items-center">
+										<svg
+											xmlns="http://www.w3.org/2000/svg"
+											width="16"
+											height="16"
+											fill="currentColor"
+											class="bi bi-1-circle me-2"
+											viewBox="0 0 16 16"
+										>
+											<path
+												d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8m15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0M9.283 4.002V12H7.971V5.338h-.065L6.072 6.656V5.385l1.899-1.383z"
+											/>
+										</svg>
+										Verstappen
+									</div>
+									<div class="d-flex align-items-center">
+										<svg
+											xmlns="http://www.w3.org/2000/svg"
+											width="16"
+											height="16"
+											fill="currentColor"
+											class="bi bi-stopwatch me-2"
+											viewBox="0 0 16 16"
+										>
+											<path
+												d="M8.5 5.6a.5.5 0 1 0-1 0v2.9h-3a.5.5 0 0 0 0 1H8a.5.5 0 0 0 .5-.5z"
+											/>
+											<path
+												d="M6.5 1A.5.5 0 0 1 7 .5h2a.5.5 0 0 1 0 1v.57c1.36.196 2.594.78 3.584 1.64l.012-.013.354-.354-.354-.353a.5.5 0 0 1 .707-.708l1.414 1.415a.5.5 0 1 1-.707.707l-.353-.354-.354.354-.013.012A7 7 0 1 1 7 2.071V1.5a.5.5 0 0 1-.5-.5M8 3a6 6 0 1 0 .001 12A6 6 0 0 0 8 3"
+											/>
+										</svg>
+										1:33:58.348
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</a>
+				<!-- Austria Card -->
+				<a
+					href="#"
+					class="text-decoration-none"
+				>
+					<div class="col d-flex align-items-stretch h-100">
+						<div class="card card-circuit">
+							<img
+								class="card-img-top"
+								src="../../assets/img/section/racei1.png"
+								alt="Race Preview"
+							/>
+							<div class="card-body d-flex flex-column justify-content-between">
+								<div
+									class="d-flex justify-content-between align-items-center mb-3 border-bottom border-dark-subtle border-2"
+								>
+									<h4 class="">
+										30 <span class="small">JUN</span> - 2
+										<span class="small">JUL</span>
+									</h4>
+									<svg
+										xmlns="http://www.w3.org/2000/svg"
+										width="16"
+										height="16"
+										fill="currentColor"
+										class="bi bi-box-arrow-up-right"
+										viewBox="0 0 16 16"
+									>
+										<path
+											fill-rule="evenodd"
+											d="M8.636 3.5a.5.5 0 0 0-.5-.5H1.5A1.5 1.5 0 0 0 0 4.5v10A1.5 1.5 0 0 0 1.5 16h10a1.5 1.5 0 0 0 1.5-1.5V7.864a.5.5 0 0 0-1 0V14.5a.5.5 0 0 1-.5.5h-10a.5.5 0 0 1-.5-.5v-10a.5.5 0 0 1 .5-.5h6.636a.5.5 0 0 0 .5-.5"
+										/>
+										<path
+											fill-rule="evenodd"
+											d="M16 .5a.5.5 0 0 0-.5-.5h-5a.5.5 0 0 0 0 1h3.793L6.146 9.146a.5.5 0 1 0 .708.708L15 1.707V5.5a.5.5 0 0 0 1 0z"
+										/>
+									</svg>
+								</div>
+								<h5 class="card-title fw-bold">
+									Austria <span class="fi fi-at ms-2"></span>
+								</h5>
+								<p class="text-uppercase circuit-name">
+									FORMULA 1 ROLEX GROSSER PREIS VON ÖSTERREICH 2023
+								</p>
+								<div class="d-flex justify-content-between align-items-center">
+									<div class="d-flex align-items-center">
+										<svg
+											xmlns="http://www.w3.org/2000/svg"
+											width="16"
+											height="16"
+											fill="currentColor"
+											class="bi bi-1-circle me-2"
+											viewBox="0 0 16 16"
+										>
+											<path
+												d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8m15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0M9.283 4.002V12H7.971V5.338h-.065L6.072 6.656V5.385l1.899-1.383z"
+											/>
+										</svg>
+										Verstappen
+									</div>
+									<div class="d-flex align-items-center">
+										<svg
+											xmlns="http://www.w3.org/2000/svg"
+											width="16"
+											height="16"
+											fill="currentColor"
+											class="bi bi-stopwatch me-2"
+											viewBox="0 0 16 16"
+										>
+											<path
+												d="M8.5 5.6a.5.5 0 1 0-1 0v2.9h-3a.5.5 0 0 0 0 1H8a.5.5 0 0 0 .5-.5z"
+											/>
+											<path
+												d="M6.5 1A.5.5 0 0 1 7 .5h2a.5.5 0 0 1 0 1v.57c1.36.196 2.594.78 3.584 1.64l.012-.013.354-.354-.354-.353a.5.5 0 0 1 .707-.708l1.414 1.415a.5.5 0 1 1-.707.707l-.353-.354-.354.354-.013.012A7 7 0 1 1 7 2.071V1.5a.5.5 0 0 1-.5-.5M8 3a6 6 0 1 0 .001 12A6 6 0 0 0 8 3"
+											/>
+										</svg>
+										1:25:33.607
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</a>
+				<!-- Great Britain Card -->
+				<a
+					href="#"
+					class="text-decoration-none"
+				>
+					<div class="col d-flex align-items-stretch h-100">
+						<div class="card card-circuit">
+							<img
+								class="card-img-top"
+								src="../../assets/img/section/racei1.png"
+								alt="Race Preview"
+							/>
+							<div class="card-body d-flex flex-column justify-content-between">
+								<div
+									class="d-flex justify-content-between align-items-center mb-3 border-bottom border-dark-subtle border-2"
+								>
+									<h4 class="">7 - 9 <span class="small">JUL</span></h4>
+									<svg
+										xmlns="http://www.w3.org/2000/svg"
+										width="16"
+										height="16"
+										fill="currentColor"
+										class="bi bi-box-arrow-up-right"
+										viewBox="0 0 16 16"
+									>
+										<path
+											fill-rule="evenodd"
+											d="M8.636 3.5a.5.5 0 0 0-.5-.5H1.5A1.5 1.5 0 0 0 0 4.5v10A1.5 1.5 0 0 0 1.5 16h10a1.5 1.5 0 0 0 1.5-1.5V7.864a.5.5 0 0 0-1 0V14.5a.5.5 0 0 1-.5.5h-10a.5.5 0 0 1-.5-.5v-10a.5.5 0 0 1 .5-.5h6.636a.5.5 0 0 0 .5-.5"
+										/>
+										<path
+											fill-rule="evenodd"
+											d="M16 .5a.5.5 0 0 0-.5-.5h-5a.5.5 0 0 0 0 1h3.793L6.146 9.146a.5.5 0 1 0 .708.708L15 1.707V5.5a.5.5 0 0 0 1 0z"
+										/>
+									</svg>
+								</div>
+								<h5 class="card-title fw-bold">
+									Great Britain <span class="fi fi-gb ms-2"></span>
+								</h5>
+								<p class="text-uppercase circuit-name">
+									FORMULA 1 ARAMCO BRITISH GRAND PRIX 2023
+								</p>
+								<div class="d-flex justify-content-between align-items-center">
+									<div class="d-flex align-items-center">
+										<svg
+											xmlns="http://www.w3.org/2000/svg"
+											width="16"
+											height="16"
+											fill="currentColor"
+											class="bi bi-1-circle me-2"
+											viewBox="0 0 16 16"
+										>
+											<path
+												d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8m15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0M9.283 4.002V12H7.971V5.338h-.065L6.072 6.656V5.385l1.899-1.383z"
+											/>
+										</svg>
+										Verstappen
+									</div>
+									<div class="d-flex align-items-center">
+										<svg
+											xmlns="http://www.w3.org/2000/svg"
+											width="16"
+											height="16"
+											fill="currentColor"
+											class="bi bi-stopwatch me-2"
+											viewBox="0 0 16 16"
+										>
+											<path
+												d="M8.5 5.6a.5.5 0 1 0-1 0v2.9h-3a.5.5 0 0 0 0 1H8a.5.5 0 0 0 .5-.5z"
+											/>
+											<path
+												d="M6.5 1A.5.5 0 0 1 7 .5h2a.5.5 0 0 1 0 1v.57c1.36.196 2.594.78 3.584 1.64l.012-.013.354-.354-.354-.353a.5.5 0 0 1 .707-.708l1.414 1.415a.5.5 0 1 1-.707.707l-.353-.354-.354.354-.013.012A7 7 0 1 1 7 2.071V1.5a.5.5 0 0 1-.5-.5M8 3a6 6 0 1 0 .001 12A6 6 0 0 0 8 3"
+											/>
+										</svg>
+										1:25:16.938
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</a>
+				<!-- Hungary Card -->
+				<a
+					href="#"
+					class="text-decoration-none"
+				>
+					<div class="col d-flex align-items-stretch h-100">
+						<div class="card card-circuit">
+							<img
+								class="card-img-top"
+								src="../../assets/img/section/racei1.png"
+								alt="Race Preview"
+							/>
+							<div class="card-body d-flex flex-column justify-content-between">
+								<div
+									class="d-flex justify-content-between align-items-center mb-3 border-bottom border-dark-subtle border-2"
+								>
+									<h4 class="">21 - 23 <span class="small">JUL</span></h4>
+									<svg
+										xmlns="http://www.w3.org/2000/svg"
+										width="16"
+										height="16"
+										fill="currentColor"
+										class="bi bi-box-arrow-up-right"
+										viewBox="0 0 16 16"
+									>
+										<path
+											fill-rule="evenodd"
+											d="M8.636 3.5a.5.5 0 0 0-.5-.5H1.5A1.5 1.5 0 0 0 0 4.5v10A1.5 1.5 0 0 0 1.5 16h10a1.5 1.5 0 0 0 1.5-1.5V7.864a.5.5 0 0 0-1 0V14.5a.5.5 0 0 1-.5.5h-10a.5.5 0 0 1-.5-.5v-10a.5.5 0 0 1 .5-.5h6.636a.5.5 0 0 0 .5-.5"
+										/>
+										<path
+											fill-rule="evenodd"
+											d="M16 .5a.5.5 0 0 0-.5-.5h-5a.5.5 0 0 0 0 1h3.793L6.146 9.146a.5.5 0 1 0 .708.708L15 1.707V5.5a.5.5 0 0 0 1 0z"
+										/>
+									</svg>
+								</div>
+								<h5 class="card-title fw-bold">
+									Hungary <span class="fi fi-hu ms-2"></span>
+								</h5>
+								<p class="text-uppercase circuit-name">
+									FORMULA 1 QATAR AIRWAYS HUNGARIAN GRAND PRIX 2023
+								</p>
+								<div class="d-flex justify-content-between align-items-center">
+									<div class="d-flex align-items-center">
+										<svg
+											xmlns="http://www.w3.org/2000/svg"
+											width="16"
+											height="16"
+											fill="currentColor"
+											class="bi bi-1-circle me-2"
+											viewBox="0 0 16 16"
+										>
+											<path
+												d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8m15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0M9.283 4.002V12H7.971V5.338h-.065L6.072 6.656V5.385l1.899-1.383z"
+											/>
+										</svg>
+										Verstappen
+									</div>
+									<div class="d-flex align-items-center">
+										<svg
+											xmlns="http://www.w3.org/2000/svg"
+											width="16"
+											height="16"
+											fill="currentColor"
+											class="bi bi-stopwatch me-2"
+											viewBox="0 0 16 16"
+										>
+											<path
+												d="M8.5 5.6a.5.5 0 1 0-1 0v2.9h-3a.5.5 0 0 0 0 1H8a.5.5 0 0 0 .5-.5z"
+											/>
+											<path
+												d="M6.5 1A.5.5 0 0 1 7 .5h2a.5.5 0 0 1 0 1v.57c1.36.196 2.594.78 3.584 1.64l.012-.013.354-.354-.354-.353a.5.5 0 0 1 .707-.708l1.414 1.415a.5.5 0 1 1-.707.707l-.353-.354-.354.354-.013.012A7 7 0 1 1 7 2.071V1.5a.5.5 0 0 1-.5-.5M8 3a6 6 0 1 0 .001 12A6 6 0 0 0 8 3"
+											/>
+										</svg>
+										1:38:08.634
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</a>
+				<!-- Belgium Card -->
+				<a
+					href="#"
+					class="text-decoration-none"
+				>
+					<div class="col d-flex align-items-stretch h-100">
+						<div class="card card-circuit">
+							<img
+								class="card-img-top"
+								src="../../assets/img/section/racei1.png"
+								alt="Race Preview"
+							/>
+							<div class="card-bod d-flex flex-column justify-content-between">
+								<div
+									class="d-flex justify-content-between align-items-center mb-3 border-bottom border-dark-subtle border-2"
+								>
+									<h4 class="">28 - 30 <span class="small">JUL</span></h4>
+									<svg
+										xmlns="http://www.w3.org/2000/svg"
+										width="16"
+										height="16"
+										fill="currentColor"
+										class="bi bi-box-arrow-up-right"
+										viewBox="0 0 16 16"
+									>
+										<path
+											fill-rule="evenodd"
+											d="M8.636 3.5a.5.5 0 0 0-.5-.5H1.5A1.5 1.5 0 0 0 0 4.5v10A1.5 1.5 0 0 0 1.5 16h10a1.5 1.5 0 0 0 1.5-1.5V7.864a.5.5 0 0 0-1 0V14.5a.5.5 0 0 1-.5.5h-10a.5.5 0 0 1-.5-.5v-10a.5.5 0 0 1 .5-.5h6.636a.5.5 0 0 0 .5-.5"
+										/>
+										<path
+											fill-rule="evenodd"
+											d="M16 .5a.5.5 0 0 0-.5-.5h-5a.5.5 0 0 0 0 1h3.793L6.146 9.146a.5.5 0 1 0 .708.708L15 1.707V5.5a.5.5 0 0 0 1 0z"
+										/>
+									</svg>
+								</div>
+								<h5 class="card-title fw-bold">
+									Belgium <span class="fi fi-be ms-2"></span>
+								</h5>
+								<p class="text-uppercase circuit-name">
+									FORMULA 1 MSC CRUISES BELGIAN GRAND PRIX 2023
+								</p>
+								<div class="d-flex justify-content-between align-items-center">
+									<div class="d-flex align-items-center">
+										<svg
+											xmlns="http://www.w3.org/2000/svg"
+											width="16"
+											height="16"
+											fill="currentColor"
+											class="bi bi-1-circle me-2"
+											viewBox="0 0 16 16"
+										>
+											<path
+												d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8m15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0M9.283 4.002V12H7.971V5.338h-.065L6.072 6.656V5.385l1.899-1.383z"
+											/>
+										</svg>
+										Verstappen
+									</div>
+									<div class="d-flex align-items-center">
+										<svg
+											xmlns="http://www.w3.org/2000/svg"
+											width="16"
+											height="16"
+											fill="currentColor"
+											class="bi bi-stopwatch me-2"
+											viewBox="0 0 16 16"
+										>
+											<path
+												d="M8.5 5.6a.5.5 0 1 0-1 0v2.9h-3a.5.5 0 0 0 0 1H8a.5.5 0 0 0 .5-.5z"
+											/>
+											<path
+												d="M6.5 1A.5.5 0 0 1 7 .5h2a.5.5 0 0 1 0 1v.57c1.36.196 2.594.78 3.584 1.64l.012-.013.354-.354-.354-.353a.5.5 0 0 1 .707-.708l1.414 1.415a.5.5 0 1 1-.707.707l-.353-.354-.354.354-.013.012A7 7 0 1 1 7 2.071V1.5a.5.5 0 0 1-.5-.5M8 3a6 6 0 1 0 .001 12A6 6 0 0 0 8 3"
+											/>
+										</svg>
+										1:22:30.450
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</a>
+				<!-- Netherlands Card -->
+				<a
+					href="#"
+					class="text-decoration-none"
+				>
+					<div class="col d-flex align-items-stretch h-100">
+						<div class="card card-circuit">
+							<img
+								class="card-img-top"
+								src="../../assets/img/section/racei1.png"
+								alt="Race Preview"
+							/>
+							<div class="card-body d-flex flex-column justify-content-between">
+								<div
+									class="d-flex justify-content-between align-items-center mb-3 border-bottom border-dark-subtle border-2"
+								>
+									<h4 class="">25 - 27 <span class="small">AUG</span></h4>
+									<svg
+										xmlns="http://www.w3.org/2000/svg"
+										width="16"
+										height="16"
+										fill="currentColor"
+										class="bi bi-box-arrow-up-right"
+										viewBox="0 0 16 16"
+									>
+										<path
+											fill-rule="evenodd"
+											d="M8.636 3.5a.5.5 0 0 0-.5-.5H1.5A1.5 1.5 0 0 0 0 4.5v10A1.5 1.5 0 0 0 1.5 16h10a1.5 1.5 0 0 0 1.5-1.5V7.864a.5.5 0 0 0-1 0V14.5a.5.5 0 0 1-.5.5h-10a.5.5 0 0 1-.5-.5v-10a.5.5 0 0 1 .5-.5h6.636a.5.5 0 0 0 .5-.5"
+										/>
+										<path
+											fill-rule="evenodd"
+											d="M16 .5a.5.5 0 0 0-.5-.5h-5a.5.5 0 0 0 0 1h3.793L6.146 9.146a.5.5 0 1 0 .708.708L15 1.707V5.5a.5.5 0 0 0 1 0z"
+										/>
+									</svg>
+								</div>
+								<h5 class="card-title fw-bold">
+									Netherlands <span class="fi fi-nl ms-2"></span>
+								</h5>
+								<p class="text-uppercase circuit-name">
+									FORMULA 1 HEINEKEN DUTCH GRAND PRIX 2023
+								</p>
+								<div class="d-flex justify-content-between align-items-center">
+									<div class="d-flex align-items-center">
+										<svg
+											xmlns="http://www.w3.org/2000/svg"
+											width="16"
+											height="16"
+											fill="currentColor"
+											class="bi bi-1-circle me-2"
+											viewBox="0 0 16 16"
+										>
+											<path
+												d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8m15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0M9.283 4.002V12H7.971V5.338h-.065L6.072 6.656V5.385l1.899-1.383z"
+											/>
+										</svg>
+										Verstappen
+									</div>
+									<div class="d-flex align-items-center">
+										<svg
+											xmlns="http://www.w3.org/2000/svg"
+											width="16"
+											height="16"
+											fill="currentColor"
+											class="bi bi-stopwatch me-2"
+											viewBox="0 0 16 16"
+										>
+											<path
+												d="M8.5 5.6a.5.5 0 1 0-1 0v2.9h-3a.5.5 0 0 0 0 1H8a.5.5 0 0 0 .5-.5z"
+											/>
+											<path
+												d="M6.5 1A.5.5 0 0 1 7 .5h2a.5.5 0 0 1 0 1v.57c1.36.196 2.594.78 3.584 1.64l.012-.013.354-.354-.354-.353a.5.5 0 0 1 .707-.708l1.414 1.415a.5.5 0 1 1-.707.707l-.353-.354-.354.354-.013.012A7 7 0 1 1 7 2.071V1.5a.5.5 0 0 1-.5-.5M8 3a6 6 0 1 0 .001 12A6 6 0 0 0 8 3"
+											/>
+										</svg>
+										2:24:04.411
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</a>
+				<!-- Italy Card -->
+				<a
+					href="#"
+					class="text-decoration-none"
+				>
+					<div class="col d-flex align-items-stretch h-100">
+						<div class="card card-circuit">
+							<img
+								class="card-img-top"
+								src="../../assets/img/section/racei1.png"
+								alt="Race Preview"
+							/>
+							<div class="card-body d-flex flex-column justify-content-between">
+								<div
+									class="d-flex justify-content-between align-items-center mb-3 border-bottom border-dark-subtle border-2"
+								>
+									<h4 class="">1 - 3 <span class="small">SEP</span></h4>
+									<svg
+										xmlns="http://www.w3.org/2000/svg"
+										width="16"
+										height="16"
+										fill="currentColor"
+										class="bi bi-box-arrow-up-right"
+										viewBox="0 0 16 16"
+									>
+										<path
+											fill-rule="evenodd"
+											d="M8.636 3.5a.5.5 0 0 0-.5-.5H1.5A1.5 1.5 0 0 0 0 4.5v10A1.5 1.5 0 0 0 1.5 16h10a1.5 1.5 0 0 0 1.5-1.5V7.864a.5.5 0 0 0-1 0V14.5a.5.5 0 0 1-.5.5h-10a.5.5 0 0 1-.5-.5v-10a.5.5 0 0 1 .5-.5h6.636a.5.5 0 0 0 .5-.5"
+										/>
+										<path
+											fill-rule="evenodd"
+											d="M16 .5a.5.5 0 0 0-.5-.5h-5a.5.5 0 0 0 0 1h3.793L6.146 9.146a.5.5 0 1 0 .708.708L15 1.707V5.5a.5.5 0 0 0 1 0z"
+										/>
+									</svg>
+								</div>
+								<h5 class="card-title fw-bold">
+									Italy <span class="fi fi-it ms-2"></span>
+								</h5>
+								<p class="text-uppercase circuit-name">
+									FORMULA 1 PIRELLI GRAN PREMIO D’ITALIA 2023
+								</p>
+								<div class="d-flex justify-content-between align-items-center">
+									<div class="d-flex align-items-center">
+										<svg
+											xmlns="http://www.w3.org/2000/svg"
+											width="16"
+											height="16"
+											fill="currentColor"
+											class="bi bi-1-circle me-2"
+											viewBox="0 0 16 16"
+										>
+											<path
+												d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8m15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0M9.283 4.002V12H7.971V5.338h-.065L6.072 6.656V5.385l1.899-1.383z"
+											/>
+										</svg>
+										Verstappen
+									</div>
+									<div class="d-flex align-items-center">
+										<svg
+											xmlns="http://www.w3.org/2000/svg"
+											width="16"
+											height="16"
+											fill="currentColor"
+											class="bi bi-stopwatch me-2"
+											viewBox="0 0 16 16"
+										>
+											<path
+												d="M8.5 5.6a.5.5 0 1 0-1 0v2.9h-3a.5.5 0 0 0 0 1H8a.5.5 0 0 0 .5-.5z"
+											/>
+											<path
+												d="M6.5 1A.5.5 0 0 1 7 .5h2a.5.5 0 0 1 0 1v.57c1.36.196 2.594.78 3.584 1.64l.012-.013.354-.354-.354-.353a.5.5 0 0 1 .707-.708l1.414 1.415a.5.5 0 1 1-.707.707l-.353-.354-.354.354-.013.012A7 7 0 1 1 7 2.071V1.5a.5.5 0 0 1-.5-.5M8 3a6 6 0 1 0 .001 12A6 6 0 0 0 8 3"
+											/>
+										</svg>
+										1:13:31.143
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</a>
+				<!-- Singapore Card -->
+				<a
+					href="#"
+					class="text-decoration-none"
+				>
+					<div class="col d-flex align-items-stretch h-100">
+						<div class="card card-circuit">
+							<img
+								class="card-img-top"
+								src="../../assets/img/section/racei1.png"
+								alt="Race Preview"
+							/>
+							<div class="card-body d-flex flex-column justify-content-between">
+								<div
+									class="d-flex justify-content-between align-items-center mb-3 border-bottom border-dark-subtle border-2"
+								>
+									<h4 class="">15 - 17 <span class="small">SEP</span></h4>
+									<svg
+										xmlns="http://www.w3.org/2000/svg"
+										width="16"
+										height="16"
+										fill="currentColor"
+										class="bi bi-box-arrow-up-right"
+										viewBox="0 0 16 16"
+									>
+										<path
+											fill-rule="evenodd"
+											d="M8.636 3.5a.5.5 0 0 0-.5-.5H1.5A1.5 1.5 0 0 0 0 4.5v10A1.5 1.5 0 0 0 1.5 16h10a1.5 1.5 0 0 0 1.5-1.5V7.864a.5.5 0 0 0-1 0V14.5a.5.5 0 0 1-.5.5h-10a.5.5 0 0 1-.5-.5v-10a.5.5 0 0 1 .5-.5h6.636a.5.5 0 0 0 .5-.5"
+										/>
+										<path
+											fill-rule="evenodd"
+											d="M16 .5a.5.5 0 0 0-.5-.5h-5a.5.5 0 0 0 0 1h3.793L6.146 9.146a.5.5 0 1 0 .708.708L15 1.707V5.5a.5.5 0 0 0 1 0z"
+										/>
+									</svg>
+								</div>
+								<h5 class="card-title fw-bold">
+									Singapore <span class="fi fi-sg ms-2"></span>
+								</h5>
+								<p class="text-uppercase circuit-name">
+									FORMULA 1 SINGAPORE AIRLINES SINGAPORE GRAND PRIX 2023
+								</p>
+								<div class="d-flex justify-content-between align-items-center">
+									<div class="d-flex align-items-center">
+										<svg
+											xmlns="http://www.w3.org/2000/svg"
+											width="16"
+											height="16"
+											fill="currentColor"
+											class="bi bi-1-circle me-2"
+											viewBox="0 0 16 16"
+										>
+											<path
+												d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8m15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0M9.283 4.002V12H7.971V5.338h-.065L6.072 6.656V5.385l1.899-1.383z"
+											/>
+										</svg>
+										Verstappen
+									</div>
+									<div class="d-flex align-items-center">
+										<svg
+											xmlns="http://www.w3.org/2000/svg"
+											width="16"
+											height="16"
+											fill="currentColor"
+											class="bi bi-stopwatch me-2"
+											viewBox="0 0 16 16"
+										>
+											<path
+												d="M8.5 5.6a.5.5 0 1 0-1 0v2.9h-3a.5.5 0 0 0 0 1H8a.5.5 0 0 0 .5-.5z"
+											/>
+											<path
+												d="M6.5 1A.5.5 0 0 1 7 .5h2a.5.5 0 0 1 0 1v.57c1.36.196 2.594.78 3.584 1.64l.012-.013.354-.354-.354-.353a.5.5 0 0 1 .707-.708l1.414 1.415a.5.5 0 1 1-.707.707l-.353-.354-.354.354-.013.012A7 7 0 1 1 7 2.071V1.5a.5.5 0 0 1-.5-.5M8 3a6 6 0 1 0 .001 12A6 6 0 0 0 8 3"
+											/>
+										</svg>
+										1:46:37.418
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</a>
+				<!-- Japan Card -->
+				<a
+					href="#"
+					class="text-decoration-none"
+				>
+					<div class="col d-flex align-items-stretch h-100">
+						<div class="card card-circuit">
+							<img
+								class="card-img-top"
+								src="../../assets/img/section/racei1.png"
+								alt="Race Preview"
+							/>
+							<div class="card-body d-flex flex-column justify-content-between">
+								<div
+									class="d-flex justify-content-between align-items-center mb-3 border-bottom border-dark-subtle border-2"
+								>
+									<h4 class="">22 - 24 <span class="small">SEP</span></h4>
+									<svg
+										xmlns="http://www.w3.org/2000/svg"
+										width="16"
+										height="16"
+										fill="currentColor"
+										class="bi bi-box-arrow-up-right"
+										viewBox="0 0 16 16"
+									>
+										<path
+											fill-rule="evenodd"
+											d="M8.636 3.5a.5.5 0 0 0-.5-.5H1.5A1.5 1.5 0 0 0 0 4.5v10A1.5 1.5 0 0 0 1.5 16h10a1.5 1.5 0 0 0 1.5-1.5V7.864a.5.5 0 0 0-1 0V14.5a.5.5 0 0 1-.5.5h-10a.5.5 0 0 1-.5-.5v-10a.5.5 0 0 1 .5-.5h6.636a.5.5 0 0 0 .5-.5"
+										/>
+										<path
+											fill-rule="evenodd"
+											d="M16 .5a.5.5 0 0 0-.5-.5h-5a.5.5 0 0 0 0 1h3.793L6.146 9.146a.5.5 0 1 0 .708.708L15 1.707V5.5a.5.5 0 0 0 1 0z"
+										/>
+									</svg>
+								</div>
+								<h5 class="card-title fw-bold">
+									Japan <span class="fi fi-sg ms-2"></span>
+								</h5>
+								<p class="text-uppercase circuit-name">
+									FORMULA 1 LENOVO JAPANESE GRAND PRIX 2023
+								</p>
+								<div class="d-flex justify-content-between align-items-center">
+									<div class="d-flex align-items-center">
+										<svg
+											xmlns="http://www.w3.org/2000/svg"
+											width="16"
+											height="16"
+											fill="currentColor"
+											class="bi bi-1-circle me-2"
+											viewBox="0 0 16 16"
+										>
+											<path
+												d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8m15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0M9.283 4.002V12H7.971V5.338h-.065L6.072 6.656V5.385l1.899-1.383z"
+											/>
+										</svg>
+										Verstappen
+									</div>
+									<div class="d-flex align-items-center">
+										<svg
+											xmlns="http://www.w3.org/2000/svg"
+											width="16"
+											height="16"
+											fill="currentColor"
+											class="bi bi-stopwatch me-2"
+											viewBox="0 0 16 16"
+										>
+											<path
+												d="M8.5 5.6a.5.5 0 1 0-1 0v2.9h-3a.5.5 0 0 0 0 1H8a.5.5 0 0 0 .5-.5z"
+											/>
+											<path
+												d="M6.5 1A.5.5 0 0 1 7 .5h2a.5.5 0 0 1 0 1v.57c1.36.196 2.594.78 3.584 1.64l.012-.013.354-.354-.354-.353a.5.5 0 0 1 .707-.708l1.414 1.415a.5.5 0 1 1-.707.707l-.353-.354-.354.354-.013.012A7 7 0 1 1 7 2.071V1.5a.5.5 0 0 1-.5-.5M8 3a6 6 0 1 0 .001 12A6 6 0 0 0 8 3"
+											/>
+										</svg>
+										1:30:58.421
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</a>
+				<!-- Qatar Card -->
+				<a
+					href="#"
+					class="text-decoration-none"
+				>
+					<div class="col d-flex align-items-stretch h-100">
+						<div class="card card-circuit">
+							<img
+								class="card-img-top"
+								src="../../assets/img/section/racei1.png"
+								alt="Race Preview"
+							/>
+							<div class="card-body d-flex flex-column justify-content-between">
+								<div
+									class="d-flex justify-content-between align-items-center mb-3 border-bottom border-dark-subtle border-2"
+								>
+									<h4 class="">6 - 8 <span class="small">OCT</span></h4>
+									<svg
+										xmlns="http://www.w3.org/2000/svg"
+										width="16"
+										height="16"
+										fill="currentColor"
+										class="bi bi-box-arrow-up-right"
+										viewBox="0 0 16 16"
+									>
+										<path
+											fill-rule="evenodd"
+											d="M8.636 3.5a.5.5 0 0 0-.5-.5H1.5A1.5 1.5 0 0 0 0 4.5v10A1.5 1.5 0 0 0 1.5 16h10a1.5 1.5 0 0 0 1.5-1.5V7.864a.5.5 0 0 0-1 0V14.5a.5.5 0 0 1-.5.5h-10a.5.5 0 0 1-.5-.5v-10a.5.5 0 0 1 .5-.5h6.636a.5.5 0 0 0 .5-.5"
+										/>
+										<path
+											fill-rule="evenodd"
+											d="M16 .5a.5.5 0 0 0-.5-.5h-5a.5.5 0 0 0 0 1h3.793L6.146 9.146a.5.5 0 1 0 .708.708L15 1.707V5.5a.5.5 0 0 0 1 0z"
+										/>
+									</svg>
+								</div>
+								<h5 class="card-title fw-bold">
+									Qatar <span class="fi fi-qa ms-2"></span>
+								</h5>
+								<p class="text-uppercase circuit-name">
+									FORMULA 1 QATAR AIRWAYS QATAR GRAND PRIX 2023
+								</p>
+								<div class="d-flex justify-content-between align-items-center">
+									<div class="d-flex align-items-center">
+										<svg
+											xmlns="http://www.w3.org/2000/svg"
+											width="16"
+											height="16"
+											fill="currentColor"
+											class="bi bi-1-circle me-2"
+											viewBox="0 0 16 16"
+										>
+											<path
+												d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8m15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0M9.283 4.002V12H7.971V5.338h-.065L6.072 6.656V5.385l1.899-1.383z"
+											/>
+										</svg>
+										Verstappen
+									</div>
+									<div class="d-flex align-items-center">
+										<svg
+											xmlns="http://www.w3.org/2000/svg"
+											width="16"
+											height="16"
+											fill="currentColor"
+											class="bi bi-stopwatch me-2"
+											viewBox="0 0 16 16"
+										>
+											<path
+												d="M8.5 5.6a.5.5 0 1 0-1 0v2.9h-3a.5.5 0 0 0 0 1H8a.5.5 0 0 0 .5-.5z"
+											/>
+											<path
+												d="M6.5 1A.5.5 0 0 1 7 .5h2a.5.5 0 0 1 0 1v.57c1.36.196 2.594.78 3.584 1.64l.012-.013.354-.354-.354-.353a.5.5 0 0 1 .707-.708l1.414 1.415a.5.5 0 1 1-.707.707l-.353-.354-.354.354-.013.012A7 7 0 1 1 7 2.071V1.5a.5.5 0 0 1-.5-.5M8 3a6 6 0 1 0 .001 12A6 6 0 0 0 8 3"
+											/>
+										</svg>
+										1:27:39.168
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</a>
+				<!-- COTA Card -->
+				<a
+					href="#"
+					class="text-decoration-none"
+				>
+					<div class="col d-flex align-items-stretch h-100">
+						<div class="card card-circuit">
+							<img
+								class="card-img-top"
+								src="../../assets/img/section/racei1.png"
+								alt="Race Preview"
+							/>
+							<div class="card-body d-flex flex-column justify-content-between">
+								<div
+									class="d-flex justify-content-between align-items-center mb-3 border-bottom border-dark-subtle border-2"
+								>
+									<h4 class="">20 - 22 <span class="small">OCT</span></h4>
+									<svg
+										xmlns="http://www.w3.org/2000/svg"
+										width="16"
+										height="16"
+										fill="currentColor"
+										class="bi bi-box-arrow-up-right"
+										viewBox="0 0 16 16"
+									>
+										<path
+											fill-rule="evenodd"
+											d="M8.636 3.5a.5.5 0 0 0-.5-.5H1.5A1.5 1.5 0 0 0 0 4.5v10A1.5 1.5 0 0 0 1.5 16h10a1.5 1.5 0 0 0 1.5-1.5V7.864a.5.5 0 0 0-1 0V14.5a.5.5 0 0 1-.5.5h-10a.5.5 0 0 1-.5-.5v-10a.5.5 0 0 1 .5-.5h6.636a.5.5 0 0 0 .5-.5"
+										/>
+										<path
+											fill-rule="evenodd"
+											d="M16 .5a.5.5 0 0 0-.5-.5h-5a.5.5 0 0 0 0 1h3.793L6.146 9.146a.5.5 0 1 0 .708.708L15 1.707V5.5a.5.5 0 0 0 1 0z"
+										/>
+									</svg>
+								</div>
+								<h5 class="card-title fw-bold">
+									United States <span class="fi fi-us ms-2"></span>
+								</h5>
+								<p class="text-uppercase circuit-name">
+									FORMULA 1 LENOVO UNITED STATES GRAND PRIX 2023
+								</p>
+								<div class="d-flex justify-content-between align-items-center">
+									<div class="d-flex align-items-center">
+										<svg
+											xmlns="http://www.w3.org/2000/svg"
+											width="16"
+											height="16"
+											fill="currentColor"
+											class="bi bi-1-circle me-2"
+											viewBox="0 0 16 16"
+										>
+											<path
+												d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8m15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0M9.283 4.002V12H7.971V5.338h-.065L6.072 6.656V5.385l1.899-1.383z"
+											/>
+										</svg>
+										Verstappen
+									</div>
+									<div class="d-flex align-items-center">
+										<svg
+											xmlns="http://www.w3.org/2000/svg"
+											width="16"
+											height="16"
+											fill="currentColor"
+											class="bi bi-stopwatch me-2"
+											viewBox="0 0 16 16"
+										>
+											<path
+												d="M8.5 5.6a.5.5 0 1 0-1 0v2.9h-3a.5.5 0 0 0 0 1H8a.5.5 0 0 0 .5-.5z"
+											/>
+											<path
+												d="M6.5 1A.5.5 0 0 1 7 .5h2a.5.5 0 0 1 0 1v.57c1.36.196 2.594.78 3.584 1.64l.012-.013.354-.354-.354-.353a.5.5 0 0 1 .707-.708l1.414 1.415a.5.5 0 1 1-.707.707l-.353-.354-.354.354-.013.012A7 7 0 1 1 7 2.071V1.5a.5.5 0 0 1-.5-.5M8 3a6 6 0 1 0 .001 12A6 6 0 0 0 8 3"
+											/>
+										</svg>
+										1:35:21.362
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</a>
+				<!-- Mexico Card -->
+				<a
+					href="#"
+					class="text-decoration-none"
+				>
+					<div class="col d-flex align-items-stretch h-100">
+						<div class="card card-circuit">
+							<img
+								class="card-img-top"
+								src="../../assets/img/section/racei1.png"
+								alt="Race Preview"
+							/>
+							<div class="card-body d-flex flex-column justify-content-between">
+								<div
+									class="d-flex justify-content-between align-items-center mb-3 border-bottom border-dark-subtle border-2"
+								>
+									<h4 class="">27 - 29 <span class="small">OCT</span></h4>
+									<svg
+										xmlns="http://www.w3.org/2000/svg"
+										width="16"
+										height="16"
+										fill="currentColor"
+										class="bi bi-box-arrow-up-right"
+										viewBox="0 0 16 16"
+									>
+										<path
+											fill-rule="evenodd"
+											d="M8.636 3.5a.5.5 0 0 0-.5-.5H1.5A1.5 1.5 0 0 0 0 4.5v10A1.5 1.5 0 0 0 1.5 16h10a1.5 1.5 0 0 0 1.5-1.5V7.864a.5.5 0 0 0-1 0V14.5a.5.5 0 0 1-.5.5h-10a.5.5 0 0 1-.5-.5v-10a.5.5 0 0 1 .5-.5h6.636a.5.5 0 0 0 .5-.5"
+										/>
+										<path
+											fill-rule="evenodd"
+											d="M16 .5a.5.5 0 0 0-.5-.5h-5a.5.5 0 0 0 0 1h3.793L6.146 9.146a.5.5 0 1 0 .708.708L15 1.707V5.5a.5.5 0 0 0 1 0z"
+										/>
+									</svg>
+								</div>
+								<h5 class="card-title fw-bold">
+									Mexico <span class="fi fi-mx ms-2"></span>
+								</h5>
+								<p class="text-uppercase circuit-name">
+									FORMULA 1 GRAN PREMIO DE LA CIUDAD DE MÉXICO 2023
+								</p>
+								<div class="d-flex justify-content-between align-items-center">
+									<div class="d-flex align-items-center">
+										<svg
+											xmlns="http://www.w3.org/2000/svg"
+											width="16"
+											height="16"
+											fill="currentColor"
+											class="bi bi-1-circle me-2"
+											viewBox="0 0 16 16"
+										>
+											<path
+												d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8m15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0M9.283 4.002V12H7.971V5.338h-.065L6.072 6.656V5.385l1.899-1.383z"
+											/>
+										</svg>
+										Verstappen
+									</div>
+									<div class="d-flex align-items-center">
+										<svg
+											xmlns="http://www.w3.org/2000/svg"
+											width="16"
+											height="16"
+											fill="currentColor"
+											class="bi bi-stopwatch me-2"
+											viewBox="0 0 16 16"
+										>
+											<path
+												d="M8.5 5.6a.5.5 0 1 0-1 0v2.9h-3a.5.5 0 0 0 0 1H8a.5.5 0 0 0 .5-.5z"
+											/>
+											<path
+												d="M6.5 1A.5.5 0 0 1 7 .5h2a.5.5 0 0 1 0 1v.57c1.36.196 2.594.78 3.584 1.64l.012-.013.354-.354-.354-.353a.5.5 0 0 1 .707-.708l1.414 1.415a.5.5 0 1 1-.707.707l-.353-.354-.354.354-.013.012A7 7 0 1 1 7 2.071V1.5a.5.5 0 0 1-.5-.5M8 3a6 6 0 1 0 .001 12A6 6 0 0 0 8 3"
+											/>
+										</svg>
+										2:02:30.814
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</a>
+				<!-- Brazil Card -->
+				<a
+					href="#"
+					class="text-decoration-none"
+				>
+					<div class="col d-flex align-items-stretch h-100">
+						<div class="card card-circuit">
+							<img
+								class="card-img-top"
+								src="../../assets/img/section/racei1.png"
+								alt="Race Preview"
+							/>
+							<div class="card-body d-flex flex-column justify-content-between">
+								<div
+									class="d-flex justify-content-between align-items-center mb-3 border-bottom border-dark-subtle border-2"
+								>
+									<h4 class="">3 - 5 <span class="small">NOV</span></h4>
+									<svg
+										xmlns="http://www.w3.org/2000/svg"
+										width="16"
+										height="16"
+										fill="currentColor"
+										class="bi bi-box-arrow-up-right"
+										viewBox="0 0 16 16"
+									>
+										<path
+											fill-rule="evenodd"
+											d="M8.636 3.5a.5.5 0 0 0-.5-.5H1.5A1.5 1.5 0 0 0 0 4.5v10A1.5 1.5 0 0 0 1.5 16h10a1.5 1.5 0 0 0 1.5-1.5V7.864a.5.5 0 0 0-1 0V14.5a.5.5 0 0 1-.5.5h-10a.5.5 0 0 1-.5-.5v-10a.5.5 0 0 1 .5-.5h6.636a.5.5 0 0 0 .5-.5"
+										/>
+										<path
+											fill-rule="evenodd"
+											d="M16 .5a.5.5 0 0 0-.5-.5h-5a.5.5 0 0 0 0 1h3.793L6.146 9.146a.5.5 0 1 0 .708.708L15 1.707V5.5a.5.5 0 0 0 1 0z"
+										/>
+									</svg>
+								</div>
+								<h5 class="card-title fw-bold">
+									Brazil <span class="fi fi-br ms-2"></span>
+								</h5>
+								<p class="text-uppercase circuit-name">
+									FORMULA 1 ROLEX GRANDE PRÊMIO DE SÃO PAULO 2023
+								</p>
+								<div class="d-flex justify-content-between align-items-center">
+									<div class="d-flex align-items-center">
+										<svg
+											xmlns="http://www.w3.org/2000/svg"
+											width="16"
+											height="16"
+											fill="currentColor"
+											class="bi bi-1-circle me-2"
+											viewBox="0 0 16 16"
+										>
+											<path
+												d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8m15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0M9.283 4.002V12H7.971V5.338h-.065L6.072 6.656V5.385l1.899-1.383z"
+											/>
+										</svg>
+										Verstappen
+									</div>
+									<div class="d-flex align-items-center">
+										<svg
+											xmlns="http://www.w3.org/2000/svg"
+											width="16"
+											height="16"
+											fill="currentColor"
+											class="bi bi-stopwatch me-2"
+											viewBox="0 0 16 16"
+										>
+											<path
+												d="M8.5 5.6a.5.5 0 1 0-1 0v2.9h-3a.5.5 0 0 0 0 1H8a.5.5 0 0 0 .5-.5z"
+											/>
+											<path
+												d="M6.5 1A.5.5 0 0 1 7 .5h2a.5.5 0 0 1 0 1v.57c1.36.196 2.594.78 3.584 1.64l.012-.013.354-.354-.354-.353a.5.5 0 0 1 .707-.708l1.414 1.415a.5.5 0 1 1-.707.707l-.353-.354-.354.354-.013.012A7 7 0 1 1 7 2.071V1.5a.5.5 0 0 1-.5-.5M8 3a6 6 0 1 0 .001 12A6 6 0 0 0 8 3"
+											/>
+										</svg>
+										1:56:48.894
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</a>
+				<!-- Las Vegas Card -->
+				<a
+					href="#"
+					class="text-decoration-none"
+				>
+					<div class="col d-flex align-items-stretch h-100">
+						<div class="card card-circuit">
+							<img
+								class="card-img-top"
+								src="../../assets/img/section/racei1.png"
+								alt="Race Preview"
+							/>
+							<div class="card-body d-flex flex-column justify-content-between">
+								<div
+									class="d-flex justify-content-between align-items-center mb-3 border-bottom border-dark-subtle border-2"
+								>
+									<h4 class="">16 - 18 <span class="small">NOV</span></h4>
+									<svg
+										xmlns="http://www.w3.org/2000/svg"
+										width="16"
+										height="16"
+										fill="currentColor"
+										class="bi bi-box-arrow-up-right"
+										viewBox="0 0 16 16"
+									>
+										<path
+											fill-rule="evenodd"
+											d="M8.636 3.5a.5.5 0 0 0-.5-.5H1.5A1.5 1.5 0 0 0 0 4.5v10A1.5 1.5 0 0 0 1.5 16h10a1.5 1.5 0 0 0 1.5-1.5V7.864a.5.5 0 0 0-1 0V14.5a.5.5 0 0 1-.5.5h-10a.5.5 0 0 1-.5-.5v-10a.5.5 0 0 1 .5-.5h6.636a.5.5 0 0 0 .5-.5"
+										/>
+										<path
+											fill-rule="evenodd"
+											d="M16 .5a.5.5 0 0 0-.5-.5h-5a.5.5 0 0 0 0 1h3.793L6.146 9.146a.5.5 0 1 0 .708.708L15 1.707V5.5a.5.5 0 0 0 1 0z"
+										/>
+									</svg>
+								</div>
+								<h5 class="card-title fw-bold">
+									Las Vegas <span class="fi fi-us ms-2"></span>
+								</h5>
+								<p class="text-uppercase circuit-name">
+									FORMULA 1 HEINEKEN SILVER LAS VEGAS GRAND PRIX 2023
+								</p>
+								<div class="d-flex justify-content-between align-items-center">
+									<div class="d-flex align-items-center">
+										<svg
+											xmlns="http://www.w3.org/2000/svg"
+											width="16"
+											height="16"
+											fill="currentColor"
+											class="bi bi-1-circle me-2"
+											viewBox="0 0 16 16"
+										>
+											<path
+												d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8m15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0M9.283 4.002V12H7.971V5.338h-.065L6.072 6.656V5.385l1.899-1.383z"
+											/>
+										</svg>
+										Verstappen
+									</div>
+									<div class="d-flex align-items-center">
+										<svg
+											xmlns="http://www.w3.org/2000/svg"
+											width="16"
+											height="16"
+											fill="currentColor"
+											class="bi bi-stopwatch me-2"
+											viewBox="0 0 16 16"
+										>
+											<path
+												d="M8.5 5.6a.5.5 0 1 0-1 0v2.9h-3a.5.5 0 0 0 0 1H8a.5.5 0 0 0 .5-.5z"
+											/>
+											<path
+												d="M6.5 1A.5.5 0 0 1 7 .5h2a.5.5 0 0 1 0 1v.57c1.36.196 2.594.78 3.584 1.64l.012-.013.354-.354-.354-.353a.5.5 0 0 1 .707-.708l1.414 1.415a.5.5 0 1 1-.707.707l-.353-.354-.354.354-.013.012A7 7 0 1 1 7 2.071V1.5a.5.5 0 0 1-.5-.5M8 3a6 6 0 1 0 .001 12A6 6 0 0 0 8 3"
+											/>
+										</svg>
+										1:29:08.289
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</a>
+				<!-- Abu Dhabi Card -->
+				<a
+					href="#"
+					class="text-decoration-none"
+				>
+					<div class="col d-flex align-items-stretch h-100">
+						<div class="card card-circuit">
+							<img
+								class="card-img-top"
+								src="../../assets/img/section/racei1.png"
+								alt="Race Preview"
+							/>
+							<div class="card-body d-flex flex-column justify-content-between">
+								<div
+									class="d-flex justify-content-between align-items-center mb-3 border-bottom border-dark-subtle border-2"
+								>
+									<h4 class="">24 - 26 <span class="small">NOV</span></h4>
+									<svg
+										xmlns="http://www.w3.org/2000/svg"
+										width="16"
+										height="16"
+										fill="currentColor"
+										class="bi bi-box-arrow-up-right"
+										viewBox="0 0 16 16"
+									>
+										<path
+											fill-rule="evenodd"
+											d="M8.636 3.5a.5.5 0 0 0-.5-.5H1.5A1.5 1.5 0 0 0 0 4.5v10A1.5 1.5 0 0 0 1.5 16h10a1.5 1.5 0 0 0 1.5-1.5V7.864a.5.5 0 0 0-1 0V14.5a.5.5 0 0 1-.5.5h-10a.5.5 0 0 1-.5-.5v-10a.5.5 0 0 1 .5-.5h6.636a.5.5 0 0 0 .5-.5"
+										/>
+										<path
+											fill-rule="evenodd"
+											d="M16 .5a.5.5 0 0 0-.5-.5h-5a.5.5 0 0 0 0 1h3.793L6.146 9.146a.5.5 0 1 0 .708.708L15 1.707V5.5a.5.5 0 0 0 1 0z"
+										/>
+									</svg>
+								</div>
+								<h5 class="card-title fw-bold">
+									Abu Dhabi <span class="fi fi-ae ms-2"></span>
+								</h5>
+								<p class="text-uppercase circuit-name">
+									FORMULA 1 ETIHAD AIRWAYS ABU DHABI GRAND PRIX 2023
+								</p>
+								<div class="d-flex justify-content-between align-items-center">
+									<div class="d-flex align-items-center">
+										<svg
+											xmlns="http://www.w3.org/2000/svg"
+											width="16"
+											height="16"
+											fill="currentColor"
+											class="bi bi-1-circle me-2"
+											viewBox="0 0 16 16"
+										>
+											<path
+												d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8m15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0M9.283 4.002V12H7.971V5.338h-.065L6.072 6.656V5.385l1.899-1.383z"
+											/>
+										</svg>
+										Verstappen
+									</div>
+									<div class="d-flex align-items-center">
+										<svg
+											xmlns="http://www.w3.org/2000/svg"
+											width="16"
+											height="16"
+											fill="currentColor"
+											class="bi bi-stopwatch me-2"
+											viewBox="0 0 16 16"
+										>
+											<path
+												d="M8.5 5.6a.5.5 0 1 0-1 0v2.9h-3a.5.5 0 0 0 0 1H8a.5.5 0 0 0 .5-.5z"
+											/>
+											<path
+												d="M6.5 1A.5.5 0 0 1 7 .5h2a.5.5 0 0 1 0 1v.57c1.36.196 2.594.78 3.584 1.64l.012-.013.354-.354-.354-.353a.5.5 0 0 1 .707-.708l1.414 1.415a.5.5 0 1 1-.707.707l-.353-.354-.354.354-.013.012A7 7 0 1 1 7 2.071V1.5a.5.5 0 0 1-.5-.5M8 3a6 6 0 1 0 .001 12A6 6 0 0 0 8 3"
+											/>
+										</svg>
+										1:27:02.624
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</a>
+			</div>
+		</div>
+	</div>
+	<!-- Races end -->
+
+	<!-- related calendars -->
+	<div class="container-fluid my-5">
+		<div class="row p-5 gap-4">
+			<div
+				class="col-12 col-md border border-dark border-3 rounded-4 p-5 card-racecalender-section"
+			>
+				<h2>Relive the 2024 Formula 1 season</h2>
+				<p>Discover the races that filled the calender of the 2024 season</p>
+				<a
+					class="btn btn-primary"
+					href="../2024/2024-calendar.html"
+					role="button"
+					>Visit the 2024 race calendar</a
+				>
+			</div>
+			<div
+				class="col-12 col-md border border-dark border-3 rounded-4 p-5 card-racecalender-section"
+			>
+				<h2>Relive the 2025 Formula 1 season</h2>
+				<p>Discover the races that filled the calender of the 2025 season</p>
+				<a
+					class="btn btn-primary"
+					href="../2025/2025-calendar.html"
+					role="button"
+					>Visit the 2025 race calendar</a
+				>
+			</div>
+		</div>
+	</div>
+
+	<!-- site disclaimer -->
+	<div
+		class="container-fluid text-bg-dark border border-gray7 border-top-0 border-start-0 border-end-0"
+	>
+		<div class="row">
+			<div class="text-center">
+				<p class="my-2">
+					DISCLAIMER: This website is unofficial and is not associated in any
+					way with the Formula 1 companies. F1, FORMULA ONE, FORMULA 1, FIA
+					FORMULA ONE WORLD CHAMPIONSHIP, GRAND PRIX and related marks are trade
+					marks of Formula One Licensing B.V.
+				</p>
+			</div>
+		</div>
+	</div>
+
+	<!-- footer -->
+	<div class="container-fluid text-bg-dark p-3">
+		<footer
+			class="container border border-10 border-red border-start-0 border-top-0 rounded-bottom-4 rounded-start-0 pt-5 pb-0"
+		>
+			<div class="row">
+				<div class="col-md-4 mb-3">
+					<div>
+						<img
+							src="../../assets/img/logos/trackside-logowhite.png"
+							class="img-fluid w-50 mb-3"
+							alt=""
+						/>
+						<p>Discover Formula 1 from a fan perspective</p>
+					</div>
+				</div>
+
+				<div class="col-6 col-md-2 mb-3">
+					<h5>Trackside</h5>
+					<ul class="nav flex-column">
+						<li class="nav-item mb-2">
+							<a
+								href="../../index.html"
+								class="nav-link p-0"
+								>Home</a
+							>
+						</li>
+						<li class="nav-item mb-2">
+							<a
+								href="#"
+								class="nav-link p-0"
+								>What is Formula 1</a
+							>
+						</li>
+						<li class="nav-item mb-2">
+							<a
+								href="../../pages/technologies.html"
+								class="nav-link p-0"
+								>Technology of F1</a
+							>
+						</li>
+						<li class="nav-item mb-2">
+							<a
+								href="../../pages/future.html"
+								class="nav-link p-0"
+								>Future of F1</a
+							>
+						</li>
+					</ul>
+				</div>
+
+				<div class="col-6 col-md-2 mb-3">
+					<h5>Race Calendars</h5>
+					<ul class="nav flex-column">
+						<li class="nav-item mb-2">
+							<a
+								href="../../seasons/2025/2025-calendar.html"
+								class="nav-link p-0"
+								>2025 Race Calendar</a
+							>
+						</li>
+						<li class="nav-item mb-2">
+							<a
+								href="../../seasons/2024/2024-calendar.html"
+								class="nav-link p-0"
+								>2024 Race Calendar</a
+							>
+						</li>
+						<li class="nav-item mb-2">
+							<a
+								href="../../seasons/2023/2023-calendar.html"
+								class="nav-link p-0"
+								>2023 Race Calendar</a
+							>
+						</li>
+					</ul>
+				</div>
+
+				<div class="col-6 col-md-2 mb-3">
+					<h5>Season Talk</h5>
+					<ul class="nav flex-column">
+						<li class="nav-item mb-2">
+							<a
+								href="#"
+								class="nav-link p-0"
+								>2025 Coverage</a
+							>
+						</li>
+						<li class="nav-item mb-2">
+							<a
+								href="#"
+								class="nav-link p-0"
+								>2024 Breakdown</a
+							>
+						</li>
+						<li class="nav-item mb-2">
+							<a
+								href="#"
+								class="nav-link p-0"
+								>2023 Breakdown</a
+							>
+						</li>
+					</ul>
+				</div>
+
+				<div class="col-6 col-md-2 mb-3">
+					<h5>Pitwall</h5>
+					<ul class="nav flex-column">
+						<li class="nav-item mb-2">
+							<a
+								href="../../pages/faqs.html"
+								class="nav-link p-0"
+								>Trackside FAQs</a
+							>
+						</li>
+						<li class="nav-item mb-2">
+							<a
+								href="#"
+								class="nav-link p-0"
+								>Site Attributions</a
+							>
+						</li>
+						<li class="nav-item mb-2">
+							<a
+								href="../../pages/learnmore.html"
+								class="nav-link p-0"
+								>Learn More</a
+							>
+						</li>
+						<li class="nav-item mb-2">
+							<a
+								href="#"
+								class="nav-link p-0"
+								>Contact Us</a
+							>
+						</li>
+					</ul>
+				</div>
+			</div>
+
+			<div
+				class="d-flex flex-column flex-sm-row justify-content-between py-4 my-2 border-top"
+			>
+				<p>© 2025 Nick Calvo All rights reserved.</p>
+				<ul class="list-unstyled d-flex">
+					<li class="ms-3">
+						<a
+							class="link-body-emphasis"
+							href="#"
+							><svg
+								class="bi"
+								width="24"
+								height="24"
+							>
+								<use xlink:href="#twitter"></use></svg
+						></a>
+					</li>
+					<li class="ms-3">
+						<a
+							class="link-body-emphasis"
+							href="#"
+							><svg
+								class="bi"
+								width="24"
+								height="24"
+							>
+								<use xlink:href="#instagram"></use></svg
+						></a>
+					</li>
+					<li class="ms-3">
+						<a
+							class="link-body-emphasis"
+							href="#"
+							><svg
+								class="bi"
+								width="24"
+								height="24"
+							>
+								<use xlink:href="#facebook"></use></svg
+						></a>
+					</li>
+				</ul>
+			</div>
+		</footer>
+	</div>
+
+	<script
+		type="module"
+		src="../../js/main.js"
+	></script>
+</html>
