@@ -10,17 +10,28 @@
 			name="description"
 			content="Formula Bootstrap is a a Bootstrap built website that explores some areas of Formula One."
 		/>
-		<meta name="author" content="Nick Calvo" />
+		<meta
+			name="author"
+			content="Nick Calvo"
+		/>
 		<title>Trackside | 2024 Race Calender</title>
-		<link rel="stylesheet" href="../../scss/styles.scss" />
+		<link
+			rel="stylesheet"
+			href="../../scss/styles.scss"
+		/>
 	</head>
 	<!-- todo debate with self to add some sort of standings/results for the season on the calender page as well -->
 	<!--todo eventually add specific race page with race breakdown  -->
-
 	<!-- site header -->
-	<nav class="navbar navbar-expand-lg sticky-top" id="mainNav">
+	<nav
+		class="navbar navbar-expand-lg sticky-top"
+		id="mainNav"
+	>
 		<div class="container">
-			<a class="navbar-brand" href="#page-top">
+			<a
+				class="navbar-brand"
+				href="#page-top"
+			>
 				<img
 					src="../../assets/img/logos/trackside-logoblack.png"
 					class="img-fluid w-50"
@@ -39,10 +50,16 @@
 				Menu
 				<i class="fas fa-bars ms-1"></i>
 			</button>
-			<div class="collapse navbar-collapse" id="navbarResponsive">
+			<div
+				class="collapse navbar-collapse"
+				id="navbarResponsive"
+			>
 				<ul class="navbar-nav ms-auto me-4 py-4 py-lg-0">
 					<li class="nav-item fw-bold">
-						<a class="nav-link active" href="../../index.html" aria-current="page"
+						<a
+							class="nav-link active"
+							href="../../index.html"
+							aria-current="page"
 							>Home</a
 						>
 					</li>
@@ -57,17 +74,30 @@
 						>
 							About F1
 						</a>
-						<ul class="dropdown-menu" aria-labelledby="aboutDropdown">
+						<ul
+							class="dropdown-menu"
+							aria-labelledby="aboutDropdown"
+						>
 							<li>
-								<a class="dropdown-item" href="#">What is Formula 1</a>
+								<a
+									class="dropdown-item"
+									href="#"
+									>What is Formula 1</a
+								>
 							</li>
 							<li>
-								<a class="dropdown-item" href="../../pages/technologies.html"
+								<a
+									class="dropdown-item"
+									href="../../pages/technologies.html"
 									>Technology of F1</a
 								>
 							</li>
 							<li>
-								<a class="dropdown-item" href="../../pages/future.html">Future of F1</a>
+								<a
+									class="dropdown-item"
+									href="../../pages/future.html"
+									>Future of F1</a
+								>
 							</li>
 						</ul>
 					</li>
@@ -82,20 +112,67 @@
 						>
 							Race Calendars
 						</a>
-						<ul class="dropdown-menu" aria-labelledby="aboutDropdown">
+						<ul
+							class="dropdown-menu"
+							aria-labelledby="aboutDropdown"
+						>
 							<li>
-								<a class="dropdown-item" href="../2025/2025-calendar.html"
+								<a
+									class="dropdown-item"
+									href="../2025/2025-calendar.html"
 									>2025 Calendar</a
 								>
 							</li>
 							<li>
-								<a class="dropdown-item" href="2024-calendar.html"
+								<a
+									class="dropdown-item"
+									href="2024-calendar.html"
 									>2024 Calendar</a
 								>
 							</li>
 							<li>
-								<a class="dropdown-item" href="../2023/2023-calendar.html"
+								<a
+									class="dropdown-item"
+									href="../2023/2023-calendar.html"
 									>2023 Calendar</a
+								>
+							</li>
+						</ul>
+					</li>
+					<li class="nav-item dropdown">
+						<a
+							class="nav-link dropdown-toggle"
+							href="#"
+							id="seasonsDropdown"
+							role="button"
+							data-bs-toggle="dropdown"
+							aria-expanded="false"
+						>
+							Standings
+						</a>
+						<ul
+							class="dropdown-menu"
+							aria-labelledby="seasonsDropdown"
+						>
+							<li>
+								<a
+									class="dropdown-item"
+									href="#"
+									>2025 Coverage</a
+								>
+							</li>
+							<li>
+								<a
+									class="dropdown-item"
+									href="#"
+									>2024 Breakdown</a
+								>
+							</li>
+							<li>
+								<a
+									class="dropdown-item"
+									href="#"
+									>2023 Breakdown</a
 								>
 							</li>
 						</ul>
@@ -111,27 +188,31 @@
 						>
 							Season Talk
 						</a>
-						<ul class="dropdown-menu" aria-labelledby="seasonsDropdown">
-							<li><a class="dropdown-item" href="#">2025 Coverage</a></li>
-							<li><a class="dropdown-item" href="#">2024 Results</a></li>
-							<li><a class="dropdown-item" href="#">2023 Results</a></li>
-						</ul>
-					</li>
-					<li class="nav-item dropdown">
-						<a
-							class="nav-link dropdown-toggle"
-							href="#"
-							id="seasonsDropdown"
-							role="button"
-							data-bs-toggle="dropdown"
-							aria-expanded="false"
+						<ul
+							class="dropdown-menu"
+							aria-labelledby="seasonsDropdown"
 						>
-							Standings
-						</a>
-						<ul class="dropdown-menu" aria-labelledby="seasonsDropdown">
-							<li><a class="dropdown-item" href="#">2025 Coverage</a></li>
-							<li><a class="dropdown-item" href="#">2024 Breakdown</a></li>
-							<li><a class="dropdown-item" href="#">2023 Breakdown</a></li>
+							<li>
+								<a
+									class="dropdown-item"
+									href="#"
+									>2025 Coverage</a
+								>
+							</li>
+							<li>
+								<a
+									class="dropdown-item"
+									href="#"
+									>2024 Results</a
+								>
+							</li>
+							<li>
+								<a
+									class="dropdown-item"
+									href="#"
+									>2023 Results</a
+								>
+							</li>
 						</ul>
 					</li>
 					<li class="nav-item dropdown">
@@ -145,14 +226,37 @@
 						>
 							Site
 						</a>
-						<ul class="dropdown-menu" aria-labelledby="fanZoneDropdown">
+						<ul
+							class="dropdown-menu"
+							aria-labelledby="fanZoneDropdown"
+						>
 							<li>
-								<a class="dropdown-item" href="../../pages/faqs.html">Trackside FAQs</a>
+								<a
+									class="dropdown-item"
+									href="../../pages/faqs.html"
+									>Trackside FAQs</a
+								>
 							</li>
-							<li><a class="dropdown-item" href="../../pages/learnmore.html">Learn More</a></li>
-							<li><a class="dropdown-item" href="#">Contact Us</a></li>
 							<li>
-								<a class="dropdown-item" href="#">Site Attributions</a>
+								<a
+									class="dropdown-item"
+									href="../../pages/learnmore.html"
+									>Learn More</a
+								>
+							</li>
+							<li>
+								<a
+									class="dropdown-item"
+									href="#"
+									>Contact Us</a
+								>
+							</li>
+							<li>
+								<a
+									class="dropdown-item"
+									href="#"
+									>Site Attributions</a
+								>
 							</li>
 						</ul>
 					</li>
@@ -197,7 +301,10 @@
 		<div class="album race-album">
 			<div class="row g-4 row-cols-1 row-cols-md-2 row-cols-lg-3">
 				<!-- Bahrain Card -->
-				<a href="#" class="text-decoration-none">
+				<a
+					href="#"
+					class="text-decoration-none"
+				>
 					<div class="col d-flex align-items-stretch h-100">
 						<div class="card card-circuit">
 							<img
@@ -277,7 +384,10 @@
 					</div>
 				</a>
 				<!-- Saudi Arabia Card -->
-				<a href="#" class="text-decoration-none">
+				<a
+					href="#"
+					class="text-decoration-none"
+				>
 					<div class="col d-flex align-items-stretch h-100">
 						<div class="card card-circuit">
 							<img
@@ -354,7 +464,10 @@
 					</div>
 				</a>
 				<!-- Australia Card -->
-				<a href="#" class="text-decoration-none">
+				<a
+					href="#"
+					class="text-decoration-none"
+				>
 					<div class="col d-flex align-items-stretch h-100">
 						<div class="card card-circuit">
 							<img
@@ -431,7 +544,10 @@
 					</div>
 				</a>
 				<!-- Japan Card -->
-				<a href="#" class="text-decoration-none">
+				<a
+					href="#"
+					class="text-decoration-none"
+				>
 					<div class="col d-flex align-items-stretch h-100">
 						<div class="card card-circuit">
 							<img
@@ -508,7 +624,10 @@
 					</div>
 				</a>
 				<!-- China Card -->
-				<a href="#" class="text-decoration-none">
+				<a
+					href="#"
+					class="text-decoration-none"
+				>
 					<div class="col d-flex align-items-stretch h-100">
 						<div class="card card-circuit">
 							<img
@@ -585,7 +704,10 @@
 					</div>
 				</a>
 				<!-- Miami Card -->
-				<a href="#" class="text-decoration-none">
+				<a
+					href="#"
+					class="text-decoration-none"
+				>
 					<div class="col d-flex align-items-stretch h-100">
 						<div class="card card-circuit">
 							<img
@@ -662,7 +784,10 @@
 					</div>
 				</a>
 				<!-- Emilia-Romagna Card -->
-				<a href="#" class="text-decoration-none">
+				<a
+					href="#"
+					class="text-decoration-none"
+				>
 					<div class="col d-flex align-items-stretch h-100">
 						<div class="card card-circuit">
 							<img
@@ -740,7 +865,10 @@
 					</div>
 				</a>
 				<!-- Monaco Card -->
-				<a href="#" class="text-decoration-none">
+				<a
+					href="#"
+					class="text-decoration-none"
+				>
 					<div class="col d-flex align-items-stretch h-100">
 						<div class="card card-circuit">
 							<img
@@ -817,7 +945,10 @@
 					</div>
 				</a>
 				<!-- Canada Card -->
-				<a href="#" class="text-decoration-none">
+				<a
+					href="#"
+					class="text-decoration-none"
+				>
 					<div class="col d-flex align-items-stretch h-100">
 						<div class="card card-circuit">
 							<img
@@ -894,7 +1025,10 @@
 					</div>
 				</a>
 				<!-- Spain Card -->
-				<a href="#" class="text-decoration-none">
+				<a
+					href="#"
+					class="text-decoration-none"
+				>
 					<div class="col d-flex align-items-stretch h-100">
 						<div class="card card-circuit">
 							<img
@@ -971,7 +1105,10 @@
 					</div>
 				</a>
 				<!-- Austria Card -->
-				<a href="#" class="text-decoration-none">
+				<a
+					href="#"
+					class="text-decoration-none"
+				>
 					<div class="col d-flex align-items-stretch h-100">
 						<div class="card card-circuit">
 							<img
@@ -1048,7 +1185,10 @@
 					</div>
 				</a>
 				<!-- Great Britain Card -->
-				<a href="#" class="text-decoration-none">
+				<a
+					href="#"
+					class="text-decoration-none"
+				>
 					<div class="col d-flex align-items-stretch h-100">
 						<div class="card card-circuit">
 							<img
@@ -1125,7 +1265,10 @@
 					</div>
 				</a>
 				<!-- Hungary Card -->
-				<a href="#" class="text-decoration-none">
+				<a
+					href="#"
+					class="text-decoration-none"
+				>
 					<div class="col d-flex align-items-stretch h-100">
 						<div class="card card-circuit">
 							<img
@@ -1202,7 +1345,10 @@
 					</div>
 				</a>
 				<!-- Belgium Card -->
-				<a href="#" class="text-decoration-none">
+				<a
+					href="#"
+					class="text-decoration-none"
+				>
 					<div class="col d-flex align-items-stretch h-100">
 						<div class="card card-circuit">
 							<img
@@ -1279,7 +1425,10 @@
 					</div>
 				</a>
 				<!-- Netherlands Card -->
-				<a href="#" class="text-decoration-none">
+				<a
+					href="#"
+					class="text-decoration-none"
+				>
 					<div class="col d-flex align-items-stretch h-100">
 						<div class="card card-circuit">
 							<img
@@ -1356,7 +1505,10 @@
 					</div>
 				</a>
 				<!-- Italy Card -->
-				<a href="#" class="text-decoration-none">
+				<a
+					href="#"
+					class="text-decoration-none"
+				>
 					<div class="col d-flex align-items-stretch h-100">
 						<div class="card card-circuit">
 							<img
@@ -1436,7 +1588,10 @@
 					</div>
 				</a>
 				<!-- Azerbaijan Card -->
-				<a href="#" class="text-decoration-none">
+				<a
+					href="#"
+					class="text-decoration-none"
+				>
 					<div class="col d-flex align-items-stretch h-100">
 						<div class="card card-circuit">
 							<img
@@ -1513,7 +1668,10 @@
 					</div>
 				</a>
 				<!-- Singapore Card -->
-				<a href="#" class="text-decoration-none">
+				<a
+					href="#"
+					class="text-decoration-none"
+				>
 					<div class="col d-flex align-items-stretch h-100">
 						<div class="card card-circuit">
 							<img
@@ -1590,7 +1748,10 @@
 					</div>
 				</a>
 				<!-- COTA Card -->
-				<a href="#" class="text-decoration-none">
+				<a
+					href="#"
+					class="text-decoration-none"
+				>
 					<div class="col d-flex align-items-stretch h-100">
 						<div class="card card-circuit">
 							<img
@@ -1667,7 +1828,10 @@
 					</div>
 				</a>
 				<!-- Mexico Card -->
-				<a href="#" class="text-decoration-none">
+				<a
+					href="#"
+					class="text-decoration-none"
+				>
 					<div class="col d-flex align-items-stretch h-100">
 						<div class="card card-circuit">
 							<img
@@ -1744,7 +1908,10 @@
 					</div>
 				</a>
 				<!-- Brazil Card -->
-				<a href="#" class="text-decoration-none">
+				<a
+					href="#"
+					class="text-decoration-none"
+				>
 					<div class="col d-flex align-items-stretch h-100">
 						<div class="card card-circuit">
 							<img
@@ -1821,7 +1988,10 @@
 					</div>
 				</a>
 				<!-- Las Vegas Card -->
-				<a href="#" class="text-decoration-none">
+				<a
+					href="#"
+					class="text-decoration-none"
+				>
 					<div class="col d-flex align-items-stretch h-100">
 						<div class="card card-circuit">
 							<img
@@ -1898,7 +2068,10 @@
 					</div>
 				</a>
 				<!-- Qatar Card -->
-				<a href="#" class="text-decoration-none">
+				<a
+					href="#"
+					class="text-decoration-none"
+				>
 					<div class="col d-flex align-items-stretch h-100">
 						<div class="card card-circuit">
 							<img
@@ -1978,7 +2151,10 @@
 					</div>
 				</a>
 				<!-- Abu Dhabi Card -->
-				<a href="#" class="text-decoration-none">
+				<a
+					href="#"
+					class="text-decoration-none"
+				>
 					<div class="col d-flex align-items-stretch h-100">
 						<div class="card card-circuit">
 							<img
@@ -2126,18 +2302,32 @@
 					<h5>Trackside</h5>
 					<ul class="nav flex-column">
 						<li class="nav-item mb-2">
-							<a href="../../index.html" class="nav-link p-0">Home</a>
+							<a
+								href="../../index.html"
+								class="nav-link p-0"
+								>Home</a
+							>
 						</li>
 						<li class="nav-item mb-2">
-							<a href="#" class="nav-link p-0">What is Formula 1</a>
+							<a
+								href="#"
+								class="nav-link p-0"
+								>What is Formula 1</a
+							>
 						</li>
 						<li class="nav-item mb-2">
-							<a href="../../pages/technologies.html" class="nav-link p-0"
+							<a
+								href="../../pages/technologies.html"
+								class="nav-link p-0"
 								>Technology of F1</a
 							>
 						</li>
 						<li class="nav-item mb-2">
-							<a href="../../pages/future.html" class="nav-link p-0">Future of F1</a>
+							<a
+								href="../../pages/future.html"
+								class="nav-link p-0"
+								>Future of F1</a
+							>
 						</li>
 					</ul>
 				</div>
@@ -2146,17 +2336,23 @@
 					<h5>Race Calendars</h5>
 					<ul class="nav flex-column">
 						<li class="nav-item mb-2">
-							<a href="../../seasons/2025/2025-calendar.html" class="nav-link p-0"
+							<a
+								href="../../seasons/2025/2025-calendar.html"
+								class="nav-link p-0"
 								>2025 Race Calendar</a
 							>
 						</li>
 						<li class="nav-item mb-2">
-							<a href="../../seasons/2024/2024-calendar.html" class="nav-link p-0"
+							<a
+								href="../../seasons/2024/2024-calendar.html"
+								class="nav-link p-0"
 								>2024 Race Calendar</a
 							>
 						</li>
 						<li class="nav-item mb-2">
-							<a href="../../seasons/2023/2023-calendar.html" class="nav-link p-0"
+							<a
+								href="../../seasons/2023/2023-calendar.html"
+								class="nav-link p-0"
 								>2023 Race Calendar</a
 							>
 						</li>
@@ -2167,13 +2363,25 @@
 					<h5>Season Talk</h5>
 					<ul class="nav flex-column">
 						<li class="nav-item mb-2">
-							<a href="#" class="nav-link p-0">2025 Coverage</a>
+							<a
+								href="#"
+								class="nav-link p-0"
+								>2025 Coverage</a
+							>
 						</li>
 						<li class="nav-item mb-2">
-							<a href="#" class="nav-link p-0">2024 Breakdown</a>
+							<a
+								href="#"
+								class="nav-link p-0"
+								>2024 Breakdown</a
+							>
 						</li>
 						<li class="nav-item mb-2">
-							<a href="#" class="nav-link p-0">2023 Breakdown</a>
+							<a
+								href="#"
+								class="nav-link p-0"
+								>2023 Breakdown</a
+							>
 						</li>
 					</ul>
 				</div>
@@ -2182,16 +2390,32 @@
 					<h5>Pitwall</h5>
 					<ul class="nav flex-column">
 						<li class="nav-item mb-2">
-							<a href="../../pages/faqs.html" class="nav-link p-0">Trackside FAQs</a>
+							<a
+								href="../../pages/faqs.html"
+								class="nav-link p-0"
+								>Trackside FAQs</a
+							>
 						</li>
 						<li class="nav-item mb-2">
-							<a href="#" class="nav-link p-0">Site Attributions</a>
+							<a
+								href="#"
+								class="nav-link p-0"
+								>Site Attributions</a
+							>
 						</li>
 						<li class="nav-item mb-2">
-							<a href="../../pages/learnmore.html" class="nav-link p-0">Learn More</a>
+							<a
+								href="../../pages/learnmore.html"
+								class="nav-link p-0"
+								>Learn More</a
+							>
 						</li>
 						<li class="nav-item mb-2">
-							<a href="#" class="nav-link p-0">Contact Us</a>
+							<a
+								href="#"
+								class="nav-link p-0"
+								>Contact Us</a
+							>
 						</li>
 					</ul>
 				</div>
@@ -2203,20 +2427,38 @@
 				<p>© 2025 Nick Calvo All rights reserved.</p>
 				<ul class="list-unstyled d-flex">
 					<li class="ms-3">
-						<a class="link-body-emphasis" href="#"
-							><svg class="bi" width="24" height="24">
+						<a
+							class="link-body-emphasis"
+							href="#"
+							><svg
+								class="bi"
+								width="24"
+								height="24"
+							>
 								<use xlink:href="#twitter"></use></svg
 						></a>
 					</li>
 					<li class="ms-3">
-						<a class="link-body-emphasis" href="#"
-							><svg class="bi" width="24" height="24">
+						<a
+							class="link-body-emphasis"
+							href="#"
+							><svg
+								class="bi"
+								width="24"
+								height="24"
+							>
 								<use xlink:href="#instagram"></use></svg
 						></a>
 					</li>
 					<li class="ms-3">
-						<a class="link-body-emphasis" href="#"
-							><svg class="bi" width="24" height="24">
+						<a
+							class="link-body-emphasis"
+							href="#"
+							><svg
+								class="bi"
+								width="24"
+								height="24"
+							>
 								<use xlink:href="#facebook"></use></svg
 						></a>
 					</li>
@@ -2225,5 +2467,8 @@
 		</footer>
 	</div>
 
-	<script type="module" src="../../js/main.js"></script>
+	<script
+		type="module"
+		src="../../js/main.js"
+	></script>
 </html>
