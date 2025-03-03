@@ -2787,40 +2787,37 @@
       </footer>
     </div>
 
-		<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-		<script
-			type="module"
-			src="js/main.js"
-		></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script type="module" src="js/main.js"></script>
 
-		<script>
-			var swiper = new Swiper(".swiper", {
-				centeredSlides: true,
-				direction: "horizontal",
-				initialSlide: 0,
-				slidesPerView: 1.5,
-				slideToClickedSlide: true,
-				slideActiveClass: "active",
-				slideVisibleClass: "visible",
-				loop: false,
-				breakpoints: {
-					768: {
-						// md: ≥768px
-						slidesPerView: 2.5,
-						spaceBetween: 30,
-					},
-					992: {
-						// lg: ≥992px
-						slidesPerView: 4,
-						spaceBetween: 30,
-					},
-					1200: {
-						// xl: ≥1200px
-						slidesPerView: 5,
-						spaceBetween: 30,
-					},
-				},
-			})
-		</script>
-	</body>
+    <script>
+      var swiper = new Swiper(".swiper", {
+        centeredSlides: true,
+        direction: "horizontal",
+        initialSlide: 0,
+        slidesPerView: 1.5,
+        slideToClickedSlide: true,
+        slideActiveClass: "active",
+        slideVisibleClass: "visible",
+        loop: false,
+        breakpoints: {
+          768: {
+            // md: ≥768px
+            slidesPerView: 2.5,
+            spaceBetween: 30,
+          },
+          992: {
+            // lg: ≥992px
+            slidesPerView: 4,
+            spaceBetween: 30,
+          },
+          1200: {
+            // xl: ≥1200px
+            slidesPerView: 5,
+            spaceBetween: 30,
+          },
+        },
+      })
+    </script>
+  </body>
 </html>
