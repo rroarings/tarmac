@@ -1,0 +1,19 @@
+.col-feature {
+  padding: 1rem;
+}
+
+@media (max-width: 576px) { /* Adjustments for small screens */
+  .icon-square {
+    width: 2.5rem;
+    height: 2.5rem;
+  }
+  
+  .col-feature {
+    text-align: center;
+    padding: 1.5rem;
+  }
+  
+  .col-feature h3 {
+    font-size: 1.25rem; /* Slightly reduce heading size on small screens */
+  }
+}
