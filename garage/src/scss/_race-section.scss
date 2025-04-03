@@ -1,0 +1,131 @@
+/* Base styles */
+.featured-races {
+  display: flex;
+  flex-direction: column;
+}
+
+.race-section {
+  position: relative;
+  color: white;
+  padding: 4rem 2rem;
+  // border: 2px solid black;
+  overflow: hidden;
+  min-height: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  transition: background 0.3s ease-in-out;
+}
+
+/* 🔥 1️⃣ Slide-in Overlay on Hover */
+.race-section::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.712);
+  transition: transform 0.3s ease-in-out;
+  transform: translateY(100%);
+}
+
+.race-section:hover::before {
+  transform: translateY(0);
+}
+
+.race-section:first-child {
+  border-top: none;
+}
+
+.race-section:last-child {
+  border-bottom: none;
+}
+
+.race-section .race-section-title {
+  opacity: 1;
+  transform: translateY(10px);
+  transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+.race-section:hover .race-section-title {
+  opacity: 1;
+  transform: translateY(2);
+}
+
+.race-section-title-position {
+  padding-right: 1rem;
+  border-top: 6px solid black;
+  border-right: 6px solid black;
+  border-top-right-radius: 1rem;
+  transition: border, .3s ease;;
+}
+
+.race-section:hover .race-section-title-position {
+  border-color: $danger;
+}
+
+/* Initially Hide Description */
+.race-section .hidden-description {
+  padding-top: 1rem;
+  opacity: 0;
+  transform: translateY(10px);
+  transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+/* Hover Effect - Show Hidden Description */
+.race-section:hover .hidden-description {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.race-section h2 {
+  font-size: 3rem;
+}
+
+.race-section .hidden-description p {
+}
+
+.race-section-scale {
+  transform: scale(1);
+  transition: transform .3s ease;
+}
+
+.race-section-scale:hover {
+  transform: scale(1.05);
+}
+
+@media (max-width: 576px) {
+  .race-section {
+    padding: 2rem 1rem;  /* Reduce padding on mobile */
+    min-height: 200px;  /* Smaller height for better fit */
+  }
+
+  .race-section h2 {
+    font-size: 2rem; /* Smaller headings */
+    text-align: center; /* Center title on mobile */
+  }
+
+  .race-section .hidden-description {
+    font-size: 1rem; /* Adjust text size */
+    text-align: center;
+  }
+
+  .race-section-title-position {
+    padding-right: 5px;
+    border-width: 4px; /* Thinner border for better mobile display */
+  }
+}
+
+/* Make sure hover still works on desktop */
+@media (hover: hover) {
+  .race-section:hover::before {
+    opacity: 1;
+  }
+}
+
+/* Make text instantly visible on mobile since hover isn’t available */
+@media (max-width: 576px) {
+  .hidden-description {
+    opacity: 1 !important;
+    transform: translateY(0) !important;
+  }
+}
+
