@@ -220,67 +220,91 @@
       </div>
     </nav>
 
-    <!-- index hero main -->
-    <section
-      class="position-relative vh-100 d-flex justify-content-center align-items-center text-center"
-    >
-      <!-- Video Background -->
-      <video
-        class="position-absolute top-0 start-0 w-100 h-100 object-fit-cover"
-        autoplay
-        loop
-        muted
-        playsinline
-      >
-        <source src="./assets/videos/raceseq.mp4" type="video/mp4" />
-        Your browser does not support the video tag.
-      </video>
-
-      <!-- Overlay to improve contrast (optional) -->
-      <div
-        class="position-absolute top-0 start-0 w-100 h-100 bg-dark opacity-25"
-      ></div>
-
-      <!-- Content Container -->
-      <div
-        class="container position-relative p-5 rounded text-white"
-        style="background-color: rgba(0, 0, 0, 0.75)"
-      >
-        <h1 class="display-3 fw-bold">Welcome to the Trackside</h1>
-        <p class="lead">A brief description of your site goes here.</p>
-      </div>
-    </section>
-
     <!-- index hero -->
-    <div class="px-4 py-2 my-3 text-center visually-hidden">
-      <h1 class="display-4 fw-bold text-body-emphasis">
-        Explore the Trackside
-      </h1>
-      <div class="col-lg-6 mx-auto">
-        <p class="lead mb-4">
-          Catch every twist, turn, and rivalry of the recent F1 Championship
-          seasons. Explore standings, highlights, and in-depth insights all in
-          one place.
-        </p>
-        <div class="d-grid gap-2 d-sm-flex justify-content-sm-center mb-5">
-          <button type="button" class="btn btn-primary btn-lg px-4 me-sm-3">
-            Explore 2024 Results
-          </button>
-          <button type="button" class="btn btn-outline-secondary btn-lg px-4">
-            Explore the 2025 Race Calendar
-          </button>
+    <div class="container px-4 py-2 my-3 text-center">
+      <div class="row">
+        <h1 class="display-4 fw-bold text-body-emphasis">
+          Explore the Trackside
+        </h1>
+        <div class="col-lg-6 mx-auto">
+          <p class="lead mb-4">
+            Catch every twist, turn, and rivalry of the recent F1 Championship
+            seasons. Explore standings, highlights, and in-depth insights all in
+            one place.
+          </p>
+          <div class="d-grid gap-2 d-sm-flex justify-content-sm-center mb-5">
+            <a href="./seasons/2024/2024-calendar.html" class="btn btn-primary px-4 me-sm-3" target="_blank"
+              >Explore the 2024 results</a
+            >
+            <a href="./seasons/2025/2025-calendar.html" class="btn btn-secondary" target="_blank"
+            >Explore the 2025 calendar   </a
+          >
+          </div>
         </div>
       </div>
-      <div class="overflow-hidden">
-        <div class="container">
+
+      <div class="row gap-2">
+        <div
+          class="col py-5 position-relative border border-black rounded overflow-hidden"
+        >
           <video
-            src="assets/videos/raceseq.webm"
-            class="img-fluid"
-            muted
             autoplay
-            playsinline
             loop
-          ></video>
+            muted
+            playsinline
+            class="position-absolute top-0 start-0 w-100 h-100 object-fit-cover"
+          >
+            <source src="./assets/videos/raceseq.mp4" type="video/mp4" />
+            Your browser does not support the video tag.
+          </video>
+          <div class="position-relative text-white fw-bold p-3">Drivers</div>
+        </div>
+        <div
+          class="col py-5 position-relative border border-black rounded overflow-hidden"
+        >
+          <video
+            autoplay
+            loop
+            muted
+            playsinline
+            class="position-absolute top-0 start-0 w-100 h-100 object-fit-cover"
+          >
+            <source src="./assets/videos/raceseq.mp4" type="video/mp4" />
+            Your browser does not support the video tag.
+          </video>
+          <div class="position-relative text-white fw-bold p-3">
+            Constructors
+          </div>
+        </div>
+        <div
+          class="col py-5 position-relative border border-black rounded overflow-hidden"
+        >
+          <video
+            autoplay
+            loop
+            muted
+            playsinline
+            class="position-absolute top-0 start-0 w-100 h-100 object-fit-cover"
+          >
+            <source src="./assets/videos/raceseq.mp4" type="video/mp4" />
+            Your browser does not support the video tag.
+          </video>
+          <div class="position-relative text-white fw-bold p-3">Standings</div>
+        </div>
+        <div
+          class="col py-5 position-relative border border-black rounded overflow-hidden"
+        >
+          <video
+            autoplay
+            loop
+            muted
+            playsinline
+            class="position-absolute top-0 start-0 w-100 h-100 object-fit-cover"
+          >
+            <source src="./assets/videos/raceseq.mp4" type="video/mp4" />
+            Your browser does not support the video tag.
+          </video>
+          <div class="position-relative text-white fw-bold p-3">Calender</div>
         </div>
       </div>
     </div>
@@ -293,7 +317,7 @@
         id="fantasy-banner"
         class="text-white rounded"
         style="
-          background-image: url('assets/img/section/formula-fantasy-banner.png');
+          background-image: url('./assets/img/section/formula-fantasy-banner.png');
           background-repeat: no-repeat;
           background-size: cover;
         "
@@ -344,13 +368,14 @@
               playsinline
               loop
             ></video>
-            <div class="card-body">
+            <div class="card-body d-flex flex-column">
               <h5 class="card-title">Pulse-Pounding Race Moments</h5>
               <p class="card-text">
                 Dive into the adrenaline-filled moments that defined the 2024
                 FIA Formula One World Championship.
               </p>
-              <a href="#" class="btn btn-primary">Watch Now</a>
+              <!-- Spacer to push button down -->
+              <a href="#" class="btn btn-primary w-100">Watch Now</a>
             </div>
           </div>
         </div>
