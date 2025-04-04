@@ -2,7 +2,7 @@
 
 function updateBreakpoint() {
   const width = window.innerWidth;
-  const breakpoint = document.getElementById('currentBreakpoint');
+  const breakpoint = document.getElementById('breakpoint');
 
   // Check window width and update breakpoint text based on Bootstrap's breakpoints
   if (width < 576) {
