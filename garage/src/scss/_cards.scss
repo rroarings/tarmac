@@ -57,3 +57,37 @@
   background-color: $red;
   border-color: $red !important
 }
+
+/* Championship Section Styling */
+.championship-section {
+    display: flex;
+    flex-direction: column;
+}
+
+.championship-item {
+    position: relative;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: white;
+    padding: 2rem;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.6);
+}
+
+.championship-item h5 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+.championship-item p {
+    font-size: 1rem;
+}
+
+.championship-item.drivers {
+    background-image: url('https://place-hold.it/1200x250');
+}
+
+.championship-item.constructors {
+    background-image: url('https://place-hold.it/1200x250');
+}
