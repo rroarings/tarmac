@@ -15,23 +15,27 @@
   transition: all .3s ease;
 }
 
-.bento-item:nth-child(1) {
-  grid-column: span 4; 
-}
-
-.bento-item:nth-child(2) {
-  grid-column: span 4; 
-}
-
-.bento-item:nth-child(3) {
-  grid-column: span 4; 
-}
-
-.bento-item:nth-child(4) {
+.bento-item2:nth-child(1) {
   grid-column: span 6; 
 }
 
-.bento-item:nth-child(5) {
+.bento-item2:nth-child(2) {
+  grid-column: span 3; 
+}
+
+.bento-item2:nth-child(3) {
+  grid-column: span 3; 
+}
+
+.bento-item2:nth-child(4) {
+  grid-column: span 3; 
+}
+
+.bento-item2:nth-child(5) {
+  grid-column: span 3; 
+}
+
+.bento-item2:nth-child(6) {
   grid-column: span 6; 
 }
 
@@ -80,6 +84,108 @@
   
   .bento-item:nth-child(5) {
     grid-column: span 12; 
+  }
+}
+
+// new bento start
+
+.bento-wrapper-alt {
+  padding: 1rem;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr); // 12-column grid
+  gap: 1.5rem; // Larger gap for a more spacious layout
+}
+
+.bento-item-alt {
+  position: relative; // For overlapping content
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  border-radius: 8px;
+  background-color: $gray-200; // Light background color
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); // Subtle shadow for depth
+  transition: background-color 0.3s ease, box-shadow 0.3s ease; // Smooth hover effects
+}
+
+.bento-item-alt:hover {
+  background-color: $gray-400; // Highlighted background
+
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); // Enhance shadow on hover
+}
+
+.bento-item-alt h5 {
+  margin-bottom: 0.5rem;
+  font-size: 1.25rem;
+  font-weight: bold;
+  color: $gray-800;
+}
+
+.bento-item-alt p {
+  font-size: 1rem;
+  text-align: center;
+}
+
+.bento-item-alt:nth-child(1) {
+  grid-column: span 6; // Spans half the grid
+  grid-row: span 3; // Takes up two rows
+}
+
+.bento-item-alt:nth-child(2) {
+  grid-column: span 3; // Spans 4 columns
+  grid-row: span 5; // Single row
+}
+
+.bento-item-alt:nth-child(3) {
+  grid-column: span 3; // Spans 2 columns
+  grid-row: span 5; // Takes up two rows
+}
+
+.bento-item-alt:nth-child(4) {
+  grid-column: span 6; // Spans half the grid
+  grid-row: span 2; // Single row
+}
+
+.bento-item-alt:nth-child(5) {
+  grid-column: span 12; // Spans half the grid
+  grid-row: span 2; // Single row
+}
+
+.bento-item-alt:nth-child(6) {
+  grid-column: span 12; // Full width
+  grid-row: span 1; // Single row
+  background-color: $gray-200; // Highlighted background
+}
+
+@media (max-width: 768px) {
+  .bento-wrapper-alt {
+    grid-template-columns: repeat(6, 1fr); // Switch to a 6-column grid
+  }
+
+  .bento-item-alt:nth-child(1),
+  .bento-item-alt:nth-child(4),
+  .bento-item-alt:nth-child(5) {
+    grid-column: span 6; // Full width on smaller screens
+  }
+
+  .bento-item-alt:nth-child(2),
+  .bento-item-alt:nth-child(3) {
+    grid-column: span 3; // Half width on smaller screens
+  }
+
+  .bento-item-alt:nth-child(6) {
+    grid-column: span 6; // Full width
+  }
+}
+
+@media (max-width: 575px) {
+  .bento-wrapper-alt {
+    grid-template-columns: repeat(1, 1fr); // Single-column layout
+  }
+
+  .bento-item-alt {
+    grid-column: span 1; // Full width for all items
   }
 }
 
