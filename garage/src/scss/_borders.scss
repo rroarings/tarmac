@@ -9,3 +9,19 @@
 .border-gray7 {
   border-color: $gray-700 !important
 }
+
+.border-mclaren {
+  border-left: none;
+  border-top: 3px solid;
+  border-top-left-radius: 0;
+  border-right: 3px solid;
+  border-top-right-radius: 1rem;
+  border-bottom-right-radius: 0;
+  border-color: $orange;
+  transition: all 0.3s ease; // Smooth transition for border changes
+}
+
+.border-mclaren:hover {
+  border-color: darken($orange, 15%);
+}
+
