@@ -44,19 +44,19 @@
 
 // 8. Add additional custom code here
 @import "../../node_modules/flag-icons/css/flag-icons.min.css";
+@import "./swiper";
+@import "./accordion";
 @import "./altbento";
 @import "./borders";
-@import "./accordion";
+@import "./cards";
+@import "./card-drivers";
 @import "./dropdown";
 @import "./features";
 @import "./future";
+@import "./headers";
 @import "./icons";
-@import "./cards";
-@import "./card-drivers";
 @import "./list-groups";
-@import "./swiper";
 @import "./nav-link";
-@import "./utils";
 @import "./race-section";
 @import "./text-bg";
-@import "./headers";
+@import "./utils";
