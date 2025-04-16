@@ -1,0 +1,18 @@
+// Base style
+.text-bg-custom {
+  color: #fff;
+  padding: 0.5rem 1rem;
+  transition: all 0.3s ease;
+  
+}
+
+// Team-specific styles
+.text-bg-mclaren {
+  @extend .text-bg-custom;
+  background: $orange;
+}
+
+.text-bg-redbull {
+  @extend .text-bg-custom;
+  background: $red;
+}

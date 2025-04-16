@@ -26,3 +26,13 @@
 .list-group-standings-item:hover .team-name {
 	color: $gray-500;
 }
+
+.lgi-mclaren .badge.text-bg-mclaren {
+	transform: scale(1.0); 
+  transition: all 0.3s ease; // Smooth transition
+}
+
+.lgi-mclaren:hover .badge.text-bg-mclaren {
+  background: darken($orange, 10%); // Example: Change background color
+}
+
