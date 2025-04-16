@@ -10,11 +10,47 @@
   border-color: $gray-700 !important
 }
 
+.border-open-bottom {
+  border-left: 10px solid $gray-600;
+  border-right: 10px solid $gray-600;
+  border-top: 10px solid $gray-600;
+  border-start-start-radius: 1rem;
+  border-start-end-radius: 1rem;
+}
+
+.border-open-left {
+  border-bottom: 10px solid;
+  border-right: 10px solid;
+  border-top: 10px solid;
+  border-top-left-radius: 0;
+  border-top-right-radius: 1rem;
+  border-bottom-right-radius: 1rem;
+}
+
+.border-open-left--open-bottom {
+  border-bottom: none;
+  border-right: 10px solid;
+  border-top: 10px solid;
+  border-top-left-radius: 0;
+  border-top-right-radius: 1rem;
+  border-bottom-right-radius: 0;
+}
+
+.border-open-left--open-top {
+  border-top: none;
+  border-right: 10px solid;
+  border-bottom: 10px solid;
+  border-top-right-radius: 0;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 1rem;
+  border-color: $gray-400;
+}
+
 .border-mclaren {
   border-left: none;
-  border-top: 3px solid;
+  border-top: 8px solid;
   border-top-left-radius: 0;
-  border-right: 3px solid;
+  border-right: 8px solid;
   border-top-right-radius: 1rem;
   border-bottom-right-radius: 0;
   border-color: $orange;
@@ -27,12 +63,12 @@
 
 .border-redbull {
   border-left: none;
-  border-top: 3px solid;
+  border-top: 8px solid;
   border-top-left-radius: 0;
-  border-right: 3px solid;
+  border-right: 8px solid;
   border-top-right-radius: 1rem;
   border-bottom-right-radius: 0;
-  border-color: $red;
+  border-color: $blue-600;
   transition: all 0.3s ease; // Smooth transition for border changes
 }
 
