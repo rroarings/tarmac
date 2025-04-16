@@ -36,3 +36,11 @@
   background: darken($orange, 10%); // Example: Change background color
 }
 
+.lgi-redbull .badge.text-bg-redbull {
+	transform: scale(1.0); 
+  transition: all 0.3s ease; // Smooth transition
+}
+
+.lgi-redbull:hover .badge.text-bg-redbull {
+  background: darken($red, 10%); // Example: Change background color
+}
