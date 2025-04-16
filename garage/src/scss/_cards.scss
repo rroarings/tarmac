@@ -1,7 +1,16 @@
+// start - background image card
 .card-cover {
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
+}
+// start - background image with text card
+.card-news {
+  background-image: url('../assets/img/section/racei1.png');
+  background-size: cover;
+  background-position: center;
+  color: white;
+  border: none;
 }
 
 .card-news .bi-box-arrow-up-right {
@@ -14,25 +23,23 @@
   transform: translateY(-5);
 }
 
-.card-news {
-  background-image: url('../assets/img/section/racei1.png');
-  background-size: cover;
-  background-position: center;
-  color: white;
-  border: none
-}
-
+// start - circuit card
 .card-circuit {
   padding: 1rem;
   border: none;
+  border-top: 10px solid $gray-700;
   border-bottom: 10px solid $gray-700;
   border-right: 10px solid $gray-700;
-  border-radius: 0 0 2rem 0;
+  border-top-right-radius: 2.2rem;
+  border-bottom-right-radius: 2.2rem;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
   transition: all .3s ease;
 
   &:hover {
-    border-bottom-color: $red; // Changes bottom border color to primary
-    border-right-color: $red; // Changes right border color to primary
+    border-bottom-color: $red-600; 
+    border-top-color: $red-600;
+    border-right-color: $red-600;
   }
 }
 
@@ -58,6 +65,7 @@
   border-color: $red !important
 }
 
+// whatis page 
 /* Championship Section Styling */
 .championship-section {
     display: flex;
