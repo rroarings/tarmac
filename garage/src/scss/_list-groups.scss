@@ -1,46 +1,101 @@
-.list-group-standings-item {
-	padding: 1rem;
+// Block: driver-standings
+.driver-standings__list {
+	background-color: $gray-200;
 	transition: all 0.3s ease;
+	list-style: none;
+	padding: 0;
+	margin: 0;
 }
 
-.list-group-standings-item a {
+// Element: __item
+.driver-standings__item {
+	background-color: $gray-200;
+	align-items: center;
+	padding: 0.5rem 1rem;
+	transition: all 0.3s ease;
+
+	&:hover {
+		background-color: $gray-700;
+	}
+}
+
+.driver-standings__item:hover .driver-standings__link {
+	// Change link color on hover
+	color: $gray-200;
+}
+.driver-standings__item:hover .driver-standings__team-name {
+	// Change link color on hover
+	color: $gray-200;
+}
+
+// Element: __link
+.driver-standings__link {
 	color: #000;
+	text-decoration: none;
+	display: flex;
 	transition: all 0.3s ease;
 }
 
-.list-group-standings-item .team-name {
+// Base styles for the divider
+.driver-standings__divider {
+	margin-left: 1rem;
+	margin-right: 1rem;
+
+	svg {
+		transition: fill 0.3s ease; // Smooth transition for fill color
+	}
+}
+
+// Modifier styles for team-specific colors
+.driver-standings__divider--mclaren svg {
+	fill: $orange;
+}
+.driver-standings__divider--redbull svg {
+	fill: $blue;
+}
+.driver-standings__divider--ferrari svg {
+	fill: $red;
+}
+.driver-standings__divider--mercedes svg {
+	fill: $teal;
+}
+.driver-standings__divider--haas svg {
+	fill: $gray-800;
+}
+.driver-standings__divider--astonmartin svg {
+	fill: $green-600;
+}
+
+// Element: __driver-name
+.driver-standings__driver-name {
+	font-size: 1.2rem;
+}
+
+// Element: __team-name
+.driver-standings__team-name {
 	color: $gray-600;
-  font-size: small;
-  margin-left: .4rem;
+	font-size: small;
+	margin-left: 0.4rem;
 	transition: all 0.3s ease;
 }
 
-.list-group-standings-item:hover {
-	background-color: $gray-900;
-}
-
-.list-group-standings-item:hover a {
-	color: #fff;
-}
-
-.list-group-standings-item:hover .team-name {
-	color: $gray-500;
-}
-
+// todo refactor to another file for driver profile styles - but these are used in a list group...
+// driver profile info badges
+/* start list group item team badge hover styles */
 .lgi-mclaren .badge.text-bg-mclaren {
-	transform: scale(1.0); 
-  transition: all 0.3s ease; // Smooth transition
+	transform: scale(1);
+	transition: all 0.3s ease; // Smooth transition
 }
 
 .lgi-mclaren:hover .badge.text-bg-mclaren {
-  background: darken($orange, 10%); // Example: Change background color
+	background: darken($orange, 10%); // Example: Change background color
 }
 
 .lgi-redbull .badge.text-bg-redbull {
-	transform: scale(1.0); 
-  transition: all 0.3s ease; // Smooth transition
+	transform: scale(1);
+	transition: all 0.3s ease; // Smooth transition
 }
 
 .lgi-redbull:hover .badge.text-bg-redbull {
-  background: darken($red, 10%); // Example: Change background color
+	background: darken($red, 10%); // Example: Change background color
 }
