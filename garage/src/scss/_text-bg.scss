@@ -1,9 +1,22 @@
 // Base style
 .text-bg-custom {
+  padding: .3rem 1.2rem;
+  font-size: 1rem;
+  font-weight: 400;
   color: #fff;
-  padding: 0.5rem 1rem;
-  transition: all 0.3s ease;
-  
+  background-color: $gray-600;
+  transition: all .3s ease;
+}
+
+// Generic styles
+.text-bg-custom.text-bg-standings--leader {
+  background-color: $green;
+}
+
+.text-bg-custom.text-bg-standings {
+  @extend .text-bg-custom;
+  background-color: $gray-600;
+
 }
 
 // Team-specific styles
@@ -16,3 +29,4 @@
   @extend .text-bg-custom;
   background: $red;
 }
+
