@@ -1,22 +1,17 @@
-.future-gallery {
-}
-
 .rookie-card {
-	border-radius: 0.75rem;
-	overflow: hidden;
+  overflow: hidden;
+  border-radius: .75rem;
 }
 
 .rookie-card img {
-	max-width: 100%;;
-	height: 323px;
+  max-width: 100%;
+  height: 323px;
   aspect-ratio: 1 / 1;
-	object-fit: cover;
-	margin: 0 auto; /* Center image if needed */
+  margin: 0 auto; /* Center image if needed */
+  object-fit: cover;
 }
 
 .rookie-card .card-title {
-	font-weight: 600;
+  font-weight: 600;
 }
-
-
 
