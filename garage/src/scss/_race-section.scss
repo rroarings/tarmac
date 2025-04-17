@@ -4,26 +4,40 @@
   flex-direction: column;
 }
 
-.race-section {
+@mixin race-background($image) {
   position: relative;
-  color: white;
-  padding: 4rem 2rem;
-  // border: 2px solid black;
-  overflow: hidden;
-  min-height: 300px;
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
-  transition: background 0.3s ease-in-out;
+  min-height: 300px;
+  padding: 4rem 2rem;
+  overflow: hidden;
+  color: #fff;
+  background-image: url("../assets/img/section/#{$image}");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
-/* 🔥 1️⃣ Slide-in Overlay on Hover */
+.race-section {
+  @include race-background('racei1.png'); // Default background
+}
+
+.race-section.bahrain {
+  @include race-background('racei2.png');
+}
+
+.race-section.saudi-arabia {
+  @include race-background('racei3.png');
+}
+
+/* Slide-in Overlay on Hover */
 .race-section::before {
-  content: "";
   position: absolute;
   inset: 0;
-  background: rgba(0, 0, 0, 0.712);
-  transition: transform 0.3s ease-in-out;
+  content: "";
+  background: rgba(0, 0, 0, .712);
+  transition: transform .3s ease-in-out;
   transform: translateY(100%);
 }
 
@@ -41,8 +55,8 @@
 
 .race-section .race-section-title {
   opacity: 1;
+  transition: opacity .3s ease-in-out, transform .3s ease-in-out;
   transform: translateY(10px);
-  transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
 }
 
 .race-section:hover .race-section-title {
@@ -52,10 +66,10 @@
 
 .race-section-title-position {
   padding-right: 1rem;
-  border-top: 5px solid black;
-  border-right: 5px solid black;
+  border-top: 5px solid #000;
+  border-right: 5px solid #000;
   border-top-right-radius: 1rem;
-  transition: border, .3s ease;;
+  transition: border, .3s ease;
 }
 
 .race-section:hover .race-section-title-position {
@@ -66,8 +80,8 @@
 .race-section .hidden-description {
   padding-top: 1rem;
   opacity: 0;
+  transition: opacity .3s ease-in-out, transform .3s ease-in-out;
   transform: translateY(10px);
-  transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
 }
 
 /* Hover Effect - Show Hidden Description */
@@ -81,18 +95,19 @@
 }
 
 .race-section-scale {
-  transform: scale(1);
   transition: transform .3s ease;
+  transform: scale(1);
 }
 
 .race-section-scale:hover {
   transform: scale(1.05);
 }
 
+
 @media (max-width: 576px) {
   .race-section {
-    padding: 2rem 1rem;  /* Reduce padding on mobile */
     min-height: 200px;  /* Smaller height for better fit */
+    padding: 2rem 1rem;  /* Reduce padding on mobile */
   }
 
   .race-section h2 {
