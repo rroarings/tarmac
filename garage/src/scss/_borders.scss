@@ -1,60 +1,48 @@
-.border-10 {
-  border-width: 10px !important
-}
-
-.border-red {
-  border-color: $red !important
-}
-
-.border-gray7 {
-  border-color: $gray-700 !important
-}
-
 .border-open-bottom {
-  border-left: 10px solid $gray-600;
-  border-right: 10px solid $gray-600;
   border-top: 10px solid $gray-600;
+  border-right: 10px solid $gray-600;
+  border-left: 10px solid $gray-600;
   border-start-start-radius: 1rem;
   border-start-end-radius: 1rem;
 }
 
 .border-open-left {
-  border-bottom: 10px solid;
-  border-right: 10px solid;
   border-top: 10px solid;
+  border-right: 10px solid;
+  border-bottom: 10px solid;
   border-top-left-radius: 0;
   border-top-right-radius: 1rem;
   border-bottom-right-radius: 1rem;
 }
 
 .border-open-left--open-bottom {
-  border-bottom: none;
-  border-right: 10px solid;
   border-top: 10px solid;
+  border-right: 10px solid;
+  border-bottom: none;
   border-top-left-radius: 0;
   border-top-right-radius: 1rem;
   border-bottom-right-radius: 0;
 }
 
 .border-open-left--open-top {
+  border-color: $gray-400;
   border-top: none;
   border-right: 10px solid;
   border-bottom: 10px solid;
   border-top-right-radius: 0;
-  border-bottom-left-radius: 0;
   border-bottom-right-radius: 1rem;
-  border-color: $gray-400;
+  border-bottom-left-radius: 0;
 }
 
 .border-mclaren {
-  border-left: none;
+  border-color: $orange;
   border-top: 8px solid;
-  border-top-left-radius: 0;
   border-right: 8px solid;
+  border-left: none;
+  border-top-left-radius: 0;
   border-top-right-radius: 1rem;
   border-bottom-right-radius: 0;
-  border-color: $orange;
-  transition: all 0.3s ease; // Smooth transition for border changes
+  transition: all .3s ease; // Smooth transition for border changes
 }
 
 .border-mclaren:hover {
@@ -62,14 +50,14 @@
 }
 
 .border-redbull {
-  border-left: none;
+  border-color: $blue-600;
   border-top: 8px solid;
-  border-top-left-radius: 0;
   border-right: 8px solid;
+  border-left: none;
+  border-top-left-radius: 0;
   border-top-right-radius: 1rem;
   border-bottom-right-radius: 0;
-  border-color: $blue-600;
-  transition: all 0.3s ease; // Smooth transition for border changes
+  transition: all .3s ease; // Smooth transition for border changes
 }
 
 .border-redbull:hover {

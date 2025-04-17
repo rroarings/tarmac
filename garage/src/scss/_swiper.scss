@@ -19,8 +19,8 @@
 
 .swiper-slide {
   padding: 1rem;
-  border-right: 1px solid $red-500;
   border-top: 1px solid $red-500;
+  border-right: 1px solid $red-500;
   border-top-right-radius: 2rem;
 
   @include media-breakpoint-up(sm) { // ≥576px
@@ -34,14 +34,14 @@
 }
 
 .calendar-race-date {
-  color: $gray-500
+  color: $gray-500;
 }
 
 .btn-outline-danger {
-  transition: background-color 0.3s ease, color 0.3s ease;
+  transition: background-color .3s ease, color .3s ease;
 }
 
 .btn-outline-danger:hover {
-  background-color: hsl(0, 80%, 50%);
   color: #fff;
+  background-color: hsl(0deg, 80%, 50%);
 }

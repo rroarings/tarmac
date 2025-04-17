@@ -6,17 +6,17 @@
 }
 // start - background image with text card
 .card-news {
-  background-image: url('../assets/img/section/racei1.png');
-  background-size: cover;
+  color: $white;
+  background-image: url("../assets/img/section/racei1.png");
   background-position: center;
-  color: white;
+  background-size: cover;
   border: none;
 }
 
 .card-news .bi-box-arrow-up-right {
   color: #fff;
-  transform-origin: center center;
   transition: all .3s ease;
+  transform-origin: center center;
 }
 
 .card-news:hover .bi-box-arrow-up-right {
@@ -28,23 +28,19 @@
   padding: 1rem;
   border: none;
   border-top: 10px solid $gray-700;
-  border-bottom: 10px solid $gray-700;
   border-right: 10px solid $gray-700;
+  border-bottom: 10px solid $gray-700;
+  border-top-left-radius: 0;
   border-top-right-radius: 2.2rem;
   border-bottom-right-radius: 2.2rem;
-  border-top-left-radius: 0;
   border-bottom-left-radius: 0;
   transition: all .3s ease;
 
   &:hover {
-    border-bottom-color: $red-600; 
     border-top-color: $red-600;
     border-right-color: $red-600;
+    border-bottom-color: $red-600;
   }
-}
-
-.card.card-circuit:hover svg.bi-box-arrow-up-right {
-  color: red;
 }
 
 .circuit-name {
@@ -62,40 +58,41 @@
 
 .card-racecalender-section:hover .btn {
   background-color: $red;
-  border-color: $red !important
+  border-color: $red;
 }
 
-// whatis page 
+// whatis page
+
 /* Championship Section Styling */
 .championship-section {
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
 }
 
 .championship-item {
-    position: relative;
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    color: white;
-    padding: 2rem;
-    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.6);
+  position: relative;
+  padding: 2rem;
+  color: #fff;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, .6);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 
 .championship-item h5 {
-    font-size: 1.5rem;
-    font-weight: bold;
-    margin-bottom: 1rem;
+  margin-bottom: 1rem;
+  font-size: 1.5rem;
+  font-weight: 700;
 }
 
 .championship-item p {
-    font-size: 1rem;
+  font-size: 1rem;
 }
 
 .championship-item.drivers {
-    background-image: url('https://place-hold.it/1200x250');
+  background-image: url("https://place-hold.it/1200x250");
 }
 
 .championship-item.constructors {
-    background-image: url('https://place-hold.it/1200x250');
+  background-image: url("https://place-hold.it/1200x250");
 }

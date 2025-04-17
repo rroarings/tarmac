@@ -1,101 +1,136 @@
 // Block: driver-standings
 .driver-standings__list {
-	background-color: $gray-200;
-	transition: all 0.3s ease;
-	list-style: none;
-	padding: 0;
-	margin: 0;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  background-color: $gray-200;
+  transition: all .3s ease;
 }
 
 // Element: __item
 .driver-standings__item {
-	background-color: $gray-200;
-	align-items: center;
-	padding: 0.5rem 1rem;
-	transition: all 0.3s ease;
+  align-items: center;
+  padding: .6rem 1.5rem;
+  background-color: $gray-200;
+  transition: all .3s ease;
 
-	&:hover {
-		background-color: $gray-700;
-	}
+  &:hover {
+    background-color: $gray-800;
+  }
 }
 
 .driver-standings__item:hover .driver-standings__link {
-	// Change link color on hover
-	color: $gray-200;
+  // Change link color on hover
+  color: $gray-200;
 }
 .driver-standings__item:hover .driver-standings__team-name {
-	// Change link color on hover
-	color: $gray-200;
+  // Change link color on hover
+  color: $gray-200;
+}
+
+.driver-standings__item:hover .text-bg-standings {
+  color: #000;
+  background-color: $gray-300;
 }
 
 // Element: __link
 .driver-standings__link {
-	color: #000;
-	text-decoration: none;
-	display: flex;
-	transition: all 0.3s ease;
+  display: flex;
+  color: #000;
+  text-decoration: none;
+  transition: all .3s ease;
+}
+
+// standings chevron
+.driver-standings__chevron {
+  margin-left: 1rem;
+  color: $red;
+  transition: all .3s ease;
+}
+
+.driver-standings__item:hover .driver-standings__chevron {
+  // Change chevron color on hover
+  color: $gray-200;
 }
 
 // Base styles for the divider
 .driver-standings__divider {
-	margin-left: 1rem;
-	margin-right: 1rem;
+  margin-right: 1rem;
+  margin-left: 1rem;
 
-	svg {
-		transition: fill 0.3s ease; // Smooth transition for fill color
-	}
+  svg {
+    transition: fill .3s ease; // Smooth transition for fill color
+  }
 }
 
 // Modifier styles for team-specific colors
 .driver-standings__divider--mclaren svg {
-	fill: $orange;
+  fill: $orange;
 }
 .driver-standings__divider--redbull svg {
-	fill: $blue;
+  fill: $blue;
 }
 .driver-standings__divider--ferrari svg {
-	fill: $red;
+  fill: $red;
 }
 .driver-standings__divider--mercedes svg {
-	fill: $teal;
+  fill: $teal;
 }
 .driver-standings__divider--haas svg {
-	fill: $gray-800;
+  fill: $gray-800;
 }
 .driver-standings__divider--astonmartin svg {
-	fill: $green-600;
+  fill: $green-600;
+}
+.driver-standings__divider--williams svg {
+  fill: #005aff;
+}
+.driver-standings__divider--racingbulls svg {
+  fill: #2b4562;
+}
+.driver-standings__divider--alpine svg {
+  fill: #0090ff;
+}
+.driver-standings__divider--kicksauber svg {
+  fill: #00ff62;
+}
+
+.driver-standings__item:hover .driver-standings__divider--haas svg {
+  // Change divider color on hover
+  fill: $red;
 }
 
 // Element: __driver-name
 .driver-standings__driver-name {
-	font-size: 1.2rem;
+  font-size: 1.2rem;
 }
 
 // Element: __team-name
 .driver-standings__team-name {
-	color: $gray-600;
-	font-size: small;
-	margin-left: 0.4rem;
-	transition: all 0.3s ease;
+  margin-left: .4rem;
+  font-size: small;
+  color: $gray-600;
+  transition: all .3s ease;
 }
 
 // todo refactor to another file for driver profile styles - but these are used in a list group...
 // driver profile info badges
+
 /* start list group item team badge hover styles */
 .lgi-mclaren .badge.text-bg-mclaren {
-	transform: scale(1);
-	transition: all 0.3s ease; // Smooth transition
+  transition: all .3s ease; // Smooth transition
+  transform: scale(1);
 }
 
 .lgi-mclaren:hover .badge.text-bg-mclaren {
-	background: darken($orange, 10%); // Example: Change background color
+  background: darken($orange, 10%); // Example: Change background color
 }
 
 .lgi-redbull .badge.text-bg-redbull {
-	transform: scale(1);
-	transition: all 0.3s ease; // Smooth transition
+  transition: all .3s ease; // Smooth transition
+  transform: scale(1);
 }
 
 .lgi-redbull:hover .badge.text-bg-redbull {
-	background: darken($red, 10%); // Example: Change background color
+  background: darken($red, 10%); // Example: Change background color
 }

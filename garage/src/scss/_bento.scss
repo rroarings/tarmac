@@ -1,8 +1,8 @@
 .bento-wrapper {
-  padding: 1rem;
   display: grid;
-  grid-template-columns: repeat(12, 1fr); 
-  gap: 1rem; 
+  grid-template-columns: repeat(12, 1fr);
+  gap: 1rem;
+  padding: 1rem;
 }
 
 .bento-item {
@@ -16,109 +16,104 @@
 }
 
 .bento-item2:nth-child(1) {
-  grid-column: span 6; 
+  grid-column: span 6;
 }
 
 .bento-item2:nth-child(2) {
-  grid-column: span 3; 
+  grid-column: span 3;
 }
 
 .bento-item2:nth-child(3) {
-  grid-column: span 3; 
+  grid-column: span 3;
 }
 
 .bento-item2:nth-child(4) {
-  grid-column: span 3; 
+  grid-column: span 3;
 }
 
 .bento-item2:nth-child(5) {
-  grid-column: span 3; 
+  grid-column: span 3;
 }
 
 .bento-item2:nth-child(6) {
-  grid-column: span 6; 
+  grid-column: span 6;
 }
 
 .bento-item h5 {
-  transition: transform 0.3s ease; /* Use transform for translateX */
+  transition: transform .3s ease;
 }
 
 .bento-item-bg-cover {
-  background-image: url('../assets/img/section/racei1.png');
-  background-size: cover;
-  background-position: center;
+  color: $white;
+  background-image: url("../assets/img/section/racei1.png");
   filter: grayscale(100%);
-  color: white;
+  background-position: center;
+  background-size: cover;
   transition: filter .3s ease;
 }
 
-.bento-item:hover h5 {
-}
-
 .bento-item:hover {
-  filter: none !important
+  filter: none;
 }
 
-@media (max-width: 575px) { /* Bootstrap's `md` breakpoint is 768px */
+@media (max-width: 575px) {
   .bento-item {
     grid-column: span 12; /* Each item spans the full width */
   }
 }
 
-@media (max-width: 768px) { /* Bootstrap's `md` breakpoint is 768px */
+@media (max-width: 768px) {
   .bento-item:nth-child(1) {
-    grid-column: span 6; 
+    grid-column: span 6;
   }
-  
+
   .bento-item:nth-child(2) {
-    grid-column: span 6; 
+    grid-column: span 6;
   }
-  
+
   .bento-item:nth-child(3) {
-    grid-column: span 6; 
+    grid-column: span 6;
   }
-  
+
   .bento-item:nth-child(4) {
-    grid-column: span 6; 
+    grid-column: span 6;
   }
-  
+
   .bento-item:nth-child(5) {
-    grid-column: span 12; 
+    grid-column: span 12;
   }
 }
 
-// new bento start
-
 .bento-wrapper-alt {
-  padding: 1rem;
   display: grid;
   grid-template-columns: repeat(12, 1fr); // 12-column grid
   gap: 1.5rem; // Larger gap for a more spacious layout
+  padding: 1rem;
 }
 
 .bento-item-alt {
   position: relative; // For overlapping content
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
   padding: 20px;
-  border-radius: 8px;
   background-color: $gray-200; // Light background color
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); // Subtle shadow for depth
-  transition: background-color 0.3s ease, box-shadow 0.3s ease; // Smooth hover effects
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, .1); // Subtle shadow for depth
+  transition: background-color .3s ease, box-shadow .3s ease; // Smooth hover effects
 }
 
 .bento-item-alt:hover {
   background-color: $gray-400; // Highlighted background
 
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); // Enhance shadow on hover
+  box-shadow: 0 8px 16px rgba(0, 0, 0, .2); // Enhance shadow on hover
 }
 
 .bento-item-alt h5 {
-  margin-bottom: 0.5rem;
+  margin-bottom: .5rem;
   font-size: 1.25rem;
-  font-weight: bold;
+  font-weight: 700;
   color: $gray-800;
 }
 
@@ -128,33 +123,33 @@
 }
 
 .bento-item-alt:nth-child(1) {
-  grid-column: span 6; // Spans half the grid
   grid-row: span 3; // Takes up two rows
+  grid-column: span 6; // Spans half the grid
 }
 
 .bento-item-alt:nth-child(2) {
-  grid-column: span 3; // Spans 4 columns
   grid-row: span 5; // Single row
+  grid-column: span 3; // Spans 4 columns
 }
 
 .bento-item-alt:nth-child(3) {
-  grid-column: span 3; // Spans 2 columns
   grid-row: span 5; // Takes up two rows
+  grid-column: span 3; // Spans 2 columns
 }
 
 .bento-item-alt:nth-child(4) {
-  grid-column: span 6; // Spans half the grid
   grid-row: span 2; // Single row
+  grid-column: span 6; // Spans half the grid
 }
 
 .bento-item-alt:nth-child(5) {
-  grid-column: span 12; // Spans half the grid
   grid-row: span 2; // Single row
+  grid-column: span 12; // Spans half the grid
 }
 
 .bento-item-alt:nth-child(6) {
-  grid-column: span 12; // Full width
   grid-row: span 1; // Single row
+  grid-column: span 12; // Full width
   background-color: $gray-200; // Highlighted background
 }
 
@@ -188,5 +183,3 @@
     grid-column: span 1; // Full width for all items
   }
 }
-
-
