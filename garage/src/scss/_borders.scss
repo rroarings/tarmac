@@ -34,6 +34,11 @@
   border-bottom-left-radius: 0;
 }
 
+.border-open-left--open-top--w2 {
+  @extend .border-open-left--open-top;
+  border-width: 5px;
+}
+
 .border-mclaren {
   border-color: $orange;
   border-top: 8px solid;
