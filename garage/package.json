@@ -8,6 +8,7 @@
     "lint": "stylelint 'src/**/*.scss' --fix --cache",
     "format:pages": "prettier --write 'src/pages/**/*.html'",
     "format:seasons": "prettier --write 'src/seasons/**/*.html'",
+    "format:all-html": "prettier --write 'src/**/*.html'",
     "build": "parcel build src/index.html --public-url / --dist-dir dist",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
