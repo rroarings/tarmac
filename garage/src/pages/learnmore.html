@@ -1,912 +1,740 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<meta
-			name="viewport"
-			content="width=device-width, initial-scale=1, shrink-to-fit=no"
-		/>
-		<meta
-			name="description"
-			content="Formula Bootstrap is a a Bootstrap built website that explores some areas of Formula One."
-		/>
-		<meta
-			name="author"
-			content="Nick Calvo"
-		/>
-		<title>Trackside | Learn More</title>
-		<link
-			rel="stylesheet"
-			href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
-		/>
-		<link
-			rel="stylesheet"
-			href="../scss/styles.scss"
-		/>
-	</head>
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <meta
+      name="description"
+      content="Formula Bootstrap is a a Bootstrap built website that explores some areas of Formula One."
+    />
+    <meta name="author" content="Nick Calvo" />
+    <title>Trackside | Learn More</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="../scss/styles.scss" />
+  </head>
 
-	<body>
-		<!-- Add this to your body to display the breakpoint size -->
-		<div
-			id="breakpoint"
-			class="breakpoint-size"
-		></div>
+  <body>
+    <!-- Add this to your body to display the breakpoint size -->
+    <div id="breakpoint" class="breakpoint-size"></div>
 
-		<!-- TODO update page links soon™ -->
-		<!-- site header -->
-		<nav
-			class="navbar navbar-expand-lg sticky-top"
-			id="mainNav"
-		>
-			<div class="container">
-				<a
-					class="navbar-brand"
-					href="#page-top"
-				>
-					<img
-						src="../assets/img/logos/trackside-logoblack.png"
-						class="img-fluid w-50"
-						alt="Trackside Logo"
-					/>
-				</a>
-				<button
-					class="navbar-toggler"
-					type="button"
-					data-bs-toggle="collapse"
-					data-bs-target="#navbarResponsive"
-					aria-controls="navbarResponsive"
-					aria-expanded="false"
-					aria-label="Toggle navigation"
-				>
-					Menu
-					<i class="fas fa-bars ms-1"></i>
-				</button>
-				<div
-					class="collapse navbar-collapse"
-					id="navbarResponsive"
-				>
-					<ul class="navbar-nav ms-auto me-4 py-4 py-lg-0">
-						<li class="nav-item">
-							<a
-								class="nav-link"
-								href="../index.html"
-								>Home</a
-							>
-						</li>
-						<li class="nav-item dropdown">
-							<a
-								class="nav-link dropdown-toggle"
-								href="#"
-								id="aboutDropdown"
-								role="button"
-								data-bs-toggle="dropdown"
-								aria-expanded="false"
-							>
-								About F1
-							</a>
-							<ul
-								class="dropdown-menu"
-								aria-labelledby="aboutDropdown"
-							>
-								<li>
-									<a
-										class="dropdown-item"
-										href="#"
-										>What is Formula 1</a
-									>
-								</li>
-								<li>
-									<a
-										class="dropdown-item"
-										href="technologies.html"
-										>Technology of F1</a
-									>
-								</li>
-								<li>
-									<a
-										class="dropdown-item"
-										href="future.html"
-										>Future of F1</a
-									>
-								</li>
-							</ul>
-						</li>
-						<li class="nav-item dropdown">
-							<a
-								class="nav-link dropdown-toggle"
-								href="#"
-								id="aboutDropdown"
-								role="button"
-								data-bs-toggle="dropdown"
-								aria-expanded="false"
-							>
-								Race Calendars
-							</a>
-							<ul
-								class="dropdown-menu"
-								aria-labelledby="aboutDropdown"
-							>
-								<li>
-									<a
-										class="dropdown-item"
-										href="../seasons/2025/2025-calendar.html"
-										>2025 Calendar</a
-									>
-								</li>
-								<li>
-									<a
-										class="dropdown-item"
-										href="../seasons/2024/2024-calendar.html"
-										>2024 Calendar</a
-									>
-								</li>
-								<li>
-									<a
-										class="dropdown-item"
-										href="../seasons/2023/2023-calendar.html"
-										>2023 Calendar</a
-									>
-								</li>
-							</ul>
-						</li>
-						<li class="nav-item dropdown">
-							<a
-								class="nav-link dropdown-toggle"
-								href="#"
-								id="seasonsDropdown"
-								role="button"
-								data-bs-toggle="dropdown"
-								aria-expanded="false"
-							>
-								Standings
-							</a>
-							<ul
-								class="dropdown-menu"
-								aria-labelledby="seasonsDropdown"
-							>
-								<li><h6 class="dropdown-header">2025</h6></li>
-								<li>
-									<a
-										class="dropdown-item"
-										href="../seasons/2025/drivers/2025-drivers.html"
-										>2025 Drivers</a
-									>
-								</li>
-								<li>
-									<a
-										class="dropdown-item"
-										href="../seasons/2025/teams/2025-teams.html"
-										>2025 Teams</a
-									>
-								</li>
-								<li><hr class="dropdown-divider" /></li>
-								<li><h6 class="dropdown-header">2024</h6></li>
-								<li>
-									<a
-										class="dropdown-item"
-										href="#"
-										>2024 Drivers</a
-									>
-								</li>
-								<li>
-									<a
-										class="dropdown-item"
-										href="#"
-										>2024 Teams</a
-									>
-								</li>
-								<li><hr class="dropdown-divider" /></li>
-								<li><h6 class="dropdown-header">2023</h6></li>
-								<li>
-									<a
-										class="dropdown-item"
-										href="#"
-										>2023 Drivers</a
-									>
-								</li>
-								<li>
-									<a
-										class="dropdown-item"
-										href="../seasons/2023/teams/2023-teams.html"
-										>2023 Teams</a
-									>
-								</li>
-							</ul>
-						</li>
-						<li class="nav-item dropdown">
-							<a
-								class="nav-link dropdown-toggle"
-								href="#"
-								id="seasonsDropdown"
-								role="button"
-								data-bs-toggle="dropdown"
-								aria-expanded="false"
-							>
-								Season Talk
-							</a>
-							<ul
-								class="dropdown-menu"
-								aria-labelledby="seasonsDropdown"
-							>
-								<li>
-									<a
-										class="dropdown-item"
-										href="#"
-										>2025 Coverage</a
-									>
-								</li>
-								<li>
-									<a
-										class="dropdown-item"
-										href="#"
-										>2024 Breakdown</a
-									>
-								</li>
-								<li>
-									<a
-										class="dropdown-item"
-										href="#"
-										>2023 Breakdown</a
-									>
-								</li>
-							</ul>
-						</li>
-						<li class="nav-item dropdown">
-							<a
-								class="nav-link dropdown-toggle"
-								href="#"
-								id="fanZoneDropdown"
-								role="button"
-								data-bs-toggle="dropdown"
-								aria-expanded="false"
-							>
-								Site
-							</a>
-							<ul
-								class="dropdown-menu"
-								aria-labelledby="fanZoneDropdown"
-							>
-								<li>
-									<a
-										class="dropdown-item"
-										href="faqs.html"
-										>Trackside FAQs</a
-									>
-								</li>
-								<li>
-									<a
-										class="dropdown-item active"
-										href="learnmore.html"
-										aria-current="page"
-										>Learn More</a
-									>
-								</li>
-								<li>
-									<a
-										class="dropdown-item"
-										href="#"
-										>Contact Us</a
-									>
-								</li>
-								<li>
-									<a
-										class="dropdown-item"
-										href="#"
-										>Site Attributions</a
-									>
-								</li>
-							</ul>
-						</li>
-					</ul>
-				</div>
-			</div>
-		</nav>
+    <!-- TODO update page links soon™ -->
+    <!-- site header -->
+    <nav class="navbar navbar-expand-lg sticky-top" id="mainNav">
+      <div class="container">
+        <a class="navbar-brand" href="#page-top">
+          <img
+            src="../assets/img/logos/trackside-logoblack.png"
+            class="img-fluid w-50"
+            alt="Trackside Logo"
+          />
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarResponsive"
+          aria-controls="navbarResponsive"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          Menu
+          <i class="fas fa-bars ms-1"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav ms-auto me-4 py-4 py-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" href="../index.html">Home</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                id="aboutDropdown"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                About F1
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="aboutDropdown">
+                <li>
+                  <a class="dropdown-item" href="#">What is Formula 1</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="technologies.html"
+                    >Technology of F1</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="future.html">Future of F1</a>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                id="aboutDropdown"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Race Calendars
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="aboutDropdown">
+                <li>
+                  <a
+                    class="dropdown-item"
+                    href="../seasons/2025/2025-calendar.html"
+                    >2025 Calendar</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="dropdown-item"
+                    href="../seasons/2024/2024-calendar.html"
+                    >2024 Calendar</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="dropdown-item"
+                    href="../seasons/2023/2023-calendar.html"
+                    >2023 Calendar</a
+                  >
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                id="seasonsDropdown"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Standings
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="seasonsDropdown">
+                <li><h6 class="dropdown-header">2025</h6></li>
+                <li>
+                  <a
+                    class="dropdown-item"
+                    href="../seasons/2025/drivers/2025-drivers.html"
+                    >2025 Drivers</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="dropdown-item"
+                    href="../seasons/2025/teams/2025-teams.html"
+                    >2025 Teams</a
+                  >
+                </li>
+                <li><hr class="dropdown-divider" /></li>
+                <li><h6 class="dropdown-header">2024</h6></li>
+                <li>
+                  <a class="dropdown-item" href="#">2024 Drivers</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#">2024 Teams</a>
+                </li>
+                <li><hr class="dropdown-divider" /></li>
+                <li><h6 class="dropdown-header">2023</h6></li>
+                <li>
+                  <a class="dropdown-item" href="#">2023 Drivers</a>
+                </li>
+                <li>
+                  <a
+                    class="dropdown-item"
+                    href="../seasons/2023/teams/2023-teams.html"
+                    >2023 Teams</a
+                  >
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                id="seasonsDropdown"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Season Talk
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="seasonsDropdown">
+                <li>
+                  <a class="dropdown-item" href="#">2025 Coverage</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#">2024 Breakdown</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#">2023 Breakdown</a>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                id="fanZoneDropdown"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Site
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="fanZoneDropdown">
+                <li>
+                  <a class="dropdown-item" href="faqs.html">Trackside FAQs</a>
+                </li>
+                <li>
+                  <a
+                    class="dropdown-item active"
+                    href="learnmore.html"
+                    aria-current="page"
+                    >Learn More</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#">Contact Us</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#">Site Attributions</a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
 
-		<!-- learn more hero -->
-		<div class="container px-4 pt-5">
-			<div class="row py-3">
-				<div class="col-12">
-					<h1 class="display-5 fw-bold text-body-emphasis lh-1 mb-3">
-						Learn what we aim to provide at Trackside
-					</h1>
-					<p class="lead">
-						Trackside is an unofficial Formula 1 fan website created and
-						operated by a solo developer and passionate F1 enthusiast. As an
-						independent one-person operation, Trackside aims to deliver engaging
-						content that celebrates the sport, its teams, drivers, and thrilling
-						moments on and off the track.
-					</p>
-				</div>
-			</div>
-		</div>
+    <!-- learn more hero -->
+    <div class="container px-4 pt-5">
+      <div class="row py-3">
+        <div class="col-12">
+          <h1 class="display-5 fw-bold text-body-emphasis lh-1 mb-3">
+            Learn what we aim to provide at Trackside
+          </h1>
+          <p class="lead">
+            Trackside is an unofficial Formula 1 fan website created and
+            operated by a solo developer and passionate F1 enthusiast. As an
+            independent one-person operation, Trackside aims to deliver engaging
+            content that celebrates the sport, its teams, drivers, and thrilling
+            moments on and off the track.
+          </p>
+        </div>
+      </div>
+    </div>
 
-		<div class="container px-4 py-5 visually-hidden">
-			<h2 class="pb-2 border-bottom">Focal points of Trackside</h2>
-			<div class="row row-cols-1 row-cols-lg-2 align-items-md-center g-5 py-5">
-				<div class="col d-flex flex-column align-items-start gap-2">
-					<h2 class="fw-bold text-body-emphasis">
-						Digestable race season breakdowns
-					</h2>
-					<p class="text-body-secondary">
-						Explore concise yet informative recaps of each F1 season, from
-						dramatic race results to pivotal moments. These breakdowns are
-						designed to give you a quick understanding of the season's story
-						without overwhelming you with details.
-					</p>
-				</div>
+    <div class="container px-4 py-5 visually-hidden">
+      <h2 class="pb-2 border-bottom">Focal points of Trackside</h2>
+      <div class="row row-cols-1 row-cols-lg-2 align-items-md-center g-5 py-5">
+        <div class="col d-flex flex-column align-items-start gap-2">
+          <h2 class="fw-bold text-body-emphasis">
+            Digestable race season breakdowns
+          </h2>
+          <p class="text-body-secondary">
+            Explore concise yet informative recaps of each F1 season, from
+            dramatic race results to pivotal moments. These breakdowns are
+            designed to give you a quick understanding of the season's story
+            without overwhelming you with details.
+          </p>
+        </div>
 
-				<div class="col">
-					<div class="row row-cols-1 row-cols-sm-2 g-4">
-						<div class="col d-flex flex-column gap-2">
-							<div
-								class="feature-icon-small d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-4 rounded-3"
-							>
-								<svg
-									xmlns="http://www.w3.org/2000/svg"
-									width="1em"
-									height="1em"
-									fill="currentColor"
-									class="bi bi-camera-reels"
-									viewBox="0 0 16 16"
-								>
-									<path
-										d="M6 3a3 3 0 1 1-6 0 3 3 0 0 1 6 0M1 3a2 2 0 1 0 4 0 2 2 0 0 0-4 0"
-									/>
-									<path
-										d="M9 6h.5a2 2 0 0 1 1.983 1.738l3.11-1.382A1 1 0 0 1 16 7.269v7.462a1 1 0 0 1-1.406.913l-3.111-1.382A2 2 0 0 1 9.5 16H2a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2zm6 8.73V7.27l-3.5 1.555v4.35zM1 8v6a1 1 0 0 0 1 1h7.5a1 1 0 0 0 1-1V8a1 1 0 0 0-1-1H2a1 1 0 0 0-1 1"
-									/>
-									<path
-										d="M9 6a3 3 0 1 0 0-6 3 3 0 0 0 0 6M7 3a2 2 0 1 1 4 0 2 2 0 0 1-4 0"
-									/>
-								</svg>
-							</div>
-							<h4 class="fw-semibold mb-0 text-body-emphasis">
-								Season Highlights
-							</h4>
-							<p class="text-body-secondary">
-								Explore detailed breakdowns of the 2023, 2024, and 2025 F1
-								seasons, including race results, standings, and memorable
-								moments.
-							</p>
-						</div>
+        <div class="col">
+          <div class="row row-cols-1 row-cols-sm-2 g-4">
+            <div class="col d-flex flex-column gap-2">
+              <div
+                class="feature-icon-small d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-4 rounded-3"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="1em"
+                  height="1em"
+                  fill="currentColor"
+                  class="bi bi-camera-reels"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    d="M6 3a3 3 0 1 1-6 0 3 3 0 0 1 6 0M1 3a2 2 0 1 0 4 0 2 2 0 0 0-4 0"
+                  />
+                  <path
+                    d="M9 6h.5a2 2 0 0 1 1.983 1.738l3.11-1.382A1 1 0 0 1 16 7.269v7.462a1 1 0 0 1-1.406.913l-3.111-1.382A2 2 0 0 1 9.5 16H2a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2zm6 8.73V7.27l-3.5 1.555v4.35zM1 8v6a1 1 0 0 0 1 1h7.5a1 1 0 0 0 1-1V8a1 1 0 0 0-1-1H2a1 1 0 0 0-1 1"
+                  />
+                  <path
+                    d="M9 6a3 3 0 1 0 0-6 3 3 0 0 0 0 6M7 3a2 2 0 1 1 4 0 2 2 0 0 1-4 0"
+                  />
+                </svg>
+              </div>
+              <h4 class="fw-semibold mb-0 text-body-emphasis">
+                Season Highlights
+              </h4>
+              <p class="text-body-secondary">
+                Explore detailed breakdowns of the 2023, 2024, and 2025 F1
+                seasons, including race results, standings, and memorable
+                moments.
+              </p>
+            </div>
 
-						<div class="col d-flex flex-column gap-2">
-							<div
-								class="feature-icon-small d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-4 rounded-3"
-							>
-								<svg
-									xmlns="http://www.w3.org/2000/svg"
-									width="1em"
-									height="1em"
-									fill="currentColor"
-									class="bi bi-graph-up"
-									viewBox="0 0 16 16"
-								>
-									<path
-										fill-rule="evenodd"
-										d="M0 0h1v15h15v1H0zm14.817 3.113a.5.5 0 0 1 .07.704l-4.5 5.5a.5.5 0 0 1-.74.037L7.06 6.767l-3.656 5.027a.5.5 0 0 1-.808-.588l4-5.5a.5.5 0 0 1 .758-.06l2.609 2.61 4.15-5.073a.5.5 0 0 1 .704-.07"
-									/>
-								</svg>
-							</div>
-							<h4 class="fw-semibold mb-0 text-body-emphasis">Driver Stats</h4>
-							<p class="text-body-secondary">
-								Dive into general statistics for your favorite drivers,
-								including performance insights and race-by-race summaries.
-							</p>
-						</div>
+            <div class="col d-flex flex-column gap-2">
+              <div
+                class="feature-icon-small d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-4 rounded-3"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="1em"
+                  height="1em"
+                  fill="currentColor"
+                  class="bi bi-graph-up"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M0 0h1v15h15v1H0zm14.817 3.113a.5.5 0 0 1 .07.704l-4.5 5.5a.5.5 0 0 1-.74.037L7.06 6.767l-3.656 5.027a.5.5 0 0 1-.808-.588l4-5.5a.5.5 0 0 1 .758-.06l2.609 2.61 4.15-5.073a.5.5 0 0 1 .704-.07"
+                  />
+                </svg>
+              </div>
+              <h4 class="fw-semibold mb-0 text-body-emphasis">Driver Stats</h4>
+              <p class="text-body-secondary">
+                Dive into general statistics for your favorite drivers,
+                including performance insights and race-by-race summaries.
+              </p>
+            </div>
 
-						<div class="col d-flex flex-column gap-2">
-							<div
-								class="feature-icon-small d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-4 rounded-3"
-							>
-								<svg
-									xmlns="http://www.w3.org/2000/svg"
-									width="1em"
-									height="1em"
-									fill="currentColor"
-									class="bi bi-stopwatch"
-									viewBox="0 0 16 16"
-								>
-									<path
-										d="M8.5 5.6a.5.5 0 1 0-1 0v2.9h-3a.5.5 0 0 0 0 1H8a.5.5 0 0 0 .5-.5z"
-									/>
-									<path
-										d="M6.5 1A.5.5 0 0 1 7 .5h2a.5.5 0 0 1 0 1v.57c1.36.196 2.594.78 3.584 1.64l.012-.013.354-.354-.354-.353a.5.5 0 0 1 .707-.708l1.414 1.415a.5.5 0 1 1-.707.707l-.353-.354-.354.354-.013.012A7 7 0 1 1 7 2.071V1.5a.5.5 0 0 1-.5-.5M8 3a6 6 0 1 0 .001 12A6 6 0 0 0 8 3"
-									/>
-								</svg>
-							</div>
-							<h4 class="fw-semibold mb-0 text-body-emphasis">
-								Race Information
-							</h4>
-							<p class="text-body-secondary">
-								Get an in-depth look at individual races, with recreated moments
-								captured using F1 23 and F1 24 video games.
-							</p>
-						</div>
+            <div class="col d-flex flex-column gap-2">
+              <div
+                class="feature-icon-small d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-4 rounded-3"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="1em"
+                  height="1em"
+                  fill="currentColor"
+                  class="bi bi-stopwatch"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    d="M8.5 5.6a.5.5 0 1 0-1 0v2.9h-3a.5.5 0 0 0 0 1H8a.5.5 0 0 0 .5-.5z"
+                  />
+                  <path
+                    d="M6.5 1A.5.5 0 0 1 7 .5h2a.5.5 0 0 1 0 1v.57c1.36.196 2.594.78 3.584 1.64l.012-.013.354-.354-.354-.353a.5.5 0 0 1 .707-.708l1.414 1.415a.5.5 0 1 1-.707.707l-.353-.354-.354.354-.013.012A7 7 0 1 1 7 2.071V1.5a.5.5 0 0 1-.5-.5M8 3a6 6 0 1 0 .001 12A6 6 0 0 0 8 3"
+                  />
+                </svg>
+              </div>
+              <h4 class="fw-semibold mb-0 text-body-emphasis">
+                Race Information
+              </h4>
+              <p class="text-body-secondary">
+                Get an in-depth look at individual races, with recreated moments
+                captured using F1 23 and F1 24 video games.
+              </p>
+            </div>
 
-						<div class="col d-flex flex-column gap-2">
-							<div
-								class="feature-icon-small d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-4 rounded-3"
-							>
-								<svg
-									xmlns="http://www.w3.org/2000/svg"
-									width="1em"
-									height="1em"
-									fill="currentColor"
-									class="bi bi-briefcase"
-									viewBox="0 0 16 16"
-								>
-									<path
-										d="M6.5 1A1.5 1.5 0 0 0 5 2.5V3H1.5A1.5 1.5 0 0 0 0 4.5v8A1.5 1.5 0 0 0 1.5 14h13a1.5 1.5 0 0 0 1.5-1.5v-8A1.5 1.5 0 0 0 14.5 3H11v-.5A1.5 1.5 0 0 0 9.5 1zm0 1h3a.5.5 0 0 1 .5.5V3H6v-.5a.5.5 0 0 1 .5-.5m1.886 6.914L15 7.151V12.5a.5.5 0 0 1-.5.5h-13a.5.5 0 0 1-.5-.5V7.15l6.614 1.764a1.5 1.5 0 0 0 .772 0M1.5 4h13a.5.5 0 0 1 .5.5v1.616L8.129 7.948a.5.5 0 0 1-.258 0L1 6.116V4.5a.5.5 0 0 1 .5-.5"
-									/>
-								</svg>
-							</div>
-							<h4 class="fw-semibold mb-0 text-body-emphasis">
-								Original Footage
-							</h4>
-							<p class="text-body-secondary">
-								Relive iconic moments recreated within the F1 games, providing a
-								unique perspective on key events from the season.
-							</p>
-						</div>
-					</div>
-				</div>
-			</div>
+            <div class="col d-flex flex-column gap-2">
+              <div
+                class="feature-icon-small d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-4 rounded-3"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="1em"
+                  height="1em"
+                  fill="currentColor"
+                  class="bi bi-briefcase"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    d="M6.5 1A1.5 1.5 0 0 0 5 2.5V3H1.5A1.5 1.5 0 0 0 0 4.5v8A1.5 1.5 0 0 0 1.5 14h13a1.5 1.5 0 0 0 1.5-1.5v-8A1.5 1.5 0 0 0 14.5 3H11v-.5A1.5 1.5 0 0 0 9.5 1zm0 1h3a.5.5 0 0 1 .5.5V3H6v-.5a.5.5 0 0 1 .5-.5m1.886 6.914L15 7.151V12.5a.5.5 0 0 1-.5.5h-13a.5.5 0 0 1-.5-.5V7.15l6.614 1.764a1.5 1.5 0 0 0 .772 0M1.5 4h13a.5.5 0 0 1 .5.5v1.616L8.129 7.948a.5.5 0 0 1-.258 0L1 6.116V4.5a.5.5 0 0 1 .5-.5"
+                  />
+                </svg>
+              </div>
+              <h4 class="fw-semibold mb-0 text-body-emphasis">
+                Original Footage
+              </h4>
+              <p class="text-body-secondary">
+                Relive iconic moments recreated within the F1 games, providing a
+                unique perspective on key events from the season.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
 
-			<div
-				class="row row-cols-1 row-cols-lg-2 flex-row-reverse align-items-md-center g-5 py-5"
-			>
-				<div class="col d-flex flex-column align-items-start gap-2">
-					<h2 class="fw-bold text-body-emphasis">A Deep Dive Into Formula 1</h2>
-					<p class="text-body-secondary">
-						Uncover the essence, technology, and future of Formula 1 with
-						engaging insights into what makes it the most thrilling motorsport
-						in the world.
-					</p>
-				</div>
+      <div
+        class="row row-cols-1 row-cols-lg-2 flex-row-reverse align-items-md-center g-5 py-5"
+      >
+        <div class="col d-flex flex-column align-items-start gap-2">
+          <h2 class="fw-bold text-body-emphasis">A Deep Dive Into Formula 1</h2>
+          <p class="text-body-secondary">
+            Uncover the essence, technology, and future of Formula 1 with
+            engaging insights into what makes it the most thrilling motorsport
+            in the world.
+          </p>
+        </div>
 
-				<div class="col">
-					<div class="row row-cols-1 row-cols-sm-2 g-4">
-						<div class="col d-flex flex-column gap-2">
-							<div
-								class="feature-icon-small d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-4 rounded-3"
-							>
-								<svg
-									xmlns="http://www.w3.org/2000/svg"
-									width="1em"
-									height="1em"
-									fill="currentColor"
-									class="bi bi-camera-reels"
-									viewBox="0 0 16 16"
-								>
-									<path
-										d="M6 3a3 3 0 1 1-6 0 3 3 0 0 1 6 0M1 3a2 2 0 1 0 4 0 2 2 0 0 0-4 0"
-									/>
-									<path
-										d="M9 6h.5a2 2 0 0 1 1.983 1.738l3.11-1.382A1 1 0 0 1 16 7.269v7.462a1 1 0 0 1-1.406.913l-3.111-1.382A2 2 0 0 1 9.5 16H2a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2zm6 8.73V7.27l-3.5 1.555v4.35zM1 8v6a1 1 0 0 0 1 1h7.5a1 1 0 0 0 1-1V8a1 1 0 0 0-1-1H2a1 1 0 0 0-1 1"
-									/>
-									<path
-										d="M9 6a3 3 0 1 0 0-6 3 3 0 0 0 0 6M7 3a2 2 0 1 1 4 0 2 2 0 0 1-4 0"
-									/>
-								</svg>
-							</div>
-							<h4 class="fw-semibold mb-0 text-body-emphasis">
-								The Essence of Formula 1
-							</h4>
-							<p class="text-body-secondary">
-								Learn what makes Formula 1 the pinnacle of motorsport, from its
-								rich history to the high-speed action that defines each season.
-							</p>
-						</div>
+        <div class="col">
+          <div class="row row-cols-1 row-cols-sm-2 g-4">
+            <div class="col d-flex flex-column gap-2">
+              <div
+                class="feature-icon-small d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-4 rounded-3"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="1em"
+                  height="1em"
+                  fill="currentColor"
+                  class="bi bi-camera-reels"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    d="M6 3a3 3 0 1 1-6 0 3 3 0 0 1 6 0M1 3a2 2 0 1 0 4 0 2 2 0 0 0-4 0"
+                  />
+                  <path
+                    d="M9 6h.5a2 2 0 0 1 1.983 1.738l3.11-1.382A1 1 0 0 1 16 7.269v7.462a1 1 0 0 1-1.406.913l-3.111-1.382A2 2 0 0 1 9.5 16H2a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2zm6 8.73V7.27l-3.5 1.555v4.35zM1 8v6a1 1 0 0 0 1 1h7.5a1 1 0 0 0 1-1V8a1 1 0 0 0-1-1H2a1 1 0 0 0-1 1"
+                  />
+                  <path
+                    d="M9 6a3 3 0 1 0 0-6 3 3 0 0 0 0 6M7 3a2 2 0 1 1 4 0 2 2 0 0 1-4 0"
+                  />
+                </svg>
+              </div>
+              <h4 class="fw-semibold mb-0 text-body-emphasis">
+                The Essence of Formula 1
+              </h4>
+              <p class="text-body-secondary">
+                Learn what makes Formula 1 the pinnacle of motorsport, from its
+                rich history to the high-speed action that defines each season.
+              </p>
+            </div>
 
-						<div class="col d-flex flex-column gap-2">
-							<div
-								class="feature-icon-small d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-4 rounded-3"
-							>
-								<svg
-									xmlns="http://www.w3.org/2000/svg"
-									width="1em"
-									height="1em"
-									fill="currentColor"
-									class="bi bi-graph-up"
-									viewBox="0 0 16 16"
-								>
-									<path
-										fill-rule="evenodd"
-										d="M0 0h1v15h15v1H0zm14.817 3.113a.5.5 0 0 1 .07.704l-4.5 5.5a.5.5 0 0 1-.74.037L7.06 6.767l-3.656 5.027a.5.5 0 0 1-.808-.588l4-5.5a.5.5 0 0 1 .758-.06l2.609 2.61 4.15-5.073a.5.5 0 0 1 .704-.07"
-									/>
-								</svg>
-							</div>
-							<h4 class="fw-semibold mb-0 text-body-emphasis">
-								Innovations on Track
-							</h4>
-							<p class="text-body-secondary">
-								Discover the groundbreaking technology that powers Formula 1
-								cars, from hybrid engines to advanced aerodynamics and
-								data-driven strategies.
-							</p>
-						</div>
+            <div class="col d-flex flex-column gap-2">
+              <div
+                class="feature-icon-small d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-4 rounded-3"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="1em"
+                  height="1em"
+                  fill="currentColor"
+                  class="bi bi-graph-up"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M0 0h1v15h15v1H0zm14.817 3.113a.5.5 0 0 1 .07.704l-4.5 5.5a.5.5 0 0 1-.74.037L7.06 6.767l-3.656 5.027a.5.5 0 0 1-.808-.588l4-5.5a.5.5 0 0 1 .758-.06l2.609 2.61 4.15-5.073a.5.5 0 0 1 .704-.07"
+                  />
+                </svg>
+              </div>
+              <h4 class="fw-semibold mb-0 text-body-emphasis">
+                Innovations on Track
+              </h4>
+              <p class="text-body-secondary">
+                Discover the groundbreaking technology that powers Formula 1
+                cars, from hybrid engines to advanced aerodynamics and
+                data-driven strategies.
+              </p>
+            </div>
 
-						<div class="col d-flex flex-column gap-2">
-							<div
-								class="feature-icon-small d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-4 rounded-3"
-							>
-								<svg
-									xmlns="http://www.w3.org/2000/svg"
-									width="1em"
-									height="1em"
-									fill="currentColor"
-									class="bi bi-stopwatch"
-									viewBox="0 0 16 16"
-								>
-									<path
-										d="M8.5 5.6a.5.5 0 1 0-1 0v2.9h-3a.5.5 0 0 0 0 1H8a.5.5 0 0 0 .5-.5z"
-									/>
-									<path
-										d="M6.5 1A.5.5 0 0 1 7 .5h2a.5.5 0 0 1 0 1v.57c1.36.196 2.594.78 3.584 1.64l.012-.013.354-.354-.354-.353a.5.5 0 0 1 .707-.708l1.414 1.415a.5.5 0 1 1-.707.707l-.353-.354-.354.354-.013.012A7 7 0 1 1 7 2.071V1.5a.5.5 0 0 1-.5-.5M8 3a6 6 0 1 0 .001 12A6 6 0 0 0 8 3"
-									/>
-								</svg>
-							</div>
-							<h4 class="fw-semibold mb-0 text-body-emphasis">
-								Shaping the Future
-							</h4>
-							<p class="text-body-secondary">
-								Explore how Formula 1 is evolving with sustainable fuels,
-								eco-friendly initiatives, and advancements aimed at redefining
-								the sport for generations to come.
-							</p>
-						</div>
+            <div class="col d-flex flex-column gap-2">
+              <div
+                class="feature-icon-small d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-4 rounded-3"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="1em"
+                  height="1em"
+                  fill="currentColor"
+                  class="bi bi-stopwatch"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    d="M8.5 5.6a.5.5 0 1 0-1 0v2.9h-3a.5.5 0 0 0 0 1H8a.5.5 0 0 0 .5-.5z"
+                  />
+                  <path
+                    d="M6.5 1A.5.5 0 0 1 7 .5h2a.5.5 0 0 1 0 1v.57c1.36.196 2.594.78 3.584 1.64l.012-.013.354-.354-.354-.353a.5.5 0 0 1 .707-.708l1.414 1.415a.5.5 0 1 1-.707.707l-.353-.354-.354.354-.013.012A7 7 0 1 1 7 2.071V1.5a.5.5 0 0 1-.5-.5M8 3a6 6 0 1 0 .001 12A6 6 0 0 0 8 3"
+                  />
+                </svg>
+              </div>
+              <h4 class="fw-semibold mb-0 text-body-emphasis">
+                Shaping the Future
+              </h4>
+              <p class="text-body-secondary">
+                Explore how Formula 1 is evolving with sustainable fuels,
+                eco-friendly initiatives, and advancements aimed at redefining
+                the sport for generations to come.
+              </p>
+            </div>
 
-						<div class="col d-flex flex-column gap-2">
-							<div
-								class="feature-icon-small d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-4 rounded-3"
-							>
-								<svg
-									xmlns="http://www.w3.org/2000/svg"
-									width="1em"
-									height="1em"
-									fill="currentColor"
-									class="bi bi-briefcase"
-									viewBox="0 0 16 16"
-								>
-									<path
-										d="M6.5 1A1.5 1.5 0 0 0 5 2.5V3H1.5A1.5 1.5 0 0 0 0 4.5v8A1.5 1.5 0 0 0 1.5 14h13a1.5 1.5 0 0 0 1.5-1.5v-8A1.5 1.5 0 0 0 14.5 3H11v-.5A1.5 1.5 0 0 0 9.5 1zm0 1h3a.5.5 0 0 1 .5.5V3H6v-.5a.5.5 0 0 1 .5-.5m1.886 6.914L15 7.151V12.5a.5.5 0 0 1-.5.5h-13a.5.5 0 0 1-.5-.5V7.15l6.614 1.764a1.5 1.5 0 0 0 .772 0M1.5 4h13a.5.5 0 0 1 .5.5v1.616L8.129 7.948a.5.5 0 0 1-.258 0L1 6.116V4.5a.5.5 0 0 1 .5-.5"
-									/>
-								</svg>
-							</div>
-							<h4 class="fw-semibold mb-0 text-body-emphasis">
-								Original Footage
-							</h4>
-							<p class="text-body-secondary">
-								Relive iconic moments recreated within the F1 games, providing a
-								unique perspective on key events from the season.
-							</p>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
+            <div class="col d-flex flex-column gap-2">
+              <div
+                class="feature-icon-small d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-4 rounded-3"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="1em"
+                  height="1em"
+                  fill="currentColor"
+                  class="bi bi-briefcase"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    d="M6.5 1A1.5 1.5 0 0 0 5 2.5V3H1.5A1.5 1.5 0 0 0 0 4.5v8A1.5 1.5 0 0 0 1.5 14h13a1.5 1.5 0 0 0 1.5-1.5v-8A1.5 1.5 0 0 0 14.5 3H11v-.5A1.5 1.5 0 0 0 9.5 1zm0 1h3a.5.5 0 0 1 .5.5V3H6v-.5a.5.5 0 0 1 .5-.5m1.886 6.914L15 7.151V12.5a.5.5 0 0 1-.5.5h-13a.5.5 0 0 1-.5-.5V7.15l6.614 1.764a1.5 1.5 0 0 0 .772 0M1.5 4h13a.5.5 0 0 1 .5.5v1.616L8.129 7.948a.5.5 0 0 1-.258 0L1 6.116V4.5a.5.5 0 0 1 .5-.5"
+                  />
+                </svg>
+              </div>
+              <h4 class="fw-semibold mb-0 text-body-emphasis">
+                Original Footage
+              </h4>
+              <p class="text-body-secondary">
+                Relive iconic moments recreated within the F1 games, providing a
+                unique perspective on key events from the season.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
 
-		<!-- bento 2 -->
-		<div class="container px-4 my-5">
-			<h2 class="fw-bold">Learn some beginner information about Formula 1</h2>
-			<div class="row bento-wrapper">
-				<div class="bento-item bento-span-6">
-					<div>
-						<h5>The Basics</h5>
-						<p>
-							What makes F1 unique? Dive into its structure, speed, and global
-							appeal.
-						</p>
-						<div class="text-center">
-							<img
-								src="https://place-hold.it/500x200"
-								alt=""
-								class="img-fluid"
-							/>
-						</div>
-					</div>
-				</div>
-				<div class="bento-item bento-span-3">
-					<div>
-						<h5>Behind the Machines</h5>
-						<p>How F1 cars push the limits of performance and innovation.</p>
-					</div>
-					<img
-						src="https://place-hold.it/300x150"
-						alt=""
-						class="img-fluid"
-					/>
-				</div>
-				<div class="bento-item bento-span-3">
-					<div>
-						<h5>Future of Racing</h5>
-						<p>
-							Explore how AI, data, and sustainability are shaping tomorrow's
-							grid.
-						</p>
-					</div>
-					<img
-						src="https://place-hold.it/300x100"
-						alt=""
-						class="img-fluid"
-					/>
-				</div>
-				<div class="bento-item bento-span-3">
-					<div class="my-auto">
-						<h5>Scoring & Standings</h5>
-						<p>
-							Learn how championships are won by drivers and constructors
-							throughout the season.
-						</p>
-						<img
-							src="https://place-hold.it/300x150"
-							alt=""
-							class="img-fluid"
-						/>
-					</div>
-				</div>
-				<div class="bento-item bento-span-3">
-					<div>
-						<h5>Past Seasons</h5>
-						<p>Highlights from previous years, showcasing dramatic stories.</p>
-					</div>
-					<button
-						type="button"
-						class="btn btn-danger"
-					>
-						Blast to the past
-					</button>
-				</div>
-				<div class="bento-item bento-item-bg-cover bento-span-6">
-					<img
-						src="https://place-hold.it/600x150"
-						alt=""
-						class="img-fluid"
-					/>
-					<div>
-						<h5>2025 Coverage</h5>
-						<p>Up-to-date coverage of the 2025 F1 season.</p>
-					</div>
-				</div>
-			</div>
-		</div>
+    <!-- bento 2 -->
+    <div class="container px-4 my-5">
+      <h2 class="fw-bold">Learn some beginner information about Formula 1</h2>
+      <div class="row bento-wrapper">
+        <div class="bento-item bento-span-6">
+          <div>
+            <h5>The Basics</h5>
+            <p>
+              What makes F1 unique? Dive into its structure, speed, and global
+              appeal.
+            </p>
+            <div class="text-center">
+              <img
+                src="https://place-hold.it/500x200"
+                alt=""
+                class="img-fluid"
+              />
+            </div>
+          </div>
+        </div>
+        <div class="bento-item bento-span-3">
+          <div>
+            <h5>Behind the Machines</h5>
+            <p>How F1 cars push the limits of performance and innovation.</p>
+          </div>
+          <img src="https://place-hold.it/300x150" alt="" class="img-fluid" />
+        </div>
+        <div class="bento-item bento-span-3">
+          <div>
+            <h5>Future of Racing</h5>
+            <p>
+              Explore how AI, data, and sustainability are shaping tomorrow's
+              grid.
+            </p>
+          </div>
+          <img src="https://place-hold.it/300x100" alt="" class="img-fluid" />
+        </div>
+        <div class="bento-item bento-span-3">
+          <div class="my-auto">
+            <h5>Scoring & Standings</h5>
+            <p>
+              Learn how championships are won by drivers and constructors
+              throughout the season.
+            </p>
+            <img src="https://place-hold.it/300x150" alt="" class="img-fluid" />
+          </div>
+        </div>
+        <div class="bento-item bento-span-3">
+          <div>
+            <h5>Past Seasons</h5>
+            <p>Highlights from previous years, showcasing dramatic stories.</p>
+          </div>
+          <button type="button" class="btn btn-danger">
+            Blast to the past
+          </button>
+        </div>
+        <div class="bento-item bento-item-bg-cover bento-span-6">
+          <img src="https://place-hold.it/600x150" alt="" class="img-fluid" />
+          <div>
+            <h5>2025 Coverage</h5>
+            <p>Up-to-date coverage of the 2025 F1 season.</p>
+          </div>
+        </div>
+      </div>
+    </div>
 
-		<!-- alt bento -->
-		<section class="container">
-			<h2 class="fw-bold">
-				Explore the 2025 race season and its key components
-			</h2>
-			<p>gay</p>
-			<div class="bento-wrapper-alt">
-				<div class="bento-item-alt">
-					<h5>Drivers</h5>
-					<p>Description for item 1</p>
-				</div>
-				<div class="bento-item-alt">
-					<h5>Season Standings</h5>
-					<p>Description for item 2</p>
-				</div>
-				<div class="bento-item-alt">
-					<h5>Race Highlights</h5>
-					<p>Description for item 3</p>
-				</div>
-				<div class="bento-item-alt">
-					<h5>Constructors</h5>
-					<p>Description for item 4</p>
-				</div>
-				<div class="bento-item-alt">
-					<h5>Season Overview</h5>
-					<p>Description for item 5</p>
-				</div>
-			</div>
-		</section>
+    <!-- alt bento -->
+    <section class="container">
+      <h2 class="fw-bold">
+        Explore the 2025 race season and its key components
+      </h2>
+      <p>gay</p>
+      <div class="bento-wrapper-alt">
+        <div class="bento-item-alt">
+          <h5>Drivers</h5>
+          <p>Description for item 1</p>
+        </div>
+        <div class="bento-item-alt">
+          <h5>Season Standings</h5>
+          <p>Description for item 2</p>
+        </div>
+        <div class="bento-item-alt">
+          <h5>Race Highlights</h5>
+          <p>Description for item 3</p>
+        </div>
+        <div class="bento-item-alt">
+          <h5>Constructors</h5>
+          <p>Description for item 4</p>
+        </div>
+        <div class="bento-item-alt">
+          <h5>Season Overview</h5>
+          <p>Description for item 5</p>
+        </div>
+      </div>
+    </section>
 
-		<!-- connect with us -->
-		<div class="container my-5">
-			<div class="row">
-				<div class="col-12">
-					<h2>Connect with us</h2>
-					<p>
-						Have feedback or questions? Reach out to us via email at
-						trackside@example.com or connect with us on our social media
-						channels. Thank you for being part of our journey. Together, we
-						celebrate the exhilarating world of Formula 1!
-					</p>
-				</div>
-			</div>
-		</div>
+    <!-- connect with us -->
+    <div class="container my-5">
+      <div class="row">
+        <div class="col-12">
+          <h2>Connect with us</h2>
+          <p>
+            Have feedback or questions? Reach out to us via email at
+            trackside@example.com or connect with us on our social media
+            channels. Thank you for being part of our journey. Together, we
+            celebrate the exhilarating world of Formula 1!
+          </p>
+        </div>
+      </div>
+    </div>
 
-		<!-- site disclaimer -->
-		<div
-			class="container-fluid text-bg-dark border border-gray7 border-top-0 border-start-0 border-end-0"
-		>
-			<div class="row">
-				<div class="text-center">
-					<p class="my-2">
-						DISCLAIMER: This website is unofficial and is not associated in any
-						way with the Formula 1 companies. F1, FORMULA ONE, FORMULA 1, FIA
-						FORMULA ONE WORLD CHAMPIONSHIP, GRAND PRIX and related marks are
-						trade marks of Formula One Licensing B.V.
-					</p>
-				</div>
-			</div>
-		</div>
+    <!-- site disclaimer -->
+    <div
+      class="container-fluid text-bg-dark border border-gray7 border-top-0 border-start-0 border-end-0"
+    >
+      <div class="row">
+        <div class="text-center">
+          <p class="my-2">
+            DISCLAIMER: This website is unofficial and is not associated in any
+            way with the Formula 1 companies. F1, FORMULA ONE, FORMULA 1, FIA
+            FORMULA ONE WORLD CHAMPIONSHIP, GRAND PRIX and related marks are
+            trade marks of Formula One Licensing B.V.
+          </p>
+        </div>
+      </div>
+    </div>
 
-		<!-- footer -->
-		<div class="container-fluid text-bg-dark p-3">
-			<footer
-				class="container border border-10 border-black border-start-0 border-top-0 rounded-bottom-4 rounded-start-0 pt-5 pb-0"
-			>
-				<!-- TODO update links -->
-				<div class="row">
-					<div class="col-md-5 mb-3">
-						<div>
-							<img
-								src="../assets/img/logos/trackside-logowhite.png"
-								class="img-fluid w-50 mb-3"
-								alt=""
-							/>
-							<p>Discover Formula 1 from a fan perspective.</p>
-						</div>
-					</div>
+    <!-- footer -->
+    <div class="container-fluid text-bg-dark p-3">
+      <footer
+        class="container border border-10 border-black border-start-0 border-top-0 rounded-bottom-4 rounded-start-0 pt-5 pb-0"
+      >
+        <!-- TODO update links -->
+        <div class="row">
+          <div class="col-md-5 mb-3">
+            <div>
+              <img
+                src="../assets/img/logos/trackside-logowhite.png"
+                class="img-fluid w-50 mb-3"
+                alt=""
+              />
+              <p>Discover Formula 1 from a fan perspective.</p>
+            </div>
+          </div>
 
-					<div class="col-6 col-md-2 offset-md-1 mb-3">
-						<h5>Trackside</h5>
-						<ul class="nav flex-column">
-							<li class="nav-item mb-2">
-								<a
-									href="../index.html"
-									class="nav-link p-0"
-									>Home</a
-								>
-							</li>
-							<li class="nav-item mb-2">
-								<a
-									href="#"
-									class="nav-link p-0"
-									>What is Formula 1</a
-								>
-							</li>
-							<li class="nav-item mb-2">
-								<a
-									href="technologies.html"
-									class="nav-link p-0"
-									>Technology of F1</a
-								>
-							</li>
-							<li class="nav-item mb-2">
-								<a
-									href="future.html"
-									class="nav-link p-0"
-									>Future of F1</a
-								>
-							</li>
-						</ul>
-					</div>
+          <div class="col-6 col-md-2 offset-md-1 mb-3">
+            <h5>Trackside</h5>
+            <ul class="nav flex-column">
+              <li class="nav-item mb-2">
+                <a href="../index.html" class="nav-link p-0">Home</a>
+              </li>
+              <li class="nav-item mb-2">
+                <a href="#" class="nav-link p-0">What is Formula 1</a>
+              </li>
+              <li class="nav-item mb-2">
+                <a href="technologies.html" class="nav-link p-0"
+                  >Technology of F1</a
+                >
+              </li>
+              <li class="nav-item mb-2">
+                <a href="future.html" class="nav-link p-0">Future of F1</a>
+              </li>
+            </ul>
+          </div>
 
-					<div class="col-6 col-md-2 mb-3">
-						<h5>Seasonal</h5>
-						<ul class="nav flex-column">
-							<li class="nav-item mb-2">
-								<a
-									href="#"
-									class="nav-link p-0"
-									>2025 Race Calendar</a
-								>
-							</li>
-							<li class="nav-item mb-2">
-								<a
-									href="#"
-									class="nav-link p-0"
-									>2025 Coverage</a
-								>
-							</li>
-							<li class="nav-item mb-2">
-								<a
-									href="#"
-									class="nav-link p-0"
-									>2024 Breakdown</a
-								>
-							</li>
-							<li class="nav-item mb-2">
-								<a
-									href="#"
-									class="nav-link p-0"
-									>2023 Breakdown</a
-								>
-							</li>
-						</ul>
-					</div>
+          <div class="col-6 col-md-2 mb-3">
+            <h5>Seasonal</h5>
+            <ul class="nav flex-column">
+              <li class="nav-item mb-2">
+                <a href="#" class="nav-link p-0">2025 Race Calendar</a>
+              </li>
+              <li class="nav-item mb-2">
+                <a href="#" class="nav-link p-0">2025 Coverage</a>
+              </li>
+              <li class="nav-item mb-2">
+                <a href="#" class="nav-link p-0">2024 Breakdown</a>
+              </li>
+              <li class="nav-item mb-2">
+                <a href="#" class="nav-link p-0">2023 Breakdown</a>
+              </li>
+            </ul>
+          </div>
 
-					<div class="col-6 col-md-2 mb-3">
-						<h5>Pitwall</h5>
-						<ul class="nav flex-column">
-							<li class="nav-item mb-2">
-								<a
-									href="faqs.html"
-									class="nav-link p-0"
-									>Trackside FAQs</a
-								>
-							</li>
-							<li class="nav-item mb-2">
-								<a
-									href="#"
-									class="nav-link p-0"
-									>Site Attributions</a
-								>
-							</li>
-							<li class="nav-item mb-2">
-								<a
-									href="learnmore.html"
-									class="nav-link p-0"
-									>Learn More</a
-								>
-							</li>
-							<li class="nav-item mb-2">
-								<a
-									href="#"
-									class="nav-link p-0"
-									>Contact Us</a
-								>
-							</li>
-						</ul>
-					</div>
-				</div>
+          <div class="col-6 col-md-2 mb-3">
+            <h5>Pitwall</h5>
+            <ul class="nav flex-column">
+              <li class="nav-item mb-2">
+                <a href="faqs.html" class="nav-link p-0">Trackside FAQs</a>
+              </li>
+              <li class="nav-item mb-2">
+                <a href="#" class="nav-link p-0">Site Attributions</a>
+              </li>
+              <li class="nav-item mb-2">
+                <a href="learnmore.html" class="nav-link p-0">Learn More</a>
+              </li>
+              <li class="nav-item mb-2">
+                <a href="#" class="nav-link p-0">Contact Us</a>
+              </li>
+            </ul>
+          </div>
+        </div>
 
-				<div
-					class="d-flex flex-column flex-sm-row justify-content-between py-4 my-2 border-top"
-				>
-					<p>© 2025 Nick Calvo All rights reserved.</p>
-					<ul class="list-unstyled d-flex">
-						<li class="ms-3">
-							<a
-								class="link-body-emphasis"
-								href="#"
-								><svg
-									class="bi"
-									width="24"
-									height="24"
-								>
-									<use xlink:href="#twitter"></use></svg
-							></a>
-						</li>
-						<li class="ms-3">
-							<a
-								class="link-body-emphasis"
-								href="#"
-								><svg
-									class="bi"
-									width="24"
-									height="24"
-								>
-									<use xlink:href="#instagram"></use></svg
-							></a>
-						</li>
-						<li class="ms-3">
-							<a
-								class="link-body-emphasis"
-								href="#"
-								><svg
-									class="bi"
-									width="24"
-									height="24"
-								>
-									<use xlink:href="#facebook"></use></svg
-							></a>
-						</li>
-					</ul>
-				</div>
-			</footer>
-		</div>
+        <div
+          class="d-flex flex-column flex-sm-row justify-content-between py-4 my-2 border-top"
+        >
+          <p>© 2025 Nick Calvo All rights reserved.</p>
+          <ul class="list-unstyled d-flex">
+            <li class="ms-3">
+              <a class="link-body-emphasis" href="#"
+                ><svg class="bi" width="24" height="24">
+                  <use xlink:href="#twitter"></use></svg
+              ></a>
+            </li>
+            <li class="ms-3">
+              <a class="link-body-emphasis" href="#"
+                ><svg class="bi" width="24" height="24">
+                  <use xlink:href="#instagram"></use></svg
+              ></a>
+            </li>
+            <li class="ms-3">
+              <a class="link-body-emphasis" href="#"
+                ><svg class="bi" width="24" height="24">
+                  <use xlink:href="#facebook"></use></svg
+              ></a>
+            </li>
+          </ul>
+        </div>
+      </footer>
+    </div>
 
-		<script
-			type="module"
-			src="../js/main.js"
-		></script>
-		<script
-			type="module"
-			src="../js/breakpoints.js"
-		></script>
-	</body>
+    <script type="module" src="../js/main.js"></script>
+    <script type="module" src="../js/breakpoints.js"></script>
+  </body>
 </html>
