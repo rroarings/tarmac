@@ -1,484 +1,383 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1, shrink-to-fit=no"
-    />
-    <meta
-      name="description"
-      content="Formula Bootstrap is a a Bootstrap built website that explores some areas of Formula One."
-    />
-    <meta name="author" content="Nick Calvo" />
-    <title>Alexander Albon 2025 Driver Profile | Trackside</title>
-    <link rel="stylesheet" href="../../../scss/styles.scss" />
-  </head>
 
-  <body>
-    <!-- Add this to your body to display the breakpoint size -->
-    <div id="breakpoint" class="breakpoint-size"></div>
-    <!-- site header -->
-    <nav class="navbar navbar-expand-lg sticky-top" id="mainNav">
-      <div class="container">
-        <a class="navbar-brand" href="#page-top">
-          <img
-            src="../../../assets/img/logos/trackside-logoblack.png"
-            class="img-fluid w-50"
-            alt="Trackside Logo"
-          />
-        </a>
-        <button
-          class="navbar-toggler mt-3"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarResponsive"
-          aria-controls="navbarResponsive"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          Menu
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            width="1em"
-            height="1em"
-            fill="currentColor"
-            class="bi bi-list ms-1"
-            viewBox="0 0 16 16"
-          >
-            <path
-              fill-rule="evenodd"
-              d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5"
-            />
-          </svg>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarResponsive">
-          <ul class="navbar-nav ms-auto me-4 py-4 py-lg-0">
-            <li class="nav-item">
-              <a
-                class="nav-link active"
-                href="../../../index.html"
-                aria-current="page"
-                >Home</a
-              >
-            </li>
-            <li class="nav-item dropdown">
-              <a
-                class="nav-link dropdown-toggle"
-                href="#"
-                id="aboutDropdown"
-                role="button"
-                data-bs-toggle="dropdown"
-                aria-expanded="false"
-              >
-                About F1
-              </a>
-              <ul class="dropdown-menu" aria-labelledby="aboutDropdown">
-                <li>
-                  <a class="dropdown-item" href="../../../pages/whatis.html"
-                    >What is Formula 1</a
-                  >
-                </li>
-                <li>
-                  <a
-                    class="dropdown-item"
-                    href="../../../pages/technologies.html"
-                    >Technology of F1</a
-                  >
-                </li>
-                <li>
-                  <a class="dropdown-item" href="../../../pages/future.html"
-                    >Future of F1</a
-                  >
-                </li>
-              </ul>
-            </li>
-            <li class="nav-item dropdown">
-              <a
-                class="nav-link dropdown-toggle"
-                href="#"
-                id="aboutDropdown"
-                role="button"
-                data-bs-toggle="dropdown"
-                aria-expanded="false"
-              >
-                Race Calendars
-              </a>
-              <ul class="dropdown-menu" aria-labelledby="aboutDropdown">
-                <li>
-                  <a class="dropdown-item" href="../2025-calendar.html"
-                    >2025 Calendar</a
-                  >
-                </li>
-                <li>
-                  <a class="dropdown-item" href="../../2024/2024-calendar.html"
-                    >2024 Calendar</a
-                  >
-                </li>
-                <li>
-                  <a
-                    class="dropdown-item"
-                    href="../../../seasons/2023/2023-calendar.html"
-                    >2023 Calendar</a
-                  >
-                </li>
-              </ul>
-            </li>
-            <li class="nav-item dropdown">
-              <a
-                class="nav-link dropdown-toggle"
-                href="#"
-                id="seasonsDropdown"
-                role="button"
-                data-bs-toggle="dropdown"
-                aria-expanded="false"
-              >
-                Standings
-              </a>
-              <ul class="dropdown-menu" aria-labelledby="seasonsDropdown">
-                <li>
-                  <h6 class="dropdown-header">2025</h6>
-                </li>
-                <li>
-                  <a class="dropdown-item" href="./2025-drivers.html"
-                    >2025 Drivers</a
-                  >
-                </li>
-                <li>
-                  <a class="dropdown-item" href="#">2025 Teams</a>
-                </li>
-                <li>
-                  <hr class="dropdown-divider" />
-                </li>
-                <li>
-                  <h6 class="dropdown-header">2024</h6>
-                </li>
-                <li>
-                  <a class="dropdown-item" href="#">2024 Drivers</a>
-                </li>
-                <li>
-                  <a class="dropdown-item" href="#">2024 Teams</a>
-                </li>
-                <li>
-                  <hr class="dropdown-divider" />
-                </li>
-                <li>
-                  <h6 class="dropdown-header">2023</h6>
-                </li>
-                <li>
-                  <a class="dropdown-item" href="#">2023 Drivers</a>
-                </li>
-                <li>
-                  <a
-                    class="dropdown-item"
-                    href="../../2023/teams/2023-teams.html"
-                    >2023 Teams</a
-                  >
-                </li>
-              </ul>
-            </li>
-            <li class="nav-item dropdown">
-              <a
-                class="nav-link dropdown-toggle"
-                href="#"
-                id="seasonsDropdown"
-                role="button"
-                data-bs-toggle="dropdown"
-                aria-expanded="false"
-              >
-                Season Talk
-              </a>
-              <ul class="dropdown-menu" aria-labelledby="seasonsDropdown">
-                <li>
-                  <a class="dropdown-item" href="#">2025 Coverage</a>
-                </li>
-                <li>
-                  <a class="dropdown-item" href="#">2024 Breakdown</a>
-                </li>
-                <li>
-                  <a class="dropdown-item" href="#">2023 Breakdown</a>
-                </li>
-              </ul>
-            </li>
-            <li class="nav-item dropdown">
-              <a
-                class="nav-link dropdown-toggle"
-                href="#"
-                id="fanZoneDropdown"
-                role="button"
-                data-bs-toggle="dropdown"
-                aria-expanded="false"
-              >
-                Site
-              </a>
-              <ul class="dropdown-menu" aria-labelledby="fanZoneDropdown">
-                <li>
-                  <a class="dropdown-item" href="../../../pages/faqs.html"
-                    >Trackside FAQs</a
-                  >
-                </li>
-                <li>
-                  <a class="dropdown-item" href="../../../pages/learnmore.html"
-                    >Learn More</a
-                  >
-                </li>
-                <li>
-                  <a class="dropdown-item" href="#">Contact Us</a>
-                </li>
-                <li>
-                  <a class="dropdown-item" href="#">Site Attributions</a>
-                </li>
-              </ul>
-            </li>
-          </ul>
-        </div>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <meta name="description"
+    content="Formula Bootstrap is a a Bootstrap built website that explores some areas of Formula One." />
+  <meta name="author" content="Nick Calvo" />
+  <title>Alexander Albon 2025 Driver Profile | Trackside</title>
+  <link rel="stylesheet" href="../../../scss/styles.scss" />
+</head>
+
+<body>
+  <!-- Add this to your body to display the breakpoint size -->
+  <div id="breakpoint" class="breakpoint-size"></div>
+  <!-- site header -->
+  <nav class="navbar navbar-expand-lg sticky-top" id="mainNav">
+    <div class="container">
+      <a class="navbar-brand" href="#page-top">
+        <img src="../../../assets/img/logos/trackside-logoblack.png" class="img-fluid w-50" alt="Trackside Logo" />
+      </a>
+      <button class="navbar-toggler mt-3" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive"
+        aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        Menu
+        <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" class="bi bi-list ms-1"
+          viewBox="0 0 16 16">
+          <path fill-rule="evenodd"
+            d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5" />
+        </svg>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ms-auto me-4 py-4 py-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" href="../../../index.html" aria-current="page">Home</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="aboutDropdown" role="button" data-bs-toggle="dropdown"
+              aria-expanded="false">
+              About F1
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="aboutDropdown">
+              <li>
+                <a class="dropdown-item" href="../../../pages/whatis.html">What is Formula 1</a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="../../../pages/technologies.html">Technology of F1</a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="../../../pages/future.html">Future of F1</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="aboutDropdown" role="button" data-bs-toggle="dropdown"
+              aria-expanded="false">
+              Race Calendars
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="aboutDropdown">
+              <li>
+                <a class="dropdown-item" href="../2025-calendar.html">2025 Calendar</a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="../../2024/2024-calendar.html">2024 Calendar</a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="../../../seasons/2023/2023-calendar.html">2023 Calendar</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="seasonsDropdown" role="button" data-bs-toggle="dropdown"
+              aria-expanded="false">
+              Standings
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="seasonsDropdown">
+              <li>
+                <h6 class="dropdown-header">2025</h6>
+              </li>
+              <li>
+                <a class="dropdown-item" href="./2025-drivers.html">2025 Drivers</a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="#">2025 Teams</a>
+              </li>
+              <li>
+                <hr class="dropdown-divider" />
+              </li>
+              <li>
+                <h6 class="dropdown-header">2024</h6>
+              </li>
+              <li>
+                <a class="dropdown-item" href="#">2024 Drivers</a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="#">2024 Teams</a>
+              </li>
+              <li>
+                <hr class="dropdown-divider" />
+              </li>
+              <li>
+                <h6 class="dropdown-header">2023</h6>
+              </li>
+              <li>
+                <a class="dropdown-item" href="#">2023 Drivers</a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="../../2023/teams/2023-teams.html">2023 Teams</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="seasonsDropdown" role="button" data-bs-toggle="dropdown"
+              aria-expanded="false">
+              Season Talk
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="seasonsDropdown">
+              <li>
+                <a class="dropdown-item" href="#">2025 Coverage</a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="#">2024 Breakdown</a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="#">2023 Breakdown</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="fanZoneDropdown" role="button" data-bs-toggle="dropdown"
+              aria-expanded="false">
+              Site
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="fanZoneDropdown">
+              <li>
+                <a class="dropdown-item" href="../../../pages/faqs.html">Trackside FAQs</a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="../../../pages/learnmore.html">Learn More</a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="#">Contact Us</a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="#">Site Attributions</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
       </div>
+    </div>
+  </nav>
+
+  <!-- 2025 driver breadcrumbs -->
+  <div class="container my-4">
+    <nav aria-label="breadcrumb">
+      <ol class="breadcrumb">
+        <li class="breadcrumb-item">
+          <a href="./2025-drivers.html">2025 Drivers</a>
+        </li>
+        <li class="breadcrumb-item active" aria-current="page">
+          Alexander Albon
+        </li>
+      </ol>
     </nav>
+  </div>
 
-    <!-- 2025 driver breadcrumbs -->
-    <div class="container my-4">
-      <nav aria-label="breadcrumb">
-        <ol class="breadcrumb">
-          <li class="breadcrumb-item">
-            <a href="./2025-drivers.html">2025 Drivers</a>
-          </li>
-          <li class="breadcrumb-item active" aria-current="page">
-            Alexander Albon
-          </li>
-        </ol>
-      </nav>
+  <div class="container my-5">
+    <div class="row">
+      <h5>23</h5>
+      <h2>Alexander Albon</h2>
     </div>
 
-    <div class="container my-5">
+    <div class="row gap-3">
+      <div class="col-12 col-md border-williams">
+        <img src="../../../assets/img/drivers/2024/albon-portrait-main-copy.png" class="img-fluid" alt="" />
+      </div>
+      <div class="col-12 col-md border-williams">
+        <div class="row m-2 p-1 border-open-left--open-top--w2">
+          <div class="col-12 col-md">
+            <h2 class="driver-champion-standing-pos">8</h2>
+            <h5 class="text-uppercase">
+              2025 Drivers' Championship Position
+            </h5>
+          </div>
+          <div class="col-12 col-md text-end">
+            <h2 class="driver-champion-standing-pos">18</h2>
+            <h5 class="text-uppercase">Points</h5>
+          </div>
+        </div>
+        <ul class="list-group list-group-flush">
+          <li class="list-group-item d-flex justify-content-between align-items-start lgi-williams">
+            <div class="ms-2 me-auto">
+              <div class="fw-bold">Team</div>
+            </div>
+            <span class="badge text-bg-williams rounded-pill">Williams</span>
+          </li>
+          <li class="list-group-item d-flex justify-content-between align-items-start lgi-williams">
+            <div class="ms-2 me-auto">
+              <div class="fw-bold">Podiums</div>
+            </div>
+            <span class="badge text-bg-williams rounded-pill">202</span>
+          </li>
+          <li class="list-group-item d-flex justify-content-between align-items-start lgi-williams">
+            <div class="ms-2 me-auto">
+              <div class="fw-bold">Points</div>
+            </div>
+            <span class="badge text-bg-williams rounded-pill">4887.5</span>
+          </li>
+          <li class="list-group-item d-flex justify-content-between align-items-start lgi-williams">
+            <div class="ms-2 me-auto">
+              <div class="fw-bold">Place of birth</div>
+            </div>
+            <span class="badge text-bg-williams rounded-pill">England</span>
+          </li>
+          <li class="list-group-item d-flex justify-content-between align-items-start lgi-williams">
+            <div class="ms-2 me-auto">
+              <div class="fw-bold">Date of birth</div>
+            </div>
+            <span class="badge text-bg-williams rounded-pill">01/07/1985</span>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <!-- learn more -->
+  <div class="container my-5">
+    <h2>Learn more</h2>
+    <p>
+      Alexander Albon, born on March 23, 1996, in London, England, enters the
+      2025 Formula 1 season as one of the most respected and resilient drivers
+      on the grid. After a winding journey that saw him rise through the Red
+      Bull ranks, endure a challenging stint at the senior team, and then
+      rebuild his career with Williams, Albon’s stock has steadily risen. His
+      consistency, technical insight, and calm demeanor under pressure have
+      made him a vital asset for every team he’s driven for. Now, in 2025, he
+      begins a new chapter as the experienced lead driver at Williams, paired
+      with former Ferrari ace Carlos Sainz.
+    </p>
+    <p>
+      Albon's move comes in the wake of Lewis Hamilton’s high-profile transfer
+      to Ferrari, which pushed Sainz out of the Scuderia and triggered a
+      driver market reshuffle. With both Albon and Sainz hungry to prove
+      themselves, Williams suddenly boasts one of the most underrated and
+      well-balanced lineups on the grid. Backed by solid development momentum
+      and a growing technical partnership structure, the team has ambitious
+      goals for the season—and Albon is central to that vision, bringing
+      stability and leadership in a critical phase of the team’s rebuild.
+    </p>
+    <p>
+      With years of experience and a reputation for punching above his weight
+      in underperforming machinery, Albon is looking to convert solid points
+      finishes into podium contention. 2025 may represent his best opportunity
+      yet to fight regularly in the midfield—or even further forward. As
+      Williams makes strides back toward its former glory, Albon’s
+      perseverance and maturity continue to shine, reminding the paddock why
+      he belongs at the front of the field.
+    </p>
+  </div>
+
+  <!-- site disclaimer -->
+  <div class="container-fluid text-bg-dark border border-dark-subtle border-top-0 border-start-0 border-end-0">
+    <div class="container">
       <div class="row">
-        <h5>23</h5>
-        <h2>Alexander Albon</h2>
-      </div>
-
-      <div class="row gap-3">
-        <div class="col-12 col-md border-williams">
-          <img
-            src="../../../assets/img/drivers/2024/albon-portrait-main-copy.png"
-            class="img-fluid"
-            alt=""
-          />
+        <div class="col-12">
+          <p class="my-2">
+            <strong>DISCLAIMER:</strong> This website is unofficial and is not
+            associated in any way with the Formula 1 companies. F1, FORMULA
+            ONE, FORMULA 1, FIA FORMULA ONE WORLD CHAMPIONSHIP, GRAND PRIX and
+            related marks are trade marks of Formula One Licensing B.V.
+          </p>
         </div>
-        <div class="col-12 col-md border-williams">
-          <div class="row m-2 p-1 border-open-left--open-top--w2">
-            <div class="col-12 col-md">
-              <h2 class="driver-champion-standing-pos">8</h2>
-              <h5 class="text-uppercase">
-                2025 Drivers' Championship Position
-              </h5>
-            </div>
-            <div class="col-12 col-md text-end">
-              <h2 class="driver-champion-standing-pos">18</h2>
-              <h5 class="text-uppercase">Points</h5>
-            </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- footer -->
+  <div class="container-fluid text-bg-dark p-3">
+    <footer class="container border-open-left--open-top pt-5 pb-0">
+      <div class="row">
+        <div class="col-md-4 mb-3">
+          <div>
+            <img src="../../../assets/img/logos/trackside-logowhite.png" class="img-fluid mb-3" alt="" />
+            <p>Discover Formula 1 from a fan perspective</p>
           </div>
-          <ul class="list-group list-group-flush">
-            <li
-              class="list-group-item d-flex justify-content-between align-items-start lgi-williams"
-            >
-              <div class="ms-2 me-auto">
-                <div class="fw-bold">Team</div>
-              </div>
-              <span class="badge text-bg-williams rounded-pill">Williams</span>
+        </div>
+
+        <div class="col-6 col-md-2 mb-3">
+          <h5>Trackside</h5>
+          <ul class="nav flex-column">
+            <li class="nav-item mb-2">
+              <a href="../../../index.html" class="nav-link p-0">Home</a>
             </li>
-            <li
-              class="list-group-item d-flex justify-content-between align-items-start lgi-williams"
-            >
-              <div class="ms-2 me-auto">
-                <div class="fw-bold">Podiums</div>
-              </div>
-              <span class="badge text-bg-williams rounded-pill">202</span>
+            <li class="nav-item mb-2">
+              <a href="../../../pages/whatis.html" class="nav-link p-0">What is Formula 1</a>
             </li>
-            <li
-              class="list-group-item d-flex justify-content-between align-items-start lgi-williams"
-            >
-              <div class="ms-2 me-auto">
-                <div class="fw-bold">Points</div>
-              </div>
-              <span class="badge text-bg-williams rounded-pill">4887.5</span>
+            <li class="nav-item mb-2">
+              <a href="../../../pages/technologies.html" class="nav-link p-0">Technology of F1</a>
             </li>
-            <li
-              class="list-group-item d-flex justify-content-between align-items-start lgi-williams"
-            >
-              <div class="ms-2 me-auto">
-                <div class="fw-bold">Place of birth</div>
-              </div>
-              <span class="badge text-bg-williams rounded-pill">England</span>
+            <li class="nav-item mb-2">
+              <a href="../../../pages/future.html" class="nav-link p-0">Future of F1</a>
             </li>
-            <li
-              class="list-group-item d-flex justify-content-between align-items-start lgi-williams"
-            >
-              <div class="ms-2 me-auto">
-                <div class="fw-bold">Date of birth</div>
-              </div>
-              <span class="badge text-bg-williams rounded-pill"
-                >01/07/1985</span
-              >
+          </ul>
+        </div>
+
+        <div class="col-6 col-md-2 mb-3">
+          <h5>Race Calendars</h5>
+          <ul class="nav flex-column">
+            <li class="nav-item mb-2">
+              <a href="../../../seasons/2025/2025-calendar.html" class="nav-link p-0">2025 Race Calendar</a>
+            </li>
+            <li class="nav-item mb-2">
+              <a href="../../../seasons/2024/2024-calendar.html" class="nav-link p-0">2024 Race Calendar</a>
+            </li>
+            <li class="nav-item mb-2">
+              <a href="../../../seasons/2023/2023-calendar.html" class="nav-link p-0">2023 Race Calendar</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="col-6 col-md-2 mb-3">
+          <h5>Season Talk</h5>
+          <ul class="nav flex-column">
+            <li class="nav-item mb-2">
+              <a href="#" class="nav-link p-0">2025 Coverage</a>
+            </li>
+            <li class="nav-item mb-2">
+              <a href="#" class="nav-link p-0">2024 Breakdown</a>
+            </li>
+            <li class="nav-item mb-2">
+              <a href="#" class="nav-link p-0">2023 Breakdown</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="col-6 col-md-2 mb-3">
+          <h5>Pitwall</h5>
+          <ul class="nav flex-column">
+            <li class="nav-item mb-2">
+              <a href="../../../pages/faqs.html" class="nav-link p-0">Trackside FAQs</a>
+            </li>
+            <li class="nav-item mb-2">
+              <a href="#" class="nav-link p-0">Site Attributions</a>
+            </li>
+            <li class="nav-item mb-2">
+              <a href="../../../pages/learnmore.html" class="nav-link p-0">Learn More</a>
+            </li>
+            <li class="nav-item mb-2">
+              <a href="#" class="nav-link p-0">Contact Us</a>
             </li>
           </ul>
         </div>
       </div>
-    </div>
 
-    <!-- learn more -->
-    <div class="container my-5">
-      <h2>Learn more</h2>
-      <p>
-        Alexander Albon, born on March 23, 1996, in London, England, enters the
-        2025 Formula 1 season as one of the most respected and resilient drivers
-        on the grid. After a winding journey that saw him rise through the Red
-        Bull ranks, endure a challenging stint at the senior team, and then
-        rebuild his career with Williams, Albon’s stock has steadily risen. His
-        consistency, technical insight, and calm demeanor under pressure have
-        made him a vital asset for every team he’s driven for. Now, in 2025, he
-        begins a new chapter as the experienced lead driver at Williams, paired
-        with former Ferrari ace Carlos Sainz.
-      </p>
-      <p>
-        Albon's move comes in the wake of Lewis Hamilton’s high-profile transfer
-        to Ferrari, which pushed Sainz out of the Scuderia and triggered a
-        driver market reshuffle. With both Albon and Sainz hungry to prove
-        themselves, Williams suddenly boasts one of the most underrated and
-        well-balanced lineups on the grid. Backed by solid development momentum
-        and a growing technical partnership structure, the team has ambitious
-        goals for the season—and Albon is central to that vision, bringing
-        stability and leadership in a critical phase of the team’s rebuild.
-      </p>
-      <p>
-        With years of experience and a reputation for punching above his weight
-        in underperforming machinery, Albon is looking to convert solid points
-        finishes into podium contention. 2025 may represent his best opportunity
-        yet to fight regularly in the midfield—or even further forward. As
-        Williams makes strides back toward its former glory, Albon’s
-        perseverance and maturity continue to shine, reminding the paddock why
-        he belongs at the front of the field.
-      </p>
-    </div>
-
-    <!-- site disclaimer -->
-    <div
-      class="container-fluid text-bg-dark border border-dark-subtle border-top-0 border-start-0 border-end-0"
-    >
-      <div class="container">
-        <div class="row">
-          <div class="col-12">
-            <p class="my-2">
-              <strong>DISCLAIMER:</strong> This website is unofficial and is not
-              associated in any way with the Formula 1 companies. F1, FORMULA
-              ONE, FORMULA 1, FIA FORMULA ONE WORLD CHAMPIONSHIP, GRAND PRIX and
-              related marks are trade marks of Formula One Licensing B.V.
-            </p>
-          </div>
-        </div>
+      <div class="d-flex flex-column flex-sm-row justify-content-between py-4 my-2 border-top">
+        <p>© 2025 Nick Calvo All rights reserved.</p>
+        <ul class="list-unstyled d-flex">
+          <li class="ms-3">
+            <a class="link-body-emphasis" href="#"><svg class="bi" width="24" height="24">
+                <use xlink:href="#twitter"></use>
+              </svg></a>
+          </li>
+          <li class="ms-3">
+            <a class="link-body-emphasis" href="#"><svg class="bi" width="24" height="24">
+                <use xlink:href="#instagram"></use>
+              </svg></a>
+          </li>
+          <li class="ms-3">
+            <a class="link-body-emphasis" href="#"><svg class="bi" width="24" height="24">
+                <use xlink:href="#facebook"></use>
+              </svg></a>
+          </li>
+        </ul>
       </div>
-    </div>
+    </footer>
+  </div>
 
-    <!-- footer -->
-    <div class="container-fluid text-bg-dark p-3">
-      <footer
-        class="container border border-10 border-red border-start-0 border-top-0 rounded-bottom-4 rounded-start-0 pt-5 pb-0"
-      >
-        <!-- TODO update links -->
-        <div class="row">
-          <div class="col-md-5 mb-3">
-            <div>
-              <img
-                src="../../../assets/img/logos/trackside-logowhite.png"
-                class="img-fluid w-50 mb-3"
-                alt=""
-              />
-              <p>Discover Formula 1 from a fan perspective.</p>
-            </div>
-          </div>
+  <script type="module" src="../../../js/main.js"></script>
+  <script type="module" src="../../../js/breakpoints.js"></script>
+</body>
 
-          <div class="col-6 col-md-2 offset-md-1 mb-3">
-            <h5>Trackside</h5>
-            <ul class="nav flex-column">
-              <li class="nav-item mb-2">
-                <a href="#" class="nav-link p-0">Home</a>
-              </li>
-              <li class="nav-item mb-2">
-                <a href="#" class="nav-link p-0">What is Formula 1</a>
-              </li>
-              <li class="nav-item mb-2">
-                <a href="#" class="nav-link p-0">Competitors</a>
-              </li>
-              <li class="nav-item mb-2">
-                <a href="#" class="nav-link p-0">Future</a>
-              </li>
-            </ul>
-          </div>
-
-          <div class="col-6 col-md-2 mb-3">
-            <h5>Seasonal</h5>
-            <ul class="nav flex-column">
-              <li class="nav-item mb-2">
-                <a href="#" class="nav-link p-0">2025 Race Calendar</a>
-              </li>
-              <li class="nav-item mb-2">
-                <a href="#" class="nav-link p-0">2025 Coverage</a>
-              </li>
-              <li class="nav-item mb-2">
-                <a href="#" class="nav-link p-0">2024 Breakdown</a>
-              </li>
-              <li class="nav-item mb-2">
-                <a href="#" class="nav-link p-0">2023 Breakdown</a>
-              </li>
-            </ul>
-          </div>
-
-          <div class="col-6 col-md-2 mb-3">
-            <h5>Pitwall</h5>
-            <ul class="nav flex-column">
-              <li class="nav-item mb-2">
-                <a href="#" class="nav-link p-0">Trackside FAQs</a>
-              </li>
-              <li class="nav-item mb-2">
-                <a href="#" class="nav-link p-0">Site Attributions</a>
-              </li>
-              <li class="nav-item mb-2">
-                <a href="#" class="nav-link p-0">Learn More</a>
-              </li>
-              <li class="nav-item mb-2">
-                <a href="#" class="nav-link p-0">Contact Us</a>
-              </li>
-            </ul>
-          </div>
-        </div>
-
-        <div
-          class="d-flex flex-column flex-sm-row justify-content-between py-4 my-2 border-top"
-        >
-          <p>© 2025 Nick Calvo All rights reserved.</p>
-          <ul class="list-unstyled d-flex">
-            <li class="ms-3">
-              <a class="link-body-emphasis" href="#"
-                ><svg class="bi" width="24" height="24">
-                  <use xlink:href="#twitter"></use></svg
-              ></a>
-            </li>
-            <li class="ms-3">
-              <a class="link-body-emphasis" href="#"
-                ><svg class="bi" width="24" height="24">
-                  <use xlink:href="#instagram"></use></svg
-              ></a>
-            </li>
-            <li class="ms-3">
-              <a class="link-body-emphasis" href="#"
-                ><svg class="bi" width="24" height="24">
-                  <use xlink:href="#facebook"></use></svg
-              ></a>
-            </li>
-          </ul>
-        </div>
-      </footer>
-    </div>
-
-    <script type="module" src="../../../js/main.js"></script>
-    <script type="module" src="../../../js/breakpoints.js"></script>
-  </body>
 </html>
