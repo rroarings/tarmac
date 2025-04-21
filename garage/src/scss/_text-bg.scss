@@ -30,3 +30,51 @@
   background: $red;
 }
 
+.text-bg-mercedes {
+  @extend .text-bg-custom;
+  color: $gray-900;
+  background: $teal;
+}
+
+.text-bg-ferrari {
+  @extend .text-bg-custom;
+  color: $gray-200;
+  background: $red;
+}
+
+.text-bg-williams {
+  @extend .text-bg-custom;
+  color: $gray-200;
+  background: #005aff;
+}
+
+.text-bg-haas {
+  @extend .text-bg-custom;
+  color: $gray-200;
+  background: $gray-800;
+}
+
+.text-bg-astonmartin {
+  @extend .text-bg-custom;
+  color: $gray-200;
+  background: $green-600;
+}
+
+.text-bg-alpine {
+  @extend .text-bg-custom;
+  color: $gray-200;
+  background: #0090ff;
+}
+
+.text-bg-kicksauber {
+  @extend .text-bg-custom;
+  color: $gray-900;
+  background: #00ff62;
+}
+
+.text-bg-racingbulls {
+  @extend .text-bg-custom;
+  color: $gray-200;
+  background: #2b4562;
+}
+
