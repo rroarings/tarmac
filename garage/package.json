@@ -20,6 +20,7 @@
     "@parcel/transformer-sass": "^2.14.4",
     "@stylistic/stylelint-plugin": "^3.1.2",
     "parcel": "^2.14.4",
+    "prettier": "^3.5.3",
     "stylelint": "^16.18.0",
     "stylelint-config-twbs-bootstrap": "^16.0.0"
   },
