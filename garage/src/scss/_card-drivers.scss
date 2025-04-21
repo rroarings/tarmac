@@ -72,16 +72,6 @@
   }
 }
 
-.card-standings-info h5 {
-  font-size: 3.25rem;
-  font-weight: 900;
-}
-
-.card-standings-info p {
-  font-size: 2rem;
-  font-weight: 700;
-}
-
 .card-standings-podium {
   border-color: $gray-600;
   border-width: 10px;
@@ -101,6 +91,7 @@
     border-top: 10px solid #ff8700; // McLaren orange
     border-right: 10px solid #ff8700; // McLaren orange
   }
+
   &.team-mercedes:hover {
     border-top: 10px solid #00d2be; // McLaren orange
     border-right: 10px solid #00d2be; // McLaren orange
