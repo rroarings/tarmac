@@ -116,3 +116,105 @@
   font-size: 2rem;
   font-weight: 700;
 }
+
+.card-standings {
+  overflow: hidden;
+  border-width: 5px;
+  border-bottom: none;
+  border-left: none;
+  border-top-left-radius: 0;
+  border-top-right-radius: 1rem;
+  border-bottom-right-radius: 0;
+  transition: all .3s ease;
+
+  &:hover {
+    border-color: $gray-600;
+  }
+
+  .card-standings-info {
+    background-color: #e9ecef; // Light gray background for the info row
+    border-bottom: 2px solid #dee2e6; // Separator line
+  }
+
+  .card-standings-info p:first-child {
+    font-size: 2rem;
+  }
+
+  .card-standings-info h5 {
+    font-size: 2rem;
+    font-weight: 800;
+  }
+
+  .card-standings-info-border-bottom {
+    border-bottom: 2px solid #dee2e6; // Separator line
+  }
+
+  .card-body {
+    padding: 1rem;
+    background-color: #fff; // White background for the image section
+  }
+
+  img {
+    max-height: 150px; // Limit image height
+    object-fit: contain; // Ensure the image scales properly
+  }
+
+  p {
+    margin: 0;
+  }
+
+  h5 {
+    margin: 0;
+    font-size: 1.25rem;
+  }
+
+  &.team-redbull:hover {
+    border-top: 5px solid #1e41ff; // Red Bull Racing blue
+    border-right: 5px solid #1e41ff; // Red Bull Racing blue
+  }
+
+  &.team-ferrari:hover {
+    border-top: 5px solid #dc0000; // Ferrari red
+    border-right: 5px solid #dc0000; // Ferrari red
+  }
+
+  &.team-mercedes:hover {
+    border-top: 5px solid #00d2be; // Mercedes teal
+    border-right: 5px solid #00d2be; // Mercedes teal
+  }
+
+  &.team-mclaren:hover {
+    border-top: 5px solid #ff8700; // McLaren orange
+    border-right: 5px solid #ff8700; // McLaren orange
+  }
+
+  &.team-alpine:hover {
+    border-top: 5px solid #0090ff; // Alpine blue
+    border-right: 5px solid #0090ff; // Alpine blue
+  }
+
+  &.team-astonmartin:hover {
+    border-top: 5px solid #006f62; // Aston Martin green
+    border-right: 5px solid #006f62; // Aston Martin green
+  }
+
+  &.team-haas:hover {
+    border-top: 5px solid $gray-600; // Haas white
+    border-right: 5px solid $gray-600; // Haas white
+  }
+
+  &.team-racingbulls:hover {
+    border-top: 5px solid #2b4562; // AlphaTauri navy
+    border-right: 5px solid #2b4562; // AlphaTauri navy
+  }
+
+  &.team-williams:hover {
+    border-top: 5px solid #005aff; // Williams blue
+    border-right: 5px solid #005aff; // Williams blue
+  }
+
+  &.team-kicksauber:hover {
+    border-top: 5px solid #00ff62; // Alfa Romeo red
+    border-right: 5px solid #00ff62; // Alfa Romeo red
+  }
+}
