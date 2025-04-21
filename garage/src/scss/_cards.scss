@@ -61,6 +61,34 @@
   border-color: $red;
 }
 
+.card-spotlight {
+  border-top: 0;
+  border-left: 0;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 1rem;
+  border-bottom-left-radius: 0;
+  transition: all .3s ease;
+
+}
+
+.card-spotlight-leclerc {
+  @extend .card-spotlight;
+  border-right: 5px solid $red;
+  border-bottom: 5px solid $red;
+}
+
+.card-spotlight-norris {
+  @extend .card-spotlight;
+  border-right: 5px solid #ff8000;
+  border-bottom: 5px solid #ff8000;
+}
+
+.card-spotlight-verstappen {
+  @extend .card-spotlight;
+  border-right: 5px solid #1e41ff;
+  border-bottom: 5px solid #1e41ff;
+}
+
 // whatis page
 
 /* Championship Section Styling */
