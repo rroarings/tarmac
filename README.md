@@ -6,19 +6,10 @@
 
 <br>
 
-![Static Badge](https://img.shields.io/badge/alpha-alpha?label=status&color=red)
-
   <p align="center">
     Explore the track side of Formula 1 from a fan perspective
     <br />
     <a href="#"><strong>Explore the garages »</strong></a>
-    <br />
-    <br />
-    <a href="#">View Site</a>
-    &middot;
-    <a href="#">Report Bug</a>
-    &middot;
-    <a href="#">Request Feature</a>
   </p>
 </div>
 
@@ -30,6 +21,7 @@
     <li>
       <a href="#about-the-project">About The Project</a>
       <ul>
+        <li><a href="#features">Features</a></li>
         <li><a href="#built-with">Built With</a></li>
       </ul>
     </li>
@@ -57,9 +49,16 @@ Dive into the garages, feel the rush of the paddock, and explore the trackside e
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
+## Features
 
+- Explore detailed driver profiles and team stats.
+- Race calendar with event details.
+- Responsive design built with Bootstrap 5.
+- Easy-to-navigate structure for F1 fans.
+  
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-### Built With
+## Built With
 
 
 This project is built with the *Bootstrap 5* framework along with *Parcel* to bundle the package, maintained in *vscode*. I am using *Linear* as a project management tool.
@@ -167,17 +166,7 @@ _For more examples, please refer to the [Documentation](https://example.com)_
 <!-- ROADMAP -->
 ## Roadmap
 
-- [ ] Add Changelog
-- [ ] (possible) Create GitHub project
-- [ ] Add critical pages
-    - [ ] Drivers
-      - [ ] Driver specific pages
-    - [ ] Constructors
-      - [ ] Constructor specific pages
-    - [ ] About Trackside
-    - [ ] Attributions
-    - [ ] Resources
-- [ ] Add documentation
+
 
 See the [open issues](https://github.com/othneildrew/Best-README-Template/issues) for a full list of proposed features (and known issues).
 
