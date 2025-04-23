@@ -1,3 +1,91 @@
+h2,
+h3,
+h4,
+h5 {
+  font-family: "Inter", sans-serif;
+}
+
+h1 {
+  font-family: "Inter", sans-serif;
+  font-size: 3.5rem;
+  font-weight: 900;
+
+  @include media-breakpoint-up(sm) {
+    // ≥576px
+  }
+
+  @include media-breakpoint-up(md) {
+    // ≥768px
+  }
+
+  @include media-breakpoint-up(lg) {
+    // ≥992px
+    font-size: 5rem
+  }
+
+  @include media-breakpoint-up(xl) {
+    // ≥1200px
+    font-size: 5.5rem;
+  }
+
+  @include media-breakpoint-up(xxl) {
+    // ≥1200px
+    font-size: 6rem;
+  }
+}
+
+h2 {
+  font-weight: 600;
+
+  @include media-breakpoint-up(sm) {
+    // ≥576px
+  }
+
+  @include media-breakpoint-up(md) {
+    // ≥768px
+  }
+
+  @include media-breakpoint-up(lg) {
+    // ≥992px
+    font-size: calc(.9rem + .9vw);
+  }
+
+  @include media-breakpoint-up(xl) {
+    // ≥1200px
+    font-size: calc(1rem + .9vw);
+  }
+
+  @include media-breakpoint-up(xxl) {
+    // ≥1200px
+    font-size: calc(1.5rem + .9vw);
+  }
+}
+
+h3 {
+  font-weight: 600;
+
+  @include media-breakpoint-up(sm) {
+    // ≥576px
+  }
+
+  @include media-breakpoint-up(md) {
+    // ≥768px
+  }
+
+  @include media-breakpoint-up(lg) {
+    // ≥992px
+  }
+
+  @include media-breakpoint-up(xl) {
+    // ≥1200px
+  }
+
+  @include media-breakpoint-up(xxl) {
+    // ≥1200px
+    font-size: calc(1rem + .9vw);
+  }
+}
+
 .driver-champion-standing-pos {
   font-size: 3.25rem;
   font-weight: 900;

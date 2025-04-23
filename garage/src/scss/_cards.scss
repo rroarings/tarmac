@@ -98,6 +98,32 @@
   flex-direction: column;
 }
 
+.championship-standing-pre-info h5 {
+  font-weight: 600;
+  font-size: calc(1rem + .9vw);
+
+  @include media-breakpoint-up(sm) {
+    // ≥576px
+  }
+
+  @include media-breakpoint-up(md) {
+    // ≥768px
+  }
+
+  @include media-breakpoint-up(lg) {
+    // ≥992px
+  }
+
+  @include media-breakpoint-up(xl) {
+    // ≥1200px
+  }
+
+  @include media-breakpoint-up(xxl) {
+    // ≥1200px
+    font-size: calc(1rem + .9vw);
+  }
+}
+
 .championship-item {
   position: relative;
   padding: 2rem;
