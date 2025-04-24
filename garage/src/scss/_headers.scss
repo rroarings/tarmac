@@ -16,21 +16,22 @@ h1 {
 
   @include media-breakpoint-up(md) {
     // ≥768px
+    font-size: calc(4rem + .9vw);
   }
 
   @include media-breakpoint-up(lg) {
     // ≥992px
-    font-size: 5rem
+    font-size: calc(5rem + .9vw)rem
   }
 
   @include media-breakpoint-up(xl) {
     // ≥1200px
-    font-size: 5.5rem;
+    font-size: calc(7rem + .9vw);
   }
 
   @include media-breakpoint-up(xxl) {
     // ≥1200px
-    font-size: 6rem;
+    font-size: calc(8rem + .9vw);
   }
 }
 
@@ -39,30 +40,31 @@ h2 {
 
   @include media-breakpoint-up(sm) {
     // ≥576px
+    font-size: calc(2rem + .9vw);
   }
 
   @include media-breakpoint-up(md) {
     // ≥768px
+    font-size: calc(2.2rem + .9vw);
   }
 
   @include media-breakpoint-up(lg) {
     // ≥992px
-    font-size: calc(.9rem + .9vw);
+    font-size: calc(2.3rem + .9vw);
   }
 
   @include media-breakpoint-up(xl) {
     // ≥1200px
-    font-size: calc(1rem + .9vw);
+    font-size: calc(2.6rem + .9vw);
   }
 
   @include media-breakpoint-up(xxl) {
     // ≥1200px
-    font-size: calc(1.5rem + .9vw);
+    font-size: calc(3rem + .9vw);
   }
 }
 
 h3 {
-  font-weight: 600;
 
   @include media-breakpoint-up(sm) {
     // ≥576px

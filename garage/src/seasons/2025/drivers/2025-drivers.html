@@ -281,11 +281,6 @@
                 Explore the full 2025 Formula 1 lineup, from title contenders to
                 rising rookies.
               </p>
-              <p>
-                <a class="btn btn-lg btn-primary" href="#quick-info"
-                  >Learn more</a
-                >
-              </p>
             </div>
           </div>
         </div>
@@ -301,11 +296,6 @@
               <p>
                 Your complete guide to the drivers shaping this season’s
                 story—ranked, profiled, and ready to race.
-              </p>
-              <p>
-                <a class="btn btn-lg btn-primary" href="#2025-teams-grid"
-                  >Browse gallery</a
-                >
               </p>
             </div>
           </div>
@@ -334,7 +324,7 @@
     <!-- todo update this ugly section! probably nice graphics -->
     <!-- Quick Team Info -->
     <div id="quick-info" class="container mx-auto py-3 text-center">
-      <h2>F1 Spotlight: Stars Shaping the 2025 Season</h2>
+      <h2>F1 Spotlight</h2>
       <div class="row gap-3 mt-4">
         <!-- Driver Card -->
         <div class="col-12 col-md">
@@ -411,35 +401,29 @@
       </div>
       <div class="row row-cols-1 row-cols-lg-3">
         <!-- Portfolio item 1 - Piastri -->
+        
         <a href="piastri.html" class="text-decoration-none">
           <div class="col mb-4">
             <div class="card card-standings team-mclaren">
               <!-- Row 1: Championship Position and Points -->
-              <div
-                class="row d-flex justify-content-between card-standings-info p-3"
-              >
-                <div class="col">
-                  <h5 class="">1</h5>
-                  <!-- Championship Position -->
+              <div class="row d-flex justify-content-between align-items-center card-standings-info p-3">
+                <div class="col text-start">
+                  <h5 class="m-0">1</h5> <!-- Championship Position -->
                 </div>
                 <div class="col text-end">
-                  <p class="fw-bold">99</p>
-                  <!-- Season Points -->
-                  <p class="small">pts</p>
+                  <h5 class="fw-bold m-0 ">99</h5> <!-- Season Points -->
+                  <p class=" m-0">pts</p>
                 </div>
               </div>
-
               <!-- Row 2: Driver -->
-              <div class="row g-0 p-3 card-standings-info-border-bottom">
-                <div class="col">
+              <div class="row d-flex justify-content-between align-items-center card-standings-info-border-bottom p-3">
+                <div class="col text-start">
                   <p class=" ">Oscar</p>
                   <!-- First Name -->
                   <h5 class="fw-bold">Piastri</h5>
-                  <!-- Last Name -->
                 </div>
-                <div class="col text-end my-auto">
+                <div class="col text-end">
                   <p class="text-secondary">McLaren</p>
-                  <!-- Team Name -->
                 </div>
               </div>
 
@@ -1306,9 +1290,9 @@
             class="col card card-cover card-news h-100 overflow-hidden rounded-4"
           >
             <div class="d-flex flex-column h-100 p-5 pb-3">
-              <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">
-                Explore the constructors' championship standings
-              </h3>
+              <h2 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">
+                Explore the 2025 Constructors' standings
+              </h2>
             </div>
           </div>
         </a>
@@ -1461,5 +1445,39 @@
 
     <script type="module" src="../../../js/main.js"></script>
     <script type="module" src="../../../js/breakpoints.js"></script>
+    <script>
+      function logHeaderSizes() {
+        const h1 = document.querySelector("h1");
+        const h2 = document.querySelector("h2");
+        const h3 = document.querySelector("h3");
+      
+        if (h1) {
+          const h1FontSize = window.getComputedStyle(h1).fontSize;
+          console.log(`h1 font size: ${h1FontSize}`);
+        } else {
+          console.log("No h1 element found.");
+        }
+
+        if (h2) {
+          const h2FontSize = window.getComputedStyle(h2).fontSize;
+          console.log(`h2 font size: ${h2FontSize}`);
+        } else {
+          console.log("No h2 element found.");
+        }
+      
+        if (h3) {
+          const h3FontSize = window.getComputedStyle(h3).fontSize;
+          console.log(`h3 font size: ${h3FontSize}`);
+        } else {
+          console.log("No h3 element found.");
+        }
+      }
+      
+      // Call the function on page load
+      logHeaderSizes();
+      
+      // Optional: Recalculate on window resize
+      window.addEventListener("resize", logHeaderSizes);
+    </script>
   </body>
 </html>
