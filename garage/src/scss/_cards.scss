@@ -104,8 +104,8 @@
 }
 
 .championship-standing-pre-info h5 {
-  font-weight: 600;
   font-size: calc(1rem + .9vw);
+  font-weight: 600;
 
   @include media-breakpoint-up(sm) {
     // ≥576px
@@ -149,32 +149,32 @@
 }
 
 .championship-item.drivers {
-  min-height: 200px;
   position: relative;
+  min-height: 200px;
   overflow: hidden;
   background: none;
 
   // Add the background image to the pseudo-element
   &::before {
-    content: "";
     position: absolute;
     top: 0;
     left: 0;
+    z-index: 1; // Ensure it stays behind the content
     width: 100%;
     height: 100%;
+    content: "";
     background-image: url("../assets/img/section/section-drivers-banner.jpg");
-    background-size: cover;
+    filter: brightness(.8); // Apply brightness filter here
     background-repeat: no-repeat;
     background-position: center;
-    filter: brightness(0.8); // Apply brightness filter here
-    z-index: 1; // Ensure it stays behind the content
+    background-size: cover;
   }
 
   // Ensure the content is above the pseudo-element
   .content {
     position: relative;
-    transform: translateY(50%);
     z-index: 2; // Place content above the background
+    transform: translateY(50%);
   }
 
   // Hover effect for the background
@@ -185,46 +185,46 @@
   @include media-breakpoint-up(sm) {
     // ≥576px
     .content p {
-      display: none
+      display: none;
     }
   }
 
   @include media-breakpoint-up(md) {
     // ≥768px
     .content p {
-      display: block
+      display: block;
     }
   }
 
 }
 
 .championship-item.constructors {
-  min-height: 200px;
   position: relative;
+  min-height: 200px;
   overflow: hidden;
   background: none;
 
   // Add the background image to the pseudo-element
   &::before {
-    content: "";
     position: absolute;
     top: 0;
     left: 0;
+    z-index: 1; // Ensure it stays behind the content
     width: 100%;
     height: 100%;
+    content: "";
     background-image: url("../assets/img/section/section-drivers-banner.jpg");
-    background-size: cover;
+    filter: brightness(.8); // Apply brightness filter here
     background-repeat: no-repeat;
     background-position: center;
-    filter: brightness(0.8); // Apply brightness filter here
-    z-index: 1; // Ensure it stays behind the content
+    background-size: cover;
   }
 
   // Ensure the content is above the pseudo-element
   .content {
     position: relative;
-    transform: translateY(50%);
     z-index: 2; // Place content above the background
+    transform: translateY(50%);
   }
 
   // Hover effect for the background
@@ -235,28 +235,28 @@
   @include media-breakpoint-up(sm) {
     // ≥576px
     .content p {
-      display: none
+      display: none;
     }
   }
 
   @include media-breakpoint-up(md) {
     // ≥768px
     .content p {
-      display: block
+      display: block;
     }
   }
- 
+
 }
 
 .row-landing-card--wrapper {
   position: relative;
   overflow: hidden;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  transition: transform .3s ease, box-shadow .3s ease;
 }
 
 .row-landing-card--wrapper .col img {
-  filter: brightness(0.8);
-  transition: transform 0.3s ease, filter 0.3s ease;
+  filter: brightness(.8);
+  transition: transform .3s ease, filter .3s ease;
 }
 
 .row-landing-card--wrapper .col:hover img {
@@ -265,9 +265,9 @@
 
 .row-landing-card--wrapper .col h5 {
   font-size: 1.5rem;
-  font-weight: bold;
+  font-weight: 700;
+  text-shadow: 0 6px 8px rgba(0, 0, 0, .777);
   text-transform: uppercase;
-  text-shadow: 0 6px 8px rgba(0, 0, 0, 0.777);
 }
 
 /* Specific styles for each column */
@@ -277,6 +277,6 @@
   transition: all .3s ease;
 
   &:hover {
-    border-color: $gray-500
+    border-color: $gray-500;
   }
 }

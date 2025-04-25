@@ -15,27 +15,27 @@
 
 .text-bg-custom-standings--mclaren {
   @extend .text-bg-custom-standings;
-  
+
   &:hover {
     background-color: $orange;
-  }  
+  }
 }
 
 .text-bg-custom-standings--redbull {
   @extend .text-bg-custom-standings;
-  
+
   &:hover {
     background-color: #1e41ff;
-  }  
+  }
 }
 
 .text-bg-custom-standings--mercedes {
   @extend .text-bg-custom-standings;
-  
+
   &:hover {
     color: #000;
     background-color: $teal;
-  }  
+  }
 }
 
 // Generic styles

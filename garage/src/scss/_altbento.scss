@@ -27,6 +27,23 @@
   transition: all .3s ease;
 }
 
+.bento-item .bento-item-svg {
+  width: 60px; /* Adjust the size as needed */
+  height: auto; /* Maintain aspect ratio */
+  display: block; /* Ensure the image behaves like a block element */
+  margin: 0 auto; /* Center horizontally */
+
+  @include media-breakpoint-up(sm) {
+    // ≥576px
+    width: 3rem
+  }
+
+  @include media-breakpoint-up(lg) {
+    // ≥992px
+    width: 3.6rem
+  }
+}
+
 .bento-item h5 {
   font-weight: 600;
   transition: transform .3s ease;

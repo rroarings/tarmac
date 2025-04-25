@@ -114,11 +114,6 @@
                     >2024 Calendar</a
                   >
                 </li>
-                <li>
-                  <a class="dropdown-item" href="../../2023/2023-calendar.html"
-                    >2023 Calendar</a
-                  >
-                </li>
               </ul>
             </li>
             <li class="nav-item dropdown">
@@ -140,7 +135,9 @@
                   <a class="dropdown-item" href="#">2025 Drivers</a>
                 </li>
                 <li>
-                  <a class="dropdown-item" href="../teams/2025-teams.html">2025 Teams</a>
+                  <a class="dropdown-item" href="../teams/2025-teams.html"
+                    >2025 Teams</a
+                  >
                 </li>
                 <li>
                   <hr class="dropdown-divider" />
@@ -153,18 +150,6 @@
                 </li>
                 <li>
                   <a class="dropdown-item" href="#">2024 Teams</a>
-                </li>
-                <li>
-                  <hr class="dropdown-divider" />
-                </li>
-                <li>
-                  <h6 class="dropdown-header">2023</h6>
-                </li>
-                <li>
-                  <a class="dropdown-item" href="#">2023 Drivers</a>
-                </li>
-                <li>
-                  <a class="dropdown-item" href="#">2023 Teams</a>
                 </li>
               </ul>
             </li>
@@ -185,9 +170,6 @@
                 </li>
                 <li>
                   <a class="dropdown-item" href="#">2024 Breakdown</a>
-                </li>
-                <li>
-                  <a class="dropdown-item" href="#">2023 Breakdown</a>
                 </li>
               </ul>
             </li>
@@ -214,7 +196,7 @@
                   >
                 </li>
                 <li>
-                  <a class="dropdown-item" href="#">Contact Us</a>
+                  <a class="dropdown-item" href="../../../pages/contactus.html">Contact Us</a>
                 </li>
                 <li>
                   <a class="dropdown-item" href="#">Site Attributions</a>
@@ -405,17 +387,23 @@
           <div class="col mb-4">
             <div class="card card-standings team-mclaren">
               <!-- Row 1: Championship Position and Points -->
-              <div class="row d-flex justify-content-between align-items-center card-standings-info p-3">
+              <div
+                class="row d-flex justify-content-between align-items-center card-standings-info p-3"
+              >
                 <div class="col text-start">
-                  <h5 class="m-0">1</h5> <!-- Championship Position -->
+                  <h5 class="m-0">1</h5>
+                  <!-- Championship Position -->
                 </div>
                 <div class="col text-end">
-                  <h5 class="fw-bold m-0 ">99</h5> <!-- Season Points -->
-                  <p class=" m-0">pts</p>
+                  <h5 class="fw-bold m-0">99</h5>
+                  <!-- Season Points -->
+                  <p class="m-0">pts</p>
                 </div>
               </div>
               <!-- Row 2: Driver -->
-              <div class="row d-flex justify-content-between align-items-center card-standings-info-border-bottom p-3">
+              <div
+                class="row d-flex justify-content-between align-items-center card-standings-info-border-bottom p-3"
+              >
                 <div class="col text-start">
                   <p class=" ">Oscar</p>
                   <!-- First Name -->
@@ -1368,11 +1356,6 @@
                   >2024 Race Calendar</a
                 >
               </li>
-              <li class="nav-item mb-2">
-                <a href="../../2023/2023-calendar.html" class="nav-link p-0"
-                  >2023 Race Calendar</a
-                >
-              </li>
             </ul>
           </div>
 
@@ -1384,9 +1367,6 @@
               </li>
               <li class="nav-item mb-2">
                 <a href="#" class="nav-link p-0">2024 Breakdown</a>
-              </li>
-              <li class="nav-item mb-2">
-                <a href="#" class="nav-link p-0">2023 Breakdown</a>
               </li>
             </ul>
           </div>
@@ -1408,7 +1388,7 @@
                 >
               </li>
               <li class="nav-item mb-2">
-                <a href="#" class="nav-link p-0">Contact Us</a>
+                <a href="../../../pages/contactus.html" class="nav-link p-0">Contact Us</a>
               </li>
             </ul>
           </div>
@@ -1449,7 +1429,7 @@
         const h1 = document.querySelector("h1");
         const h2 = document.querySelector("h2");
         const h3 = document.querySelector("h3");
-      
+
         if (h1) {
           const h1FontSize = window.getComputedStyle(h1).fontSize;
           console.log(`h1 font size: ${h1FontSize}`);
@@ -1463,7 +1443,7 @@
         } else {
           console.log("No h2 element found.");
         }
-      
+
         if (h3) {
           const h3FontSize = window.getComputedStyle(h3).fontSize;
           console.log(`h3 font size: ${h3FontSize}`);
@@ -1471,10 +1451,10 @@
           console.log("No h3 element found.");
         }
       }
-      
+
       // Call the function on page load
       logHeaderSizes();
-      
+
       // Optional: Recalculate on window resize
       window.addEventListener("resize", logHeaderSizes);
     </script>

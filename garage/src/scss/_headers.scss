@@ -2,11 +2,11 @@ h2,
 h3,
 h4,
 h5 {
-  font-family: "Inter", sans-serif;
+  font-family: Inter, sans-serif;
 }
 
 h1 {
-  font-family: "Inter", sans-serif;
+  font-family: Inter, sans-serif;
   font-size: 3.5rem;
   font-weight: 900;
 
@@ -21,7 +21,7 @@ h1 {
 
   @include media-breakpoint-up(lg) {
     // ≥992px
-    font-size: calc(5rem + .9vw)rem
+    font-size: calc(5rem + .9vw) rem;
   }
 
   @include media-breakpoint-up(xl) {

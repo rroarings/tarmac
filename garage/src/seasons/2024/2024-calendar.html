@@ -1,559 +1,639 @@
 <!doctype html>
 <html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <meta
+      name="description"
+      content="Formula Bootstrap is a a Bootstrap built website that explores some areas of Formula One."
+    />
+    <meta name="author" content="Nick Calvo" />
+    <title>Trackside | 2024 Race Calendar</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+    <link rel="stylesheet" href="../../scss/styles.scss" />
+  </head>
 
-<head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-  <meta name="description"
-    content="Formula Bootstrap is a a Bootstrap built website that explores some areas of Formula One." />
-  <meta name="author" content="Nick Calvo" />
-  <title>Trackside | 2024 Race Calendar</title>
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
-  <link rel="stylesheet" href="../../scss/styles.scss" />
-</head>
-
-<body>
-  <!-- site header -->
-  <nav class="navbar navbar-expand-lg sticky-top" id="mainNav">
-    <div class="container">
-      <a class="navbar-brand" href="#page-top">
-        <img src="../../assets/img/logos/trackside-logoblack.png" class="img-fluid w-50" alt="Trackside Logo" />
-      </a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive"
-        aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-        Menu
-        <i class="fas fa-bars ms-1"></i>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarResponsive">
-        <ul class="navbar-nav ms-auto me-4 py-4 py-lg-0">
-          <li class="nav-item">
-            <a class="nav-link" href="../../index.html">Home</a>
-          </li>
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="aboutDropdown" role="button" data-bs-toggle="dropdown"
-              aria-expanded="false">
-              About F1
-            </a>
-            <ul class="dropdown-menu" aria-labelledby="aboutDropdown">
-              <li>
-                <a class="dropdown-item" href="../../pages/whatis.html">What is Formula 1</a>
-              </li>
-              <li>
-                <a class="dropdown-item" href="../../pages/technologies.html">Technology of F1</a>
-              </li>
-              <li>
-                <a class="dropdown-item" href="../../pages/future.html">Future of F1</a>
-              </li>
-            </ul>
-          </li>
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="aboutDropdown" role="button" data-bs-toggle="dropdown"
-              aria-expanded="false">
-              Race Calendars
-            </a>
-            <ul class="dropdown-menu" aria-labelledby="aboutDropdown">
-              <li>
-                <a class="dropdown-item" href="../2025/2025-calendar.html">2025 Calendar</a>
-              </li>
-              <li>
-                <a class="dropdown-item active" href="#" aria-current="page">2024 Calendar</a>
-              </li>
-              <li>
-                <a class="dropdown-item" href="../2023/2023-calendar.html">2023 Calendar</a>
-              </li>
-            </ul>
-          </li>
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="seasonsDropdown" role="button" data-bs-toggle="dropdown"
-              aria-expanded="false">
-              Standings
-            </a>
-            <ul class="dropdown-menu" aria-labelledby="seasonsDropdown">
-              <li>
-                <h6 class="dropdown-header">2025</h6>
-              </li>
-              <li>
-                <a class="dropdown-item" href="../2025/drivers/2025-drivers.html">2025 Drivers</a>
-              </li>
-              <li>
-                <a class="dropdown-item" href="../2025/teams/2025-teams.html">2025 Teams</a>
-              </li>
-              <li>
-                <hr class="dropdown-divider" />
-              </li>
-              <li>
-                <h6 class="dropdown-header">2024</h6>
-              </li>
-              <li>
-                <a class="dropdown-item" href="#">2024 Drivers</a>
-              </li>
-              <li>
-                <a class="dropdown-item" href="#">2024 Teams</a>
-              </li>
-              <li>
-                <hr class="dropdown-divider" />
-              </li>
-              <li>
-                <h6 class="dropdown-header">2023</h6>
-              </li>
-              <li>
-                <a class="dropdown-item" href="#">2023 Drivers</a>
-              </li>
-              <li>
-                <a class="dropdown-item" href="../2023/teams/2023-teams.html">2023 Teams</a>
-              </li>
-            </ul>
-          </li>
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="seasonsDropdown" role="button" data-bs-toggle="dropdown"
-              aria-expanded="false">
-              Season Talk
-            </a>
-            <ul class="dropdown-menu" aria-labelledby="seasonsDropdown">
-              <li>
-                <a class="dropdown-item" href="#">2025 Coverage</a>
-              </li>
-              <li>
-                <a class="dropdown-item" href="#">2024 Results</a>
-              </li>
-              <li>
-                <a class="dropdown-item" href="#">2023 Results</a>
-              </li>
-            </ul>
-          </li>
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="fanZoneDropdown" role="button" data-bs-toggle="dropdown"
-              aria-expanded="false">
-              Site
-            </a>
-            <ul class="dropdown-menu" aria-labelledby="fanZoneDropdown">
-              <li>
-                <a class="dropdown-item" href="../../pages/faqs.html">Trackside FAQs</a>
-              </li>
-              <li>
-                <a class="dropdown-item" href="../../pages/learnmore.html">Learn More</a>
-              </li>
-              <li>
-                <a class="dropdown-item" href="#">Contact Us</a>
-              </li>
-              <li>
-                <a class="dropdown-item" href="#">Site Attributions</a>
-              </li>
-            </ul>
-          </li>
-        </ul>
+  <body>
+    <!-- site header -->
+    <nav class="navbar navbar-expand-lg sticky-top" id="mainNav">
+      <div class="container">
+        <a class="navbar-brand" href="#page-top">
+          <img
+            src="../../assets/img/logos/trackside-logoblack.png"
+            class="img-fluid w-50"
+            alt="Trackside Logo"
+          />
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarResponsive"
+          aria-controls="navbarResponsive"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          Menu
+          <i class="fas fa-bars ms-1"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav ms-auto me-4 py-4 py-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" href="../../index.html">Home</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                id="aboutDropdown"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                About F1
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="aboutDropdown">
+                <li>
+                  <a class="dropdown-item" href="../../pages/whatis.html"
+                    >What is Formula 1</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="../../pages/technologies.html"
+                    >Technology of F1</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="../../pages/future.html"
+                    >Future of F1</a
+                  >
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                id="aboutDropdown"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Race Calendars
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="aboutDropdown">
+                <li>
+                  <a class="dropdown-item" href="../2025/2025-calendar.html"
+                    >2025 Calendar</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item active" href="#" aria-current="page"
+                    >2024 Calendar</a
+                  >
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                id="seasonsDropdown"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Standings
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="seasonsDropdown">
+                <li>
+                  <h6 class="dropdown-header">2025</h6>
+                </li>
+                <li>
+                  <a
+                    class="dropdown-item"
+                    href="../2025/drivers/2025-drivers.html"
+                    >2025 Drivers</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="../2025/teams/2025-teams.html"
+                    >2025 Teams</a
+                  >
+                </li>
+                <li>
+                  <hr class="dropdown-divider" />
+                </li>
+                <li>
+                  <h6 class="dropdown-header">2024</h6>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#">2024 Drivers</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#">2024 Teams</a>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                id="seasonsDropdown"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Season Talk
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="seasonsDropdown">
+                <li>
+                  <a class="dropdown-item" href="#">2025 Coverage</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#">2024 Results</a>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                id="fanZoneDropdown"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Site
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="fanZoneDropdown">
+                <li>
+                  <a class="dropdown-item" href="../../pages/faqs.html"
+                    >Trackside FAQs</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="../../pages/learnmore.html"
+                    >Learn More</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="../../pages/contactus.html">Contact Us</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#">Site Attributions</a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
       </div>
-    </div>
-  </nav>
+    </nav>
 
-  <!-- Hero -->
-  <section class="container hero-section text-center my-5">
-    <div class="row">
-      <div class="col">
-        <h1 class="">The 2024 Formula 1 race season at your fingertips</h1>
+    <!-- Hero -->
+    <section class="container hero-section text-center my-5">
+      <div class="row">
+        <div class="col">
+          <h1 class="">The 2024 Formula 1 race season at your fingertips</h1>
+        </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- 2024 race collection -->
-  <section class="featured-races my-5">
-    <div class="race-section px-5">
-      <h2 class="race-section-title">
-        <span class="race-section-title-position">1</span> Bahrain
-      </h2>
-      <p class="hidden-description">
-        The 2024 F1 season kicked off in Bahrain with a commanding win by Max
-        Verstappen, as Red Bull locked out the top two spots. Ferrari showed
-        flashes of competitiveness, but Leclerc’s brake issues cost them a
-        stronger result. Mercedes lagged behind, while McLaren and Aston
-        Martin capitalized on opportunities, hinting at an exciting season
-        ahead.
-      </p>
-    </div>
-
-    <div class="race-section px-5">
-      <h2 class="race-section-title">
-        <span class="race-section-title-position">2</span> Saudi Arabia
-      </h2>
-      <p class="hidden-description">
-        Max Verstappen dominated the 2024 Saudi Arabian Grand Prix, securing a
-        commanding victory ahead of Red Bull teammate Sergio Perez and
-        Ferrari’s Charles Leclerc. The race also saw an impressive debut from
-        Oliver Bearman, who scored points in his first-ever F1 race.
-      </p>
-    </div>
-
-    <div class="race-section px-5">
-      <h2 class="race-section-title">
-        <span class="race-section-title-position">3</span> Australia
-      </h2>
-      <p class="hidden-description">
-        The 2024 Australian Grand Prix saw a dramatic shift in the season’s
-        momentum, with Carlos Sainz delivering a dominant win for Ferrari as
-        Verstappen retired due to mechanical issues. Charles Leclerc secured
-        second, while Lando Norris rounded out the podium in a race filled
-        with surprises, including George Russell’s crash.
-      </p>
-    </div>
-
-    <div class="race-section px-5">
-      <h2 class="race-section-title">
-        <span class="race-section-title-position">4</span> Japan
-      </h2>
-      <p class="hidden-description">
-        Red Bull reigned supreme in Japan as Max Verstappen powered to
-        victory, with teammate Sergio Perez securing second for a commanding
-        1-2 finish. The race featured early chaos, a red flag, and a strong
-        drive from Carlos Sainz to complete the podium.
-      </p>
-    </div>
-
-    <div class="race-section px-5">
-      <h2 class="race-section-title">
-        <span class="race-section-title-position">5</span> China
-      </h2>
-      <p class="hidden-description">
-        Max Verstappen triumphed in an action-packed Chinese Grand Prix,
-        fending off Lando Norris and Sergio Perez to secure victory. The race
-        featured multiple incidents, a Safety Car intervention, and a dramatic
-        restart.
-      </p>
-    </div>
-
-    <div class="race-section px-5">
-      <h2 class="race-section-title">
-        <span class="race-section-title-position">6</span> Miami
-      </h2>
-      <p class="hidden-description">
-        The Miami Grand Prix saw Lando Norris claim his first-ever F1 win in
-        dramatic fashion, outpacing Max Verstappen and Charles Leclerc. The
-        McLaren driver delivered a standout performance in an action-packed
-        race that kept fans on edge.
-      </p>
-    </div>
-
-    <div class="race-section px-5">
-      <h2 class="race-section-title">
-        <span class="race-section-title-position">7</span> Emilia-Romagna
-      </h2>
-      <p class="hidden-description">
-        In a nail-biting Emilia-Romagna Grand Prix, Max Verstappen fended off
-        a relentless late attack from Lando Norris to clinch victory by less
-        than a second, while Charles Leclerc completed the podium in third.
-      </p>
-    </div>
-
-    <div class="race-section px-5">
-      <h2 class="race-section-title">
-        <span class="race-section-title-position">8</span> Monaco
-      </h2>
-      <p class="hidden-description">
-        In a fairytale finish, Charles Leclerc dominated the streets of Monaco
-        to claim his long-awaited home victory, leading Oscar Piastri and
-        Carlos Sainz to the podium after an early chaotic start.
-      </p>
-    </div>
-
-    <div class="race-section px-5">
-      <h2 class="race-section-title">
-        <span class="race-section-title-position">9</span> Canada
-      </h2>
-      <p class="hidden-description">
-        Verstappen displayed perfect racecraft in the unpredictable conditions
-        of the Canadian Grand Prix, emerging victorious after a wet-dry race,
-        with Lando Norris and George Russell finishing behind in a competitive
-        field.
-      </p>
-    </div>
-
-    <div class="race-section px-5">
-      <h2 class="race-section-title">
-        <span class="race-section-title-position">10</span> Spain
-      </h2>
-      <p class="hidden-description">
-        In a nail-biting finish, Max Verstappen just held off Lando Norris to
-        take victory in the Spanish Grand Prix, while Lewis Hamilton earned
-        his first podium of the season in a thrilling race.
-      </p>
-    </div>
-
-    <div class="race-section px-5">
-      <h2 class="race-section-title">
-        <span class="race-section-title-position">11</span> Austria
-      </h2>
-      <p class="hidden-description">
-        In a dramatic turn of events, George Russell snatched an unexpected
-        victory at the Austrian Grand Prix after Max Verstappen and Lando
-        Norris collided while fighting for the lead.
-      </p>
-    </div>
-
-    <div class="race-section px-5">
-      <h2 class="race-section-title">
-        <span class="race-section-title-position">12</span> Great Britain
-      </h2>
-      <p class="hidden-description">
-        In a thrilling wet-dry race at Silverstone, Lewis Hamilton clinched
-        his ninth British Grand Prix victory, narrowly beating Max Verstappen,
-        with Lando Norris finishing third.
-      </p>
-    </div>
-
-    <div class="race-section px-5">
-      <h2 class="race-section-title">
-        <span class="race-section-title-position">13</span> Hungary
-      </h2>
-      <p class="hidden-description">
-        In a dramatic Hungarian Grand Prix, Oscar Piastri took his first F1
-        win with McLaren dominating the race, while Lando Norris reluctantly
-        handed back the lead. Lewis Hamilton secured third after a collision
-        with Verstappen.
-      </p>
-    </div>
-
-    <div class="race-section px-5">
-      <h2 class="race-section-title">
-        <span class="race-section-title-position">14</span> Belgium
-      </h2>
-      <p class="hidden-description">
-        Lewis Hamilton took the win at Spa after a dramatic race in which his
-        Mercedes teammate, George Russell, was disqualified. Oscar Piastri
-        finished second, while Charles Leclerc completed the podium in third.
-      </p>
-    </div>
-
-    <div class="race-section px-5">
-      <h2 class="race-section-title">
-        <span class="race-section-title-position">15</span> Netherlands
-      </h2>
-      <p class="hidden-description">
-        Lando Norris triumphed at the Dutch Grand Prix, taking the lead from
-        Max Verstappen and denying the home hero a continued streak of wins.
-        Charles Leclerc finished third in a competitive race at Zandvoort.
-      </p>
-    </div>
-
-    <div class="race-section px-5">
-      <h2 class="race-section-title">
-        <span class="race-section-title-position">16</span> Italy
-      </h2>
-      <p class="hidden-description">
-        Leclerc thrilled the Tifosi with a fairytale win at Monza, edging out
-        McLaren's Piastri and Norris, as Ferrari's daring strategy paid off
-        for an emotional home triumph.
-      </p>
-    </div>
-
-    <div class="race-section px-5">
-      <h2 class="race-section-title">
-        <span class="race-section-title-position">17</span> Azerbaijan
-      </h2>
-      <p class="hidden-description">
-        Oscar Piastri secured a dramatic win at the Azerbaijan GP, holding off
-        Charles Leclerc in a tense final race battle, as Carlos Sainz and
-        Sergio Perez collided on the penultimate lap.
-      </p>
-    </div>
-
-    <div class="race-section px-5">
-      <h2 class="race-section-title">
-        <span class="race-section-title-position">18</span> Singapore
-      </h2>
-      <p class="hidden-description">
-        Lando Norris was untouchable in the Singapore Grand Prix, delivering a
-        lights-to-flag victory. Max Verstappen finished second, splitting the
-        McLaren pair, with Oscar Piastri securing third. Norris’ win once
-        again chipping away at Verstappen’s lead in the championship.
-      </p>
-    </div>
-
-    <div class="race-section px-5">
-      <h2 class="race-section-title">
-        <span class="race-section-title-position">19</span> United States
-      </h2>
-      <p class="hidden-description">
-        Verstappen clinches the title in dominant fashion.
-      </p>
-    </div>
-
-    <div class="race-section px-5">
-      <h2 class="race-section-title">
-        <span class="race-section-title-position">20</span> Mexico
-      </h2>
-      <p class="hidden-description">
-        Verstappen clinches the title in dominant fashion.
-      </p>
-    </div>
-
-    <div class="race-section px-5">
-      <h2 class="race-section-title">
-        <span class="race-section-title-position">21</span> Brazil
-      </h2>
-      <p class="hidden-description">
-        Insane qualifying lap + Red Bull strategy masterclass.
-      </p>
-    </div>
-
-    <div class="race-section px-5">
-      <h2 class="race-section-title">
-        <span class="race-section-title-position">22</span> Las Vegas
-      </h2>
-      <p class="hidden-description">
-        Verstappen clinches the title in dominant fashion.
-      </p>
-    </div>
-
-    <div class="race-section px-5">
-      <h2 class="race-section-title">
-        <span class="race-section-title-position">23</span> Qatar
-      </h2>
-      <p class="hidden-description">
-        Verstappen clinches the title in dominant fashion.
-      </p>
-    </div>
-
-    <div class="race-section px-5">
-      <h2 class="race-section-title">
-        <span class="race-section-title-position">24</span> Abu Dhabi
-      </h2>
-      <p class="hidden-description">
-        Verstappen clinches the title in dominant fashion.
-      </p>
-    </div>
-  </section>
-
-  <!-- related calendars -->
-  <div class="container-fluid my-3">
-    <div class="row p-5 gap-4">
-      <div class="col-12 col-md border border-dark border-3 rounded-4 p-5 card-racecalender-section">
-        <h2>Relive the 2023 Formula 1 season</h2>
-        <p>Discover the races that filled the calender of the 2023 season</p>
-        <a class="btn btn-secondary" href="../2023/2023-calendar.html" role="button">Visit the 2023 race calendar</a>
-      </div>
-      <div class="col-12 col-md border border-dark border-3 rounded-4 p-5 card-racecalender-section">
-        <h2>Relive the 2025 Formula 1 season</h2>
-        <p>Discover the races that filled the calender of the 2025 season</p>
-        <a class="btn btn-dark" href="../2025/2025-calendar.html" role="button">Visit the 2025 race calendar</a>
-      </div>
-    </div>
-  </div>
-
-  <!-- site disclaimer -->
-  <div class="container-fluid text-bg-dark border border-gray7 border-top-0 border-start-0 border-end-0">
-    <div class="row">
-      <div class="text-center">
-        <p class="my-2">
-          DISCLAIMER: This website is unofficial and is not associated in any
-          way with the Formula 1 companies. F1, FORMULA ONE, FORMULA 1, FIA
-          FORMULA ONE WORLD CHAMPIONSHIP, GRAND PRIX and related marks are
-          trade marks of Formula One Licensing B.V.
+    <!-- 2024 race collection -->
+    <section class="featured-races my-5">
+      <div class="race-section px-5">
+        <h2 class="race-section-title">
+          <span class="race-section-title-position">1</span> Bahrain
+        </h2>
+        <p class="hidden-description">
+          The 2024 F1 season kicked off in Bahrain with a commanding win by Max
+          Verstappen, as Red Bull locked out the top two spots. Ferrari showed
+          flashes of competitiveness, but Leclerc’s brake issues cost them a
+          stronger result. Mercedes lagged behind, while McLaren and Aston
+          Martin capitalized on opportunities, hinting at an exciting season
+          ahead.
         </p>
       </div>
-    </div>
-  </div>
 
-  <!-- footer -->
-  <div class="container-fluid text-bg-dark p-3">
-    <footer class="container border-open-left--open-top pt-5 pb-0">
+      <div class="race-section px-5">
+        <h2 class="race-section-title">
+          <span class="race-section-title-position">2</span> Saudi Arabia
+        </h2>
+        <p class="hidden-description">
+          Max Verstappen dominated the 2024 Saudi Arabian Grand Prix, securing a
+          commanding victory ahead of Red Bull teammate Sergio Perez and
+          Ferrari’s Charles Leclerc. The race also saw an impressive debut from
+          Oliver Bearman, who scored points in his first-ever F1 race.
+        </p>
+      </div>
+
+      <div class="race-section px-5">
+        <h2 class="race-section-title">
+          <span class="race-section-title-position">3</span> Australia
+        </h2>
+        <p class="hidden-description">
+          The 2024 Australian Grand Prix saw a dramatic shift in the season’s
+          momentum, with Carlos Sainz delivering a dominant win for Ferrari as
+          Verstappen retired due to mechanical issues. Charles Leclerc secured
+          second, while Lando Norris rounded out the podium in a race filled
+          with surprises, including George Russell’s crash.
+        </p>
+      </div>
+
+      <div class="race-section px-5">
+        <h2 class="race-section-title">
+          <span class="race-section-title-position">4</span> Japan
+        </h2>
+        <p class="hidden-description">
+          Red Bull reigned supreme in Japan as Max Verstappen powered to
+          victory, with teammate Sergio Perez securing second for a commanding
+          1-2 finish. The race featured early chaos, a red flag, and a strong
+          drive from Carlos Sainz to complete the podium.
+        </p>
+      </div>
+
+      <div class="race-section px-5">
+        <h2 class="race-section-title">
+          <span class="race-section-title-position">5</span> China
+        </h2>
+        <p class="hidden-description">
+          Max Verstappen triumphed in an action-packed Chinese Grand Prix,
+          fending off Lando Norris and Sergio Perez to secure victory. The race
+          featured multiple incidents, a Safety Car intervention, and a dramatic
+          restart.
+        </p>
+      </div>
+
+      <div class="race-section px-5">
+        <h2 class="race-section-title">
+          <span class="race-section-title-position">6</span> Miami
+        </h2>
+        <p class="hidden-description">
+          The Miami Grand Prix saw Lando Norris claim his first-ever F1 win in
+          dramatic fashion, outpacing Max Verstappen and Charles Leclerc. The
+          McLaren driver delivered a standout performance in an action-packed
+          race that kept fans on edge.
+        </p>
+      </div>
+
+      <div class="race-section px-5">
+        <h2 class="race-section-title">
+          <span class="race-section-title-position">7</span> Emilia-Romagna
+        </h2>
+        <p class="hidden-description">
+          In a nail-biting Emilia-Romagna Grand Prix, Max Verstappen fended off
+          a relentless late attack from Lando Norris to clinch victory by less
+          than a second, while Charles Leclerc completed the podium in third.
+        </p>
+      </div>
+
+      <div class="race-section px-5">
+        <h2 class="race-section-title">
+          <span class="race-section-title-position">8</span> Monaco
+        </h2>
+        <p class="hidden-description">
+          In a fairytale finish, Charles Leclerc dominated the streets of Monaco
+          to claim his long-awaited home victory, leading Oscar Piastri and
+          Carlos Sainz to the podium after an early chaotic start.
+        </p>
+      </div>
+
+      <div class="race-section px-5">
+        <h2 class="race-section-title">
+          <span class="race-section-title-position">9</span> Canada
+        </h2>
+        <p class="hidden-description">
+          Verstappen displayed perfect racecraft in the unpredictable conditions
+          of the Canadian Grand Prix, emerging victorious after a wet-dry race,
+          with Lando Norris and George Russell finishing behind in a competitive
+          field.
+        </p>
+      </div>
+
+      <div class="race-section px-5">
+        <h2 class="race-section-title">
+          <span class="race-section-title-position">10</span> Spain
+        </h2>
+        <p class="hidden-description">
+          In a nail-biting finish, Max Verstappen just held off Lando Norris to
+          take victory in the Spanish Grand Prix, while Lewis Hamilton earned
+          his first podium of the season in a thrilling race.
+        </p>
+      </div>
+
+      <div class="race-section px-5">
+        <h2 class="race-section-title">
+          <span class="race-section-title-position">11</span> Austria
+        </h2>
+        <p class="hidden-description">
+          In a dramatic turn of events, George Russell snatched an unexpected
+          victory at the Austrian Grand Prix after Max Verstappen and Lando
+          Norris collided while fighting for the lead.
+        </p>
+      </div>
+
+      <div class="race-section px-5">
+        <h2 class="race-section-title">
+          <span class="race-section-title-position">12</span> Great Britain
+        </h2>
+        <p class="hidden-description">
+          In a thrilling wet-dry race at Silverstone, Lewis Hamilton clinched
+          his ninth British Grand Prix victory, narrowly beating Max Verstappen,
+          with Lando Norris finishing third.
+        </p>
+      </div>
+
+      <div class="race-section px-5">
+        <h2 class="race-section-title">
+          <span class="race-section-title-position">13</span> Hungary
+        </h2>
+        <p class="hidden-description">
+          In a dramatic Hungarian Grand Prix, Oscar Piastri took his first F1
+          win with McLaren dominating the race, while Lando Norris reluctantly
+          handed back the lead. Lewis Hamilton secured third after a collision
+          with Verstappen.
+        </p>
+      </div>
+
+      <div class="race-section px-5">
+        <h2 class="race-section-title">
+          <span class="race-section-title-position">14</span> Belgium
+        </h2>
+        <p class="hidden-description">
+          Lewis Hamilton took the win at Spa after a dramatic race in which his
+          Mercedes teammate, George Russell, was disqualified. Oscar Piastri
+          finished second, while Charles Leclerc completed the podium in third.
+        </p>
+      </div>
+
+      <div class="race-section px-5">
+        <h2 class="race-section-title">
+          <span class="race-section-title-position">15</span> Netherlands
+        </h2>
+        <p class="hidden-description">
+          Lando Norris triumphed at the Dutch Grand Prix, taking the lead from
+          Max Verstappen and denying the home hero a continued streak of wins.
+          Charles Leclerc finished third in a competitive race at Zandvoort.
+        </p>
+      </div>
+
+      <div class="race-section px-5">
+        <h2 class="race-section-title">
+          <span class="race-section-title-position">16</span> Italy
+        </h2>
+        <p class="hidden-description">
+          Leclerc thrilled the Tifosi with a fairytale win at Monza, edging out
+          McLaren's Piastri and Norris, as Ferrari's daring strategy paid off
+          for an emotional home triumph.
+        </p>
+      </div>
+
+      <div class="race-section px-5">
+        <h2 class="race-section-title">
+          <span class="race-section-title-position">17</span> Azerbaijan
+        </h2>
+        <p class="hidden-description">
+          Oscar Piastri secured a dramatic win at the Azerbaijan GP, holding off
+          Charles Leclerc in a tense final race battle, as Carlos Sainz and
+          Sergio Perez collided on the penultimate lap.
+        </p>
+      </div>
+
+      <div class="race-section px-5">
+        <h2 class="race-section-title">
+          <span class="race-section-title-position">18</span> Singapore
+        </h2>
+        <p class="hidden-description">
+          Lando Norris was untouchable in the Singapore Grand Prix, delivering a
+          lights-to-flag victory. Max Verstappen finished second, splitting the
+          McLaren pair, with Oscar Piastri securing third. Norris’ win once
+          again chipping away at Verstappen’s lead in the championship.
+        </p>
+      </div>
+
+      <div class="race-section px-5">
+        <h2 class="race-section-title">
+          <span class="race-section-title-position">19</span> United States
+        </h2>
+        <p class="hidden-description">
+          Verstappen clinches the title in dominant fashion.
+        </p>
+      </div>
+
+      <div class="race-section px-5">
+        <h2 class="race-section-title">
+          <span class="race-section-title-position">20</span> Mexico
+        </h2>
+        <p class="hidden-description">
+          Verstappen clinches the title in dominant fashion.
+        </p>
+      </div>
+
+      <div class="race-section px-5">
+        <h2 class="race-section-title">
+          <span class="race-section-title-position">21</span> Brazil
+        </h2>
+        <p class="hidden-description">
+          Insane qualifying lap + Red Bull strategy masterclass.
+        </p>
+      </div>
+
+      <div class="race-section px-5">
+        <h2 class="race-section-title">
+          <span class="race-section-title-position">22</span> Las Vegas
+        </h2>
+        <p class="hidden-description">
+          Verstappen clinches the title in dominant fashion.
+        </p>
+      </div>
+
+      <div class="race-section px-5">
+        <h2 class="race-section-title">
+          <span class="race-section-title-position">23</span> Qatar
+        </h2>
+        <p class="hidden-description">
+          Verstappen clinches the title in dominant fashion.
+        </p>
+      </div>
+
+      <div class="race-section px-5">
+        <h2 class="race-section-title">
+          <span class="race-section-title-position">24</span> Abu Dhabi
+        </h2>
+        <p class="hidden-description">
+          Verstappen clinches the title in dominant fashion.
+        </p>
+      </div>
+    </section>
+
+    <!-- related calendars -->
+    <div class="container-fluid my-3">
+      <div class="row p-5 gap-4">
+        <div
+          class="col-12 col-md border border-dark border-3 rounded-4 p-5 card-racecalender-section"
+        >
+        <h2>Explore the 2024 Formula 1 drivers</h2>
+        <p>Discover the drivers that race for the Drivers Championship of the 2025 season</p>
+        <a
+          class="btn btn-primary"
+          href="#"
+          role="button"
+          >Visit the 2024 drivers</a
+        >
+        </div>
+        <div
+          class="col-12 col-md border border-dark border-3 rounded-4 p-5 card-racecalender-section"
+        >
+          <h2>Explore the 2025 Formula 1 calendar</h2>
+          <p>Discover the races that filled the calender of the 2025 season</p>
+          <a
+            class="btn btn-primary"
+            href="../2025/2025-calendar.html"
+            role="button"
+            >Visit the 2025 race calendar</a
+          >
+        </div>
+      </div>
+    </div>
+
+    <!-- site disclaimer -->
+    <div
+      class="container-fluid text-bg-dark border border-gray7 border-top-0 border-start-0 border-end-0"
+    >
       <div class="row">
-        <div class="col-md-4 mb-3">
-          <div>
-            <img src="../../assets/img/logos/trackside-logowhite.png" class="img-fluid mb-3" alt="" />
-            <p>Discover Formula 1 from a fan perspective</p>
+        <div class="text-center">
+          <p class="my-2">
+            DISCLAIMER: This website is unofficial and is not associated in any
+            way with the Formula 1 companies. F1, FORMULA ONE, FORMULA 1, FIA
+            FORMULA ONE WORLD CHAMPIONSHIP, GRAND PRIX and related marks are
+            trade marks of Formula One Licensing B.V.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- footer -->
+    <div class="container-fluid text-bg-dark p-3">
+      <footer class="container border-open-left--open-top pt-5 pb-0">
+        <div class="row">
+          <div class="col-md-4 mb-3">
+            <div>
+              <img
+                src="../../assets/img/logos/trackside-logowhite.png"
+                class="img-fluid mb-3"
+                alt=""
+              />
+              <p>Discover Formula 1 from a fan perspective</p>
+            </div>
+          </div>
+
+          <div class="col-6 col-md-2 mb-3">
+            <h5>Trackside</h5>
+            <ul class="nav flex-column">
+              <li class="nav-item mb-2">
+                <a href="../../index.html" class="nav-link p-0">Home</a>
+              </li>
+              <li class="nav-item mb-2">
+                <a href="../../pages/whatis.html" class="nav-link p-0"
+                  >What is Formula 1</a
+                >
+              </li>
+              <li class="nav-item mb-2">
+                <a href="../../pages/technologies.html" class="nav-link p-0"
+                  >Technology of F1</a
+                >
+              </li>
+              <li class="nav-item mb-2">
+                <a href="../../pages/future.html" class="nav-link p-0"
+                  >Future of F1</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <div class="col-6 col-md-2 mb-3">
+            <h5>Race Calendars</h5>
+            <ul class="nav flex-column">
+              <li class="nav-item mb-2">
+                <a href="../2025/2025-calendar.html" class="nav-link p-0"
+                  >2025 Race Calendar</a
+                >
+              </li>
+              <li class="nav-item mb-2">
+                <a href="#" class="nav-link p-0">2024 Race Calendar</a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="col-6 col-md-2 mb-3">
+            <h5>Season Talk</h5>
+            <ul class="nav flex-column">
+              <li class="nav-item mb-2">
+                <a href="#" class="nav-link p-0">2025 Coverage</a>
+              </li>
+              <li class="nav-item mb-2">
+                <a href="#" class="nav-link p-0">2024 Breakdown</a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="col-6 col-md-2 mb-3">
+            <h5>Pitwall</h5>
+            <ul class="nav flex-column">
+              <li class="nav-item mb-2">
+                <a href="../../pages/faqs.html" class="nav-link p-0"
+                  >Trackside FAQs</a
+                >
+              </li>
+              <li class="nav-item mb-2">
+                <a href="#" class="nav-link p-0">Site Attributions</a>
+              </li>
+              <li class="nav-item mb-2">
+                <a href="../../pages/learnmore.html" class="nav-link p-0"
+                  >Learn More</a
+                >
+              </li>
+              <li class="nav-item mb-2">
+                <a href="../../pages/contactus.html" class="nav-link p-0">Contact Us</a>
+              </li>
+            </ul>
           </div>
         </div>
 
-        <div class="col-6 col-md-2 mb-3">
-          <h5>Trackside</h5>
-          <ul class="nav flex-column">
-            <li class="nav-item mb-2">
-              <a href="../../index.html" class="nav-link p-0">Home</a>
+        <div
+          class="d-flex flex-column flex-sm-row justify-content-between py-4 my-2 border-top"
+        >
+          <p>© 2025 Nick Calvo All rights reserved.</p>
+          <ul class="list-unstyled d-flex">
+            <li class="ms-3">
+              <a class="link-body-emphasis" href="#"
+                ><svg class="bi" width="24" height="24">
+                  <use xlink:href="#twitter"></use></svg
+              ></a>
             </li>
-            <li class="nav-item mb-2">
-              <a href="../../pages/whatis.html" class="nav-link p-0">What is Formula 1</a>
+            <li class="ms-3">
+              <a class="link-body-emphasis" href="#"
+                ><svg class="bi" width="24" height="24">
+                  <use xlink:href="#instagram"></use></svg
+              ></a>
             </li>
-            <li class="nav-item mb-2">
-              <a href="../../pages/technologies.html" class="nav-link p-0">Technology of F1</a>
-            </li>
-            <li class="nav-item mb-2">
-              <a href="../../pages/future.html" class="nav-link p-0">Future of F1</a>
-            </li>
-          </ul>
-        </div>
-
-        <div class="col-6 col-md-2 mb-3">
-          <h5>Race Calendars</h5>
-          <ul class="nav flex-column">
-            <li class="nav-item mb-2">
-              <a href="../2025/2025-calendar.html" class="nav-link p-0">2025 Race Calendar</a>
-            </li>
-            <li class="nav-item mb-2">
-              <a href="#" class="nav-link p-0">2024 Race Calendar</a>
-            </li>
-            <li class="nav-item mb-2">
-              <a href="../2023/2023-calendar.html" class="nav-link p-0">2023 Race Calendar</a>
+            <li class="ms-3">
+              <a class="link-body-emphasis" href="#"
+                ><svg class="bi" width="24" height="24">
+                  <use xlink:href="#facebook"></use></svg
+              ></a>
             </li>
           </ul>
         </div>
+      </footer>
+    </div>
 
-        <div class="col-6 col-md-2 mb-3">
-          <h5>Season Talk</h5>
-          <ul class="nav flex-column">
-            <li class="nav-item mb-2">
-              <a href="#" class="nav-link p-0">2025 Coverage</a>
-            </li>
-            <li class="nav-item mb-2">
-              <a href="#" class="nav-link p-0">2024 Breakdown</a>
-            </li>
-            <li class="nav-item mb-2">
-              <a href="#" class="nav-link p-0">2023 Breakdown</a>
-            </li>
-          </ul>
-        </div>
-
-        <div class="col-6 col-md-2 mb-3">
-          <h5>Pitwall</h5>
-          <ul class="nav flex-column">
-            <li class="nav-item mb-2">
-              <a href="../../pages/faqs.html" class="nav-link p-0">Trackside FAQs</a>
-            </li>
-            <li class="nav-item mb-2">
-              <a href="#" class="nav-link p-0">Site Attributions</a>
-            </li>
-            <li class="nav-item mb-2">
-              <a href="../../pages/learnmore.html" class="nav-link p-0">Learn More</a>
-            </li>
-            <li class="nav-item mb-2">
-              <a href="#" class="nav-link p-0">Contact Us</a>
-            </li>
-          </ul>
-        </div>
-      </div>
-
-      <div class="d-flex flex-column flex-sm-row justify-content-between py-4 my-2 border-top">
-        <p>© 2025 Nick Calvo All rights reserved.</p>
-        <ul class="list-unstyled d-flex">
-          <li class="ms-3">
-            <a class="link-body-emphasis" href="#"><svg class="bi" width="24" height="24">
-                <use xlink:href="#twitter"></use>
-              </svg></a>
-          </li>
-          <li class="ms-3">
-            <a class="link-body-emphasis" href="#"><svg class="bi" width="24" height="24">
-                <use xlink:href="#instagram"></use>
-              </svg></a>
-          </li>
-          <li class="ms-3">
-            <a class="link-body-emphasis" href="#"><svg class="bi" width="24" height="24">
-                <use xlink:href="#facebook"></use>
-              </svg></a>
-          </li>
-        </ul>
-      </div>
-    </footer>
-  </div>
-
-  <script type="module" src="../../js/main.js"></script>
-</body>
-
+    <script type="module" src="../../js/main.js"></script>
+  </body>
 </html>

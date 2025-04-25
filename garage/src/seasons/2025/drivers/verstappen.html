@@ -1,385 +1,479 @@
 <!doctype html>
 <html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <meta
+      name="description"
+      content="Formula Bootstrap is a a Bootstrap built website that explores some areas of Formula One."
+    />
+    <meta name="author" content="Nick Calvo" />
+    <title>Max Verstappen 2025 Driver Profile | Trackside</title>
+    <link rel="stylesheet" href="../../../scss/styles.scss" />
+  </head>
 
-<head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-  <meta name="description"
-    content="Formula Bootstrap is a a Bootstrap built website that explores some areas of Formula One." />
-  <meta name="author" content="Nick Calvo" />
-  <title>Max Verstappen 2025 Driver Profile | Trackside</title>
-  <link rel="stylesheet" href="../../../scss/styles.scss" />
-</head>
-
-<body>
-  <!-- Add this to your body to display the breakpoint size -->
-  <div id="breakpoint" class="breakpoint-size"></div>
-  <!-- site header -->
-  <nav class="navbar navbar-expand-lg sticky-top" id="mainNav">
-    <div class="container">
-      <a class="navbar-brand" href="#page-top">
-        <img src="../../../assets/img/logos/trackside-logoblack.png" class="img-fluid w-50" alt="Trackside Logo" />
-      </a>
-      <button class="navbar-toggler mt-3" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive"
-        aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-        Menu
-        <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" class="bi bi-list ms-1"
-          viewBox="0 0 16 16">
-          <path fill-rule="evenodd"
-            d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5" />
-        </svg>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarResponsive">
-        <ul class="navbar-nav ms-auto me-4 py-4 py-lg-0">
-          <li class="nav-item">
-            <a class="nav-link active" href="../../../index.html" aria-current="page">Home</a>
-          </li>
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="aboutDropdown" role="button" data-bs-toggle="dropdown"
-              aria-expanded="false">
-              About F1
-            </a>
-            <ul class="dropdown-menu" aria-labelledby="aboutDropdown">
-              <li>
-                <a class="dropdown-item" href="../../../pages/whatis.html">What is Formula 1</a>
-              </li>
-              <li>
-                <a class="dropdown-item" href="../../../pages/technologies.html">Technology of F1</a>
-              </li>
-              <li>
-                <a class="dropdown-item" href="../../../pages/future.html">Future of F1</a>
-              </li>
-            </ul>
-          </li>
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="aboutDropdown" role="button" data-bs-toggle="dropdown"
-              aria-expanded="false">
-              Race Calendars
-            </a>
-            <ul class="dropdown-menu" aria-labelledby="aboutDropdown">
-              <li>
-                <a class="dropdown-item" href="../2025-calendar.html">2025 Calendar</a>
-              </li>
-              <li>
-                <a class="dropdown-item" href="../../2024/2024-calendar.html">2024 Calendar</a>
-              </li>
-              <li>
-                <a class="dropdown-item" href="../../../seasons/2023/2023-calendar.html">2023 Calendar</a>
-              </li>
-            </ul>
-          </li>
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="seasonsDropdown" role="button" data-bs-toggle="dropdown"
-              aria-expanded="false">
-              Standings
-            </a>
-            <ul class="dropdown-menu" aria-labelledby="seasonsDropdown">
-              <li>
-                <h6 class="dropdown-header">2025</h6>
-              </li>
-              <li>
-                <a class="dropdown-item" href="./2025-drivers.html">2025 Drivers</a>
-              </li>
-              <li>
-                <a class="dropdown-item" href="#">2025 Teams</a>
-              </li>
-              <li>
-                <hr class="dropdown-divider" />
-              </li>
-              <li>
-                <h6 class="dropdown-header">2024</h6>
-              </li>
-              <li>
-                <a class="dropdown-item" href="#">2024 Drivers</a>
-              </li>
-              <li>
-                <a class="dropdown-item" href="#">2024 Teams</a>
-              </li>
-              <li>
-                <hr class="dropdown-divider" />
-              </li>
-              <li>
-                <h6 class="dropdown-header">2023</h6>
-              </li>
-              <li>
-                <a class="dropdown-item" href="#">2023 Drivers</a>
-              </li>
-              <li>
-                <a class="dropdown-item" href="../../2023/teams/2023-teams.html">2023 Teams</a>
-              </li>
-            </ul>
-          </li>
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="seasonsDropdown" role="button" data-bs-toggle="dropdown"
-              aria-expanded="false">
-              Season Talk
-            </a>
-            <ul class="dropdown-menu" aria-labelledby="seasonsDropdown">
-              <li>
-                <a class="dropdown-item" href="#">2025 Coverage</a>
-              </li>
-              <li>
-                <a class="dropdown-item" href="#">2024 Breakdown</a>
-              </li>
-              <li>
-                <a class="dropdown-item" href="#">2023 Breakdown</a>
-              </li>
-            </ul>
-          </li>
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="fanZoneDropdown" role="button" data-bs-toggle="dropdown"
-              aria-expanded="false">
-              Site
-            </a>
-            <ul class="dropdown-menu" aria-labelledby="fanZoneDropdown">
-              <li>
-                <a class="dropdown-item" href="../../../pages/faqs.html">Trackside FAQs</a>
-              </li>
-              <li>
-                <a class="dropdown-item" href="../../../pages/learnmore.html">Learn More</a>
-              </li>
-              <li>
-                <a class="dropdown-item" href="#">Contact Us</a>
-              </li>
-              <li>
-                <a class="dropdown-item" href="#">Site Attributions</a>
-              </li>
-            </ul>
-          </li>
-        </ul>
+  <body>
+    <!-- Add this to your body to display the breakpoint size -->
+    <div id="breakpoint" class="breakpoint-size"></div>
+    <!-- site header -->
+    <nav class="navbar navbar-expand-lg sticky-top" id="mainNav">
+      <div class="container">
+        <a class="navbar-brand" href="#page-top">
+          <img
+            src="../../../assets/img/logos/trackside-logoblack.png"
+            class="img-fluid w-50"
+            alt="Trackside Logo"
+          />
+        </a>
+        <button
+          class="navbar-toggler mt-3"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarResponsive"
+          aria-controls="navbarResponsive"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          Menu
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="1em"
+            height="1em"
+            fill="currentColor"
+            class="bi bi-list ms-1"
+            viewBox="0 0 16 16"
+          >
+            <path
+              fill-rule="evenodd"
+              d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5"
+            />
+          </svg>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav ms-auto me-4 py-4 py-lg-0">
+            <li class="nav-item">
+              <a
+                class="nav-link active"
+                href="../../../index.html"
+                aria-current="page"
+                >Home</a
+              >
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                id="aboutDropdown"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                About F1
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="aboutDropdown">
+                <li>
+                  <a class="dropdown-item" href="../../../pages/whatis.html"
+                    >What is Formula 1</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="dropdown-item"
+                    href="../../../pages/technologies.html"
+                    >Technology of F1</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="../../../pages/future.html"
+                    >Future of F1</a
+                  >
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                id="aboutDropdown"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Race Calendars
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="aboutDropdown">
+                <li>
+                  <a class="dropdown-item" href="../2025-calendar.html"
+                    >2025 Calendar</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="../../2024/2024-calendar.html"
+                    >2024 Calendar</a
+                  >
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                id="seasonsDropdown"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Standings
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="seasonsDropdown">
+                <li>
+                  <h6 class="dropdown-header">2025</h6>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="./2025-drivers.html"
+                    >2025 Drivers</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#">2025 Teams</a>
+                </li>
+                <li>
+                  <hr class="dropdown-divider" />
+                </li>
+                <li>
+                  <h6 class="dropdown-header">2024</h6>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#">2024 Drivers</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#">2024 Teams</a>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                id="seasonsDropdown"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Season Talk
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="seasonsDropdown">
+                <li>
+                  <a class="dropdown-item" href="#">2025 Coverage</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#">2024 Breakdown</a>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                id="fanZoneDropdown"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Site
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="fanZoneDropdown">
+                <li>
+                  <a class="dropdown-item" href="../../../pages/faqs.html"
+                    >Trackside FAQs</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="../../../pages/learnmore.html"
+                    >Learn More</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="../../../pages/contactus.html">Contact Us</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#">Site Attributions</a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
       </div>
-    </div>
-  </nav>
-
-  <!-- 2025 driver breadcrumbs -->
-  <div class="container my-4">
-    <nav aria-label="breadcrumb">
-      <ol class="breadcrumb">
-        <li class="breadcrumb-item">
-          <a href="./2025-drivers.html">2025 Drivers</a>
-        </li>
-        <li class="breadcrumb-item active" aria-current="page">
-          Max Verstappen
-        </li>
-      </ol>
     </nav>
-  </div>
 
-  <div class="container my-5">
-    <div class="row championship-standing-pre-info">
-      <h5>1</h5>
-      <h1>Max Verstappen</h1>
+    <!-- 2025 driver breadcrumbs -->
+    <div class="container my-4">
+      <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item">
+            <a href="./2025-drivers.html">2025 Drivers</a>
+          </li>
+          <li class="breadcrumb-item active" aria-current="page">
+            Max Verstappen
+          </li>
+        </ol>
+      </nav>
     </div>
 
-    <div class="row gap-3">
-      <div class="col-12 col-md border-redbull">
-        <img src="../../../assets/img/drivers/2024/verstappen-portrait-main-copy.png" class="img-fluid" alt="" />
+    <div class="container my-5">
+      <div class="row championship-standing-pre-info">
+        <h5>1</h5>
+        <h1>Max Verstappen</h1>
       </div>
-      <div class="col-12 col-md border-redbull">
-        <div class="row m-2 p-1 border-open-left--open-top--w2">
-          <div class="col-12 col-md">
-            <h2 class="driver-champion-standing-pos">3</h2>
-            <h5 class="text-uppercase">
-              2025 Drivers' Championship Position
-            </h5>
-          </div>
-          <div class="col-12 col-md text-end">
-            <h2 class="driver-champion-standing-pos">69</h2>
-            <h5 class="text-uppercase">Points</h5>
-          </div>
+
+      <div class="row gap-3">
+        <div class="col-12 col-md border-redbull">
+          <img
+            src="../../../assets/img/drivers/2024/verstappen-portrait-main-copy.png"
+            class="img-fluid"
+            alt=""
+          />
         </div>
-        <ul class="list-group list-group-flush">
-          <li class="list-group-item d-flex justify-content-between align-items-start lgi-redbull">
-            <div class="ms-2 me-auto">
-              <div class="fw-bold">Team</div>
+        <div class="col-12 col-md border-redbull">
+          <div class="row m-2 p-1 border-open-left--open-top--w2">
+            <div class="col-12 col-md">
+              <h2 class="driver-champion-standing-pos">3</h2>
+              <h5 class="text-uppercase">
+                2025 Drivers' Championship Position
+              </h5>
             </div>
-            <span class="badge text-bg-redbull rounded-pill">
-              Red Bull Racing
-            </span>
-          </li>
-          <li class="list-group-item d-flex justify-content-between align-items-start lgi-redbull">
-            <div class="ms-2 me-auto">
-              <div class="fw-bold">Podiums</div>
+            <div class="col-12 col-md text-end">
+              <h2 class="driver-champion-standing-pos">69</h2>
+              <h5 class="text-uppercase">Points</h5>
             </div>
-            <span class="badge text-bg-redbull rounded-pill">114</span>
-          </li>
-          <li class="list-group-item d-flex justify-content-between align-items-start lgi-redbull">
-            <div class="ms-2 me-auto">
-              <div class="fw-bold">Points</div>
-            </div>
-            <span class="badge text-bg-redbull rounded-pill">3092.5</span>
-          </li>
-          <li class="list-group-item d-flex justify-content-between align-items-start lgi-redbull">
-            <div class="ms-2 me-auto">
-              <div class="fw-bold">Place of birth</div>
-            </div>
-            <span class="badge text-bg-redbull rounded-pill">Belgium</span>
-          </li>
-          <li class="list-group-item d-flex justify-content-between align-items-start lgi-redbull">
-            <div class="ms-2 me-auto">
-              <div class="fw-bold">Date of birth</div>
-            </div>
-            <span class="badge text-bg-redbull rounded-pill">09/30/1997</span>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </div>
-
-  <!-- learn more -->
-  <div class="container my-5">
-    <h2>Learn more</h2>
-    <p>
-      Max Verstappen, born on September 30, 1997, in Hasselt, Belgium, and
-      racing under the Dutch flag, has solidified his status as one of Formula
-      1’s all-time greats. By 2025, Verstappen is a four-time consecutive
-      World Champion, having dominated the sport from 2021 through 2024 with a
-      level of consistency, control, and raw speed rarely seen in F1 history.
-      Driving for Red Bull Racing, Verstappen has become the centerpiece of
-      the team’s success in the hybrid era, breaking records and rewriting the
-      sport’s expectations along the way.
-    </p>
-    <p>
-      His rise has been characterized by relentless competitiveness, clinical
-      racecraft, and an ability to maximize any car given to him—traits that
-      made him nearly unbeatable in recent seasons. Backed by the strategic
-      brilliance of Red Bull and the engineering genius of Adrian Newey,
-      Verstappen crushed his competition during his championship run, often
-      wrapping up titles with several rounds to spare. His 2023 and 2024
-      campaigns in particular showcased an evolved version of Max: not just
-      fast and aggressive, but patient, strategic, and virtually error-free.
-    </p>
-    <p>
-      Now heading into the 2025 season, Verstappen continues to lead Red Bull
-      alongside new teammate Yuki Tsunoda following Liam Lawson's departure.
-      While questions loom about Red Bull's ability to maintain their
-      dominance under evolving technical regulations, Verstappen remains the
-      benchmark against which all others are measured. Still in his prime,
-      he’s not just chasing more titles—he’s chasing history, with eyes on
-      legends like Schumacher and Hamilton as he continues to etch his name
-      into Formula 1 immortality.
-    </p>
-  </div>
-
-  <!-- site disclaimer -->
-  <div class="container-fluid text-bg-dark border border-dark-subtle border-top-0 border-start-0 border-end-0">
-    <div class="container">
-      <div class="row">
-        <div class="col-12">
-          <p class="my-2">
-            <strong>DISCLAIMER:</strong> This website is unofficial and is not
-            associated in any way with the Formula 1 companies. F1, FORMULA
-            ONE, FORMULA 1, FIA FORMULA ONE WORLD CHAMPIONSHIP, GRAND PRIX and
-            related marks are trade marks of Formula One Licensing B.V.
-          </p>
+          </div>
+          <ul class="list-group list-group-flush">
+            <li
+              class="list-group-item d-flex justify-content-between align-items-start lgi-redbull"
+            >
+              <div class="ms-2 me-auto">
+                <div class="fw-bold">Team</div>
+              </div>
+              <span class="badge text-bg-redbull rounded-pill">
+                Red Bull Racing
+              </span>
+            </li>
+            <li
+              class="list-group-item d-flex justify-content-between align-items-start lgi-redbull"
+            >
+              <div class="ms-2 me-auto">
+                <div class="fw-bold">Podiums</div>
+              </div>
+              <span class="badge text-bg-redbull rounded-pill">114</span>
+            </li>
+            <li
+              class="list-group-item d-flex justify-content-between align-items-start lgi-redbull"
+            >
+              <div class="ms-2 me-auto">
+                <div class="fw-bold">Points</div>
+              </div>
+              <span class="badge text-bg-redbull rounded-pill">3092.5</span>
+            </li>
+            <li
+              class="list-group-item d-flex justify-content-between align-items-start lgi-redbull"
+            >
+              <div class="ms-2 me-auto">
+                <div class="fw-bold">Place of birth</div>
+              </div>
+              <span class="badge text-bg-redbull rounded-pill">Belgium</span>
+            </li>
+            <li
+              class="list-group-item d-flex justify-content-between align-items-start lgi-redbull"
+            >
+              <div class="ms-2 me-auto">
+                <div class="fw-bold">Date of birth</div>
+              </div>
+              <span class="badge text-bg-redbull rounded-pill">09/30/1997</span>
+            </li>
+          </ul>
         </div>
       </div>
     </div>
-  </div>
 
-  <!-- footer -->
-  <div class="container-fluid text-bg-dark p-3">
-    <footer class="container border-open-left--open-top pt-5 pb-0">
-      <div class="row">
-        <div class="col-md-4 mb-3">
-          <div>
-            <img src="../../../assets/img/logos/trackside-logowhite.png" class="img-fluid mb-3" alt="" />
-            <p>Discover Formula 1 from a fan perspective</p>
+    <!-- learn more -->
+    <div class="container my-5">
+      <h2>Learn more</h2>
+      <p>
+        Max Verstappen, born on September 30, 1997, in Hasselt, Belgium, and
+        racing under the Dutch flag, has solidified his status as one of Formula
+        1’s all-time greats. By 2025, Verstappen is a four-time consecutive
+        World Champion, having dominated the sport from 2021 through 2024 with a
+        level of consistency, control, and raw speed rarely seen in F1 history.
+        Driving for Red Bull Racing, Verstappen has become the centerpiece of
+        the team’s success in the hybrid era, breaking records and rewriting the
+        sport’s expectations along the way.
+      </p>
+      <p>
+        His rise has been characterized by relentless competitiveness, clinical
+        racecraft, and an ability to maximize any car given to him—traits that
+        made him nearly unbeatable in recent seasons. Backed by the strategic
+        brilliance of Red Bull and the engineering genius of Adrian Newey,
+        Verstappen crushed his competition during his championship run, often
+        wrapping up titles with several rounds to spare. His 2023 and 2024
+        campaigns in particular showcased an evolved version of Max: not just
+        fast and aggressive, but patient, strategic, and virtually error-free.
+      </p>
+      <p>
+        Now heading into the 2025 season, Verstappen continues to lead Red Bull
+        alongside new teammate Yuki Tsunoda following Liam Lawson's departure.
+        While questions loom about Red Bull's ability to maintain their
+        dominance under evolving technical regulations, Verstappen remains the
+        benchmark against which all others are measured. Still in his prime,
+        he’s not just chasing more titles—he’s chasing history, with eyes on
+        legends like Schumacher and Hamilton as he continues to etch his name
+        into Formula 1 immortality.
+      </p>
+    </div>
+
+    <!-- site disclaimer -->
+    <div
+      class="container-fluid text-bg-dark border border-dark-subtle border-top-0 border-start-0 border-end-0"
+    >
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <p class="my-2">
+              <strong>DISCLAIMER:</strong> This website is unofficial and is not
+              associated in any way with the Formula 1 companies. F1, FORMULA
+              ONE, FORMULA 1, FIA FORMULA ONE WORLD CHAMPIONSHIP, GRAND PRIX and
+              related marks are trade marks of Formula One Licensing B.V.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- footer -->
+    <div class="container-fluid text-bg-dark p-3">
+      <footer class="container border-open-left--open-top pt-5 pb-0">
+        <div class="row">
+          <div class="col-md-4 mb-3">
+            <div>
+              <img
+                src="../../../assets/img/logos/trackside-logowhite.png"
+                class="img-fluid mb-3"
+                alt=""
+              />
+              <p>Discover Formula 1 from a fan perspective</p>
+            </div>
+          </div>
+
+          <div class="col-6 col-md-2 mb-3">
+            <h5>Trackside</h5>
+            <ul class="nav flex-column">
+              <li class="nav-item mb-2">
+                <a href="../../../index.html" class="nav-link p-0">Home</a>
+              </li>
+              <li class="nav-item mb-2">
+                <a href="../../../pages/whatis.html" class="nav-link p-0"
+                  >What is Formula 1</a
+                >
+              </li>
+              <li class="nav-item mb-2">
+                <a href="../../../pages/technologies.html" class="nav-link p-0"
+                  >Technology of F1</a
+                >
+              </li>
+              <li class="nav-item mb-2">
+                <a href="../../../pages/future.html" class="nav-link p-0"
+                  >Future of F1</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <div class="col-6 col-md-2 mb-3">
+            <h5>Race Calendars</h5>
+            <ul class="nav flex-column">
+              <li class="nav-item mb-2">
+                <a
+                  href="../../../seasons/2025/2025-calendar.html"
+                  class="nav-link p-0"
+                  >2025 Race Calendar</a
+                >
+              </li>
+              <li class="nav-item mb-2">
+                <a
+                  href="../../../seasons/2024/2024-calendar.html"
+                  class="nav-link p-0"
+                  >2024 Race Calendar</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <div class="col-6 col-md-2 mb-3">
+            <h5>Season Talk</h5>
+            <ul class="nav flex-column">
+              <li class="nav-item mb-2">
+                <a href="#" class="nav-link p-0">2025 Coverage</a>
+              </li>
+              <li class="nav-item mb-2">
+                <a href="#" class="nav-link p-0">2024 Breakdown</a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="col-6 col-md-2 mb-3">
+            <h5>Pitwall</h5>
+            <ul class="nav flex-column">
+              <li class="nav-item mb-2">
+                <a href="../../../pages/faqs.html" class="nav-link p-0"
+                  >Trackside FAQs</a
+                >
+              </li>
+              <li class="nav-item mb-2">
+                <a href="#" class="nav-link p-0">Site Attributions</a>
+              </li>
+              <li class="nav-item mb-2">
+                <a href="../../../pages/learnmore.html" class="nav-link p-0"
+                  >Learn More</a
+                >
+              </li>
+              <li class="nav-item mb-2">
+                <a href="../../../pages/contactus.html" class="nav-link p-0">Contact Us</a>
+              </li>
+            </ul>
           </div>
         </div>
 
-        <div class="col-6 col-md-2 mb-3">
-          <h5>Trackside</h5>
-          <ul class="nav flex-column">
-            <li class="nav-item mb-2">
-              <a href="../../../index.html" class="nav-link p-0">Home</a>
+        <div
+          class="d-flex flex-column flex-sm-row justify-content-between py-4 my-2 border-top"
+        >
+          <p>© 2025 Nick Calvo All rights reserved.</p>
+          <ul class="list-unstyled d-flex">
+            <li class="ms-3">
+              <a class="link-body-emphasis" href="#"
+                ><svg class="bi" width="24" height="24">
+                  <use xlink:href="#twitter"></use></svg
+              ></a>
             </li>
-            <li class="nav-item mb-2">
-              <a href="../../../pages/whatis.html" class="nav-link p-0">What is Formula 1</a>
+            <li class="ms-3">
+              <a class="link-body-emphasis" href="#"
+                ><svg class="bi" width="24" height="24">
+                  <use xlink:href="#instagram"></use></svg
+              ></a>
             </li>
-            <li class="nav-item mb-2">
-              <a href="../../../pages/technologies.html" class="nav-link p-0">Technology of F1</a>
-            </li>
-            <li class="nav-item mb-2">
-              <a href="../../../pages/future.html" class="nav-link p-0">Future of F1</a>
-            </li>
-          </ul>
-        </div>
-
-        <div class="col-6 col-md-2 mb-3">
-          <h5>Race Calendars</h5>
-          <ul class="nav flex-column">
-            <li class="nav-item mb-2">
-              <a href="../../../seasons/2025/2025-calendar.html" class="nav-link p-0">2025 Race Calendar</a>
-            </li>
-            <li class="nav-item mb-2">
-              <a href="../../../seasons/2024/2024-calendar.html" class="nav-link p-0">2024 Race Calendar</a>
-            </li>
-            <li class="nav-item mb-2">
-              <a href="../../../seasons/2023/2023-calendar.html" class="nav-link p-0">2023 Race Calendar</a>
+            <li class="ms-3">
+              <a class="link-body-emphasis" href="#"
+                ><svg class="bi" width="24" height="24">
+                  <use xlink:href="#facebook"></use></svg
+              ></a>
             </li>
           </ul>
         </div>
+      </footer>
+    </div>
 
-        <div class="col-6 col-md-2 mb-3">
-          <h5>Season Talk</h5>
-          <ul class="nav flex-column">
-            <li class="nav-item mb-2">
-              <a href="#" class="nav-link p-0">2025 Coverage</a>
-            </li>
-            <li class="nav-item mb-2">
-              <a href="#" class="nav-link p-0">2024 Breakdown</a>
-            </li>
-            <li class="nav-item mb-2">
-              <a href="#" class="nav-link p-0">2023 Breakdown</a>
-            </li>
-          </ul>
-        </div>
-
-        <div class="col-6 col-md-2 mb-3">
-          <h5>Pitwall</h5>
-          <ul class="nav flex-column">
-            <li class="nav-item mb-2">
-              <a href="../../../pages/faqs.html" class="nav-link p-0">Trackside FAQs</a>
-            </li>
-            <li class="nav-item mb-2">
-              <a href="#" class="nav-link p-0">Site Attributions</a>
-            </li>
-            <li class="nav-item mb-2">
-              <a href="../../../pages/learnmore.html" class="nav-link p-0">Learn More</a>
-            </li>
-            <li class="nav-item mb-2">
-              <a href="#" class="nav-link p-0">Contact Us</a>
-            </li>
-          </ul>
-        </div>
-      </div>
-
-      <div class="d-flex flex-column flex-sm-row justify-content-between py-4 my-2 border-top">
-        <p>© 2025 Nick Calvo All rights reserved.</p>
-        <ul class="list-unstyled d-flex">
-          <li class="ms-3">
-            <a class="link-body-emphasis" href="#"><svg class="bi" width="24" height="24">
-                <use xlink:href="#twitter"></use>
-              </svg></a>
-          </li>
-          <li class="ms-3">
-            <a class="link-body-emphasis" href="#"><svg class="bi" width="24" height="24">
-                <use xlink:href="#instagram"></use>
-              </svg></a>
-          </li>
-          <li class="ms-3">
-            <a class="link-body-emphasis" href="#"><svg class="bi" width="24" height="24">
-                <use xlink:href="#facebook"></use>
-              </svg></a>
-          </li>
-        </ul>
-      </div>
-    </footer>
-  </div>
-
-  <script type="module" src="../../../js/main.js"></script>
-  <script type="module" src="../../../js/breakpoints.js"></script>
-</body>
-
+    <script type="module" src="../../../js/main.js"></script>
+    <script type="module" src="../../../js/breakpoints.js"></script>
+  </body>
 </html>
