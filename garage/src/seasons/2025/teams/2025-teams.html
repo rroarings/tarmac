@@ -12,6 +12,10 @@
 </head>
 
 <body id="page-top">
+  <!-- Add this to your body to display the breakpoint size -->
+  <div id="breakpoint" class="breakpoint-size"></div>
+
+
   <!-- site header -->
   <nav class="navbar navbar-expand-lg sticky-top" id="mainNav">
     <div class="container">
@@ -163,14 +167,11 @@
         <img src="../../../assets/img/section/racei1.png" class="img-fluid" alt="" />
         <div class="container">
           <div class="carousel-caption text-start">
-            <h1>Example headline.</h1>
+            <h1>New faces, new fights</h1>
             <p class="opacity-75">
-              Some representative placeholder content for the first slide of
-              the carousel.
+              Rookies like Antonelli and Bortoleto shake up the grid alongside F1’s fiercest veterans in 2025.
             </p>
-            <p>
-              <a class="btn btn-lg btn-primary" href="#">Sign up today</a>
-            </p>
+
           </div>
         </div>
       </div>
@@ -178,13 +179,10 @@
         <img src="../../../assets/img/section/racei2.png" class="img-fluid" alt="" />
         <div class="container">
           <div class="carousel-caption">
-            <h1>Another example headline.</h1>
+            <h1>Youth Meets Experience
+            </h1>
             <p>
-              Some representative placeholder content for the second slide of
-              the carousel.
-            </p>
-            <p>
-              <a class="btn btn-lg btn-primary" href="#">Learn more</a>
+              Hamilton joins Leclerc at Ferrari, setting the stage for an epic intra-team battle.
             </p>
           </div>
         </div>
@@ -193,13 +191,10 @@
         <img src="../../../assets/img/section/racei3.png" class="img-fluid" alt="" />
         <div class="container">
           <div class="carousel-caption text-end">
-            <h1>One more for good measure.</h1>
+            <h1>Grid Shuffles Unleashed
+            </h1>
             <p>
-              Some representative placeholder content for the third slide of
-              this carousel.
-            </p>
-            <p>
-              <a class="btn btn-lg btn-primary" href="#">Browse gallery</a>
+              Sainz at Williams, Tsunoda at Red Bull—discover the moves reshaping the 2025 lineup.
             </p>
           </div>
         </div>
@@ -262,53 +257,47 @@
     </div>
     <div class="row row-cols-1 row-cols-sm-2">
       <!-- Portfolio item 1 - McLaren-->
-      <a href="#" class="text-decoration-none">
+      <a href="mclaren.html" class="text-decoration-none">
         <div class="col mb-4">
-          <div class="card card-standings-full team-mclaren">
-            <!-- Row 1: Team Position and Points -->
-            <div class="border-bottom border-1 text-center">
-              <div class="row p-2">
-                <div class="col">
-                  <span class="fs-3  me-2">1</span>
-                  <p class="m-0">pos</p>
-                </div>
-                <div class="col">
-                  <span class="fs-3  me-2">188</span>
-                  <p class="m-0">pts</p>
-                </div>
+          <div class="card card-standings team-mclaren">
+            <!-- Row 1: Championship Position and Points -->
+            <div class="row d-flex justify-content-between align-items-center card-standings-info p-3">
+              <div class="col text-start">
+                <h5 class="">1</h5> <!-- Championship Position -->
+              </div>
+              <div class="col text-end">
+                <p class=" ">99</p> <!-- Season Points -->
+                <p class=" ">pts</p>
               </div>
             </div>
+            <!-- Row 2: Team Name -->
             <div class="card-body text-center">
               <h5 class="card-title fs-1 fw-bold mb-1">McLaren</h5>
             </div>
-            <!-- Row 1: Car Image -->
+            <!-- Row 3: Car Image -->
             <img src="../../../assets/img/cars/2024/car-mclaren-side-main.png" class="card-img-top" alt="McLaren Car" />
-
-            <!-- Row 3: Driver Numbers and Names -->
-            <div class="card-footer text-center">
-              <div class="row">
-                <div class="col">
-                  <div class="row">
-                    <div class="col">
-                      <img src="../../../assets/img/drivers/2024/norris-portrait-main-copy.png" class="img-fluid"
-                        alt="">
-                    </div>
-                    <div class="col my-auto">
-                      <span class="fs-3 me-2">4</span>
-                      <p class="m-0">Lando Norris</p>
-                    </div>
+            <!-- Row 4: Driver Numbers and Names -->
+            <div
+              class="row d-flex justify-content-between align-items-center card-standings-info border-bottom-0 border-top border-2 p-3">
+              <div class="col text-start">
+                <div class="row">
+                  <div class="col">
+                    <img src="../../../assets/img/drivers/2024/norris-portrait-main-copy.png" class="img-fluid" alt="">
+                  </div>
+                  <div class="col my-auto">
+                    <p class="">4</p>
+                    <p class="">Lando Norris</p>
                   </div>
                 </div>
-                <div class="col">
-                  <div class="row">
-                    <div class="col">
-                      <img src="../../../assets/img/drivers/2024/piastri-portrait-side-copy.png" class="img-fluid"
-                        alt="">
-                    </div>
-                    <div class="col my-auto">
-                      <span class="fs-3 me-2">81</span>
-                      <p class="m-0">Oscar Piastri</p>
-                    </div>
+              </div>
+              <div class="col text-end">
+                <div class="row">
+                  <div class="col">
+                    <img src="../../../assets/img/drivers/2024/piastri-portrait-side-copy.png" class="img-fluid" alt="">
+                  </div>
+                  <div class="col my-auto">
+                    <p class="">81</p>
+                    <p class="">Oscar Piastri</p>
                   </div>
                 </div>
               </div>
@@ -317,20 +306,17 @@
         </div>
       </a>
       <!-- Portfolio item 2 - Mercedes -->
-      <a href="#" class="text-decoration-none">
+      <a href="mercedes.html" class="text-decoration-none">
         <div class="col mb-4">
-          <div class="card card-standings-full team-mercedes">
-            <!-- Row 1: Team Position and Points -->
-            <div class="border-bottom border-1 text-center">
-              <div class="row p-2">
-                <div class="col">
-                  <span class="fs-3  me-2">2</span>
-                  <p class="m-0">pos</p>
-                </div>
-                <div class="col">
-                  <span class="fs-3  me-2">111</span>
-                  <p class="m-0">pts</p>
-                </div>
+          <div class="card card-standings team-mercedes">
+            <!-- Row 1: Championship Position and Points -->
+            <div class="row d-flex justify-content-between align-items-center card-standings-info p-3">
+              <div class="col text-start">
+                <h5 class="">2</h5> <!-- Championship Position -->
+              </div>
+              <div class="col text-end">
+                <p class=" ">111</p> <!-- Season Points -->
+                <p class=" ">pts</p>
               </div>
             </div>
             <div class="card-body text-center">
@@ -339,31 +325,29 @@
             <!-- Row 1: Car Image -->
             <img src="../../../assets/img/cars/2024/car-merc-side-main.png" class="card-img-top" alt="McLaren Car" />
 
-            <!-- Row 3: Driver Numbers and Names -->
-            <div class="card-footer text-center">
-              <div class="row">
-                <div class="col">
-                  <div class="row">
-                    <div class="col">
-                      <img src="../../../assets/img/drivers/2024/russell-portrait-side-copy.png" class="img-fluid"
-                        alt="">
-                    </div>
-                    <div class="col my-auto">
-                      <span class="fs-3 me-2">63</span>
-                      <p class="m-0">George Russell</p>
-                    </div>
+            <!-- Row 4: Driver Numbers and Names -->
+            <div
+              class="row d-flex justify-content-between align-items-center card-standings-info border-bottom-0 border-top border-2 p-3">
+              <div class="col text-start">
+                <div class="row">
+                  <div class="col">
+                    <img src="../../../assets/img/drivers/2024/russell-portrait-side-copy.png" class="img-fluid" alt="">
+                  </div>
+                  <div class="col my-auto">
+                    <p class="">63</p>
+                    <p class="">George Russell</p>
                   </div>
                 </div>
-                <div class="col">
-                  <div class="row">
-                    <div class="col">
-                      <img src="../../../assets/img/drivers/formula2/antonelli-portrait-side-copy.png" class="img-fluid"
-                        alt="">
-                    </div>
-                    <div class="col my-auto">
-                      <span class="fs-3 me-2">12</span>
-                      <p class="m-0">Kimi Antonelli</p>
-                    </div>
+              </div>
+              <div class="col text-end">
+                <div class="row">
+                  <div class="col">
+                    <img src="../../../assets/img/drivers/formula2/antonelli-portrait-side-copy.png" class="img-fluid"
+                      alt="">
+                  </div>
+                  <div class="col my-auto">
+                    <p class="">12</p>
+                    <p class="">Kimi Antonelli</p>
                   </div>
                 </div>
               </div>
@@ -372,20 +356,17 @@
         </div>
       </a>
       <!-- Portfolio item 3 - Red Bull Racing Hondas RBPT -->
-      <a href="#" class="text-decoration-none">
+      <a href="redbull.html" class="text-decoration-none">
         <div class="col mb-4">
-          <div class="card card-standings-full team-redbull">
-            <!-- Row 1: Team Position and Points -->
-            <div class="border-bottom border-1 text-center">
-              <div class="row p-2">
-                <div class="col">
-                  <span class="fs-3  me-2">3</span>
-                  <p class="m-0">pos</p>
-                </div>
-                <div class="col">
-                  <span class="fs-3  me-2">89</span>
-                  <p class="m-0">pts</p>
-                </div>
+          <div class="card card-standings team-redbull">
+            <!-- Row 1: Championship Position and Points -->
+            <div class="row d-flex justify-content-between align-items-center card-standings-info p-3">
+              <div class="col text-start">
+                <h5 class="">3</h5> <!-- Championship Position -->
+              </div>
+              <div class="col text-end">
+                <p class=" ">89</p> <!-- Season Points -->
+                <p class=" ">pts</p>
               </div>
             </div>
             <div class="card-body text-center">
@@ -394,31 +375,30 @@
             <!-- Row 1: Car Image -->
             <img src="../../../assets/img/cars/2024/car-redbull-side-main.png" class="card-img-top" alt="McLaren Car" />
 
-            <!-- Row 3: Driver Numbers and Names -->
-            <div class="card-footer text-center">
-              <div class="row">
-                <div class="col">
-                  <div class="row">
-                    <div class="col">
-                      <img src="../../../assets/img/drivers/2024/verstappen-portrait-main-copy.png" class="img-fluid"
-                        alt="">
-                    </div>
-                    <div class="col my-auto">
-                      <span class="fs-3 me-2">1</span>
-                      <p class="m-0">Max Verstappen</p>
-                    </div>
+            <!-- Row 4: Driver Numbers and Names -->
+            <div
+              class="row d-flex justify-content-between align-items-center card-standings-info border-bottom-0 border-top border-2 p-3">
+              <div class="col text-start">
+                <div class="row">
+                  <div class="col">
+                    <img src="../../../assets/img/drivers/2024/verstappen-portrait-main-copy.png" class="img-fluid"
+                      alt="">
+                  </div>
+                  <div class="col my-auto">
+                    <p class="">1</p>
+                    <p class="">Max Verstappen</p>
                   </div>
                 </div>
-                <div class="col">
-                  <div class="row">
-                    <div class="col">
-                      <img src="../../../assets/img/drivers/2024/tsunoda-redbull-portrait-side-copy-copy.png"
-                        class="img-fluid" alt="">
-                    </div>
-                    <div class="col my-auto">
-                      <span class="fs-3 me-2">81</span>
-                      <p class="m-0">Yuki Tsunoda</p>
-                    </div>
+              </div>
+              <div class="col text-end">
+                <div class="row">
+                  <div class="col">
+                    <img src="../../../assets/img/drivers/2024/tsunoda-redbull-portrait-side-copy-copy.png"
+                      class="img-fluid" alt="">
+                  </div>
+                  <div class="col my-auto">
+                    <p class="">22</p>
+                    <p class="">Yuki Tsunoda</p>
                   </div>
                 </div>
               </div>
@@ -427,20 +407,17 @@
         </div>
       </a>
       <!-- Portfolio item 4 - Ferrari-->
-      <a href="#" class="text-decoration-none">
+      <a href="ferrari.html" class="text-decoration-none">
         <div class="col mb-4">
-          <div class="card card-standings-full team-ferrari">
-            <!-- Row 1: Team Position and Points -->
-            <div class="border-bottom border-1 text-center">
-              <div class="row p-2">
-                <div class="col">
-                  <span class="fs-3  me-2">4</span>
-                  <p class="m-0">pos</p>
-                </div>
-                <div class="col">
-                  <span class="fs-3  me-2">78</span>
-                  <p class="m-0">pts</p>
-                </div>
+          <div class="card card-standings team-ferrari">
+            <!-- Row 1: Championship Position and Points -->
+            <div class="row d-flex justify-content-between align-items-center card-standings-info p-3">
+              <div class="col text-start">
+                <h5 class="">4</h5> <!-- Championship Position -->
+              </div>
+              <div class="col text-end">
+                <p class=" ">78</p> <!-- Season Points -->
+                <p class=" ">pts</p>
               </div>
             </div>
             <div class="card-body text-center">
@@ -449,31 +426,29 @@
             <!-- Row 1: Car Image -->
             <img src="../../../assets/img/cars/2024/car-ferrari-side-main.png" class="card-img-top" alt="McLaren Car" />
 
-            <!-- Row 3: Driver Numbers and Names -->
-            <div class="card-footer text-center">
-              <div class="row">
-                <div class="col">
-                  <div class="row">
-                    <div class="col">
-                      <img src="../../../assets/img/drivers/2024/leclerc-portrait-main-copy.png" class="img-fluid"
-                        alt="">
-                    </div>
-                    <div class="col my-auto">
-                      <span class="fs-3 me-2">16</span>
-                      <p class="m-0">Charles Leclerc</p>
-                    </div>
+            <!-- Row 4: Driver Numbers and Names -->
+            <div
+              class="row d-flex justify-content-between align-items-center card-standings-info border-bottom-0 border-top border-2 p-3">
+              <div class="col text-start">
+                <div class="row">
+                  <div class="col">
+                    <img src="../../../assets/img/drivers/2024/leclerc-portrait-main-copy.png" class="img-fluid" alt="">
+                  </div>
+                  <div class="col my-auto">
+                    <p class="">16</p>
+                    <p class="">Charles Leclerc</p>
                   </div>
                 </div>
-                <div class="col">
-                  <div class="row">
-                    <div class="col">
-                      <img src="../../../assets/img/drivers/2024/hamilton-ferrari-portrait-main.png" class="img-fluid"
-                        alt="">
-                    </div>
-                    <div class="col my-auto">
-                      <span class="fs-3 me-2">44</span>
-                      <p class="m-0">Lewis Hamilton</p>
-                    </div>
+              </div>
+              <div class="col text-end">
+                <div class="row">
+                  <div class="col">
+                    <img src="../../../assets/img/drivers/2024/hamilton-ferrari-portrait-side-copy.png"
+                      class="img-fluid" alt="">
+                  </div>
+                  <div class="col my-auto">
+                    <p class="">44</p>
+                    <p class="">Lewis Hamilton</p>
                   </div>
                 </div>
               </div>
@@ -482,53 +457,49 @@
         </div>
       </a>
       <!-- Portfolio item 5 - Williams -->
-      <a href="#" class="text-decoration-none">
+      <a href="williams.html" class="text-decoration-none">
         <div class="col mb-4">
-          <div class="card card-standings-full team-williams">
-            <!-- Row 1: Team Position and Points -->
-            <div class="border-bottom border-1 text-center">
-              <div class="row p-2">
-                <div class="col">
-                  <span class="fs-3  me-2">5</span>
-                  <p class="m-0">pos</p>
-                </div>
-                <div class="col">
-                  <span class="fs-3  me-2">25</span>
-                  <p class="m-0">pts</p>
-                </div>
+          <div class="card card-standings team-williams">
+            <!-- Row 1: Championship Position and Points -->
+            <div class="row d-flex justify-content-between align-items-center card-standings-info p-3">
+              <div class="col text-start">
+                <h5 class="">5</h5> <!-- Championship Position -->
+              </div>
+              <div class="col text-end">
+                <p class=" ">25</p> <!-- Season Points -->
+                <p class=" ">pts</p>
               </div>
             </div>
             <div class="card-body text-center">
               <h5 class="card-title fs-1 fw-bold mb-1">Williams</h5>
             </div>
             <!-- Row 1: Car Image -->
-            <img src="../../../assets/img/cars/2024/car-williams-side-main.png" class="card-img-top" alt="McLaren Car" />
+            <img src="../../../assets/img/cars/2024/car-williams-side-main.png" class="card-img-top"
+              alt="McLaren Car" />
 
-            <!-- Row 3: Driver Numbers and Names -->
-            <div class="card-footer text-center">
-              <div class="row">
-                <div class="col">
-                  <div class="row">
-                    <div class="col">
-                      <img src="../../../assets/img/drivers/2024/albon-portrait-main-copy.png" class="img-fluid"
-                        alt="">
-                    </div>
-                    <div class="col my-auto">
-                      <span class="fs-3 me-2">23</span>
-                      <p class="m-0">Alexander Albon</p>
-                    </div>
+            <!-- Row 4: Driver Numbers and Names -->
+            <div
+              class="row d-flex justify-content-between align-items-center card-standings-info border-bottom-0 border-top border-2 p-3">
+              <div class="col text-start">
+                <div class="row">
+                  <div class="col">
+                    <img src="../../../assets/img/drivers/2024/albon-portrait-main-copy.png" class="img-fluid" alt="">
+                  </div>
+                  <div class="col my-auto">
+                    <p class="">23</p>
+                    <p class="">Alexander Albon</p>
                   </div>
                 </div>
-                <div class="col">
-                  <div class="row">
-                    <div class="col">
-                      <img src="../../../assets/img/drivers/2024/sainz-williams-portrait-side-copy-copy.png"
-                        class="img-fluid" alt="">
-                    </div>
-                    <div class="col my-auto">
-                      <span class="fs-3 me-2">55</span>
-                      <p class="m-0">Carlos Sainz</p>
-                    </div>
+              </div>
+              <div class="col text-end">
+                <div class="row">
+                  <div class="col">
+                    <img src="../../../assets/img/drivers/2024/sainz-williams-portrait-side-copy-copy.png"
+                      class="img-fluid" alt="">
+                  </div>
+                  <div class="col my-auto">
+                    <p class="">44</p>
+                    <p class="">Carlos Sainz</p>
                   </div>
                 </div>
               </div>
@@ -537,20 +508,17 @@
         </div>
       </a>
       <!-- Portfolio item 6 - Haas -->
-      <a href="#" class="text-decoration-none">
+      <a href="haas.html" class="text-decoration-none">
         <div class="col mb-4">
-          <div class="card card-standings-full team-haas">
-            <!-- Row 1: Team Position and Points -->
-            <div class="border-bottom border-1 text-center">
-              <div class="row p-2">
-                <div class="col">
-                  <span class="fs-3  me-2">6</span>
-                  <p class="m-0">pos</p>
-                </div>
-                <div class="col">
-                  <span class="fs-3  me-2">20</span>
-                  <p class="m-0">pts</p>
-                </div>
+          <div class="card card-standings team-haas">
+            <!-- Row 1: Championship Position and Points -->
+            <div class="row d-flex justify-content-between align-items-center card-standings-info p-3">
+              <div class="col text-start">
+                <h5 class="m-0">6</h5> <!-- Championship Position -->
+              </div>
+              <div class="col text-end">
+                <h5 class="fw-bold m-0 ">20</h5> <!-- Season Points -->
+                <p class=" m-0">pts</p>
               </div>
             </div>
             <div class="card-body text-center">
@@ -559,31 +527,30 @@
             <!-- Row 1: Car Image -->
             <img src="../../../assets/img/cars/2024/car-haas-side-main.png" class="card-img-top" alt="McLaren Car" />
 
-            <!-- Row 3: Driver Numbers and Names -->
-            <div class="card-footer text-center">
-              <div class="row">
-                <div class="col">
-                  <div class="row">
-                    <div class="col">
-                      <img src="../../../assets/img/drivers/2024/ocon-haas-portrait-side-copy-copy.png" class="img-fluid"
-                        alt="">
-                    </div>
-                    <div class="col my-auto">
-                      <span class="fs-3 me-2">31</span>
-                      <p class="m-0">Esteban Ocon</p>
-                    </div>
+            <!-- Row 4: Driver Numbers and Names -->
+            <div
+              class="row d-flex justify-content-between align-items-center card-standings-info border-bottom-0 border-top border-2 p-3">
+              <div class="col text-start">
+                <div class="row">
+                  <div class="col">
+                    <img src="../../../assets/img/drivers/2024/ocon-haas-portrait-side-copy-copy.png" class="img-fluid"
+                      alt="">
+                  </div>
+                  <div class="col my-auto">
+                    <p class="">31</p>
+                    <p class="">Esteban Ocon</p>
                   </div>
                 </div>
-                <div class="col">
-                  <div class="row">
-                    <div class="col">
-                      <img src="../../../assets/img/drivers/2024/bearman-haas-portrait-side-copy-copy.png"
-                        class="img-fluid" alt="">
-                    </div>
-                    <div class="col my-auto">
-                      <span class="fs-3 me-2">87</span>
-                      <p class="m-0">Oliver Bearman</p>
-                    </div>
+              </div>
+              <div class="col text-end">
+                <div class="row">
+                  <div class="col">
+                    <img src="../../../assets/img/drivers/2024/bearman-haas-portrait-side-copy-copy.png"
+                      class="img-fluid" alt="">
+                  </div>
+                  <div class="col my-auto">
+                    <p class="">87</p>
+                    <p class="">Oliver Bearman</p>
                   </div>
                 </div>
               </div>
@@ -592,53 +559,49 @@
         </div>
       </a>
       <!-- Portfolio item 7 - Aston Martin -->
-      <a href="#" class="text-decoration-none">
+      <a href="astonmartin.html" class="text-decoration-none">
         <div class="col mb-4">
-          <div class="card card-standings-full team-astonmartin">
-            <!-- Row 1: Team Position and Points -->
-            <div class="border-bottom border-1 text-center">
-              <div class="row p-2">
-                <div class="col">
-                  <span class="fs-3  me-2">7</span>
-                  <p class="m-0">pos</p>
-                </div>
-                <div class="col">
-                  <span class="fs-3  me-2">10</span>
-                  <p class="m-0">pts</p>
-                </div>
+          <div class="card card-standings team-astonmartin">
+            <!-- Row 1: Championship Position and Points -->
+            <div class="row d-flex justify-content-between align-items-center card-standings-info p-3">
+              <div class="col text-start">
+                <h5 class="m-0">7</h5> <!-- Championship Position -->
+              </div>
+              <div class="col text-end">
+                <h5 class="fw-bold m-0 ">10</h5> <!-- Season Points -->
+                <p class=" m-0">pts</p>
               </div>
             </div>
             <div class="card-body text-center">
               <h5 class="card-title fs-1 fw-bold mb-1">Aston Martin</h5>
             </div>
             <!-- Row 1: Car Image -->
-            <img src="../../../assets/img/cars/2024/car-astonmartin-side-main.png" class="card-img-top" alt="McLaren Car" />
+            <img src="../../../assets/img/cars/2024/car-astonmartin-side-main.png" class="card-img-top"
+              alt="McLaren Car" />
 
-            <!-- Row 3: Driver Numbers and Names -->
-            <div class="card-footer text-center">
-              <div class="row">
-                <div class="col">
-                  <div class="row">
-                    <div class="col">
-                      <img src="../../../assets/img/drivers/2024/stroll-portrait-side-copy.png" class="img-fluid"
-                        alt="">
-                    </div>
-                    <div class="col my-auto">
-                      <span class="fs-3 me-2">18</span>
-                      <p class="m-0">Lance Stroll</p>
-                    </div>
+            <!-- Row 4: Driver Numbers and Names -->
+            <div
+              class="row d-flex justify-content-between align-items-center card-standings-info border-bottom-0 border-top border-2 p-3">
+              <div class="col text-start">
+                <div class="row">
+                  <div class="col">
+                    <img src="../../../assets/img/drivers/2024/stroll-portrait-side-copy.png" class="img-fluid" alt="">
+                  </div>
+                  <div class="col my-auto">
+                    <p class="">18</p>
+                    <p class="">Lance Stroll</p>
                   </div>
                 </div>
-                <div class="col">
-                  <div class="row">
-                    <div class="col">
-                      <img src="../../../assets/img/drivers/2024/alonso-portrait-main-copy.png"
-                        class="img-fluid" alt="">
-                    </div>
-                    <div class="col my-auto">
-                      <span class="fs-3 me-2">14</span>
-                      <p class="m-0">Fernando Alonso</p>
-                    </div>
+              </div>
+              <div class="col text-end">
+                <div class="row">
+                  <div class="col">
+                    <img src="../../../assets/img/drivers/2024/alonso-portrait-side-copy-copy.png" class="img-fluid"
+                      alt="">
+                  </div>
+                  <div class="col my-auto">
+                    <p class="">14</p>
+                    <p class="">Fernando Alonso</p>
                   </div>
                 </div>
               </div>
@@ -647,20 +610,17 @@
         </div>
       </a>
       <!-- Portfolio item 8 - Racing Bulls Honda RBPT -->
-      <a href="#" class="text-decoration-none">
+      <a href="racingbulls.html" class="text-decoration-none">
         <div class="col mb-4">
-          <div class="card card-standings-full team-racingbulls">
-            <!-- Row 1: Team Position and Points -->
-            <div class="border-bottom border-1 text-center">
-              <div class="row p-2">
-                <div class="col">
-                  <span class="fs-3  me-2">8</span>
-                  <p class="m-0">pos</p>
-                </div>
-                <div class="col">
-                  <span class="fs-3  me-2">8</span>
-                  <p class="m-0">pts</p>
-                </div>
+          <div class="card card-standings team-racingbulls">
+            <!-- Row 1: Championship Position and Points -->
+            <div class="row d-flex justify-content-between align-items-center card-standings-info p-3">
+              <div class="col text-start">
+                <h5 class="m-0">8</h5> <!-- Championship Position -->
+              </div>
+              <div class="col text-end">
+                <h5 class="fw-bold m-0 ">8</h5> <!-- Season Points -->
+                <p class=" m-0">pts</p>
               </div>
             </div>
             <div class="card-body text-center">
@@ -669,31 +629,30 @@
             <!-- Row 1: Car Image -->
             <img src="../../../assets/img/cars/2024/car-varb-side-main.png" class="card-img-top" alt="McLaren Car" />
 
-            <!-- Row 3: Driver Numbers and Names -->
-            <div class="card-footer text-center">
-              <div class="row">
-                <div class="col">
-                  <div class="row">
-                    <div class="col">
-                      <img src="../../../assets/img/drivers/formula2/lawson-portrait-side-copy.png" class="img-fluid"
-                        alt="">
-                    </div>
-                    <div class="col my-auto">
-                      <span class="fs-3 me-2">30</span>
-                      <p class="m-0">Liam Lawson</p>
-                    </div>
+            <!-- Row 4: Driver Numbers and Names -->
+            <div
+              class="row d-flex justify-content-between align-items-center card-standings-info border-bottom-0 border-top border-2 p-3">
+              <div class="col text-start">
+                <div class="row">
+                  <div class="col">
+                    <img src="../../../assets/img/drivers/formula2/lawson-portrait-side-copy.png" class="img-fluid"
+                      alt="">
+                  </div>
+                  <div class="col my-auto">
+                    <p class="">30</p>
+                    <p class="">Liam Lawson</p>
                   </div>
                 </div>
-                <div class="col">
-                  <div class="row">
-                    <div class="col">
-                      <img src="../../../assets/img/drivers/formula2/hadjar-portrait-main-copy.png"
-                        class="img-fluid" alt="">
-                    </div>
-                    <div class="col my-auto">
-                      <span class="fs-3 me-2">6</span>
-                      <p class="m-0">Isack Hadjar</p>
-                    </div>
+              </div>
+              <div class="col text-end">
+                <div class="row">
+                  <div class="col">
+                    <img src="../../../assets/img/drivers/formula2/hadjar-portrait-side-copy.png" class="img-fluid"
+                      alt="">
+                  </div>
+                  <div class="col my-auto">
+                    <p class="">6</p>
+                    <p class="">Isack Hadjar</p>
                   </div>
                 </div>
               </div>
@@ -702,20 +661,17 @@
         </div>
       </a>
       <!-- Portfolio item 9 - Alpine -->
-      <a href="#" class="text-decoration-none">
+      <a href="alpine.html" class="text-decoration-none">
         <div class="col mb-4">
-          <div class="card card-standings-full team-alpine">
-            <!-- Row 1: Team Position and Points -->
-            <div class="border-bottom border-1 text-center">
-              <div class="row p-2">
-                <div class="col">
-                  <span class="fs-3  me-2">9</span>
-                  <p class="m-0">pos</p>
-                </div>
-                <div class="col">
-                  <span class="fs-3  me-2">6</span>
-                  <p class="m-0">pts</p>
-                </div>
+          <div class="card card-standings team-alpine">
+            <!-- Row 1: Championship Position and Points -->
+            <div class="row d-flex justify-content-between align-items-center card-standings-info p-3">
+              <div class="col text-start">
+                <h5 class="m-0">9</h5> <!-- Championship Position -->
+              </div>
+              <div class="col text-end">
+                <h5 class="fw-bold m-0 ">6</h5> <!-- Season Points -->
+                <p class=" m-0">pts</p>
               </div>
             </div>
             <div class="card-body text-center">
@@ -724,31 +680,29 @@
             <!-- Row 1: Car Image -->
             <img src="../../../assets/img/cars/2024/car-alpine-side-main.png" class="card-img-top" alt="McLaren Car" />
 
-            <!-- Row 3: Driver Numbers and Names -->
-            <div class="card-footer text-center">
-              <div class="row">
-                <div class="col">
-                  <div class="row">
-                    <div class="col">
-                      <img src="../../../assets/img/drivers/2024/gasly-portrait-main-copy.png" class="img-fluid"
-                        alt="">
-                    </div>
-                    <div class="col my-auto">
-                      <span class="fs-3 me-2">10</span>
-                      <p class="m-0">Pierre Gasly</p>
-                    </div>
+            <!-- Row 4: Driver Numbers and Names -->
+            <div
+              class="row d-flex justify-content-between align-items-center card-standings-info border-bottom-0 border-top border-2 p-3">
+              <div class="col text-start">
+                <div class="row">
+                  <div class="col">
+                    <img src="../../../assets/img/drivers/2024/gasly-portrait-main-copy.png" class="img-fluid" alt="">
+                  </div>
+                  <div class="col my-auto">
+                    <p class="">10</p>
+                    <p class="">Pierre Gasly</p>
                   </div>
                 </div>
-                <div class="col">
-                  <div class="row">
-                    <div class="col">
-                      <img src="../../../assets/img/drivers/formula2/doohan-portrait-main-copy.png"
-                        class="img-fluid" alt="">
-                    </div>
-                    <div class="col my-auto">
-                      <span class="fs-3 me-2">7</span>
-                      <p class="m-0">Jack Doohan</p>
-                    </div>
+              </div>
+              <div class="col text-end">
+                <div class="row">
+                  <div class="col">
+                    <img src="../../../assets/img/drivers/formula2/doohan-portrait-side-copy.png" class="img-fluid"
+                      alt="">
+                  </div>
+                  <div class="col my-auto">
+                    <p class="">7</p>
+                    <p class="">Jack Doohan</p>
                   </div>
                 </div>
               </div>
@@ -757,54 +711,50 @@
         </div>
       </a>
       <!-- Portfolio item 10 - Kick Sauber -->
-      <!-- todo update to kick sauber 24 car image -->
-      <a href="#" class="text-decoration-none">
+      <a href="kicksauber.html" class="text-decoration-none">
         <div class="col mb-4">
-          <div class="card card-standings-full team-kicksauber">
-            <!-- Row 1: Team Position and Points -->
-            <div class="border-bottom border-1 text-center">
-              <div class="row p-2">
-                <div class="col">
-                  <span class="fs-3  me-2">10</span>
-                  <p class="m-0">pos</p>
-                </div>
-                <div class="col">
-                  <span class="fs-3  me-2">6</span>
-                  <p class="m-0">pts</p>
-                </div>
+          <div class="card card-standings team-kicksauber">
+            <!-- Row 1: Championship Position and Points -->
+            <div class="row d-flex justify-content-between align-items-center card-standings-info p-3">
+              <div class="col text-start">
+                <h5 class="m-0">10</h5> <!-- Championship Position -->
+              </div>
+              <div class="col text-end">
+                <h5 class="fw-bold m-0 ">6</h5> <!-- Season Points -->
+                <p class=" m-0">pts</p>
               </div>
             </div>
             <div class="card-body text-center">
               <h5 class="card-title fs-1 fw-bold mb-1">Kick Sauber</h5>
             </div>
             <!-- Row 1: Car Image -->
-            <img src="../../../assets/img/cars/2024/car-kicksauber-side-main.png" class="card-img-top" alt="McLaren Car" />
+            <img src="../../../assets/img/cars/2024/car-kicksauber-side-main.png" class="card-img-top"
+              alt="McLaren Car" />
 
-            <!-- Row 3: Driver Numbers and Names -->
-            <div class="card-footer text-center">
-              <div class="row">
-                <div class="col">
-                  <div class="row">
-                    <div class="col">
-                      <img src="../../../assets/img/drivers/2024/hulkenberg-kick-portrait-side-copy-copy.png" class="img-fluid"
-                        alt="">
-                    </div>
-                    <div class="col my-auto">
-                      <span class="fs-3 me-2">27</span>
-                      <p class="m-0">Nico Hulkenberg</p>
-                    </div>
+            <!-- Row 4: Driver Numbers and Names -->
+            <div
+              class="row d-flex justify-content-between align-items-center card-standings-info border-bottom-0 border-top border-2 p-3">
+              <div class="col text-start">
+                <div class="row">
+                  <div class="col">
+                    <img src="../../../assets/img/drivers/2024/hulkenberg-kick-portrait-side-copy-copy.png"
+                      class="img-fluid" alt="">
+                  </div>
+                  <div class="col my-auto">
+                    <p class="">27</p>
+                    <p class="">Nico Hulkenberg</p>
                   </div>
                 </div>
-                <div class="col">
-                  <div class="row">
-                    <div class="col">
-                      <img src="../../../assets/img/drivers/2024/bortoleto-kick-portrait-side-copy-copy.png"
-                        class="img-fluid" alt="">
-                    </div>
-                    <div class="col my-auto">
-                      <span class="fs-3 me-2">5</span>
-                      <p class="m-0">Gabriel Bortoleto</p>
-                    </div>
+              </div>
+              <div class="col text-end">
+                <div class="row">
+                  <div class="col">
+                    <img src="../../../assets/img/drivers/2024/bortoleto-kick-portrait-side-copy-copy.png"
+                      class="img-fluid" alt="">
+                  </div>
+                  <div class="col my-auto">
+                    <p class="">5</p>
+                    <p class="">Gabriel Bortoleto</p>
                   </div>
                 </div>
               </div>
@@ -864,7 +814,7 @@
           <h5>Race Calendars</h5>
           <ul class="nav flex-column">
             <li class="nav-item mb-2">
-              <a href="#" class="nav-link p-0">2025 Race Calendar</a>
+              <a href="../2025-calendar.html" class="nav-link p-0">2025 Race Calendar</a>
             </li>
             <li class="nav-item mb-2">
               <a href="../../2024/2024-calendar.html" class="nav-link p-0">2024 Race Calendar</a>
@@ -933,6 +883,7 @@
   </div>
 
   <script type="module" src="../../../js/main.js"></script>
+  <script type="module" src="../../../js/breakpoints.js"></script>
 </body>
 
 </html>
