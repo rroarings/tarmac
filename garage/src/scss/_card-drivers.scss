@@ -1,77 +1,3 @@
-.card-standings__position-wrapper {
-  border-bottom: 3px solid $gray-400; // Bootstrap's $danger color
-}
-
-.card-standings-full {
-  border-width: 5px;
-  border-bottom: none;
-  border-top-left-radius: 1rem;
-  border-top-right-radius: 1rem;
-  border-bottom-right-radius: 0;
-  border-bottom-left-radius: 0;
-  transition: border-color .3s ease;
-
-  &.team-redbull:hover {
-    border-top: 5px solid #1e41ff; // Red Bull Racing blue
-    border-right: 5px solid #1e41ff; // Red Bull Racing blue
-    border-left: 5px solid #1e41ff;
-  }
-
-  &.team-ferrari:hover {
-    border-top: 5px solid #dc0000; // Ferrari red
-    border-right: 5px solid #dc0000; // Ferrari red
-    border-left: 5px solid #dc0000;
-  }
-
-  &.team-mercedes:hover {
-    border-top: 5px solid #00d2be; // Mercedes teal
-    border-right: 5px solid #00d2be; // Mercedes teal
-    border-left: 5px solid #00d2be;
-  }
-
-  &.team-mclaren:hover {
-    border-top: 5px solid #ff8700; // McLaren orange
-    border-right: 5px solid #ff8700; // McLaren orange
-    border-left: 5px solid #ff8700;
-  }
-
-  &.team-alpine:hover {
-    border-top: 5px solid #0090ff; // Alpine blue
-    border-right: 5px solid #0090ff; // Alpine blue
-    border-left: 5px solid #0090ff;
-  }
-
-  &.team-astonmartin:hover {
-    border-top: 5px solid #006f62; // Aston Martin green
-    border-right: 5px solid #006f62; // Aston Martin green
-    border-left: 5px solid #006f62;
-  }
-
-  &.team-haas:hover {
-    border-top: 5px solid $gray-600; // Haas white
-    border-right: 5px solid $gray-600; // Haas white
-    border-left: 5px solid $gray-600;
-  }
-
-  &.team-racingbulls:hover {
-    border-top: 5px solid #2b4562; // AlphaTauri navy
-    border-right: 5px solid #2b4562; // AlphaTauri navy
-    border-left: 5px solid #2b4562;
-  }
-
-  &.team-williams:hover {
-    border-top: 5px solid #005aff; // Williams blue
-    border-right: 5px solid #005aff; // Williams blue
-    border-left: 5px solid #005aff;
-  }
-
-  &.team-kicksauber:hover {
-    border-top: 5px solid #00ff62; // Alfa Romeo red
-    border-right: 5px solid #00ff62; // Alfa Romeo red
-    border-left: 5px solid #00ff62;
-  }
-}
-
 .card-standings-podium {
   border-color: $gray-600;
   border-width: 10px;
@@ -122,18 +48,45 @@
     border-color: $gray-600;
   }
 
+  .card-standings__position-wrapper {
+    border-bottom: 3px solid $gray-400; // Bootstrap's $danger color
+  }
+
+
   .card-standings-info {
     background-color: #e9ecef; // Light gray background for the info row
     border-bottom: 2px solid #dee2e6; // Separator line
   }
 
+  // points
   .card-standings-info p:first-child {
-    font-size: 2rem;
+    font-size: calc(2rem + 0.9vw);
+    font-weight: 800;
+    
+    @include media-breakpoint-up(xxl) {
+      font-size: calc(2.3rem + 0.5vw);
+      
+    }
+  }
+
+  // pts label
+  .card-standings-info p:nth-child(2) {
+    font-size: calc(.9rem + 0.5vw);
+    
+    @include media-breakpoint-up(xxl) {
+      font-size: calc(.9rem + 0.5vw);
+    
+    }
   }
 
   .card-standings-info h5 {
-    font-size: 2rem;
+    font-size: calc(2.6rem + 0.9vw);
     font-weight: 800;
+
+    @include media-breakpoint-up(xxl) {
+      font-size: calc(2.6rem + 0.9vw);
+    
+    }
   }
 
   .card-standings-info-border-bottom {
@@ -146,7 +99,6 @@
   }
 
   img {
-    max-height: 150px; // Limit image height
     object-fit: contain; // Ensure the image scales properly
   }
 
