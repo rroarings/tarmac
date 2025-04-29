@@ -23,8 +23,13 @@
   padding: 1rem;
   background-color: $gray-200;
   border-radius: 6px;
-  outline: 2px solid $gray-300;
+  text-decoration: none;
+  color: #000;
+  border: 2px solid $gray-300;
   transition: all .3s ease;
+
+  
+}
 }
 
 .bento-item .bento-item-svg {
