@@ -30,6 +30,10 @@
 
   
 }
+
+.bento-item:hover {
+  background-color: $gray-400;
+  border: 2px solid $red-300;
 }
 
 .bento-item .bento-item-svg {
