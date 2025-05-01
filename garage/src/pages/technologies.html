@@ -1,585 +1,771 @@
 <!doctype html>
 <html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <meta
+      name="description"
+      content="Formula Bootstrap is a a Bootstrap built website that explores some areas of Formula One."
+    />
+    <meta name="author" content="Nick Calvo" />
+    <title>Trackside | Technologies</title>
+    <link rel="stylesheet" href="../scss/styles.scss" />
+  </head>
 
-<head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-  <meta name="description"
-    content="Formula Bootstrap is a a Bootstrap built website that explores some areas of Formula One." />
-  <meta name="author" content="Nick Calvo" />
-  <title>Trackside | Technologies</title>
-  <link rel="stylesheet" href="../scss/styles.scss" />
-</head>
+  <body id="page-top">
+    <!-- Add this to your body to display the breakpoint size -->
+    <div id="breakpoint" class="breakpoint-size"></div>
 
-<body id="page-top">
-  <!-- Add this to your body to display the breakpoint size -->
-  <div id="breakpoint" class="breakpoint-size"></div>
-
-  <!-- site header -->
-  <nav class="navbar navbar-expand-lg sticky-top" id="mainNav">
-    <div class="container">
-      <a class="navbar-brand" href="#page-top">
-        <img src="../assets/img/logos/trackside-logoblack.png" class="img-fluid w-50" alt="Trackside Logo" />
-      </a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive"
-        aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-        Menu
-        <i class="fas fa-bars ms-1"></i>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarResponsive">
-        <ul class="navbar-nav ms-auto me-4 py-4 py-lg-0">
-          <li class="nav-item">
-            <a class="nav-link" href="../index.html">Home</a>
-          </li>
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle active" href="#" id="aboutDropdown" role="button"
-              data-bs-toggle="dropdown" aria-expanded="false">
-              About F1
-            </a>
-            <ul class="dropdown-menu" aria-labelledby="aboutDropdown">
-              <li>
-                <a class="dropdown-item" href="whatis.html">What is Formula 1</a>
-              </li>
-              <li>
-                <a class="dropdown-item active" href="technologies.html" aria-current="page">Technology of F1</a>
-              </li>
-              <li>
-                <a class="dropdown-item" href="future.html">Future of F1</a>
-              </li>
-            </ul>
-          </li>
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="aboutDropdown" role="button" data-bs-toggle="dropdown"
-              aria-expanded="false">
-              Race Calendars
-            </a>
-            <ul class="dropdown-menu" aria-labelledby="aboutDropdown">
-              <li>
-                <a class="dropdown-item" href="../seasons/2025/2025-calendar.html">2025 Calendar</a>
-              </li>
-              <li>
-                <a class="dropdown-item" href="../seasons/2024/2024-calendar.html">2024 Calendar</a>
-              </li>
-            </ul>
-          </li>
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="seasonsDropdown" role="button" data-bs-toggle="dropdown"
-              aria-expanded="false">
-              Standings
-            </a>
-            <ul class="dropdown-menu" aria-labelledby="seasonsDropdown">
-              <li>
-                <h6 class="dropdown-header">2025</h6>
-              </li>
-              <li>
-                <a class="dropdown-item" href="../seasons/2025/drivers/2025-drivers.html">2025 Drivers</a>
-              </li>
-              <li>
-                <a class="dropdown-item" href="../seasons/2025/teams/2025-teams.html">2025 Teams</a>
-              </li>
-              <li>
-                <hr class="dropdown-divider" />
-              </li>
-              <li>
-                <h6 class="dropdown-header">2024</h6>
-              </li>
-              <li>
-                <a class="dropdown-item" href="#">2024 Drivers</a>
-              </li>
-              <li>
-                <a class="dropdown-item" href="#">2024 Teams</a>
-              </li>
-            </ul>
-          </li>
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="seasonsDropdown" role="button" data-bs-toggle="dropdown"
-              aria-expanded="false">
-              Season Talk
-            </a>
-            <ul class="dropdown-menu" aria-labelledby="seasonsDropdown">
-              <li>
-                <a class="dropdown-item" href="#">2025 Coverage</a>
-              </li>
-              <li>
-                <a class="dropdown-item" href="#">2024 Breakdown</a>
-              </li>
-            </ul>
-          </li>
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="fanZoneDropdown" role="button" data-bs-toggle="dropdown"
-              aria-expanded="false">
-              Site
-            </a>
-            <ul class="dropdown-menu" aria-labelledby="fanZoneDropdown">
-              <li>
-                <a class="dropdown-item" href="faqs.html">Trackside FAQs</a>
-              </li>
-              <li>
-                <a class="dropdown-item" href="learnmore.html">Learn More</a>
-              </li>
-              <li>
-                <a class="dropdown-item" href="contactus.html">Contact Us</a>
-              </li>
-              <li>
-                <a class="dropdown-item" href="#">Site Attributions</a>
-              </li>
-            </ul>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </nav>
-
-  <!-- Hero -->
-  <div class="container my-5">
-    <div class="text-center">
-      <h1 class="">Technological prowess shines here</h1>
-      <a class="btn btn-primary visually-hidden" href="#areality">Explore the technology</a>
-    </div>
-  </div>
-  <!-- End - Hero -->
-
-  <!-- Custom layout - MAIN HERO -->
-  <div class="container p-5 text-center visually-hidden">
-    <div class="row gap-5">
-      <div class="col-12 col-md">
-        <img src="../assets/img/drivers/2024/albon-portrait-main.png" alt="" class="img-fluid" />
-        <h5>Engineering</h5>
-        <p>
-          The engineering behind F1 is constantly evolving, as teams strive to
-          create faster, more reliable cars that can withstand the demands of
-          the circuits.
-        </p>
-      </div>
-      <div class="col-12 col-md-6">
-        <img src="../assets/img/drivers/2024/hamilton-portrait-main.png" alt="" class="img-fluid" />
-      </div>
-      <div class="col-12 col-md">
-        <img src="../assets/img/drivers/2024/verstappen-portrait-main.png" alt="" class="img-fluid" />
-        <h5>Analytics</h5>
-        <p>
-          F1 teams use advanced analytics to gain insights into every aspect
-          of the sport, from race strategy to car design.
-        </p>
-      </div>
-      <div class="col-12 col-md-4">
-        <img src="../assets/img/drivers/2024/gasly-portrait-main.png" alt="" class="img-fluid" />
-        <h3>Science</h3>
-        <p>
-          Augmented reality and virtual simulations are revolutionizing F1 by
-          improving design and testing, while also enhancing fan experience.
-        </p>
-      </div>
-      <div class="col-12 col-md-4">
-        <img src="../assets/img/drivers/2024/zhou-portrait-side.png" alt="" class="img-fluid" />
-        <h5>Drivers</h5>
-        <p>
-          The F1 2022 drivers are a diverse and talented group, poised to
-          compete in some of the world's most challenging races.
-        </p>
-      </div>
-      <div class="col-12 col-md-4">
-        <img src="../assets/img/drivers/2024/russell-portrait-side.png" alt="" class="img-fluid" />
-        <h5>Teamwork</h5>
-        <p>
-          F1 is a sport that relies heavily on teamwork, with drivers,
-          engineers, and support staff working together to achieve success.
-        </p>
-      </div>
-    </div>
-  </div>
-
-  <!-- Custom layout - MAIN HERO -->
-  <div class="container p-5 text-center">
-    <!-- Top row: Albon - Lewis - Max (equal height) -->
-    <div class="row align-items-center mb-3">
-      <div class="col-12 col-md-4">
-        <img src="https://place-hold.it/300" alt="" class="img-fluid mb-2" />
-        <h4>Engineering</h4>
-        <p>
-          The engineering behind F1 is constantly evolving, as teams strive to
-          create faster, more reliable cars that can withstand the demands of
-          the circuits.
-        </p>
-      </div>
-      <div class="col-12 col-md-4">
-        <img src="https://place-hold.it/300" alt="" class="img-fluid mb-3" />
-      </div>
-      <div class="col-12 col-md-4">
-        <img src="https://place-hold.it/300" alt="" class="img-fluid mb-2" />
-        <h4>Analytics</h4>
-        <p>
-          F1 teams use advanced analytics to gain insights into every aspect
-          of the sport, from race strategy to car design.
-        </p>
-      </div>
-    </div>
-
-    <!-- Bottom row: Gasly - Zhou - Russell -->
-    <div class="row">
-      <div class="col-12 col-md-4">
-        <img src="https://place-hold.it/300" alt="" class="img-fluid mb-2" />
-        <h4>Science</h4>
-        <p>
-          Augmented reality and virtual simulations are revolutionizing F1 by
-          improving design and testing, while also enhancing fan experience.
-        </p>
-      </div>
-      <div class="col-12 col-md-4">
-        <img src="https://place-hold.it/300" alt="" class="img-fluid mb-2" />
-        <h4>Drivers</h4>
-        <p>
-          The F1 2022 drivers are a diverse and talented group, poised to
-          compete in some of the world's most challenging races.
-        </p>
-      </div>
-      <div class="col-12 col-md-4">
-        <img src="https://place-hold.it/300" alt="" class="img-fluid mb-2" />
-        <h4>Teamwork</h4>
-        <p>
-          F1 is a sport that relies heavily on teamwork, with drivers,
-          engineers, and support staff working together to achieve success.
-        </p>
-      </div>
-    </div>
-  </div>
-
-  <div style="height: 80px; overflow: hidden">
-    <svg viewBox="0 0 100 100" preserveAspectRatio="none" style="height: 100%; width: 100%">
-      <polygon fill="#212529" points="0,100 100,0 100,100" />
-    </svg>
-  </div>
-
-  <!-- fluid bar cta -->
-  <div class="container-fluid text-bg-dark">
-    <div class="container mx-auto py-5">
-      <div class="row d-flex">
-        <div class="col-12 col-md-4">
-          <img src="https://place-hold.it/400x200" alt="helmet" class="img-fluid mb-3" />
-          <p class="m">
-            German powerhouse with technical prowess aiming for podium
-            finishes in 2025.
-          </p>
-        </div>
-        <div class="col-12 col-md-4">
-          <img src="https://place-hold.it/400" alt="helmet" class="img-fluid" />
-        </div>
-        <div class="col-12 col-md-4">
-          <h2 class="">Mercedes</h2>
-          <p>
-            George Russell and Kimi Antonelli, along with the Mercedes garage,
-            seek to reclaim their throne as champions in 2025.
-          </p>
-          <button type="button" class="btn btn-primary">Learn more</button>
-        </div>
-      </div>
-      <!-- /.row -->
-    </div>
-  </div>
-
-  <!-- simulations-->
-  <div class="container my-5">
-    <!-- Stack the columns on mobile by making one full-width and the other half-width -->
-    <div class="row gap-3">
-      <div class="col-12 col-md-12 col-lg">
-        <h2>Augmented reality and virtual simulations</h2>
-        <p>
-          Augmented reality and virtual simulations are becoming increasingly
-          important in the world of Formula One. Teams are using these
-          technologies to improve their design and testing processes, allowing
-          them to simulate different scenarios and test new components in a
-          virtual environment. For example, engineers can use virtual
-          simulations to test how changes to the car's aerodynamics will
-          affect its performance, without the need for physical prototypes.
-        </p>
-        <p>
-          Augmented reality is also being used to enhance the experience for
-          fans, with apps that allow them to explore the cars and tracks in
-          3D. These technologies have the potential to transform the way that
-          Formula One is developed and experienced, and are likely to become
-          even more important in the years to come.
-        </p>
-      </div>
-      <div class="col-12 col-md-12 col-lg my-auto text-center">
-        <img src="../assets/img/cars/2024/car-redbull-side-main-copy-new.png" alt="AI-generated Formula 1 helmet"
-          class="img-fluid" />
-      </div>
-    </div>
-  </div>
-
-  <!-- technicalities feature -->
-  <div class="container my-5">
-    <div class="row">
-      <div class="col-12">
-        <h2>Technicalities to talk about</h2>
-        <p>
-          In recent years, Formula 1 has seen a number of technical changes
-          aimed at improving the safety and competitiveness of the sport. One
-          such change has been an increase in the minimum weight of the cars,
-          which has been done to address concerns about the high speeds that
-          F1 cars can reach. Additionally, new rules have been introduced
-          around the use of wind tunnels and simulators, which are key tools
-          used by teams to develop and test their cars.
-        </p>
-        <p>
-          These changes have been designed to promote innovation and
-          creativity within the sport, while also ensuring that F1 remains at
-          the forefront of automotive technology. Overall, F1's focus on
-          technical excellence and innovation has helped to cement its
-          position as one of the most exciting and dynamic motorsports in the
-          world.
-        </p>
-      </div>
-    </div>
-  </div>
-
-  <!-- video feature -->
-  <section class="py-5 bg-dark text-white text-center">
-    <div class="container">
-      <h2 class="mb-4">How Augmented Reality is Reshaping F1</h2>
-      <video src="../assets/videos/raceseq.webm" autoplay muted loop class="w-100 rounded shadow"></video>
-      <p class="mt-3">
-        Explore car internals in real-time using fan AR apps built by top
-        teams.
-      </p>
-    </div>
-  </section>
-
-  <!-- cost cap feature -->
-  <div class="container my-5">
-    <div class="row gap-3">
-      <div class="col-12 col-lg">
-        <h2>Cost cap crisis</h2>
-        <p>
-          The introduction of a cost cap in Formula One is a significant
-          change that has been eagerly awaited by fans of the sport. The new
-          rules mean that teams will be restricted in the amount of money they
-          can spend on developing their cars, with a limit set at $140 million
-          per year.
-        </p>
-        <p>This is designed to level the playing field, as the larger
-          and more established teams have traditionally had a significant
-          advantage over smaller and less well-funded outfits.
-        </p>
-      </div>
-      <div class="col-12 col-lg mt-lg-auto">
-        <p>
-          This new approach also ensures that the biggest teams do not
-          continue to dominate the sport simply because of their financial
-          power, but instead are forced to compete on a more level playing
-          field.
-        </p>
-        <p>Overall, the cost cap is a positive development for the
-          future of Formula One, and is likely to make the sport even more
-          exciting and unpredictable than before.
-        </p>
-      </div>
-      <div class="col-12 col-lg mt-lg-auto">
-        <img src="../assets/img/drivers/2024/leclerc-portrait-main-copy.png" alt="AI-generated Formula 1 knight driver"
-          class="img-fluid" />
-      </div>
-    </div>
-    <div class="row mt-3 gap-3">
-      <div class="col-12 col-md">
-        <div class="p-4 text-bg-dark rounded h-100">
-          <h4>$140M</h4>
-          <p>Cost cap per team (2025)</p>
-        </div>
-      </div>
-      <div class="col-12 col-md">
-        <div class="p-4 text-bg-dark rounded h-100">
-          <h4>24</h4>
-          <p>Grand Prix</p>
-        </div>
-      </div>
-      <div class="col-12 col-md">
-        <div class="p-4 text-bg-dark rounded h-100">
-          <h4>10</h4>
-          <p>Teams battling for the championship</p>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <!-- todo update section... ugly cause of images or layout? both? -->
-  <!-- data driven feature -->
-  <section class="container my-5">
-    <div class="row">
-      <div class="col-12 text-center">
-        <h2>Data-driven edge</h2>
-        <p>
-          In today’s F1, data is as critical as horsepower. Teams harness
-          massive streams of telemetry and simulations to guide everything
-          from race-day decisions to long-term car development, gaining an
-          edge that’s measured in milliseconds.
-        </p>
-      </div>
-    </div>
-    <div class="row gap-3 mt-3">
-      <div class="col-12 col-lg text-center">
-        <img src="https://place-hold.it/300" alt="" class="img-fluid" />
-      </div>
-      <div class="col-12 col-lg text-center my-auto">
-        <p>
-          From tire degradation forecasts to predictive fuel strategies, F1
-          teams use advanced analytics to uncover patterns and possibilities
-          that would otherwise go unnoticed. Every decision is backed by
-          data — every outcome, optimized.
-        </p>
-      </div>
-      <div class="col-12 col-lg text-center">
-        <img src="https://place-hold.it/300" alt="" class="img-fluid" />
-      </div>
-    </div>
-  </section>
-
-  <!-- teamwork section -->
-  <section class="container my-5">
-    <div class="row">
-      <div class="col">
-        <h2>Teamwork makes the dream work</h2>
-      </div>
-      <div class="col text-end">
-        <button type="button" class="btn btn-primary">
-          View team profile
+    <!-- site header -->
+    <nav class="navbar navbar-expand-lg sticky-top" id="mainNav">
+      <div class="container">
+        <a class="navbar-brand" href="#page-top">
+          <img
+            src="../assets/img/logos/trackside-logoblack.png"
+            class="img-fluid w-50"
+            alt="Trackside Logo"
+          />
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarResponsive"
+          aria-controls="navbarResponsive"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          Menu
+          <i class="fas fa-bars ms-1"></i>
         </button>
-      </div>
-    </div>
-    <div class="row g-4 py-5 row-cols-1 row-cols-lg-3">
-      <div class="col-12 col-md-6">
-        <div
-          class="icon-square d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-2 mb-3">
-          <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" class="bi bi-headset"
-            viewBox="0 0 16 16">
-            <path
-              d="M8 1a5 5 0 0 0-5 5v1h1a1 1 0 0 1 1 1v3a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V6a6 6 0 1 1 12 0v6a2.5 2.5 0 0 1-2.5 2.5H9.366a1 1 0 0 1-.866.5h-1a1 1 0 1 1 0-2h1a1 1 0 0 1 .866.5H11.5A1.5 1.5 0 0 0 13 12h-1a1 1 0 0 1-1-1V8a1 1 0 0 1 1-1h1V6a5 5 0 0 0-5-5" />
-          </svg>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav ms-auto me-4 py-4 py-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" href="../index.html">Home</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle active"
+                href="#"
+                id="aboutDropdown"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                About F1
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="aboutDropdown">
+                <li>
+                  <a class="dropdown-item" href="whatis.html"
+                    >What is Formula 1</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="dropdown-item"
+                    href="technologies.html"
+                    aria-current="page"
+                    >Technology of F1</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="future.html">Future of F1</a>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                id="aboutDropdown"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Race Calendars
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="aboutDropdown">
+                <li>
+                  <a
+                    class="dropdown-item"
+                    href="../seasons/2025/2025-calendar.html"
+                    >2025 Calendar</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="dropdown-item"
+                    href="../seasons/2024/2024-calendar.html"
+                    >2024 Calendar</a
+                  >
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                id="seasonsDropdown"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Standings
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="seasonsDropdown">
+                <li>
+                  <h6 class="dropdown-header">2025</h6>
+                </li>
+                <li>
+                  <a
+                    class="dropdown-item"
+                    href="../seasons/2025/drivers/2025-drivers.html"
+                    >2025 Drivers</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="dropdown-item"
+                    href="../seasons/2025/teams/2025-teams.html"
+                    >2025 Teams</a
+                  >
+                </li>
+                <li>
+                  <hr class="dropdown-divider" />
+                </li>
+                <li>
+                  <h6 class="dropdown-header">2024</h6>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#">2024 Drivers</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#">2024 Teams</a>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                id="seasonsDropdown"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Season Talk
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="seasonsDropdown">
+                <li>
+                  <a class="dropdown-item" href="#">2025 Coverage</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#">2024 Breakdown</a>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                id="fanZoneDropdown"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Site
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="fanZoneDropdown">
+                <li>
+                  <a class="dropdown-item" href="faqs.html">Trackside FAQs</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="learnmore.html">Learn More</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="contactus.html">Contact Us</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#">Site Attributions</a>
+                </li>
+              </ul>
+            </li>
+          </ul>
         </div>
-        <h3 class="fs-2">One Team, One Goal</h3>
-        <p>
-          From factory to finish line, everyone works toward a single mission:
-          performance. Designers, mechanics, and support staff all play a
-          part. In F1, collaboration and unity turn potential into podiums.
-        </p>
       </div>
-      <div class="col-12 col-md-6">
-        <div
-          class="icon-square d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-2 mb-3">
-          <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" class="bi bi-people-fill"
-            viewBox="0 0 16 16">
-            <path
-              d="M7 14s-1 0-1-1 1-4 5-4 5 3 5 4-1 1-1 1zm4-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6m-5.784 6A2.24 2.24 0 0 1 5 13c0-1.355.68-2.75 1.936-3.72A6.3 6.3 0 0 0 5 9c-4 0-5 3-5 4s1 1 1 1zM4.5 8a2.5 2.5 0 1 0 0-5 2.5 2.5 0 0 0 0 5" />
-          </svg>
-        </div>
-        <h3 class="fs-2 text-body-emphasis">Brains Behind the Speed</h3>
-        <p>
-          Race engineers and strategists are the unsung heroes. They analyze
-          live data, adapt to changing conditions, and guide the driver
-          through every lap. Success relies on trust, quick thinking, and
-          seamless communication.
-        </p>
-      </div>
-      <div class="col-12 col-md">
-        <div
-          class="icon-square d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-2 mb-3">
-          <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" class="bi bi-tools"
-            viewBox="0 0 16 16">
-            <path
-              d="M1 0 0 1l2.2 3.081a1 1 0 0 0 .815.419h.07a1 1 0 0 1 .708.293l2.675 2.675-2.617 2.654A3.003 3.003 0 0 0 0 13a3 3 0 1 0 5.878-.851l2.654-2.617.968.968-.305.914a1 1 0 0 0 .242 1.023l3.27 3.27a.997.997 0 0 0 1.414 0l1.586-1.586a.997.997 0 0 0 0-1.414l-3.27-3.27a1 1 0 0 0-1.023-.242L10.5 9.5l-.96-.96 2.68-2.643A3.005 3.005 0 0 0 16 3q0-.405-.102-.777l-2.14 2.141L12 4l-.364-1.757L13.777.102a3 3 0 0 0-3.675 3.68L7.462 6.46 4.793 3.793a1 1 0 0 1-.293-.707v-.071a1 1 0 0 0-.419-.814zm9.646 10.646a.5.5 0 0 1 .708 0l2.914 2.915a.5.5 0 0 1-.707.707l-2.915-2.914a.5.5 0 0 1 0-.708M3 11l.471.242.529.026.287.445.445.287.026.529L5 13l-.242.471-.026.529-.445.287-.287.445-.529.026L3 15l-.471-.242L2 14.732l-.287-.445L1.268 14l-.026-.529L1 13l.242-.471.026-.529.445-.287.287-.445.529-.026z" />
-          </svg>
-        </div>
-        <h3 class="fs-2 text-body-emphasis">Precision Behind the Pit Wall</h3>
-        <p>
-          Teamwork in F1 is a finely tuned operation. Pit crews execute
-          lightning-fast stops, with each member playing a vital role. One
-          mistake can cost seconds — and the race. It's all about timing,
-          coordination, and relentless practice.
-        </p>
-      </div>
-    </div>
-  </section>
+    </nav>
 
-  <!-- site disclaimer -->
-  <div class="container-fluid text-bg-dark border border-dark-subtle border-top-0 border-start-0 border-end-0">
-    <div class="container">
+    <!-- Hero -->
+    <div class="container my-5">
+      <div class="text-center">
+        <h1 class="">Technological prowess shines here</h1>
+        <a class="btn btn-primary visually-hidden" href="#areality"
+          >Explore the technology</a
+        >
+      </div>
+    </div>
+    <!-- End - Hero -->
+
+    <!-- Custom layout - MAIN HERO -->
+    <div class="container p-5 text-center visually-hidden">
+      <div class="row gap-5">
+        <div class="col-12 col-md">
+          <img
+            src="../assets/img/drivers/2024/albon-portrait-main.png"
+            alt=""
+            class="img-fluid"
+          />
+          <h5>Engineering</h5>
+          <p>
+            The engineering behind F1 is constantly evolving, as teams strive to
+            create faster, more reliable cars that can withstand the demands of
+            the circuits.
+          </p>
+        </div>
+        <div class="col-12 col-md-6">
+          <img
+            src="../assets/img/drivers/2024/hamilton-portrait-main.png"
+            alt=""
+            class="img-fluid"
+          />
+        </div>
+        <div class="col-12 col-md">
+          <img
+            src="../assets/img/drivers/2024/verstappen-portrait-main.png"
+            alt=""
+            class="img-fluid"
+          />
+          <h5>Analytics</h5>
+          <p>
+            F1 teams use advanced analytics to gain insights into every aspect
+            of the sport, from race strategy to car design.
+          </p>
+        </div>
+        <div class="col-12 col-md-4">
+          <img
+            src="../assets/img/drivers/2024/gasly-portrait-main.png"
+            alt=""
+            class="img-fluid"
+          />
+          <h3>Science</h3>
+          <p>
+            Augmented reality and virtual simulations are revolutionizing F1 by
+            improving design and testing, while also enhancing fan experience.
+          </p>
+        </div>
+        <div class="col-12 col-md-4">
+          <img
+            src="../assets/img/drivers/2024/zhou-portrait-side.png"
+            alt=""
+            class="img-fluid"
+          />
+          <h5>Drivers</h5>
+          <p>
+            The F1 2022 drivers are a diverse and talented group, poised to
+            compete in some of the world's most challenging races.
+          </p>
+        </div>
+        <div class="col-12 col-md-4">
+          <img
+            src="../assets/img/drivers/2024/russell-portrait-side.png"
+            alt=""
+            class="img-fluid"
+          />
+          <h5>Teamwork</h5>
+          <p>
+            F1 is a sport that relies heavily on teamwork, with drivers,
+            engineers, and support staff working together to achieve success.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Custom layout - MAIN HERO -->
+    <div class="container p-5 text-center">
+      <!-- Top row: Albon - Lewis - Max (equal height) -->
+      <div class="row align-items-center mb-3">
+        <div class="col-12 col-md-4">
+          <img src="https://place-hold.it/300" alt="" class="img-fluid mb-2" />
+          <h4>Engineering</h4>
+          <p>
+            The engineering behind F1 is constantly evolving, as teams strive to
+            create faster, more reliable cars that can withstand the demands of
+            the circuits.
+          </p>
+        </div>
+        <div class="col-12 col-md-4">
+          <img src="https://place-hold.it/300" alt="" class="img-fluid mb-3" />
+        </div>
+        <div class="col-12 col-md-4">
+          <img src="https://place-hold.it/300" alt="" class="img-fluid mb-2" />
+          <h4>Analytics</h4>
+          <p>
+            F1 teams use advanced analytics to gain insights into every aspect
+            of the sport, from race strategy to car design.
+          </p>
+        </div>
+      </div>
+
+      <!-- Bottom row: Gasly - Zhou - Russell -->
+      <div class="row">
+        <div class="col-12 col-md-4">
+          <img src="https://place-hold.it/300" alt="" class="img-fluid mb-2" />
+          <h4>Science</h4>
+          <p>
+            Augmented reality and virtual simulations are revolutionizing F1 by
+            improving design and testing, while also enhancing fan experience.
+          </p>
+        </div>
+        <div class="col-12 col-md-4">
+          <img src="https://place-hold.it/300" alt="" class="img-fluid mb-2" />
+          <h4>Drivers</h4>
+          <p>
+            The F1 2022 drivers are a diverse and talented group, poised to
+            compete in some of the world's most challenging races.
+          </p>
+        </div>
+        <div class="col-12 col-md-4">
+          <img src="https://place-hold.it/300" alt="" class="img-fluid mb-2" />
+          <h4>Teamwork</h4>
+          <p>
+            F1 is a sport that relies heavily on teamwork, with drivers,
+            engineers, and support staff working together to achieve success.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div style="height: 80px; overflow: hidden">
+      <svg
+        viewBox="0 0 100 100"
+        preserveAspectRatio="none"
+        style="height: 100%; width: 100%"
+      >
+        <polygon fill="#212529" points="0,100 100,0 100,100" />
+      </svg>
+    </div>
+
+    <!-- fluid bar cta -->
+    <div class="container-fluid text-bg-dark">
+      <div class="container mx-auto py-5">
+        <div class="row d-flex">
+          <div class="col-12 col-md-4">
+            <img
+              src="https://place-hold.it/400x200"
+              alt="helmet"
+              class="img-fluid mb-3"
+            />
+            <p class="m">
+              German powerhouse with technical prowess aiming for podium
+              finishes in 2025.
+            </p>
+          </div>
+          <div class="col-12 col-md-4">
+            <img
+              src="https://place-hold.it/400"
+              alt="helmet"
+              class="img-fluid"
+            />
+          </div>
+          <div class="col-12 col-md-4">
+            <h2 class="">Mercedes</h2>
+            <p>
+              George Russell and Kimi Antonelli, along with the Mercedes garage,
+              seek to reclaim their throne as champions in 2025.
+            </p>
+            <button type="button" class="btn btn-primary">Learn more</button>
+          </div>
+        </div>
+        <!-- /.row -->
+      </div>
+    </div>
+
+    <!-- simulations-->
+    <div class="container my-5">
+      <!-- Stack the columns on mobile by making one full-width and the other half-width -->
+      <div class="row gap-3">
+        <div class="col-12 col-md-12 col-lg">
+          <h2>Augmented reality and virtual simulations</h2>
+          <p>
+            Augmented reality and virtual simulations are becoming increasingly
+            important in the world of Formula One. Teams are using these
+            technologies to improve their design and testing processes, allowing
+            them to simulate different scenarios and test new components in a
+            virtual environment. For example, engineers can use virtual
+            simulations to test how changes to the car's aerodynamics will
+            affect its performance, without the need for physical prototypes.
+          </p>
+          <p>
+            Augmented reality is also being used to enhance the experience for
+            fans, with apps that allow them to explore the cars and tracks in
+            3D. These technologies have the potential to transform the way that
+            Formula One is developed and experienced, and are likely to become
+            even more important in the years to come.
+          </p>
+        </div>
+        <div class="col-12 col-md-12 col-lg my-auto text-center">
+          <img
+            src="../assets/img/cars/2024/car-redbull-side-main-copy-new.png"
+            alt="AI-generated Formula 1 helmet"
+            class="img-fluid"
+          />
+        </div>
+      </div>
+    </div>
+
+    <!-- technicalities feature -->
+    <div class="container my-5">
       <div class="row">
         <div class="col-12">
-          <p class="my-2">
-            <strong>DISCLAIMER:</strong> This website is unofficial and is not
-            associated in any way with the Formula 1 companies. F1, FORMULA
-            ONE, FORMULA 1, FIA FORMULA ONE WORLD CHAMPIONSHIP, GRAND PRIX and
-            related marks are trade marks of Formula One Licensing B.V.
+          <h2>Technicalities to talk about</h2>
+          <p>
+            In recent years, Formula 1 has seen a number of technical changes
+            aimed at improving the safety and competitiveness of the sport. One
+            such change has been an increase in the minimum weight of the cars,
+            which has been done to address concerns about the high speeds that
+            F1 cars can reach. Additionally, new rules have been introduced
+            around the use of wind tunnels and simulators, which are key tools
+            used by teams to develop and test their cars.
+          </p>
+          <p>
+            These changes have been designed to promote innovation and
+            creativity within the sport, while also ensuring that F1 remains at
+            the forefront of automotive technology. Overall, F1's focus on
+            technical excellence and innovation has helped to cement its
+            position as one of the most exciting and dynamic motorsports in the
+            world.
           </p>
         </div>
       </div>
     </div>
-  </div>
 
-  <!-- footer -->
-  <div class="container-fluid text-bg-dark p-4">
-    <footer class="container border-open-left--open-top">
-      <div class="row text-center text-md-start">
-        <!-- Logo and Description -->
-        <div class="col-12 col-md-6 mb-4">
-          <img src="../assets/img/logos/trackside-logowhite.png" class="img-fluid mb-3" alt="Trackside Logo" />
-          <p>Discover Formula 1 from a fan perspective.</p>
+    <!-- video feature -->
+    <section class="py-5 bg-dark text-white text-center">
+      <div class="container">
+        <h2 class="mb-4">How Augmented Reality is Reshaping F1</h2>
+        <video
+          src="../assets/videos/raceseq.webm"
+          autoplay
+          muted
+          loop
+          class="w-100 rounded shadow"
+        ></video>
+        <p class="mt-3">
+          Explore car internals in real-time using fan AR apps built by top
+          teams.
+        </p>
+      </div>
+    </section>
+
+    <!-- cost cap feature -->
+    <div class="container my-5">
+      <div class="row gap-3">
+        <div class="col-12 col-lg">
+          <h2>Cost cap crisis</h2>
+          <p>
+            The introduction of a cost cap in Formula One is a significant
+            change that has been eagerly awaited by fans of the sport. The new
+            rules mean that teams will be restricted in the amount of money they
+            can spend on developing their cars, with a limit set at $140 million
+            per year.
+          </p>
+          <p>
+            This is designed to level the playing field, as the larger and more
+            established teams have traditionally had a significant advantage
+            over smaller and less well-funded outfits.
+          </p>
         </div>
-
-        <!-- Links Section -->
-        <div class="col-12 col-md-6">
-          <div class="row">
-            <!-- Trackside Links -->
-            <div class="col-6 col-sm-4 mb-3">
-              <h5>Trackside</h5>
-              <ul class="nav flex-column">
-                <li class="nav-item mb-2"><a href="../index.html" class="nav-link p-0">Home</a></li>
-                <li class="nav-item mb-2"><a href="whatis.html" class="nav-link p-0">What is Formula 1</a></li>
-                <li class="nav-item mb-2"><a href="#" class="nav-link p-0">Technology of F1</a>
-                </li>
-                <li class="nav-item mb-2"><a href="future.html" class="nav-link p-0">Future of F1</a></li>
-              </ul>
-            </div>
-
-            <!-- Race Calendars -->
-            <div class="col-6 col-sm-4 mb-3">
-              <h5>Race Calendars</h5>
-              <ul class="nav flex-column">
-                <li class="nav-item mb-2"><a href="../seasons/2025/2025-calendar.html" class="nav-link p-0">2025 Race
-                    Calendar</a></li>
-                <li class="nav-item mb-2"><a href="../seasons/2024/2024-calendar.html" class="nav-link p-0">2024 Race
-                    Calendar</a></li>
-              </ul>
-            </div>
-
-            <!-- Pitwall Links -->
-            <div class="col-6 col-sm-4 mb-3">
-              <h5>Pitwall</h5>
-              <ul class="nav flex-column">
-                <li class="nav-item mb-2"><a href="faqs.html" class="nav-link p-0">Trackside FAQs</a></li>
-                <li class="nav-item mb-2"><a href="#" class="nav-link p-0">Site Attributions</a></li>
-                <li class="nav-item mb-2"><a href="learnmore.html" class="nav-link p-0">Learn More</a></li>
-                <li class="nav-item mb-2"><a href="contactus.html" class="nav-link p-0">Contact Us</a></li>
-              </ul>
-            </div>
+        <div class="col-12 col-lg mt-lg-auto">
+          <p>
+            This new approach also ensures that the biggest teams do not
+            continue to dominate the sport simply because of their financial
+            power, but instead are forced to compete on a more level playing
+            field.
+          </p>
+          <p>
+            Overall, the cost cap is a positive development for the future of
+            Formula One, and is likely to make the sport even more exciting and
+            unpredictable than before.
+          </p>
+        </div>
+        <div class="col-12 col-lg mt-lg-auto">
+          <img
+            src="../assets/img/drivers/2024/leclerc-portrait-main-copy.png"
+            alt="AI-generated Formula 1 knight driver"
+            class="img-fluid"
+          />
+        </div>
+      </div>
+      <div class="row mt-3 gap-3">
+        <div class="col-12 col-md">
+          <div class="p-4 text-bg-dark rounded h-100">
+            <h4>$140M</h4>
+            <p>Cost cap per team (2025)</p>
+          </div>
+        </div>
+        <div class="col-12 col-md">
+          <div class="p-4 text-bg-dark rounded h-100">
+            <h4>24</h4>
+            <p>Grand Prix</p>
+          </div>
+        </div>
+        <div class="col-12 col-md">
+          <div class="p-4 text-bg-dark rounded h-100">
+            <h4>10</h4>
+            <p>Teams battling for the championship</p>
           </div>
         </div>
       </div>
+    </div>
 
-      <!-- Social Media and Copyright -->
-      <div class="d-flex flex-column flex-md-row justify-content-between align-items-center mt-4 pt-3 border-top">
-        <p class="mb-2 mb-md-0">© 2025 Nick Calvo. All rights reserved.</p>
-        <ul class="list-unstyled d-flex me-3">
-          <li class="ms-3"><a class="link-light" href="#"><i class="bi bi-linkedin"></i></a></li>
-          <li class="ms-3"><a class="link-light" href="#"><i class="bi bi-github"></i></a></li>
-          <li class="ms-3"><a class="link-light" href="#"><i class="bi bi-behance"></i></a></li>
-          <li class="ms-3"><a class="link-light" href="#"><i class="bi bi-youtube"></i></a></li>
-        </ul>
+    <!-- todo update section... ugly cause of images or layout? both? -->
+    <!-- data driven feature -->
+    <section class="container my-5">
+      <div class="row">
+        <div class="col-12 text-center">
+          <h2>Data-driven edge</h2>
+          <p>
+            In today’s F1, data is as critical as horsepower. Teams harness
+            massive streams of telemetry and simulations to guide everything
+            from race-day decisions to long-term car development, gaining an
+            edge that’s measured in milliseconds.
+          </p>
+        </div>
       </div>
-    </footer>
-  </div>
+      <div class="row gap-3 mt-3">
+        <div class="col-12 col-lg text-center">
+          <img src="https://place-hold.it/300" alt="" class="img-fluid" />
+        </div>
+        <div class="col-12 col-lg text-center my-auto">
+          <p>
+            From tire degradation forecasts to predictive fuel strategies, F1
+            teams use advanced analytics to uncover patterns and possibilities
+            that would otherwise go unnoticed. Every decision is backed by data
+            — every outcome, optimized.
+          </p>
+        </div>
+        <div class="col-12 col-lg text-center">
+          <img src="https://place-hold.it/300" alt="" class="img-fluid" />
+        </div>
+      </div>
+    </section>
 
-  <script type="module" src="../js/main.js"></script>
-  <script type="module" src="../js/breakpoints.js"></script>
-</body>
+    <!-- teamwork section -->
+    <section class="container my-5">
+      <div class="row">
+        <div class="col">
+          <h2>Teamwork makes the dream work</h2>
+        </div>
+        <div class="col text-end">
+          <button type="button" class="btn btn-primary">
+            View team profile
+          </button>
+        </div>
+      </div>
+      <div class="row g-4 py-5 row-cols-1 row-cols-lg-3">
+        <div class="col-12 col-md-6">
+          <div
+            class="icon-square d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-2 mb-3"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="1em"
+              height="1em"
+              fill="currentColor"
+              class="bi bi-headset"
+              viewBox="0 0 16 16"
+            >
+              <path
+                d="M8 1a5 5 0 0 0-5 5v1h1a1 1 0 0 1 1 1v3a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V6a6 6 0 1 1 12 0v6a2.5 2.5 0 0 1-2.5 2.5H9.366a1 1 0 0 1-.866.5h-1a1 1 0 1 1 0-2h1a1 1 0 0 1 .866.5H11.5A1.5 1.5 0 0 0 13 12h-1a1 1 0 0 1-1-1V8a1 1 0 0 1 1-1h1V6a5 5 0 0 0-5-5"
+              />
+            </svg>
+          </div>
+          <h3 class="fs-2">One Team, One Goal</h3>
+          <p>
+            From factory to finish line, everyone works toward a single mission:
+            performance. Designers, mechanics, and support staff all play a
+            part. In F1, collaboration and unity turn potential into podiums.
+          </p>
+        </div>
+        <div class="col-12 col-md-6">
+          <div
+            class="icon-square d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-2 mb-3"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="1em"
+              height="1em"
+              fill="currentColor"
+              class="bi bi-people-fill"
+              viewBox="0 0 16 16"
+            >
+              <path
+                d="M7 14s-1 0-1-1 1-4 5-4 5 3 5 4-1 1-1 1zm4-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6m-5.784 6A2.24 2.24 0 0 1 5 13c0-1.355.68-2.75 1.936-3.72A6.3 6.3 0 0 0 5 9c-4 0-5 3-5 4s1 1 1 1zM4.5 8a2.5 2.5 0 1 0 0-5 2.5 2.5 0 0 0 0 5"
+              />
+            </svg>
+          </div>
+          <h3 class="fs-2 text-body-emphasis">Brains Behind the Speed</h3>
+          <p>
+            Race engineers and strategists are the unsung heroes. They analyze
+            live data, adapt to changing conditions, and guide the driver
+            through every lap. Success relies on trust, quick thinking, and
+            seamless communication.
+          </p>
+        </div>
+        <div class="col-12 col-md">
+          <div
+            class="icon-square d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-2 mb-3"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="1em"
+              height="1em"
+              fill="currentColor"
+              class="bi bi-tools"
+              viewBox="0 0 16 16"
+            >
+              <path
+                d="M1 0 0 1l2.2 3.081a1 1 0 0 0 .815.419h.07a1 1 0 0 1 .708.293l2.675 2.675-2.617 2.654A3.003 3.003 0 0 0 0 13a3 3 0 1 0 5.878-.851l2.654-2.617.968.968-.305.914a1 1 0 0 0 .242 1.023l3.27 3.27a.997.997 0 0 0 1.414 0l1.586-1.586a.997.997 0 0 0 0-1.414l-3.27-3.27a1 1 0 0 0-1.023-.242L10.5 9.5l-.96-.96 2.68-2.643A3.005 3.005 0 0 0 16 3q0-.405-.102-.777l-2.14 2.141L12 4l-.364-1.757L13.777.102a3 3 0 0 0-3.675 3.68L7.462 6.46 4.793 3.793a1 1 0 0 1-.293-.707v-.071a1 1 0 0 0-.419-.814zm9.646 10.646a.5.5 0 0 1 .708 0l2.914 2.915a.5.5 0 0 1-.707.707l-2.915-2.914a.5.5 0 0 1 0-.708M3 11l.471.242.529.026.287.445.445.287.026.529L5 13l-.242.471-.026.529-.445.287-.287.445-.529.026L3 15l-.471-.242L2 14.732l-.287-.445L1.268 14l-.026-.529L1 13l.242-.471.026-.529.445-.287.287-.445.529-.026z"
+              />
+            </svg>
+          </div>
+          <h3 class="fs-2 text-body-emphasis">Precision Behind the Pit Wall</h3>
+          <p>
+            Teamwork in F1 is a finely tuned operation. Pit crews execute
+            lightning-fast stops, with each member playing a vital role. One
+            mistake can cost seconds — and the race. It's all about timing,
+            coordination, and relentless practice.
+          </p>
+        </div>
+      </div>
+    </section>
 
+    <!-- site disclaimer -->
+    <div
+      class="container-fluid text-bg-dark border border-dark-subtle border-top-0 border-start-0 border-end-0"
+    >
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <p class="my-2">
+              <strong>DISCLAIMER:</strong> This website is unofficial and is not
+              associated in any way with the Formula 1 companies. F1, FORMULA
+              ONE, FORMULA 1, FIA FORMULA ONE WORLD CHAMPIONSHIP, GRAND PRIX and
+              related marks are trade marks of Formula One Licensing B.V.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- footer -->
+    <div class="container-fluid text-bg-dark p-4">
+      <footer class="container border-open-left--open-top">
+        <div class="row text-center text-md-start">
+          <!-- Logo and Description -->
+          <div class="col-12 col-md-6 mb-4">
+            <img
+              src="../assets/img/logos/trackside-logowhite.png"
+              class="img-fluid mb-3"
+              alt="Trackside Logo"
+            />
+            <p>Discover Formula 1 from a fan perspective.</p>
+          </div>
+
+          <!-- Links Section -->
+          <div class="col-12 col-md-6">
+            <div class="row">
+              <!-- Trackside Links -->
+              <div class="col-6 col-sm-4 mb-3">
+                <h5>Trackside</h5>
+                <ul class="nav flex-column">
+                  <li class="nav-item mb-2">
+                    <a href="../index.html" class="nav-link p-0">Home</a>
+                  </li>
+                  <li class="nav-item mb-2">
+                    <a href="whatis.html" class="nav-link p-0"
+                      >What is Formula 1</a
+                    >
+                  </li>
+                  <li class="nav-item mb-2">
+                    <a href="#" class="nav-link p-0">Technology of F1</a>
+                  </li>
+                  <li class="nav-item mb-2">
+                    <a href="future.html" class="nav-link p-0">Future of F1</a>
+                  </li>
+                </ul>
+              </div>
+
+              <!-- Race Calendars -->
+              <div class="col-6 col-sm-4 mb-3">
+                <h5>Race Calendars</h5>
+                <ul class="nav flex-column">
+                  <li class="nav-item mb-2">
+                    <a
+                      href="../seasons/2025/2025-calendar.html"
+                      class="nav-link p-0"
+                      >2025 Race Calendar</a
+                    >
+                  </li>
+                  <li class="nav-item mb-2">
+                    <a
+                      href="../seasons/2024/2024-calendar.html"
+                      class="nav-link p-0"
+                      >2024 Race Calendar</a
+                    >
+                  </li>
+                </ul>
+              </div>
+
+              <!-- Pitwall Links -->
+              <div class="col-6 col-sm-4 mb-3">
+                <h5>Pitwall</h5>
+                <ul class="nav flex-column">
+                  <li class="nav-item mb-2">
+                    <a href="faqs.html" class="nav-link p-0">Trackside FAQs</a>
+                  </li>
+                  <li class="nav-item mb-2">
+                    <a href="#" class="nav-link p-0">Site Attributions</a>
+                  </li>
+                  <li class="nav-item mb-2">
+                    <a href="learnmore.html" class="nav-link p-0">Learn More</a>
+                  </li>
+                  <li class="nav-item mb-2">
+                    <a href="contactus.html" class="nav-link p-0">Contact Us</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Social Media and Copyright -->
+        <div
+          class="d-flex flex-column flex-md-row justify-content-between align-items-center mt-4 pt-3 border-top"
+        >
+          <p class="mb-2 mb-md-0">© 2025 Nick Calvo. All rights reserved.</p>
+          <ul class="list-unstyled d-flex me-3">
+            <li class="ms-3">
+              <a class="link-light" href="#"><i class="bi bi-linkedin"></i></a>
+            </li>
+            <li class="ms-3">
+              <a class="link-light" href="#"><i class="bi bi-github"></i></a>
+            </li>
+            <li class="ms-3">
+              <a class="link-light" href="#"><i class="bi bi-behance"></i></a>
+            </li>
+            <li class="ms-3">
+              <a class="link-light" href="#"><i class="bi bi-youtube"></i></a>
+            </li>
+          </ul>
+        </div>
+      </footer>
+    </div>
+
+    <script type="module" src="../js/main.js"></script>
+    <script type="module" src="../js/breakpoints.js"></script>
+  </body>
 </html>
