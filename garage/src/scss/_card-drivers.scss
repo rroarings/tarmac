@@ -90,16 +90,16 @@
   }
 
   .card-standings-info-border-bottom {
-    border-bottom: 2px solid #dee2e6; // Separator line
+    border-bottom: 2px solid #dee2e6;  
   }
 
   .card-body {
     padding: 1rem;
-    background-color: #fff; // White background for the image section
+    background-color: #fff;
   }
 
   img {
-    object-fit: contain; // Ensure the image scales properly
+    object-fit: contain;
   }
 
   p {
