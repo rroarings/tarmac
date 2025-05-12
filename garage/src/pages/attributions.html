@@ -1,369 +1,567 @@
 <!doctype html>
 <html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <meta
+      name="description"
+      content="Formula Bootstrap is a a Bootstrap built website that explores some areas of Formula One."
+    />
+    <meta name="author" content="Nick Calvo" />
+    <title>Trackside | Contact Us</title>
+    <link rel="stylesheet" href="../scss/styles.scss" />
+  </head>
 
-<head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-  <meta name="description"
-    content="Formula Bootstrap is a a Bootstrap built website that explores some areas of Formula One." />
-  <meta name="author" content="Nick Calvo" />
-  <title>Trackside | Contact Us</title>
-  <link rel="stylesheet" href="../scss/styles.scss" />
-</head>
+  <body>
+    <!-- Add this to your body to display the breakpoint size -->
+    <div id="breakpoint" class="breakpoint-size"></div>
 
-<body>
-  <!-- Add this to your body to display the breakpoint size -->
-  <div id="breakpoint" class="breakpoint-size"></div>
-
-  <!-- site header -->
-  <nav class="navbar navbar-expand-lg sticky-top" id="mainNav">
-    <div class="container">
-      <a class="navbar-brand" href="#page-top">
-        <img src="../assets/img/logos/trackside-logoblack.png" class="img-fluid w-50" alt="Trackside Logo" />
-      </a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive"
-        aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-        Menu
-        <i class="fas fa-bars ms-1"></i>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarResponsive">
-        <ul class="navbar-nav ms-auto me-4 py-4 py-lg-0">
-          <li class="nav-item">
-            <a class="nav-link" href="../index.html">Home</a>
-          </li>
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="aboutDropdown" role="button" data-bs-toggle="dropdown"
-              aria-expanded="false">
-              About F1
-            </a>
-            <ul class="dropdown-menu" aria-labelledby="aboutDropdown">
-              <li>
-                <a class="dropdown-item" href="#">What is Formula 1</a>
-              </li>
-              <li>
-                <a class="dropdown-item" href="technologies.html">Technology of F1</a>
-              </li>
-              <li>
-                <a class="dropdown-item" href="future.html">Future of F1</a>
-              </li>
-            </ul>
-          </li>
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="aboutDropdown" role="button" data-bs-toggle="dropdown"
-              aria-expanded="false">
-              Race Calendars
-            </a>
-            <ul class="dropdown-menu" aria-labelledby="aboutDropdown">
-              <li>
-                <a class="dropdown-item" href="../seasons/2025/2025-calendar.html">2025 Calendar</a>
-              </li>
-              <li>
-                <a class="dropdown-item" href="../seasons/2024/2024-calendar.html">2024 Calendar</a>
-              </li>
-            </ul>
-          </li>
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="seasonsDropdown" role="button" data-bs-toggle="dropdown"
-              aria-expanded="false">
-              Standings
-            </a>
-            <ul class="dropdown-menu" aria-labelledby="seasonsDropdown">
-              <li>
-                <h6 class="dropdown-header">2025</h6>
-              </li>
-              <li>
-                <a class="dropdown-item" href="../seasons/2025/drivers/2025-drivers.html">2025 Drivers</a>
-              </li>
-              <li>
-                <a class="dropdown-item" href="../seasons/2025/teams/2025-teams.html">2025 Teams</a>
-              </li>
-              <li>
-                <hr class="dropdown-divider" />
-              </li>
-              <li>
-                <h6 class="dropdown-header">2024</h6>
-              </li>
-              <li>
-                <a class="dropdown-item" href="#">2024 Drivers</a>
-              </li>
-              <li>
-                <a class="dropdown-item" href="#">2024 Teams</a>
-              </li>
-            </ul>
-          </li>
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="seasonsDropdown" role="button" data-bs-toggle="dropdown"
-              aria-expanded="false">
-              Season Talk
-            </a>
-            <ul class="dropdown-menu" aria-labelledby="seasonsDropdown">
-              <li>
-                <a class="dropdown-item" href="#">2025 Coverage</a>
-              </li>
-              <li>
-                <a class="dropdown-item" href="#">2024 Breakdown</a>
-              </li>
-            </ul>
-          </li>
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="fanZoneDropdown" role="button" data-bs-toggle="dropdown"
-              aria-expanded="false">
-              Site
-            </a>
-            <ul class="dropdown-menu" aria-labelledby="fanZoneDropdown">
-              <li>
-                <a class="dropdown-item" href="faqs.html">Trackside FAQs</a>
-              </li>
-              <li>
-                <a class="dropdown-item" href="learnmore.html">Learn More</a>
-              </li>
-              <li>
-                <a class="dropdown-item" href="contactus.html">Contact Us</a>
-              </li>
-              <li>
-                <a class="dropdown-item" href="attributions.html">Site Attributions</a>
-              </li>
-            </ul>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </nav>
-
-  <section class="py-5 ">
-    <div class="container">
-      <header class="text-center mb-5">
-        <h1 class="">Site Attributions</h1>
-        <p class="lead">Our Formula 1 fan site is powered by cutting-edge tools and inspired by the sport’s innovation.
-          Here’s what makes it tick.</p>
-      </header>
-      <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
-         <!-- npm Card -->
-         <div class="col">
-          <div class="card h-100 ">
-            <div class="card-body">
-              <img src="../assets/img/logos/npm-svgrepo-com.svg" class="img-fluid fs-1 mb-3" style="height: 1em;width: 1em;" alt="">
-              <h3 class="card-title">npm</h3>
-              <p class="card-text">The responsive framework behind our sleek, mobile-friendly design, ensuring a
-                podium-worthy user experience.</p>
-              <a href="https://www.npmjs.com/" class="btn btn-outline-primary" target="_blank">Visit npm</a>
-            </div>
-          </div>
-        </div>
-        <!-- Bootstrap 5 Card -->
-        <div class="col">
-          <div class="card h-100 ">
-            <div class="card-body">
-              <img src="../assets/img/logos/bootstrap-svgrepo-com.svg" class="img-fluid fs-1 mb-3" style="height: 1em;width: 1em;" alt="">
-              <h3 class="card-title">Bootstrap</h3>
-              <p class="card-text">The responsive framework behind our sleek, mobile-friendly design, ensuring a
-                podium-worthy user experience.</p>
-              <a href="https://getbootstrap.com" class="btn btn-outline-primary" target="_blank">Visit Bootstrap</a>
-            </div>
-          </div>
-        </div>
-        <!-- Parcel Card -->
-        <div class="col">
-          <div class="card h-100 ">
-            <div class="card-body">
-              <img src="../assets/img/logos/parcel-icon-svgrepo-com.svg" class="img-fluid fs-1 mb-3" style="height: 1em;width: 1em;" alt="">
-              <h3 class="card-title">Parcel</h3>
-              <p class="card-text">The responsive framework behind our sleek, mobile-friendly design, ensuring a
-                podium-worthy user experience.</p>
-              <a href="https://parceljs.org/" class="btn btn-outline-primary" target="_blank">Visit Parcel</a>
-            </div>
-          </div>
-        </div>
-        <!-- Stylelint Card -->
-        <div class="col">
-          <div class="card h-100 ">
-            <div class="card-body">
-              <img src="../assets/img/logos/stylelint-svgrepo-com.svg" class="img-fluid fs-1 mb-3" style="height: 1em;width: 1em;" alt="">
-              <h3 class="card-title">Stylelint</h3>
-              <p class="card-text">Keeps our CSS clean and consistent, like a well-tuned F1 car.</p>
-              <a href="https://stylelint.io" class="btn btn-outline-primary" target="_blank">Visit Stylelint</a>
-            </div>
-          </div>
-        </div>
-        <!-- Lenis Smooth Scroll Card -->
-        <div class="col">
-          <div class="card h-100 ">
-            <div class="card-body">
-              <img src="../assets/img/logos/scroll-down-svgrepo-com.svg" class="img-fluid fs-1 mb-3" style="height: 1em;width: 1em;" alt="">
-              <h3 class="card-title">Lenis</h3>
-              <p class="card-text">Powers buttery-smooth scrolling, mimicking the flow of an F1 lap.</p>
-              <a href="https://lenis.studiofreight.com" class="btn btn-outline-primary" target="_blank">Visit Lenis</a>
-            </div>
-          </div>
-        </div>
-        <!-- Formula 1 References Card -->
-        <div class="col">
-          <div class="card h-100 ">
-            <div class="card-body">
-              <img src="../assets/img/logos/racing-car-svgrepo-com.svg" class="img-fluid fs-1" style="height: 1em;width: 1em;" alt="">
-              <h3 class="card-title">Formula 1</h3>
-              <p class="card-text">Official F1 data and media inspire our content, bringing the sport’s thrill to fans.
-              </p>
-              <a href="https://www.formula1.com" class="btn btn-outline-primary" target="_blank">Visit Formula 1</a>
-            </div>
-          </div>
-        </div>
-        <!-- Flag icons Placeholder Card -->
-        <div class="col">
-          <div class="card h-100 ">
-            <div class="card-body">
-              <img src="../assets/img/logos/flag-2-svgrepo-com.svg" class="img-fluid fs-1 mb-3" style="height: 1em;width: 1em;" alt="">
-              <h3 class="card-title">Flag Icons</h3>
-              <p class="card-text">A collection of country flag icons to enhance the visual appeal.</p>
-              <a href="https://flagicons.lipis.dev/" class="btn btn-outline-primary" target="_blank">Visit Flag Icons</a>
-            </div>
-          </div>
-        </div>
-        <!-- GSAP Placeholder Card -->
-        <div class="col">
-          <div class="card h-100 ">
-            <div class="card-body">
-              <img src="../assets/img/logos/gsap-black.svg" class="img-fluid fs-1 mb-3" style="height: 1em;width: 1em;" alt="">
-              <h3 class="card-title">GSAP</h3>
-              <p class="card-text">A powerful JavaScript library for creating animations and interactive web experiences.</p>
-              <a href="https://gsap.com/" class="btn btn-outline-primary" target="_blank">Visit Green Sock</a>
-            </div>
-          </div>
-        </div>
-         <!-- SVG Repo Placeholder Card -->
-         <div class="col">
-          <div class="card h-100 ">
-            <div class="card-body">
-              <img src="../assets/img/logos/svgrepo_logo_icon_170689.svg" class="img-fluid fs-1 mb-3" style="height: 1em;width: 1em;" alt="">
-              <h3 class="card-title">SVG Repo</h3>
-              <p class="card-text">SVG library of vector images and icons that are used through the site.</p>
-              <a href="https://www.svgrepo.com/" class="btn btn-outline-primary" target="_blank">Visit SVG Repo</a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- connect with us -->
-  <div class="container my-5">
-    <div class="row">
-      <div class="col-12">
-        <h2>Connect with us</h2>
-        <p>
-          Have feedback or questions? Reach out to us via email at
-          trackside@example.com or connect with us on our social media
-          channels. Thank you for being part of our journey. Together, we
-          celebrate the exhilarating world of Formula 1!
-        </p>
-      </div>
-    </div>
-  </div>
-
-  <!-- site disclaimer -->
-  <div class="container-fluid text-bg-dark border border-gray7 border-top-0 border-start-0 border-end-0">
-    <div class="row">
-      <div class="text-center">
-        <p class="my-2">
-          DISCLAIMER: This website is unofficial and is not associated in any
-          way with the Formula 1 companies. F1, FORMULA ONE, FORMULA 1, FIA
-          FORMULA ONE WORLD CHAMPIONSHIP, GRAND PRIX and related marks are
-          trade marks of Formula One Licensing B.V.
-        </p>
-      </div>
-    </div>
-  </div>
-
-  <!-- footer -->
-  <div class="container-fluid text-bg-dark p-4">
-    <footer class="container border-open-left--open-top">
-      <div class="row text-center text-md-start">
-        <!-- Logo and Description -->
-        <div class="col-12 col-md-6 mb-4">
-          <img src="../assets/img/logos/trackside-logowhite.png" class="img-fluid mb-3" alt="Trackside Logo" />
-          <p>Discover Formula 1 from a fan perspective.</p>
-        </div>
-
-        <!-- Links Section -->
-        <div class="col-12 col-md-6">
-          <div class="row">
-            <!-- Trackside Links -->
-            <div class="col-6 col-sm-4 mb-3">
-              <h5>Trackside</h5>
-              <ul class="nav flex-column">
-                <li class="nav-item mb-2">
-                  <a href="../index.html" class="nav-link p-0">Home</a>
+    <!-- site header -->
+    <nav class="navbar navbar-expand-lg sticky-top" id="mainNav">
+      <div class="container">
+        <a class="navbar-brand" href="#page-top">
+          <img
+            src="../assets/img/logos/trackside-logoblack.png"
+            class="img-fluid w-50"
+            alt="Trackside Logo"
+          />
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarResponsive"
+          aria-controls="navbarResponsive"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          Menu
+          <i class="fas fa-bars ms-1"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav ms-auto me-4 py-4 py-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" href="../index.html">Home</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                id="aboutDropdown"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                About F1
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="aboutDropdown">
+                <li>
+                  <a class="dropdown-item" href="#">What is Formula 1</a>
                 </li>
-                <li class="nav-item mb-2">
-                  <a href="whatis.html" class="nav-link p-0">What is Formula 1</a>
+                <li>
+                  <a class="dropdown-item" href="technologies.html"
+                    >Technology of F1</a
+                  >
                 </li>
-                <li class="nav-item mb-2">
-                  <a href="technologies.html" class="nav-link p-0">Technology of F1</a>
-                </li>
-                <li class="nav-item mb-2">
-                  <a href="future.html" class="nav-link p-0">Future of F1</a>
+                <li>
+                  <a class="dropdown-item" href="future.html">Future of F1</a>
                 </li>
               </ul>
-            </div>
-
-            <!-- Race Calendars -->
-            <div class="col-6 col-sm-4 mb-3">
-              <h5>Race Calendars</h5>
-              <ul class="nav flex-column">
-                <li class="nav-item mb-2">
-                  <a href="../seasons/2025/2025-calendar.html" class="nav-link p-0">2025 Race Calendar</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                id="aboutDropdown"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Race Calendars
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="aboutDropdown">
+                <li>
+                  <a
+                    class="dropdown-item"
+                    href="../seasons/2025/2025-calendar.html"
+                    >2025 Calendar</a
+                  >
                 </li>
-                <li class="nav-item mb-2">
-                  <a href="../seasons/2024/2024-calendar.html" class="nav-link p-0">2024 Race Calendar</a>
-                </li>
-              </ul>
-            </div>
-
-            <!-- Pitwall Links -->
-            <div class="col-6 col-sm-4 mb-3">
-              <h5>Pitwall</h5>
-              <ul class="nav flex-column">
-                <li class="nav-item mb-2">
-                  <a href="faqs.html" class="nav-link p-0">Trackside FAQs</a>
-                </li>
-                <li class="nav-item mb-2">
-                  <a href="#" class="nav-link p-0">Site Attributions</a>
-                </li>
-                <li class="nav-item mb-2">
-                  <a href="learnmore.html" class="nav-link p-0">Learn More</a>
-                </li>
-                <li class="nav-item mb-2">
-                  <a href="#" class="nav-link p-0">Contact Us</a>
+                <li>
+                  <a
+                    class="dropdown-item"
+                    href="../seasons/2024/2024-calendar.html"
+                    >2024 Calendar</a
+                  >
                 </li>
               </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                id="seasonsDropdown"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Standings
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="seasonsDropdown">
+                <li>
+                  <h6 class="dropdown-header">2025</h6>
+                </li>
+                <li>
+                  <a
+                    class="dropdown-item"
+                    href="../seasons/2025/drivers/2025-drivers.html"
+                    >2025 Drivers</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="dropdown-item"
+                    href="../seasons/2025/teams/2025-teams.html"
+                    >2025 Teams</a
+                  >
+                </li>
+                <li>
+                  <hr class="dropdown-divider" />
+                </li>
+                <li>
+                  <h6 class="dropdown-header">2024</h6>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#">2024 Drivers</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#">2024 Teams</a>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                id="seasonsDropdown"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Season Talk
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="seasonsDropdown">
+                <li>
+                  <a class="dropdown-item" href="#">2025 Coverage</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#">2024 Breakdown</a>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                id="fanZoneDropdown"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Site
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="fanZoneDropdown">
+                <li>
+                  <a class="dropdown-item" href="faqs.html">Trackside FAQs</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="learnmore.html">Learn More</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="contactus.html">Contact Us</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="attributions.html"
+                    >Site Attributions</a
+                  >
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <section class="py-5">
+      <div class="container">
+        <header class="text-center mb-5">
+          <h1 class="">Site Attributions</h1>
+          <p class="lead">
+            Our Formula 1 fan site is powered by cutting-edge tools and inspired
+            by the sport’s innovation. Here’s what makes it tick.
+          </p>
+        </header>
+        <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+          <!-- npm Card -->
+          <div class="col">
+            <div class="card h-100">
+              <div class="card-body">
+                <img
+                  src="../assets/img/logos/npm-svgrepo-com.svg"
+                  class="img-fluid fs-1 mb-3"
+                  style="height: 1em; width: 1em"
+                  alt=""
+                />
+                <h3 class="card-title">npm</h3>
+                <p class="card-text">
+                  The responsive framework behind our sleek, mobile-friendly
+                  design, ensuring a podium-worthy user experience.
+                </p>
+                <a
+                  href="https://www.npmjs.com/"
+                  class="btn btn-outline-primary"
+                  target="_blank"
+                  >Visit npm</a
+                >
+              </div>
+            </div>
+          </div>
+          <!-- Bootstrap 5 Card -->
+          <div class="col">
+            <div class="card h-100">
+              <div class="card-body">
+                <img
+                  src="../assets/img/logos/bootstrap-svgrepo-com.svg"
+                  class="img-fluid fs-1 mb-3"
+                  style="height: 1em; width: 1em"
+                  alt=""
+                />
+                <h3 class="card-title">Bootstrap</h3>
+                <p class="card-text">
+                  The responsive framework behind our sleek, mobile-friendly
+                  design, ensuring a podium-worthy user experience.
+                </p>
+                <a
+                  href="https://getbootstrap.com"
+                  class="btn btn-outline-primary"
+                  target="_blank"
+                  >Visit Bootstrap</a
+                >
+              </div>
+            </div>
+          </div>
+          <!-- Parcel Card -->
+          <div class="col">
+            <div class="card h-100">
+              <div class="card-body">
+                <img
+                  src="../assets/img/logos/parcel-icon-svgrepo-com.svg"
+                  class="img-fluid fs-1 mb-3"
+                  style="height: 1em; width: 1em"
+                  alt=""
+                />
+                <h3 class="card-title">Parcel</h3>
+                <p class="card-text">
+                  The responsive framework behind our sleek, mobile-friendly
+                  design, ensuring a podium-worthy user experience.
+                </p>
+                <a
+                  href="https://parceljs.org/"
+                  class="btn btn-outline-primary"
+                  target="_blank"
+                  >Visit Parcel</a
+                >
+              </div>
+            </div>
+          </div>
+          <!-- Stylelint Card -->
+          <div class="col">
+            <div class="card h-100">
+              <div class="card-body">
+                <img
+                  src="../assets/img/logos/stylelint-svgrepo-com.svg"
+                  class="img-fluid fs-1 mb-3"
+                  style="height: 1em; width: 1em"
+                  alt=""
+                />
+                <h3 class="card-title">Stylelint</h3>
+                <p class="card-text">
+                  Keeps our CSS clean and consistent, like a well-tuned F1 car.
+                </p>
+                <a
+                  href="https://stylelint.io"
+                  class="btn btn-outline-primary"
+                  target="_blank"
+                  >Visit Stylelint</a
+                >
+              </div>
+            </div>
+          </div>
+          <!-- Lenis Smooth Scroll Card -->
+          <div class="col">
+            <div class="card h-100">
+              <div class="card-body">
+                <img
+                  src="../assets/img/logos/scroll-down-svgrepo-com.svg"
+                  class="img-fluid fs-1 mb-3"
+                  style="height: 1em; width: 1em"
+                  alt=""
+                />
+                <h3 class="card-title">Lenis</h3>
+                <p class="card-text">
+                  Powers buttery-smooth scrolling, mimicking the flow of an F1
+                  lap.
+                </p>
+                <a
+                  href="https://lenis.studiofreight.com"
+                  class="btn btn-outline-primary"
+                  target="_blank"
+                  >Visit Lenis</a
+                >
+              </div>
+            </div>
+          </div>
+          <!-- Formula 1 References Card -->
+          <div class="col">
+            <div class="card h-100">
+              <div class="card-body">
+                <img
+                  src="../assets/img/logos/racing-car-svgrepo-com.svg"
+                  class="img-fluid fs-1 mb-3"
+                  style="height: 1em; width: 1em"
+                  alt=""
+                />
+                <h3 class="card-title">Formula 1</h3>
+                <p class="card-text">
+                  Official F1 data and media inspire our content, bringing the
+                  sport’s thrill to fans.
+                </p>
+                <a
+                  href="https://www.formula1.com"
+                  class="btn btn-outline-primary"
+                  target="_blank"
+                  >Visit Formula 1</a
+                >
+              </div>
+            </div>
+          </div>
+          <!-- Flag icons Placeholder Card -->
+          <div class="col">
+            <div class="card h-100">
+              <div class="card-body">
+                <img
+                  src="../assets/img/logos/flag-2-svgrepo-com.svg"
+                  class="img-fluid fs-1 mb-3"
+                  style="height: 1em; width: 1em"
+                  alt=""
+                />
+                <h3 class="card-title">Flag Icons</h3>
+                <p class="card-text">
+                  A collection of country flag icons to enhance the visual
+                  appeal.
+                </p>
+                <a
+                  href="https://flagicons.lipis.dev/"
+                  class="btn btn-outline-primary"
+                  target="_blank"
+                  >Visit Flag Icons</a
+                >
+              </div>
+            </div>
+          </div>
+          <!-- GSAP Placeholder Card -->
+          <div class="col">
+            <div class="card h-100">
+              <div class="card-body">
+                <img
+                  src="../assets/img/logos/gsap-black.svg"
+                  class="img-fluid fs-1 mb-3"
+                  style="height: 1em; width: 1em"
+                  alt=""
+                />
+                <h3 class="card-title">GSAP</h3>
+                <p class="card-text">
+                  A powerful JavaScript library for creating animations and
+                  interactive web experiences.
+                </p>
+                <a
+                  href="https://gsap.com/"
+                  class="btn btn-outline-primary"
+                  target="_blank"
+                  >Visit Green Sock</a
+                >
+              </div>
+            </div>
+          </div>
+          <!-- SVG Repo Placeholder Card -->
+          <div class="col">
+            <div class="card h-100">
+              <div class="card-body">
+                <img
+                  src="../assets/img/logos/svgrepo_logo_icon_170689.svg"
+                  class="img-fluid fs-1 mb-3"
+                  style="height: 1em; width: 1em"
+                  alt=""
+                />
+                <h3 class="card-title">SVG Repo</h3>
+                <p class="card-text">
+                  SVG library of vector images and icons that are used through
+                  the site.
+                </p>
+                <a
+                  href="https://www.svgrepo.com/"
+                  class="btn btn-outline-primary"
+                  target="_blank"
+                  >Visit SVG Repo</a
+                >
+              </div>
             </div>
           </div>
         </div>
       </div>
+    </section>
 
-      <!-- Social Media and Copyright -->
-      <div class="d-flex flex-column flex-md-row justify-content-between align-items-center mt-4 pt-3 border-top">
-        <p class="mb-2 mb-md-0">© 2025 Nick Calvo. All rights reserved.</p>
-        <ul class="list-unstyled d-flex me-3">
-          <li class="ms-3">
-            <a class="link-light" href="#"><i class="bi bi-linkedin"></i></a>
-          </li>
-          <li class="ms-3">
-            <a class="link-light" href="#"><i class="bi bi-github"></i></a>
-          </li>
-          <li class="ms-3">
-            <a class="link-light" href="#"><i class="bi bi-behance"></i></a>
-          </li>
-          <li class="ms-3">
-            <a class="link-light" href="#"><i class="bi bi-youtube"></i></a>
-          </li>
-        </ul>
+    <!-- connect with us -->
+    <div class="container my-5">
+      <div class="row">
+        <div class="col-12">
+          <h2>Connect with us</h2>
+          <p>
+            Have feedback or questions? Reach out to us via email at
+            trackside@example.com or connect with us on our social media
+            channels. Thank you for being part of our journey. Together, we
+            celebrate the exhilarating world of Formula 1!
+          </p>
+        </div>
       </div>
-    </footer>
-  </div>
+    </div>
 
-  <script type="module" src="../js/main.js"></script>
-  <script type="module" src="../js/breakpoints.js"></script>
-</body>
+    <!-- site disclaimer -->
+    <div
+      class="container-fluid text-bg-dark border border-gray7 border-top-0 border-start-0 border-end-0"
+    >
+      <div class="row">
+        <div class="text-center">
+          <p class="my-2">
+            DISCLAIMER: This website is unofficial and is not associated in any
+            way with the Formula 1 companies. F1, FORMULA ONE, FORMULA 1, FIA
+            FORMULA ONE WORLD CHAMPIONSHIP, GRAND PRIX and related marks are
+            trade marks of Formula One Licensing B.V.
+          </p>
+        </div>
+      </div>
+    </div>
 
+    <!-- footer -->
+    <div class="container-fluid text-bg-dark p-4">
+      <footer class="container border-open-left--open-top">
+        <div class="row text-center text-md-start">
+          <!-- Logo and Description -->
+          <div class="col-12 col-md-6 mb-4">
+            <img
+              src="../assets/img/logos/trackside-logowhite.png"
+              class="img-fluid mb-3"
+              alt="Trackside Logo"
+            />
+            <p>Discover Formula 1 from a fan perspective.</p>
+          </div>
+
+          <!-- Links Section -->
+          <div class="col-12 col-md-6">
+            <div class="row">
+              <!-- Trackside Links -->
+              <div class="col-6 col-sm-4 mb-3">
+                <h5>Trackside</h5>
+                <ul class="nav flex-column">
+                  <li class="nav-item mb-2">
+                    <a href="../index.html" class="nav-link p-0">Home</a>
+                  </li>
+                  <li class="nav-item mb-2">
+                    <a href="whatis.html" class="nav-link p-0"
+                      >What is Formula 1</a
+                    >
+                  </li>
+                  <li class="nav-item mb-2">
+                    <a href="technologies.html" class="nav-link p-0"
+                      >Technology of F1</a
+                    >
+                  </li>
+                  <li class="nav-item mb-2">
+                    <a href="future.html" class="nav-link p-0">Future of F1</a>
+                  </li>
+                </ul>
+              </div>
+
+              <!-- Race Calendars -->
+              <div class="col-6 col-sm-4 mb-3">
+                <h5>Race Calendars</h5>
+                <ul class="nav flex-column">
+                  <li class="nav-item mb-2">
+                    <a
+                      href="../seasons/2025/2025-calendar.html"
+                      class="nav-link p-0"
+                      >2025 Race Calendar</a
+                    >
+                  </li>
+                  <li class="nav-item mb-2">
+                    <a
+                      href="../seasons/2024/2024-calendar.html"
+                      class="nav-link p-0"
+                      >2024 Race Calendar</a
+                    >
+                  </li>
+                </ul>
+              </div>
+
+              <!-- Pitwall Links -->
+              <div class="col-6 col-sm-4 mb-3">
+                <h5>Pitwall</h5>
+                <ul class="nav flex-column">
+                  <li class="nav-item mb-2">
+                    <a href="faqs.html" class="nav-link p-0">Trackside FAQs</a>
+                  </li>
+                  <li class="nav-item mb-2">
+                    <a href="#" class="nav-link p-0">Site Attributions</a>
+                  </li>
+                  <li class="nav-item mb-2">
+                    <a href="learnmore.html" class="nav-link p-0">Learn More</a>
+                  </li>
+                  <li class="nav-item mb-2">
+                    <a href="#" class="nav-link p-0">Contact Us</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Social Media and Copyright -->
+        <div
+          class="d-flex flex-column flex-md-row justify-content-between align-items-center mt-4 pt-3 border-top"
+        >
+          <p class="mb-2 mb-md-0">© 2025 Nick Calvo. All rights reserved.</p>
+          <ul class="list-unstyled d-flex me-3">
+            <li class="ms-3">
+              <a class="link-light" href="#"><i class="bi bi-linkedin"></i></a>
+            </li>
+            <li class="ms-3">
+              <a class="link-light" href="#"><i class="bi bi-github"></i></a>
+            </li>
+            <li class="ms-3">
+              <a class="link-light" href="#"><i class="bi bi-behance"></i></a>
+            </li>
+            <li class="ms-3">
+              <a class="link-light" href="#"><i class="bi bi-youtube"></i></a>
+            </li>
+          </ul>
+        </div>
+      </footer>
+    </div>
+
+    <script type="module" src="../js/main.js"></script>
+    <script type="module" src="../js/breakpoints.js"></script>
+  </body>
 </html>
