@@ -1,369 +1,499 @@
 <!doctype html>
 <html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <meta
+      name="description"
+      content="Formula Bootstrap is a a Bootstrap built website that explores some areas of Formula One."
+    />
+    <meta name="author" content="Nick Calvo" />
+    <title>Trackside | Learn More</title>
+    <link rel="stylesheet" href="../scss/styles.scss" />
+  </head>
 
-<head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-  <meta name="description"
-    content="Formula Bootstrap is a a Bootstrap built website that explores some areas of Formula One." />
-  <meta name="author" content="Nick Calvo" />
-  <title>Trackside | Learn More</title>
-  <link rel="stylesheet" href="../scss/styles.scss" />
-</head>
+  <body>
+    <!-- Add this to your body to display the breakpoint size -->
+    <div id="breakpoint" class="breakpoint-size"></div>
 
-<body>
-  <!-- Add this to your body to display the breakpoint size -->
-  <div id="breakpoint" class="breakpoint-size"></div>
-
-  <!-- site header -->
-  <nav class="navbar navbar-expand-lg sticky-top" id="mainNav">
-    <div class="container">
-      <a class="navbar-brand" href="#page-top">
-        <img src="../assets/img/logos/trackside-logoblack.png" class="img-fluid w-50" alt="Trackside Logo" />
-      </a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive"
-        aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-        Menu
-        <i class="fas fa-bars ms-1"></i>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarResponsive">
-        <ul class="navbar-nav ms-auto me-4 py-4 py-lg-0">
-          <li class="nav-item">
-            <a class="nav-link" href="../index.html">Home</a>
-          </li>
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="aboutDropdown" role="button" data-bs-toggle="dropdown"
-              aria-expanded="false">
-              About F1
-            </a>
-            <ul class="dropdown-menu" aria-labelledby="aboutDropdown">
-              <li>
-                <a class="dropdown-item" href="whatis.html">What is Formula 1</a>
-              </li>
-              <li>
-                <a class="dropdown-item" href="technologies.html">Technology of F1</a>
-              </li>
-              <li>
-                <a class="dropdown-item" href="future.html">Future of F1</a>
-              </li>
-            </ul>
-          </li>
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="aboutDropdown" role="button" data-bs-toggle="dropdown"
-              aria-expanded="false">
-              Race Calendars
-            </a>
-            <ul class="dropdown-menu" aria-labelledby="aboutDropdown">
-              <li>
-                <a class="dropdown-item" href="../seasons/2025/2025-calendar.html">2025 Calendar</a>
-              </li>
-              <li>
-                <a class="dropdown-item" href="../seasons/2024/2024-calendar.html">2024 Calendar</a>
-              </li>
-            </ul>
-          </li>
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="seasonsDropdown" role="button" data-bs-toggle="dropdown"
-              aria-expanded="false">
-              Standings
-            </a>
-            <ul class="dropdown-menu" aria-labelledby="seasonsDropdown">
-              <li>
-                <h6 class="dropdown-header">2025</h6>
-              </li>
-              <li>
-                <a class="dropdown-item" href="../seasons/2025/drivers/2025-drivers.html">2025 Drivers</a>
-              </li>
-              <li>
-                <a class="dropdown-item" href="../seasons/2025/teams/2025-teams.html">2025 Teams</a>
-              </li>
-              <li>
-                <hr class="dropdown-divider" />
-              </li>
-              <li>
-                <h6 class="dropdown-header">2024</h6>
-              </li>
-              <li>
-                <a class="dropdown-item" href="#">2024 Drivers</a>
-              </li>
-              <li>
-                <a class="dropdown-item" href="#">2024 Teams</a>
-              </li>
-            </ul>
-          </li>
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="seasonsDropdown" role="button" data-bs-toggle="dropdown"
-              aria-expanded="false">
-              Season Talk
-            </a>
-            <ul class="dropdown-menu" aria-labelledby="seasonsDropdown">
-              <li>
-                <a class="dropdown-item" href="#">2025 Coverage</a>
-              </li>
-              <li>
-                <a class="dropdown-item" href="#">2024 Breakdown</a>
-              </li>
-            </ul>
-          </li>
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="fanZoneDropdown" role="button" data-bs-toggle="dropdown"
-              aria-expanded="false">
-              Site
-            </a>
-            <ul class="dropdown-menu" aria-labelledby="fanZoneDropdown">
-              <li>
-                <a class="dropdown-item" href="faqs.html">Trackside FAQs</a>
-              </li>
-              <li>
-                <a class="dropdown-item active" href="learnmore.html" aria-current="page">Learn More</a>
-              </li>
-              <li>
-                <a class="dropdown-item" href="contactus.html">Contact Us</a>
-              </li>
-              <li>
-                <a class="dropdown-item" href="attributions.html">Site Attributions</a>
-              </li>
-            </ul>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </nav>
-
-  <!-- learn more hero -->
-  <div class="container px-4 pt-5">
-    <div class="row py-3">
-      <div class="col-12">
-        <h1 class="">Learn what we aim to provide at Trackside</h1>
-        <p class="lead">
-          Trackside is an unofficial Formula 1 fan website created and
-          operated by a solo developer and passionate F1 enthusiast. As an
-          independent one-person operation, Trackside aims to deliver engaging
-          content that celebrates the sport, its teams, drivers, and thrilling
-          moments on and off the track.
-        </p>
-      </div>
-    </div>
-  </div>
-
-  <!-- bento 2 -->
-  <div class="container px-4 my-5">
-    <h2 class="">Learn some beginner information about Formula 1</h2>
-    <div class="row bento-wrapper">
-      <div class="bento-item bento-span-6">
-        <div>
-          <h5>The Basics</h5>
-          <p>
-            What makes F1 unique? Dive into its structure, speed, and global
-            appeal.
-          </p>
-          <div class="text-center">
-            <img src="https://place-hold.it/500x200" alt="" class="img-fluid" />
-          </div>
-        </div>
-      </div>
-      <div class="bento-item bento-span-3">
-        <div>
-          <h5>Behind the Machines</h5>
-          <p>How F1 cars push the limits of performance and innovation.</p>
-        </div>
-        <img src="https://place-hold.it/300x150" alt="" class="img-fluid" />
-      </div>
-      <div class="bento-item bento-span-3">
-        <div>
-          <h5>Future of Racing</h5>
-          <p>
-            Explore how AI, data, and sustainability are shaping tomorrow's
-            grid.
-          </p>
-        </div>
-        <img src="https://place-hold.it/300x100" alt="" class="img-fluid" />
-      </div>
-      <div class="bento-item bento-span-3">
-        <div class="">
-          <h5>Scoring & Standings</h5>
-          <p>
-            Learn how championships are won by drivers and constructors
-            throughout the season.
-          </p>
-          <img src="https://place-hold.it/300x150" alt="" class="img-fluid" />
-        </div>
-      </div>
-      <div class="bento-item bento-span-3">
-        <div>
-          <h5>Past Seasons</h5>
-          <p>Highlights from previous years, showcasing dramatic stories.</p>
-        </div>
-        <button type="button" class="btn btn-danger">
-          Blast to the past
+    <!-- site header -->
+    <nav class="navbar navbar-expand-lg sticky-top" id="mainNav">
+      <div class="container">
+        <a class="navbar-brand" href="#page-top">
+          <img
+            src="../assets/img/logos/trackside-logoblack.png"
+            class="img-fluid w-50"
+            alt="Trackside Logo"
+          />
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarResponsive"
+          aria-controls="navbarResponsive"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          Menu
+          <i class="fas fa-bars ms-1"></i>
         </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav ms-auto me-4 py-4 py-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" href="../index.html">Home</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                id="aboutDropdown"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                About F1
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="aboutDropdown">
+                <li>
+                  <a class="dropdown-item" href="whatis.html"
+                    >What is Formula 1</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="technologies.html"
+                    >Technology of F1</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="future.html">Future of F1</a>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                id="aboutDropdown"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Race Calendars
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="aboutDropdown">
+                <li>
+                  <a
+                    class="dropdown-item"
+                    href="../seasons/2025/2025-calendar.html"
+                    >2025 Calendar</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="dropdown-item"
+                    href="../seasons/2024/2024-calendar.html"
+                    >2024 Calendar</a
+                  >
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                id="seasonsDropdown"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Standings
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="seasonsDropdown">
+                <li>
+                  <h6 class="dropdown-header">2025</h6>
+                </li>
+                <li>
+                  <a
+                    class="dropdown-item"
+                    href="../seasons/2025/drivers/2025-drivers.html"
+                    >2025 Drivers</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="dropdown-item"
+                    href="../seasons/2025/teams/2025-teams.html"
+                    >2025 Teams</a
+                  >
+                </li>
+                <li>
+                  <hr class="dropdown-divider" />
+                </li>
+                <li>
+                  <h6 class="dropdown-header">2024</h6>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#">2024 Drivers</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#">2024 Teams</a>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                id="seasonsDropdown"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Season Talk
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="seasonsDropdown">
+                <li>
+                  <a class="dropdown-item" href="#">2025 Coverage</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#">2024 Breakdown</a>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                id="fanZoneDropdown"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Site
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="fanZoneDropdown">
+                <li>
+                  <a class="dropdown-item" href="faqs.html">Trackside FAQs</a>
+                </li>
+                <li>
+                  <a
+                    class="dropdown-item active"
+                    href="learnmore.html"
+                    aria-current="page"
+                    >Learn More</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="contactus.html">Contact Us</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="attributions.html"
+                    >Site Attributions</a
+                  >
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
       </div>
-      <div class="bento-item bento-span-6">
-        <img src="https://place-hold.it/500x150" alt="" class="img-fluid" />
-        <div>
-          <h5>2025 Coverage</h5>
-          <p>Up-to-date coverage of the 2025 F1 season.</p>
+    </nav>
+
+    <!-- learn more hero -->
+    <div class="container px-4 pt-5">
+      <div class="row py-3">
+        <div class="col-12">
+          <h1 class="">Learn what we aim to provide at Trackside</h1>
+          <p class="lead">
+            Trackside is an unofficial Formula 1 fan website created and
+            operated by a solo developer and passionate F1 enthusiast. As an
+            independent one-person operation, Trackside aims to deliver engaging
+            content that celebrates the sport, its teams, drivers, and thrilling
+            moments on and off the track.
+          </p>
         </div>
       </div>
     </div>
-  </div>
 
-  <!-- alt bento -->
-  <section class="container">
-    <h2 class="">Explore the 2025 race season and its key components</h2>
-    <div class="row bento-wrapper">
-      <div class="bento-item bento-span-6">
-        <div>
-          <h5>The Drivers</h5>
-          <p>
-            What makes F1 unique? Dive into its structure, speed, and global
-            appeal.
-          </p>
-          <div class="text-center">
-            <img src="../assets/img/section/formula-fantasy-banner-img.png" alt="" class="img-fluid" />
+    <!-- bento 2 -->
+    <div class="container px-4 my-5">
+      <h2 class="">Learn some beginner information about Formula 1</h2>
+      <div class="row bento-wrapper">
+        <div class="bento-item bento-span-6">
+          <div>
+            <h5>The Basics</h5>
+            <p>
+              What makes F1 unique? Dive into its structure, speed, and global
+              appeal.
+            </p>
+            <div class="text-center">
+              <img
+                src="https://place-hold.it/500x200"
+                alt=""
+                class="img-fluid"
+              />
+            </div>
           </div>
         </div>
-      </div>
-      <div class="bento-item bento-span-3">
-        <div>
-          <h5>Behind the Machines</h5>
-          <p>How F1 cars push the limits of performance and innovation.</p>
-        </div>
-        <img src="https://place-hold.it/300x150" alt="" class="img-fluid" />
-      </div>
-      <div class="bento-item bento-span-3">
-        <div>
-          <h5>Future of Racing</h5>
-          <p>
-            Explore how AI, data, and sustainability are shaping tomorrow's
-            grid.
-          </p>
-        </div>
-        <img src="https://place-hold.it/300x150" alt="" class="img-fluid" />
-      </div>
-      <div class="bento-item bento-span-3">
-        <div class="">
-          <h5>Scoring & Standings</h5>
-          <p>
-            Learn how championships are won by drivers and constructors
-            throughout the season.
-          </p>
+        <div class="bento-item bento-span-3">
+          <div>
+            <h5>Behind the Machines</h5>
+            <p>How F1 cars push the limits of performance and innovation.</p>
+          </div>
           <img src="https://place-hold.it/300x150" alt="" class="img-fluid" />
         </div>
-      </div>
-      <div class="bento-item bento-span-3">
-        <div>
-          <h5>Past Seasons</h5>
-          <p>Highlights from previous years, showcasing dramatic stories.</p>
+        <div class="bento-item bento-span-3">
+          <div>
+            <h5>Future of Racing</h5>
+            <p>
+              Explore how AI, data, and sustainability are shaping tomorrow's
+              grid.
+            </p>
+          </div>
+          <img src="https://place-hold.it/300x100" alt="" class="img-fluid" />
         </div>
-        <img src="https://place-hold.it/300x150" alt="" class="img-fluid" />
-      </div>
-      <div class="bento-item bento-item-bg bento-span-6">
-        <div class="text-center">
-          <img src="../assets/img/section/formula-fantasy-banner-img.png" alt="" class="img-fluid" />
+        <div class="bento-item bento-span-3">
+          <div class="">
+            <h5>Scoring & Standings</h5>
+            <p>
+              Learn how championships are won by drivers and constructors
+              throughout the season.
+            </p>
+            <img src="https://place-hold.it/300x150" alt="" class="img-fluid" />
+          </div>
         </div>
-        <div>
-          <h5>The Constructors</h5>
-          <p>Up-to-date coverage of the 2025 F1 season.</p>
+        <div class="bento-item bento-span-3">
+          <div>
+            <h5>Past Seasons</h5>
+            <p>Highlights from previous years, showcasing dramatic stories.</p>
+          </div>
+          <button type="button" class="btn btn-danger">
+            Blast to the past
+          </button>
         </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- connect with us -->
-  <div class="container my-5">
-    <div class="row">
-      <div class="col-12">
-        <h2>Connect with us</h2>
-        <p>
-          Have feedback or questions? Reach out to us via email at
-          trackside@example.com or connect with us on our social media
-          channels. Thank you for being part of our journey. Together, we
-          celebrate the exhilarating world of Formula 1!
-        </p>
-      </div>
-    </div>
-  </div>
-
-  <!-- site disclaimer -->
-  <div class="container-fluid text-bg-dark border border-gray7 border-top-0 border-start-0 border-end-0">
-    <div class="row">
-      <div class="text-center">
-        <p class="my-2">
-          DISCLAIMER: This website is unofficial and is not associated in any
-          way with the Formula 1 companies. F1, FORMULA ONE, FORMULA 1, FIA
-          FORMULA ONE WORLD CHAMPIONSHIP, GRAND PRIX and related marks are
-          trade marks of Formula One Licensing B.V.
-        </p>
-      </div>
-    </div>
-  </div>
-
-  <!-- footer -->
-  <div class="container-fluid text-bg-dark p-4">
-    <footer class="container border-open-left--open-top">
-      <div class="row text-center text-md-start">
-        <!-- Logo and Description -->
-        <div class="col-12 col-md-6 mb-4">
-          <img src="../assets/img/logos/trackside-logowhite.png" class="img-fluid mb-3" alt="Trackside Logo" />
-          <p>Discover Formula 1 from a fan perspective.</p>
-        </div>
-
-        <!-- Links Section -->
-        <div class="col-12 col-md-6">
-          <div class="row">
-            <!-- Trackside Links -->
-            <div class="col-6 col-sm-4 mb-3">
-              <h5>Trackside</h5>
-              <ul class="nav flex-column">
-                <li class="nav-item mb-2"><a href="../index.html" class="nav-link p-0">Home</a></li>
-                <li class="nav-item mb-2"><a href="whatis.html" class="nav-link p-0">What is Formula 1</a></li>
-                <li class="nav-item mb-2"><a href="technologies.html" class="nav-link p-0">Technology of F1</a>
-                </li>
-                <li class="nav-item mb-2"><a href="future.html" class="nav-link p-0">Future of F1</a></li>
-              </ul>
-            </div>
-
-            <!-- Race Calendars -->
-            <div class="col-6 col-sm-4 mb-3">
-              <h5>Race Calendars</h5>
-              <ul class="nav flex-column">
-                <li class="nav-item mb-2"><a href="../seasons/2025/2025-calendar.html" class="nav-link p-0">2025 Race
-                    Calendar</a></li>
-                <li class="nav-item mb-2"><a href="../seasons/2024/2024-calendar.html" class="nav-link p-0">2024 Race
-                    Calendar</a></li>
-              </ul>
-            </div>
-
-            <!-- Pitwall Links -->
-            <div class="col-6 col-sm-4 mb-3">
-              <h5>Pitwall</h5>
-              <ul class="nav flex-column">
-                <li class="nav-item mb-2"><a href="faqs.html" class="nav-link p-0">Trackside FAQs</a></li>
-                <li class="nav-item mb-2"><a href="attributions.html" class="nav-link p-0">Site Attributions</a></li>
-                <li class="nav-item mb-2"><a href="#" class="nav-link p-0">Learn More</a></li>
-                <li class="nav-item mb-2"><a href="contactus.html" class="nav-link p-0">Contact Us</a></li>
-              </ul>
-            </div>
+        <div class="bento-item bento-span-6">
+          <img src="https://place-hold.it/500x150" alt="" class="img-fluid" />
+          <div>
+            <h5>2025 Coverage</h5>
+            <p>Up-to-date coverage of the 2025 F1 season.</p>
           </div>
         </div>
       </div>
+    </div>
 
-      <!-- Social Media and Copyright -->
-      <div class="d-flex flex-column flex-md-row justify-content-between align-items-center mt-4 pt-3 border-top">
-        <p class="mb-2 mb-md-0">© 2025 Nick Calvo. All rights reserved.</p>
-        <ul class="list-unstyled d-flex me-3">
-          <li class="ms-3"><a class="link-light" href="#"><i class="bi bi-linkedin"></i></a></li>
-          <li class="ms-3"><a class="link-light" href="#"><i class="bi bi-github"></i></a></li>
-          <li class="ms-3"><a class="link-light" href="#"><i class="bi bi-behance"></i></a></li>
-          <li class="ms-3"><a class="link-light" href="#"><i class="bi bi-youtube"></i></a></li>
-        </ul>
+    <!-- alt bento -->
+    <section class="container">
+      <h2 class="">Explore the 2025 race season and its key components</h2>
+      <div class="row bento-wrapper">
+        <div class="bento-item bento-span-6">
+          <div>
+            <h5>The Drivers</h5>
+            <p>
+              What makes F1 unique? Dive into its structure, speed, and global
+              appeal.
+            </p>
+            <div class="text-center">
+              <img
+                src="../assets/img/section/formula-fantasy-banner-img.png"
+                alt=""
+                class="img-fluid"
+              />
+            </div>
+          </div>
+        </div>
+        <div class="bento-item bento-span-3">
+          <div>
+            <h5>Behind the Machines</h5>
+            <p>How F1 cars push the limits of performance and innovation.</p>
+          </div>
+          <img src="https://place-hold.it/300x150" alt="" class="img-fluid" />
+        </div>
+        <div class="bento-item bento-span-3">
+          <div>
+            <h5>Future of Racing</h5>
+            <p>
+              Explore how AI, data, and sustainability are shaping tomorrow's
+              grid.
+            </p>
+          </div>
+          <img src="https://place-hold.it/300x150" alt="" class="img-fluid" />
+        </div>
+        <div class="bento-item bento-span-3">
+          <div class="">
+            <h5>Scoring & Standings</h5>
+            <p>
+              Learn how championships are won by drivers and constructors
+              throughout the season.
+            </p>
+            <img src="https://place-hold.it/300x150" alt="" class="img-fluid" />
+          </div>
+        </div>
+        <div class="bento-item bento-span-3">
+          <div>
+            <h5>Past Seasons</h5>
+            <p>Highlights from previous years, showcasing dramatic stories.</p>
+          </div>
+          <img src="https://place-hold.it/300x150" alt="" class="img-fluid" />
+        </div>
+        <div class="bento-item bento-item-bg bento-span-6">
+          <div class="text-center">
+            <img
+              src="../assets/img/section/formula-fantasy-banner-img.png"
+              alt=""
+              class="img-fluid"
+            />
+          </div>
+          <div>
+            <h5>The Constructors</h5>
+            <p>Up-to-date coverage of the 2025 F1 season.</p>
+          </div>
+        </div>
       </div>
-    </footer>
-  </div>
+    </section>
 
-  <script type="module" src="../js/main.js"></script>
-  <script type="module" src="../js/breakpoints.js"></script>
-</body>
+    <!-- connect with us -->
+    <div class="container my-5">
+      <div class="row">
+        <div class="col-12">
+          <h2>Connect with us</h2>
+          <p>
+            Have feedback or questions? Reach out to us via email at
+            trackside@example.com or connect with us on our social media
+            channels. Thank you for being part of our journey. Together, we
+            celebrate the exhilarating world of Formula 1!
+          </p>
+        </div>
+      </div>
+    </div>
 
+    <!-- site disclaimer -->
+    <div
+      class="container-fluid text-bg-dark border border-gray7 border-top-0 border-start-0 border-end-0"
+    >
+      <div class="row">
+        <div class="text-center">
+          <p class="my-2">
+            DISCLAIMER: This website is unofficial and is not associated in any
+            way with the Formula 1 companies. F1, FORMULA ONE, FORMULA 1, FIA
+            FORMULA ONE WORLD CHAMPIONSHIP, GRAND PRIX and related marks are
+            trade marks of Formula One Licensing B.V.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- footer -->
+    <div class="container-fluid text-bg-dark p-4">
+      <footer class="container border-open-left--open-top">
+        <div class="row text-center text-md-start">
+          <!-- Logo and Description -->
+          <div class="col-12 col-md-6 mb-4">
+            <img
+              src="../assets/img/logos/trackside-logowhite.png"
+              class="img-fluid mb-3"
+              alt="Trackside Logo"
+            />
+            <p>Discover Formula 1 from a fan perspective.</p>
+          </div>
+
+          <!-- Links Section -->
+          <div class="col-12 col-md-6">
+            <div class="row">
+              <!-- Trackside Links -->
+              <div class="col-6 col-sm-4 mb-3">
+                <h5>Trackside</h5>
+                <ul class="nav flex-column">
+                  <li class="nav-item mb-2">
+                    <a href="../index.html" class="nav-link p-0">Home</a>
+                  </li>
+                  <li class="nav-item mb-2">
+                    <a href="whatis.html" class="nav-link p-0"
+                      >What is Formula 1</a
+                    >
+                  </li>
+                  <li class="nav-item mb-2">
+                    <a href="technologies.html" class="nav-link p-0"
+                      >Technology of F1</a
+                    >
+                  </li>
+                  <li class="nav-item mb-2">
+                    <a href="future.html" class="nav-link p-0">Future of F1</a>
+                  </li>
+                </ul>
+              </div>
+
+              <!-- Race Calendars -->
+              <div class="col-6 col-sm-4 mb-3">
+                <h5>Race Calendars</h5>
+                <ul class="nav flex-column">
+                  <li class="nav-item mb-2">
+                    <a
+                      href="../seasons/2025/2025-calendar.html"
+                      class="nav-link p-0"
+                      >2025 Race Calendar</a
+                    >
+                  </li>
+                  <li class="nav-item mb-2">
+                    <a
+                      href="../seasons/2024/2024-calendar.html"
+                      class="nav-link p-0"
+                      >2024 Race Calendar</a
+                    >
+                  </li>
+                </ul>
+              </div>
+
+              <!-- Pitwall Links -->
+              <div class="col-6 col-sm-4 mb-3">
+                <h5>Pitwall</h5>
+                <ul class="nav flex-column">
+                  <li class="nav-item mb-2">
+                    <a href="faqs.html" class="nav-link p-0">Trackside FAQs</a>
+                  </li>
+                  <li class="nav-item mb-2">
+                    <a href="attributions.html" class="nav-link p-0"
+                      >Site Attributions</a
+                    >
+                  </li>
+                  <li class="nav-item mb-2">
+                    <a href="#" class="nav-link p-0">Learn More</a>
+                  </li>
+                  <li class="nav-item mb-2">
+                    <a href="contactus.html" class="nav-link p-0">Contact Us</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Social Media and Copyright -->
+        <div
+          class="d-flex flex-column flex-md-row justify-content-between align-items-center mt-4 pt-3 border-top"
+        >
+          <p class="mb-2 mb-md-0">© 2025 Nick Calvo. All rights reserved.</p>
+          <ul class="list-unstyled d-flex me-3">
+            <li class="ms-3">
+              <a class="link-light" href="#"><i class="bi bi-linkedin"></i></a>
+            </li>
+            <li class="ms-3">
+              <a class="link-light" href="#"><i class="bi bi-github"></i></a>
+            </li>
+            <li class="ms-3">
+              <a class="link-light" href="#"><i class="bi bi-behance"></i></a>
+            </li>
+            <li class="ms-3">
+              <a class="link-light" href="#"><i class="bi bi-youtube"></i></a>
+            </li>
+          </ul>
+        </div>
+      </footer>
+    </div>
+
+    <script type="module" src="../js/main.js"></script>
+    <script type="module" src="../js/breakpoints.js"></script>
+  </body>
 </html>
