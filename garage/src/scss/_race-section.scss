@@ -103,41 +103,36 @@
   transform: scale(1.05);
 }
 
-
 @media (max-width: 576px) {
   .race-section {
-    min-height: 200px;  /* Smaller height for better fit */
-    padding: 2rem 1rem;  /* Reduce padding on mobile */
+    min-height: 200px;
+    padding: 2rem 1rem;
   }
 
   .race-section h2 {
-    font-size: 2rem; /* Smaller headings */
-    text-align: center; /* Center title on mobile */
+    text-align: center;
   }
 
   .race-section .hidden-description {
-    font-size: 1rem; /* Adjust text size */
     text-align: center;
   }
 
   .race-section-title-position {
     padding-right: 5px;
-    border-width: 4px; /* Thinner border for better mobile display */
+    border-width: 4px;
   }
 }
 
-/* Make sure hover still works on desktop */
 @media (hover: hover) {
   .race-section:hover::before {
     opacity: 1;
   }
 }
 
-/* Make text instantly visible on mobile since hover isn’t available */
 @media (max-width: 576px) {
   .hidden-description {
-    opacity: 1 !important;
-    transform: translateY(0) !important;
+    opacity: 1;
+    transform: translateY(0);
   }
 }
 
