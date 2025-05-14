@@ -80,9 +80,12 @@
   background-color: $gray-700;
 }
 
-.card-racecalender-section:hover .btn {
-  background-color: $red;
-  border-color: $red;
+.card-racecalender-section .btn {
+  color: $gray-200;
+  border-color: $gray-600;
+  transition: all .3s ease;
+}
+
 }
 
 .card-spotlight {
