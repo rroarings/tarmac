@@ -129,7 +129,6 @@
 }
 
 .championship-standing-pre-info h5 {
-  font-size: calc(1rem + .9vw);
   font-weight: 600;
 
   @include media-breakpoint-up(sm) {
@@ -150,7 +149,6 @@
 
   @include media-breakpoint-up(xxl) {
     // ≥1200px
-    font-size: calc(1rem + .9vw);
   }
 }
 
