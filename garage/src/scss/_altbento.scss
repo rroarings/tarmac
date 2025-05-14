@@ -11,7 +11,16 @@
   height: auto;
 
   @include media-breakpoint-up(lg) {
-    max-height: 150px;
+
+.bento-span-4 {
+  grid-column: span 4;
+
+  @include media-breakpoint-up(md) {
+    grid-column: span 6;
+  }
+
+  @include media-breakpoint-up(lg) {
+    grid-column: span 4;
   }
 }
 
