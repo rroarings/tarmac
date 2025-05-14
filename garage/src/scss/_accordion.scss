@@ -28,8 +28,11 @@
 }
 
 .accordion-button:not(.collapsed) {
+  color: $gray-900;
   background-color: transparent;
   box-shadow: none;
+  transition: all .3s ease;
+}
 
 .accordion-body {
   background-color: $gray-200;
