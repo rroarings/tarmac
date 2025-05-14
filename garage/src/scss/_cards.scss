@@ -6,7 +6,7 @@
 }
 
 .card-news {
-  @extend .card-cover; // Reuse shared styles
+  @extend .card-cover;
   color: $white;
   background-image: url("../assets/img/section/racei1.png");
   border: none;
