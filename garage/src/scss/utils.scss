@@ -1,15 +1,16 @@
-/* Style for displaying the breakpoint */
 .breakpoint-size {
   position: fixed;
-  top: 1rem; /* Distance from the top */
-  right: 1rem; /* Distance from the right */
-  z-index: 9999; /* Ensure it's on top of other elements */
-  padding: .5rem 1rem; /* Padding for spacing */
-  font-size: 12px; /* Small text */
-  font-weight: 700; /* Bold text */
-  color: $red; /* Red text color */
-  text-transform: uppercase; /* Uppercase text */
-  letter-spacing: 1px; /* Add some letter spacing for clarity */
-  background-color: rgba(255, 0, 0, .1); /* Red background with transparency */
-  border-radius: 5px; /* Rounded corners */
+  top: 1rem;
+  right: 1rem;
+  z-index: 9999;
+  padding: .5rem 1rem;
+  font-size: 12px;
+  font-weight: 700;
+  color: $red;
+  letter-spacing: 1px;
+  background-color: #f7d2d5ba;
+  border-color: $red;
+  border-style: dashed;
+  border-width: 1px;
+  border-radius: 5px;
 }
