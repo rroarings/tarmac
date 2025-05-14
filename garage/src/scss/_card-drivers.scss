@@ -58,32 +58,23 @@
 
   // points
   .card-standings-info p:first-child {
-    font-size: calc(2rem + .9vw);
     font-weight: 800;
 
     @include media-breakpoint-up(xxl) {
-      font-size: calc(2.3rem + .5vw);
-
     }
   }
 
   // pts label
   .card-standings-info p:nth-child(2) {
-    font-size: calc(.9rem + .5vw);
 
     @include media-breakpoint-up(xxl) {
-      font-size: calc(.9rem + .5vw);
-
     }
   }
 
   .card-standings-info h5 {
-    font-size: calc(2.6rem + .9vw);
     font-weight: 800;
 
     @include media-breakpoint-up(xxl) {
-      font-size: calc(2.6rem + .9vw);
-
     }
   }
 
@@ -94,19 +85,6 @@
   .card-body {
     padding: 1rem;
     background-color: #fff;
-  }
-
-  img {
-    object-fit: contain;
-  }
-
-  p {
-    margin: 0;
-  }
-
-  h5 {
-    margin: 0;
-    font-size: 1.25rem;
   }
 
   &.team-redbull:hover {
