@@ -11,6 +11,8 @@
   height: auto;
 
   @include media-breakpoint-up(lg) {
+  }
+}
 
 .bento-span-4 {
   grid-column: span 4;
