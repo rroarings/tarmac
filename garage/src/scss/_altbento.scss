@@ -78,6 +78,10 @@
   }
 }
 
+.bento-item:hover .bento-item-svg {
+  color: $primary;
+}
+
 .bento-item h5 {
   font-weight: 600;
   transition: transform .3s ease;
