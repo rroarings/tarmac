@@ -2,7 +2,7 @@
   padding: 1rem;
 }
 
-@media (max-width: 576px) { /* Adjustments for small screens */
+@media (max-width: 576px) {
   .icon-square {
     width: 2.5rem;
     height: 2.5rem;
@@ -14,6 +14,5 @@
   }
 
   .col-feature h3 {
-    font-size: 1.25rem; /* Slightly reduce heading size on small screens */
   }
 }
