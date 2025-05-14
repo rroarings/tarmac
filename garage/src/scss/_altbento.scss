@@ -53,12 +53,12 @@
   color: #000;
   text-decoration: none;
   background-color: $gray-200;
-  border: 2px solid $gray-300;
+  border: 2px solid $gray-400;
   border-radius: 6px;
   transition: all .3s ease;
 
   &:hover {
-    border: 2px solid $gray-600;
+    border: 2px solid $gray-500;
   }
 
 }
