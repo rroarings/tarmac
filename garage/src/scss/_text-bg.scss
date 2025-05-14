@@ -39,13 +39,12 @@
 
 // Generic styles
 .text-bg-custom.text-bg-standings--leader {
-  background-color: $green;
+  background-color: $red;
 }
 
 .text-bg-custom.text-bg-standings {
   @extend .text-bg-custom;
-  background-color: $gray-600;
-
+  background-color: $gray-900;
 }
 
 // Team-specific styles
