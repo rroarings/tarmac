@@ -1,18 +1,4 @@
-footer .nav-link {
-  display: inline-flex;
-  color: $gray-500;
-  text-decoration: none;
-  transition: color .3s ease;
 
-  &:hover,
-  &:focus-visible {
-    color: $gray-200;
-    text-decoration: underline;
-    text-decoration-thickness: 4px;
-    text-decoration-color: $red;
-    text-underline-offset: 6px;
-  }
-}
 
 .nav-pills-standings  {
 
