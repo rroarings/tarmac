@@ -1,483 +1,639 @@
 <!doctype html>
 <html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <meta
+      name="description"
+      content="Formula Bootstrap is a a Bootstrap built website that explores some areas of Formula One."
+    />
+    <meta name="author" content="Nick Calvo" />
+    <title>Trackside | Future of F1</title>
+    <link rel="stylesheet" href="../scss/styles.scss" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css"
+    />
+  </head>
 
-<head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-  <meta name="description"
-    content="Formula Bootstrap is a a Bootstrap built website that explores some areas of Formula One." />
-  <meta name="author" content="Nick Calvo" />
-  <title>Trackside | Future of F1</title>
-  <link rel="stylesheet" href="../scss/styles.scss" />
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" />
-</head>
+  <body id="page-top">
+    <!-- Add this to your body to display the breakpoint size -->
+    <div id="breakpoint" class="breakpoint-size"></div>
 
-<body id="page-top">
-  <!-- Add this to your body to display the breakpoint size -->
-  <div id="breakpoint" class="breakpoint-size"></div>
-
-  <!-- site header -->
-  <nav class="navbar navbar-expand-lg sticky-top" id="mainNav">
-    <div class="container">
-      <a class="navbar-brand" href="#page-top">
-        <img src="../assets/img/logos/trackside-logoblack.png" class="img-fluid w-50" alt="Trackside Logo" />
-      </a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive"
-        aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-        Menu
-        <i class="fas fa-bars ms-1"></i>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarResponsive">
-        <ul class="navbar-nav ms-auto me-4 py-4 py-lg-0">
-          <li class="nav-item">
-            <a class="nav-link" href="../index.html">Home</a>
-          </li>
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle active" href="#" id="aboutDropdown" role="button"
-              data-bs-toggle="dropdown" aria-expanded="false">
-              About F1
-            </a>
-            <ul class="dropdown-menu" aria-labelledby="aboutDropdown">
-              <li>
-                <a class="dropdown-item" href="whatis.html">What is Formula 1</a>
-              </li>
-              <li>
-                <a class="dropdown-item" href="technologies.html">Technology of F1</a>
-              </li>
-              <li>
-                <a class="dropdown-item" href="future.html" aria-current="page">Future of F1</a>
-              </li>
-            </ul>
-          </li>
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="aboutDropdown" role="button" data-bs-toggle="dropdown"
-              aria-expanded="false">
-              Race Calendars
-            </a>
-            <ul class="dropdown-menu" aria-labelledby="aboutDropdown">
-              <li>
-                <a class="dropdown-item" href="../seasons/2025/2025-calendar.html">2025 Calendar</a>
-              </li>
-              <li>
-                <a class="dropdown-item" href="../seasons/2024/2024-calendar.html">2024 Calendar</a>
-              </li>
-            </ul>
-          </li>
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="seasonsDropdown" role="button" data-bs-toggle="dropdown"
-              aria-expanded="false">
-              Standings
-            </a>
-            <ul class="dropdown-menu" aria-labelledby="seasonsDropdown">
-              <li>
-                <h6 class="dropdown-header">2025</h6>
-              </li>
-              <li>
-                <a class="dropdown-item" href="../seasons/2025/drivers/2025-drivers.html">2025 Drivers</a>
-              </li>
-              <li>
-                <a class="dropdown-item" href="../seasons/2025/teams/2025-teams.html">2025 Teams</a>
-              </li>
-              <li>
-                <hr class="dropdown-divider" />
-              </li>
-              <li>
-                <h6 class="dropdown-header">2024</h6>
-              </li>
-              <li>
-                <a class="dropdown-item" href="#">2024 Drivers</a>
-              </li>
-              <li>
-                <a class="dropdown-item" href="#">2024 Teams</a>
-              </li>
-            </ul>
-          </li>
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="seasonsDropdown" role="button" data-bs-toggle="dropdown"
-              aria-expanded="false">
-              Season Talk
-            </a>
-            <ul class="dropdown-menu" aria-labelledby="seasonsDropdown">
-              <li>
-                <a class="dropdown-item" href="#">2025 Coverage</a>
-              </li>
-              <li>
-                <a class="dropdown-item" href="#">2024 Breakdown</a>
-              </li>
-            </ul>
-          </li>
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="fanZoneDropdown" role="button" data-bs-toggle="dropdown"
-              aria-expanded="false">
-              Site
-            </a>
-            <ul class="dropdown-menu" aria-labelledby="fanZoneDropdown">
-              <li>
-                <a class="dropdown-item" href="faqs.html">Trackside FAQs</a>
-              </li>
-              <li>
-                <a class="dropdown-item" href="learnmore.html">Learn More</a>
-              </li>
-              <li>
-                <a class="dropdown-item" href="contactus.html">Contact Us</a>
-              </li>
-              <li>
-                <a class="dropdown-item" href="attributions.html">Site Attributions</a>
-              </li>
-            </ul>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </nav>
-
-  <!-- Hero -->
-  <div class="container my-5">
-    <div class="row">
-      <div class="col-12">
-        <h1>The future of Formula 1</h1>
-        <p class="">
-          Formula 1 has always been at the forefront of technological
-          advancements, and the future promises to be no different. From
-          cutting-edge aerodynamics to hybrid power units, the sport continues
-          to evolve, pushing the boundaries of speed, efficiency, and
-          performance.
-        </p>
-      </div>
-    </div>
-  </div>
-
-  <!-- data & analytics -->
-  <div class="container my-5 border-open-left--open-bottom p-3">
-    <div class="row gap-2">
-      <div class="col-12 col-md-12 col-lg-7">
-        <h2 class=" " id="section-engineer">
-          Data and analytical revolution
-        </h2>
-        <p>
-          The increasing use of data and analytics in Formula 1 is
-          transforming the sport and opening up new possibilities for
-          innovation and discovery. F1 teams are already using data to
-          optimize car performance, track conditions, and race strategies, but
-          with the emergence of new technologies such as artificial
-          intelligence and machine learning, the potential for data-driven
-          advancements in F1 is limitless.
-        </p>
-        <p>
-          To keep up with this data-driven revolution, F1 engineers will need
-          to have exceptional skills in data analysis and interpretation, and
-          teams will need to invest in the latest technologies and tools. This
-          focus on data will not only make F1 more competitive, but it will
-          also drive breakthroughs and advancements with far-reaching impacts
-          beyond the sport.
-        </p>
-      </div>
-      <div class="col-12 col-md text-lg-end">
-        <img src="https://place-hold.it/300" alt="" class="img-fluid" loading="lazy" />
-      </div>
-    </div>
-  </div>
-
-  <!-- new innovations -->
-  <div class="container my-5">
-    <div class="row gap-3">
-      <div class="col-12 col-md col-lg">
-        <img src="https://place-hold.it/300" alt="" class="img-fluid" loading="lazy" />
-      </div>
-      <div class="col-12 col-md-12 col-lg-7">
-        <h2 class="">New innovations and dynamics</h2>
-        <p>
-          The future of the sport also promises to be shaped by a more diverse
-          and inclusive culture. F1 is taking steps to increase diversity and
-          representation in the sport, including the launch of the We Race As
-          One initiative, which aims to promote diversity and inclusion both
-          on and off the track.
-        </p>
-        <p>
-          As the sport becomes more diverse and inclusive, it will bring new
-          perspectives and ideas to the engineering and design of the cars and
-          the sport as a whole. This will not only make F1 more representative
-          of the global community, but it will also help to attract new talent
-          and create a more sustainable and innovative future for the sport.
-        </p>
-      </div>
-    </div>
-  </div>
-
-  <!-- harnessing power featurette -->
-  <div class="container my-5 border-open-left--open-top border-black p-3">
-    <div class="row gap-3">
-      <div class="col-12 col-md-12 col-lg-7">
-        <h2 class="">Harnessing the energy</h2>
-        <p>
-          One of the emerging topics in the future of Formula 1 is
-          sustainability. As a sport that relies heavily on technology and
-          resources, F1 has been criticized in the past for its impact on the
-          environment. However, in recent years, there has been a shift
-          towards sustainability in F1. The sport has set ambitious targets
-          for carbon reduction, and teams are investing in more
-          environmentally friendly practices, such as using renewable energy
-          and reducing waste.
-        </p>
-        <p>
-          Furthermore, F1 is exploring the use of alternative fuels, such as
-          biofuels and hydrogen, in an effort to reduce the sport's carbon
-          footprint. As the world becomes increasingly focused on
-          sustainability, F1 is taking steps to ensure that it remains
-          relevant and responsible in the eyes of fans and stakeholders alike.
-        </p>
-      </div>
-      <div class="col-12 col-md col-lg d-flex flex-column justify-content-center gap-2">
-        <div class="p-4 card-statistics">
-          <h4>39</h4>
-          <p>Fuel blends tested by F1 with Aramco</p>
-        </div>
-        <div class="p-4 card-statistics">
-          <h4>100%</h4>
-          <p>F2 and F3 cars running on sustainable fuel</p>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <!-- merc section slicer  -->
-  <div style="height: 80px; overflow: hidden">
-    <svg viewBox="0 0 100 100" preserveAspectRatio="none" style="height: 100%; width: 100%">
-      <polygon fill="#212529" points="0,100 100,0 100,100" />
-    </svg>
-  </div>
-
-  <!-- merc bar -->
-  <div class="container-fluid text-bg-dark">
-    <div class="container mx-auto py-5">
-      <div class="row d-flex gap-3">
-        <div class="col-12 col-md">
-          <img src="https://place-hold.it/300" alt="helmet" class="img-fluid mb-3" loading="lazy" />
-          <p class="m">
-            German powerhouse with technical prowess aiming for podium
-            finishes in 2025.
-          </p>
-        </div>
-        <div class="col-12 col-md">
-          <img src="https://place-hold.it/300" alt="helmet" class="img-fluid" loading="lazy" />
-        </div>
-        <div class="col-12 col-md">
-          <h2 class="">Mercedes</h2>
-          <p>
-            George Russell and Kimi Antonelli, along with the Mercedes garage,
-            seek to reclaim their throne as champions in 2025.
-          </p>
-          <button type="button" class="btn btn-primary">Learn more</button>
-        </div>
-      </div>
-      <!-- /.row -->
-    </div>
-  </div>
-
-  <!-- Future Gallery -->
-  <section class="future-gallery container my-5">
-    <div class="text-center mb-4">
-      <h2 class="">What does the future hold?</h2>
-      <p>
-        These rising stars are already making headlines. Here's who to watch
-        as Formula 1 evolves into a new era.
-      </p>
-    </div>
-    <!-- Rookies Row -->
-    <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-3">
-      <div class="col">
-        <div class="card card-rookie">
-          <div class="card-body">
-            <h5 class="card-title">Kimi Antonelli</h5>
-            <p class="card-text">Widely regarded as a future star...</p>
-          </div>
-          <img src="../assets/img/drivers/formula2/antonelli-portrait-side-copy.png" class="" alt="Kimi Antonelli"
-            loading="lazy" />
-        </div>
-      </div>
-      <div class="col">
-        <div class="card card-rookie">
-          <div class="card-body">
-            <h5 class="card-title">Oliver Bearman</h5>
-            <p class="card-text">Widely regarded as a future star...</p>
-          </div>
-          <img src="../assets/img/drivers/formula2/bearman-portrait-side-copy.png" class=""
-            alt="Oliver Bearman portrait" loading="lazy" />
-        </div>
-      </div>
-      <div class="col">
-        <div class="card card-rookie">
-          <div class="card-body">
-            <h5 class="card-title">Isack Hadjar</h5>
-            <p class="card-text">Widely regarded as a future star...</p>
-          </div>
-          <img src="../assets/img/drivers/formula2/hadjar-portrait-side-copy.png" class="" alt="Isack Hadjar portrait"
-            loading="lazy" />
-        </div>
-      </div>
-      <div class="col">
-        <div class="card card-rookie">
-          <div class="card-body">
-            <h5 class="card-title">Gabriel Bortoleto</h5>
-            <p class="card-text">Widely regarded as a future star...</p>
-          </div>
-          <img src="../assets/img/drivers/formula2/bortoleto-portrait-side-copy.png" class="" alt="Gabrial Bortoleto"
-            loading="lazy" />
-        </div>
-      </div>
-      <div class="col">
-        <div class="card card-rookie">
-          <div class="card-body">
-            <h5 class="card-title">Jack Doohan</h5>
-            <p class="card-text">Widely regarded as a future star...</p>
-          </div>
-          <img src="../assets/img/drivers/formula2/doohan-portrait-side-copy.png" class="" alt="Jack Doohan portrait"
-            loading="lazy" />
-        </div>
-      </div>
-      <div class="col">
-        <div class="card card-rookie">
-          <div class="card-body">
-            <h5 class="card-title">Liam Lawson</h5>
-            <p class="card-text">Widely regarded as a future star...</p>
-          </div>
-          <img src="../assets/img/drivers/formula2/lawson-portrait-side-copy.png" class="" alt="Liam Lawson portrait"
-            loading="lazy" />
-        </div>
-      </div>
-      <div class="col">
-        <div class="card card-rookie">
-          <div class="card-body">
-            <h5 class="card-title">Franco Colapinto</h5>
-            <p class="card-text">Widely regarded as a future star...</p>
-          </div>
-          <img src="../assets/img/drivers/formula2/colapinto-portrait-side-copy.png" class=""
-            alt="Franco Colapinto portrait" loading="lazy" />
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- footer -->
-  <div class="container-fluid wrapper-footer mt-5">
-    <footer class="container border-open-left--open-top">
-      <div class="row text-center text-md-start">
-        <!-- Logo and Description -->
-        <div class="col-12 col-md mb-4">
-          <img src="../assets/img/logos/trackside-logowhite-300px.png" class="img-fluid mb-3" alt="Trackside Logo" />
-          <p>Discover Formula 1 from a fan perspective.</p>
-        </div>
-  
-        <!-- Links Section -->
-        <div class="col-12 col-md-8">
-          <div class="row gap-4 justify-content-sm-center">
-            <!-- Trackside Links -->
-            <div class="col-12 col-sm-4 col-lg">
-              <h5>Trackside</h5>
-              <ul class="nav flex-column">
-                <li class="nav-item mb-2">
-                  <a href="../index.html" class="nav-link p-0">Home</a>
+    <!-- site header -->
+    <nav class="navbar navbar-expand-lg sticky-top" id="mainNav">
+      <div class="container">
+        <a class="navbar-brand" href="#page-top">
+          <img
+            src="../assets/img/logos/trackside-logoblack.png"
+            class="img-fluid w-50"
+            alt="Trackside Logo"
+          />
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarResponsive"
+          aria-controls="navbarResponsive"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          Menu
+          <i class="fas fa-bars ms-1"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav ms-auto me-4 py-4 py-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" href="../index.html">Home</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle active"
+                href="#"
+                id="aboutDropdown"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                About F1
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="aboutDropdown">
+                <li>
+                  <a class="dropdown-item" href="whatis.html"
+                    >What is Formula 1</a
+                  >
                 </li>
-                <li class="nav-item mb-2">
-                  <a href="whatis.html" class="nav-link p-0">What is Formula 1</a>
+                <li>
+                  <a class="dropdown-item" href="technologies.html"
+                    >Technology of F1</a
+                  >
                 </li>
-                <li class="nav-item mb-2">
-                  <a href="technologies.html" class="nav-link p-0">Technology of F1</a>
-                </li>
-                <li class="nav-item mb-2">
-                  <a href="future.html" class="nav-link p-0">Future of F1</a>
+                <li>
+                  <a
+                    class="dropdown-item"
+                    href="future.html"
+                    aria-current="page"
+                    >Future of F1</a
+                  >
                 </li>
               </ul>
-            </div>
-  
-            <!-- 2025 Standings -->
-            <div class="col-12 col-sm-4 col-lg">
-              <h5>2025 Standings</h5>
-              <ul class="nav flex-column">
-                <li class="nav-item mb-2">
-                  <a href="../seasons/2025/drivers/2025-drivers.html" class="nav-link p-0">2025 Drivers</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                id="aboutDropdown"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Race Calendars
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="aboutDropdown">
+                <li>
+                  <a
+                    class="dropdown-item"
+                    href="../seasons/2025/2025-calendar.html"
+                    >2025 Calendar</a
+                  >
                 </li>
-                <li class="nav-item mb-2">
-                  <a href="../seasons/2025/teams/2025-teams.html" class="nav-link p-0">2025 Constructors</a>
-                </li>
-                <li class="nav-item mb-2">
-                  <a href="#" class="nav-link p-0">2024 Drivers</a>
-                </li>
-                <li class="nav-item mb-2">
-                  <a href="#" class="nav-link p-0">2024 Constructors</a>
-                </li>
-              </ul>
-            </div>
-  
-            <!-- Race Calendars -->
-            <div class="col-12 col-sm-4 col-lg">
-              <h5>Race Calendars</h5>
-              <ul class="nav flex-column">
-                <li class="nav-item mb-2">
-                  <a href="../seasons/2025/2025-calendar.html" class="nav-link p-0">2025 Race Calendar</a>
-                </li>
-                <li class="nav-item mb-2">
-                  <a href="../seasons/2024/2024-calendar.html" class="nav-link p-0">2024 Race Calendar</a>
+                <li>
+                  <a
+                    class="dropdown-item"
+                    href="../seasons/2024/2024-calendar.html"
+                    >2024 Calendar</a
+                  >
                 </li>
               </ul>
-            </div>
-  
-            <!-- Pitwall Links -->
-            <div class="col-12 col-sm-4 col-lg">
-              <h5>Pitwall</h5>
-              <ul class="nav flex-column">
-                <li class="nav-item mb-2">
-                  <a href="faqs.html" class="nav-link p-0">Trackside FAQs</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                id="seasonsDropdown"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Standings
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="seasonsDropdown">
+                <li>
+                  <h6 class="dropdown-header">2025</h6>
                 </li>
-                <li class="nav-item mb-2">
-                  <a href="attributions.html" class="nav-link p-0">Site Attributions</a>
+                <li>
+                  <a
+                    class="dropdown-item"
+                    href="../seasons/2025/drivers/2025-drivers.html"
+                    >2025 Drivers</a
+                  >
                 </li>
-                <li class="nav-item mb-2">
-                  <a href="learnmore.html" class="nav-link p-0">Learn More</a>
+                <li>
+                  <a
+                    class="dropdown-item"
+                    href="../seasons/2025/teams/2025-teams.html"
+                    >2025 Teams</a
+                  >
                 </li>
-                <li class="nav-item mb-2">
-                  <a href="#" class="nav-link p-0">Contact Us</a>
+                <li>
+                  <hr class="dropdown-divider" />
+                </li>
+                <li>
+                  <h6 class="dropdown-header">2024</h6>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#">2024 Drivers</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#">2024 Teams</a>
                 </li>
               </ul>
-            </div>
-          </div>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                id="seasonsDropdown"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Season Talk
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="seasonsDropdown">
+                <li>
+                  <a class="dropdown-item" href="#">2025 Coverage</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#">2024 Breakdown</a>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                id="fanZoneDropdown"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Site
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="fanZoneDropdown">
+                <li>
+                  <a class="dropdown-item" href="faqs.html">Trackside FAQs</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="learnmore.html">Learn More</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="contactus.html">Contact Us</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="attributions.html"
+                    >Site Attributions</a
+                  >
+                </li>
+              </ul>
+            </li>
+          </ul>
         </div>
       </div>
-  
-      <!-- Social Media and Copyright -->
-      <div class="d-flex flex-column flex-md-row justify-content-between mt-4 pt-3 border-top">
-        <p class="">© 2025 Nick Calvo. All rights reserved.</p>
-        <ul class="list-unstyled d-flex ">
-          <li class="ms-3">
-            <a class="link-light" href="#"><i class="bi bi-linkedin"></i></a>
-          </li>
-          <li class="ms-3">
-            <a class="link-light" href="#"><i class="bi bi-github"></i></a>
-          </li>
-          <li class="ms-3">
-            <a class="link-light" href="#"><i class="bi bi-behance"></i></a>
-          </li>
-          <li class="ms-3">
-            <a class="link-light" href="#"><i class="bi bi-youtube"></i></a>
-          </li>
-        </ul>
-      </div>
-  
-      <div class="row mt-4">
+    </nav>
+
+    <!-- Hero -->
+    <div class="container my-5">
+      <div class="row">
         <div class="col-12">
-          <p>
-            <strong>DISCLAIMER:</strong> This website is unofficial and is not
-            associated in any way with the Formula 1 companies. F1, FORMULA
-            ONE, FORMULA 1, FIA FORMULA ONE WORLD CHAMPIONSHIP, GRAND PRIX and
-            related marks are trade marks of Formula One Licensing B.V.
+          <h1>The future of Formula 1</h1>
+          <p class="">
+            Formula 1 has always been at the forefront of technological
+            advancements, and the future promises to be no different. From
+            cutting-edge aerodynamics to hybrid power units, the sport continues
+            to evolve, pushing the boundaries of speed, efficiency, and
+            performance.
           </p>
         </div>
       </div>
-    </footer>
-  </div>
+    </div>
 
-  <script type="module" src="../js/main.js"></script>
-  <script type="module" src="../js/breakpoints.js"></script>
-</body>
+    <!-- data & analytics -->
+    <div class="container my-5 border-open-left--open-bottom p-3">
+      <div class="row gap-2">
+        <div class="col-12 col-md-12 col-lg-7">
+          <h2 class=" " id="section-engineer">
+            Data and analytical revolution
+          </h2>
+          <p>
+            The increasing use of data and analytics in Formula 1 is
+            transforming the sport and opening up new possibilities for
+            innovation and discovery. F1 teams are already using data to
+            optimize car performance, track conditions, and race strategies, but
+            with the emergence of new technologies such as artificial
+            intelligence and machine learning, the potential for data-driven
+            advancements in F1 is limitless.
+          </p>
+          <p>
+            To keep up with this data-driven revolution, F1 engineers will need
+            to have exceptional skills in data analysis and interpretation, and
+            teams will need to invest in the latest technologies and tools. This
+            focus on data will not only make F1 more competitive, but it will
+            also drive breakthroughs and advancements with far-reaching impacts
+            beyond the sport.
+          </p>
+        </div>
+        <div class="col-12 col-md text-lg-end">
+          <img
+            src="https://place-hold.it/300"
+            alt=""
+            class="img-fluid"
+            loading="lazy"
+          />
+        </div>
+      </div>
+    </div>
 
+    <!-- new innovations -->
+    <div class="container my-5">
+      <div class="row gap-3">
+        <div class="col-12 col-md col-lg">
+          <img
+            src="https://place-hold.it/300"
+            alt=""
+            class="img-fluid"
+            loading="lazy"
+          />
+        </div>
+        <div class="col-12 col-md-12 col-lg-7">
+          <h2 class="">New innovations and dynamics</h2>
+          <p>
+            The future of the sport also promises to be shaped by a more diverse
+            and inclusive culture. F1 is taking steps to increase diversity and
+            representation in the sport, including the launch of the We Race As
+            One initiative, which aims to promote diversity and inclusion both
+            on and off the track.
+          </p>
+          <p>
+            As the sport becomes more diverse and inclusive, it will bring new
+            perspectives and ideas to the engineering and design of the cars and
+            the sport as a whole. This will not only make F1 more representative
+            of the global community, but it will also help to attract new talent
+            and create a more sustainable and innovative future for the sport.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- harnessing power featurette -->
+    <div class="container my-5 border-open-left--open-top border-black p-3">
+      <div class="row gap-3">
+        <div class="col-12 col-md-12 col-lg-7">
+          <h2 class="">Harnessing the energy</h2>
+          <p>
+            One of the emerging topics in the future of Formula 1 is
+            sustainability. As a sport that relies heavily on technology and
+            resources, F1 has been criticized in the past for its impact on the
+            environment. However, in recent years, there has been a shift
+            towards sustainability in F1. The sport has set ambitious targets
+            for carbon reduction, and teams are investing in more
+            environmentally friendly practices, such as using renewable energy
+            and reducing waste.
+          </p>
+          <p>
+            Furthermore, F1 is exploring the use of alternative fuels, such as
+            biofuels and hydrogen, in an effort to reduce the sport's carbon
+            footprint. As the world becomes increasingly focused on
+            sustainability, F1 is taking steps to ensure that it remains
+            relevant and responsible in the eyes of fans and stakeholders alike.
+          </p>
+        </div>
+        <div
+          class="col-12 col-md col-lg d-flex flex-column justify-content-center gap-2"
+        >
+          <div class="p-4 card-statistics">
+            <h4>39</h4>
+            <p>Fuel blends tested by F1 with Aramco</p>
+          </div>
+          <div class="p-4 card-statistics">
+            <h4>100%</h4>
+            <p>F2 and F3 cars running on sustainable fuel</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- merc section slicer  -->
+    <div style="height: 80px; overflow: hidden">
+      <svg
+        viewBox="0 0 100 100"
+        preserveAspectRatio="none"
+        style="height: 100%; width: 100%"
+      >
+        <polygon fill="#212529" points="0,100 100,0 100,100" />
+      </svg>
+    </div>
+
+    <!-- merc bar -->
+    <div class="container-fluid text-bg-dark">
+      <div class="container mx-auto py-5">
+        <div class="row d-flex gap-3">
+          <div class="col-12 col-md">
+            <img
+              src="https://place-hold.it/300"
+              alt="helmet"
+              class="img-fluid mb-3"
+              loading="lazy"
+            />
+            <p class="m">
+              German powerhouse with technical prowess aiming for podium
+              finishes in 2025.
+            </p>
+          </div>
+          <div class="col-12 col-md">
+            <img
+              src="https://place-hold.it/300"
+              alt="helmet"
+              class="img-fluid"
+              loading="lazy"
+            />
+          </div>
+          <div class="col-12 col-md">
+            <h2 class="">Mercedes</h2>
+            <p>
+              George Russell and Kimi Antonelli, along with the Mercedes garage,
+              seek to reclaim their throne as champions in 2025.
+            </p>
+            <button type="button" class="btn btn-primary">Learn more</button>
+          </div>
+        </div>
+        <!-- /.row -->
+      </div>
+    </div>
+
+    <!-- Future Gallery -->
+    <section class="future-gallery container my-5">
+      <div class="text-center mb-4">
+        <h2 class="">What does the future hold?</h2>
+        <p>
+          These rising stars are already making headlines. Here's who to watch
+          as Formula 1 evolves into a new era.
+        </p>
+      </div>
+      <!-- Rookies Row -->
+      <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-3">
+        <div class="col">
+          <div class="card card-rookie">
+            <div class="card-body">
+              <h5 class="card-title">Kimi Antonelli</h5>
+              <p class="card-text">Widely regarded as a future star...</p>
+            </div>
+            <img
+              src="../assets/img/drivers/formula2/antonelli-portrait-side-copy.png"
+              class=""
+              alt="Kimi Antonelli"
+              loading="lazy"
+            />
+          </div>
+        </div>
+        <div class="col">
+          <div class="card card-rookie">
+            <div class="card-body">
+              <h5 class="card-title">Oliver Bearman</h5>
+              <p class="card-text">Widely regarded as a future star...</p>
+            </div>
+            <img
+              src="../assets/img/drivers/formula2/bearman-portrait-side-copy.png"
+              class=""
+              alt="Oliver Bearman portrait"
+              loading="lazy"
+            />
+          </div>
+        </div>
+        <div class="col">
+          <div class="card card-rookie">
+            <div class="card-body">
+              <h5 class="card-title">Isack Hadjar</h5>
+              <p class="card-text">Widely regarded as a future star...</p>
+            </div>
+            <img
+              src="../assets/img/drivers/formula2/hadjar-portrait-side-copy.png"
+              class=""
+              alt="Isack Hadjar portrait"
+              loading="lazy"
+            />
+          </div>
+        </div>
+        <div class="col">
+          <div class="card card-rookie">
+            <div class="card-body">
+              <h5 class="card-title">Gabriel Bortoleto</h5>
+              <p class="card-text">Widely regarded as a future star...</p>
+            </div>
+            <img
+              src="../assets/img/drivers/formula2/bortoleto-portrait-side-copy.png"
+              class=""
+              alt="Gabrial Bortoleto"
+              loading="lazy"
+            />
+          </div>
+        </div>
+        <div class="col">
+          <div class="card card-rookie">
+            <div class="card-body">
+              <h5 class="card-title">Jack Doohan</h5>
+              <p class="card-text">Widely regarded as a future star...</p>
+            </div>
+            <img
+              src="../assets/img/drivers/formula2/doohan-portrait-side-copy.png"
+              class=""
+              alt="Jack Doohan portrait"
+              loading="lazy"
+            />
+          </div>
+        </div>
+        <div class="col">
+          <div class="card card-rookie">
+            <div class="card-body">
+              <h5 class="card-title">Liam Lawson</h5>
+              <p class="card-text">Widely regarded as a future star...</p>
+            </div>
+            <img
+              src="../assets/img/drivers/formula2/lawson-portrait-side-copy.png"
+              class=""
+              alt="Liam Lawson portrait"
+              loading="lazy"
+            />
+          </div>
+        </div>
+        <div class="col">
+          <div class="card card-rookie">
+            <div class="card-body">
+              <h5 class="card-title">Franco Colapinto</h5>
+              <p class="card-text">Widely regarded as a future star...</p>
+            </div>
+            <img
+              src="../assets/img/drivers/formula2/colapinto-portrait-side-copy.png"
+              class=""
+              alt="Franco Colapinto portrait"
+              loading="lazy"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- footer -->
+    <div class="container-fluid wrapper-footer mt-5">
+      <footer class="container border-open-left--open-top">
+        <div class="row text-center text-md-start">
+          <!-- Logo and Description -->
+          <div class="col-12 col-md mb-4">
+            <img
+              src="../assets/img/logos/trackside-logowhite-300px.png"
+              class="img-fluid mb-3"
+              alt="Trackside Logo"
+            />
+            <p>Discover Formula 1 from a fan perspective.</p>
+          </div>
+
+          <!-- Links Section -->
+          <div class="col-12 col-md-8">
+            <div class="row gap-4 justify-content-sm-center">
+              <!-- Trackside Links -->
+              <div class="col-12 col-sm-4 col-lg">
+                <h5>Trackside</h5>
+                <ul class="nav flex-column">
+                  <li class="nav-item mb-2">
+                    <a href="../index.html" class="nav-link p-0">Home</a>
+                  </li>
+                  <li class="nav-item mb-2">
+                    <a href="whatis.html" class="nav-link p-0"
+                      >What is Formula 1</a
+                    >
+                  </li>
+                  <li class="nav-item mb-2">
+                    <a href="technologies.html" class="nav-link p-0"
+                      >Technology of F1</a
+                    >
+                  </li>
+                  <li class="nav-item mb-2">
+                    <a href="future.html" class="nav-link p-0">Future of F1</a>
+                  </li>
+                </ul>
+              </div>
+
+              <!-- 2025 Standings -->
+              <div class="col-12 col-sm-4 col-lg">
+                <h5>2025 Standings</h5>
+                <ul class="nav flex-column">
+                  <li class="nav-item mb-2">
+                    <a
+                      href="../seasons/2025/drivers/2025-drivers.html"
+                      class="nav-link p-0"
+                      >2025 Drivers</a
+                    >
+                  </li>
+                  <li class="nav-item mb-2">
+                    <a
+                      href="../seasons/2025/teams/2025-teams.html"
+                      class="nav-link p-0"
+                      >2025 Constructors</a
+                    >
+                  </li>
+                  <li class="nav-item mb-2">
+                    <a href="#" class="nav-link p-0">2024 Drivers</a>
+                  </li>
+                  <li class="nav-item mb-2">
+                    <a href="#" class="nav-link p-0">2024 Constructors</a>
+                  </li>
+                </ul>
+              </div>
+
+              <!-- Race Calendars -->
+              <div class="col-12 col-sm-4 col-lg">
+                <h5>Race Calendars</h5>
+                <ul class="nav flex-column">
+                  <li class="nav-item mb-2">
+                    <a
+                      href="../seasons/2025/2025-calendar.html"
+                      class="nav-link p-0"
+                      >2025 Race Calendar</a
+                    >
+                  </li>
+                  <li class="nav-item mb-2">
+                    <a
+                      href="../seasons/2024/2024-calendar.html"
+                      class="nav-link p-0"
+                      >2024 Race Calendar</a
+                    >
+                  </li>
+                </ul>
+              </div>
+
+              <!-- Pitwall Links -->
+              <div class="col-12 col-sm-4 col-lg">
+                <h5>Pitwall</h5>
+                <ul class="nav flex-column">
+                  <li class="nav-item mb-2">
+                    <a href="faqs.html" class="nav-link p-0">Trackside FAQs</a>
+                  </li>
+                  <li class="nav-item mb-2">
+                    <a href="attributions.html" class="nav-link p-0"
+                      >Site Attributions</a
+                    >
+                  </li>
+                  <li class="nav-item mb-2">
+                    <a href="learnmore.html" class="nav-link p-0">Learn More</a>
+                  </li>
+                  <li class="nav-item mb-2">
+                    <a href="#" class="nav-link p-0">Contact Us</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Social Media and Copyright -->
+        <div
+          class="d-flex flex-column flex-md-row justify-content-between mt-4 pt-3 border-top"
+        >
+          <p class="">© 2025 Nick Calvo. All rights reserved.</p>
+          <ul class="list-unstyled d-flex">
+            <li class="ms-3">
+              <a class="link-light" href="#"><i class="bi bi-linkedin"></i></a>
+            </li>
+            <li class="ms-3">
+              <a class="link-light" href="#"><i class="bi bi-github"></i></a>
+            </li>
+            <li class="ms-3">
+              <a class="link-light" href="#"><i class="bi bi-behance"></i></a>
+            </li>
+            <li class="ms-3">
+              <a class="link-light" href="#"><i class="bi bi-youtube"></i></a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="row mt-4">
+          <div class="col-12">
+            <p>
+              <strong>DISCLAIMER:</strong> This website is unofficial and is not
+              associated in any way with the Formula 1 companies. F1, FORMULA
+              ONE, FORMULA 1, FIA FORMULA ONE WORLD CHAMPIONSHIP, GRAND PRIX and
+              related marks are trade marks of Formula One Licensing B.V.
+            </p>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script type="module" src="../js/main.js"></script>
+    <script type="module" src="../js/breakpoints.js"></script>
+  </body>
 </html>
