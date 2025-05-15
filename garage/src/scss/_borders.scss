@@ -25,13 +25,14 @@
 }
 
 .border-open-left--open-top {
-  border-color: $gray-400;
+  padding: 1.3rem;
   border-top: none;
-  border-right: 10px solid;
-  border-bottom: 10px solid;
+  border-right: 5px solid;
+  border-bottom: 5px solid;
   border-top-right-radius: 0;
   border-bottom-right-radius: 1rem;
   border-bottom-left-radius: 0;
+  border-color: $gray-700;
 }
 
 .border-open-left--open-top--w2 {
