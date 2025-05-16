@@ -6,39 +6,52 @@
   grid-column: span 6;
 }
 
-.bento-span-6 img {
-  max-width: 100%;
-  height: auto;
-
-  @include media-breakpoint-up(lg) {
-  }
-}
-
 .bento-span-4 {
   grid-column: span 4;
-
-  @include media-breakpoint-up(md) {
-    grid-column: span 6;
-  }
-
-  @include media-breakpoint-up(lg) {
-    grid-column: span 4;
-  }
 }
 
 .bento-span-3 {
   grid-column: span 3;
+}
 
-  @include media-breakpoint-up(md) {
+@include media-breakpoint-up(md) {
+  .bento-span-12 {
+    grid-column: span 12;
+  }
+
+  .bento-span-6 {
     grid-column: span 6;
   }
 
-  @include media-breakpoint-up(lg) {
+  .bento-span-4 {
+    grid-column: span 6;
+  }
+
+  .bento-span-3 {
+    grid-column: span 6;
+  }
+}
+
+@include media-breakpoint-up(lg) {
+  .bento-span-12 {
+    grid-column: span 6;
+  }
+
+  .bento-span-6 {
+    grid-column: span 6;
+  }
+
+  .bento-span-4 {
+    grid-column: span 4;
+  }
+
+  .bento-span-3 {
     grid-column: span 3;
   }
 }
 
-.bento-wrapper {
+.bento-wrapper,
+.bento-wrapper-alt {
   display: grid;
   grid-template-columns: repeat(12, 1fr);
   gap: 1rem;
@@ -49,43 +62,47 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  padding: 1rem;
+  padding: 1.5rem;
   color: #000;
   text-decoration: none;
-  background-color: $gray-200;
-  border: 2px solid $gray-300;
+  border: 1px solid $gray-400;
   border-radius: 6px;
   transition: all .3s ease;
 
   &:hover {
-    border: 2px solid $gray-500;
+    color: $gray-200;
+    border: 1px solid transparent;
+    background: $gray-900;
+    
   }
-
 }
 
-.bento-item .bento-item-svg {
-  display: block;
-  width: 60px;
-  height: auto;
-  margin: 0 auto;
+.bento-item p,
+.bento-item h5 {
+  transition: color .3s ease;
+}
+
+.bento-item p {
+  color: $gray-600
+}
+
+.bento-item:hover p {
+  color: $gray-400
+}
+
+.bento-item i {
+  font-size: 4rem;
+  margin: 0 0 1rem 0;
+  text-align: center;
   transition: all .3s ease;
 
   @include media-breakpoint-up(sm) {
-    width: 3rem;
+
   }
 
   @include media-breakpoint-up(lg) {
-    width: 3.6rem;
+    font-size: 3.8rem;
   }
-}
-
-.bento-item:hover .bento-item-svg {
-  color: $primary;
-}
-
-.bento-item h5 {
-  font-weight: 600;
-  transition: transform .3s ease;
 }
 
 .bento-item-bg-cover {
@@ -95,15 +112,6 @@
   background-position: center;
   background-size: cover;
   transition: all .3s ease;
-}
-
-/* Bento Alt Version */
-.bento-wrapper-alt {
-  display: grid;
-  grid-template-columns: repeat(12, 1fr);
-  gap: 1.5rem;
-
-  padding: 1rem;
 }
 
 @media (max-width: 768px) {
