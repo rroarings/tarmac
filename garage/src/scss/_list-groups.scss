@@ -22,8 +22,14 @@
   color: $gray-200;
 }
 
+
 .driver-standings__item:hover .driver-standings__team-name {
   color: $gray-200;
+}
+
+.driver-standings__item:hover .text-bg-standings--leader {
+  color: $red;
+  background-color: $gray-200;
 }
 
 .driver-standings__item:hover .text-bg-standings {
