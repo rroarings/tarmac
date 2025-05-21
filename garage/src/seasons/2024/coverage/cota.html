@@ -1,0 +1,587 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <meta
+      name="description"
+      content="Formula Bootstrap is a a Bootstrap built website that explores some areas of Formula One."
+    />
+    <meta name="author" content="Nick Calvo" />
+    <title>COTA Highlight Moments from 2024 | Trackside</title>
+    <link rel="stylesheet" href="../../../scss/styles.scss" />
+  </head>
+
+  <body>
+    <!-- Add this to your body to display the breakpoint size -->
+    <div id="breakpoint" class="breakpoint-size"></div>
+
+    <!-- site header -->
+    <nav class="navbar navbar-expand-lg sticky-top" id="mainNav">
+      <div class="container">
+        <a class="navbar-brand" href="#page-top">
+          <img
+            src="../../../assets/img/logos/trackside-logoblack.png"
+            class="img-fluid w-50"
+            alt="Trackside Logo"
+          />
+        </a>
+        <button
+          class="navbar-toggler mt-3"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarResponsive"
+          aria-controls="navbarResponsive"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          Menu
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="1em"
+            height="1em"
+            fill="currentColor"
+            class="bi bi-list ms-1"
+            viewBox="0 0 16 16"
+          >
+            <path
+              fill-rule="evenodd"
+              d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5"
+            />
+          </svg>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav ms-auto me-4 py-4 py-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" href="../../../index.html">Home</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                id="aboutDropdown"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                About F1
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="aboutDropdown">
+                <li>
+                  <a class="dropdown-item" href="../../../pages/whatis.html"
+                    >What is Formula 1</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="dropdown-item"
+                    href="../../../pages/technologies.html"
+                    >Technology of F1</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="../../../pages/future.html"
+                    >Future of F1</a
+                  >
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                id="raceCalendars"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Race Calendars
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="raceCalendars">
+                <li>
+                  <a class="dropdown-item" href="../../2025/2025-calendar.html"
+                    >2025 Calendar</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="../2024-calendar.html"
+                    >2024 Calendar</a
+                  >
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                id="standingsDropdown"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Standings
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="standingsDropdown">
+                <li>
+                  <h6 class="dropdown-header">2025</h6>
+                </li>
+                <li>
+                  <a
+                    class="dropdown-item"
+                    href="../../2025/drivers/2025-drivers.html"
+                    >2025 Drivers</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="dropdown-item"
+                    href="../../2025/teams/2025-teams.html"
+                    >2025 Teams</a
+                  >
+                </li>
+                <li>
+                  <hr class="dropdown-divider" />
+                </li>
+                <li>
+                  <h6 class="dropdown-header">2024</h6>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="../drivers/2024-drivers.html"
+                    >2024 Drivers</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="../teams/2024-teams.html"
+                    >2024 Teams</a
+                  >
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                id="seasonsDropdown"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Season Talk
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="seasonsDropdown">
+                <li>
+                  <a class="dropdown-item" href="#">2025 Coverage</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#">2024 Breakdown</a>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                id="fanZoneDropdown"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Site
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="fanZoneDropdown">
+                <li>
+                  <a class="dropdown-item" href="../../../pages/faqs.html"
+                    >Trackside FAQs</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="../../../pages/learnmore.html"
+                    >Learn More</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="../../../pages/contactus.html"
+                    >Contact Us</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="dropdown-item"
+                    href="../../../pages/attributions.html"
+                    >Site Attributions</a
+                  >
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <div class="container my-5">
+      <div class="row g-5">
+        <div class="col-md-8">
+          <h3 class="pb-4 mb-4 fst-italic border-bottom">From the Trackside</h3>
+          <article class="blog-post">
+            <h1 class="display-5 link-body-emphasis mb-1">
+              COTA's Thrilling Peaks
+            </h1>
+            <p class="blog-post-meta">May 21, 2025 by <a href="#">Nick</a></p>
+            <p>
+              The 2024 Formula 1 United States Grand Prix at Circuit of The
+              Americas delivered heart-pounding action under Austin’s vibrant
+              skies. Ferrari’s Charles Leclerc and Carlos Sainz Jr. stunned with
+              a 1-2 finish, while Max Verstappen and Lando Norris battled
+              fiercely, only for a late penalty to shake up the podium.
+            </p>
+            <hr />
+            <img
+              src="../../../assets/img/section/section-drivers-banner.jpg"
+              class="img-fluid mb-3"
+              alt="banner of drivers"
+            />
+            <h2 class="mb-3">COTA 2024: A Race Packed with Drama</h2>
+
+            <h3>Leclerc and Sainz Steal the Show</h3>
+            <p>
+              Charles Leclerc delivered a masterclass at COTA, starting from P4
+              but surging to the lead at Turn 1 after Lando Norris and Max
+              Verstappen tangled. Leclerc’s untouchable pace in the Ferrari
+              SF-24 saw him pull away, while teammate Carlos Sainz Jr. used a
+              slick undercut strategy during pit stops to secure P2, overtaking
+              Verstappen. This 1-2 finish, Ferrari’s first in the US since 2006,
+              marked their first US win since Kimi Räikkönen’s 2018 triumph. The
+              red cars shone under Austin’s lights, boosting Ferrari’s
+              Constructors’ title hopes and thrilling fans.
+            </p>
+            <h3>Verstappen Holds Off Norris in Epic Duel</h3>
+            <p>
+              Max Verstappen, starting P2, showcased why he’s a four-time
+              champion with a defensive masterclass against Lando Norris. After
+              losing ground at the start, Verstappen fought back, holding off
+              Norris’s McLaren in a tense late-race battle through COTA’s tricky
+              Turns 13-15. Norris briefly overtook Verstappen on lap 52, but a
+              controversial move off-track at Turn 12 led to a five-second
+              penalty, dropping Norris from P3 to P4. Verstappen’s P3 finish
+              extended his championship lead, proving his skill under pressure.
+            </p>
+            <h3>Norris’s Pole-to-Penalty Heartbreak</h3>
+            <p>
+              Lando Norris started on pole, a career highlight, but his lead
+              vanished at Turn 1 when Verstappen’s aggressive inside move pushed
+              him wide. Norris fought back valiantly, closing the gap to
+              Verstappen in the final laps and briefly taking P3 with a bold
+              overtake at Turn 12. However, a five-second penalty for gaining an
+              advantage off-track demoted him to P4, a gut-punch for McLaren
+              fans. Despite the setback, Norris’s pace showed McLaren’s
+              strength, setting the stage for their Constructors’ title push.
+              Visual Suggestion: A 400x200px image of Norris’s McLaren MCL38
+              diving into Turn 1, with a papaya-orange border and cinematic
+              filter. Caption: “Norris’s pole-to-P4 drama at COTA, 2024.”
+            </p>
+            <h3>Liam Lawson Shines for RB</h3>
+            <p>
+              Liam Lawson, RB’s replacement for Daniel Ricciardo, made waves at
+              COTA, starting from P19 due to a power unit penalty but charging
+              to an impressive P9. His aggressive overtakes through COTA’s
+              high-speed Maggotts-Becketts-inspired section (Turns 3-6)
+              showcased his talent, earning crucial points for RB in their fight
+              with Haas for P6 in the Constructors’ standings. Lawson’s
+              performance solidified his case for a 2025 Red Bull seat alongside
+              Verstappen, marking him as a rising star.
+            </p>
+            <h3>COTA’s Colorful Spectacle</h3>
+            <p>
+              The 2024 USGP wasn’t just about racing—it was a visual feast.
+              McLaren’s chrome livery, inspired by Google Chrome, dazzled in the
+              Texas sun, while Haas’s American flag-themed VF-24, complete with
+              stars and an eagle, celebrated local pride. Alpine’s orange livery
+              promoted Indiana Jones and the Great Circle, adding flair.
+              Off-track, over 100,000 fans enjoyed concerts by Eminem and Sting,
+              with the F1 Fanzone buzzing with SimRacing and Pit Stop
+              Challenges. COTA’s vibrant atmosphere made it a weekend to
+              remember.
+            </p>
+            <h3>COTA 2024</h3>
+            <p>
+              The 2024 United States Grand Prix at COTA delivered everything F1
+              fans crave: Ferrari’s dominant 1-2, Verstappen and Norris’s fierce
+              duel, Lawson’s rookie heroics, and a vibrant fan experience. From
+              Turn 1 chaos to podium drama, Austin proved why it’s a
+              fan-favorite track. Dive into the drivers and teams that made this
+              race epic, and get ready for more thrills in 2025!
+            </p>
+            <ul>
+              <li><a href="#">2024 Drivers</a></li>
+              <li><a href="#">2024 Constructors</a></li>
+              <li><a href="#">2024 Coverage</a></li>
+            </ul>
+          </article>
+
+          <nav class="blog-pagination" aria-label="Pagination">
+            <a class="btn btn-outline-primary rounded-pill" href="#">Older</a>
+            <a
+              class="btn btn-outline-secondary rounded-pill disabled"
+              aria-disabled="true"
+              >Newer</a
+            >
+          </nav>
+        </div>
+        <div class="col-md-4">
+          <div class="position-sticky" style="top: 2rem">
+            <div class="p-4 mb-3 bg-body-tertiary rounded">
+              <h4 class="fst-italic">About</h4>
+              <p class="mb-0">
+                Customize this section to tell your visitors a little bit about
+                your publication, writers, content, or something else entirely.
+                Totally up to you.
+              </p>
+            </div>
+            <div>
+              <h4 class="fst-italic">Recent posts</h4>
+              <ul class="list-unstyled">
+                <li>
+                  <a
+                    class="d-flex flex-column flex-lg-row gap-3 align-items-start align-items-lg-center py-3 link-body-emphasis text-decoration-none border-top"
+                    href="#"
+                  >
+                    <svg
+                      aria-hidden="true"
+                      class="bd-placeholder-img"
+                      height="96"
+                      preserveAspectRatio="xMidYMid slice"
+                      width="100%"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <rect width="100%" height="100%" fill="#777"></rect>
+                    </svg>
+                    <div class="col-lg-8">
+                      <h6 class="mb-0">2025 Formula 1 Preview: Predictions</h6>
+                      <small class="text-body-secondary">May 22, 2025</small>
+                    </div>
+                  </a>
+                </li>
+                <li>
+                  <a
+                    class="d-flex flex-column flex-lg-row gap-3 align-items-start align-items-lg-center py-3 link-body-emphasis text-decoration-none border-top"
+                    href="pulsemoments.html"
+                  >
+                    <svg
+                      aria-hidden="true"
+                      class="bd-placeholder-img"
+                      height="96"
+                      preserveAspectRatio="xMidYMid slice"
+                      width="100%"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <rect width="100%" height="100%" fill="#777"></rect>
+                    </svg>
+                    <div class="col-lg-8">
+                      <h6 class="mb-0">Pulse Pounding 2024 Moments</h6>
+                      <small class="text-body-secondary">May 21, 2025</small>
+                    </div>
+                  </a>
+                </li>
+                <li>
+                  <a class="d-flex flex-column flex-lg-row gap-3 align-items-start align-items-lg-center py-3 link-body-emphasis text-decoration-none border-top"
+                    href="breakdown.html">
+                    <svg aria-hidden="true" class="bd-placeholder-img" height="96" preserveAspectRatio="xMidYMid slice" width="100%"
+                      xmlns="http://www.w3.org/2000/svg">
+                      <rect width="100%" height="100%" fill="#777"></rect>
+                    </svg>
+                    <div class="col-lg-8">
+                      <h6 class="mb-0">
+                        A Breakdown of the 2024 Formula 1 Season
+                      </h6>
+                      <small class="text-body-secondary">May 21, 2025</small>
+                    </div>
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <div class="p-4">
+              <h4 class="fst-italic">Archives</h4>
+              <ol class="list-unstyled mb-0">
+                <li><a href="#">June 2025</a></li>
+                <li><a href="#">May 2025</a></li>
+                <li><a href="#">April 2025</a></li>
+              </ol>
+            </div>
+            <div class="p-4">
+              <h4 class="fst-italic">Elsewhere</h4>
+              <ol class="list-unstyled">
+                <li><a href="#">GitHub</a></li>
+                <li><a href="#">LinkedIn</a></li>
+                <li><a href="#">YouTube</a></li>
+              </ol>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- footer -->
+    <div class="container-fluid wrapper-footer mt-5">
+      <footer class="container border-open-left--open-top">
+        <div class="row text-center text-md-start">
+          <!-- Logo and Description -->
+          <div class="col-12 col-md mb-4">
+            <img
+              src="../../../assets/img/logos/trackside-logowhite-300px.png"
+              class="img-fluid mb-3"
+              alt="Trackside Logo"
+            />
+            <p>Discover Formula 1 from a fan perspective.</p>
+          </div>
+
+          <!-- Links Section -->
+          <div class="col-12 col-md-8">
+            <div class="row gap-4 justify-content-sm-center">
+              <!-- Trackside Links -->
+              <div class="col-12 col-sm-4 col-lg">
+                <h5>Trackside</h5>
+                <ul class="nav flex-column">
+                  <li class="nav-item mb-2">
+                    <a href="../../../index.html" class="nav-link p-0">Home</a>
+                  </li>
+                  <li class="nav-item mb-2">
+                    <a href="../../../pages/whatis.html" class="nav-link p-0"
+                      >What is Formula 1</a
+                    >
+                  </li>
+                  <li class="nav-item mb-2">
+                    <a
+                      href="../../../pages/technologies.html"
+                      class="nav-link p-0"
+                      >Technology of F1</a
+                    >
+                  </li>
+                  <li class="nav-item mb-2">
+                    <a href="../../../pages/future.html" class="nav-link p-0"
+                      >Future of F1</a
+                    >
+                  </li>
+                </ul>
+              </div>
+
+              <!-- 2025 Standings -->
+              <div class="col-12 col-sm-4 col-lg">
+                <h5>2025 Standings</h5>
+                <ul class="nav flex-column">
+                  <li class="nav-item mb-2">
+                    <a
+                      href="../../2025/drivers/2025-drivers.html"
+                      class="nav-link p-0"
+                      >2025 Drivers</a
+                    >
+                  </li>
+                  <li class="nav-item mb-2">
+                    <a
+                      href="../../2025/drivers/2025-drivers.html"
+                      class="nav-link p-0"
+                      >2025 Constructors</a
+                    >
+                  </li>
+                  <li class="nav-item mb-2">
+                    <a href="../drivers/2024-drivers.html" class="nav-link p-0"
+                      >2024 Drivers</a
+                    >
+                  </li>
+                  <li class="nav-item mb-2">
+                    <a href="../teams/2024-teams.html" class="nav-link p-0"
+                      >2024 Constructors</a
+                    >
+                  </li>
+                </ul>
+              </div>
+
+              <!-- Race Calendars -->
+              <div class="col-12 col-sm-4 col-lg">
+                <h5>Race Calendars</h5>
+                <ul class="nav flex-column">
+                  <li class="nav-item mb-2">
+                    <a href="../../2025/2025-calendar.html" class="nav-link p-0"
+                      >2025 Race Calendar</a
+                    >
+                  </li>
+                  <li class="nav-item mb-2">
+                    <a href="../2024-calendar.html" class="nav-link p-0"
+                      >2024 Race Calendar</a
+                    >
+                  </li>
+                </ul>
+              </div>
+
+              <!-- Pitwall Links -->
+              <div class="col-12 col-sm-4 col-lg">
+                <h5>Pitwall</h5>
+                <ul class="nav flex-column">
+                  <li class="nav-item mb-2">
+                    <a href="../../../pages/faqs.html" class="nav-link p-0"
+                      >Trackside FAQs</a
+                    >
+                  </li>
+                  <li class="nav-item mb-2">
+                    <a
+                      href="../../../pages/attributions.html"
+                      class="nav-link p-0"
+                      >Site Attributions</a
+                    >
+                  </li>
+                  <li class="nav-item mb-2">
+                    <a href="../../../pages/learnmore.html" class="nav-link p-0"
+                      >Learn More</a
+                    >
+                  </li>
+                  <li class="nav-item mb-2">
+                    <a href="../../../pages/contactus.html" class="nav-link p-0"
+                      >Contact Us</a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Social Media and Copyright -->
+        <div
+          class="d-flex flex-column flex-md-row justify-content-between mt-4 pt-3 border-top"
+        >
+          <p class="">© 2025 Nick Calvo. All rights reserved.</p>
+          <ul class="list-unstyled d-flex">
+            <li class="ms-3">
+              <a class="link-light" href="#"><i class="bi bi-linkedin"></i></a>
+            </li>
+            <li class="ms-3">
+              <a class="link-light" href="#"><i class="bi bi-github"></i></a>
+            </li>
+            <li class="ms-3">
+              <a class="link-light" href="#"><i class="bi bi-behance"></i></a>
+            </li>
+            <li class="ms-3">
+              <a class="link-light" href="#"><i class="bi bi-youtube"></i></a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="row mt-4">
+          <div class="col-12">
+            <p>
+              <strong>DISCLAIMER:</strong> This website is unofficial and is not
+              associated in any way with the Formula 1 companies. F1, FORMULA
+              ONE, FORMULA 1, FIA FORMULA ONE WORLD CHAMPIONSHIP, GRAND PRIX and
+              related marks are trade marks of Formula One Licensing B.V.
+            </p>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script type="module" src="../../../js/main.js"></script>
+    <script type="module" src="../../../js/breakpoints.js"></script>
+  </body>
+</html>
