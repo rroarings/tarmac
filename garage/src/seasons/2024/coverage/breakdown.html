@@ -1,0 +1,607 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <meta
+      name="description"
+      content="Formula Bootstrap is a a Bootstrap built website that explores some areas of Formula One."
+    />
+    <meta name="author" content="Nick Calvo" />
+    <title>A Breakdown of 2024 Formula 1 | Trackside</title>
+    <link rel="stylesheet" href="../../../scss/styles.scss" />
+  </head>
+  <body>
+    <!-- Add this to your body to display the breakpoint size -->
+    <div id="breakpoint" class="breakpoint-size"></div>
+
+    <!-- site header -->
+    <nav class="navbar navbar-expand-lg sticky-top" id="mainNav">
+      <div class="container">
+        <a class="navbar-brand" href="#page-top">
+          <img
+            src="../../../assets/img/logos/trackside-logoblack.png"
+            class="img-fluid w-50"
+            alt="Trackside Logo"
+          />
+        </a>
+        <button
+          class="navbar-toggler mt-3"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarResponsive"
+          aria-controls="navbarResponsive"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          Menu
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="1em"
+            height="1em"
+            fill="currentColor"
+            class="bi bi-list ms-1"
+            viewBox="0 0 16 16"
+          >
+            <path
+              fill-rule="evenodd"
+              d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5"
+            />
+          </svg>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav ms-auto me-4 py-4 py-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" href="../../../index.html">Home</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                id="aboutDropdown"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                About F1
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="aboutDropdown">
+                <li>
+                  <a class="dropdown-item" href="../../../pages/whatis.html"
+                    >What is Formula 1</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="dropdown-item"
+                    href="../../../pages/technologies.html"
+                    >Technology of F1</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="../../../pages/future.html"
+                    >Future of F1</a
+                  >
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                id="raceCalendars"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Race Calendars
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="raceCalendars">
+                <li>
+                  <a class="dropdown-item" href="../../2025/2025-calendar.html"
+                    >2025 Calendar</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="../2024-calendar.html"
+                    >2024 Calendar</a
+                  >
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                id="standingsDropdown"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Standings
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="standingsDropdown">
+                <li>
+                  <h6 class="dropdown-header">2025</h6>
+                </li>
+                <li>
+                  <a
+                    class="dropdown-item"
+                    href="../../2025/drivers/2025-drivers.html"
+                    >2025 Drivers</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="dropdown-item"
+                    href="../../2025/teams/2025-teams.html"
+                    >2025 Teams</a
+                  >
+                </li>
+                <li>
+                  <hr class="dropdown-divider" />
+                </li>
+                <li>
+                  <h6 class="dropdown-header">2024</h6>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="../drivers/2024-drivers.html"
+                    >2024 Drivers</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="../teams/2024-teams.html"
+                    >2024 Teams</a
+                  >
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                id="seasonsDropdown"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Season Talk
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="seasonsDropdown">
+                <li>
+                  <a class="dropdown-item" href="#">2025 Coverage</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#">2024 Breakdown</a>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                id="fanZoneDropdown"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Site
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="fanZoneDropdown">
+                <li>
+                  <a class="dropdown-item" href="../../../pages/faqs.html"
+                    >Trackside FAQs</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="../../../pages/learnmore.html"
+                    >Learn More</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="../../../pages/contactus.html"
+                    >Contact Us</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="dropdown-item"
+                    href="../../../pages/attributions.html"
+                    >Site Attributions</a
+                  >
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <div class="container my-5">
+      <div class="row g-5">
+        <div class="col-md-8">
+          <h3 class="pb-4 mb-4 fst-italic border-bottom">From the Trackside</h3>
+          <article class="blog-post">
+            <h1 class="display-5 link-body-emphasis mb-1">
+              '24 F1 Season: An Unforgettable Ride
+            </h1>
+            <p class="blog-post-meta">May 21, 2025 by <a href="#">Nick</a></p>
+            <p>
+              The 2024 FIA Formula One World Championship was a thrilling saga
+              of speed, drama, and history-making moments. Max Verstappen
+              claimed his fourth straight Drivers’ title, McLaren ended a
+              26-year wait for the Constructors’ crown, and drivers like Lando
+              Norris and Lewis Hamilton delivered iconic victories. Relive the
+              season’s most unforgettable moments, from Miami’s surprises to Abu
+              Dhabi’s finale.
+            </p>
+            <hr />
+            <img
+              src="../../../assets/img/section/section-drivers-banner.jpg"
+              class="img-fluid mb-3"
+              alt="banner of drivers"
+            />
+            <h2 class="mb-3">A Season of Triumphs and Twists</h2>
+            <p>
+              The 2024 Formula 1 season, the 75th in FIA history, spanned a
+              record 24 Grands Prix and six sprints, delivering non-stop action
+              from Bahrain to Abu Dhabi. Max Verstappen dominated early, winning
+              four of the first five races, but McLaren’s resurgence, led by
+              Lando Norris and Oscar Piastri, challenged Red Bull’s grip,
+              culminating in McLaren’s Constructors’ title at the finale.
+              Ferrari, Mercedes, and even underdog teams like Alpine shone in
+              iconic races, while off-track shocks like Lewis Hamilton’s Ferrari
+              move for 2025 kept fans buzzing. Here’s a breakdown of the
+              season’s defining moments, from epic battles to emotional
+              farewells.
+            </p>
+            <h3>Verstappen’s Fourth Title</h3>
+            <p>
+              Max Verstappen started 2024 with a bang, winning four of the first
+              five races, including a dominant Grand Chelem in Bahrain. Despite
+              McLaren’s MCL38 outpacing Red Bull’s RB20 mid-season, Verstappen’s
+              consistency shone, with standout drives like his wet-weather
+              masterclass from P17 to P1 in Sao Paulo. He clinched his fourth
+              consecutive Drivers’ Championship in Las Vegas, joining legends
+              like Schumacher and Hamilton. His ability to score double-digit
+              points in nearly every race, even without the fastest car,
+              cemented his status as a modern great.
+            </p>
+            <h3>McLaren’s Constructors’ Triumph</h3>
+            <p>
+              McLaren ended a 26-year drought to claim the 2024 Constructors’
+              Championship in Abu Dhabi, their first since 1998. Lando Norris’s
+              fourth win of the season sealed the title, with Oscar Piastri’s
+              support crucial. The team’s turnaround began in Miami, where
+              Norris’s maiden victory marked their rise. Despite Red Bull’s
+              early dominance, McLaren’s upgrades made the MCL38 the grid’s
+              fastest car, outscoring rivals in key races like Singapore and
+              Zandvoort. Their 1-2 in Hungary, though marred by team orders
+              drama, showcased their strength.
+            </p>
+            <h3>Unforgettable Victories That Shaped 2024</h3>
+            <p>
+              The 2024 season saw seven different winners from four teams, a
+              stark contrast to 2023’s Red Bull dominance. Lando Norris broke
+              through with his first win in Miami, capitalizing on a safety car
+              to beat Verstappen. Charles Leclerc ended his “Monaco curse,”
+              becoming the first Monégasque to win his home race since 1950.
+              Lewis Hamilton’s emotional ninth British Grand Prix victory at
+              Silverstone ended a 945-day winless streak, thrilling the home
+              crowd. Carlos Sainz’s stunning Australian Grand Prix win, just 16
+              days after surgery, and Ferrari’s 1-2 finish marked their
+              resurgence. These victories defined a season of unpredictability.
+            </p>
+            <h3>New Faces and Shocking Changes</h3>
+            <p>
+              Rookies and mid-season swaps added spice to 2024. Oliver Bearman,
+              an 18-year-old Ferrari reserve, debuted in Saudi Arabia, scoring
+              P7 and later points with Haas in Azerbaijan, earning a 2025 Haas
+              seat. Franco Colapinto replaced Logan Sargeant at Williams from
+              the Italian Grand Prix, scoring points in Azerbaijan. Daniel
+              Ricciardo was dropped by RB after Singapore, with Liam Lawson
+              stepping in, signaling Red Bull’s youth focus. Lewis Hamilton’s
+              bombshell announcement to join Ferrari in 2025, revealed before
+              the season, set the stage for a dramatic farewell with Mercedes.
+            </p>
+            <h3>Beyond the Track: 2024’s Biggest Stories</h3>
+            <p>
+              Off-track narratives shaped 2024 as much as the racing. Lewis
+              Hamilton’s Ferrari move for 2025 sent shockwaves, while Adrian
+              Newey’s exit from Red Bull to join Aston Martin raised eyebrows.
+              RB’s team orders controversy in Bahrain sparked tensions between
+              Yuki Tsunoda and Daniel Ricciardo. Alpine’s double podium in Sao
+              Paulo, led by Esteban Ocon and Pierre Gasly, was a surprising
+              turnaround after a dismal start. These moments, alongside
+              regulatory changes like increased power unit allocations, set the
+              stage for a seismic 2025 season with new drivers like Kimi
+              Antonelli at Mercedes
+            </p>
+            <h3>2024: A Season to Remember</h3>
+            <p>
+              From Verstappen’s relentless title charge to McLaren’s triumphant
+              Constructors’ win, 2024 was a Formula 1 season of heart-pounding
+              races and game-changing moments. Iconic victories, rookie heroics,
+              and off-track shocks kept fans glued to the action. Dive deeper
+              into the drivers and teams that made it unforgettable, and gear up
+              for 2025’s new battles with Hamilton at Ferrari and more!
+            </p>
+            <ul>
+              <li><a href="#">2024 Drivers</a></li>
+              <li><a href="#">2024 Constructors</a></li>
+              <li><a href="#">2025 Coverage</a></li>
+            </ul>
+          </article>
+          <nav class="blog-pagination" aria-label="Pagination">
+            <a class="btn btn-outline-primary rounded-pill" href="#">Older</a>
+            <a
+              class="btn btn-outline-secondary rounded-pill disabled"
+              aria-disabled="true"
+              >Newer</a
+            >
+          </nav>
+        </div>
+        <div class="col-md-4">
+          <div class="position-sticky" style="top: 2rem">
+            <div class="p-4 mb-3 bg-body-tertiary rounded">
+              <h4 class="fst-italic">About</h4>
+              <p class="mb-0">
+                Customize this section to tell your visitors a little bit about
+                your publication, writers, content, or something else entirely.
+                Totally up to you.
+              </p>
+            </div>
+            <div>
+              <h4 class="fst-italic">Recent posts</h4>
+              <ul class="list-unstyled">
+                <li>
+                  <a
+                    class="d-flex flex-column flex-lg-row gap-3 align-items-start align-items-lg-center py-3 link-body-emphasis text-decoration-none border-top"
+                    href="#"
+                  >
+                    <svg
+                      aria-hidden="true"
+                      class="bd-placeholder-img"
+                      height="96"
+                      preserveAspectRatio="xMidYMid slice"
+                      width="100%"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <rect width="100%" height="100%" fill="#777"></rect>
+                    </svg>
+                    <div class="col-lg-8">
+                      <h6 class="mb-0">2025 Formula 1 Preview: Predictions</h6>
+                      <small class="text-body-secondary">May 22, 2025</small>
+                    </div>
+                  </a>
+                </li>
+                <li>
+                  <a
+                    class="d-flex flex-column flex-lg-row gap-3 align-items-start align-items-lg-center py-3 link-body-emphasis text-decoration-none border-top"
+                    href="cota.html"
+                  >
+                    <svg
+                      aria-hidden="true"
+                      class="bd-placeholder-img"
+                      height="96"
+                      preserveAspectRatio="xMidYMid slice"
+                      width="100%"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <rect width="100%" height="100%" fill="#777"></rect>
+                    </svg>
+                    <div class="col-lg-8">
+                      <h6 class="mb-0">Race Peaks from '24 COTA</h6>
+                      <small class="text-body-secondary">May 21, 2025</small>
+                    </div>
+                  </a>
+                </li>
+                <li>
+                  <a
+                    class="d-flex flex-column flex-lg-row gap-3 align-items-start align-items-lg-center py-3 link-body-emphasis text-decoration-none border-top"
+                    href="pulsemoments.html"
+                  >
+                    <svg
+                      aria-hidden="true"
+                      class="bd-placeholder-img"
+                      height="96"
+                      preserveAspectRatio="xMidYMid slice"
+                      width="100%"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <rect width="100%" height="100%" fill="#777"></rect>
+                    </svg>
+                    <div class="col-lg-8">
+                      <h6 class="mb-0">Pulse Pounding 2024 Moments</h6>
+                      <small class="text-body-secondary">May 21, 2025</small>
+                    </div>
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <div class="p-4">
+              <h4 class="fst-italic">Archives</h4>
+              <ol class="list-unstyled mb-0">
+                <li><a href="#">June 2025</a></li>
+                <li><a href="#">May 2025</a></li>
+                <li><a href="#">April 2025</a></li>
+              </ol>
+            </div>
+            <div class="p-4">
+              <h4 class="fst-italic">Elsewhere</h4>
+              <ol class="list-unstyled">
+                <li><a href="#">GitHub</a></li>
+                <li><a href="#">LinkedIn</a></li>
+                <li><a href="#">YouTube</a></li>
+              </ol>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- footer -->
+    <div class="container-fluid wrapper-footer mt-5">
+      <footer class="container border-open-left--open-top">
+        <div class="row text-center text-md-start">
+          <!-- Logo and Description -->
+          <div class="col-12 col-md mb-4">
+            <img
+              src="../../../assets/img/logos/trackside-logowhite-300px.png"
+              class="img-fluid mb-3"
+              alt="Trackside Logo"
+            />
+            <p>Discover Formula 1 from a fan perspective.</p>
+          </div>
+
+          <!-- Links Section -->
+          <div class="col-12 col-md-8">
+            <div class="row gap-4 justify-content-sm-center">
+              <!-- Trackside Links -->
+              <div class="col-12 col-sm-4 col-lg">
+                <h5>Trackside</h5>
+                <ul class="nav flex-column">
+                  <li class="nav-item mb-2">
+                    <a href="../../../index.html" class="nav-link p-0">Home</a>
+                  </li>
+                  <li class="nav-item mb-2">
+                    <a href="../../../pages/whatis.html" class="nav-link p-0"
+                      >What is Formula 1</a
+                    >
+                  </li>
+                  <li class="nav-item mb-2">
+                    <a
+                      href="../../../pages/technologies.html"
+                      class="nav-link p-0"
+                      >Technology of F1</a
+                    >
+                  </li>
+                  <li class="nav-item mb-2">
+                    <a href="../../../pages/future.html" class="nav-link p-0"
+                      >Future of F1</a
+                    >
+                  </li>
+                </ul>
+              </div>
+
+              <!-- 2025 Standings -->
+              <div class="col-12 col-sm-4 col-lg">
+                <h5>2025 Standings</h5>
+                <ul class="nav flex-column">
+                  <li class="nav-item mb-2">
+                    <a
+                      href="../../2025/drivers/2025-drivers.html"
+                      class="nav-link p-0"
+                      >2025 Drivers</a
+                    >
+                  </li>
+                  <li class="nav-item mb-2">
+                    <a
+                      href="../../2025/drivers/2025-drivers.html"
+                      class="nav-link p-0"
+                      >2025 Constructors</a
+                    >
+                  </li>
+                  <li class="nav-item mb-2">
+                    <a href="../drivers/2024-drivers.html" class="nav-link p-0"
+                      >2024 Drivers</a
+                    >
+                  </li>
+                  <li class="nav-item mb-2">
+                    <a href="../teams/2024-teams.html" class="nav-link p-0"
+                      >2024 Constructors</a
+                    >
+                  </li>
+                </ul>
+              </div>
+
+              <!-- Race Calendars -->
+              <div class="col-12 col-sm-4 col-lg">
+                <h5>Race Calendars</h5>
+                <ul class="nav flex-column">
+                  <li class="nav-item mb-2">
+                    <a href="../../2025/2025-calendar.html" class="nav-link p-0"
+                      >2025 Race Calendar</a
+                    >
+                  </li>
+                  <li class="nav-item mb-2">
+                    <a href="../2024-calendar.html" class="nav-link p-0"
+                      >2024 Race Calendar</a
+                    >
+                  </li>
+                </ul>
+              </div>
+
+              <!-- Pitwall Links -->
+              <div class="col-12 col-sm-4 col-lg">
+                <h5>Pitwall</h5>
+                <ul class="nav flex-column">
+                  <li class="nav-item mb-2">
+                    <a href="../../../pages/faqs.html" class="nav-link p-0"
+                      >Trackside FAQs</a
+                    >
+                  </li>
+                  <li class="nav-item mb-2">
+                    <a
+                      href="../../../pages/attributions.html"
+                      class="nav-link p-0"
+                      >Site Attributions</a
+                    >
+                  </li>
+                  <li class="nav-item mb-2">
+                    <a href="../../../pages/learnmore.html" class="nav-link p-0"
+                      >Learn More</a
+                    >
+                  </li>
+                  <li class="nav-item mb-2">
+                    <a href="../../../pages/contactus.html" class="nav-link p-0"
+                      >Contact Us</a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Social Media and Copyright -->
+        <div
+          class="d-flex flex-column flex-md-row justify-content-between mt-4 pt-3 border-top"
+        >
+          <p class="">© 2025 Nick Calvo. All rights reserved.</p>
+          <ul class="list-unstyled d-flex">
+            <li class="ms-3">
+              <a class="link-light" href="#"><i class="bi bi-linkedin"></i></a>
+            </li>
+            <li class="ms-3">
+              <a class="link-light" href="#"><i class="bi bi-github"></i></a>
+            </li>
+            <li class="ms-3">
+              <a class="link-light" href="#"><i class="bi bi-behance"></i></a>
+            </li>
+            <li class="ms-3">
+              <a class="link-light" href="#"><i class="bi bi-youtube"></i></a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="row mt-4">
+          <div class="col-12">
+            <p>
+              <strong>DISCLAIMER:</strong> This website is unofficial and is not
+              associated in any way with the Formula 1 companies. F1, FORMULA
+              ONE, FORMULA 1, FIA FORMULA ONE WORLD CHAMPIONSHIP, GRAND PRIX and
+              related marks are trade marks of Formula One Licensing B.V.
+            </p>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script type="module" src="../../../js/main.js"></script>
+    <script type="module" src="../../../js/breakpoints.js"></script>
+  </body>
+</html>
