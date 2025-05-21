@@ -51,11 +51,10 @@ Dive into the garages, feel the rush of the paddock, and explore the trackside e
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ## Features
-
-- Explore detailed driver profiles and team stats.
-- Race calendar with event details.
-- Responsive design built with Bootstrap 5.
-- Easy-to-navigate structure for F1 fans.
+- **Driver Profiles**: Explore detailed stats and bios of your favorite drivers.
+- **Team Profiles**: Explore detailed stats and bios of your favorite teams.
+- **Race Calendar**: Stay updated with the latest race schedules and event details.
+- **Season Coverage**: Explore lite-blog articles covering the 2024 & 2025 race seasons.
   
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
