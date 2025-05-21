@@ -163,9 +163,35 @@ _For more examples, please refer to the [Documentation](https://example.com)_
 
 
 
+<!-- CONTRIBUTING -->
+## Contributing
+
+Contributions are welcome! Please follow these steps:
+
+1. Fork the repository.
+2. Create a new branch (`git checkout -b feature/YourFeature`).
+3. Commit your changes (`git commit -m 'Add some feature'`).
+4. Push to the branch (`git push origin feature/YourFeature`).
+5. Open a Pull Request.
+
+
+See the [open issues](https://github.com/rroarings/tarmac/issues) for a full list of proposed features (and known issues).
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+
+
+
 <!-- ROADMAP -->
 ## Roadmap
 
+- Migrate the project to Astro to deliver more blog-focused content
+- Integrate user accounts for personalized experiences
+- Polls and predictions
+- Driver & team comparison tool
+- Customizable race calendar
+- Driver and team news feed
+- Art and media gallery
 
 
 See the [open issues](https://github.com/rroarings/tarmac/issues) for a full list of proposed features (and known issues).
