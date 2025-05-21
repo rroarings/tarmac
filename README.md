@@ -46,7 +46,7 @@
 ## About The Project
 
 
-Dive into the garages, feel the rush of the paddock, and explore the trackside excitement like never before. Built with Bootstrap 5.3, bundled with Parcel, and managed through Linear, this project is your ticket to the fast lane of F1 fandom.
+Dive into the garages, feel the rush of the paddock, and explore the trackside excitement like never before. This project aims to provide Formula 1 fans with a comprehensive platform to explore the sport's intricacies, from race schedules to team dynamics. Whether you're a seasoned fan or a newcomer, Trackside offers something for everyone.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
