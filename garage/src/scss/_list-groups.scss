@@ -4,14 +4,14 @@
   margin: 0;
   list-style: none;
   background-color: $gray-200;
-  transition: all .3s ease;
+  transition: all 0.3s ease;
 }
 
 .driver-standings__item {
   align-items: center;
-  padding: .6rem 1.5rem;
+  padding: 0.6rem 1.5rem;
   background-color: $gray-200;
-  transition: all .3s ease;
+  transition: all 0.3s ease;
 
   &:hover {
     background-color: $gray-800;
@@ -21,7 +21,6 @@
 .driver-standings__item:hover .driver-standings__link {
   color: $gray-200;
 }
-
 
 .driver-standings__item:hover .driver-standings__team-name {
   color: $gray-200;
@@ -41,13 +40,13 @@
   display: flex;
   color: #000;
   text-decoration: none;
-  transition: all .3s ease;
+  transition: all 0.3s ease;
 }
 
 .driver-standings__chevron {
   margin-left: 1rem;
   color: $red;
-  transition: all .3s ease;
+  transition: all 0.3s ease;
 }
 
 .driver-standings__item:hover .driver-standings__chevron {
@@ -59,7 +58,7 @@
   margin-left: 1rem;
 
   svg {
-    transition: fill .3s ease;
+    transition: fill 0.3s ease;
   }
 }
 
@@ -111,15 +110,15 @@
 }
 
 .driver-standings__team-name {
-  margin-left: .4rem;
+  margin-left: 0.4rem;
   font-size: small;
   color: $gray-600;
-  transition: all .3s ease;
+  transition: all 0.3s ease;
 }
 
 /* start list group item team badge hover styles */
 .lgi-mclaren .badge.text-bg-mclaren {
-  transition: all .3s ease;
+  transition: all 0.3s ease;
   transform: scale(1);
 }
 
@@ -128,7 +127,7 @@
 }
 
 .lgi-redbull .badge.text-bg-redbull {
-  transition: all .3s ease;
+  transition: all 0.3s ease;
   transform: scale(1);
 }
 
@@ -137,7 +136,7 @@
 }
 
 .lgi-mercedes .badge.text-bg-mercedes {
-  transition: all .3s ease;
+  transition: all 0.3s ease;
   transform: scale(1);
 }
 
@@ -147,7 +146,7 @@
 }
 
 .lgi-ferrari .badge.text-bg-ferrari {
-  transition: all .3s ease;
+  transition: all 0.3s ease;
   transform: scale(1);
 }
 
@@ -156,7 +155,7 @@
 }
 
 .lgi-williams .badge.text-bg-williams {
-  transition: all .3s ease;
+  transition: all 0.3s ease;
   transform: scale(1);
 }
 
@@ -165,7 +164,7 @@
 }
 
 .lgi-haas .badge.text-bg-haas {
-  transition: all .3s ease;
+  transition: all 0.3s ease;
   transform: scale(1);
 }
 
@@ -174,7 +173,7 @@
 }
 
 .lgi-astonmartin .badge.text-bg-astonmartin {
-  transition: all .3s ease;
+  transition: all 0.3s ease;
   transform: scale(1);
 }
 
@@ -183,7 +182,7 @@
 }
 
 .lgi-alpine .badge.text-bg-alpine {
-  transition: all .3s ease;
+  transition: all 0.3s ease;
   transform: scale(1);
 }
 
@@ -192,7 +191,7 @@
 }
 
 .lgi-kicksauber .badge.text-bg-kicksauber {
-  transition: all .3s ease;
+  transition: all 0.3s ease;
   transform: scale(1);
 }
 
@@ -201,7 +200,7 @@
 }
 
 .lgi-racingbulls .badge.text-bg-racingbulls {
-  transition: all .3s ease;
+  transition: all 0.3s ease;
   transform: scale(1);
 }
 

@@ -7,13 +7,11 @@ body {
   color: rgb(var(--bs-tertiary-color-rgb));
 }
 
-
 /* CUSTOMIZE THE CAROUSEL
 -------------------------------------------------- */
 
 .carousel-item {
   height: 700px; /* or any other desired height */
-  
 }
 
 .carousel-caption {
@@ -31,7 +29,6 @@ body {
   background-color: rgba(0, 0, 0, 0.5);
 }
 
-
 .carousel-caption h5 {
 }
 
@@ -46,11 +43,10 @@ body {
 }
 /* rtl:begin:ignore */
 .marketing .col-lg-4 p {
-  margin-right: .75rem;
-  margin-left: .75rem;
+  margin-right: 0.75rem;
+  margin-left: 0.75rem;
 }
 /* rtl:end:ignore */
-
 
 /* Featurettes
 ------------------------- */
@@ -62,10 +58,9 @@ body {
 /* Thin out the marketing headings */
 /* rtl:begin:remove */
 .featurette-heading {
-  letter-spacing: -.05rem;
+  letter-spacing: -0.05rem;
   margin-bottom: 2%;
 }
-
 
 /* rtl:end:remove */
 

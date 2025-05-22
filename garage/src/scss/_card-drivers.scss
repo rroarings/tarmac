@@ -6,7 +6,7 @@
   border-top-left-radius: 0;
   border-top-right-radius: 1rem;
   border-bottom-right-radius: 0;
-  transition: border-color .3s ease;
+  transition: border-color 0.3s ease;
 
   &.team-redbull:hover {
     border-top: 10px solid #1e41ff; // Red Bull Racing blue
@@ -40,7 +40,7 @@
   border-top-left-radius: 0;
   border-top-right-radius: 1rem;
   border-bottom-right-radius: 0;
-  transition: all .3s ease;
+  transition: all 0.3s ease;
 
   &:hover {
     border-color: $gray-600;
@@ -49,7 +49,6 @@
   .card-standings__position-wrapper {
     border-bottom: 3px solid $gray-400;
   }
-
 
   .card-standings-info {
     border-bottom: 2px solid #dee2e6;
@@ -65,7 +64,6 @@
 
   // pts label
   .card-standings-info p:nth-child(2) {
-
     @include media-breakpoint-up(xxl) {
     }
   }
@@ -138,7 +136,7 @@
 }
 
 .card-rookie {
-  padding: .5rem;
+  padding: 0.5rem;
   background-color: $gray-200;
-  border-radius: .5rem;
+  border-radius: 0.5rem;
 }

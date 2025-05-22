@@ -17,7 +17,7 @@
 
   .bi-box-arrow-up-right {
     color: #fff;
-    transition: all .3s ease;
+    transition: all 0.3s ease;
     transform-origin: center center;
   }
 
@@ -58,7 +58,7 @@
   border-top-right-radius: 2.2rem;
   border-bottom-right-radius: 2.2rem;
   border-bottom-left-radius: 0;
-  transition: all .3s ease;
+  transition: all 0.3s ease;
 
   &:hover {
     border-top-color: $red-600;
@@ -72,7 +72,7 @@
 }
 
 .card-racecalender-section {
-  transition: all .3s ease;
+  transition: all 0.3s ease;
 }
 
 .card-racecalender-section:hover {
@@ -83,14 +83,18 @@
 .card-racecalender-section .btn {
   color: $gray-200;
   border-color: $gray-600;
-  transition: all .3s ease;
+  transition: all 0.3s ease;
 }
 
 .card-racecalender-section .btn:hover {
   color: $black;
   background-color: $gray-100;
   border-color: $gray-300;
-  box-shadow: 0 5px 5px 0 $gray-600, 0 -5px 5px 0 $gray-600, 5px 0 5px 0 $gray-600, -5px 0 5px 0 $gray-600;
+  box-shadow:
+    0 5px 5px 0 $gray-600,
+    0 -5px 5px 0 $gray-600,
+    5px 0 5px 0 $gray-600,
+    -5px 0 5px 0 $gray-600;
 }
 
 .card-spotlight {
@@ -99,7 +103,7 @@
   border-top-right-radius: 0;
   border-bottom-right-radius: 1rem;
   border-bottom-left-radius: 0;
-  transition: all .3s ease;
+  transition: all 0.3s ease;
 }
 
 .card-spotlight-leclerc {
@@ -156,7 +160,7 @@
   position: relative;
   padding: 2rem;
   color: #fff;
-  text-shadow: 0 2px 4px rgba(0, 0, 0, .6);
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.6);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -185,7 +189,7 @@
     height: 100%;
     content: "";
     background-image: url("../assets/img/section/section-drivers-banner.jpg");
-    filter: brightness(.8);
+    filter: brightness(0.8);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -233,7 +237,7 @@
     height: 100%;
     content: "";
     background-image: url("../assets/img/section/section-drivers-banner.jpg");
-    filter: brightness(.8);
+    filter: brightness(0.8);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -270,7 +274,7 @@
   background-color: $gray-900;
   border: 1px solid $gray-900;
   border-radius: 1rem;
-  transition: all .3s ease;
+  transition: all 0.3s ease;
 
   &:hover {
     color: $gray-900;

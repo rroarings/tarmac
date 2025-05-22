@@ -43,7 +43,7 @@
 .border-mclaren {
   @extend .border-open-left--open-bottom;
   border-color: $orange;
-  transition: all .3s ease;
+  transition: all 0.3s ease;
 }
 
 .border-mclaren:hover {
@@ -53,7 +53,7 @@
 .border-redbull {
   @extend .border-open-left--open-bottom;
   border-color: $blue-600;
-  transition: all .3s ease;
+  transition: all 0.3s ease;
 
   &:hover {
     border-color: darken($blue-600, 15%);
@@ -63,7 +63,7 @@
 .border-mercedes {
   @extend .border-open-left--open-bottom;
   border-color: $teal;
-  transition: all .3s ease;
+  transition: all 0.3s ease;
 
   &:hover {
     border-color: darken($teal, 10%);
@@ -73,7 +73,7 @@
 .border-ferrari {
   @extend .border-open-left--open-bottom;
   border-color: $red;
-  transition: all .3s ease;
+  transition: all 0.3s ease;
 
   &:hover {
     border-color: darken($red, 10%);
@@ -83,7 +83,7 @@
 .border-williams {
   @extend .border-open-left--open-bottom;
   border-color: #005aff;
-  transition: all .3s ease;
+  transition: all 0.3s ease;
 
   &:hover {
     border-color: darken(#005aff, 10%);
@@ -93,7 +93,7 @@
 .border-haas {
   @extend .border-open-left--open-bottom;
   border-color: $gray-800;
-  transition: all .3s ease;
+  transition: all 0.3s ease;
 
   &:hover {
     border-color: darken($gray-800, 10%);
@@ -103,7 +103,7 @@
 .border-astonmartin {
   @extend .border-open-left--open-bottom;
   border-color: $green-600;
-  transition: all .3s ease;
+  transition: all 0.3s ease;
 
   &:hover {
     border-color: darken($green-600, 10%);
@@ -113,7 +113,7 @@
 .border-alpine {
   @extend .border-open-left--open-bottom;
   border-color: #0090ff;
-  transition: all .3s ease;
+  transition: all 0.3s ease;
 
   &:hover {
     border-color: darken(#0090ff, 10%);
@@ -123,7 +123,7 @@
 .border-kicksauber {
   @extend .border-open-left--open-bottom;
   border-color: #00ff62;
-  transition: all .3s ease;
+  transition: all 0.3s ease;
 
   &:hover {
     border-color: darken(#00ff62, 10%);
@@ -133,7 +133,7 @@
 .border-racingbulls {
   @extend .border-open-left--open-bottom;
   border-color: #2b4562;
-  transition: all .3s ease;
+  transition: all 0.3s ease;
 
   &:hover {
     border-color: darken(#2b4562, 10%);
