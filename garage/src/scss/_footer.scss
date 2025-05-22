@@ -12,7 +12,7 @@ footer .nav-link {
   color: $gray-500;
   display: inline-flex;
   text-decoration: none;
-  transition: color .3s ease;
+  transition: color 0.3s ease;
 
   &:hover,
   &:focus-visible {
@@ -24,6 +24,6 @@ footer .nav-link {
   }
 
   &:focus {
-    color: $red-300
+    color: $red-300;
   }
 }
