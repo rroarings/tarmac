@@ -1,0 +1,56 @@
+---
+import type { CollectionEntry } from "astro:content";
+
+type Props = CollectionEntry<"blog">["data"] & {
+  category?: string; // Added category property
+  showPubDate?: boolean; // Optional property to control pubDate visibility
+  showHeroImage?: boolean; // Optional property to control heroImage visibility
+  showTitle?: boolean; // Optional property to control title visibility
+  showCategory?: boolean; // Optional property to control title visibility
+};
+
+// Destructure props and set defaults
+const {
+  title,
+  description,
+  category,
+  pubDate,
+  updatedDate,
+  heroImage,
+  showPubDate = true,
+  showHeroImage = true,
+  showTitle = true,
+  showCategory = true,
+} = Astro.props;
+import FormattedDate from '../components/FormattedDate.astro';
+
+console.log({
+  title,
+  description,
+  category,
+  pubDate,
+  updatedDate,
+  heroImage,
+  showPubDate,
+  showHeroImage,
+  showTitle,
+  showCategory,
+});
+---
+
+<div class="max-w-4xl border border-gray-700 p-4 rounded mt-4">
+  <h5 class="">{title}</h5>
+  <p class="text-base">
+    {Astro.url}
+  </p>
+  <div class="text-sm flex gap-8">
+    <div>
+        <span class="text-gray-500">Published</span>
+        <div><FormattedDate date={pubDate} /></div>
+    </div>
+    <div>
+        <span class="text-gray-500">Category</span>
+        <div>{category || 'Uncategorized'}</div>
+    </div>
+  </div>
+</div>
