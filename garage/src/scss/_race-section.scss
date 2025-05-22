@@ -36,8 +36,8 @@
   position: absolute;
   inset: 0;
   content: "";
-  background: rgba(0, 0, 0, 0.712);
-  transition: transform 0.3s ease-in-out;
+  background: rgba(0, 0, 0, .712);
+  transition: transform .3s ease-in-out;
   transform: translateY(100%);
 }
 
@@ -55,9 +55,7 @@
 
 .race-section .race-section-title {
   opacity: 1;
-  transition:
-    opacity 0.3s ease-in-out,
-    transform 0.3s ease-in-out;
+  transition: opacity .3s ease-in-out, transform .3s ease-in-out;
   transform: translateY(10px);
 }
 
@@ -72,9 +70,7 @@
   border-top: 5px solid #000;
   border-right: 5px solid #000;
   border-top-right-radius: 1rem;
-  transition:
-    border,
-    0.3s ease;
+  transition: border, .3s ease;
 }
 
 .race-section:hover .race-section-title-position {
@@ -85,9 +81,7 @@
 .race-section .hidden-description {
   padding-top: 1rem;
   opacity: 0;
-  transition:
-    opacity 0.3s ease-in-out,
-    transform 0.3s ease-in-out;
+  transition: opacity .3s ease-in-out, transform .3s ease-in-out;
   transform: translateY(10px);
 }
 
@@ -101,7 +95,7 @@
 }
 
 .race-section-scale {
-  transition: transform 0.3s ease;
+  transition: transform .3s ease;
   transform: scale(1);
 }
 
@@ -141,3 +135,4 @@
     transform: translateY(0);
   }
 }
+

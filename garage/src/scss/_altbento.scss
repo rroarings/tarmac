@@ -67,35 +67,37 @@
   text-decoration: none;
   border: 1px solid $gray-400;
   border-radius: 6px;
-  transition: all 0.3s ease;
+  transition: all .3s ease;
 
   &:hover {
     color: $gray-200;
     border: 1px solid transparent;
     background: $gray-900;
+    
   }
 }
 
 .bento-item p,
 .bento-item h5 {
-  transition: color 0.3s ease;
+  transition: color .3s ease;
 }
 
 .bento-item p {
-  color: $gray-600;
+  color: $gray-600
 }
 
 .bento-item:hover p {
-  color: $gray-400;
+  color: $gray-400
 }
 
 .bento-item i {
   font-size: 4rem;
   margin: 0 0 1rem 0;
   text-align: center;
-  transition: all 0.3s ease;
+  transition: all .3s ease;
 
   @include media-breakpoint-up(sm) {
+
   }
 
   @include media-breakpoint-up(lg) {
@@ -109,7 +111,7 @@
   filter: grayscale(100%);
   background-position: center;
   background-size: cover;
-  transition: all 0.3s ease;
+  transition: all .3s ease;
 }
 
 @media (max-width: 768px) {
@@ -131,6 +133,7 @@
 }
 
 @media (max-width: 575px) {
+
   .bento-wrapper,
   .bento-wrapper-alt {
     grid-template-columns: 1fr;

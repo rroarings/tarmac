@@ -59,6 +59,7 @@ h2 {
 }
 
 h3 {
+
   @include media-breakpoint-up(sm) {
     // ≥576px
   }

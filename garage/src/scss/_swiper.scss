@@ -7,17 +7,13 @@
   width: 100%;
   height: 34rem;
 
-  @include media-breakpoint-up(sm) {
-    // ≥576px
+  @include media-breakpoint-up(sm) { // ≥576px
   }
-  @include media-breakpoint-up(md) {
-    // ≥768px
+  @include media-breakpoint-up(md) { // ≥768px
   }
-  @include media-breakpoint-up(lg) {
-    // ≥992px
+  @include media-breakpoint-up(lg) { // ≥992px
   }
-  @include media-breakpoint-up(xl) {
-    // ≥1200px
+  @include media-breakpoint-up(xl) { // ≥1200px
   }
 }
 
@@ -27,17 +23,13 @@
   border-right: 1px solid $red-500;
   border-top-right-radius: 2rem;
 
-  @include media-breakpoint-up(sm) {
-    // ≥576px
+  @include media-breakpoint-up(sm) { // ≥576px
   }
-  @include media-breakpoint-up(md) {
-    // ≥768px
+  @include media-breakpoint-up(md) { // ≥768px
   }
-  @include media-breakpoint-up(lg) {
-    // ≥992px
+  @include media-breakpoint-up(lg) { // ≥992px
   }
-  @include media-breakpoint-up(xl) {
-    // ≥1200px
+  @include media-breakpoint-up(xl) { // ≥1200px
   }
 }
 
@@ -47,9 +39,7 @@
 
 .btn-outline-danger {
   color: #fff;
-  transition:
-    background-color 0.3s ease,
-    color 0.3s ease;
+  transition: background-color .3s ease, color .3s ease;
 }
 
 .btn-outline-danger:hover {

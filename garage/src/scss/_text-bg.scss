@@ -1,15 +1,15 @@
 // Base style
 .text-bg-custom {
-  padding: 0.3rem 1.2rem;
+  padding: .3rem 1.2rem;
   font-weight: 500;
   color: #fff;
   background-color: $gray-900;
-  transition: all 0.3s ease;
+  transition: all .3s ease;
 }
 
 .text-bg-custom-standings {
   @extend .text-bg-custom;
-  transition: all 0.3s ease;
+  transition: all .3s ease;
 }
 
 .text-bg-custom-standings--mclaren {
@@ -105,3 +105,4 @@
   color: $gray-200;
   background: #2b4562;
 }
+
