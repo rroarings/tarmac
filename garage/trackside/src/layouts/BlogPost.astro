@@ -34,15 +34,15 @@ const {
 import { getCollection } from "astro:content";
 
 const recentPosts = await getCollection("blog");
-console.log("Recent posts titles:", recentPosts.map(post => post.data.title));
+console.log(
+  "Recent posts titles:",
+  recentPosts.map((post) => post.data.title),
+);
 ---
 
 <html lang="en">
   <head>
-    <BaseHead
-      title={title}
-      description={description}
-    />
+    <BaseHead title={title} description={description} />
   </head>
 
   <body>
@@ -52,61 +52,71 @@ console.log("Recent posts titles:", recentPosts.map(post => post.data.title));
       <main class="flex-1 pr-6">
         <article>
           <div class="hero-image">
-            {showHeroImage && heroImage && (
-              <img
-                width={1020}
-                height={510}
-                src={heroImage}
-                alt=""
-              />
-            )}
+            {
+              showHeroImage && heroImage && (
+                <img width={1020} height={510} src={heroImage} alt="" />
+              )
+            }
           </div>
           <div class="prose">
             <div class="title mb-5">
-              {showTitle && (
-                <>
-                  <h1 class="pt-3">{title}</h1>
-                  <hr />
-                </>
-              )}
+              {
+                showTitle && (
+                  <>
+                    <h1 class="pt-3">{title}</h1>
+                    <hr />
+                  </>
+                )
+              }
               <div class="date mt-3">
-                {showPubDate && (
-                  <FormattedDate date={pubDate} />
-                )} {/* Conditionally render pubDate */}
-                {updatedDate && (
-                  <div class="last-updated-on">
-                    Last updated on <FormattedDate date={updatedDate} />
-                  </div>
-                )}
+                {showPubDate && <FormattedDate date={pubDate} />}
+                {/* Conditionally render pubDate */}
+                {
+                  updatedDate && (
+                    <div class="last-updated-on">
+                      Last updated on <FormattedDate date={updatedDate} />
+                    </div>
+                  )
+                }
               </div>
             </div>
             <slot />
           </div>
         </article>
-        <BlogSignoff 
-          title={title} 
+        <BlogSignoff
+          title={title}
           description={description}
-          pubDate={pubDate} 
-          category={category} 
+          pubDate={pubDate}
+          category={category}
         />
       </main>
 
       <!-- Sidebar -->
-      <aside class="w-64 bg-gray-100 p-4 rounded-lg shadow-md sticky top-6 h-max">
+      <aside
+        class="w-64 bg-gray-100 p-4 rounded-lg shadow-md sticky top-6 h-max"
+      >
         <section class="mb-6">
           <h3 class="mb-2">About</h3>
-          <p class="text-gray-600">Welcome to our blog! We share insights, stories, and updates about the automotive world and beyond.</p>
+          <p class="text-gray-600">
+            Welcome to our blog! We share insights, stories, and updates about
+            the automotive world and beyond.
+          </p>
         </section>
         <section>
           <h3 class="mb-2">Recent Posts</h3>
           <ul class="space-y-4">
-            {recentPosts.map((post: any) => (
-              <li>
-                <a href={`/blog/${post.id}`} class="text-indigo-600 hover:underline">
-                  {post.data.title}
-                </a>
-              </li>
-            ))}
+            {
+              recentPosts.map((post: any) => (
+                <li>
+                  <a
+                    href={`/blog/${post.id}`}
+                    class="text-indigo-600 hover:underline"
+                  >
+                    {post.data.title}
+                  </a>
+                </li>
+              ))
+            }
           </ul>
         </section>
       </aside>

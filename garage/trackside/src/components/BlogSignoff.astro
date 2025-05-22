@@ -22,7 +22,7 @@ const {
   showTitle = true,
   showCategory = true,
 } = Astro.props;
-import FormattedDate from '../components/FormattedDate.astro';
+import FormattedDate from "../components/FormattedDate.astro";
 
 console.log({
   title,
@@ -45,12 +45,12 @@ console.log({
   </p>
   <div class="text-sm flex gap-8">
     <div>
-        <span class="text-gray-500">Published</span>
-        <div><FormattedDate date={pubDate} /></div>
+      <span class="text-gray-500">Published</span>
+      <div><FormattedDate date={pubDate} /></div>
     </div>
     <div>
-        <span class="text-gray-500">Category</span>
-        <div>{category || 'Uncategorized'}</div>
+      <span class="text-gray-500">Category</span>
+      <div>{category || "Uncategorized"}</div>
     </div>
   </div>
 </div>

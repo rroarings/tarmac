@@ -17,24 +17,32 @@ const { title, description, pubDate, updatedDate, heroImage } = Astro.props;
     <Header />
     <div class="flex max-w-7xl mx-auto p-6">
       <!-- Main Content -->
-        <slot />
+      <slot />
 
       <!-- Sidebar -->
       <aside class="w-64 bg-gray-100 p-4 rounded-lg sticky top-6 h-max">
         <section class="mb-6">
-          <h2 class=" font-bold mb-2">About</h2>
-          <p class="text-gray-600">Welcome to our blog! We share insights, stories, and updates about the automotive world and beyond.</p>
+          <h2 class="font-bold mb-2">About</h2>
+          <p class="text-gray-600">
+            Welcome to our blog! We share insights, stories, and updates about
+            the automotive world and beyond.
+          </p>
         </section>
         <section>
-          <h2 class=" font-bold mb-2">Recent Posts</h2>
+          <h2 class="font-bold mb-2">Recent Posts</h2>
           <ul class="space-y-4">
-            {recentPosts.map((post) => (
-              <li>
-                <a href={`/blog/${post.id}`} class="text-indigo-600 hover:underline">
-                  {post.data.title}
-                </a>
-              </li>
-            ))}
+            {
+              recentPosts.map((post) => (
+                <li>
+                  <a
+                    href={`/blog/${post.id}`}
+                    class="text-indigo-600 hover:underline"
+                  >
+                    {post.data.title}
+                  </a>
+                </li>
+              ))
+            }
           </ul>
         </section>
       </aside>
