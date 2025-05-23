@@ -1,0 +1,100 @@
+---
+import BaseHead from "../../../components/BaseHead.astro";
+import Header from "../../../components/Header.astro";
+import Footer from "../../../components/Footer.astro";
+import { SITE_TITLE } from "../../../consts";
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <BaseHead title={`2024 F1 Season | ${SITE_TITLE}`} description="Complete 2024 Formula 1 race calendar and season overview" />
+  </head>
+  <body>
+    <Header />
+    <main>
+      <!-- 2024 Season Header -->
+      <section class="pt-6 pb-6 text-center">
+        <div class="container mx-auto px-4">
+          <h1 class="text-4xl font-bold mb-4">2024 Formula 1 Season</h1>
+          <p class="text-lg text-gray-700">Complete race calendar and season overview</p>
+        </div>
+      </section>
+
+      <!-- Race Calendar -->
+      <section class="max-w-6xl py-12">
+        <div class=" mx-auto px-4">
+          <div class="bg-gray-100 border border-gray-300 rounded p-6">
+            <div class="flex items-center mb-6">
+              <i class="bi bi-calendar3 text-3xl text-gray-700 mr-4"></i>
+              <h2 class="text-2xl ">2024 Race Calendar</h2>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+              <!-- Sample races - you can expand this -->
+              <div class="bg-white border border-gray-300 rounded p-4">
+                <h3 class=" text-lg">Bahrain Grand Prix</h3>
+                <p class="text-gray-600">March 2, 2024</p>
+                <p class="text-sm text-gray-500">Bahrain International Circuit</p>
+              </div>
+              
+              <div class="bg-white border border-gray-300 rounded p-4">
+                <h3 class=" text-lg">Saudi Arabian Grand Prix</h3>
+                <p class="text-gray-600">March 9, 2024</p>
+                <p class="text-sm text-gray-500">Jeddah Corniche Circuit</p>
+              </div>
+              
+              <div class="bg-white border border-gray-300 rounded p-4">
+                <h3 class=" text-lg">Australian Grand Prix</h3>
+                <p class="text-gray-600">March 24, 2024</p>
+                <p class="text-sm text-gray-500">Albert Park Circuit</p>
+              </div>
+              
+              <div class="bg-white border border-gray-300 rounded p-4">
+                <h3 class=" text-lg">Japanese Grand Prix</h3>
+                <p class="text-gray-600">April 7, 2024</p>
+                <p class="text-sm text-gray-500">Suzuka International Racing Course</p>
+              </div>
+              
+              <div class="bg-white border border-gray-300 rounded p-4">
+                <h3 class=" text-lg">Chinese Grand Prix</h3>
+                <p class="text-gray-600">April 21, 2024</p>
+                <p class="text-sm text-gray-500">Shanghai International Circuit</p>
+              </div>
+              
+              <div class="bg-white border border-gray-300 rounded p-4">
+                <h3 class=" text-lg">Miami Grand Prix</h3>
+                <p class="text-gray-600">May 5, 2024</p>
+                <p class="text-sm text-gray-500">Miami International Autodrome</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Quick Links -->
+      <section class="py-12">
+        <div class="container mx-auto px-4">
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <!-- Drivers Link -->
+            <div class="bg-gray-100 border border-gray-300 rounded p-6 text-center">
+              <i class="bi bi-person-badge text-4xl text-gray-700 mb-4"></i>
+              <h3 class="text-xl font-bold mb-2">2024 Drivers</h3>
+              <p class="text-gray-600 mb-4">Explore driver profiles and statistics</p>
+              <a href="/seasons/2024/drivers" class="bg-red-600 hover:bg-red-700 text-white font-bold py-2 px-4 rounded">View Drivers</a>
+            </div>
+            
+            <!-- Teams Link -->
+            <div class="bg-gray-100 border border-gray-300 rounded p-6 text-center">
+              <i class="bi bi-flag text-4xl text-gray-700 mb-4"></i>
+              <h3 class="text-xl font-bold mb-2">2024 Teams</h3>
+              <p class="text-gray-600 mb-4">Learn about constructor teams and their cars</p>
+              <a href="/seasons/2024/teams" class="bg-red-600 hover:bg-red-700 text-white font-bold py-2 px-4 rounded">View Teams</a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <Footer />
+  </body>
+</html>
