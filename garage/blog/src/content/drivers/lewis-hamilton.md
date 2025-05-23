@@ -9,8 +9,8 @@ season: "2025"
 championships: 7
 raceWins: 105
 podiums: 197
-points: 423
-profileImage: "/images/drivers/hamilton.jpg"
+points: 53
+profileImage: "/blog-placeholder-1.jpg"
 ---
 
 # Lewis Hamilton
