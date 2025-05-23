@@ -1,9 +1,9 @@
 ---
 // Define the props that this component accepts
-import type { CollectionEntry } from 'astro:content';
+import type { CollectionEntry } from "astro:content";
 
 interface Props {
-  driver: CollectionEntry<'drivers'>;
+  driver: CollectionEntry<"drivers">;
   year?: string; // Optional year parameter, defaults to "2025"
 }
 
@@ -11,37 +11,39 @@ const { driver, year = "2025" } = Astro.props;
 ---
 
 <a href={`/seasons/${year}/drivers/${driver.id}`} class="block">
-  <div class="bg-white border border-gray-300 rounded shadow-md overflow-hidden hover:shadow-lg transition-shadow">
-    <img 
-      src={driver.data.profileImage || "/blog-placeholder-1.jpg"} 
-      alt={`${driver.data.firstName} ${driver.data.lastName}`} 
-      class="w-full h-64 object-cover p-3" 
+  <div
+    class="bg-white border border-gray-300 rounded shadow-md overflow-hidden hover:shadow-lg transition-shadow"
+  >
+    <img
+      src={driver.data.profileImage &&
+      driver.data.profileImage.startsWith("/blog-placeholder")
+        ? driver.data.profileImage
+        : "/blog-placeholder-1.jpg"}
+      alt={`${driver.data.firstName} ${driver.data.lastName}`}
+      class="w-full h-64 object-cover p-3"
     />
     <div class="p-6">
-      <h3 class="text-xl mb-2">
-        {driver.data.firstName} <span class="font-bold">{driver.data.lastName}</span>
-      </h3>
       <p class="text-sm text-gray-500 mb-1">#{driver.data.number}</p>
+
+      <h3 class="text-xl mb-2">
+        {driver.data.firstName}
+        <span class="font-bold">{driver.data.lastName}</span>
+      </h3>
       <p class="text-gray-600 mb-3">{driver.data.team}</p>
-      
+
       <div class="text-sm text-gray-600">
         <div class="flex justify-between items-center mb-1">
           <span>Nationality:</span>
           <span>{driver.data.nationality}</span>
         </div>
-        {driver.data.championships > 0 && (
-          <div class="flex justify-between items-center mb-1">
-            <span>Championships:</span>
-            <span class="font-semibold text-yellow-600">{driver.data.championships}</span>
-          </div>
-        )}
+
         <div class="flex justify-between items-center mb-1">
           <span>Race Wins:</span>
-          <span class="font-semibold">{driver.data.raceWins}</span>
+          <span class="">{driver.data.raceWins}</span>
         </div>
         <div class="flex justify-between items-center">
           <span>Points:</span>
-          <span class="font-semibold text-blue-600">{driver.data.points}</span>
+          <span class="">{driver.data.points}</span>
         </div>
       </div>
     </div>
