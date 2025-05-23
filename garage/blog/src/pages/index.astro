@@ -2,6 +2,8 @@
 import BaseHead from "../components/BaseHead.astro";
 import Header from "../components/Header.astro";
 import Footer from "../components/Footer.astro";
+import DriverCard from "../components/DriverCard.astro";
+import RaceCard from "../components/RaceCard.astro";
 import { SITE_TITLE, SITE_DESCRIPTION } from "../consts";
 import { getCollection } from "astro:content";
 
@@ -16,6 +18,26 @@ const formattedPosts = posts.map((post) => ({
 
 // Limit the formattedPosts array to the latest 3 posts
 const latestPosts = formattedPosts.slice(0, 3);
+
+// Get 2025 season drivers
+const drivers = await getCollection("drivers", ({ data }) => {
+  return data.season === "2025";
+});
+
+// Sort drivers by points (highest to lowest) and take top 3
+const topDrivers = drivers
+  .sort((a, b) => b.data.points - a.data.points)
+  .slice(0, 3);
+
+// Get upcoming races
+const allRaces = await getCollection("races", ({ data }) => {
+  return data.season === "2025" && data.completed === false;
+});
+
+// Sort races by date (earliest first) and take the next 3
+const upcomingRaces = allRaces
+  .sort((a, b) => new Date(a.data.date).getTime() - new Date(b.data.date).getTime())
+  .slice(0, 3);
 ---
 
 <!doctype html>
@@ -30,10 +52,10 @@ const latestPosts = formattedPosts.slice(0, 3);
       <section class="py-5">
         <div class="mx-auto px-4">
           <div
-            class="bg-gray-100 border border-gray-300 rounded p-6 inline-block"
+            class="bg-gray-100 border border-gray-300 rounded p-6"
           >
             <div class="flex gap-2 mb-4">
-              <i class="bi bi-bookmarks text-4xl text-gray-600 mr-4"></i>
+              <i class="bi bi-bookmarks text-4xl text-gray-600 mr-2"></i>
               <div>
                 <h1 class="">Trackside Chat</h1>
                 <p class="text-gray-600">Trackside's Blog</p>
@@ -53,10 +75,10 @@ const latestPosts = formattedPosts.slice(0, 3);
       <section class="py-5">
         <div class="mx-auto px-4">
           <div
-            class="bg-gray-100 border border-gray-300 rounded p-6 inline-block"
+            class="bg-gray-100 border border-gray-300 rounded p-6"
           >
             <div class="flex gap-2 mb-4">
-              <i class="bi bi-activity text-4xl text-gray-600 mr-4"></i>
+              <i class="bi bi-activity text-4xl text-gray-600 mr-2"></i>
               <div>
                 <h2 class="">Recent Posts</h2>
               </div>
@@ -79,6 +101,64 @@ const latestPosts = formattedPosts.slice(0, 3);
                 ))
               }
             </ul>
+          </div>
+        </div>
+      </section>
+
+      <!-- 2025 Drivers Section -->
+      <section class="py-5">
+        <div class="mx-auto px-4">
+          <div
+            class="bg-gray-100 border border-gray-300 rounded p-6"
+          >
+            <div class="flex gap-2 mb-4">
+              <i class="bi bi-person-badge text-4xl text-gray-600 mr-2"></i>
+              <div>
+                <h2 class="">Explore the 2025 Season Drivers</h2>
+              </div>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+              {topDrivers.map((driver) => (
+                <DriverCard driver={driver} year="2025" />
+              ))}
+            </div>
+            <div class="mt-8 text-center">
+              <a
+                href="/seasons/2025/drivers"
+                class="bg-red-600 hover:bg-red-700 text-white py-2 px-4 rounded"
+              >
+                View All 2025 Drivers
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Upcoming Races Section -->
+      <section class="py-5">
+        <div class="mx-auto px-4">
+          <div
+            class="bg-gray-100 border border-gray-300 rounded p-6"
+          >
+            <div class="flex gap-2 mb-4">
+              <i class="bi bi-flag-fill text-4xl text-gray-600 mr-2"></i>
+              <div>
+                <h2 class="">Upcoming Races</h2>
+              </div>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+              {upcomingRaces.map((race) => (
+                <RaceCard race={race} />
+              ))}
+            </div>
+            <div class="mt-8 text-center">
+              <a
+                href="/seasons/2025/races"
+                class="bg-red-600 hover:bg-red-700 text-white py-2 px-4 rounded"
+              >
+                View  2025 Races
+              </a>
+            </div>
           </div>
         </div>
       </section>
