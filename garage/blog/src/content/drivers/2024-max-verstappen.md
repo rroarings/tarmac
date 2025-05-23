@@ -6,7 +6,7 @@ team: "Red Bull Racing"
 nationality: "Dutch"
 age: 26
 season: "2024"
-championships: 3
+championships: 4
 raceWins: 54
 podiums: 98
 points: 437
