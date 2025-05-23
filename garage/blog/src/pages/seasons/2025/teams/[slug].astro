@@ -1,8 +1,8 @@
 ---
-import BaseHead from "../../../../../components/BaseHead.astro";
-import Header from "../../../../../components/Header.astro";
-import Footer from "../../../../../components/Footer.astro";
-import { SITE_TITLE } from "../../../../../consts";
+import BaseHead from "../../../../components/BaseHead.astro";
+import Header from "../../../../components/Header.astro";
+import Footer from "../../../../components/Footer.astro";
+import { SITE_TITLE } from "../../../../consts";
 import { getCollection } from "astro:content";
 
 export async function getStaticPaths() {
@@ -17,7 +17,9 @@ export async function getStaticPaths() {
 }
 
 const { team } = Astro.props;
-const { Content } = await team.render();
+// Import the Content component separately 
+import { render } from 'astro:content';
+const { Content, headings } = await render(team);
 ---
 
 <!doctype html>
