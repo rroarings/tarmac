@@ -20,7 +20,7 @@ The Miami Grand Prix returns for its fifth appearance on the Formula 1 calendar,
 
 The Miami circuit offers a unique challenge with its mix of tight, technical sections and high-speed straights. The 19-turn track has proven to provide exciting racing since its introduction to the calendar.
 
-### Things to Watch For:
+### Things to Watch For
 
 - Can McLaren continue their strong form after recent podium finishes?
 - Lewis Hamilton returns to Miami where he has enjoyed strong results in the past
