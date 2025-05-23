@@ -29,13 +29,13 @@ const topDrivers = drivers
   .sort((a, b) => b.data.points - a.data.points)
   .slice(0, 3);
 
-// Get upcoming races
-const allRaces = await getCollection("races", ({ data }) => {
+// Get upcoming 2025 races
+const races2025 = await getCollection("races", ({ data }) => {
   return data.season === "2025" && data.completed === false;
 });
 
 // Sort races by date (earliest first) and take the next 3
-const upcomingRaces = allRaces
+const upcomingRaces2025 = races2025
   .sort((a, b) => new Date(a.data.date).getTime() - new Date(b.data.date).getTime())
   .slice(0, 3);
 
