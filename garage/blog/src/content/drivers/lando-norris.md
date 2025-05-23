@@ -9,7 +9,7 @@ season: "2025"
 championships: 0
 raceWins: 4
 podiums: 14
-points: 374
+points: 133
 profileImage: "/images/drivers/norris.jpg"
 ---
 
