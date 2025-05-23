@@ -1,7 +1,7 @@
 ---
 // Define the props that this component accepts
 import type { CollectionEntry } from "astro:content";
-import FormattedDate from './FormattedDate.astro';
+import FormattedDate from "./FormattedDate.astro";
 
 interface Props {
   race: CollectionEntry<"races">;
@@ -10,8 +10,8 @@ interface Props {
 const { race } = Astro.props;
 
 // Extract a slug from the file path (last part without extension)
-const parts = race.id.split('/');
-const raceSlug = parts[parts.length - 1].replace(/\.(md|mdx)$/, '');
+const parts = race.id.split("/");
+const raceSlug = parts[parts.length - 1].replace(/\.(md|mdx)$/, "");
 ---
 
 <a href={`/seasons/${race.data.season}/races/${raceSlug}`} class="block h-full">
@@ -34,25 +34,31 @@ const raceSlug = parts[parts.length - 1].replace(/\.(md|mdx)$/, '');
           <span>Date:</span>
           <span><FormattedDate date={race.data.date} /></span>
         </div>
-        
-        {race.data.completed && (
-          <>
-            <div class="flex justify-between items-center mb-1">
-              <span>Winner:</span>
-              <span>{race.data.winner}</span>
+
+        {
+          race.data.completed && (
+            <>
+              <div class="flex justify-between items-center mb-1">
+                <span>Winner:</span>
+                <span>{race.data.winner}</span>
+              </div>
+              <div class="flex justify-between items-center">
+                <span>Fastest Lap:</span>
+                <span>{race.data.fastestLapTime}</span>
+              </div>
+            </>
+          )
+        }
+
+        {
+          !race.data.completed && (
+            <div class="mt-2">
+              <span class="px-2 py-1 rounded bg-gray-200 text-gray-700 text-xs">
+                Upcoming
+              </span>
             </div>
-            <div class="flex justify-between items-center">
-              <span>Fastest Lap:</span>
-              <span>{race.data.fastestLapTime}</span>
-            </div>
-          </>
-        )}
-        
-        {!race.data.completed && (
-          <div class="mt-2">
-            <span class="px-2 py-1 rounded bg-gray-200 text-gray-700 text-xs">Upcoming</span>
-          </div>
-        )}
+          )
+        }
       </div>
     </div>
   </div>
