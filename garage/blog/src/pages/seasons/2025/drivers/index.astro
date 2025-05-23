@@ -11,12 +11,9 @@ const drivers = await getCollection("drivers", ({ data }) => {
   return data.season === "2025";
 });
 
-// Sort drivers by championship wins (desc), then by race wins (desc)
+// Sort drivers by points (highest to lowest)
 const sortedDrivers = drivers.sort((a, b) => {
-  if (b.data.championships !== a.data.championships) {
-    return b.data.championships - a.data.championships;
-  }
-  return b.data.raceWins - a.data.raceWins;
+  return b.data.points - a.data.points; // Sort only by points
 });
 ---
 
