@@ -2,6 +2,7 @@
 import BaseHead from "../../../components/BaseHead.astro";
 import Header from "../../../components/Header.astro";
 import Footer from "../../../components/Footer.astro";
+import RaceCalendar from "../../../components/RaceCalendar.astro";
 import { SITE_TITLE } from "../../../consts";
 ---
 
@@ -29,57 +30,13 @@ import { SITE_TITLE } from "../../../consts";
       <!-- Race Calendar -->
       <section class="py-6">
         <div class="container mx-auto px-4">
-          <div class="bg-gray-100 border border-gray-300 rounded p-6">
-            <div class="flex items-center mb-6">
-              <i class="bi bi-calendar3 text-3xl text-gray-700 mr-4"></i>
-              <h2 class="text-2xl">2025 Race Calendar</h2>
-            </div>
-
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
-              <!-- Sample races - you can expand this -->
-              <div class="bg-white border border-gray-300 rounded p-4">
-                <h3 class="text-lg">Bahrain Grand Prix</h3>
-                <p class="text-gray-600">March 16, 2025</p>
-                <p class="text-sm text-gray-500">
-                  Bahrain International Circuit
-                </p>
-              </div>
-
-              <div class="bg-white border border-gray-300 rounded p-4">
-                <h3 class="text-lg">Saudi Arabian Grand Prix</h3>
-                <p class="text-gray-600">March 23, 2025</p>
-                <p class="text-sm text-gray-500">Jeddah Corniche Circuit</p>
-              </div>
-
-              <div class="bg-white border border-gray-300 rounded p-4">
-                <h3 class="text-lg">Australian Grand Prix</h3>
-                <p class="text-gray-600">April 6, 2025</p>
-                <p class="text-sm text-gray-500">Albert Park Circuit</p>
-              </div>
-
-              <div class="bg-white border border-gray-300 rounded p-4">
-                <h3 class="text-lg">Chinese Grand Prix</h3>
-                <p class="text-gray-600">April 20, 2025</p>
-                <p class="text-sm text-gray-500">
-                  Shanghai International Circuit
-                </p>
-              </div>
-
-              <div class="bg-white border border-gray-300 rounded p-4">
-                <h3 class="text-lg">Miami Grand Prix</h3>
-                <p class="text-gray-600">May 4, 2025</p>
-                <p class="text-sm text-gray-500">
-                  Miami International Autodrome
-                </p>
-              </div>
-
-              <div class="bg-white border border-gray-300 rounded p-4">
-                <h3 class="text-lg">Monaco Grand Prix</h3>
-                <p class="text-gray-600">May 25, 2025</p>
-                <p class="text-sm text-gray-500">Circuit de Monaco</p>
-              </div>
-            </div>
+          <div class="flex justify-between items-center mb-6">
+            <h2 class="text-2xl font-bold">Race Calendar</h2>
+            <a href="/seasons/2025/races" class="bg-red-600 hover:bg-red-700 text-white font-bold py-2 px-4 rounded">
+              View All Races
+            </a>
           </div>
+          <RaceCalendar season="2025" />
         </div>
       </section>
 
