@@ -41,7 +41,6 @@ body {
   background-size: 100% 600px;
   word-wrap: break-word;
   overflow-wrap: break-word;
-  color: rgb(var(--gray-dark));
   font-size: 20px;
   line-height: 1.7;
 }
@@ -57,28 +56,9 @@ h3,
 h4,
 h5,
 h6 {
-  color: rgb(var(--black));
   line-height: 1.2;
 }
-h1 {
-}
-h2 {
-}
-h3 {
-}
-h4 {
-}
-h5 {
-}
-strong,
-b {
-}
-a {
-}
-a:hover {
-}
-p {
-}
+
 .prose p {
   margin-bottom: 2em;
 }
@@ -112,7 +92,7 @@ pre > code {
 blockquote {
   border-left: 4px solid var(--accent);
   padding: 0 0 0 20px;
-  margin: 0px;
+  margin: 0;
   font-size: 1.333em;
 }
 hr {
