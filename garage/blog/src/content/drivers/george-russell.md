@@ -9,7 +9,7 @@ season: "2025"
 championships: 0
 raceWins: 2
 podiums: 13
-points: 245
+points: 99
 profileImage: "/images/drivers/russell.jpg"
 ---
 
