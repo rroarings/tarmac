@@ -20,7 +20,10 @@ const sortedDrivers = drivers.sort((a, b) => {
 <!doctype html>
 <html lang="en">
   <head>
-    <BaseHead title={`2025 F1 Drivers | ${SITE_TITLE}`} description="2025 Formula 1 driver profiles and statistics" />
+    <BaseHead
+      title={`2025 F1 Drivers | ${SITE_TITLE}`}
+      description="2025 Formula 1 driver profiles and statistics"
+    />
   </head>
   <body>
     <Header />
@@ -29,7 +32,9 @@ const sortedDrivers = drivers.sort((a, b) => {
       <section class="py-16 text-center">
         <div class="container mx-auto px-4">
           <h1 class="text-4xl font-bold mb-4">2025 Formula 1 Drivers</h1>
-          <p class="text-lg text-gray-700">Complete driver profiles and season statistics</p>
+          <p class="text-lg text-gray-700">
+            Complete driver profiles and season statistics
+          </p>
         </div>
       </section>
 
@@ -37,16 +42,17 @@ const sortedDrivers = drivers.sort((a, b) => {
       <section class="py-12">
         <div class="container mx-auto px-4">
           <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {sortedDrivers.map((driver) => (
-              <DriverCard driver={driver} />
-            ))}
+            {sortedDrivers.map((driver) => <DriverCard driver={driver} />)}
           </div>
         </div>
       </section>
 
       <!-- Back Link -->
       <section class="py-8 text-center">
-        <a href="/seasons/2025" class="bg-gray-600 hover:bg-gray-700 text-white font-bold py-2 px-4 rounded">
+        <a
+          href="/seasons/2025"
+          class="bg-gray-600 hover:bg-gray-700 text-white font-bold py-2 px-4 rounded"
+        >
           ← Back to 2025 Season
         </a>
       </section>
