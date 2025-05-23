@@ -12,8 +12,8 @@ export async function getStaticPaths() {
   });
 
   return races.map((race) => {
-    const parts = race.id.split('/');
-    const slug = parts[parts.length - 1].replace(/\.(md|mdx)$/, '');
+    const parts = race.id.split("/");
+    const slug = parts[parts.length - 1].replace(/\.(md|mdx)$/, "");
     return {
       params: { slug },
       props: { race },
@@ -41,7 +41,9 @@ const { Content } = await render(race);
       <!-- Race Header - Left aligned without background -->
       <section class="race-header">
         <div class="container mx-auto px-4">
-          <p class="text-gray-500 mb-2">Formula 1 • 2024 Season • Race #{race.data.raceNumber}</p>
+          <p class="text-gray-500 mb-2">
+            Formula 1 • 2024 Season • Race #{race.data.raceNumber}
+          </p>
           <h1 class="text-4xl font-bold mb-2">{race.data.trackName}</h1>
           <p class="text-gray-700">
             <FormattedDate date={race.data.date} /> • {race.data.location}
@@ -79,7 +81,8 @@ const { Content } = await render(race);
                 <ul class="space-y-3">
                   <li class="flex justify-between">
                     <span class="">Date:</span>
-                    <span class=""><FormattedDate date={race.data.date} /></span>
+                    <span class=""><FormattedDate date={race.data.date} /></span
+                    >
                   </li>
                   <li class="flex justify-between">
                     <span class="">Location:</span>
@@ -91,28 +94,31 @@ const { Content } = await render(race);
                   </li>
                 </ul>
               </div>
-              
-              {race.data.completed && (
-                <div>
-                  <ul class="space-y-3">
-                    <li class="flex justify-between">
-                      <span class="text-gray-600">Winner:</span>
-                      <span class="font-medium">{race.data.winner}</span>
-                    </li>
-                    <li class="flex justify-between">
-                      <span class="text-gray-600">Winning Team:</span>
-                      <span class="font-medium">{race.data.winningTeam}</span>
-                    </li>
-                    <li class="flex justify-between">
-                      <span class="text-gray-600">Fastest Lap:</span>
-                      <span class="font-medium">
-                        {race.data.fastestLapTime}
-                        {race.data.fastestLapDriver && ` (${race.data.fastestLapDriver})`}
-                      </span>
-                    </li>
-                  </ul>
-                </div>
-              )}
+
+              {
+                race.data.completed && (
+                  <div>
+                    <ul class="space-y-3">
+                      <li class="flex justify-between">
+                        <span class="text-gray-600">Winner:</span>
+                        <span class="font-medium">{race.data.winner}</span>
+                      </li>
+                      <li class="flex justify-between">
+                        <span class="text-gray-600">Winning Team:</span>
+                        <span class="font-medium">{race.data.winningTeam}</span>
+                      </li>
+                      <li class="flex justify-between">
+                        <span class="text-gray-600">Fastest Lap:</span>
+                        <span class="font-medium">
+                          {race.data.fastestLapTime}
+                          {race.data.fastestLapDriver &&
+                            ` (${race.data.fastestLapDriver})`}
+                        </span>
+                      </li>
+                    </ul>
+                  </div>
+                )
+              }
             </div>
           </div>
 
