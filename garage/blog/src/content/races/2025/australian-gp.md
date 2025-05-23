@@ -3,12 +3,12 @@ trackName: "Albert Park Circuit"
 location: "Melbourne, Australia"
 date: 2025-03-16
 season: "2025"
-winner: "Oscar Piastri"
+winner: "Lando Norris"
 winningTeam: "McLaren"
-fastestLapTime: "1:19.813"
+fastestLapTime: "1:42.06"
 fastestLapDriver: "Lando Norris"
 trackImage: "/blog-placeholder-5.jpg"
-raceNumber: 3
+raceNumber: 1
 completed: true
 ---
 
