@@ -26,7 +26,7 @@ const sortedRaces = races.sort((a, b) => a.data.raceNumber - b.data.raceNumber);
     <h2 class="text-2xl">{season} Race Calendar</h2>
   </div>
 
-  <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+  <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-4">
     {sortedRaces.map((race) => <RaceCard race={race} />)}
   </div>
 </div>
