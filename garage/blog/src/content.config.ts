@@ -15,4 +15,22 @@ const blog = defineCollection({
   }),
 });
 
-export const collections = { blog };
+// F1 Drivers Collection
+const drivers = defineCollection({
+  loader: glob({ base: "./src/content/drivers", pattern: "**/*.{md,mdx}" }),
+  schema: z.object({
+    firstName: z.string(),
+    lastName: z.string(),
+    number: z.number(),
+    team: z.string(),
+    nationality: z.string(),
+    age: z.number(),
+    profileImage: z.string().optional(),
+    season: z.enum(["2024", "2025"]),
+    championships: z.number().default(0),
+    raceWins: z.number().default(0),
+    podiums: z.number().default(0),
+    points: z.number().default(0),
+  }),
+});
+
