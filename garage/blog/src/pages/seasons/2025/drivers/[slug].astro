@@ -81,48 +81,80 @@ const { Content, headings } = await render(driver);
       <section class="py-12 bg-gradient-to-b from-gray-50 to-white">
         <div class="container mx-auto px-4">
           <h2 class="text-3xl font-bold mb-10 text-center relative">
-            <span class="inline-block  pb-2">Career Statistics</span>
+            <span class="inline-block pb-2">Career Statistics</span>
           </h2>
-          
+
           <div class="flex flex-wrap justify-center">
             <div class="w-full max-w-4xl mx-auto">
               <div class="flex flex-wrap -mx-2">
                 <!-- Championships -->
                 <div class="w-1/2 md:w-1/4 px-2 mb-6">
-                  <div class="border border-gray-300 rounded-lg transition duration-300 hover:border-gray-400">
+                  <div
+                    class="border border-gray-300 rounded-lg transition duration-300 hover:border-gray-400"
+                  >
                     <div class="p-6 text-center">
-                      <div class="text-4xl font-bold mb-1">{driver.data.championships}</div>
-                      <div class="text-sm text-gray-600 uppercase tracking-wide">Championships</div>
+                      <div class="text-4xl font-bold mb-1">
+                        {driver.data.championships}
+                      </div>
+                      <div
+                        class="text-sm text-gray-600 uppercase tracking-wide"
+                      >
+                        Championships
+                      </div>
                     </div>
                   </div>
                 </div>
-                
+
                 <!-- Race Wins -->
                 <div class="w-1/2 md:w-1/4 px-2 mb-6">
-                  <div class="border border-gray-300 rounded-lg transition duration-300 hover:border-gray-400">
+                  <div
+                    class="border border-gray-300 rounded-lg transition duration-300 hover:border-gray-400"
+                  >
                     <div class="p-6 text-center">
-                      <div class="text-4xl font-bold mb-1">{driver.data.raceWins}</div>
-                      <div class="text-sm text-gray-600 uppercase tracking-wide">Race Wins</div>
+                      <div class="text-4xl font-bold mb-1">
+                        {driver.data.raceWins}
+                      </div>
+                      <div
+                        class="text-sm text-gray-600 uppercase tracking-wide"
+                      >
+                        Race Wins
+                      </div>
                     </div>
                   </div>
                 </div>
-                
+
                 <!-- Podiums -->
                 <div class="w-1/2 md:w-1/4 px-2 mb-6">
-                  <div class="border border-gray-300 rounded-lg transition duration-300 hover:border-gray-400">
+                  <div
+                    class="border border-gray-300 rounded-lg transition duration-300 hover:border-gray-400"
+                  >
                     <div class="p-6 text-center">
-                      <div class="text-4xl font-bold mb-1">{driver.data.podiums}</div>
-                      <div class="text-sm text-gray-600 uppercase tracking-wide">Podiums</div>
+                      <div class="text-4xl font-bold mb-1">
+                        {driver.data.podiums}
+                      </div>
+                      <div
+                        class="text-sm text-gray-600 uppercase tracking-wide"
+                      >
+                        Podiums
+                      </div>
                     </div>
                   </div>
                 </div>
-                
+
                 <!-- Points -->
                 <div class="w-1/2 md:w-1/4 px-2 mb-6">
-                  <div class="border border-gray-300 rounded-lg transition duration-300 hover:border-gray-400">
+                  <div
+                    class="border border-gray-300 rounded-lg transition duration-300 hover:border-gray-400"
+                  >
                     <div class="p-6 text-center">
-                      <div class="text-4xl font-bold mb-1">{driver.data.points}</div>
-                      <div class="text-sm text-gray-600 uppercase tracking-wide">Career Points</div>
+                      <div class="text-4xl font-bold mb-1">
+                        {driver.data.points}
+                      </div>
+                      <div
+                        class="text-sm text-gray-600 uppercase tracking-wide"
+                      >
+                        Career Points
+                      </div>
                     </div>
                   </div>
                 </div>
