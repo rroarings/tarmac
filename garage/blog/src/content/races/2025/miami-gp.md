@@ -8,7 +8,7 @@ winningTeam: ""
 fastestLapTime: ""
 fastestLapDriver: ""
 trackImage: "/blog-placeholder-2.jpg"
-raceNumber: 8
+raceNumber: 6
 completed: true
 ---
 
