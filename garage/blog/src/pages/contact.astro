@@ -1,0 +1,100 @@
+---
+import BaseHead from "../components/BaseHead.astro"
+import Header from "../components/Header.astro"
+import Footer from "../components/Footer.astro"
+import "../styles/global.css"
+
+var SITE_TITLE = "Contact Us"
+var SITE_DESCRIPTION = "Send us a message or connect with us on social media."
+---
+
+<html lang="en">
+  <head>
+    <BaseHead
+      title={SITE_TITLE}
+      description={SITE_DESCRIPTION}
+    />
+  </head>
+  <body class="bg-gray-50 text-gray-800">
+    <Header />
+    <main class="max-w-4xl mx-auto py-12 px-6">
+      <h1 class="font-bold text-center mb-8">Contact Us</h1>
+      <p class="text-center mb-6">Connect with us on your favorite social platforms.</p>
+
+      <div class="space-y-4">
+        <div
+          class="border border-gray-300 rounded-lg p-6 flex gap-4 hover:bg-gray-800 hover:text-gray-300 transition ease-in-out group"
+        >
+          <i class="bi bi-github text-3xl"></i>
+          <div class="flex-1">
+            <p class="">GitHub</p>
+            <p class="text-base">
+              Our project is proudly hosted on GitHub, where you can explore the code behind our
+              Formula 1 blog and personal projects. Dive into the repository to see how we bring
+              race updates, behind-the-scenes stories, and personal insights to life. Join us on
+              GitHub to contribute, learn, or simply follow along as we continue to improve and
+              expand the platform.
+            </p>
+            <a
+              href="#"
+              class="text-indigo-600 hover:underline group-hover:text-indigo-300 group-hover:underline-offset-8 mt-2 block"
+              >Visit our GitHub →</a
+            >
+          </div>
+        </div>
+        <div
+          class="border border-gray-300 rounded-lg p-6 flex gap-4 hover:bg-gray-800 hover:text-gray-300 transition group"
+        >
+          <i class="bi bi-linkedin text-3xl"></i>
+          <div class="flex-1">
+            <p class="">LinkedIn</p>
+            <p class="text-base">Find me on LinkedIn.</p>
+            <a
+              href="#"
+              class="text-indigo-600 hover:underline group-hover:text-indigo-300 group-hover:underline-offset-8 mt-2 block"
+              >Visit our LinkedIn →</a
+            >
+          </div>
+        </div>
+        <div
+          class="border border-gray-300 rounded-lg p-6 flex gap-4 hover:bg-gray-800 hover:text-gray-300 transition group"
+        >
+          <i class="bi bi-twitter text-3xl"></i>
+          <div class="flex-1">
+            <p class="">Twitter</p>
+            <p class="text-base">
+              Lorem commodo duis ut nisi anim dolore eiusmod et esse laborum nulla sit. Lorem sit
+              cillum esse duis incididunt excepteur duis sint laborum. Amet cillum cupidatat non et
+              nulla occaecat ipsum esse enim nisi ea sint labore mollit.
+            </p>
+            <a
+              href="#"
+              class="text-indigo-600 hover:underline group-hover:text-indigo-300 group-hover:underline-offset-8 mt-2 block"
+              >Visit our X →</a
+            >
+          </div>
+        </div>
+        <div
+          class="border border-gray-300 rounded-lg p-6 flex gap-4 hover:bg-gray-800 hover:text-gray-300 transition group"
+        >
+          <i class="bi bi-youtube text-3xl"></i>
+          <div class="flex-1">
+            <p class="">YouTube</p>
+            <p class="text-base">
+              Lorem commodo duis ut nisi anim dolore eiusmod et esse laborum nulla sit. Lorem sit
+              cillum esse duis incididunt excepteur duis sint laborum. Amet cillum cupidatat non et
+              nulla occaecat ipsum esse enim nisi ea sint labore mollit.
+            </p>
+            <a
+              href="#"
+              class="text-indigo-600 hover:underline group-hover:text-indigo-300 group-hover:underline-offset-8 mt-2 block"
+              >Visit our YouTube →</a
+            >
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <Footer />
+  </body>
+</html>
