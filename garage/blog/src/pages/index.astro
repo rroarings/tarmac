@@ -62,16 +62,22 @@ const latestPosts = formattedPosts.slice(0, 3);
               </div>
             </div>
             <ul class="grid grid-cols-1 md:grid-cols-3 gap-4">
-              {latestPosts.map((post) => (
-                <li class="bg-white border border-gray-300 rounded overflow-hidden">
-                  <a href={`/blog/${post.slug}`} class="block">
-                    <img src={post.heroImage || '/public/blog-placeholder-1.jpg'} alt={post.title} class="w-full h-48 object-cover" />
-                    <div class="p-4">
-                      <h5 class="">{post.title}</h5>
-                    </div>
-                  </a>
-                </li>
-              ))}
+              {
+                latestPosts.map((post) => (
+                  <li class="bg-white border border-gray-300 rounded overflow-hidden">
+                    <a href={`/blog/${post.slug}`} class="block">
+                      <img
+                        src={post.heroImage || "/public/blog-placeholder-1.jpg"}
+                        alt={post.title}
+                        class="w-full h-48 object-cover"
+                      />
+                      <div class="p-4">
+                        <h5 class="">{post.title}</h5>
+                      </div>
+                    </a>
+                  </li>
+                ))
+              }
             </ul>
           </div>
         </div>
