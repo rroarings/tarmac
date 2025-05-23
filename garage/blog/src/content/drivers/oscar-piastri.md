@@ -9,7 +9,7 @@ season: "2025"
 championships: 0
 raceWins: 2
 podiums: 7
-points: 164
+points: 146
 profileImage: "/images/drivers/piastri.jpg"
 ---
 
