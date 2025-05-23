@@ -1,0 +1,99 @@
+---
+import BaseHead from "../../components/BaseHead.astro";
+import Header from "../../components/Header.astro";
+import Footer from "../../components/Footer.astro";
+import { SITE_TITLE } from "../../consts";
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <BaseHead title={`F1 Seasons | ${SITE_TITLE}`} description="Formula 1 seasons coverage and archives" />
+  </head>
+  <body>
+    <Header />
+    <main>
+      <!-- Seasons Overview Header -->
+      <section class="py-16 text-center">
+        <div class="mx-auto">
+          <h1 class="text-4xl font-bold mb-4">Formula 1 Seasons</h1>
+          <p class="text-lg text-gray-700">Comprehensive coverage of F1 seasons, drivers, and teams</p>
+        </div>
+      </section>
+
+      <!-- Seasons Grid -->
+      <section class="py-8 mx-auto">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+          <!-- 2025 Season -->
+          <div class="bg-gray-100 border border-gray-300 rounded shadow-md overflow-hidden flex flex-col">
+            <img src="/blog-placeholder-1.jpg" alt="2025 F1 Season" class="w-full h-48 object-cover" />
+            <div class="p-6 flex flex-col flex-grow">
+              <h2 class="text-2xl font-bold mb-2">2025 Formula 1 Season</h2>
+              <p class="text-gray-700 mb-4 flex-grow">The current Formula 1 season with the latest races, driver standings, and championship battles.</p>
+              <div class="space-y-2">
+                <a href="/seasons/2025" class="block bg-red-600 hover:bg-red-700 text-white py-2 px-4 rounded text-center">
+                  View 2025 Season
+                </a>
+                <div class="flex gap-2">
+                  <a href="/seasons/2025/drivers" class="flex-1 bg-gray-600 hover:bg-gray-700 text-white py-2 px-4 rounded text-center text-sm">
+                    Drivers
+                  </a>
+                  <a href="/seasons/2025/teams" class="flex-1 bg-gray-600 hover:bg-gray-700 text-white py-2 px-4 rounded text-center text-sm">
+                    Teams
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- 2024 Season -->
+          <div class="bg-gray-100 border border-gray-300 rounded shadow-md overflow-hidden">
+            <img src="/blog-placeholder-2.jpg" alt="2024 F1 Season" class="w-full h-48 object-cover" />
+            <div class="p-6">
+              <h2 class="text-2xl font-bold mb-2">2024 Formula 1 Season</h2>
+              <p class="text-gray-700 mb-4">Complete coverage of the 2024 season including race results, championship standings, and season highlights.</p>
+              <div class="space-y-2">
+                <a href="/seasons/2024" class="block bg-red-600 hover:bg-red-700 text-white py-2 px-4 rounded text-center">
+                  View 2024 Season
+                </a>
+                <div class="flex gap-2">
+                  <a href="/seasons/2024/drivers" class="flex-1 bg-gray-600 hover:bg-gray-700 text-white py-2 px-4 rounded text-center text-sm">
+                    Drivers
+                  </a>
+                  <a href="/seasons/2024/teams" class="flex-1 bg-gray-600 hover:bg-gray-700 text-white py-2 px-4 rounded text-center text-sm">
+                    Teams
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Features Section -->
+      <section class="py-12 bg-gray-100">
+        <div class="mx-auto px-4">
+          <h2 class="text-3xl font-bold text-center mb-8">What You'll Find</h2>
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+            <div class="text-center">
+              <i class="bi bi-calendar3 text-4xl text-gray-700 mb-4"></i>
+              <h3 class="text-xl font-bold mb-2">Race Calendars</h3>
+              <p class="text-gray-600">Complete schedules with dates, circuits, and race information</p>
+            </div>
+            <div class="text-center">
+              <i class="bi bi-person-badge text-4xl text-gray-700 mb-4"></i>
+              <h3 class="text-xl font-bold mb-2">Driver Profiles</h3>
+              <p class="text-gray-600">In-depth coverage of all Formula 1 drivers and their statistics</p>
+            </div>
+            <div class="text-center">
+              <i class="bi bi-flag text-4xl text-gray-700 mb-4"></i>
+              <h3 class="text-xl font-bold mb-2">Team Analysis</h3>
+              <p class="text-gray-600">Constructor teams, their cars, and performance insights</p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <Footer />
+  </body>
+</html>
