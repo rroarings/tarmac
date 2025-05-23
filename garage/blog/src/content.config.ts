@@ -53,4 +53,22 @@ const teams = defineCollection({
   }),
 });
 
-export const collections = { blog, drivers, teams };
+// F1 Races Collection
+const races = defineCollection({
+  loader: glob({ base: "./src/content/races", pattern: "**/*.{md,mdx}" }),
+  schema: z.object({
+    trackName: z.string(),
+    location: z.string(),
+    date: z.coerce.date(),
+    season: z.enum(["2024", "2025"]),
+    winner: z.string(),
+    winningTeam: z.string(),
+    fastestLapTime: z.string(),
+    fastestLapDriver: z.string().optional(),
+    trackImage: z.string().optional(),
+    raceNumber: z.number(),
+    completed: z.boolean().default(false),
+  }),
+});
+
+export const collections = { blog, drivers, teams, races };
