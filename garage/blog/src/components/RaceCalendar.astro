@@ -1,7 +1,7 @@
 ---
 // Import necessary modules
-import { getCollection } from 'astro:content';
-import RaceCard from './RaceCard.astro';
+import { getCollection } from "astro:content";
+import RaceCard from "./RaceCard.astro";
 
 // Define props
 interface Props {
@@ -12,7 +12,7 @@ interface Props {
 const { season } = Astro.props;
 
 // Fetch races for the specified season
-const races = await getCollection('races', ({ data }) => {
+const races = await getCollection("races", ({ data }) => {
   return data.season === season;
 });
 
@@ -27,8 +27,6 @@ const sortedRaces = races.sort((a, b) => a.data.raceNumber - b.data.raceNumber);
   </div>
 
   <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-    {sortedRaces.map((race) => (
-      <RaceCard race={race} />
-    ))}
+    {sortedRaces.map((race) => <RaceCard race={race} />)}
   </div>
 </div>
