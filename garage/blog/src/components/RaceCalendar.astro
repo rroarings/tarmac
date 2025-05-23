@@ -1,0 +1,34 @@
+---
+// Import necessary modules
+import { getCollection } from 'astro:content';
+import RaceCard from './RaceCard.astro';
+
+// Define props
+interface Props {
+  season: string;
+}
+
+// Get props
+const { season } = Astro.props;
+
+// Fetch races for the specified season
+const races = await getCollection('races', ({ data }) => {
+  return data.season === season;
+});
+
+// Sort races by race number
+const sortedRaces = races.sort((a, b) => a.data.raceNumber - b.data.raceNumber);
+---
+
+<div class="bg-gray-100 border border-gray-300 rounded p-6">
+  <div class="flex items-center mb-6">
+    <i class="bi bi-calendar3 text-3xl text-gray-700 mr-4"></i>
+    <h2 class="text-2xl">{season} Race Calendar</h2>
+  </div>
+
+  <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+    {sortedRaces.map((race) => (
+      <RaceCard race={race} />
+    ))}
+  </div>
+</div>
