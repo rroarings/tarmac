@@ -134,7 +134,7 @@ const upcomingRaces = allRaces
         </div>
       </section>
 
-      <!-- Upcoming Races Section -->
+      <!-- Upcoming 2025 Races Section -->
       <section class="py-5">
         <div class="mx-auto px-4">
           <div
@@ -143,11 +143,11 @@ const upcomingRaces = allRaces
             <div class="flex gap-2 mb-4">
               <i class="bi bi-flag-fill text-4xl text-gray-600 mr-2"></i>
               <div>
-                <h2 class="">Upcoming Races</h2>
+                <h2 class="">Upcoming 2025 Races</h2>
               </div>
             </div>
             <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
-              {upcomingRaces.map((race) => (
+              {upcomingRaces2025.map((race) => (
                 <RaceCard race={race} />
               ))}
             </div>
@@ -156,6 +156,12 @@ const upcomingRaces = allRaces
                 href="/seasons/2025/races"
                 class="bg-red-600 hover:bg-red-700 text-white py-2 px-4 rounded"
               >
+                View All 2025 Races
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
 
       <!-- Recent 2024 Races Section -->
       <section class="py-5">
