@@ -9,7 +9,7 @@ season: "2025"
 championships: 4
 raceWins: 62
 podiums: 107
-points: 575
+points: 124
 profileImage: "/images/drivers/verstappen.jpg"
 ---
 
