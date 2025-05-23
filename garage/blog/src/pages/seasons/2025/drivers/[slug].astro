@@ -1,0 +1,122 @@
+---
+import BaseHead from "../../../../../components/BaseHead.astro";
+import Header from "../../../../../components/Header.astro";
+import Footer from "../../../../../components/Footer.astro";
+import { SITE_TITLE } from "../../../../../consts";
+import { getCollection, getEntry } from "astro:content";
+
+export async function getStaticPaths() {
+  const drivers = await getCollection("drivers", ({ data }) => {
+    return data.season === "2025";
+  });
+  
+  return drivers.map((driver) => ({
+    params: { slug: driver.id },
+    props: { driver },
+  }));
+}
+
+const { driver } = Astro.props;
+const { Content } = await driver.render();
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <BaseHead 
+      title={`${driver.data.firstName} ${driver.data.lastName} | ${SITE_TITLE}`} 
+      description={`2025 F1 driver profile for ${driver.data.firstName} ${driver.data.lastName} driving for ${driver.data.team}`} 
+    />
+  </head>
+  <body>
+    <Header />
+    <main>
+      <!-- Driver Profile Header -->
+      <section class="py-16 bg-gray-50">
+        <div class="container mx-auto px-4">
+          <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
+            <div>
+              <img 
+                src={driver.data.profileImage || "/blog-placeholder-1.jpg"} 
+                alt={`${driver.data.firstName} ${driver.data.lastName}`} 
+                class="w-full max-w-md mx-auto rounded-lg shadow-lg" 
+              />
+            </div>
+            <div>
+              <h1 class="text-4xl font-bold mb-4">
+                {driver.data.firstName} <span class="text-blue-600">{driver.data.lastName}</span>
+              </h1>
+              <div class="space-y-3 text-lg">
+                <div class="flex items-center">
+                  <span class="font-semibold w-32">Number:</span>
+                  <span class="bg-blue-600 text-white px-3 py-1 rounded font-bold">#{driver.data.number}</span>
+                </div>
+                <div class="flex items-center">
+                  <span class="font-semibold w-32">Team:</span>
+                  <span class="text-gray-700">{driver.data.team}</span>
+                </div>
+                <div class="flex items-center">
+                  <span class="font-semibold w-32">Nationality:</span>
+                  <span class="text-gray-700">{driver.data.nationality}</span>
+                </div>
+                <div class="flex items-center">
+                  <span class="font-semibold w-32">Age:</span>
+                  <span class="text-gray-700">{driver.data.age}</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Driver Statistics -->
+      <section class="py-12">
+        <div class="container mx-auto px-4">
+          <h2 class="text-3xl font-bold mb-8 text-center">Career Statistics</h2>
+          <div class="grid grid-cols-2 md:grid-cols-4 gap-6">
+            <div class="bg-white border border-gray-300 rounded shadow-md p-6 text-center">
+              <div class="text-3xl font-bold text-yellow-600">{driver.data.championships}</div>
+              <div class="text-gray-600">Championships</div>
+            </div>
+            <div class="bg-white border border-gray-300 rounded shadow-md p-6 text-center">
+              <div class="text-3xl font-bold text-green-600">{driver.data.raceWins}</div>
+              <div class="text-gray-600">Race Wins</div>
+            </div>
+            <div class="bg-white border border-gray-300 rounded shadow-md p-6 text-center">
+              <div class="text-3xl font-bold text-blue-600">{driver.data.podiums}</div>
+              <div class="text-gray-600">Podiums</div>
+            </div>
+            <div class="bg-white border border-gray-300 rounded shadow-md p-6 text-center">
+              <div class="text-3xl font-bold text-purple-600">{driver.data.points}</div>
+              <div class="text-gray-600">Career Points</div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Driver Biography -->
+      <section class="py-12 bg-gray-50">
+        <div class="container mx-auto px-4">
+          <div class="max-w-4xl mx-auto">
+            <div class="prose prose-lg max-w-none">
+              <Content />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Back Links -->
+      <section class="py-8 text-center">
+        <div class="space-x-4">
+          <a href="/seasons/2025/drivers" class="bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
+            ← Back to 2025 Drivers
+          </a>
+          <a href="/seasons/2025" class="bg-gray-600 hover:bg-gray-700 text-white font-bold py-2 px-4 rounded">
+            ← Back to 2025 Season
+          </a>
+        </div>
+      </section>
+    </main>
+    <Footer />
+  </body>
+</html>
