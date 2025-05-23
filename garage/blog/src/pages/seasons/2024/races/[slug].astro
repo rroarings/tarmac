@@ -1,0 +1,146 @@
+---
+import { getCollection } from "astro:content";
+import BaseHead from "../../../../components/BaseHead.astro";
+import Header from "../../../../components/Header.astro";
+import Footer from "../../../../components/Footer.astro";
+import FormattedDate from "../../../../components/FormattedDate.astro";
+import { SITE_TITLE } from "../../../../consts";
+
+export async function getStaticPaths() {
+  const races = await getCollection("races", ({ data }) => {
+    return data.season === "2024";
+  });
+
+  return races.map((race) => {
+    const parts = race.id.split('/');
+    const slug = parts[parts.length - 1].replace(/\.(md|mdx)$/, '');
+    return {
+      params: { slug },
+      props: { race },
+    };
+  });
+}
+
+const { race } = Astro.props;
+// Import the Content component
+import { render } from "astro:content";
+const { Content } = await render(race);
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <BaseHead
+      title={`${race.data.trackName} | ${SITE_TITLE}`}
+      description={`Information about the ${race.data.trackName} Grand Prix of the 2024 Formula 1 season`}
+    />
+  </head>
+  <body>
+    <Header />
+    <main>
+      <!-- Race Header - Left aligned without background -->
+      <section class="race-header">
+        <div class="container mx-auto px-4">
+          <p class="text-gray-500 mb-2">Formula 1 • 2024 Season • Race #{race.data.raceNumber}</p>
+          <h1 class="text-4xl font-bold mb-2">{race.data.trackName}</h1>
+          <p class="text-gray-700">
+            <FormattedDate date={race.data.date} /> • {race.data.location}
+          </p>
+        </div>
+      </section>
+
+      <!-- Race Status -->
+      <section class="py-4">
+        <div class="container mx-auto px-4">
+          <div class="text-left">
+            {
+              race.data.completed ? (
+                <span class="inline-block bg-green-100 border border-green-300 text-green-800 px-4 py-2 rounded">
+                  Race Completed
+                </span>
+              ) : (
+                <span class="inline-block bg-gray-100 border border-gray-300 text-gray-800 px-4 py-2 rounded">
+                  Upcoming Race
+                </span>
+              )
+            }
+          </div>
+        </div>
+      </section>
+
+      <!-- Race Details -->
+      <section class="py-8">
+        <div class="container mx-auto px-4 max-w-4xl">
+          <!-- Race Stats -->
+          <div class="border border-gray-300 rounded-lg p-6 mb-8 shadow-sm">
+            <h2 class="text-2xl font-bold mb-4">Race Details</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+              <div>
+                <ul class="space-y-3">
+                  <li class="flex justify-between">
+                    <span class="">Date:</span>
+                    <span class=""><FormattedDate date={race.data.date} /></span>
+                  </li>
+                  <li class="flex justify-between">
+                    <span class="">Location:</span>
+                    <span class="f">{race.data.location}</span>
+                  </li>
+                  <li class="flex justify-between">
+                    <span class="">Race Number:</span>
+                    <span class="">{race.data.raceNumber}</span>
+                  </li>
+                </ul>
+              </div>
+              
+              {race.data.completed && (
+                <div>
+                  <ul class="space-y-3">
+                    <li class="flex justify-between">
+                      <span class="text-gray-600">Winner:</span>
+                      <span class="font-medium">{race.data.winner}</span>
+                    </li>
+                    <li class="flex justify-between">
+                      <span class="text-gray-600">Winning Team:</span>
+                      <span class="font-medium">{race.data.winningTeam}</span>
+                    </li>
+                    <li class="flex justify-between">
+                      <span class="text-gray-600">Fastest Lap:</span>
+                      <span class="font-medium">
+                        {race.data.fastestLapTime}
+                        {race.data.fastestLapDriver && ` (${race.data.fastestLapDriver})`}
+                      </span>
+                    </li>
+                  </ul>
+                </div>
+              )}
+            </div>
+          </div>
+
+          <!-- Race Content -->
+          <div class="race-content prose max-w-none">
+            <Content />
+          </div>
+        </div>
+      </section>
+
+      <!-- Back to Races -->
+      <section class="py-6">
+        <div class="container mx-auto px-4 text-center">
+          <a
+            href="/seasons/2024/races"
+            class="inline-block bg-gray-600 hover:bg-gray-700 text-white font-bold py-2 px-4 rounded mr-4"
+          >
+            Back to 2024 Races
+          </a>
+          <a
+            href="/seasons/2024"
+            class="inline-block bg-gray-600 hover:bg-gray-700 text-white font-bold py-2 px-4 rounded"
+          >
+            Back to 2024 Season
+          </a>
+        </div>
+      </section>
+    </main>
+    <Footer />
+  </body>
+</html>
