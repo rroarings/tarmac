@@ -34,3 +34,22 @@ const drivers = defineCollection({
   }),
 });
 
+// F1 Teams Collection
+const teams = defineCollection({
+  loader: glob({ base: "./src/content/teams", pattern: "**/*.{md,mdx}" }),
+  schema: z.object({
+    name: z.string(),
+    carModel: z.string(),
+    season: z.enum(["2024", "2025"]),
+    drivers: z.array(z.string()),
+    principal: z.string(),
+    engine: z.string(),
+    chassis: z.string(),
+    carImage: z.string().optional(),
+    teamLogo: z.string().optional(),
+    constructorPoints: z.number().default(0),
+    championships: z.number().default(0),
+  }),
+});
+
+export const collections = { blog, drivers, teams };
