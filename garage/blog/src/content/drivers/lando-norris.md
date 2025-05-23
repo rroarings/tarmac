@@ -18,6 +18,7 @@ profileImage: "/images/drivers/norris.jpg"
 Rising British talent Lando Norris has established himself as one of the brightest young stars in Formula 1, consistently delivering strong performances for McLaren.
 
 ## Career Highlights
+
 - 4 race wins
 - 14 podium finishes
 - Known for his streaming and social media presence

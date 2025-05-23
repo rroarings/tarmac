@@ -18,6 +18,7 @@ profileImage: "/images/drivers/verstappen.jpg"
 The four-time World Champion from the Netherlands, Max Verstappen is one of the most dominant drivers in Formula 1 history. Known for his aggressive driving style and exceptional racecraft.
 
 ## Career Highlights
+
 - 4x World Champion (2021, 2022, 2023, 2024)
 - 62 race wins
 - 107 podium finishes

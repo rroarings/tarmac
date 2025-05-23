@@ -18,6 +18,7 @@ profileImage: "/images/drivers/russell.jpg"
 The tall British driver George Russell has been Mercedes' consistent performer, bringing speed and intelligence to his racing approach.
 
 ## Career Highlights
+
 - 2 race wins
 - 13 podium finishes
 - Former Williams standout

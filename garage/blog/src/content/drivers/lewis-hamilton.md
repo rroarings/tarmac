@@ -18,6 +18,7 @@ profileImage: "/blog-placeholder-1.jpg"
 Seven-time World Champion Sir Lewis Hamilton makes his highly anticipated move to Ferrari for the 2025 season, bringing his wealth of experience to the Scuderia.
 
 ## Career Highlights
+
 - 7x World Champion (2008, 2014, 2015, 2017, 2018, 2019, 2020)
 - 105 race wins (record holder)
 - 197 podium finishes (record holder)

@@ -18,6 +18,7 @@ profileImage: "/images/drivers/piastri.jpg"
 The young Australian talent Oscar Piastri has quickly established himself as one of Formula 1's rising stars, showcasing impressive speed and maturity in his early career.
 
 ## Career Highlights
+
 - 2 race wins
 - 7 podium finishes
 - Formula 2 Champion (2021)
