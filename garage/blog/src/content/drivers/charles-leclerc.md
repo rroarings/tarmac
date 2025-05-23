@@ -9,7 +9,7 @@ season: "2025"
 championships: 0
 raceWins: 8
 podiums: 26
-points: 308
+points: 61
 profileImage: "/images/drivers/leclerc.jpg"
 relatedDrivers:
 - lewis-hamilton
