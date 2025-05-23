@@ -11,6 +11,8 @@ raceWins: 8
 podiums: 26
 points: 308
 profileImage: "/images/drivers/leclerc.jpg"
+relatedDrivers:
+- lewis-hamilton
 ---
 
 # Charles Leclerc
