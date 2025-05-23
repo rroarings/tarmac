@@ -2,7 +2,19 @@
 import BaseHead from "../../../../components/BaseHead.astro";
 import Header from "../../../../components/Header.astro";
 import Footer from "../../../../components/Footer.astro";
+import DriverCard from "../../../../components/DriverCard.astro";
 import { SITE_TITLE } from "../../../../consts";
+import { getCollection } from "astro:content";
+
+// Get all drivers for 2025 season
+const drivers = await getCollection("drivers", ({ data }) => {
+  return data.season === "2024";
+});
+
+// Sort drivers by points (highest to lowest)
+const sortedDrivers = drivers.sort((a, b) => {
+  return b.data.points - a.data.points; // Sort only by points
+});
 ---
 
 <!doctype html>
@@ -24,36 +36,10 @@ import { SITE_TITLE } from "../../../../consts";
       <!-- Drivers Grid -->
       <section class="py-12">
         <div class="container mx-auto px-4">
-          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-            <!-- Driver cards will be added here -->
-            <div class="bg-white border border-gray-300 rounded shadow-md overflow-hidden">
-              <img src="/public/blog-placeholder-1.jpg" alt="Driver" class="w-full h-48 object-cover" />
-              <div class="p-4">
-                <h3 class="text-lg font-bold">Max Verstappen</h3>
-                <p class="text-gray-600">Red Bull Racing</p>
-                <p class="text-sm text-gray-500">#1</p>
-              </div>
-            </div>
-            
-            <div class="bg-white border border-gray-300 rounded shadow-md overflow-hidden">
-              <img src="/public/blog-placeholder-2.jpg" alt="Driver" class="w-full h-48 object-cover" />
-              <div class="p-4">
-                <h3 class="text-lg font-bold">Lewis Hamilton</h3>
-                <p class="text-gray-600">Mercedes</p>
-                <p class="text-sm text-gray-500">#44</p>
-              </div>
-            </div>
-            
-            <div class="bg-white border border-gray-300 rounded shadow-md overflow-hidden">
-              <img src="/public/blog-placeholder-3.jpg" alt="Driver" class="w-full h-48 object-cover" />
-              <div class="p-4">
-                <h3 class="text-lg font-bold">Charles Leclerc</h3>
-                <p class="text-gray-600">Ferrari</p>
-                <p class="text-sm text-gray-500">#16</p>
-              </div>
-            </div>
-            
-            <!-- Add more driver cards as needed -->
+          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            {sortedDrivers.map((driver) => (
+              <DriverCard driver={driver} />
+            ))}
           </div>
         </div>
       </section>
