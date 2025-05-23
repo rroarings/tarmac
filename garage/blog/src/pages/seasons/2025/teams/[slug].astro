@@ -1,0 +1,112 @@
+---
+import BaseHead from "../../../../../components/BaseHead.astro";
+import Header from "../../../../../components/Header.astro";
+import Footer from "../../../../../components/Footer.astro";
+import { SITE_TITLE } from "../../../../../consts";
+import { getCollection } from "astro:content";
+
+export async function getStaticPaths() {
+  const teams = await getCollection("teams", ({ data }) => {
+    return data.season === "2025";
+  });
+  
+  return teams.map((team) => ({
+    params: { slug: team.id },
+    props: { team },
+  }));
+}
+
+const { team } = Astro.props;
+const { Content } = await team.render();
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <BaseHead 
+      title={`${team.data.name} | ${SITE_TITLE}`} 
+      description={`2025 F1 team profile for ${team.data.name} with their ${team.data.carModel} car`} 
+    />
+  </head>
+  <body>
+    <Header />
+    <main>
+      <!-- Team Profile Header -->
+      <section class="py-16 bg-gray-50">
+        <div class="container mx-auto px-4">
+          <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
+            <div>
+              <img 
+                src={team.data.carImage || "/blog-placeholder-1.jpg"} 
+                alt={`${team.data.name} ${team.data.carModel}`} 
+                class="w-full rounded-lg shadow-lg" 
+              />
+            </div>
+            <div>
+              <h1 class="text-4xl font-bold mb-4">{team.data.name}</h1>
+              <div class="space-y-3 text-lg">
+                <div class="flex items-center">
+                  <span class="font-semibold w-40">Car Model:</span>
+                  <span class="bg-red-600 text-white px-3 py-1 rounded font-bold">{team.data.carModel}</span>
+                </div>
+                <div class="flex items-center">
+                  <span class="font-semibold w-40">Team Principal:</span>
+                  <span class="text-gray-700">{team.data.principal}</span>
+                </div>
+                <div class="flex items-center">
+                  <span class="font-semibold w-40">Engine:</span>
+                  <span class="text-gray-700">{team.data.engine}</span>
+                </div>
+                <div class="flex items-center">
+                  <span class="font-semibold w-40">Drivers:</span>
+                  <span class="text-gray-700">{team.data.drivers.join(", ")}</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Team Statistics -->
+      <section class="py-12">
+        <div class="container mx-auto px-4">
+          <h2 class="text-3xl font-bold mb-8 text-center">Team Statistics</h2>
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-2xl mx-auto">
+            <div class="bg-white border border-gray-300 rounded shadow-md p-6 text-center">
+              <div class="text-3xl font-bold text-yellow-600">{team.data.championships}</div>
+              <div class="text-gray-600">Championships</div>
+            </div>
+            <div class="bg-white border border-gray-300 rounded shadow-md p-6 text-center">
+              <div class="text-3xl font-bold text-blue-600">{team.data.constructorPoints}</div>
+              <div class="text-gray-600">Constructor Points</div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Team Information -->
+      <section class="py-12 bg-gray-50">
+        <div class="container mx-auto px-4">
+          <div class="max-w-4xl mx-auto">
+            <div class="prose prose-lg max-w-none">
+              <Content />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Back Links -->
+      <section class="py-8 text-center">
+        <div class="space-x-4">
+          <a href="/seasons/2025/teams" class="bg-red-600 hover:bg-red-700 text-white font-bold py-2 px-4 rounded">
+            ← Back to 2025 Teams
+          </a>
+          <a href="/seasons/2025" class="bg-gray-600 hover:bg-gray-700 text-white font-bold py-2 px-4 rounded">
+            ← Back to 2025 Season
+          </a>
+        </div>
+      </section>
+    </main>
+    <Footer />
+  </body>
+</html>
