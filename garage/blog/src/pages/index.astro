@@ -4,6 +4,7 @@ import Header from "../components/Header.astro";
 import Footer from "../components/Footer.astro";
 import DriverCard from "../components/DriverCard.astro";
 import RaceCard from "../components/RaceCard.astro";
+import BreakpointIndicator from "../components/BreakpointIndicator.astro";
 import { SITE_TITLE, SITE_DESCRIPTION } from "../consts";
 import { getCollection } from "astro:content";
 
@@ -25,9 +26,7 @@ const drivers = await getCollection("drivers", ({ data }) => {
 });
 
 // Sort drivers by points (highest to lowest) and take top 3
-const topDrivers = drivers
-  .sort((a, b) => b.data.points - a.data.points)
-  .slice(0, 3);
+const topDrivers = drivers.sort((a, b) => b.data.points - a.data.points).slice(0, 3);
 
 // Get upcoming 2025 races
 const races2025 = await getCollection("races", ({ data }) => {
@@ -36,9 +35,7 @@ const races2025 = await getCollection("races", ({ data }) => {
 
 // Sort races by date (earliest first) and take the next 3
 const upcomingRaces2025 = races2025
-  .sort(
-    (a, b) => new Date(a.data.date).getTime() - new Date(b.data.date).getTime(),
-  )
+  .sort((a, b) => new Date(a.data.date).getTime() - new Date(b.data.date).getTime())
   .slice(0, 3);
 
 // Get recent 2024 races
@@ -48,9 +45,7 @@ const races2024 = await getCollection("races", ({ data }) => {
 
 // Sort races by date (latest first) and take the most recent 3
 const recentRaces2024 = races2024
-  .sort(
-    (a, b) => new Date(b.data.date).getTime() - new Date(a.data.date).getTime(),
-  )
+  .sort((a, b) => new Date(b.data.date).getTime() - new Date(a.data.date).getTime())
   .slice(0, 3);
 
 const features = [
@@ -61,8 +56,7 @@ const features = [
   },
   {
     title: "Constructor Profiles",
-    description:
-      "Discover the constructors shaping the FORMULA 1™ grid in the recent seasons.",
+    description: "Discover the constructors shaping the FORMULA 1™ grid in the recent seasons.",
   },
   {
     title: "Championship Standings",
@@ -71,8 +65,7 @@ const features = [
   },
   {
     title: "Race Highlights",
-    description:
-      "Relive key moments and pivotal decisions from recent FORMULA 1™ races.",
+    description: "Relive key moments and pivotal decisions from recent FORMULA 1™ races.",
   },
   {
     title: "Season Breakdowns",
@@ -91,8 +84,7 @@ const features = [
   },
   {
     title: "Fan Community",
-    description:
-      "Trackside celebrates the passion and excitement of Formula 1 culture.",
+    description: "Trackside celebrates the passion and excitement of Formula 1 culture.",
   },
 ];
 ---
@@ -100,29 +92,30 @@ const features = [
 <!doctype html>
 <html lang="en">
   <head>
-    <BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
+    <BaseHead
+      title={SITE_TITLE}
+      description={SITE_DESCRIPTION}
+    />
   </head>
   <body>
+    <BreakpointIndicator />
     <Header />
     <main>
       <!-- About Me Section -->
-      <section class="py-5">
-        <div class="">
-          <div class="px-4">
-            <div class="flex gap-2 mb-4">
-              <i class="bi bi-house text-4xl text-gray-600 mr-2"></i>
-              <div>
-                <h1 class="">Trackside</h1>
-                <p class="text-gray-600">Trackside's Blog</p>
-              </div>
+      <section class="py-5 ">
+        <div class="p-6">
+          <div class="flex gap-2 mb-4">
+            <i class="bi bi-house text-4xl mr-2"></i>
+            <div>
+              <h1 class="">Trackside</h1>
+              <p class="text-gray-700">Trackside's Blog</p>
             </div>
-            <p class="">
-              Welcome to Trackside Chat, your ultimate Formula 1 blog. Here, I
-              share insights, analysis, and the latest news from the world of
-              Formula 1. Join me as we explore the thrilling world of motorsport
-              together!
-            </p>
           </div>
+          <p class="text-gray-700">
+            Welcome to Trackside Chat, your ultimate Formula 1 blog. Here, I share insights,
+            analysis, and the latest news from the world of Formula 1. Join me as we explore the
+            thrilling world of motorsport together!
+          </p>
         </div>
       </section>
 
@@ -130,33 +123,25 @@ const features = [
       <section class="py-5 bg-gray-50">
         <div class="max-w-7xl mx-auto px-4">
           <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
-            <!-- Left: Text Content -->
-            <div>
-              <h2 class="text-2xl font-bold mb-4">2025 Highlights</h2>
-              <p class="mb-4 text-gray-700">
-                Dive into the most exciting moments of the 2025 Formula 1
-                season. Explore race highlights, dramatic overtakes, and pivotal
-                decisions that shaped the championship. Watch exclusive clips
-                and read in-depth breakdowns of key races and driver
-                performances.
-              </p>
-              <a
-                href="/seasons/2025/highlights"
-                class="inline-block bg-red-600 hover:bg-red-700 text-white py-2 px-4 rounded"
-              >
-                Explore 2025 Clips &amp; Breakdowns
-              </a>
-            </div>
-            <!-- Right: Placeholder Image -->
-            <div class="flex justify-center">
-              <div
-                class="w-full max-w-md aspect-video bg-gray-200 flex items-center justify-center rounded shadow"
-              >
-                <span class="text-gray-400 text-lg"
-                  >[2025 Highlights Image]</span
-                >
-              </div>
-            </div>
+        <!-- Left: Text Content -->
+        <div>
+          <h2 class="text-2xl font-bold mb-4">2025 Highlights</h2>
+          <p class="mb-4 text-gray-700">
+            Dive into the most exciting moments of the 2025 Formula 1 season. Explore race highlights, dramatic overtakes, and pivotal decisions that shaped the championship. Watch exclusive clips and read in-depth breakdowns of key races and driver performances.
+          </p>
+          <a
+            href="/seasons/2025"
+            class="inline-block bg-red-600 hover:bg-red-700 text-white py-2 px-4 rounded"
+          >
+            Explore 2025 Clips &amp; Breakdowns
+          </a>
+        </div>
+        <!-- Right: Placeholder Image -->
+        <div class="flex justify-center">
+          <div class="w-full max-w-md aspect-video bg-gray-200 flex items-center justify-center rounded shadow">
+            <span class="text-gray-400 text-lg">[2025 Highlights Image]</span>
+          </div>
+        </div>
           </div>
         </div>
       </section>
@@ -209,7 +194,10 @@ const features = [
             <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
               {
                 topDrivers.map((driver) => (
-                  <DriverCard driver={driver} year="2025" />
+                  <DriverCard
+                    driver={driver}
+                    year="2025"
+                  />
                 ))
               }
             </div>
@@ -264,7 +252,10 @@ const features = [
               {
                 latestPosts.map((post) => (
                   <li class="bg-white border border-gray-300 rounded overflow-hidden">
-                    <a href={`/blog/${post.slug}`} class="block">
+                    <a
+                      href={`/blog/${post.slug}`}
+                      class="block"
+                    >
                       <img
                         src={post.heroImage || "/public/blog-placeholder-1.jpg"}
                         alt={post.title}
