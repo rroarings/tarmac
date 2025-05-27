@@ -74,18 +74,21 @@ import { SITE_TITLE } from "../../../consts";
         </div>
       </section>
 
-     <!-- Race Calendar -->
-     <section class="py-6">
-      <div class="container mx-auto px-4">
-        <div class="flex justify-between items-center mb-6">
-          <h2 class="text-2xl font-bold">Race Calendar</h2>
-          <a href="/seasons/2024/races" class="bg-red-600 hover:bg-red-700 text-white font-bold py-2 px-4 rounded">
-            View All Races
-          </a>
+      <!-- Race Calendar -->
+      <section class="py-6">
+        <div class="container mx-auto px-4">
+          <div class="flex justify-between items-center mb-6">
+            <h2 class="text-2xl font-bold">Race Calendar</h2>
+            <a
+              href="/seasons/2024/races"
+              class="bg-red-600 hover:bg-red-700 text-white font-bold py-2 px-4 rounded"
+            >
+              View All Races
+            </a>
+          </div>
+          <RaceCalendar season="2024" />
         </div>
-        <RaceCalendar season="2024" />
-      </div>
-    </section>
+      </section>
     </main>
     <Footer />
   </body>
