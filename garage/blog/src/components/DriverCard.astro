@@ -10,42 +10,48 @@ interface Props {
 const { driver, year = "2025" } = Astro.props;
 ---
 
-<a href={`/seasons/${year}/drivers/${driver.id}`} class="block">
-  <div
-    class="bg-white border border-gray-300 rounded shadow-md overflow-hidden hover:shadow-lg transition-shadow"
-  >
-    <img
-      src={driver.data.profileImage &&
-      driver.data.profileImage.startsWith("/blog-placeholder")
-        ? driver.data.profileImage
-        : "/blog-placeholder-1.jpg"}
-      alt={`${driver.data.firstName} ${driver.data.lastName}`}
-      class="w-full h-64 object-cover p-3"
-    />
-    <div class="p-6">
-      <p class="text-sm text-gray-500 mb-1">#{driver.data.number}</p>
-
-      <h3 class="text-xl mb-2">
-        {driver.data.firstName}
-        <span class="font-bold">{driver.data.lastName}</span>
-      </h3>
-      <p class="text-gray-600 mb-3">{driver.data.team}</p>
-
-      <div class="text-sm text-gray-600">
-        <div class="flex justify-between items-center mb-1">
-          <span>Nationality:</span>
-          <span>{driver.data.nationality}</span>
+<a href={`/seasons/${year}/drivers/${driver.id}`} class="block h-full">
+  <article class="bg-white border border-gray-200 rounded-lg shadow-sm overflow-hidden hover:shadow-lg transition-all duration-300 h-full flex flex-col">
+    <div class="h-48 overflow-hidden">
+      <img
+        src={driver.data.profileImage &&
+        driver.data.profileImage.startsWith("/blog-placeholder")
+          ? driver.data.profileImage
+          : "/blog-placeholder-1.jpg"}
+        alt={`${driver.data.firstName} ${driver.data.lastName}`}
+        class="w-full h-full object-cover"
+      />
+    </div>
+    
+    <div class="p-6 flex-1 flex flex-col">
+      <header class="flex-1">
+        <div class="mb-3">
+          <div class="text-xl text-gray-600">{driver.data.firstName}</div>
+          <h3 class="text-2xl font-bold text-black -mt-1">{driver.data.lastName}</h3>
         </div>
+        
+        <dl class="flex justify-between items-center mb-4">
+          <dt class="sr-only">Team</dt>
+          <dd class="text-gray-600 text-sm font-medium">{driver.data.team}</dd>
+          <dt class="sr-only">Driver Number</dt>
+          <dd class="text-sm text-gray-600">#{driver.data.number}</dd>
+        </dl>
+      </header>
 
-        <div class="flex justify-between items-center mb-1">
-          <span>Race Wins:</span>
-          <span class="">{driver.data.raceWins}</span>
+      <dl class="text-sm space-y-2 pt-4 border-t border-gray-200" aria-label="Driver Statistics">
+        <div class="flex justify-between items-center">
+          <dt class="text-gray-600">Nationality</dt>
+          <dd class="font-medium text-gray-600">{driver.data.nationality}</dd>
         </div>
         <div class="flex justify-between items-center">
-          <span>Points:</span>
-          <span class="">{driver.data.points}</span>
+          <dt class="text-gray-600">Race Wins</dt>
+          <dd class="font-medium text-gray-600">{driver.data.raceWins}</dd>
         </div>
-      </div>
+        <div class="flex justify-between items-center">
+          <dt class="text-gray-600">Points</dt>
+          <dd class="font-medium text-gray-600">{driver.data.points}</dd>
+        </div>
+      </dl>
     </div>
-  </div>
+  </article>
 </a>
