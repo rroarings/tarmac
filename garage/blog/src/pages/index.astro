@@ -36,7 +36,9 @@ const races2025 = await getCollection("races", ({ data }) => {
 
 // Sort races by date (earliest first) and take the next 3
 const upcomingRaces2025 = races2025
-  .sort((a, b) => new Date(a.data.date).getTime() - new Date(b.data.date).getTime())
+  .sort(
+    (a, b) => new Date(a.data.date).getTime() - new Date(b.data.date).getTime(),
+  )
   .slice(0, 3);
 
 // Get recent 2024 races
@@ -46,7 +48,9 @@ const races2024 = await getCollection("races", ({ data }) => {
 
 // Sort races by date (latest first) and take the most recent 3
 const recentRaces2024 = races2024
-  .sort((a, b) => new Date(b.data.date).getTime() - new Date(a.data.date).getTime())
+  .sort(
+    (a, b) => new Date(b.data.date).getTime() - new Date(a.data.date).getTime(),
+  )
   .slice(0, 3);
 
 const features = [
