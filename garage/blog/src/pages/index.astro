@@ -48,6 +48,49 @@ const races2024 = await getCollection("races", ({ data }) => {
 const recentRaces2024 = races2024
   .sort((a, b) => new Date(b.data.date).getTime() - new Date(a.data.date).getTime())
   .slice(0, 3);
+
+const features = [
+  {
+    title: "Driver Profiles",
+    description:
+      "Explore in-depth profiles of the drivers competing in the FORMULA 1™ championship.",
+  },
+  {
+    title: "Constructor Profiles",
+    description:
+      "Discover the constructors shaping the FORMULA 1™ grid in the recent seasons.",
+  },
+  {
+    title: "Championship Standings",
+    description:
+      "Follow the latest driver and constructor standings as the FORMULA 1™ season unfolds.",
+  },
+  {
+    title: "Race Highlights",
+    description:
+      "Relive key moments and pivotal decisions from recent FORMULA 1™ races.",
+  },
+  {
+    title: "Season Breakdowns",
+    description:
+      "Analyze team and driver performances across the FORMULA 1™ season with insights and reviews.",
+  },
+  {
+    title: "F1 Technologies",
+    description:
+      "Trackside covers the cutting-edge technology driving Formula 1's rapid evolution.",
+  },
+  {
+    title: "Past Season Archive",
+    description:
+      "Travel through the rich history of F1 with a look at the 2023, 2024 and 2025 seasons.",
+  },
+  {
+    title: "Fan Community",
+    description:
+      "Trackside celebrates the passion and excitement of Formula 1 culture.",
+  },
+];
 ---
 
 <!doctype html>
