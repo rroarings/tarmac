@@ -128,36 +128,40 @@ const features = [
         </div>
       </section>
 
-      <!-- Recent Posts Section -->
-      <section class="py-5">
-        <div class="mx-auto px-4">
-          <div
-            class="bg-gray-100 border border-gray-300 rounded p-6"
-          >
-            <div class="flex gap-2 mb-4">
-              <i class="bi bi-activity text-4xl text-gray-600 mr-2"></i>
-              <div>
-                <h2 class="">Recent Posts</h2>
+      <!-- 2025 Highlights Section -->
+      <section class="py-5 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4">
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+            <!-- Left: Text Content -->
+            <div>
+              <h2 class="text-2xl font-bold mb-4">2025 Highlights</h2>
+              <p class="mb-4 text-gray-700">
+                Dive into the most exciting moments of the 2025 Formula 1
+                season. Explore race highlights, dramatic overtakes, and pivotal
+                decisions that shaped the championship. Watch exclusive clips
+                and read in-depth breakdowns of key races and driver
+                performances.
+              </p>
+              <a
+                href="/seasons/2025/highlights"
+                class="inline-block bg-red-600 hover:bg-red-700 text-white py-2 px-4 rounded"
+              >
+                Explore 2025 Clips &amp; Breakdowns
+              </a>
+            </div>
+            <!-- Right: Placeholder Image -->
+            <div class="flex justify-center">
+              <div
+                class="w-full max-w-md aspect-video bg-gray-200 flex items-center justify-center rounded shadow"
+              >
+                <span class="text-gray-400 text-lg"
+                  >[2025 Highlights Image]</span
+                >
               </div>
             </div>
-            <ul class="grid grid-cols-1 md:grid-cols-3 gap-4">
-              {
-                latestPosts.map((post) => (
-                  <li class="bg-white border border-gray-300 rounded overflow-hidden">
-                    <a href={`/blog/${post.slug}`} class="block">
-                      <img
-                        src={post.heroImage || "/public/blog-placeholder-1.jpg"}
-                        alt={post.title}
-                        class="w-full h-48 object-cover"
-                      />
-                      <div class="p-4">
-                        <h5 class="">{post.title}</h5>
-                      </div>
-                    </a>
-                  </li>
-                ))
-              }
-            </ul>
+          </div>
+        </div>
+      </section>
           </div>
         </div>
       </section>
