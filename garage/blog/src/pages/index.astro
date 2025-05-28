@@ -123,75 +123,16 @@ const features = [
         </div>
       </section>
 
-      <!-- 2025 Highlights Section -->
-      <section class="py-5 bg-gray-50">
-        <div class="max-w-7xl mx-auto px-4">
-          <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
-            <!-- Left: Text Content -->
-            <div>
-              <h2 class="text-2xl font-bold mb-4">2025 Highlights</h2>
-              <p class="mb-4 text-gray-700">
-                Dive into the most exciting moments of the 2025 Formula 1
-                season. Explore race highlights, dramatic overtakes, and pivotal
-                decisions that shaped the championship. Watch exclusive clips
-                and read in-depth breakdowns of key races and driver
-                performances.
-              </p>
-              <a
-                href="/seasons/2025"
-                class="inline-block text-red-600 hover:text-blue-600 py-2"
-              >
-                Explore 2025 Clips &amp; Breakdowns
-              </a>
-            </div>
-            <!-- Right: Placeholder Image -->
-            <div class="flex justify-center">
-              <div
-                class="w-full max-w-md aspect-video bg-gray-200 flex items-center justify-center rounded shadow"
-              >
-                <span class="text-gray-400 text-lg"
-                  >[2025 Highlights Image]</span
-                >
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
+       <!-- 2025 Highlights Section -->
+      <TwoColumnSection
+        title="2025 Highlights"
+        description="Dive into the most exciting moments of the 2025 Formula 1 season. Explore race highlights, dramatic overtakes, and pivotal decisions that shaped the championship. Watch exclusive clips and read in-depth breakdowns of key races and driver performances."
+        ctaText="Explore 2025 Clips & Breakdowns"
+        ctaLink="/seasons/2025"
+        background="gray"
+      />
 
-      <!-- Features Section -->
-      <section class="py-5">
-        <div class="max-w-7xl mx-auto px-4">
-          <div class="border-b border-gray-200 pb-2 mb-6">
-            <h2 class="text-2xl font-bold">What Trackside is about</h2>
-          </div>
-
-          <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
-            {
-              features.map((feature) => (
-                <div class="flex items-start space-x-4">
-                  <div class="flex-shrink-0">
-                    <div class="w-10 h-10 rounded-lg bg-gray-500 text-white flex items-center justify-center">
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        width="20"
-                        height="20"
-                        fill="currentColor"
-                        viewBox="0 0 16 16"
-                      >
-                        <path d="M8 0a1 1 0 0 1 1 1v5.268l4.562-2.634a1 1 0 1 1 1 1.732L10 8l4.562 2.634a1 1 0 1 1-1 1.732L9 9.732V15a1 1 0 1 1-2 0V9.732l-4.562 2.634a1 1 0 1 1-1-1.732L6 8 1.438 5.366a1 1 0 0 1 1-1.732L7 6.268V1a1 1 0 0 1 1-1" />
-                      </svg>
-                    </div>
-                  </div>
-                  <div>
-                    <h3 class="">{feature.title}</h3>
-                    <p class="text-gray-600">{feature.description}</p>
-                  </div>
-                </div>
-              ))
-            }
-          </div>
-        </div>
-      </section>
+       <!-- Features Grid Section -->
 
       <!-- Championship Standings Section -->
 
