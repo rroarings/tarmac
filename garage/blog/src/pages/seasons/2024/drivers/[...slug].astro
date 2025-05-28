@@ -58,9 +58,7 @@ const { Content, headings } = await render(driver);
               <div class="space-y-3 text-lg">
                 <div class="flex items-center">
                   <span class="font-semibold w-32">Number:</span>
-                  <span class="text-gray-700"
-                    >{driver.data.number}</span
-                  >
+                  <span class="text-gray-700">{driver.data.number}</span>
                 </div>
                 <div class="flex items-center">
                   <span class="font-semibold w-32">Team:</span>
@@ -83,28 +81,17 @@ const { Content, headings } = await render(driver);
       <!-- Driver Statistics -->
       <section class="py-12 bg-slate-50">
         <div class="container mx-auto px-4">
-          <h2 class="text-3xl font-bold mb-8 text-center">
-            Career Statistics
-          </h2>
+          <h2 class="text-3xl font-bold mb-8 text-center">Career Statistics</h2>
 
           <div class="max-w-7xl mx-auto">
             <div class="flex flex-wrap -mx-2">
-              <StatCard 
-                value={driver.data.championships} 
-                label="Championships" 
+              <StatCard
+                value={driver.data.championships}
+                label="Championships"
               />
-              <StatCard 
-                value={driver.data.raceWins} 
-                label="Race Wins" 
-              />
-              <StatCard 
-                value={driver.data.podiums} 
-                label="Podiums" 
-              />
-              <StatCard 
-                value={driver.data.points} 
-                label="Career Points" 
-              />
+              <StatCard value={driver.data.raceWins} label="Race Wins" />
+              <StatCard value={driver.data.podiums} label="Podiums" />
+              <StatCard value={driver.data.points} label="Career Points" />
             </div>
           </div>
         </div>
