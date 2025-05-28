@@ -1,7 +1,7 @@
 ---
 trackName: "Italy"
 location: "Montreal, Canada"
-date: 2025-06-15
+date: 2025-08-01
 season: "2025"
 winner: ""
 winningTeam: ""
