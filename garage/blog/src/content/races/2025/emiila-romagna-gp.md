@@ -4,7 +4,7 @@ location: "Miami, Florida, USA"
 date: 2025-05-25
 season: "2025"
 winner: "Max Verstappen"
-winningTeam: ""
+winningTeam: "Red Bull Racing"
 fastestLapTime: ""
 fastestLapDriver: ""
 trackImage: "/blog-placeholder-2.jpg"
