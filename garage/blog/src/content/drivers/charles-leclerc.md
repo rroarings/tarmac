@@ -4,6 +4,7 @@ lastName: "Leclerc"
 number: 16
 team: "Ferrari"
 nationality: "Monégasque"
+countryCode: "mc"
 age: 27
 season: "2025"
 championships: 0
