@@ -1,5 +1,7 @@
 ---
+
 ---
+
 <div id="breakpoint" class="breakpoint-size"></div>
 
 <style>
@@ -24,27 +26,27 @@
 <script>
   function updateBreakpoint() {
     const width = window.innerWidth;
-    const breakpoint = document.getElementById('breakpoint');
+    const breakpoint = document.getElementById("breakpoint");
 
     if (!breakpoint) return;
 
     // Check window width and update breakpoint text based on Tailwind's breakpoints
     if (width < 640) {
-      breakpoint.textContent = 'XS';
+      breakpoint.textContent = "XS";
     } else if (width >= 640 && width < 768) {
-      breakpoint.textContent = 'SM';
+      breakpoint.textContent = "SM";
     } else if (width >= 768 && width < 1024) {
-      breakpoint.textContent = 'MD';
+      breakpoint.textContent = "MD";
     } else if (width >= 1024 && width < 1280) {
-      breakpoint.textContent = 'LG';
+      breakpoint.textContent = "LG";
     } else if (width >= 1280 && width < 1536) {
-      breakpoint.textContent = 'XL';
+      breakpoint.textContent = "XL";
     } else {
-      breakpoint.textContent = '2XL';
+      breakpoint.textContent = "2XL";
     }
   }
 
   // Initialize the breakpoint size on page load and resize
-  window.addEventListener('load', updateBreakpoint);
-  window.addEventListener('resize', updateBreakpoint);
+  window.addEventListener("load", updateBreakpoint);
+  window.addEventListener("resize", updateBreakpoint);
 </script>
