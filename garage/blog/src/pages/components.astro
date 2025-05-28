@@ -9,6 +9,7 @@ import FormattedDate from "../components/FormattedDate.astro";
 import TwoColumnSection from "../components/TwoColumnSection.astro";
 import FeatureGrid from "../components/FeatureGrid.astro";
 import BentoGrid from "../components/BentoGrid.astro";
+import GridSection from "../components/GridSection.astro";
 import { getCollection } from "astro:content";
 
 // Get sample data for components
@@ -660,6 +661,75 @@ const SITE_DESCRIPTION = "Visual testing page for Trackside components";
             title="F1 Content Hub"
             description="Explore the latest in Formula 1"
             items={sampleBentoItems}
+          />
+        </div>
+      </section>
+
+      <!-- GridSection Component -->
+      <section class="component-section">
+        <h2 class="component-title">GridSection</h2>
+        <p class="component-description">
+          A responsive grid section for displaying content cards with images. Ideal for feature highlights,
+          educational content, or category overviews.
+        </p>
+
+        <div class="component-props">
+          <h3 class="text-lg font-semibold mb-2">Props</h3>
+          <table class="prop-table">
+            <thead>
+              <tr>
+                <th>Name</th>
+                <th>Type</th>
+                <th>Description</th>
+                <th>Required</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>title</td>
+                <td>string</td>
+                <td>The section's heading</td>
+                <td>Yes</td>
+              </tr>
+              <tr>
+                <td>items</td>
+                <td>GridItem[]</td>
+                <td>Array of items to display in the grid</td>
+                <td>Yes</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div class="component-demo">
+          <GridSection
+            title="Understanding the pinnacle of motorsports"
+            items={[
+              {
+                title: "The Introduction",
+                description: "Formula 1, often referred to as F1, is the pinnacle of motorsport and one of the most thrilling and prestigious racing championships in the world.",
+                imageSrc: "/blog-placeholder-1.jpg",
+                imageAlt: "What is Formula 1"
+              },
+              {
+                title: "The Machinery",
+                description: "Formula 1 cars are open-wheel, single-seater vehicles designed for maximum speed and performance.",
+                imageSrc: "/blog-placeholder-2.jpg",
+                imageAlt: "The Machinery"
+              },
+              {
+                title: "The Drivers",
+                description: "Behind the wheel are some of the most talented and daring drivers on the planet, competing for glory in a high-stakes environment.",
+                imageSrc: "/blog-placeholder-3.jpg",
+                imageAlt: "The Drivers"
+              },
+              {
+                title: "The Tracks",
+                description: "Races take place on a variety of circuits, ranging from iconic street tracks like Monaco to purpose-built circuits like Silverstone.",
+                imageSrc: "/blog-placeholder-4.jpg",
+                imageAlt: "The Tracks"
+              }
+            ]}
           />
         </div>
       </section>
