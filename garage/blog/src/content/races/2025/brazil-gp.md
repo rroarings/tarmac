@@ -1,7 +1,7 @@
 ---
 trackName: "Brazil"
 location: "Montreal, Canada"
-date: 2025-06-15
+date: 2025-11-03
 season: "2025"
 winner: ""
 winningTeam: ""
