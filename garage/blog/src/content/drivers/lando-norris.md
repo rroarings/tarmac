@@ -4,6 +4,7 @@ lastName: "Norris"
 number: 4
 team: "McLaren"
 nationality: "British"
+countryCode: "gb"
 age: 25
 season: "2025"
 championships: 0
