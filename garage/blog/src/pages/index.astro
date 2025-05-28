@@ -25,8 +25,19 @@ const drivers = await getCollection("drivers", ({ data }) => {
   return data.season === "2025";
 });
 
-// Sort drivers by points (highest to lowest) and take top 3
-const topDrivers = drivers.sort((a, b) => b.data.points - a.data.points).slice(0, 3);
+// Sort drivers by points (highest to lowest)
+const sortedDrivers = drivers.sort((a, b) => b.data.points - a.data.points);
+
+// Get top 3 drivers for the grid section
+const topDrivers = sortedDrivers.slice(0, 3);
+
+// Get 2025 season teams
+const teams = await getCollection("teams", ({ data }) => {
+  return data.season === "2025";
+});
+
+// Sort teams by constructor points
+const sortedTeams = teams.sort((a, b) => b.data.constructorPoints - a.data.constructorPoints);
 
 // Get upcoming 2025 races
 const races2025 = await getCollection("races", ({ data }) => {
@@ -35,17 +46,9 @@ const races2025 = await getCollection("races", ({ data }) => {
 
 // Sort races by date (earliest first) and take the next 3
 const upcomingRaces2025 = races2025
-  .sort((a, b) => new Date(a.data.date).getTime() - new Date(b.data.date).getTime())
-  .slice(0, 3);
-
-// Get recent 2024 races
-const races2024 = await getCollection("races", ({ data }) => {
-  return data.season === "2024";
-});
-
-// Sort races by date (latest first) and take the most recent 3
-const recentRaces2024 = races2024
-  .sort((a, b) => new Date(b.data.date).getTime() - new Date(a.data.date).getTime())
+  .sort(
+    (a, b) => new Date(a.data.date).getTime() - new Date(b.data.date).getTime(),
+  )
   .slice(0, 3);
 
 const features = [
@@ -56,7 +59,8 @@ const features = [
   },
   {
     title: "Constructor Profiles",
-    description: "Discover the constructors shaping the FORMULA 1™ grid in the recent seasons.",
+    description:
+      "Discover the constructors shaping the FORMULA 1™ grid in the recent seasons.",
   },
   {
     title: "Championship Standings",
@@ -65,7 +69,8 @@ const features = [
   },
   {
     title: "Race Highlights",
-    description: "Relive key moments and pivotal decisions from recent FORMULA 1™ races.",
+    description:
+      "Relive key moments and pivotal decisions from recent FORMULA 1™ races.",
   },
   {
     title: "Season Breakdowns",
@@ -84,7 +89,8 @@ const features = [
   },
   {
     title: "Fan Community",
-    description: "Trackside celebrates the passion and excitement of Formula 1 culture.",
+    description:
+      "Trackside celebrates the passion and excitement of Formula 1 culture.",
   },
 ];
 ---
@@ -92,29 +98,25 @@ const features = [
 <!doctype html>
 <html lang="en">
   <head>
-    <BaseHead
-      title={SITE_TITLE}
-      description={SITE_DESCRIPTION}
-    />
+    <BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
   </head>
   <body>
     <BreakpointIndicator />
     <Header />
     <main>
       <!-- About Me Section -->
-      <section class="py-5 ">
+      <section class="py-5">
         <div class="p-6">
-          <div class="flex gap-2 mb-4">
-            <i class="bi bi-house text-4xl mr-2"></i>
+          <header class="flex items-center gap-3 mb-4">
             <div>
-              <h1 class="">Trackside</h1>
-              <p class="text-gray-700">Trackside's Blog</p>
+              <h1 class="text-2xl font-bold">Trackside</h1>
             </div>
-          </div>
+          </header>
           <p class="text-gray-700">
-            Welcome to Trackside Chat, your ultimate Formula 1 blog. Here, I share insights,
-            analysis, and the latest news from the world of Formula 1. Join me as we explore the
-            thrilling world of motorsport together!
+            Welcome to Trackside Chat, your ultimate Formula 1 blog. Here, I
+            share insights, analysis, and the latest news from the world of
+            Formula 1. Join me as we explore the thrilling world of motorsport
+            together!
           </p>
         </div>
       </section>
@@ -123,25 +125,33 @@ const features = [
       <section class="py-5 bg-gray-50">
         <div class="max-w-7xl mx-auto px-4">
           <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
-        <!-- Left: Text Content -->
-        <div>
-          <h2 class="text-2xl font-bold mb-4">2025 Highlights</h2>
-          <p class="mb-4 text-gray-700">
-            Dive into the most exciting moments of the 2025 Formula 1 season. Explore race highlights, dramatic overtakes, and pivotal decisions that shaped the championship. Watch exclusive clips and read in-depth breakdowns of key races and driver performances.
-          </p>
-          <a
-            href="/seasons/2025"
-            class="inline-block bg-red-600 hover:bg-red-700 text-white py-2 px-4 rounded"
-          >
-            Explore 2025 Clips &amp; Breakdowns
-          </a>
-        </div>
-        <!-- Right: Placeholder Image -->
-        <div class="flex justify-center">
-          <div class="w-full max-w-md aspect-video bg-gray-200 flex items-center justify-center rounded shadow">
-            <span class="text-gray-400 text-lg">[2025 Highlights Image]</span>
-          </div>
-        </div>
+            <!-- Left: Text Content -->
+            <div>
+              <h2 class="text-2xl font-bold mb-4">2025 Highlights</h2>
+              <p class="mb-4 text-gray-700">
+                Dive into the most exciting moments of the 2025 Formula 1
+                season. Explore race highlights, dramatic overtakes, and pivotal
+                decisions that shaped the championship. Watch exclusive clips
+                and read in-depth breakdowns of key races and driver
+                performances.
+              </p>
+              <a
+                href="/seasons/2025"
+                class="inline-block text-gray-800 hover:text-red-600 py-2"
+              >
+                Explore 2025 Clips &amp; Breakdowns
+              </a>
+            </div>
+            <!-- Right: Placeholder Image -->
+            <div class="flex justify-center">
+              <div
+                class="w-full max-w-md aspect-video bg-gray-200 flex items-center justify-center rounded shadow"
+              >
+                <span class="text-gray-400 text-lg"
+                  >[2025 Highlights Image]</span
+                >
+              </div>
+            </div>
           </div>
         </div>
       </section>
@@ -172,7 +182,7 @@ const features = [
                   </div>
                   <div>
                     <h3 class="text-lg font-semibold mb-2">{feature.title}</h3>
-                    <p class="text-gray-600 text-sm">{feature.description}</p>
+                    <p class="text-gray-600">{feature.description}</p>
                   </div>
                 </div>
               ))
@@ -181,23 +191,23 @@ const features = [
         </div>
       </section>
 
+      <!-- Championship Standings Section -->
+      
+
+
       <!-- 2025 Drivers Section -->
       <section class="py-5">
         <div class="mx-auto px-4">
           <div class="p-6">
-            <div class="flex gap-2 mb-4">
-              <i class="bi bi-person-badge text-4xl text-gray-600 mr-2"></i>
-              <div>
-                <h2 class="">Explore the 2025 Season Drivers</h2>
-              </div>
-            </div>
+            <header class="flex items-center gap-3 mb-6">
+              <h2 class="text-2xl font-bold">
+                Explore the 2025 Season Drivers
+              </h2>
+            </header>
             <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
               {
                 topDrivers.map((driver) => (
-                  <DriverCard
-                    driver={driver}
-                    year="2025"
-                  />
+                  <DriverCard driver={driver} year="2025" />
                 ))
               }
             </div>
@@ -217,12 +227,9 @@ const features = [
       <section class="py-5">
         <div class="mx-auto px-4">
           <div class="p-6">
-            <div class="flex gap-2 mb-4">
-              <i class="bi bi-flag-fill text-4xl text-gray-600 mr-2"></i>
-              <div>
-                <h2 class="">Upcoming 2025 Races</h2>
-              </div>
-            </div>
+            <header class="flex items-center gap-3 mb-6">
+              <h2 class="text-2xl font-bold">Upcoming 2025 Races</h2>
+            </header>
             <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
               {upcomingRaces2025.map((race) => <RaceCard race={race} />)}
             </div>
@@ -242,20 +249,14 @@ const features = [
       <section class="py-5">
         <div class="mx-auto px-4">
           <div class="p-6">
-            <div class="flex gap-2 mb-4">
-              <i class="bi bi-activity text-4xl text-gray-600 mr-2"></i>
-              <div>
-                <h2 class="">Recent Posts</h2>
-              </div>
-            </div>
+            <header class="flex items-center gap-3 mb-6">
+              <h2 class="text-2xl font-bold">Recent Posts</h2>
+            </header>
             <ul class="grid grid-cols-1 md:grid-cols-3 gap-4">
               {
                 latestPosts.map((post) => (
                   <li class="bg-white border border-gray-300 rounded overflow-hidden">
-                    <a
-                      href={`/blog/${post.slug}`}
-                      class="block"
-                    >
+                    <a href={`/blog/${post.slug}`} class="block">
                       <img
                         src={post.heroImage || "/public/blog-placeholder-1.jpg"}
                         alt={post.title}
