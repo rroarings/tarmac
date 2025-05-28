@@ -1,7 +1,7 @@
 ---
 trackName: "Shanghai International Circuit"
 location: "Shangia, China"
-date: 2025-03-16
+date: 2025-03-23
 season: "2025"
 winner: "Oscar Piastri"
 winningTeam: "McLaren"
