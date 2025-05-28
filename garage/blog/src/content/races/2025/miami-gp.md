@@ -3,10 +3,10 @@ trackName: "Miami International Autodrome"
 location: "Miami, Florida, USA"
 date: 2025-05-25
 season: "2025"
-winner: ""
-winningTeam: ""
-fastestLapTime: ""
-fastestLapDriver: ""
+winner: "Oscar Piastri"
+winningTeam: "McLaren"
+fastestLapTime: "Lando Norris"
+fastestLapDriver: "1.31.778"
 trackImage: "/blog-placeholder-2.jpg"
 raceNumber: 6
 completed: true
