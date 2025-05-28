@@ -6,6 +6,9 @@ import DriverCard from "../components/DriverCard.astro";
 import RaceCard from "../components/RaceCard.astro";
 import StatCard from "../components/StatCard.astro";
 import FormattedDate from "../components/FormattedDate.astro";
+import TwoColumnSection from "../components/TwoColumnSection.astro";
+import FeatureGrid from "../components/FeatureGrid.astro";
+import BentoGrid from "../components/BentoGrid.astro";
 import { getCollection } from "astro:content";
 
 // Get sample data for components
@@ -77,6 +80,53 @@ const sampleRaces = {
     },
   },
 };
+
+const sampleFeatures = [
+  {
+    title: "Feature 1",
+    description: "Description of feature 1",
+    icon: "🏎️"
+  },
+  {
+    title: "Feature 2",
+    description: "Description of feature 2",
+    icon: "🔧"
+  },
+  {
+    title: "Feature 3",
+    description: "Description of feature 3",
+    icon: "🏁"
+  }
+];
+
+// Sample data for BentoGrid
+const sampleBentoItems = [
+  {
+    title: "Featured Article",
+    description: "Deep dive into F1's latest technological innovations",
+    colspan: 1,
+    icon: "📱",
+    imageSrc: "/blog-placeholder-1.jpg"
+  },
+  {
+    title: "Quick Stats",
+    description: "Key numbers from the last race weekend",
+    icon: "📊",
+    colspan: 1,
+  },
+  {
+    title: "Driver Spotlight",
+    description: "Rising stars making waves this season",
+    icon: "🏎️",
+    colspan: 2,
+  },
+  {
+    title: "Race Calendar",
+    description: "Upcoming races and events",
+    icon: "📅",
+    colspan: 4,
+  }
+];
 
 const SITE_TITLE = "Component Showcase";
 const SITE_DESCRIPTION = "Visual testing page for Trackside components";
@@ -351,6 +401,266 @@ const SITE_DESCRIPTION = "Visual testing page for Trackside components";
             <StatCard label="Points" value={25} />
             <StatCard label="Position" value={1} />
           </div>
+        </div>
+      </section>
+
+      <!-- TwoColumnSection Component -->
+      <section class="component-section">
+        <h2 class="component-title">TwoColumnSection</h2>
+        <p class="component-description">
+          A flexible two-column layout component that can display text content alongside an image.
+          Supports reversed layout and different background colors.
+        </p>
+
+        <div class="component-props">
+          <h3 class="text-lg font-semibold mb-2">Props</h3>
+          <table class="prop-table">
+            <thead>
+              <tr>
+                <th>Name</th>
+                <th>Type</th>
+                <th>Description</th>
+                <th>Required</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>title</td>
+                <td>string</td>
+                <td>Main heading text</td>
+                <td>Yes</td>
+              </tr>
+              <tr>
+                <td>description</td>
+                <td>string</td>
+                <td>Main content text</td>
+                <td>Yes</td>
+              </tr>
+              <tr>
+                <td>ctaText</td>
+                <td>string</td>
+                <td>Call-to-action button text</td>
+                <td>No</td>
+              </tr>
+              <tr>
+                <td>ctaLink</td>
+                <td>string</td>
+                <td>Call-to-action button link</td>
+                <td>No</td>
+              </tr>
+              <tr>
+                <td>imageSrc</td>
+                <td>string</td>
+                <td>URL of the image to display</td>
+                <td>No</td>
+              </tr>
+              <tr>
+                <td>imageAlt</td>
+                <td>string</td>
+                <td>Alt text for the image</td>
+                <td>No</td>
+              </tr>
+              <tr>
+                <td>reversed</td>
+                <td>boolean</td>
+                <td>Whether to reverse the column order</td>
+                <td>No</td>
+              </tr>
+              <tr>
+                <td>background</td>
+                <td>'white' | 'gray'</td>
+                <td>Background color of the section</td>
+                <td>No</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div class="component-demo">
+          <TwoColumnSection
+            title="Sample Section"
+            description="This is a sample two-column section demonstrating the layout capabilities."
+            ctaText="Learn More"
+            ctaLink="#"
+            imageSrc="/blog-placeholder-1.jpg"
+            imageAlt="Sample image"
+          />
+        </div>
+      </section>
+
+      <!-- FeatureGrid Component -->
+      <section class="component-section">
+        <h2 class="component-title">FeatureGrid</h2>
+        <p class="component-description">
+          Displays a grid of features with icons and descriptions. Supports different column layouts.
+        </p>
+
+        <div class="component-props">
+          <h3 class="text-lg font-semibold mb-2">Props</h3>
+          <table class="prop-table">
+            <thead>
+              <tr>
+                <th>Name</th>
+                <th>Type</th>
+                <th>Description</th>
+                <th>Required</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>title</td>
+                <td>string</td>
+                <td>Optional section title</td>
+                <td>No</td>
+              </tr>
+              <tr>
+                <td>features</td>
+                <td>Feature[]</td>
+                <td>Array of feature objects to display</td>
+                <td>Yes</td>
+              </tr>
+              <tr>
+                <td>columns</td>
+                <td>2 | 3 | 4</td>
+                <td>Number of columns in the grid</td>
+                <td>No</td>
+              </tr>
+              <tr>
+                <td>background</td>
+                <td>'white' | 'gray'</td>
+                <td>Background color of the section</td>
+                <td>No</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div class="component-demo">
+          <FeatureGrid
+            title="Our Features"
+            features={sampleFeatures}
+            columns={3}
+          />
+        </div>
+      </section>
+
+      <!-- BentoGrid Component -->
+      <section class="component-section">
+        <h2 class="component-title">BentoGrid</h2>
+        <p class="component-description">
+          A flexible grid layout inspired by the "bento box" design pattern. Supports different item sizes, images, icons, and links.
+        </p>
+
+        <div class="component-props">
+          <h3 class="text-lg font-semibold mb-2">Props</h3>
+          <table class="prop-table">
+            <thead>
+              <tr>
+                <th>Name</th>
+                <th>Type</th>
+                <th>Description</th>
+                <th>Required</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>items</td>
+                <td>BentoItem[]</td>
+                <td>Array of items to display in the grid</td>
+                <td>Yes</td>
+              </tr>
+              <tr>
+                <td>title</td>
+                <td>string</td>
+                <td>Optional section title</td>
+                <td>No</td>
+              </tr>
+              <tr>
+                <td>description</td>
+                <td>string</td>
+                <td>Optional section description</td>
+                <td>No</td>
+              </tr>
+              <tr>
+                <td>layout</td>
+                <td>'bento' | 'masonry'</td>
+                <td>Grid layout style</td>
+                <td>No</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div class="component-props mt-4">
+          <h3 class="text-lg font-semibold mb-2">BentoItem Properties</h3>
+          <table class="prop-table">
+            <thead>
+              <tr>
+                <th>Name</th>
+                <th>Type</th>
+                <th>Description</th>
+                <th>Required</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>title</td>
+                <td>string</td>
+                <td>Item title</td>
+                <td>Yes</td>
+              </tr>
+              <tr>
+                <td>description</td>
+                <td>string</td>
+                <td>Item description</td>
+                <td>Yes</td>
+              </tr>
+              <tr>
+                <td>colspan</td>
+                <td>number</td>
+                <td>Number of columns the item spans</td>
+                <td>No</td>
+              </tr>
+              <tr>
+                <td>rowspan</td>
+                <td>number</td>
+                <td>Number of rows the item spans</td>
+                <td>No</td>
+              </tr>
+              <tr>
+                <td>icon</td>
+                <td>string</td>
+                <td>Emoji or icon to display</td>
+                <td>No</td>
+              </tr>
+              <tr>
+                <td>imageSrc</td>
+                <td>string</td>
+                <td>Background image URL</td>
+                <td>No</td>
+              </tr>
+              <tr>
+                <td>imageAlt</td>
+                <td>string</td>
+                <td>Image alt text</td>
+                <td>No</td>
+              </tr>
+              <tr>
+                <td>link</td>
+                <td>string</td>
+                <td>URL to link to</td>
+                <td>No</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div class="component-demo mt-8">
+          <BentoGrid
+            title="F1 Content Hub"
+            description="Explore the latest in Formula 1"
+            items={sampleBentoItems}
+          />
         </div>
       </section>
     </main>
