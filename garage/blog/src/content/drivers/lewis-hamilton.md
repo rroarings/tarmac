@@ -4,6 +4,7 @@ lastName: "Hamilton"
 number: 44
 team: "Ferrari"
 nationality: "British"
+countryCode: "gb"
 age: 40
 season: "2025"
 championships: 7
