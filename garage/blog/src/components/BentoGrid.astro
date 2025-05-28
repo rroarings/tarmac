@@ -1,0 +1,116 @@
+---
+interface BentoItem {
+  title: string;
+  description: string;
+  colspan?: number;
+  rowspan?: number;
+  icon?: string;
+  imageSrc?: string;
+  imageAlt?: string;
+  link?: string;
+}
+
+interface Props {
+  items: BentoItem[];
+  title?: string;
+  description?: string;
+  layout?: "bento" | "masonry";
+}
+
+const { items, title, description, layout = "bento" } = Astro.props;
+
+// Function to get column span class
+function getColSpanClass(span?: number): string {
+  switch (span) {
+    case 2: return 'col-span-2';
+    case 3: return 'col-span-3';
+    case 4: return 'col-span-4';
+    default: return 'col-span-1';
+  }
+}
+
+// Function to get row span and height classes
+function getRowSpanClasses(span?: number): string {
+  switch (span) {
+    case 2: return 'row-span-2 min-h-[500px]';
+    case 3: return 'row-span-3 min-h-[700px]';
+    default: return 'row-span-1 min-h-[300px]';
+  }
+}
+---
+
+<section class="max-w-7xl mx-auto px-4 py-8">
+  {
+    title && (
+      <header class="text-center mb-8">
+        <h2 class="text-3xl font-bold mb-4">{title}</h2>
+        {description && <p class="text-gray-600">{description}</p>}
+      </header>
+    )
+  }
+
+  <div class="grid grid-cols-4 gap-4">
+    {
+      items.map((item) => {
+        const itemClasses = [
+          "group relative overflow-hidden rounded-xl bg-gray-50 border border-solid border-gray-200 p-6",
+          "transition-all duration-300 hover:bg-gray-100",
+          getColSpanClass(item.colspan),
+          getRowSpanClasses(item.rowspan),
+          item.colspan && item.colspan > 1 ? "flex flex-col justify-between" : "",
+        ]
+          .filter(Boolean)
+          .join(" ");
+
+        const Inner = () => (
+          <>
+            {item.imageSrc && (
+              <div class="absolute inset-4 top-0 bottom-16 overflow-hidden rounded-lg">
+                <img
+                  src={item.imageSrc}
+                  alt={item.imageAlt || ""}
+                  class="h-full w-full object-cover opacity-20 group-hover:opacity-30 transition-opacity"
+                />
+              </div>
+            )}
+            <div class={"relative z-10 h-full flex flex-col " + (item.imageSrc ? "justify-end" : "")}>
+              {!item.imageSrc ? (
+                <>
+                  {item.icon && (
+                    <span class="text-4xl block  mb-6" role="presentation">
+                      {item.icon}
+                    </span>
+                  )}
+                  <h3 class="text-xl font-semibold mb-4">{item.title}</h3>
+                  <p class="text-gray-600 flex-grow">{item.description}</p>
+                </>
+              ) : (
+                <>
+                  <div class="bg-white/80 -mx-6 -mb-6 p-6 backdrop-blur-sm">
+                    <h3 class="text-xl font-semibold mb-2">{item.title}</h3>
+                    <p class="text-gray-600">{item.description}</p>
+                  </div>
+                </>
+              )}
+              {item.link && (
+                <div class="mt-4 text-blue-600 group-hover:text-blue-700">
+                  Learn more →
+                </div>
+              )}
+            </div>
+          </>
+        );
+
+        return item.link ? (
+          <a href={item.link} class={itemClasses}>
+            <Fragment set:html={Inner()} />
+          </a>
+        ) : (
+          <div class={itemClasses}>
+            <Fragment set:html={Inner()} />
+          </div>
+        );
+      })
+    }
+  </div>
+</section>
