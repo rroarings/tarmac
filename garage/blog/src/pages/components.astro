@@ -136,6 +136,41 @@ const SITE_DESCRIPTION = "Visual testing page for Trackside components";
     <main class="max-w-7xl mx-auto px-4 py-8">
       <h1 class="text-3xl font-bold mb-8">Component Showcase</h1>
 
+      <!-- FormattedDate Component -->
+      <section class="component-section">
+        <h2 class="component-title">FormattedDate</h2>
+        <p class="component-description">
+          Formats and displays a date in a consistent format across the
+          application.
+        </p>
+
+        <div class="component-props">
+          <h3 class="text-lg font-semibold mb-2">Props</h3>
+          <table class="prop-table">
+            <thead>
+              <tr>
+                <th>Name</th>
+                <th>Type</th>
+                <th>Description</th>
+                <th>Required</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>date</td>
+                <td>Date</td>
+                <td>The date to format</td>
+                <td>Yes</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div class="component-demo">
+          <FormattedDate date={new Date()} />
+        </div>
+      </section>
+
       <!-- DriverCard Component -->
       <section class="component-section">
         <h2 class="component-title">DriverCard</h2>
