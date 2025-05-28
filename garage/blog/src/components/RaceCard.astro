@@ -12,17 +12,59 @@ const { race } = Astro.props;
 // Extract a slug from the file path (last part without extension)
 const parts = race.id.split("/");
 const raceSlug = parts[parts.length - 1].replace(/\.(md|mdx)$/, "");
+
+// Determine race status
+const now = new Date();
+const raceDate = new Date(race.data.date);
+const isPastRace = raceDate < now;
+const isCurrentRace = !race.data.completed && 
+  !isPastRace &&
+  raceDate <= new Date(now.getTime() + 4 * 24 * 60 * 60 * 1000); // Within next 4 days
 ---
 
 <a href={`/seasons/${race.data.season}/races/${raceSlug}`} class="block h-full">
   <div
-    class="bg-white border border-gray-300 rounded shadow-md overflow-hidden hover:shadow-lg transition-shadow h-full"
+    class:list={[
+      "bg-white border rounded overflow-hidden transition-all h-full",
+      race.data.completed 
+        ? "border-green-300 shadow-md hover:shadow-lg hover:border-green-400" 
+        : isCurrentRace
+          ? "border-red-300 shadow-md hover:shadow-lg hover:border-red-400"
+          : "border-gray-300 shadow-sm hover:shadow-md"
+    ]}
   >
-    <img
-      src={race.data.trackImage || "/blog-placeholder-4.jpg"}
-      alt={race.data.trackName}
-      class="w-full h-56 object-cover p-3"
-    />
+    <div class="relative">
+      <img
+        src={race.data.trackImage || "/blog-placeholder-4.jpg"}
+        alt={race.data.trackName}
+        class:list={[
+          "w-full h-56 object-cover p-3",
+          race.data.completed && "opacity-90"
+        ]}
+      />
+      <div class="absolute top-4 right-6">
+        {race.data.completed && (
+          <span class="px-3 py-1 bg-green-500 text-white text-xs rounded-full">
+            Completed
+          </span>
+        )}
+        {isCurrentRace && (
+          <span class="px-3 py-1 bg-red-500 text-white text-xs rounded-full">
+            Next Race
+          </span>
+        )}
+        {!race.data.completed && isPastRace && (
+          <span class="px-3 py-1 bg-yellow-500 text-white text-xs rounded-full">
+            Delayed
+          </span>
+        )}
+        {!race.data.completed && !isCurrentRace && !isPastRace && (
+          <span class="px-3 py-1 bg-gray-500 text-white text-xs rounded-full">
+            Upcoming
+          </span>
+        )}
+      </div>
+    </div>
     <div class="p-6">
       <p class="text-sm text-gray-500 mb-1">Race #{race.data.raceNumber}</p>
 
