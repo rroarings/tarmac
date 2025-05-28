@@ -10,7 +10,73 @@ import { getCollection } from "astro:content";
 
 // Get sample data for components
 const sampleDriver = (await getCollection("drivers"))[0];
-const sampleRace = (await getCollection("races"))[0];
+
+const sampleRaces = {
+  completed: {
+    id: "miami-gp",
+    collection: "races" as const,
+    data: {
+      trackName: "Miami International Autodrome",
+      location: "Miami, USA",
+      date: new Date("2025-05-05"),
+      raceNumber: 5,
+      season: "2025" as const,
+      completed: true,
+      winner: "Max Verstappen",
+      winningTeam: "Red Bull Racing",
+      fastestLapTime: "1:29.708",
+      trackImage: "/blog-placeholder-1.jpg"
+    }
+  },
+  delayed: {
+    id: "monaco-gp",
+    collection: "races" as const,
+    data: {
+      trackName: "Circuit de Monaco",
+      location: "Monte Carlo, Monaco",
+      date: new Date("2025-05-26"),
+      raceNumber: 7,
+      season: "2025" as const,
+      completed: false,
+      winner: "",
+      winningTeam: "",
+      fastestLapTime: "",
+      trackImage: "/blog-placeholder-2.jpg"
+    }
+  },
+  nextRace: {
+    id: "spanish-gp",
+    collection: "races" as const,
+    data: {
+      trackName: "Circuit de Barcelona-Catalunya",
+      location: "Barcelona, Spain",
+      date: new Date("2025-05-30"),
+      raceNumber: 8,
+      season: "2025" as const,
+      completed: false,
+      winner: "",
+      winningTeam: "",
+      fastestLapTime: "",
+      trackImage: "/blog-placeholder-3.jpg"
+    }
+  },
+  upcoming: {
+    id: "austria-gp",
+    collection: "races" as const,
+    data: {
+      trackName: "Red Bull Ring",
+      location: "Spielberg, Austria",
+      date: new Date("2025-06-15"),
+      raceNumber: 10,
+      season: "2025" as const,
+      completed: false,
+      winner: "",
+      winningTeam: "",
+      fastestLapTime: "",
+      trackImage: "/blog-placeholder-4.jpg"
+    }
+  }
+};
 
 const SITE_TITLE = "Component Showcase";
 const SITE_DESCRIPTION = "Visual testing page for Trackside components";
