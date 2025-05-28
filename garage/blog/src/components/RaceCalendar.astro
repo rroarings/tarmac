@@ -21,24 +21,24 @@ const races = await getCollection("races", ({ data }) => {
 const now = new Date();
 
 // Sort races by date
-const sortedRaces = races.sort((a, b) => 
-  new Date(a.data.date).getTime() - new Date(b.data.date).getTime()
+const sortedRaces = races.sort(
+  (a, b) => new Date(a.data.date).getTime() - new Date(b.data.date).getTime(),
 );
 
 // Find completed and upcoming races
 const completedRaces = sortedRaces.filter(
-  race => race.data.completed || new Date(race.data.date) < now
+  (race) => race.data.completed || new Date(race.data.date) < now,
 );
 const upcomingRaces = sortedRaces.filter(
-  race => !race.data.completed && new Date(race.data.date) >= now
+  (race) => !race.data.completed && new Date(race.data.date) >= now,
 );
 
 // Get the most recent completed race
 const lastCompletedRace = completedRaces[completedRaces.length - 1];
 
 // Determine which races to display
-const racesToDisplay = showAllRaces 
-  ? sortedRaces 
+const racesToDisplay = showAllRaces
+  ? sortedRaces
   : [...(lastCompletedRace ? [lastCompletedRace] : []), ...upcomingRaces];
 ---
 
@@ -48,10 +48,15 @@ const racesToDisplay = showAllRaces
       <i class="bi bi-calendar3 text-3xl text-gray-700 mr-4"></i>
       <h3 class="text-2xl">{season} Race Calendar</h3>
     </div>
-    {lastCompletedRace && 
-      <a href={`/seasons/${season}/races`} class="text-gray-600 hover:text-red-600">
-        View Past Races
-      </a>
+    {
+      lastCompletedRace && (
+        <a
+          href={`/seasons/${season}/races`}
+          class="text-gray-600 hover:text-red-600"
+        >
+          View Past Races
+        </a>
+      )
     }
   </div>
 
