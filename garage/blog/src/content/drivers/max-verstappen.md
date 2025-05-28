@@ -4,6 +4,7 @@ lastName: "Verstappen"
 number: 1
 team: "Red Bull Racing"
 nationality: "Dutch"
+countryCode: "nl"
 age: 27
 season: "2025"
 championships: 4
