@@ -1,7 +1,7 @@
 ---
 trackName: "Hungary"
 location: "Montreal, Canada"
-date: 2025-06-15
+date: 2025-07-21
 season: "2025"
 winner: ""
 winningTeam: ""
