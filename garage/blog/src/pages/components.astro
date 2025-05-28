@@ -268,8 +268,31 @@ const SITE_DESCRIPTION = "Visual testing page for Trackside components";
         </div>
 
         <div class="component-demo">
-          <div class="max-w-sm">
-            <RaceCard race={sampleRace} />
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+            <div class="flex flex-col">
+              <h4 class="text-sm mb-3">Completed Race:</h4>
+              <div class="flex-1">
+                <RaceCard race={sampleRaces.completed} />
+              </div>
+            </div>
+            <div class="flex flex-col">
+              <h4 class="text-sm mb-3">Delayed Race:</h4>
+              <div class="flex-1">
+                <RaceCard race={sampleRaces.delayed} />
+              </div>
+            </div>
+            <div class="flex flex-col">
+              <h4 class="text-sm mb-3">Next Race (Within 4 days):</h4>
+              <div class="flex-1">
+                <RaceCard race={sampleRaces.nextRace} />
+              </div>
+            </div>
+            <div class="flex flex-col">
+              <h4 class="text-sm mb-3">Upcoming Race:</h4>
+              <div class="flex-1">
+                <RaceCard race={sampleRaces.upcoming} />
+              </div>
+            </div>
           </div>
         </div>
       </section>
