@@ -237,7 +237,30 @@ const SITE_DESCRIPTION = "Visual testing page for Trackside components";
               <tr>
                 <td>race</td>
                 <td>Race</td>
-                <td>The race object containing all race information</td>
+                <td>
+                  <div class="space-y-2">
+                    <p>An object containing race information with the following fields:</p>
+                    <div class="text-sm">
+                      <p class="font-semibold mt-2 mb-1">Required fields:</p>
+                      <ul class="list-disc pl-4 space-y-1">
+                        <li><code>trackName</code>: Name of the circuit</li>
+                        <li><code>location</code>: Race location</li>
+                        <li><code>date</code>: Race date (can be date-time, date string, or unix timestamp)</li>
+                        <li><code>season</code>: Must be "2024" or "2025"</li>
+                        <li><code>winner</code>: Race winner's name</li>
+                        <li><code>winningTeam</code>: Winning constructor</li>
+                        <li><code>fastestLapTime</code>: Fastest lap time</li>
+                        <li><code>raceNumber</code>: Race number in the season</li>
+                      </ul>
+                      <p class="font-semibold mt-2 mb-1">Optional fields:</p>
+                      <ul class="list-disc pl-4 space-y-1">
+                        <li><code>fastestLapDriver</code>: Driver who set the fastest lap</li>
+                        <li><code>trackImage</code>: Circuit layout image</li>
+                        <li><code>completed</code>: Race status (defaults to false)</li>
+                      </ul>
+                    </div>
+                  </div>
+                </td>
                 <td>Yes</td>
               </tr>
             </tbody>
