@@ -6,27 +6,56 @@ import RaceCard from "./RaceCard.astro";
 // Define props
 interface Props {
   season: string;
+  showAllRaces?: boolean;
 }
 
 // Get props
-const { season } = Astro.props;
+const { season, showAllRaces = false } = Astro.props;
 
 // Fetch races for the specified season
 const races = await getCollection("races", ({ data }) => {
   return data.season === season;
 });
 
-// Sort races by race number
-const sortedRaces = races.sort((a, b) => a.data.raceNumber - b.data.raceNumber);
+// Get current date for comparison
+const now = new Date();
+
+// Sort races by date
+const sortedRaces = races.sort((a, b) => 
+  new Date(a.data.date).getTime() - new Date(b.data.date).getTime()
+);
+
+// Find completed and upcoming races
+const completedRaces = sortedRaces.filter(
+  race => race.data.completed || new Date(race.data.date) < now
+);
+const upcomingRaces = sortedRaces.filter(
+  race => !race.data.completed && new Date(race.data.date) >= now
+);
+
+// Get the most recent completed race
+const lastCompletedRace = completedRaces[completedRaces.length - 1];
+
+// Determine which races to display
+const racesToDisplay = showAllRaces 
+  ? sortedRaces 
+  : [...(lastCompletedRace ? [lastCompletedRace] : []), ...upcomingRaces];
 ---
 
 <div class="bg-gray-100 border border-gray-300 rounded p-6">
-  <div class="flex items-center mb-6">
-    <i class="bi bi-calendar3 text-3xl text-gray-700 mr-4"></i>
-    <h3 class="text-2xl">{season} Race Calendar</h>
+  <div class="flex items-center justify-between mb-6">
+    <div class="flex items-center">
+      <i class="bi bi-calendar3 text-3xl text-gray-700 mr-4"></i>
+      <h3 class="text-2xl">{season} Race Calendar</h3>
+    </div>
+    {lastCompletedRace && 
+      <a href={`/seasons/${season}/races`} class="text-gray-600 hover:text-red-600">
+        View Past Races
+      </a>
+    }
   </div>
 
   <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-4">
-    {sortedRaces.map((race) => <RaceCard race={race} />)}
+    {racesToDisplay.map((race) => <RaceCard race={race} />)}
   </div>
 </div>
