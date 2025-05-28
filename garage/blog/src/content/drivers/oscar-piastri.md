@@ -4,6 +4,7 @@ lastName: "Piastri"
 number: 81
 team: "McLaren"
 nationality: "Australian"
+countryCode: "au"
 age: 24
 season: "2025"
 championships: 0
