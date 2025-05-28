@@ -1,7 +1,7 @@
 ---
 trackName: "United States (COTA)"
 location: "Montreal, Canada"
-date: 2025-06-15
+date: 2025-10-20
 season: "2025"
 winner: ""
 winningTeam: ""
