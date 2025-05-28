@@ -3,7 +3,7 @@ import BaseHead from "../../../../components/BaseHead.astro";
 import Header from "../../../../components/Header.astro";
 import Footer from "../../../../components/Footer.astro";
 import { SITE_TITLE } from "../../../../consts";
-import { getCollection, getEntry } from "astro:content";
+import { getCollection } from "astro:content";
 
 export async function getStaticPaths() {
   const drivers = await getCollection("drivers", ({ data }) => {
@@ -19,7 +19,7 @@ export async function getStaticPaths() {
 const { driver } = Astro.props;
 // Import the Content component separately
 import { render } from "astro:content";
-const { Content, headings } = await render(driver);
+const { Content } = await render(driver);
 ---
 
 <!doctype html>
@@ -34,7 +34,7 @@ const { Content, headings } = await render(driver);
     <Header />
     <main>
       <!-- Driver Profile Header -->
-      <section class="py-16 bg-gray-50">
+      <section class="py-16">
         <div class="container mx-auto px-4">
           <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
             <div>
@@ -78,7 +78,7 @@ const { Content, headings } = await render(driver);
       </section>
 
       <!-- Driver Statistics -->
-      <section class="py-12 bg-gradient-to-b from-gray-50 to-white">
+      <section class="py-12">
         <div class="container mx-auto px-4">
           <h2 class="text-3xl font-bold mb-10 text-center relative">
             <span class="inline-block pb-2">Career Statistics</span>
@@ -165,7 +165,7 @@ const { Content, headings } = await render(driver);
       </section>
 
       <!-- Driver Biography -->
-      <section class="py-12 bg-gray-50">
+      <section class="py-12">
         <div class="prose prose-lg max-w-none">
           <Content />
         </div>
