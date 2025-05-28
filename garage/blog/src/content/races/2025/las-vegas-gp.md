@@ -1,7 +1,7 @@
 ---
 trackName: "Las Vegas"
 location: "Montreal, Canada"
-date: 2025-06-15
+date: 2025-11-23
 season: "2025"
 winner: ""
 winningTeam: ""
