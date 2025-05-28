@@ -1,7 +1,7 @@
 ---
 trackName: "Great Britain"
 location: "Montreal, Canada"
-date: 2025-06-15
+date: 2025-07-07
 season: "2025"
 winner: ""
 winningTeam: ""
