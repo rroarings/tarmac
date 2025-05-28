@@ -1,62 +1,87 @@
 ---
 interface Props {
   title: string;
-  description: string;
+  content?: string; // HTML content
+  description?: string; // Plain text description
   ctaText?: string;
   ctaLink?: string;
   imageSrc?: string;
   imageAlt?: string;
   reversed?: boolean;
-  background?: 'white' | 'gray';
+  background?: "white" | "gray";
 }
 
-const { 
-  title, 
-  description, 
-  ctaText, 
-  ctaLink, 
-  imageSrc, 
-  imageAlt = '', 
+const {
+  title,
+  content,
+  description,
+  ctaText,
+  ctaLink,
+  imageSrc,
+  imageAlt = "",
   reversed = false,
-  background = 'white'
+  background = "white",
 } = Astro.props;
 
-const bgClass = background === 'gray' ? 'bg-gray-50' : 'bg-white';
+const bgClass = background === "gray" ? "bg-gray-50" : "bg-white";
 ---
 
 <section class={`py-12 ${bgClass}`}>
-  <div class="max-w-7xl mx-auto px-4">
-    <div class={`grid grid-cols-1 md:grid-cols-2 gap-8 items-center ${reversed ? 'md:flex-row-reverse' : ''}`}>
+  <div class="container mx-auto px-4">
+    <div
+      class={`flex flex-col md:flex-row gap-8 items-center ${reversed ? "md:flex-row-reverse" : ""}`}
+    >
       <!-- Text Content -->
-      <div class={reversed ? 'md:pl-8' : 'md:pr-8'}>
-        <h2 class="text-2xl font-bold mb-4">{title}</h2>
-        <p class="mb-4 text-gray-700">
-          {description}
-        </p>
-        {ctaText && ctaLink && (
-          <a
-            href={ctaLink}
-            class="inline-block text-red-600 hover:text-blue-600 py-2"
-          >
-            {ctaText}
-          </a>
-        )}
+      <div class={`flex-1 space-y-6 ${reversed ? "md:pl-8" : "md:pr-8"}`}>
+        <h2 class="text-3xl font-bold">{title}</h2>
+        {
+          content ? (
+            <div class="prose prose-lg max-w-none" set:html={content} />
+          ) : description ? (
+            <p class="text-gray-600">{description}</p>
+          ) : null
+        }
+        {
+          ctaText && ctaLink && (
+            <a
+              href={ctaLink}
+              class="inline-flex items-center text-red-600 hover:text-red-700 font-medium transition-colors"
+            >
+              <span>{ctaText}</span>
+              <svg
+                class="ml-2 w-5 h-5"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M9 5l7 7-7 7"
+                />
+              </svg>
+            </a>
+          )
+        }
       </div>
+
       <!-- Image -->
-      <div class="flex justify-center">
-        {imageSrc ? (
-          <img 
-            src={imageSrc} 
-            alt={imageAlt}
-            class="w-full max-w-md rounded-lg shadow-md object-cover"
-          />
-        ) : (
-          <div
-            class="w-full max-w-md aspect-video bg-gray-200 flex items-center justify-center rounded shadow"
-          >
-            <span class="text-gray-400 text-lg">[Placeholder Image]</span>
-          </div>
-        )}
+      <div class="flex-1 flex justify-center">
+        {
+          imageSrc ? (
+            <img
+              src={imageSrc}
+              alt={imageAlt}
+              class="w-full max-w-lg rounded-lg shadow-md object-cover"
+              loading="lazy"
+            />
+          ) : (
+            <div class="w-full max-w-lg aspect-video bg-gray-200 flex items-center justify-center rounded shadow">
+              <span class="text-gray-400 text-lg">[Placeholder Image]</span>
+            </div>
+          )
+        }
       </div>
     </div>
   </div>
