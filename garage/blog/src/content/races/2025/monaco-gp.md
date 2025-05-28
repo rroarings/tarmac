@@ -8,7 +8,7 @@ winningTeam: ""
 fastestLapTime: ""
 trackImage: "/blog-placeholder-3.jpg"
 raceNumber: 8
-completed: false
+completed: true
 ---
 
 # Monaco Grand Prix 2025
