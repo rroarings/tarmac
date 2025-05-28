@@ -11,7 +11,9 @@ const { driver, year = "2025" } = Astro.props;
 ---
 
 <a href={`/seasons/${year}/drivers/${driver.id}`} class="block h-full">
-  <article class="bg-white border border-gray-200 rounded-lg shadow-sm overflow-hidden hover:shadow-lg transition-all duration-300 h-full flex flex-col">
+  <article
+    class="bg-white border border-gray-200 rounded-lg shadow-sm overflow-hidden hover:shadow-lg transition-all duration-300 h-full flex flex-col"
+  >
     <div class="h-48 overflow-hidden">
       <img
         src={driver.data.profileImage &&
@@ -22,14 +24,16 @@ const { driver, year = "2025" } = Astro.props;
         class="w-full h-full object-cover"
       />
     </div>
-    
+
     <div class="p-6 flex-1 flex flex-col">
       <header class="flex-1">
         <div class="mb-3">
           <div class="text-xl text-gray-600">{driver.data.firstName}</div>
-          <h3 class="text-2xl font-bold text-black -mt-1">{driver.data.lastName}</h3>
+          <h3 class="text-2xl font-bold text-black -mt-1">
+            {driver.data.lastName}
+          </h3>
         </div>
-        
+
         <dl class="flex justify-between items-center mb-4">
           <dt class="sr-only">Team</dt>
           <dd class="text-gray-600 text-sm font-medium">{driver.data.team}</dd>
@@ -38,7 +42,10 @@ const { driver, year = "2025" } = Astro.props;
         </dl>
       </header>
 
-      <dl class="text-sm space-y-2 pt-4 border-t border-gray-200" aria-label="Driver Statistics">
+      <dl
+        class="text-sm space-y-2 pt-4 border-t border-gray-200"
+        aria-label="Driver Statistics"
+      >
         <div class="flex justify-between items-center">
           <dt class="text-gray-600">Nationality</dt>
           <dd class="font-medium text-gray-600">{driver.data.nationality}</dd>
