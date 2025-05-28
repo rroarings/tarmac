@@ -1,0 +1,203 @@
+---
+import BaseHead from "../../components/BaseHead.astro";
+import Header from "../../components/Header.astro";
+import Footer from "../../components/Footer.astro";
+import GridSection from "../../components/GridSection.astro";
+import TwoColumnSection from "../../components/TwoColumnSection.astro";
+
+const pageTitle = "What is Formula 1?";
+const description =
+  "Discover Formula 1, the pinnacle of motorsport, where speed, innovation, and strategy collide to create the ultimate racing spectacle.";
+
+const f1BasicsItems = [
+  {
+    title: "The Introduction",
+    description:
+      "Formula 1, often referred to as F1, is the pinnacle of motorsport and one of the most thrilling and prestigious racing championships in the world.",
+    imageSrc: "/blog-placeholder-1.jpg",
+    imageAlt: "What is Formula 1",
+  },
+  {
+    title: "The Machinery",
+    description:
+      "Formula 1 cars are open-wheel, single-seater vehicles designed for maximum speed and performance.",
+    imageSrc: "/blog-placeholder-2.jpg",
+    imageAlt: "The Machinery",
+  },
+  {
+    title: "The Drivers",
+    description:
+      "Behind the wheel are some of the most talented and daring drivers on the planet, competing for glory in a high-stakes environment.",
+    imageSrc: "/blog-placeholder-3.jpg",
+    imageAlt: "The Drivers",
+  },
+  {
+    title: "The Tracks",
+    description:
+      "Races take place on a variety of circuits, ranging from iconic street tracks like Monaco to purpose-built circuits like Silverstone.",
+    imageSrc: "/blog-placeholder-4.jpg",
+    imageAlt: "The Tracks",
+  },
+];
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <BaseHead title={pageTitle} description={description} />
+  </head>
+  <body>
+    <Header />
+
+    <!-- Hero Section -->
+    <section class="relative h-screen w-full overflow-hidden">
+      <!-- Video Background -->
+      <video
+        class="absolute inset-0 w-full h-full object-cover"
+        autoplay
+        loop
+        muted
+        playsinline
+      >
+        <source src="/videos/raceseq.mp4" type="video/mp4" />
+        Your browser does not support the video tag.
+      </video>
+
+      <!-- Overlay -->
+      <div class="absolute inset-0 bg-black bg-opacity-50"></div>
+
+      <!-- Content -->
+      <div class="relative h-full flex items-center">
+        <div class="container mx-auto px-4">
+          <div class="max-w-2xl">
+            <h1 class="text-4xl md:text-5xl font-bold text-white mb-4">
+              {pageTitle}
+            </h1>
+            <p class="text-xl text-white">
+              Formula 1 is the pinnacle of motorsport, where speed, innovation,
+              and strategy collide to create the ultimate racing spectacle.
+              Experience the thrill of the world's fastest cars, elite drivers,
+              and iconic circuits.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- F1 Essentials Guide -->
+
+    <!-- Understanding F1 Section -->
+    <section class="py-16 bg-gray-50">
+      <GridSection
+        title="Understanding the pinnacle of motorsports"
+        items={f1BasicsItems}
+      />
+    </section>
+
+    <!-- Championships Section -->
+    <section class="py-16 text-center">
+      <div class="container mx-auto px-4">
+        <h2 class="text-3xl font-bold mb-4">Championships at stake</h2>
+        <p class="max-w-3xl mx-auto mb-12">
+          Formula 1 is not just about individual races; it's a season-long
+          competition to crown the best. It is as much about teamwork as
+          individual skill, with every point contributing to the season's
+          narrative.
+        </p>
+        <div class="grid md:grid-cols-2 gap-8">
+          <div class="bg-white rounded-lg shadow-sm border p-8">
+            <h3 class="text-xl font-semibold mb-3">Drivers' Championship</h3>
+            <p>
+              Awarded to the driver who accumulates the most points throughout
+              the season. Points are earned based on race finishes, with higher
+              positions earning more points.
+            </p>
+          </div>
+          <div class="bg-white rounded-lg shadow-sm border p-8">
+            <h3 class="text-xl font-semibold mb-3">
+              Constructors' Championship
+            </h3>
+            <p>
+              Teams, also known as constructors, compete for this title based on
+              the combined performance of their two drivers.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Technology Section -->
+    <TwoColumnSection
+      title="The Technology"
+      content={`
+        <p class="mb-4">
+          Formula 1 is a testing ground for automotive and engineering
+          innovations. Technologies developed in F1 often influence the
+          design and performance of road cars, pushing boundaries in
+          efficiency and speed.
+        </p>
+        <p>
+          Recent years have seen a push towards sustainability, with the
+          introduction of hybrid power units and a commitment to using 100%
+          sustainable fuels by 2030. These initiatives aim to secure the
+          sport's future while addressing global environmental challenges.
+        </p>
+      `}
+      imageSrc="/blog-placeholder-1.jpg"
+      imageAlt="F1 Technology"
+    />
+
+    <!-- Spectacle Section -->
+    <TwoColumnSection
+      title="The Spectacle"
+      content={`
+        <p>
+          Each F1 race weekend includes practice sessions, a qualifying
+          session to determine the starting grid, and the main event: the
+          Grand Prix. The format keeps fans engaged and builds excitement
+          across the weekend.
+        </p>
+      `}
+      imageSrc="/blog-placeholder-2.jpg"
+      imageAlt="F1 Race Weekend"
+      reversed={true}
+      background="gray"
+    />
+
+    <!-- Why It Matters Section -->
+    <TwoColumnSection
+      title="Why It Matters"
+      content={`
+        <p class="mb-4">
+          Formula 1 isn't just about racing; it's about pushing boundaries,
+          showcasing human ingenuity, and celebrating the relentless pursuit
+          of excellence. It captures the imagination of fans with its blend of
+          speed, strategy, and high-octane drama.
+        </p>
+        <p>
+          Whether you're a lifelong fan or new to the sport, Formula 1 offers
+          something for everyone. It's more than a race – it's a passion, a
+          tradition, and a glimpse into the future of technology and sport.
+        </p>
+      `}
+      imageSrc="/blog-placeholder-3.jpg"
+      imageAlt="F1 Impact"
+    />
+
+    <!-- Spectacle Section -->
+    <TwoColumnSection
+      title="The Future"
+      content={`
+       <p>
+         Formula 1 continues to evolve through advancements in sustainability, hybrid technology, and fan engagement. The sport remains poised to be the pinnacle of motorsport for generations to come. 
+       </p>
+     `}
+      imageSrc="/blog-placeholder-2.jpg"
+      imageAlt="F1 Race Weekend"
+      reversed={true}
+      background="gray"
+    />
+
+    <Footer />
+  </body>
+</html>
