@@ -37,7 +37,9 @@ const teams = await getCollection("teams", ({ data }) => {
 });
 
 // Sort teams by constructor points
-const sortedTeams = teams.sort((a, b) => b.data.constructorPoints - a.data.constructorPoints);
+const sortedTeams = teams.sort(
+  (a, b) => b.data.constructorPoints - a.data.constructorPoints,
+);
 
 // Get upcoming 2025 races
 const races2025 = await getCollection("races", ({ data }) => {
@@ -192,8 +194,6 @@ const features = [
       </section>
 
       <!-- Championship Standings Section -->
-      
-
 
       <!-- 2025 Drivers Section -->
       <section class="py-5">
