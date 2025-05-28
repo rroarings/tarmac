@@ -1,7 +1,7 @@
 ---
 trackName: "Azerbaijan"
 location: "Montreal, Canada"
-date: 2025-06-15
+date: 2025-09-15
 season: "2025"
 winner: ""
 winningTeam: ""
