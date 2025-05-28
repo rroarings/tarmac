@@ -1,7 +1,7 @@
 ---
 trackName: "Miami International Autodrome"
 location: "Miami, Florida, USA"
-date: 2025-05-25
+date: 2025-05-4
 season: "2025"
 winner: "Oscar Piastri"
 winningTeam: "McLaren"
