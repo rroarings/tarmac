@@ -1,6 +1,7 @@
 ---
 import HeaderLink from "./HeaderLink.astro";
 import { SITE_TITLE } from "../consts";
+import { Icon } from "astro-icon/components";
 ---
 
 <header class="sticky top-0 z-50 bg-white shadow-sm">
@@ -20,18 +21,7 @@ import { SITE_TITLE } from "../consts";
         <div class="relative group">
           <HeaderLink href="/seasons" class="inline-flex items-center">
             <span>Seasons</span>
-            <svg
-              class="ml-1 w-4 h-4"
-              fill="none"
-              stroke="currentColor"
-              viewBox="0 0 24 24"
-            >
-              <path
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="2"
-                d="M19 9l-7 7-7-7"></path>
-            </svg>
+            <Icon name="mdi:chevron-down" size={16} class="ml-1" />
           </HeaderLink>
           <div
             class="hidden group-hover:block absolute left-0 top-full pt-2 w-48"
@@ -53,18 +43,7 @@ import { SITE_TITLE } from "../consts";
         <div class="relative group">
           <HeaderLink href="/about/whatis" class="inline-flex items-center">
             <span>Learn</span>
-            <svg
-              class="ml-1 w-4 h-4"
-              fill="none"
-              stroke="currentColor"
-              viewBox="0 0 24 24"
-            >
-              <path
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="2"
-                d="M19 9l-7 7-7-7"></path>
-            </svg>
+            <Icon name="mdi:chevron-down" size={16} class="ml-1" />
           </HeaderLink>
           <div
             class="hidden group-hover:block absolute left-0 top-full pt-2 w-48"
@@ -91,18 +70,7 @@ import { SITE_TITLE } from "../consts";
         <div class="relative group">
           <HeaderLink href="#" class="inline-flex items-center">
             <span>More</span>
-            <svg
-              class="ml-1 w-4 h-4"
-              fill="none"
-              stroke="currentColor"
-              viewBox="0 0 24 24"
-            >
-              <path
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="2"
-                d="M19 9l-7 7-7-7"></path>
-            </svg>
+            <Icon name="mdi:chevron-down" size={16} class="ml-1" />
           </HeaderLink>
           <div
             class="hidden group-hover:block absolute right-0 top-full pt-2 w-48"
@@ -131,18 +99,7 @@ import { SITE_TITLE } from "../consts";
           class="mobile-menu-button inline-flex items-center justify-center p-2 rounded-md text-gray-700 hover:text-gray-900 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-blue-500"
         >
           <span class="sr-only">Open main menu</span>
-          <svg
-            class="h-6 w-6"
-            fill="none"
-            stroke="currentColor"
-            viewBox="0 0 24 24"
-          >
-            <path
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              stroke-width="2"
-              d="M4 6h16M4 12h16M4 18h16"></path>
-          </svg>
+          <Icon name="mdi:menu" size={24} aria-hidden="true" />
         </button>
       </div>
     </div>
@@ -167,18 +124,11 @@ import { SITE_TITLE } from "../consts";
             class="w-full text-left px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50 flex justify-between items-center"
           >
             Seasons
-            <svg
-              class="w-4 h-4 transform transition-transform"
-              fill="none"
-              stroke="currentColor"
-              viewBox="0 0 24 24"
-            >
-              <path
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="2"
-                d="M19 9l-7 7-7-7"></path>
-            </svg>
+            <Icon
+              name="mdi:chevron-down"
+              size={16}
+              class="transform transition-transform"
+            />
           </button>
           <div class="hidden pl-4">
             <a
@@ -200,18 +150,11 @@ import { SITE_TITLE } from "../consts";
             class="w-full text-left px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50 flex justify-between items-center"
           >
             Learn
-            <svg
-              class="w-4 h-4 transform transition-transform"
-              fill="none"
-              stroke="currentColor"
-              viewBox="0 0 24 24"
-            >
-              <path
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="2"
-                d="M19 9l-7 7-7-7"></path>
-            </svg>
+            <Icon
+              name="mdi:chevron-down"
+              size={16}
+              class="transform transition-transform"
+            />
           </button>
           <div class="hidden pl-4">
             <a
