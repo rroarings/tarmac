@@ -13,14 +13,16 @@
     "@astrojs/mdx": "^4.3.0",
     "@astrojs/rss": "^4.0.11",
     "@astrojs/sitemap": "^3.4.0",
+    "@iconify-json/mdi": "^1.2.3",
     "@tailwindcss/vite": "^4.1.7",
     "astro": "^5.8.0",
+    "astro-icon": "^1.1.5",
     "bootstrap-icons": "^1.13.1",
     "flag-icons": "^7.3.2"
   },
   "devDependencies": {
-    "prettier": "3.5.3",
-    "prettier-plugin-astro": "0.14.1",
+    "prettier": "^3.5.3",
+    "prettier-plugin-astro": "^0.14.1",
     "tailwindcss": "^4.1.7"
   }
 }
