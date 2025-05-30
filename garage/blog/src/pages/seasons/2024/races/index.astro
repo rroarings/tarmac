@@ -1,9 +1,9 @@
 ---
-import BaseHead from "../../../../components/BaseHead.astro";
-import Header from "../../../../components/Header.astro";
-import Footer from "../../../../components/Footer.astro";
-import RaceCalendar from "../../../../components/RaceCalendar.astro";
-import { SITE_TITLE } from "../../../../consts";
+import BaseHead from "../../../../components/BaseHead.astro"
+import Header from "../../../../components/Header.astro"
+import Footer from "../../../../components/Footer.astro"
+import RaceCalendar from "../../../../components/RaceCalendar.astro"
+import { SITE_TITLE } from "../../../../consts"
 ---
 
 <!doctype html>
@@ -21,16 +21,7 @@ import { SITE_TITLE } from "../../../../consts";
       <section class="pt-6 pb-6 text-center">
         <div class="container mx-auto px-4">
           <h1 class="text-4xl font-bold mb-4">2024 Formula 1 Races</h1>
-          <p class="text-lg text-gray-700">
-            Complete race calendar for the 2024 season
-          </p>
-        </div>
-      </section>
-
-      <!-- Race Calendar -->
-      <section class="py-6">
-        <div class="container mx-auto px-4">
-          <RaceCalendar season="2024" />
+          <p class="text-lg text-gray-700">Complete race calendar for the 2024 season</p>
         </div>
       </section>
 
@@ -49,6 +40,13 @@ import { SITE_TITLE } from "../../../../consts";
           >
             View 2025 Races
           </a>
+        </div>
+      </section>
+
+      <!-- Race Calendar -->
+      <section class="py-6">
+        <div class="container mx-auto px-4">
+          <RaceCalendar season="2024" />
         </div>
       </section>
     </main>
