@@ -1,7 +1,7 @@
 ---
-import HeaderLink from "./HeaderLink.astro";
-import { SITE_TITLE } from "../consts";
-import { Icon } from "astro-icon/components";
+import HeaderLink from "./HeaderLink.astro"
+import { SITE_TITLE } from "../consts"
+import { Icon } from "astro-icon/components"
 ---
 
 <header class="sticky top-0 z-50 bg-white shadow-sm">
@@ -9,7 +9,11 @@ import { Icon } from "astro-icon/components";
     <div class="flex items-center justify-between h-16">
       <!-- Logo -->
       <div class="flex-shrink-0">
-        <a href="/" class="text-xl font-bold">{SITE_TITLE}</a>
+        <a
+          href="/"
+          class="text-xl font-bold"
+          >{SITE_TITLE}</a
+        >
       </div>
 
       <!-- Desktop Navigation -->
@@ -19,21 +23,28 @@ import { Icon } from "astro-icon/components";
 
         <!-- Seasons Dropdown -->
         <div class="relative group">
-          <HeaderLink href="/seasons" class="inline-flex items-center">
-            <span>Seasons</span>
-            <Icon name="mdi:chevron-down" size={16} class="ml-1" />
-          </HeaderLink>
-          <div
-            class="hidden group-hover:block absolute left-0 top-full pt-2 w-48"
+          <HeaderLink
+            href="/seasons"
+            class="inline-flex items-center"
           >
+            <span>Seasons</span>
+            <Icon
+              name="mdi:chevron-down"
+              size={16}
+              class="ml-1"
+            />
+          </HeaderLink>
+          <div class="hidden group-hover:block absolute left-0 top-full pt-2 w-48">
             <div class="bg-white border border-gray-200 rounded-md shadow-lg">
               <a
                 href="/seasons/2025"
-                class="block px-4 py-2 text-sm hover:bg-gray-200">2025 Season</a
+                class="block px-4 py-2 text-sm hover:bg-gray-200"
+                >2025 Season</a
               >
               <a
                 href="/seasons/2024"
-                class="block px-4 py-2 text-sm hover:bg-gray-200">2024 Season</a
+                class="block px-4 py-2 text-sm hover:bg-gray-200"
+                >2024 Season</a
               >
             </div>
           </div>
@@ -41,21 +52,28 @@ import { Icon } from "astro-icon/components";
 
         <!-- Learn Dropdown -->
         <div class="relative group">
-          <HeaderLink href="/about/whatis" class="inline-flex items-center">
-            <span>Learn</span>
-            <Icon name="mdi:chevron-down" size={16} class="ml-1" />
-          </HeaderLink>
-          <div
-            class="hidden group-hover:block absolute left-0 top-full pt-2 w-48"
+          <HeaderLink
+            href="/about/whatis"
+            class="inline-flex items-center"
           >
+            <span>Learn</span>
+            <Icon
+              name="mdi:chevron-down"
+              size={16}
+              class="ml-1"
+            />
+          </HeaderLink>
+          <div class="hidden group-hover:block absolute left-0 top-full pt-2 w-48">
             <div class="bg-white border border-gray-200 rounded-md shadow-lg">
               <a
                 href="/about/whatis"
-                class="block px-4 py-2 text-sm hover:bg-gray-200">What is F1</a
+                class="block px-4 py-2 text-sm hover:bg-gray-200"
+                >What is F1</a
               >
               <a
                 href="/about/technologies"
-                class="block px-4 py-2 text-sm hover:bg-gray-200">Technology</a
+                class="block px-4 py-2 text-sm hover:bg-gray-200"
+                >Technology</a
               >
               <a
                 href="/about/future"
@@ -68,24 +86,38 @@ import { Icon } from "astro-icon/components";
 
         <!-- More Dropdown -->
         <div class="relative group">
-          <HeaderLink href="#" class="inline-flex items-center">
-            <span>More</span>
-            <Icon name="mdi:chevron-down" size={16} class="ml-1" />
-          </HeaderLink>
-          <div
-            class="hidden group-hover:block absolute right-0 top-full pt-2 w-48"
+          <HeaderLink
+            href="#"
+            class="inline-flex items-center"
           >
+            <span>More</span>
+            <Icon
+              name="mdi:chevron-down"
+              size={16}
+              class="ml-1"
+            />
+          </HeaderLink>
+          <div class="hidden group-hover:block absolute right-0 top-full pt-2 w-48">
             <div class="bg-white border border-gray-200 rounded-md shadow-lg">
-              <a href="/about" class="block px-4 py-2 text-sm hover:bg-gray-200"
+              <a
+                href="/about"
+                class="block px-4 py-2 text-sm hover:bg-gray-200"
                 >About</a
               >
               <a
+                href="/attributions"
+                class="block px-4 py-2 text-sm hover:bg-gray-200"
+                >Attributions</a
+              >
+              <a
                 href="/contact"
-                class="block px-4 py-2 text-sm hover:bg-gray-200">Contact</a
+                class="block px-4 py-2 text-sm hover:bg-gray-200"
+                >Contact</a
               >
               <a
                 href="/components"
-                class="block px-4 py-2 text-sm hover:bg-gray-200">Components</a
+                class="block px-4 py-2 text-sm hover:bg-gray-200"
+                >Components</a
               >
             </div>
           </div>
@@ -99,7 +131,11 @@ import { Icon } from "astro-icon/components";
           class="mobile-menu-button inline-flex items-center justify-center p-2 rounded-md text-gray-700 hover:text-gray-900 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-blue-500"
         >
           <span class="sr-only">Open main menu</span>
-          <Icon name="mdi:menu" size={24} aria-hidden="true" />
+          <Icon
+            name="mdi:menu"
+            size={24}
+            aria-hidden="true"
+          />
         </button>
       </div>
     </div>
@@ -199,26 +235,26 @@ import { Icon } from "astro-icon/components";
   // Add this script for mobile menu functionality
   document.addEventListener("DOMContentLoaded", () => {
     // Mobile menu toggle
-    const mobileMenuButton = document.querySelector(".mobile-menu-button");
-    const mobileMenu = document.querySelector(".mobile-menu");
+    const mobileMenuButton = document.querySelector(".mobile-menu-button")
+    const mobileMenu = document.querySelector(".mobile-menu")
 
     mobileMenuButton?.addEventListener("click", () => {
-      mobileMenu?.classList.toggle("hidden");
-    });
+      mobileMenu?.classList.toggle("hidden")
+    })
 
     // Mobile dropdowns
-    const mobileDropdowns = document.querySelectorAll(".mobile-dropdown");
+    const mobileDropdowns = document.querySelectorAll(".mobile-dropdown")
     mobileDropdowns.forEach((dropdown) => {
-      const button = dropdown.querySelector("button");
-      const content = dropdown.querySelector("div");
-      const arrow = button?.querySelector("svg");
+      const button = dropdown.querySelector("button")
+      const content = dropdown.querySelector("div")
+      const arrow = button?.querySelector("svg")
 
       button?.addEventListener("click", () => {
-        content?.classList.toggle("hidden");
-        arrow?.classList.toggle("rotate-180");
-      });
-    });
-  });
+        content?.classList.toggle("hidden")
+        arrow?.classList.toggle("rotate-180")
+      })
+    })
+  })
 </script>
 
 <style>
