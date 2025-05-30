@@ -1,60 +1,79 @@
 ---
-// Define the props that this component accepts
-import type { CollectionEntry } from "astro:content";
+import { getCollection, type CollectionEntry } from "astro:content";
 import FormattedDate from "./FormattedDate.astro";
 
 interface Props {
   race: CollectionEntry<"races">;
+  completedRaces?: CollectionEntry<"races">[];
 }
 
-const { race } = Astro.props;
+const { race, completedRaces = [] } = Astro.props;
 
-// Extract a slug from the file path (last part without extension)
+// Get slug from filename
 const parts = race.id.split("/");
 const raceSlug = parts[parts.length - 1].replace(/\.(md|mdx)$/, "");
 
-// Determine race status
-const now = new Date();
-const raceDate = new Date(race.data.date);
-const isPastRace = raceDate < now;
-const isCurrentRace =
-  !race.data.completed &&
-  !isPastRace &&
-  raceDate <= new Date(now.getTime() + 4 * 24 * 60 * 60 * 1000); // Within next 4 days
+// Helper for UTC midnight to ensure consistent timezone handling
+const toUTCMidnight = (date: Date) => {
+  const d = new Date(date);
+  d.setUTCHours(0, 0, 0, 0);
+  return d;
+};
+
+// Use UTC dates for consistent comparisons
+const nowUTC = toUTCMidnight(new Date());
+const raceDateUTC = toUTCMidnight(new Date(race.data.date));
+const fourDaysFromNowUTC = new Date(nowUTC);
+fourDaysFromNowUTC.setDate(nowUTC.getDate() + 4);
+
+// Race status checks
+const isPastRace = raceDateUTC.getTime() < nowUTC.getTime();
+const isCurrentRace = !race.data.completed && !isPastRace && raceDateUTC.getTime() <= fourDaysFromNowUTC.getTime();
+const lastRaceDate = completedRaces.length > 0 
+  ? Math.max(...completedRaces.map(r => toUTCMidnight(new Date(r.data.date)).getTime()))
+  : 0;
+const isLastRace = race.data.completed && raceDateUTC.getTime() === lastRaceDate;
 ---
 
 <a href={`/seasons/${race.data.season}/races/${raceSlug}`} class="block h-full">
   <div
     class:list={[
-      "bg-white border rounded overflow-hidden transition-all h-full",
-      race.data.completed
-        ? "border-green-300 shadow-md hover:shadow-lg hover:border-green-400"
-        : isCurrentRace
-          ? "border-red-300 shadow-md hover:shadow-lg hover:border-red-400"
-          : "border-gray-300 shadow-sm hover:shadow-md",
+      "h-full border rounded-lg overflow-hidden shadow-sm transition-shadow duration-200 hover:shadow-md",
+      {
+        "border-red-200 bg-red-50": isCurrentRace,
+        "border-blue-200 bg-blue-50": isLastRace,
+        "border-green-100 bg-green-50": race.data.completed && !isLastRace,
+        "border-gray-200 bg-white": !isCurrentRace && !isLastRace && !race.data.completed,
+      },
     ]}
   >
-    <div class="relative">
+    {race.data.trackImage && (
       <img
-        src={race.data.trackImage || "/blog-placeholder-4.jpg"}
-        alt={race.data.trackName}
-        class:list={[
-          "w-full h-56 object-cover p-3",
-          race.data.completed && "opacity-90",
-        ]}
+        src={race.data.trackImage}
+        alt={`${race.data.trackName} circuit`}
+        class="w-full h-48 object-cover"
       />
-      <div class="absolute top-4 right-6">
-        {
-          race.data.completed && (
-            <span class="px-3 py-1 bg-green-500 text-white text-xs rounded-full">
-              Completed
-            </span>
-          )
-        }
+    )}
+    <div class="p-4">
+      <div class="flex items-center justify-between mb-4">
         {
           isCurrentRace && (
             <span class="px-3 py-1 bg-red-500 text-white text-xs rounded-full">
               Next Race
+            </span>
+          )
+        }
+        {
+          isLastRace && (
+            <span class="px-3 py-1 bg-blue-500 text-white text-xs rounded-full">
+              Last Race
+            </span>
+          )
+        }
+        {
+          race.data.completed && !isLastRace && (
+            <span class="px-3 py-1 bg-green-600 text-white text-xs rounded-full">
+              Completed
             </span>
           )
         }
