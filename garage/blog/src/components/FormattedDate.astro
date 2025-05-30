@@ -4,14 +4,19 @@ interface Props {
 }
 
 const { date } = Astro.props;
+
+// Convert to UTC date for consistent display
+const utcDate = new Date(date);
+utcDate.setUTCHours(0, 0, 0, 0);
 ---
 
-<time datetime={date.toISOString()}>
+<time datetime={utcDate.toISOString()}>
   {
-    date.toLocaleDateString("en-us", {
+    utcDate.toLocaleDateString("en-us", {
       year: "numeric",
       month: "short",
       day: "numeric",
+      timeZone: "UTC",
     })
   }
 </time>
