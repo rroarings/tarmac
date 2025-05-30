@@ -1,0 +1,136 @@
+---
+import BaseHead from "../../components/BaseHead.astro"
+import Header from "../../components/Header.astro"
+import Footer from "../../components/Footer.astro"
+import BreakpointIndicator from "../../components/BreakpointIndicator.astro"
+import TwoColumnSection from "../../components/TwoColumnSection.astro"
+import { Image } from "astro:assets"
+
+const pageTitle = "Future of Formula 1"
+const description =
+  "Discover what lies ahead for Formula 1 as we explore emerging technologies, sustainability initiatives, and the next generation of racing talent."
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <BaseHead
+      title={pageTitle}
+      description={description}
+    />
+  </head>
+  <body>
+    <BreakpointIndicator />
+    <Header />
+
+    <!-- Hero Section -->
+    <div class="container mx-auto px-4 py-12">
+      <div class="max-w-4xl mx-auto">
+        <h1 class="text-4xl sm:text-5xl font-bold text-gray-900 mb-4">
+          {pageTitle}
+        </h1>
+        <p class="text-xl text-gray-600">
+          Formula 1 has always been at the forefront of technological advancements, and the future
+          promises to be no different. From cutting-edge aerodynamics to hybrid power units, the
+          sport continues to evolve, pushing the boundaries of speed, efficiency, and performance.
+        </p>
+      </div>
+    </div>
+
+    <!-- Data & Analytics Section -->
+    <TwoColumnSection
+      title="Data and analytical revolution"
+      content={`
+        <p>
+          The increasing use of data and analytics in Formula 1 is
+          transforming the sport and opening up new possibilities for
+          innovation and discovery. F1 teams are already using data to
+          optimize car performance, track conditions, and race strategies, but
+          with the emergence of new technologies such as artificial
+          intelligence and machine learning, the potential for data-driven
+          advancements in F1 is limitless.
+        </p>
+        <p>
+          To keep up with this data-driven revolution, F1 engineers will need
+          to have exceptional skills in data analysis and interpretation, and
+          teams will need to invest in the latest technologies and tools. This
+          focus on data will not only make F1 more competitive, but it will
+          also drive breakthroughs and advancements with far-reaching impacts
+          beyond the sport.
+        </p>
+      `}
+      imageSrc="/blog-placeholder-1.jpg"
+      imageAlt="F1 Data Analytics"
+      background="gray"
+    />
+
+    <!-- New Innovations Section -->
+    <TwoColumnSection
+      title="New innovations and dynamics"
+      content={`
+        <p>
+          The future of the sport also promises to be shaped by a more diverse
+          and inclusive culture. F1 is taking steps to increase diversity and
+          representation in the sport, including the launch of the We Race As
+          One initiative, which aims to promote diversity and inclusion both
+          on and off the track.
+        </p>
+        <p>
+          As the sport becomes more diverse and inclusive, it will bring new
+          perspectives and ideas to the engineering and design of the cars and
+          the sport as a whole. This will not only make F1 more representative
+          of the global community, but it will also help to attract new talent
+          and create a more sustainable and innovative future for the sport.
+        </p>
+      `}
+      imageSrc="/blog-placeholder-2.jpg"
+      imageAlt="F1 Innovation and Development"
+      reversed={true}
+    />
+
+    <!-- Harnessing Energy Section -->
+    <section class="py-12 bg-gray-50">
+      <div class="container mx-auto px-4">
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 max-w-7xl mx-auto">
+          <!-- Column 1: Introduction -->
+          <div class="space-y-4">
+            <h2 class="text-3xl font-bold mb-6">Harnessing the energy</h2>
+            <p class="text-gray-600 leading-relaxed">
+              One of the emerging topics in the future of Formula 1 is sustainability. As a sport
+              that relies heavily on technology and resources, F1 has been criticized in the past
+              for its impact on the environment. However, in recent years, there has been a shift
+              towards sustainability in F1. The sport has set ambitious targets for carbon
+              reduction, and teams are investing in more environmentally friendly practices, such as
+              using renewable energy and reducing waste.
+            </p>
+            <p class="text-gray-600 leading-relaxed">
+              Furthermore, F1 is exploring the use of alternative fuels, such as biofuels and
+              hydrogen, in an effort to reduce the sport's carbon footprint. As the world becomes
+              increasingly focused on sustainability, F1 is taking steps to ensure that it remains
+              relevant and responsible in the eyes of fans and stakeholders alike.
+            </p>
+          </div>
+
+          <!-- Column 3: Stats -->
+          <div class="space-y-4">
+            <div class="grid grid-cols-1 gap-4">
+              <!-- Stat Card 1 -->
+              <div class="bg-gray-900 text-white rounded-lg p-6">
+                <h4 class="text-2xl font-bold mb-2">39</h4>
+                <p class="text-gray-300">Fuel blends tested by F1 with Aramco</p>
+              </div>
+
+              <!-- Stat Card 2 -->
+              <div class="bg-gray-900 text-white rounded-lg p-6">
+                <h4 class="text-2xl font-bold mb-2">100%</h4>
+                <p class="text-gray-300">F2 and F3 cars running on sustainable fuel</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <Footer />
+  </body>
+</html>
