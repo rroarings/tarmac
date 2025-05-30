@@ -3,9 +3,9 @@ trackName: "Circuit de Monaco"
 location: "Monte Carlo, Monaco"
 date: 2025-05-25
 season: "2025"
-winner: ""
-winningTeam: ""
-fastestLapTime: ""
+winner: "Lando Norris"
+winningTeam: "McLaren"
+fastestLapTime: "1.22.167"
 trackImage: "/blog-placeholder-3.jpg"
 raceNumber: 8
 completed: true
