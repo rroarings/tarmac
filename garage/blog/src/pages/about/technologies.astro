@@ -2,6 +2,7 @@
 import BaseHead from "../../components/BaseHead.astro";
 import Header from "../../components/Header.astro";
 import Footer from "../../components/Footer.astro";
+import { Image } from 'astro:assets'
 import BreakpointIndicator from "../../components/BreakpointIndicator.astro";
 import TwoColumnSection from "../../components/TwoColumnSection.astro";
 
@@ -240,22 +241,21 @@ const description =
       />
 
       <!-- Video Feature Section -->
-      <section class="py-24 bg-slate-50">
+      <section class="py-12 bg-slate-50">
         <div class="container mx-auto px-4">
           <div class="max-w-4xl mx-auto">
             <h2 class="text-3xl font-bold text-center mb-12">
               Experience F1 Technology
             </h2>
 
-            <div
-              class="aspect-video relative rounded-xl overflow-hidden shadow-lg"
-            >
-              <iframe
-                class="absolute inset-0 w-full h-full"
-                src="https://www.youtube-nocookie.com/embed/hFHmYFlbFn8"
-                title="Formula 1 Technology Showcase"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                allowfullscreen></iframe>
+            <div class="rounded-xl overflow-hidden shadow-lg">
+              <Image
+                src="/blog-placeholder-2.jpg"
+                alt="Formula 1 Technology Showcase"
+                width={1920}
+                height={1080}
+                class="w-full h-full object-cover"
+              />
             </div>
 
             <div class="mt-8 text-center">
@@ -269,7 +269,7 @@ const description =
       </section>
 
       <!-- Cost Cap Section -->
-      <section class="py-24">
+      <section class="py-12">
         <div class="container mx-auto px-4">
           <h2 class="text-3xl font-bold mb-8">Cost Cap Impact</h2>
 
@@ -325,7 +325,7 @@ const description =
       </section>
 
       <!-- Data-Driven Section -->
-      <section class="py-24">
+      <section class="py-12">
         <div class="container mx-auto px-4">
           <!-- Header -->
           <div class="text-center max-w-3xl mx-auto mb-12">
@@ -373,7 +373,7 @@ const description =
       </section>
 
       <!-- Teamwork Section -->
-      <section class="py-24">
+      <section class="py-12">
         <div class="container mx-auto px-4">
           <h2 class="text-3xl font-bold mb-12">
             Teamwork makes the dream work
