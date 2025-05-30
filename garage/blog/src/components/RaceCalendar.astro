@@ -17,21 +17,32 @@ const races = await getCollection("races", ({ data }) => {
   return data.season === season;
 });
 
-// Get current date for comparison
-const now = new Date();
+// Helper for UTC midnight conversion
+const toUTCMidnight = (date: Date) => {
+  const d = new Date(date);
+  d.setUTCHours(0, 0, 0, 0);
+  return d;
+};
 
-// Sort races by date
-const sortedRaces = races.sort(
-  (a, b) => new Date(a.data.date).getTime() - new Date(b.data.date).getTime(),
-);
+// Get current date for comparison using UTC
+const nowUTC = toUTCMidnight(new Date());
 
-// Find completed and upcoming races
-const completedRaces = sortedRaces.filter(
-  (race) => race.data.completed || new Date(race.data.date) < now,
-);
-const upcomingRaces = sortedRaces.filter(
-  (race) => !race.data.completed && new Date(race.data.date) >= now,
-);
+// Sort races by date using UTC
+const sortedRaces = races.sort((a, b) => {
+  const aDate = toUTCMidnight(new Date(a.data.date));
+  const bDate = toUTCMidnight(new Date(b.data.date));
+  return aDate.getTime() - bDate.getTime();
+});
+
+// Find completed and upcoming races using UTC dates
+const completedRaces = sortedRaces.filter((race) => {
+  const raceDate = toUTCMidnight(new Date(race.data.date));
+  return race.data.completed || raceDate < nowUTC;
+});
+const upcomingRaces = sortedRaces.filter((race) => {
+  const raceDate = toUTCMidnight(new Date(race.data.date));
+  return !race.data.completed && raceDate >= nowUTC;
+});
 
 // Get the most recent completed race
 const lastCompletedRace = completedRaces[completedRaces.length - 1];
@@ -61,6 +72,6 @@ const racesToDisplay = showAllRaces
   </div>
 
   <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-4">
-    {racesToDisplay.map((race) => <RaceCard race={race} />)}
+    {racesToDisplay.map((race) => <RaceCard race={race} completedRaces={completedRaces} />)}
   </div>
 </div>
