@@ -9,7 +9,7 @@
   ],
   "github.copilot.chat.commitMessageGeneration.instructions": [
     {
-      "text": "Format as 'type(scope): description' with detailed bullet points and relevant emojis."
+      "text": "Format as 'type(scope): description' with detailed bullet points and relevant emojis. Stage individual files for each commit. Stage individual changes for each commit. Use 'feat' for new features, 'fix' for bug fixes, 'docs' for documentation changes, 'style' for formatting changes, 'refactor' for code changes that neither fix a bug nor add a feature, 'perf' for performance improvements, 'test' for adding missing tests or correcting existing tests, and 'chore' for changes to the build process or auxiliary tools and libraries."
     }
   ],
   "github.copilot.chat.reviewSelection.instructions": [
