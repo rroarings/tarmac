@@ -1,0 +1,150 @@
+---
+import { Image } from "astro:assets"
+import BaseHead from "../components/BaseHead.astro"
+import Header from "../components/Header.astro"
+import Footer from "../components/Footer.astro"
+import { SITE_TITLE, SITE_DESCRIPTION } from "../consts"
+
+// Import logos
+import astroLogo from "../assets/logos/astro-logo-dark.svg"
+import tailwindLogo from "../assets/logos/tailwindcss-mark.svg"
+import typescriptLogo from "../assets/logos/ts-logo-128.svg"
+import mdxLogo from "../assets/logos/mdx-svgrepo-com.svg"
+import prettierLogo from "../assets/logos/prettier-svgrepo-com.svg"
+import f1Logo from "../assets/logos/racing-car-svgrepo-com.svg"
+import svgRepoLogo from "../assets/logos/svgrepo_logo_icon.svg"
+
+interface Tool {
+  name: string
+  description: string
+  logo: ImageMetadata
+  url: string
+}
+
+const tools: Tool[] = [
+  {
+    name: "Astro",
+    description:
+      "The all-in-one web framework designed for speed, powering our modern F1 blog with optimal performance.",
+    logo: astroLogo,
+    url: "https://astro.build/",
+  },
+  {
+    name: "Tailwind CSS",
+    description:
+      "Our utility-first CSS framework that helps us create a sleek, responsive design as precise as F1 engineering.",
+    logo: tailwindLogo,
+    url: "https://tailwindcss.com",
+  },
+  {
+    name: "TypeScript",
+    description:
+      "Brings type safety and enhanced developer experience to our codebase, like F1's precision engineering.",
+    logo: typescriptLogo,
+    url: "https://www.typescriptlang.org/",
+  },
+  {
+    name: "MDX",
+    description:
+      "Enables interactive content in our blog posts, combining Markdown with dynamic components for engaging F1 stories.",
+    logo: mdxLogo,
+    url: "https://mdxjs.com",
+  },
+  {
+    name: "Prettier",
+    description:
+      "Maintains our code formatting standards across the project, as consistent as F1's technical regulations.",
+    logo: prettierLogo,
+    url: "https://prettier.io",
+  },
+  {
+    name: "Formula 1",
+    description:
+      "The pinnacle of motorsport that inspires our content. We use official F1 references while respecting their trademarks.",
+    logo: f1Logo,
+    url: "https://www.formula1.com",
+  },
+  {
+    name: "SVG Repo",
+    description:
+      "Provides our site with high-quality vector icons and images, ensuring crisp and scalable graphics across all devices.",
+    logo: svgRepoLogo,
+    url: "https://www.svgrepo.com",
+  },
+]
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <BaseHead
+      title={`Attributions | ${SITE_TITLE}`}
+      description={SITE_DESCRIPTION}
+    />
+  </head>
+  <body>
+    <Header />
+    <main>
+      <!-- Hero Section -->
+      <section class="py-12 bg-white">
+        <div class="container">
+          <header class="text-center mb-12">
+            <h1 class="text-4xl font-bold mb-4">Site Attributions</h1>
+            <p class="text-xl text-gray-600">
+              Our Formula 1 fan site is powered by cutting-edge tools and inspired by the sport's
+              innovation.
+            </p>
+          </header>
+
+          <!-- Tools Grid -->
+          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            {
+              tools.map((tool) => (
+                <div class="bg-white rounded-lg shadow-md border border-gray-200 p-6 hover:shadow-lg transition-shadow duration-300 flex flex-col h-full">
+                  <div class="mb-4">
+                    <Image
+                      src={tool.logo}
+                      width={64}
+                      height={64}
+                      class=""
+                      alt={`${tool.name} logo`}
+                    />
+                  </div>
+                  <h3 class="text-xl font-semibold mb-2">{tool.name}</h3>
+                  <p class="text-gray-600 mb-auto">{tool.description}</p>
+                  <a
+                    href={tool.url}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="mt-2 inline-flex items-center gap-2 text-blue-600 hover:underline hover:underline-offset-8 transition-all ease-in-out duration-200"
+                  >
+                    Visit {tool.name} →
+                  </a>
+                </div>
+              ))
+            }
+          </div>
+        </div>
+      </section>
+
+      <!-- Contact Section -->
+      <section class="py-12 bg-gray-50">
+        <div class="container">
+          <h2 class="text-3xl font-bold mb-4">Connect with us</h2>
+          <p class="text-gray-600">
+            Have feedback or questions? Reach out to us via email at
+            <a
+              href="mailto:trackside@example.com"
+              class="text-blue-600 hover:text-blue-800 transition-colors duration-200"
+            >
+              trackside@example.com
+            </a>
+            or connect with us on our social media channels. Thank you for being part of our journey.
+            Together, we celebrate the exhilarating world of Formula 1!
+          </p>
+        </div>
+      </section>
+    </main>
+    <Footer />
+  </body>
+</html>
