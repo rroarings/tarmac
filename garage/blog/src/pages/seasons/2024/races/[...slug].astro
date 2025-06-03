@@ -4,6 +4,7 @@ import BaseHead from "../../../../components/BaseHead.astro"
 import Header from "../../../../components/Header.astro"
 import Footer from "../../../../components/Footer.astro"
 import FormattedDate from "../../../../components/FormattedDate.astro"
+import Breadcrumb from "../../../../components/Breadcrumb.astro"
 import { SITE_TITLE } from "../../../../consts"
 
 export async function getStaticPaths() {
@@ -41,30 +42,14 @@ const { Content } = await render(race)
       <!-- Race Header - Left aligned without background -->
       <section class="race-header">
         <div class="container mx-auto px-4">
-          <nav
-            aria-label="Breadcrumb"
-            class="mb-2"
-          >
-            <ol class="flex items-center space-x-2 text-gray-500 text-sm">
-              <li>
-                <a
-                  href="/"
-                  class="hover:text-gray-700"
-                  >Formula 1</a
-                >
-              </li>
-              <li><span class="">•</span></li>
-              <li>
-                <a
-                  href="/seasons/2024"
-                  class="hover:text-gray-700"
-                  >2024 Season</a
-                >
-              </li>
-              <li><span class="">•</span></li>
-              <li>Race #{race.data.raceNumber}</li>
-            </ol>
-          </nav>
+          <Breadcrumb
+            items={[
+              { text: "Formula 1", href: "/" },
+              { text: "2024 Season", href: "/seasons/2024" },
+              { text: "Races", href: "/seasons/2024/races" },
+              { text: `${race.data.trackName}` },
+            ]}
+          />
           <h1 class="text-4xl font-bold mb-2">{race.data.trackName}</h1>
           <p class="text-gray-700">
             <FormattedDate date={race.data.date} /> • {race.data.location}
