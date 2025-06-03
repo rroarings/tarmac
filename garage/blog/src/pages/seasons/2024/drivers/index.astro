@@ -11,9 +11,13 @@ const drivers = await getCollection("drivers", ({ data }) => {
   return data.season === "2024";
 });
 
-// Sort drivers by points (highest to lowest)
+// Sort drivers by championship position (1-24)
 const sortedDrivers = drivers.sort((a, b) => {
-  return b.data.points - a.data.points; // Sort only by points
+  // Use championship position first, if equal fall back to points
+  if (a.data.championshipPosition !== b.data.championshipPosition) {
+    return a.data.championshipPosition - b.data.championshipPosition;
+  }
+  return b.data.points - a.data.points;
 });
 ---
 
