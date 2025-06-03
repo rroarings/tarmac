@@ -8,6 +8,7 @@ countryCode: "mc"
 age: 27
 season: "2025"
 championships: 0
+championshipPosition: 5
 raceWins: 8
 podiums: 26
 points: 61
