@@ -10,6 +10,7 @@ championships: 0
 raceWins: 2
 podiums: 7
 points: 186
+championshipPosition: 1
 profileImage: "/images/drivers/piastri.jpg"
 ---
 
