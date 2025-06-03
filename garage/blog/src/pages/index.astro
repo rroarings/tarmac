@@ -27,8 +27,14 @@ const drivers = await getCollection("drivers", ({ data }) => {
   return data.season === "2025"
 })
 
-// Sort drivers by points (highest to lowest)
-const sortedDrivers = drivers.sort((a, b) => b.data.points - a.data.points)
+// Sort drivers by championship position (1-24)
+const sortedDrivers = drivers.sort((a, b) => {
+  // Use championship position first, if equal fall back to points
+  if (a.data.championshipPosition !== b.data.championshipPosition) {
+    return a.data.championshipPosition - b.data.championshipPosition;
+  }
+  return b.data.points - a.data.points;
+})
 
 // Get top 3 drivers for the grid section
 const topDrivers = sortedDrivers.slice(0, 3)
