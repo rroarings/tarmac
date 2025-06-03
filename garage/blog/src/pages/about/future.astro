@@ -23,34 +23,35 @@ const description =
     <BreakpointIndicator />
     <Header />
 
-    <!-- Hero Section -->
-    <div class="px-4 pt-5 my-5 text-center">
-      <h1 class="text-4xl sm:text-5xl font-bold text-gray-900 mb-4">
-        {pageTitle}
-      </h1>
-      <div class="max-w-3xl mx-auto">
-        <p class="text-xl text-gray-600 mb-8">
-          Formula 1 has always been at the forefront of technological advancements, and the future
-          promises to be no different. From cutting-edge aerodynamics to hybrid power units, the
-          sport continues to evolve, pushing the boundaries of speed, efficiency, and performance.
-        </p>
+    <main>
+      <!-- Hero Section -->
+      <div class="py-10 text-center">
+        <h1 class="text-4xl sm:text-5xl font-bold text-gray-900 mb-4">
+          {pageTitle}
+        </h1>
+        <div class="max-w-3xl mx-auto">
+          <p class="text-xl text-gray-600 mb-8">
+            Formula 1 has always been at the forefront of technological advancements, and the future
+            promises to be no different. From cutting-edge aerodynamics to hybrid power units, the
+            sport continues to evolve, pushing the boundaries of speed, efficiency, and performance.
+          </p>
+        </div>
+        <div class="max-w-4xl mx-auto overflow-hidden rounded-lg shadow-xl">
+          <img
+            src="/blog-placeholder-1.jpg"
+            alt="Formula 1 racing"
+            width="1920"
+            height="1080"
+            class="w-full object-cover"
+            onerror="this.src='/blog-placeholder-about.jpg'"
+          />
+        </div>
       </div>
-      <div class="max-w-4xl mx-auto overflow-hidden rounded-lg shadow-xl">
-        <img
-          src="/blog-placeholder-1.jpg"
-          alt="Formula 1 racing"
-          width="1920"
-          height="1080"
-          class="w-full object-cover"
-          onerror="this.src='/blog-placeholder-about.jpg'"
-        />
-      </div>
-    </div>
 
-    <!-- Data & Analytics Section -->
-    <TwoColumnSection
-      title="Data and analytical revolution"
-      content={`
+      <!-- Data & Analytics Section -->
+      <TwoColumnSection
+        title="Data and analytical revolution"
+        content={`
         <p>
           The increasing use of data and analytics in Formula 1 is
           transforming the sport and opening up new possibilities for
@@ -69,15 +70,15 @@ const description =
           beyond the sport.
         </p>
       `}
-      imageSrc="/blog-placeholder-1.jpg"
-      imageAlt="F1 Data Analytics"
-      background="gray"
-    />
+        imageSrc="/blog-placeholder-1.jpg"
+        imageAlt="F1 Data Analytics"
+        background="gray"
+      />
 
-    <!-- New Innovations Section -->
-    <TwoColumnSection
-      title="New innovations and dynamics"
-      content={`
+      <!-- New Innovations Section -->
+      <TwoColumnSection
+        title="New innovations and dynamics"
+        content={`
         <p>
           The future of the sport also promises to be shaped by a more diverse
           and inclusive culture. F1 is taking steps to increase diversity and
@@ -93,181 +94,182 @@ const description =
           and create a more sustainable and innovative future for the sport.
         </p>
       `}
-      imageSrc="/blog-placeholder-2.jpg"
-      imageAlt="F1 Innovation and Development"
-      reversed={true}
-    />
+        imageSrc="/blog-placeholder-2.jpg"
+        imageAlt="F1 Innovation and Development"
+        reversed={true}
+      />
 
-    <!-- Harnessing Energy Section -->
-    <section class="py-12 bg-gray-50">
-      <div class="container mx-auto px-4">
-        <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 max-w-7xl mx-auto">
-          <!-- Column 1: Introduction -->
-          <div class="space-y-4">
-            <h2 class="text-3xl font-bold mb-6">Harnessing the energy</h2>
-            <p class="text-gray-600">
-              One of the emerging topics in the future of Formula 1 is sustainability. As a sport
-              that relies heavily on technology and resources, F1 has been criticized in the past
-              for its impact on the environment. However, in recent years, there has been a shift
-              towards sustainability in F1. The sport has set ambitious targets for carbon
-              reduction, and teams are investing in more environmentally friendly practices, such as
-              using renewable energy and reducing waste.
-            </p>
-            <p class="text-gray-600">
-              Furthermore, F1 is exploring the use of alternative fuels, such as biofuels and
-              hydrogen, in an effort to reduce the sport's carbon footprint. As the world becomes
-              increasingly focused on sustainability, F1 is taking steps to ensure that it remains
-              relevant and responsible in the eyes of fans and stakeholders alike.
-            </p>
-          </div>
+      <!-- Harnessing Energy Section -->
+      <section class="py-12 bg-gray-50">
+        <div class="container mx-auto px-4">
+          <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 max-w-7xl mx-auto">
+            <!-- Column 1: Introduction -->
+            <div class="space-y-4">
+              <h2 class="text-3xl font-bold mb-6">Harnessing the energy</h2>
+              <p class="text-gray-600">
+                One of the emerging topics in the future of Formula 1 is sustainability. As a sport
+                that relies heavily on technology and resources, F1 has been criticized in the past
+                for its impact on the environment. However, in recent years, there has been a shift
+                towards sustainability in F1. The sport has set ambitious targets for carbon
+                reduction, and teams are investing in more environmentally friendly practices, such
+                as using renewable energy and reducing waste.
+              </p>
+              <p class="text-gray-600">
+                Furthermore, F1 is exploring the use of alternative fuels, such as biofuels and
+                hydrogen, in an effort to reduce the sport's carbon footprint. As the world becomes
+                increasingly focused on sustainability, F1 is taking steps to ensure that it remains
+                relevant and responsible in the eyes of fans and stakeholders alike.
+              </p>
+            </div>
 
-          <!-- Column 2: Stats -->
-          <div class="space-y-4">
-            <div class="grid grid-cols-1 gap-4">
-              <!-- Stat Card 1 -->
-              <div class="bg-gray-900 text-white rounded-lg p-6">
-                <h4 class="text-2xl font-bold mb-2">39</h4>
-                <p class="text-gray-300">Fuel blends tested by F1 with Aramco</p>
+            <!-- Column 2: Stats -->
+            <div class="space-y-4">
+              <div class="grid grid-cols-1 gap-4">
+                <!-- Stat Card 1 -->
+                <div class="bg-gray-900 text-white rounded-lg p-6">
+                  <h4 class="text-2xl font-bold mb-2">39</h4>
+                  <p class="text-gray-300">Fuel blends tested by F1 with Aramco</p>
+                </div>
+
+                <!-- Stat Card 2 -->
+                <div class="bg-gray-900 text-white rounded-lg p-6">
+                  <h4 class="text-2xl font-bold mb-2">100%</h4>
+                  <p class="text-gray-300">F2 and F3 cars running on sustainable fuel</p>
+                </div>
               </div>
+            </div>
+          </div>
+        </div>
+      </section>
 
-              <!-- Stat Card 2 -->
-              <div class="bg-gray-900 text-white rounded-lg p-6">
-                <h4 class="text-2xl font-bold mb-2">100%</h4>
-                <p class="text-gray-300">F2 and F3 cars running on sustainable fuel</p>
+      <!-- Rookies Showcase Section -->
+      <section class="py-12">
+        <div class="container mx-auto px-4">
+          <div class="text-center mb-12">
+            <h2 class="text-3xl font-bold mb-4">What does the future hold?</h2>
+            <p class="text-gray-600 text-lg">
+              These rising stars are already making headlines. Here's who to watch as Formula 1
+              evolves into a new era.
+            </p>
+          </div>
+
+          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-7xl mx-auto">
+            <!-- Kimi Antonelli -->
+            <div class="bg-white rounded-xl shadow-lg overflow-hidden">
+              <div class="pb-6">
+                <h3 class="text-xl font-bold mb-2">Kimi Antonelli</h3>
+                <p class="text-gray-600">
+                  Mercedes junior driver making waves in Formula 2 with exceptional race craft and
+                  maturity beyond his years.
+                </p>
+              </div>
+              <div class="overflow-hidden">
+                <img
+                  src="/blog-placeholder-4.jpg"
+                  alt="F1 Technical Analysis"
+                  class="rounded-lg shadow-md w-full object-cover aspect-square"
+                  loading="lazy"
+                />
+              </div>
+            </div>
+
+            <!-- Oliver Bearman -->
+            <div class="bg-white rounded-xl shadow-lg overflow-hidden">
+              <div class="pb-6">
+                <h3 class="text-xl font-bold mb-2">Oliver Bearman</h3>
+                <p class="text-gray-600">
+                  Ferrari Academy standout showing impressive pace and consistency in Formula 2.
+                </p>
+              </div>
+              <div class="overflow-hidden">
+                <img
+                  src="/blog-placeholder-4.jpg"
+                  alt="F1 Technical Analysis"
+                  class="rounded-lg shadow-md w-full object-cover aspect-square"
+                  loading="lazy"
+                />
+              </div>
+            </div>
+
+            <!-- Isack Hadjar -->
+            <div class="bg-white rounded-xl shadow-lg overflow-hidden">
+              <div class="pb-6">
+                <h3 class="text-xl font-bold mb-2">Isack Hadjar</h3>
+                <p class="text-gray-600">
+                  Red Bull junior proving his worth with aggressive yet calculated racing style in
+                  Formula 2.
+                </p>
+              </div>
+              <div class="overflow-hidden">
+                <img
+                  src="/blog-placeholder-4.jpg"
+                  alt="F1 Technical Analysis"
+                  class="rounded-lg shadow-md w-full object-cover aspect-square"
+                  loading="lazy"
+                />
+              </div>
+            </div>
+
+            <!-- Gabriel Bortoleto -->
+            <div class="bg-white rounded-xl shadow-lg overflow-hidden">
+              <div class="pb-6">
+                <h3 class="text-xl font-bold mb-2">Gabriel Bortoleto</h3>
+                <p class="text-gray-600">
+                  McLaren junior talent displaying remarkable adaptability and raw speed in his
+                  rookie F2 campaign.
+                </p>
+              </div>
+              <div class="overflow-hidden">
+                <img
+                  src="/blog-placeholder-4.jpg"
+                  alt="F1 Technical Analysis"
+                  class="rounded-lg shadow-md w-full object-cover aspect-square"
+                  loading="lazy"
+                />
+              </div>
+            </div>
+
+            <!-- Jack Doohan -->
+            <div class="bg-white rounded-xl shadow-lg overflow-hidden">
+              <div class="pb-6">
+                <h3 class="text-xl font-bold mb-2">Jack Doohan</h3>
+                <p class="text-gray-600">
+                  Alpine Academy driver showcasing F1-level pace and technical understanding in
+                  Formula 2.
+                </p>
+              </div>
+              <div class="overflow-hidden">
+                <img
+                  src="/blog-placeholder-4.jpg"
+                  alt="F1 Technical Analysis"
+                  class="rounded-lg shadow-md w-full object-cover aspect-square"
+                  loading="lazy"
+                />
+              </div>
+            </div>
+
+            <!-- Liam Lawson -->
+            <div class="bg-white rounded-xl shadow-lg overflow-hidden">
+              <div class="pb-6">
+                <h3 class="text-xl font-bold mb-2">Liam Lawson</h3>
+                <p class="text-gray-600">
+                  Red Bull reserve driver with F1 experience, known for his adaptability and
+                  race-winning potential.
+                </p>
+              </div>
+              <div class="overflow-hidden">
+                <img
+                  src="/blog-placeholder-4.jpg"
+                  alt="F1 Technical Analysis"
+                  class="rounded-lg shadow-md w-full object-cover aspect-square"
+                  loading="lazy"
+                />
               </div>
             </div>
           </div>
         </div>
-      </div>
-    </section>
-
-    <!-- Rookies Showcase Section -->
-    <section class="py-12">
-      <div class="container mx-auto px-4">
-        <div class="text-center mb-12">
-          <h2 class="text-3xl font-bold mb-4">What does the future hold?</h2>
-          <p class="text-gray-600 text-lg">
-            These rising stars are already making headlines. Here's who to watch as Formula 1
-            evolves into a new era.
-          </p>
-        </div>
-
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-7xl mx-auto">
-          <!-- Kimi Antonelli -->
-          <div class="bg-white rounded-xl shadow-lg overflow-hidden">
-            <div class="p-6">
-              <h3 class="text-xl font-bold mb-2">Kimi Antonelli</h3>
-              <p class="text-gray-600">
-                Mercedes junior driver making waves in Formula 2 with exceptional race craft and
-                maturity beyond his years.
-              </p>
-            </div>
-            <div class="overflow-hidden">
-              <img
-                src="/blog-placeholder-4.jpg"
-                alt="F1 Technical Analysis"
-                class="rounded-lg shadow-md w-full object-cover aspect-square"
-                loading="lazy"
-              />
-            </div>
-          </div>
-
-          <!-- Oliver Bearman -->
-          <div class="bg-white rounded-xl shadow-lg overflow-hidden">
-            <div class="p-6">
-              <h3 class="text-xl font-bold mb-2">Oliver Bearman</h3>
-              <p class="text-gray-600">
-                Ferrari Academy standout showing impressive pace and consistency in Formula 2.
-              </p>
-            </div>
-            <div class="overflow-hidden">
-              <img
-                src="/blog-placeholder-4.jpg"
-                alt="F1 Technical Analysis"
-                class="rounded-lg shadow-md w-full object-cover aspect-square"
-                loading="lazy"
-              />
-            </div>
-          </div>
-
-          <!-- Isack Hadjar -->
-          <div class="bg-white rounded-xl shadow-lg overflow-hidden">
-            <div class="p-6">
-              <h3 class="text-xl font-bold mb-2">Isack Hadjar</h3>
-              <p class="text-gray-600">
-                Red Bull junior proving his worth with aggressive yet calculated racing style in
-                Formula 2.
-              </p>
-            </div>
-            <div class="overflow-hidden">
-              <img
-                src="/blog-placeholder-4.jpg"
-                alt="F1 Technical Analysis"
-                class="rounded-lg shadow-md w-full object-cover aspect-square"
-                loading="lazy"
-              />
-            </div>
-          </div>
-
-          <!-- Gabriel Bortoleto -->
-          <div class="bg-white rounded-xl shadow-lg overflow-hidden">
-            <div class="p-6">
-              <h3 class="text-xl font-bold mb-2">Gabriel Bortoleto</h3>
-              <p class="text-gray-600">
-                McLaren junior talent displaying remarkable adaptability and raw speed in his rookie
-                F2 campaign.
-              </p>
-            </div>
-            <div class="overflow-hidden">
-              <img
-                src="/blog-placeholder-4.jpg"
-                alt="F1 Technical Analysis"
-                class="rounded-lg shadow-md w-full object-cover aspect-square"
-                loading="lazy"
-              />
-            </div>
-          </div>
-
-          <!-- Jack Doohan -->
-          <div class="bg-white rounded-xl shadow-lg overflow-hidden">
-            <div class="p-6">
-              <h3 class="text-xl font-bold mb-2">Jack Doohan</h3>
-              <p class="text-gray-600">
-                Alpine Academy driver showcasing F1-level pace and technical understanding in
-                Formula 2.
-              </p>
-            </div>
-            <div class="overflow-hidden">
-              <img
-                src="/blog-placeholder-4.jpg"
-                alt="F1 Technical Analysis"
-                class="rounded-lg shadow-md w-full object-cover aspect-square"
-                loading="lazy"
-              />
-            </div>
-          </div>
-
-          <!-- Liam Lawson -->
-          <div class="bg-white rounded-xl shadow-lg overflow-hidden">
-            <div class="p-6">
-              <h3 class="text-xl font-bold mb-2">Liam Lawson</h3>
-              <p class="text-gray-600">
-                Red Bull reserve driver with F1 experience, known for his adaptability and
-                race-winning potential.
-              </p>
-            </div>
-            <div class="overflow-hidden">
-              <img
-                src="/blog-placeholder-4.jpg"
-                alt="F1 Technical Analysis"
-                class="rounded-lg shadow-md w-full object-cover aspect-square"
-                loading="lazy"
-              />
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
+      </section>
+    </main>
 
     <Footer />
   </body>
