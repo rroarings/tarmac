@@ -7,7 +7,7 @@ winner: "To Be Determined"
 winningTeam: "To Be Determined"
 fastestLapTime: "0:00.000"
 fastestLapDriver: "To Be Determined"
-trackImage: "/blog-placeholder-1.jpg"
+trackImage: "/blog-placeholder-2.jpg"
 raceNumber: 9
 completed: false
 ---
