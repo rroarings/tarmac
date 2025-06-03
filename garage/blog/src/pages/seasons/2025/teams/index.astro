@@ -1,22 +1,26 @@
 ---
-import BaseHead from "../../../../components/BaseHead.astro";
-import Header from "../../../../components/Header.astro";
-import Footer from "../../../../components/Footer.astro";
-import { SITE_TITLE } from "../../../../consts";
-import { getCollection } from "astro:content";
+import BaseHead from "../../../../components/BaseHead.astro"
+import Header from "../../../../components/Header.astro"
+import Footer from "../../../../components/Footer.astro"
+import { SITE_TITLE } from "../../../../consts"
+import { getCollection } from "astro:content"
 
 // Get all teams for 2025 season
 const teams = await getCollection("teams", ({ data }) => {
-  return data.season === "2025";
-});
+  return data.season === "2025"
+})
 
-// Sort teams by constructor points (desc), then by championships (desc)
+// Sort teams by championship position (1-10), falling back to constructor points
 const sortedTeams = teams.sort((a, b) => {
-  if (b.data.constructorPoints !== a.data.constructorPoints) {
-    return b.data.constructorPoints - a.data.constructorPoints;
+  // Use championship position first, if equal fall back to constructor points
+  if (a.data.championshipPosition !== b.data.championshipPosition) {
+    return a.data.championshipPosition - b.data.championshipPosition
   }
-  return b.data.championships - a.data.championships;
-});
+  if (b.data.constructorPoints !== a.data.constructorPoints) {
+    return b.data.constructorPoints - a.data.constructorPoints
+  }
+  return b.data.championships - a.data.championships
+})
 ---
 
 <!doctype html>
@@ -34,9 +38,7 @@ const sortedTeams = teams.sort((a, b) => {
       <section class="py-16 text-center">
         <div class="container mx-auto px-4">
           <h1 class="text-4xl font-bold mb-4">2025 Formula 1 Teams</h1>
-          <p class="text-lg text-gray-700">
-            Constructor teams and their racing machines
-          </p>
+          <p class="text-lg text-gray-700">Constructor teams and their racing machines</p>
         </div>
       </section>
 
@@ -46,21 +48,31 @@ const sortedTeams = teams.sort((a, b) => {
           <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             {
               sortedTeams.map((team) => (
-                <a href={`/seasons/2025/teams/${team.id}`} class="block">
+                <a
+                  href={`/seasons/2025/teams/${team.id}`}
+                  class="block"
+                >
                   <div class="bg-white border border-gray-300 rounded shadow-md overflow-hidden hover:shadow-lg transition-shadow">
                     <img
-                      src={team.data.carImage || "/blog-placeholder-1.jpg"}
+                      src={team.data.carImage || "/b   -placeholder-1.jpg"}
                       alt={`${team.data.name} ${team.data.carModel}`}
                       class="w-full h-48 object-cover"
                     />
                     <div class="p-4">
+                      <div class="border-b border-gray-300 pb-3 mb-3">
+                        {team.data.championshipPosition > 0 && (
+                          <div class="flex justify-between items-center">
+                            <span class="font-semibold">{team.data.championshipPosition}</span>
+                            <div class="flex flex-col">
+                              <span class="font-semibold">{team.data.constructorPoints}</span>
+                              <span class="text-sm text-gray-500">pts</span>
+                            </div>
+                          </div>
+                        )}
+                      </div>
                       <h3 class="text-lg font-bold mb-2">{team.data.name}</h3>
-                      <p class="text-gray-600 mb-2">
-                        Car: {team.data.carModel}
-                      </p>
-                      <p class="text-sm text-gray-500 mb-3">
-                        {team.data.drivers.join(" • ")}
-                      </p>
+                      <p class="text-gray-600 mb-2">Car: {team.data.carModel}</p>
+                      <p class="text-sm text-gray-500 mb-3">{team.data.drivers.join(" • ")}</p>
 
                       <div class="text-sm text-gray-600 space-y-1">
                         <div class="flex justify-between items-center">
@@ -71,20 +83,7 @@ const sortedTeams = teams.sort((a, b) => {
                           <span>Engine:</span>
                           <span>{team.data.engine}</span>
                         </div>
-                        <div class="flex justify-between items-center">
-                          <span>Constructor Points:</span>
-                          <span class="font-semibold">
-                            {team.data.constructorPoints}
-                          </span>
-                        </div>
-                        {team.data.championships > 0 && (
-                          <div class="flex justify-between items-center">
-                            <span>Championships:</span>
-                            <span class="font-semibold text-yellow-600">
-                              {team.data.championships}
-                            </span>
-                          </div>
-                        )}
+                        
                       </div>
                     </div>
                   </div>
