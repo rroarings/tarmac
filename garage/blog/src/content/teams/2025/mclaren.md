@@ -1,13 +1,14 @@
 ---
-name: "McLaren F1 Team"
+name: "McLaren"
 carModel: "MCL39"
 season: "2025"
 drivers: ["Lando Norris", "Oscar Piastri"]
 principal: "Andrea Stella"
 engine: "Mercedes"
 chassis: "MCL39"
-constructorPoints: 608
-championships: 8
+constructorPoints: 362
+championshipPosition: 1
+championships: 9
 teamLogo: "/images/teams/mclaren-logo.jpg"
 carImage: "/blog-placeholder-4.jpg"
 ---
