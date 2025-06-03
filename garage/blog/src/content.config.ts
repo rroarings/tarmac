@@ -32,6 +32,7 @@ const drivers = defineCollection({
     raceWins: z.number().default(0),
     podiums: z.number().default(0),
     points: z.number().default(0),
+    championshipPosition: z.number().default(0),
   }),
 });
 
@@ -50,6 +51,7 @@ const teams = defineCollection({
     teamLogo: z.string().optional(),
     constructorPoints: z.number().default(0),
     championships: z.number().default(0),
+    championshipPosition: z.number().default(0),
   }),
 });
 
