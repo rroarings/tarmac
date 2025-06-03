@@ -9,7 +9,7 @@ chassis: "W16"
 constructorPoints: 468
 championships: 8
 teamLogo: "/images/teams/mercedes-logo.jpg"
-carImage: "/images/teams/mercedes-car.jpg"
+carImage: "/blog-placeholder-4.jpg"
 ---
 
 # Mercedes-AMG PETRONAS F1 Team
