@@ -1,12 +1,13 @@
 ---
-name: "Mercedes-AMG PETRONAS F1 Team"
+name: "Mercedes"
 carModel: "W16"
 season: "2025"
 drivers: ["George Russell", "Kimi Antonelli"]
 principal: "Toto Wolff"
 engine: "Mercedes"
 chassis: "W16"
-constructorPoints: 468
+constructorPoints: 159
+championshipPosition: 3
 championships: 8
 teamLogo: "/images/teams/mercedes-logo.jpg"
 carImage: "/blog-placeholder-4.jpg"
