@@ -9,7 +9,7 @@ chassis: "SF-25"
 constructorPoints: 652
 championships: 16
 teamLogo: "/images/teams/ferrari-logo.jpg"
-carImage: "/images/teams/ferrari-car.jpg"
+carImage: "/blog-placeholder-4.jpg"
 ---
 
 # Scuderia Ferrari
