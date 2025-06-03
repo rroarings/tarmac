@@ -8,6 +8,7 @@ countryCode: "it"
 age: 19
 season: "2025"
 championships: 0
+championshipPosition: 7
 raceWins: 0
 podiums: 0
 points: 48
