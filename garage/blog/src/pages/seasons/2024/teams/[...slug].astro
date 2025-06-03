@@ -1,25 +1,26 @@
 ---
-import BaseHead from "../../../../components/BaseHead.astro";
-import Header from "../../../../components/Header.astro";
-import Footer from "../../../../components/Footer.astro";
-import { SITE_TITLE } from "../../../../consts";
-import { getCollection } from "astro:content";
+import BaseHead from "../../../../components/BaseHead.astro"
+import Header from "../../../../components/Header.astro"
+import Footer from "../../../../components/Footer.astro"
+import Breadcrumb from "../../../../components/Breadcrumb.astro"
+import { SITE_TITLE } from "../../../../consts"
+import { getCollection } from "astro:content"
 
 export async function getStaticPaths() {
   const teams = await getCollection("teams", ({ data }) => {
-    return data.season === "2024";
-  });
+    return data.season === "2024"
+  })
 
   return teams.map((team) => ({
     params: { slug: team.id },
     props: { team },
-  }));
+  }))
 }
 
-const { team } = Astro.props;
+const { team } = Astro.props
 // Import the Content component separately
-import { render } from "astro:content";
-const { Content, headings } = await render(team);
+import { render } from "astro:content"
+const { Content, headings } = await render(team)
 ---
 
 <!doctype html>
@@ -36,6 +37,14 @@ const { Content, headings } = await render(team);
       <!-- Team Profile Header -->
       <section class="py-16 bg-gray-50">
         <div class="container mx-auto px-4">
+          <Breadcrumb
+            items={[
+              { text: "Formula 1", href: "/" },
+              { text: "2024 Season", href: "/seasons/2024/" },
+              { text: "Constructors", href: "/seasons/2024/teams" },
+              { text: `${team.data.name}` },
+            ]}
+          />
           <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
             <div>
               <img
@@ -49,8 +58,7 @@ const { Content, headings } = await render(team);
               <div class="space-y-3 text-lg">
                 <div class="flex items-center">
                   <span class="font-semibold w-40">Car Model:</span>
-                  <span
-                    class="bg-red-600 text-white px-3 py-1 rounded font-bold"
+                  <span class="bg-red-600 text-white px-3 py-1 rounded font-bold"
                     >{team.data.carModel}</span
                   >
                 </div>
@@ -64,9 +72,7 @@ const { Content, headings } = await render(team);
                 </div>
                 <div class="flex items-center">
                   <span class="font-semibold w-40">Drivers:</span>
-                  <span class="text-gray-700"
-                    >{team.data.drivers.join(", ")}</span
-                  >
+                  <span class="text-gray-700">{team.data.drivers.join(", ")}</span>
                 </div>
               </div>
             </div>
@@ -79,17 +85,13 @@ const { Content, headings } = await render(team);
         <div class="container mx-auto px-4">
           <h2 class="text-3xl font-bold mb-8 text-center">Team Statistics</h2>
           <div class="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-2xl mx-auto">
-            <div
-              class="bg-white border border-gray-300 rounded shadow-md p-6 text-center"
-            >
+            <div class="bg-white border border-gray-300 rounded shadow-md p-6 text-center">
               <div class="text-3xl font-bold text-yellow-600">
                 {team.data.championships}
               </div>
               <div class="text-gray-600">Championships</div>
             </div>
-            <div
-              class="bg-white border border-gray-300 rounded shadow-md p-6 text-center"
-            >
+            <div class="bg-white border border-gray-300 rounded shadow-md p-6 text-center">
               <div class="text-3xl font-bold text-blue-600">
                 {team.data.constructorPoints}
               </div>
