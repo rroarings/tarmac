@@ -8,6 +8,7 @@ countryCode: "nl"
 age: 27
 season: "2025"
 championships: 4
+championshipPosition: 3
 raceWins: 62
 podiums: 107
 points: 124
