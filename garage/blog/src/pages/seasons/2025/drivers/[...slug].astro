@@ -1,25 +1,26 @@
 ---
-import BaseHead from "../../../../components/BaseHead.astro";
-import Header from "../../../../components/Header.astro";
-import Footer from "../../../../components/Footer.astro";
-import { SITE_TITLE } from "../../../../consts";
-import { getCollection } from "astro:content";
+import BaseHead from "../../../../components/BaseHead.astro"
+import Header from "../../../../components/Header.astro"
+import Footer from "../../../../components/Footer.astro"
+import Breadcrumb from "../../../../components/Breadcrumb.astro"
+import { SITE_TITLE } from "../../../../consts"
+import { getCollection } from "astro:content"
 
 export async function getStaticPaths() {
   const drivers = await getCollection("drivers", ({ data }) => {
-    return data.season === "2025";
-  });
+    return data.season === "2025"
+  })
 
   return drivers.map((driver) => ({
     params: { slug: driver.id },
     props: { driver },
-  }));
+  }))
 }
 
-const { driver } = Astro.props;
+const { driver } = Astro.props
 // Import the Content component separately
-import { render } from "astro:content";
-const { Content } = await render(driver);
+import { render } from "astro:content"
+const { Content } = await render(driver)
 ---
 
 <!doctype html>
@@ -36,13 +37,23 @@ const { Content } = await render(driver);
       <!-- Driver Profile Header -->
       <section class="py-16">
         <div class="container mx-auto px-4">
+          <Breadcrumb
+            items={[
+              { text: "Formula 1", href: "/" },
+              { text: "2025 Season", href: "/seasons/2025/" },
+              { text: "Drivers", href: "/seasons/2025/drivers" },
+              { text: `${driver.data.firstName} ${driver.data.lastName}` },
+            ]}
+          />
           <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
             <div>
               <img
-                src={driver.data.profileImage &&
-                driver.data.profileImage.startsWith("/blog-placeholder")
-                  ? driver.data.profileImage
-                  : "/blog-placeholder-1.jpg"}
+                src={(
+                  driver.data.profileImage &&
+                  driver.data.profileImage.startsWith("/blog-placeholder")
+                ) ?
+                  driver.data.profileImage
+                : "/blog-placeholder-1.jpg"}
                 alt={`${driver.data.firstName} ${driver.data.lastName}`}
                 class="w-full h-64 object-cover p-3"
               />
@@ -55,9 +66,7 @@ const { Content } = await render(driver);
               <div class="space-y-3 text-lg">
                 <div class="flex items-center">
                   <span class="font-semibold w-32">Number:</span>
-                  <span class="px-3 py-1 rounded font-bold"
-                    >#{driver.data.number}</span
-                  >
+                  <span class="px-3 py-1 rounded font-bold">#{driver.data.number}</span>
                 </div>
                 <div class="flex items-center">
                   <span class="font-semibold w-32">Team:</span>
@@ -96,11 +105,7 @@ const { Content } = await render(driver);
                       <div class="text-4xl font-bold mb-1">
                         {driver.data.championships}
                       </div>
-                      <div
-                        class="text-sm text-gray-600 uppercase tracking-wide"
-                      >
-                        Championships
-                      </div>
+                      <div class="text-sm text-gray-600 uppercase tracking-wide">Championships</div>
                     </div>
                   </div>
                 </div>
@@ -114,11 +119,7 @@ const { Content } = await render(driver);
                       <div class="text-4xl font-bold mb-1">
                         {driver.data.raceWins}
                       </div>
-                      <div
-                        class="text-sm text-gray-600 uppercase tracking-wide"
-                      >
-                        Race Wins
-                      </div>
+                      <div class="text-sm text-gray-600 uppercase tracking-wide">Race Wins</div>
                     </div>
                   </div>
                 </div>
@@ -132,11 +133,7 @@ const { Content } = await render(driver);
                       <div class="text-4xl font-bold mb-1">
                         {driver.data.podiums}
                       </div>
-                      <div
-                        class="text-sm text-gray-600 uppercase tracking-wide"
-                      >
-                        Podiums
-                      </div>
+                      <div class="text-sm text-gray-600 uppercase tracking-wide">Podiums</div>
                     </div>
                   </div>
                 </div>
@@ -150,11 +147,7 @@ const { Content } = await render(driver);
                       <div class="text-4xl font-bold mb-1">
                         {driver.data.points}
                       </div>
-                      <div
-                        class="text-sm text-gray-600 uppercase tracking-wide"
-                      >
-                        Career Points
-                      </div>
+                      <div class="text-sm text-gray-600 uppercase tracking-wide">Career Points</div>
                     </div>
                   </div>
                 </div>
