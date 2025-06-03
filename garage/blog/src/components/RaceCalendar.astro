@@ -47,10 +47,13 @@ const upcomingRaces = sortedRaces.filter((race) => {
 // Get the most recent completed race
 const lastCompletedRace = completedRaces[completedRaces.length - 1];
 
+// Take only the next two upcoming races when not showing all
+const nextTwoRaces = upcomingRaces.slice(0, 2);
+
 // Determine which races to display
 const racesToDisplay = showAllRaces
   ? sortedRaces
-  : [...(lastCompletedRace ? [lastCompletedRace] : []), ...upcomingRaces];
+  : [...(lastCompletedRace ? [lastCompletedRace] : []), ...nextTwoRaces];
 ---
 
 <div class="bg-gray-100 border border-gray-300 rounded p-6">
@@ -65,7 +68,7 @@ const racesToDisplay = showAllRaces
           href={`/seasons/${season}/races`}
           class="text-gray-600 hover:text-red-600"
         >
-          View Past Races
+          View Races
         </a>
       )
     }
