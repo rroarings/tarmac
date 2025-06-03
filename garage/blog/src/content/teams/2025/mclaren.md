@@ -9,7 +9,7 @@ chassis: "MCL39"
 constructorPoints: 608
 championships: 8
 teamLogo: "/images/teams/mclaren-logo.jpg"
-carImage: "/images/teams/mclaren-car.jpg"
+carImage: "/blog-placeholder-4.jpg"
 ---
 
 # McLaren F1 Team
