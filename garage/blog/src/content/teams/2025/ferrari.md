@@ -1,12 +1,13 @@
 ---
-name: "Scuderia Ferrari"
+name: "Ferrari"
 carModel: "SF-25"
 season: "2025"
 drivers: ["Charles Leclerc", "Lewis Hamilton"]
 principal: "Frédéric Vasseur"
 engine: "Ferrari"
 chassis: "SF-25"
-constructorPoints: 652
+constructorPoints: 165
+championshipPosition: 2
 championships: 16
 teamLogo: "/images/teams/ferrari-logo.jpg"
 carImage: "/blog-placeholder-4.jpg"
