@@ -10,8 +10,12 @@ const teams = await getCollection("teams", ({ data }) => {
   return data.season === "2024";
 });
 
-// Sort teams by constructor points (desc), then by championships (desc)
+// Sort teams by championship position (1-10), falling back to constructor points
 const sortedTeams = teams.sort((a, b) => {
+  // Use championship position first, if equal fall back to constructor points
+  if (a.data.championshipPosition !== b.data.championshipPosition) {
+    return a.data.championshipPosition - b.data.championshipPosition;
+  }
   if (b.data.constructorPoints !== a.data.constructorPoints) {
     return b.data.constructorPoints - a.data.constructorPoints;
   }
@@ -77,11 +81,11 @@ const sortedTeams = teams.sort((a, b) => {
                             {team.data.constructorPoints}
                           </span>
                         </div>
-                        {team.data.championships > 0 && (
+                        {team.data.championshipPosition > 0 && (
                           <div class="flex justify-between items-center">
-                            <span>Championships:</span>
+                            <span>Position:</span>
                             <span class="font-semibold text-yellow-600">
-                              {team.data.championships}
+                              {team.data.championshipPosition}
                             </span>
                           </div>
                         )}
