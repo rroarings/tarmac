@@ -8,8 +8,8 @@ engine: "Red Bull Powertrains"
 chassis: "RB21"
 constructorPoints: 860
 championships: 6
-teamLogo: "/images/teams/red-bull-logo.jpg"
-carImage: "/images/teams/red-bull-car.jpg"
+teamLogo: "/images/teams/redbull-logo.jpg"
+carImage: "/blog-placeholder-4.jpg"
 ---
 
 # Red Bull Racing
