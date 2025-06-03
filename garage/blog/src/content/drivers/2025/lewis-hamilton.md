@@ -8,6 +8,7 @@ countryCode: "gb"
 age: 40
 season: "2025"
 championships: 7
+championshipPosition: 6
 raceWins: 105
 podiums: 197
 points: 53
