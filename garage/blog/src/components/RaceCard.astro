@@ -9,7 +9,7 @@ interface Props {
 
 const { race, completedRaces = [] } = Astro.props;
 
-// Get slug from filename
+// Extract the filename without extension as the slug
 const parts = race.id.split("/");
 const raceSlug = parts[parts.length - 1].replace(/\.(md|mdx)$/, "");
 
@@ -80,7 +80,7 @@ const isLastRace = race.data.completed && raceDateUTC.getTime() === lastRaceDate
         {
           !race.data.completed && isPastRace && (
             <span class="px-3 py-1 bg-yellow-500 text-white text-xs rounded-full">
-              Delayed
+              Previous
             </span>
           )
         }
