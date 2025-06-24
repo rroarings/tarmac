@@ -11,8 +11,9 @@ championships: 4
 championshipPosition: 3
 raceWins: 62
 podiums: 107
-points: 124
-profileImage: "/images/drivers/verstappen.jpg"
+points: 155
+profileImage: "/src/assets/drivers/f1/2024/verstappen-headcrop-01.png"
+profileImageLarge: "/src/assets/drivers/f1/2024/verstappen-portrait-side.png"
 ---
 
 # Max Verstappen
