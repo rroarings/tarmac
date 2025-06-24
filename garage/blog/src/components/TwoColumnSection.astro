@@ -27,7 +27,7 @@ const bgClass = background === "gray" ? "bg-gray-50" : "bg-white";
 ---
 
 <section class={`py-12 ${bgClass}`}>
-  <div class="container mx-auto px-4">
+  <div class="container px-4">
     <div
       class={`flex flex-cols-5 lg:flex-row gap-8 items-center ${reversed ? "lg:flex-row-reverse" : ""}`}
     >
@@ -36,7 +36,10 @@ const bgClass = background === "gray" ? "bg-gray-50" : "bg-white";
         <h2 class="text-3xl font-bold">{title}</h2>
         {
           content ? (
-            <div class="prose prose-lg max-w-none text-gray-600" set:html={content} />
+            <div
+              class="prose prose-lg max-w-none text-gray-600"
+              set:html={content}
+            />
           ) : description ? (
             <p class="text-gray-600">{description}</p>
           ) : null
