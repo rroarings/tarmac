@@ -11,8 +11,8 @@ championships: 0
 championshipPosition: 7
 raceWins: 0
 podiums: 0
-points: 48
-profileImage: "/images/drivers/antonelli.jpg"
+points: 63
+profileImage: "/src/assets/drivers/f1/2024/antonelli-headcrop-01.png"
 ---
 
 # Andrea Kimi Antonelli
