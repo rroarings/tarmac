@@ -11,8 +11,8 @@ championships: 0
 championshipPosition: 5
 raceWins: 8
 podiums: 26
-points: 61
-profileImage: "/images/drivers/leclerc.jpg"
+points: 104
+profileImage: "/src/assets/drivers/f1/2024/leclerc-headcrop-01.png"
 relatedDrivers:
   - lewis-hamilton
 ---
