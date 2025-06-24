@@ -1,24 +1,24 @@
 ---
-import { Image } from "astro:assets"
-import BaseHead from "../components/BaseHead.astro"
-import Header from "../components/Header.astro"
-import Footer from "../components/Footer.astro"
-import { SITE_TITLE, SITE_DESCRIPTION } from "../consts"
+import { Image } from "astro:assets";
+import BaseHead from "../components/BaseHead.astro";
+import Header from "../components/Header.astro";
+import Footer from "../components/Footer.astro";
+import { SITE_TITLE, SITE_DESCRIPTION } from "../consts";
 
 // Import logos
-import astroLogo from "../assets/logos/astro-logo-dark.svg"
-import tailwindLogo from "../assets/logos/tailwindcss-mark.svg"
-import typescriptLogo from "../assets/logos/ts-logo-128.svg"
-import mdxLogo from "../assets/logos/mdx-svgrepo-com.svg"
-import prettierLogo from "../assets/logos/prettier-svgrepo-com.svg"
-import f1Logo from "../assets/logos/racing-car-svgrepo-com.svg"
-import svgRepoLogo from "../assets/logos/svgrepo_logo_icon.svg"
+import astroLogo from "../assets/logos/astro-logo-dark.svg";
+import tailwindLogo from "../assets/logos/tailwindcss-mark.svg";
+import typescriptLogo from "../assets/logos/ts-logo-128.svg";
+import mdxLogo from "../assets/logos/mdx-svgrepo-com.svg";
+import prettierLogo from "../assets/logos/prettier-svgrepo-com.svg";
+import f1Logo from "../assets/logos/racing-car-svgrepo-com.svg";
+import svgRepoLogo from "../assets/logos/svgrepo_logo_icon.svg";
 
 interface Tool {
-  name: string
-  description: string
-  logo: ImageMetadata
-  url: string
+  name: string;
+  description: string;
+  logo: ImageMetadata;
+  url: string;
 }
 
 const tools: Tool[] = [
@@ -71,7 +71,7 @@ const tools: Tool[] = [
     logo: svgRepoLogo,
     url: "https://www.svgrepo.com",
   },
-]
+];
 ---
 
 <!doctype html>
@@ -91,8 +91,8 @@ const tools: Tool[] = [
           <header class="text-center mb-12">
             <h1 class="text-4xl font-bold mb-4">Site Attributions</h1>
             <p class="text-xl text-gray-600">
-              Our Formula 1 fan site is powered by cutting-edge tools and inspired by the sport's
-              innovation.
+              Our Formula 1 fan site is powered by cutting-edge tools and
+              inspired by the sport's innovation.
             </p>
           </header>
 
@@ -139,8 +139,9 @@ const tools: Tool[] = [
             >
               trackside@example.com
             </a>
-            or connect with us on our social media channels. Thank you for being part of our journey.
-            Together, we celebrate the exhilarating world of Formula 1!
+            or connect with us on our social media channels. Thank you for being
+            part of our journey. Together, we celebrate the exhilarating world of
+            Formula 1!
           </p>
         </div>
       </section>
