@@ -28,11 +28,20 @@ fourDaysFromNowUTC.setDate(nowUTC.getDate() + 4);
 
 // Race status checks
 const isPastRace = raceDateUTC.getTime() < nowUTC.getTime();
-const isCurrentRace = !race.data.completed && !isPastRace && raceDateUTC.getTime() <= fourDaysFromNowUTC.getTime();
-const lastRaceDate = completedRaces.length > 0 
-  ? Math.max(...completedRaces.map(r => toUTCMidnight(new Date(r.data.date)).getTime()))
-  : 0;
-const isLastRace = race.data.completed && raceDateUTC.getTime() === lastRaceDate;
+const isCurrentRace =
+  !race.data.completed &&
+  !isPastRace &&
+  raceDateUTC.getTime() <= fourDaysFromNowUTC.getTime();
+const lastRaceDate =
+  completedRaces.length > 0
+    ? Math.max(
+        ...completedRaces.map((r) =>
+          toUTCMidnight(new Date(r.data.date)).getTime(),
+        ),
+      )
+    : 0;
+const isLastRace =
+  race.data.completed && raceDateUTC.getTime() === lastRaceDate;
 ---
 
 <a href={`/seasons/${race.data.season}/races/${raceSlug}`} class="block h-full">
@@ -43,17 +52,20 @@ const isLastRace = race.data.completed && raceDateUTC.getTime() === lastRaceDate
         "border-red-200 bg-red-50": isCurrentRace,
         "border-blue-200 bg-blue-50": isLastRace,
         "border-green-100 bg-green-50": race.data.completed && !isLastRace,
-        "border-gray-200 bg-white": !isCurrentRace && !isLastRace && !race.data.completed,
+        "border-gray-200 bg-white":
+          !isCurrentRace && !isLastRace && !race.data.completed,
       },
     ]}
   >
-    {race.data.trackImage && (
-      <img
-        src={race.data.trackImage}
-        alt={`${race.data.trackName} circuit`}
-        class="w-full h-48 object-cover"
-      />
-    )}
+    {
+      race.data.trackImage && (
+        <img
+          src={race.data.trackImage}
+          alt={`${race.data.trackName} circuit`}
+          class="w-full h-48 object-cover"
+        />
+      )
+    }
     <div class="p-4">
       <div class="flex items-center justify-between mb-4">
         {
