@@ -1,14 +1,14 @@
 ---
-import { Icon } from "astro-icon/components"
+import { Icon } from "astro-icon/components";
 
 interface Props {
   items: {
-    question: string
-    answer: string
-  }[]
+    question: string;
+    answer: string;
+  }[];
 }
 
-const { items } = Astro.props
+const { items } = Astro.props;
 ---
 
 {
@@ -43,53 +43,64 @@ const { items } = Astro.props
 
 <script>
   function accordionSetup() {
-    const accordionMenus = document.querySelectorAll(".accordion") as NodeListOf<HTMLElement>
+    const accordionMenus = document.querySelectorAll(
+      ".accordion",
+    ) as NodeListOf<HTMLElement>;
 
     accordionMenus.forEach((accordionMenu) => {
-      const accordionButton = accordionMenu.querySelector(".accordion__button") as HTMLElement
-      const accordionContent = accordionMenu.querySelector(".accordion__content") as HTMLElement
-      const accordionChevron = accordionMenu.querySelector(".accordion__chevron") as HTMLElement
+      const accordionButton = accordionMenu.querySelector(
+        ".accordion__button",
+      ) as HTMLElement;
+      const accordionContent = accordionMenu.querySelector(
+        ".accordion__content",
+      ) as HTMLElement;
+      const accordionChevron = accordionMenu.querySelector(
+        ".accordion__chevron",
+      ) as HTMLElement;
 
       if (accordionButton && accordionContent && accordionChevron) {
         accordionButton.addEventListener("click", () => {
-          const isExpanded = accordionButton.getAttribute("aria-expanded") === "true"
+          const isExpanded =
+            accordionButton.getAttribute("aria-expanded") === "true";
 
           if (!isExpanded) {
             // Open accordion
-            accordionButton.setAttribute("aria-expanded", "true")
+            accordionButton.setAttribute("aria-expanded", "true");
             // First set maxHeight to 0
-            accordionContent.style.maxHeight = "0px"
+            accordionContent.style.maxHeight = "0px";
             // Remove hidden class
-            accordionContent.classList.remove("hidden")
+            accordionContent.classList.remove("hidden");
             // Force a reflow
-            void accordionContent.offsetHeight
+            void accordionContent.offsetHeight;
             // Now set the actual height to trigger the animation
-            accordionContent.style.maxHeight = accordionContent.scrollHeight + "px"
-            accordionChevron.classList.add("rotate-180")
+            accordionContent.style.maxHeight =
+              accordionContent.scrollHeight + "px";
+            accordionChevron.classList.add("rotate-180");
           } else {
             // Close accordion
-            accordionButton.setAttribute("aria-expanded", "false")
+            accordionButton.setAttribute("aria-expanded", "false");
             // Set height to current height first
-            accordionContent.style.maxHeight = accordionContent.scrollHeight + "px"
+            accordionContent.style.maxHeight =
+              accordionContent.scrollHeight + "px";
             // Force a reflow
-            void accordionContent.offsetHeight
+            void accordionContent.offsetHeight;
             // Now animate to 0
-            accordionContent.style.maxHeight = "0px"
-            accordionChevron.classList.remove("rotate-180")
+            accordionContent.style.maxHeight = "0px";
+            accordionChevron.classList.remove("rotate-180");
             setTimeout(() => {
-              accordionContent.classList.add("hidden")
-            }, 300)
+              accordionContent.classList.add("hidden");
+            }, 300);
           }
-        })
+        });
       }
-    })
+    });
   }
 
   // Run on page load
-  accordionSetup()
+  accordionSetup();
 
   // Run on view transitions
-  document.addEventListener("astro:after-swap", accordionSetup)
+  document.addEventListener("astro:after-swap", accordionSetup);
 </script>
 
 <style>
