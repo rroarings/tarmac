@@ -1,28 +1,28 @@
 ---
-import BaseHead from "../../../../components/BaseHead.astro"
-import Header from "../../../../components/Header.astro"
-import Footer from "../../../../components/Footer.astro"
-import BreakpointIndicator from "../../../../components/BreakpointIndicator.astro"
-import Breadcrumb from "../../../../components/Breadcrumb.astro"
-import { SITE_TITLE } from "../../../../consts"
-import { getCollection, getEntry } from "astro:content"
-import StatCard from "../../../../components/StatCard.astro"
+import BaseHead from "../../../../components/BaseHead.astro";
+import Header from "../../../../components/Header.astro";
+import Footer from "../../../../components/Footer.astro";
+import BreakpointIndicator from "../../../../components/BreakpointIndicator.astro";
+import Breadcrumb from "../../../../components/Breadcrumb.astro";
+import { SITE_TITLE } from "../../../../consts";
+import { getCollection, getEntry } from "astro:content";
+import StatCard from "../../../../components/StatCard.astro";
 
 export async function getStaticPaths() {
   const drivers = await getCollection("drivers", ({ data }) => {
-    return data.season === "2024"
-  })
+    return data.season === "2024";
+  });
 
   return drivers.map((driver) => ({
     params: { slug: driver.id },
     props: { driver },
-  }))
+  }));
 }
 
-const { driver } = Astro.props
+const { driver } = Astro.props;
 // Import the Content component separately
-import { render } from "astro:content"
-const { Content, headings } = await render(driver)
+import { render } from "astro:content";
+const { Content, headings } = await render(driver);
 ---
 
 <!doctype html>
@@ -51,12 +51,10 @@ const { Content, headings } = await render(driver)
           <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
             <div>
               <img
-                src={(
-                  driver.data.profileImage &&
-                  driver.data.profileImage.startsWith("/blog-placeholder")
-                ) ?
-                  driver.data.profileImage
-                : "/blog-placeholder-1.jpg"}
+                src={driver.data.profileImage &&
+                driver.data.profileImage.startsWith("/blog-placeholder")
+                  ? driver.data.profileImage
+                  : "/blog-placeholder-1.jpg"}
                 alt={`${driver.data.firstName} ${driver.data.lastName}`}
                 class="w-full h-64 object-cover p-3"
               />
@@ -100,18 +98,9 @@ const { Content, headings } = await render(driver)
                 value={driver.data.championships}
                 label="Championships"
               />
-              <StatCard
-                value={driver.data.raceWins}
-                label="Race Wins"
-              />
-              <StatCard
-                value={driver.data.podiums}
-                label="Podiums"
-              />
-              <StatCard
-                value={driver.data.points}
-                label="Career Points"
-              />
+              <StatCard value={driver.data.raceWins} label="Race Wins" />
+              <StatCard value={driver.data.podiums} label="Podiums" />
+              <StatCard value={driver.data.points} label="Career Points" />
             </div>
           </div>
         </div>
