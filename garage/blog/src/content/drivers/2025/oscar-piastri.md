@@ -9,9 +9,10 @@ season: "2025"
 championships: 0
 raceWins: 2
 podiums: 7
-points: 186
+points: 198
 championshipPosition: 1
-profileImage: "/images/drivers/piastri.jpg"
+profileImage: "/src/assets/drivers/f1/2024/piastri-headcrop-01.png"
+profileImageLarge: "/src/assets/drivers/f1/2024/piastri-portrait-side.png"
 ---
 
 # Oscar Piastri
