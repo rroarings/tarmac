@@ -48,7 +48,9 @@ const { Content } = await render(driver);
           <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
             <div>
               <img
-                src={driver.data.profileImageLarge || driver.data.profileImage || "/blog-placeholder-1.jpg"}
+                src={driver.data.profileImageLarge ||
+                  driver.data.profileImage ||
+                  "/blog-placeholder-1.jpg"}
                 alt={`${driver.data.firstName} ${driver.data.lastName}`}
                 class="w-full h-auto"
                 loading="lazy"
