@@ -11,8 +11,9 @@ championships: 0
 championshipPosition: 4
 raceWins: 2
 podiums: 13
-points: 99
-profileImage: "/images/drivers/russell.jpg"
+points: 136
+profileImage: "/src/assets/drivers/f1/2024/russell-headcrop-01.png"
+profileImageLarge: "/src/assets/drivers/f1/2024/russell-portrait-side.png"
 ---
 
 # George Russell
