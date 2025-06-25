@@ -3,9 +3,9 @@ trackName: "Circuit Gilles Villeneuve"
 location: "Montreal, Canada"
 date: 2025-06-15
 season: "2025"
-winner: ""
-winningTeam: ""
-fastestLapTime: ""
+winner: "George Russell"
+winningTeam: "Mercedes"
+fastestLapTime: "1.31.52"
 trackImage: "/blog-placeholder-2.jpg"
 raceNumber: 10
 completed: false
