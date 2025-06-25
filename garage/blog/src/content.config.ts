@@ -26,6 +26,7 @@ const drivers = defineCollection({
     number: z.number(),
     team: z.string(),
     nationality: z.string(),
+    countryCode: z.string(),
     age: z.number(),
     profileImage: z.string(), // Smaller image for driver cards
     profileImageLarge: z.string().optional(), // Larger image for profile pages
