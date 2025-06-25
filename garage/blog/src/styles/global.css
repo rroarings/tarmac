@@ -5,6 +5,7 @@
  */
 @import "tailwindcss";
 @import "bootstrap-icons/font/bootstrap-icons.css";
+@import "flag-icons/css/flag-icons.min.css";
 
 :root {
   --accent: #2337ff;
