@@ -3,9 +3,9 @@ firstName: "Liam"
 lastName: "Lawson"
 number: 30
 team: "Racing Bulls"
-nationality: "Australian"
-countryCode: "au"
-age: 27
+nationality: "New Zealander"
+countryCode: "nz"
+age: 22
 season: "2025"
 championships: 0
 championshipPosition: 18
