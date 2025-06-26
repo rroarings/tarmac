@@ -1,18 +1,19 @@
 ---
-name: "Scuderia Ferrari"
+name: "Ferrari"
 carModel: "SF-24"
 season: "2024"
-drivers: ["Charles Leclerc", "Carlos Sainz"]
+drivers: ["Charles Leclerc", "Carlos Sainz", "Oliver Bearman"]
 principal: "Frédéric Vasseur"
 engine: "Ferrari"
 chassis: "SF-24"
-constructorPoints: 593
-championships: 16
+constructorPoints: 652
+championshipPosition: 2
+championships: 6
 teamLogo: "/images/teams/ferrari-logo.jpg"
-carImage: "/blog-placeholder-3.jpg"
+carImage: "/src/assets/cars/2024/car-ferrari-side-main.png"
 ---
 
-# Scuderia Ferrari (2024)
+# Ferrari (2024)
 
 Scuderia Ferrari, the oldest and most iconic team in Formula 1, entered the 2024 season with the aim to challenge for both the Drivers' and Constructors' Championships.
 
