@@ -3,6 +3,19 @@ import BaseHead from "../../components/BaseHead.astro";
 import Header from "../../components/Header.astro";
 import Footer from "../../components/Footer.astro";
 import { SITE_TITLE } from "../../consts";
+import { getCollection } from "astro:content";
+
+const posts = await getCollection("blog");
+
+// Map posts to include slug, title, and heroImage from data
+const formattedPosts = posts.map((post) => ({
+  slug: post.id,
+  title: post.data.title,
+  heroImage: post.data.heroImage,
+}));
+
+// Limit the formattedPosts array to the latest 3 posts
+const latestPosts = formattedPosts.slice(0, 3);
 ---
 
 <!doctype html>
@@ -136,6 +149,43 @@ import { SITE_TITLE } from "../../consts";
               <p class="text-gray-600">
                 Constructor teams, their cars, and performance insights
               </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Recent Posts Section -->
+      <section class="py-5">
+        <div class="mx-auto">
+          <div class="p-6">
+            <header class="flex items-center gap-3 mb-6">
+              <h2 class="text-2xl font-bold">Recent Posts</h2>
+            </header>
+            <ul class="grid grid-cols-1 md:grid-cols-3 gap-4">
+              {
+                latestPosts.map((post) => (
+                  <li class="bg-white border border-gray-300 rounded overflow-hidden">
+                    <a href={`/blog/${post.slug}`} class="block">
+                      <img
+                        src={post.heroImage || "/public/blog-placeholder-1.jpg"}
+                        alt={post.title}
+                        class="w-full h-48 object-cover"
+                      />
+                      <div class="p-4">
+                        <h5 class="">{post.title}</h5>
+                      </div>
+                    </a>
+                  </li>
+                ))
+              }
+            </ul>
+            <div class="mt-8">
+              <a
+                href="/blog"
+                class="bg-gray-600 hover:bg-red-600 text-white py-2 px-4 rounded"
+              >
+                View Recent Posts
+              </a>
             </div>
           </div>
         </div>
