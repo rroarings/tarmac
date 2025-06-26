@@ -2,7 +2,7 @@
 name: "Mercedes"
 carModel: "W16"
 season: "2025"
-drivers: ["George Russell", "Kimi Antonelli"]
+drivers: ["George Russell", "Andrea Kimi Antonelli"]
 principal: "Toto Wolff"
 engine: "Mercedes"
 chassis: "W16"
@@ -10,10 +10,10 @@ constructorPoints: 159
 championshipPosition: 3
 championships: 8
 teamLogo: "/images/teams/mercedes-logo.jpg"
-carImage: "/blog-placeholder-4.jpg"
+carImage: "/src/assets/cars/2024/car-merc-side-main.png"
 ---
 
-# Mercedes-AMG PETRONAS F1 Team
+# Mercedes
 
 The Silver Arrows enter 2025 with a refreshed lineup, pairing the experienced George Russell with rookie sensation Kimi Antonelli.
 
