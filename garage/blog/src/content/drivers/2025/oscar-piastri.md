@@ -1,27 +1,28 @@
 ---
 firstName: "Oscar"
 lastName: "Piastri"
-number: 81
+number: 4
 team: "McLaren"
 nationality: "Australian"
-age: 24
+countryCode: "au"
+age: 25
 season: "2025"
 championships: 0
-raceWins: 2
-podiums: 7
-points: 198
 championshipPosition: 1
+raceWins: 4
+podiums: 14
+points: 198
 profileImage: "/src/assets/drivers/f1/2024/piastri-headcrop-01.png"
 profileImageLarge: "/src/assets/drivers/f1/2024/piastri-portrait-side.png"
 ---
 
-# Oscar Piastri
+# Lando Norris
 
-The young Australian talent Oscar Piastri has quickly established himself as one of Formula 1's rising stars, showcasing impressive speed and maturity in his early career.
+Rising British talent Lando Norris has established himself as one of the brightest young stars in Formula 1, consistently delivering strong performances for McLaren.
 
 ## Career Highlights
 
-- 2 race wins
-- 7 podium finishes
-- Formula 2 Champion (2021)
-- Strong debut seasons with McLaren
+- 4 race wins
+- 14 podium finishes
+- Known for his streaming and social media presence
+- Strong junior career with multiple championships
