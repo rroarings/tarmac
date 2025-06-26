@@ -8,10 +8,11 @@ countryCode: "gb"
 age: 27
 season: "2024"
 championships: 0
+championshipPosition: 6
 raceWins: 2
 podiums: 13
-points: 99
-profileImage: "/images/drivers/russell.jpg"
+points: 245
+profileImage: "/src/assets/drivers/f1/2024/russell-headcrop-01.png"
 ---
 
 # George Russell
