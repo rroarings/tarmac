@@ -1,18 +1,19 @@
 ---
-name: "Mercedes-AMG Petronas F1 Team"
+name: "Mercedes"
 carModel: "W15"
 season: "2024"
 drivers: ["Lewis Hamilton", "George Russell"]
 principal: "Toto Wolff"
 engine: "Mercedes"
 chassis: "W15"
-constructorPoints: 575
-championships: 8
+constructorPoints: 468
+championshipPosition: 4
+championships: 6
 teamLogo: "/images/teams/mercedes-logo.jpg"
-carImage: "/blog-placeholder-2.jpg"
+carImage: "/src/assets/cars/2024/car-merc-side-main.png"
 ---
 
-# Mercedes-AMG Petronas F1 Team (2024)
+# Mercedes (2024)
 
 After several challenging seasons, Mercedes showed signs of returning to their championship-winning form in 2024, with Lewis Hamilton's final season at the team and George Russell continuing his development.
 
