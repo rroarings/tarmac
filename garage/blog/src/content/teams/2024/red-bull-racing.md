@@ -6,10 +6,11 @@ drivers: ["Max Verstappen", "Sergio Perez"]
 principal: "Christian Horner"
 engine: "Honda RBPT"
 chassis: "RB20"
-constructorPoints: 724
+constructorPoints: 589
+championshipPosition: 3
 championships: 6
 teamLogo: "/images/teams/redbull-logo.jpg"
-carImage: "/blog-placeholder-4.jpg"
+carImage: "/src/assets/cars/2024/car-redbull-side-main.png"
 ---
 
 # Red Bull Racing (2024)
