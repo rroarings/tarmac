@@ -10,10 +10,10 @@ constructorPoints: 54
 championshipPosition: 5
 championships: 6
 teamLogo: "/images/teams/redbull-logo.jpg"
-carImage: "/blog-placeholder-4.jpg"
+carImage: "/src/assets/cars/2024/car-williams-side-main.png"
 ---
 
-# Red Bull Racing
+# Williams
 
 The reigning Constructors' Champions, Red Bull Racing continues their dominance in Formula 1 with their innovative RB21 car for the 2025 season.
 
