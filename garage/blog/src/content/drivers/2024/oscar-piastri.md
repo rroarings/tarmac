@@ -4,13 +4,15 @@ lastName: "Piastri"
 number: 81
 team: "McLaren"
 nationality: "Australian"
+countryCode: "au"
 age: 24
 season: "2024"
 championships: 0
+championshipPosition: 4
 raceWins: 2
 podiums: 7
-points: 186
-profileImage: "/images/drivers/piastri.jpg"
+points: 292
+profileImage: "/src/assets/drivers/f1/2024/piastri-headcrop-01.png"
 ---
 
 # Oscar Piastri
