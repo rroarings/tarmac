@@ -3,8 +3,38 @@ import BaseHead from "../../../components/BaseHead.astro";
 import Header from "../../../components/Header.astro";
 import Footer from "../../../components/Footer.astro";
 import RaceCalendar from "../../../components/RaceCalendar.astro";
+import DriverCard from "../../../components/DriverCard.astro";
 import BreakpointIndicator from "../../../components/BreakpointIndicator.astro";
 import { SITE_TITLE } from "../../../consts";
+import { getCollection } from "astro:content";
+
+const posts = await getCollection("blog");
+// Map posts to include slug, title, and heroImage from data
+const formattedPosts = posts.map((post) => ({
+  slug: post.id,
+  title: post.data.title,
+  heroImage: post.data.heroImage,
+}));
+
+// Limit the formattedPosts array to the latest 3 posts
+const latestPosts = formattedPosts.slice(0, 3);
+
+// Get 2025 season drivers
+const drivers = await getCollection("drivers", ({ data }) => {
+  return data.season === "2024";
+});
+
+// Sort drivers by championship position (1-24)
+const sortedDrivers = drivers.sort((a, b) => {
+  // Use championship position first, if equal fall back to points
+  if (a.data.championshipPosition !== b.data.championshipPosition) {
+    return a.data.championshipPosition - b.data.championshipPosition;
+  }
+  return b.data.points - a.data.points;
+});
+
+// Get top 3 drivers for the grid section
+const topDrivers = sortedDrivers.slice(0, 3);
 ---
 
 <!doctype html>
@@ -47,7 +77,7 @@ import { SITE_TITLE } from "../../../consts";
               <div>
                 <a
                   href="/seasons/2024/drivers"
-                  class="bg-red-600 hover:bg-red-700 text-white font-bold py-2 px-4 rounded"
+                  class="bg-red-600 transition-all duration-300 hover:bg-red-700 text-white font-bold py-2 px-4 rounded"
                   >View Drivers</a
                 >
               </div>
@@ -67,10 +97,38 @@ import { SITE_TITLE } from "../../../consts";
               <div>
                 <a
                   href="/seasons/2024/teams"
-                  class="bg-red-600 hover:bg-red-700 text-white font-bold py-2 px-4 rounded"
+                  class="bg-red-600 transition-all duration-300 hover:bg-red-700 text-white font-bold py-2 px-4 rounded"
                   >View Teams</a
                 >
               </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 2025 Drivers Section -->
+      <section class="py-5">
+        <div class="mx-auto">
+          <div class="p-6">
+            <header class="flex items-center gap-3 mb-6">
+              <h2 class="text-2xl font-bold">
+                Explore the 2025 Season Drivers
+              </h2>
+            </header>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+              {
+                topDrivers.map((driver) => (
+                  <DriverCard driver={driver} year="2024" />
+                ))
+              }
+            </div>
+            <div class="mt-8">
+              <a
+                href="/seasons/2025/drivers"
+                class="bg-gray-600 transition-all duration-300 hover:bg-red-600 text-white py-2 px-4 rounded"
+              >
+                View All 2025 Drivers
+              </a>
             </div>
           </div>
         </div>
