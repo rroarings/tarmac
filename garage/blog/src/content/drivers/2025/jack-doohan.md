@@ -4,7 +4,7 @@ lastName: "Doohan"
 number: 7
 team: "Alpine"
 nationality: "Australian"
-countryCode: "ar"
+countryCode: "au"
 age: 19
 season: "2025"
 championships: 0
