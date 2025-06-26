@@ -5,7 +5,7 @@ import { Image } from "astro:assets";
 
 interface Props {
   driver: CollectionEntry<"drivers">;
-  year?: string; // Optional year parameter, defaults to "2025"
+  year?: string;
 }
 
 const { driver, year = "2025" } = Astro.props;
@@ -13,53 +13,65 @@ const { driver, year = "2025" } = Astro.props;
 
 <a href={`/seasons/${year}/drivers/${driver.id}`} class="block h-full">
   <article
-    class="bg-white border border-gray-200 rounded-lg shadow-sm overflow-hidden hover:shadow-lg transition-all duration-300 h-full flex flex-col"
+    class="group bg-gray-100 rounded-xl overflow-hidden transition-all duration-300 h-full border border-gray-100 hover:border-gray-200"
   >
-    <div class="h-48 overflow-hidden">
+    <div class="p-4">
+      {
+        /* Main Grid Layout - 2 columns with flag and driver in first, position in second */
+      }
+      <div class="flex justify-between gap-4 items-start">
+        {/* Left side with driver info */}
+        <div class="flex flex-col">
+          {/* Name with flag */}
+          <div class="flex items-start gap-2">
+            <h3 class="font-bold">
+              <span class="text-lg text-gray-900 block"
+                >{driver.data.firstName}</span
+              >
+              <span class="text-2xl text-gray-900 block -mt-1"
+                >{driver.data.lastName}</span
+              >
+            </h3>
+          </div>
+
+          {/* Team */}
+          <div class="mt-1">
+            <span class="text-gray-600">{driver.data.team}</span>
+          </div>
+
+          {/* Number */}
+          <span class="text-gray-500 mt-1">#{driver.data.number}</span>
+
+          {/* Flag */}
+          <span
+            class={`mt-2 fi fi-${driver.data.countryCode}`}
+            aria-hidden="true"></span>
+        </div>
+
+        {/* Position and Points - Right side */}
+        <div class="text-end">
+          <span
+            class="text-2xl font-bold text-gray-900 block underline underline-offset-6 mb-2"
+          >
+            {driver.data.championshipPosition || "-"}
+          </span>
+          <span class="font-medium text-gray-900 block -mt-1"
+            >{driver.data.points} PTS</span
+          >
+        </div>
+      </div>
+    </div>
+
+    {/* Driver Image */}
+    <div
+      class="h-40 overflow-hidden bg-gradient-to-t from-gray-300 to-gray-100"
+    >
       <img
         src={driver.data.profileImage || "/blog-placeholder-1.jpg"}
         alt={`${driver.data.firstName} ${driver.data.lastName}`}
         class=""
         loading="lazy"
       />
-    </div>
-
-    <div class="p-6 flex-1 flex flex-col">
-      <header class="flex-1">
-        <div class="mb-3">
-          <div class="text-xl text-gray-600">{driver.data.firstName}</div>
-          <h3 class="text-2xl font-bold text-black -mt-1">
-            {driver.data.lastName}
-          </h3>
-        </div>
-
-        <dl class="flex justify-between items-center mb-4">
-          <dt class="sr-only">Team</dt>
-          <dd class="text-gray-600 text-sm font-medium">{driver.data.team}</dd>
-          <dt class="sr-only">Driver Number</dt>
-          <dd class="text-sm text-gray-600">#{driver.data.number}</dd>
-        </dl>
-      </header>
-
-      <dl
-        class="text-sm space-y-2 pt-4 border-t border-gray-200"
-        aria-label="Driver Statistics"
-      >
-        <div class="flex justify-between items-center">
-          <dt class="text-gray-600">Nationality</dt>
-          <dd class="font-medium text-gray-600">{driver.data.nationality}</dd>
-        </div>
-        <div class="flex justify-between items-center">
-          <dt class="text-gray-600">Race Wins</dt>
-          <dd class="font-medium text-gray-600">
-            {driver.data.championshipPosition}
-          </dd>
-        </div>
-        <div class="flex justify-between items-center">
-          <dt class="text-gray-600">Points</dt>
-          <dd class="font-medium text-gray-600">{driver.data.points}</dd>
-        </div>
-      </dl>
     </div>
   </article>
 </a>
