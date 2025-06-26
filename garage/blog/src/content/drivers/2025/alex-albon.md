@@ -1,5 +1,5 @@
 ---
-firstName: "Alexander"
+firstName: "Alex"
 lastName: "Albon"
 number: 16
 team: "Williams"
@@ -17,7 +17,7 @@ relatedDrivers:
   - lewis-hamilton
 ---
 
-# Charles Leclerc
+# Alex Albon
 
 The pride of Monaco, Charles Leclerc has been Ferrari's lead driver since 2019, consistently showcasing his speed and determination in the iconic red car.
 
