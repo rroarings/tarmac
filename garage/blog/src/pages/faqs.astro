@@ -4,6 +4,7 @@ import Header from "../components/Header.astro";
 import Footer from "../components/Footer.astro";
 import Accordion from "../components/Accordion.astro";
 import { SITE_TITLE, SITE_DESCRIPTION } from "../consts";
+import QuestionsCard from "../components/QuestionsCard.astro";
 
 const generalFaqs = [
   {
@@ -75,33 +76,18 @@ const raceFaqs = [
       </section>
 
       <!-- General FAQs -->
-      <section class="container max-w-4xl mx-auto px-4 py-12">
+      <section class="container max-w-6xl mx-auto px-4 py-12">
         <h2 class="text-2xl font-bold mb-6">General FAQs</h2>
         <Accordion items={generalFaqs} />
       </section>
 
       <!-- Race Information FAQs -->
-      <section class="container max-w-4xl mx-auto px-4 py-12">
+      <section class="container max-w-6xl mx-auto px-4 py-12">
         <h2 class="text-2xl font-bold mb-6">Race Information FAQs</h2>
         <Accordion items={raceFaqs} />
       </section>
 
-      <!-- Still Have Questions -->
-      <section class="bg-gray-900 text-white py-16 my-12">
-        <div class="container max-w-4xl mx-auto px-4 text-center">
-          <h2 class="text-3xl font-bold mb-4">Still have questions?</h2>
-          <p class="text-lg text-gray-300 mb-8">
-            We're here to help. If you can't find what you need, reach out to us
-            directly!
-          </p>
-          <a
-            href="/contact"
-            class="inline-block bg-white text-gray-900 px-6 py-3 rounded-lg font-semibold transition-colors duration-300 ease-in-out hover:bg-red-600 hover:text-white"
-          >
-            Contact Us
-          </a>
-        </div>
-      </section>
+      <QuestionsCard />
     </main>
     <Footer />
   </body>
