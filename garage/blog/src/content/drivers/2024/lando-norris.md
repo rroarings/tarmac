@@ -8,10 +8,11 @@ countryCode: "gb"
 age: 25
 season: "2024"
 championships: 0
+championshipPosition: 2
 raceWins: 4
 podiums: 14
-points: 133
-profileImage: "/images/drivers/norris.jpg"
+points: 374
+profileImage: "/src/assets/drivers/f1/2024/norris-headcrop-01.png"
 ---
 
 # Lando Norris
