@@ -10,10 +10,10 @@ constructorPoints: 362
 championshipPosition: 1
 championships: 9
 teamLogo: "/images/teams/mclaren-logo.jpg"
-carImage: "/blog-placeholder-4.jpg"
+carImage: "/src/assets/cars/2024/car-mclaren-side-main.png"
 ---
 
-# McLaren F1 Team
+# McLaren
 
 The historic British team McLaren has returned to competitiveness in recent years, with their young driver pairing showing great promise for the future.
 
