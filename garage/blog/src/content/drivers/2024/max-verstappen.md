@@ -8,10 +8,11 @@ countryCode: "nl"
 age: 27
 season: "2024"
 championships: 4
+championshipPosition: 1
 raceWins: 62
 podiums: 107
-points: 124
-profileImage: "/images/drivers/verstappen.jpg"
+points: 437
+profileImage: "/src/assets/drivers/f1/2024/verstappen-headcrop-01.png"
 ---
 
 # Max Verstappen
