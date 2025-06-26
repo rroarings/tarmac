@@ -10,7 +10,7 @@ constructorPoints: 144
 championshipPosition: 4
 championships: 6
 teamLogo: "/images/teams/redbull-logo.jpg"
-carImage: "/blog-placeholder-4.jpg"
+carImage: "/src/assets/cars/2024/car-redbull-side-main.png"
 ---
 
 # Red Bull Racing
