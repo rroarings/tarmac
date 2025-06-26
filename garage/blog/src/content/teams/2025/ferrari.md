@@ -10,10 +10,10 @@ constructorPoints: 165
 championshipPosition: 2
 championships: 16
 teamLogo: "/images/teams/ferrari-logo.jpg"
-carImage: "/blog-placeholder-4.jpg"
+carImage: "/src/assets/cars/2024/car-ferrari-side-main.png"
 ---
 
-# Scuderia Ferrari
+# Ferrari
 
 The most successful and iconic team in Formula 1 history, Ferrari enters 2025 with a dream lineup of Charles Leclerc and Lewis Hamilton.
 
