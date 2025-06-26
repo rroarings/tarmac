@@ -8,10 +8,11 @@ countryCode: "mc"
 age: 27
 season: "2024"
 championships: 0
+championshipPosition: 3
 raceWins: 8
 podiums: 26
-points: 61
-profileImage: "/images/drivers/leclerc.jpg"
+points: 356
+profileImage: "/src/assets/drivers/f1/2024/leclerc-headcrop-01.png"
 relatedDrivers:
   - lewis-hamilton
 ---
