@@ -1,6 +1,5 @@
 import { glob } from "astro/loaders";
 import { defineCollection, reference, z } from "astro:content";
-import type { ImageMetadata } from "astro";
 
 const blog = defineCollection({
   // Load Markdown and MDX files in the `src/content/blog/` directory.
@@ -47,6 +46,7 @@ const teams = defineCollection({
     carModel: z.string(),
     season: z.enum(["2024", "2025"]),
     drivers: z.array(z.string()),
+    driverRefs: z.array(reference("drivers")).optional(), // References to driver entries
     principal: z.string(),
     engine: z.string(),
     chassis: z.string(),
