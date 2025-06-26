@@ -1,18 +1,19 @@
 ---
-name: "McLaren Racing"
+name: "McLaren"
 carModel: "MCL38"
 season: "2024"
 drivers: ["Lando Norris", "Oscar Piastri"]
 principal: "Andrea Stella"
 engine: "Mercedes"
 chassis: "MCL38"
-constructorPoints: 612
-championships: 8
+constructorPoints: 666
+championshipPosition: 1
+championships: 6
 teamLogo: "/images/teams/mclaren-logo.jpg"
-carImage: "/blog-placeholder-1.jpg"
+carImage: "/src/assets/cars/2024/car-mclaren-side-main.png"
 ---
 
-# McLaren Racing (2024)
+# McLaren (2024)
 
 McLaren Racing continued their impressive upward trajectory in the 2024 season, with their young driver lineup of Lando Norris and Oscar Piastri establishing themselves as regular podium contenders.
 
