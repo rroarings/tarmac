@@ -8,7 +8,7 @@ winningTeam: "Mercedes"
 fastestLapTime: "1.31.52"
 trackImage: "/blog-placeholder-2.jpg"
 raceNumber: 10
-completed: false
+completed: true
 ---
 
 # Canadian Grand Prix 2025
