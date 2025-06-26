@@ -43,16 +43,16 @@ const { Content } = await render(driver);
         ]}
       />
       <!-- Driver Profile Header -->
-      <section class="py-16">
+      <section class="py-16 bg-gray-100">
         <div class="container mx-auto px-4">
-          <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
+          <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
             <div>
               <img
                 src={driver.data.profileImageLarge ||
                   driver.data.profileImage ||
                   "/blog-placeholder-1.jpg"}
                 alt={`${driver.data.firstName} ${driver.data.lastName}`}
-                class="w-full h-auto"
+                class=""
                 loading="lazy"
               />
             </div>
@@ -87,7 +87,7 @@ const { Content } = await render(driver);
       </section>
 
       <!-- Driver Statistics -->
-      <section class="py-12">
+      <section class="py-12 bg-gray-100">
         <div class="container mx-auto px-4">
           <h2 class="text-3xl font-bold mb-10 text-center relative">
             <span class="inline-block pb-2">Career Statistics</span>
@@ -174,7 +174,7 @@ const { Content } = await render(driver);
       </section>
 
       <!-- Driver Biography -->
-      <section class="py-12">
+      <section class="py-12 bg-gray-100">
         <div class="prose prose-lg max-w-none">
           <Content />
         </div>
