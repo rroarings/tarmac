@@ -63,7 +63,7 @@ const racesToDisplay = showAllRaces
   : [...(lastCompletedRace ? [lastCompletedRace] : []), ...nextTwoRaces];
 ---
 
-<div class={`bg-gray-100rounded p-6 ${customClass}`}>
+<div class={`bg-gray-100 rounded ${customClass}`}>
   {
     showTitle && (
       <div class="flex items-center justify-between mb-6">
@@ -84,8 +84,10 @@ const racesToDisplay = showAllRaces
   }
 
   <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-4">
-    {racesToDisplay.map((race) => (
-      <RaceCard race={race} completedRaces={completedRaces} />
-    ))}
+    {
+      racesToDisplay.map((race) => (
+        <RaceCard race={race} completedRaces={completedRaces} />
+      ))
+    }
   </div>
 </div>
