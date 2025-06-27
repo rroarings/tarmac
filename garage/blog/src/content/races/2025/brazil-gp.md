@@ -1,7 +1,7 @@
 ---
-trackName: "Brazil"
-location: "Montreal, Canada"
-date: 2025-11-03
+trackName: "Interlagos Circuit"
+location: "São Paulo, Brazil"
+date: 2025-11-09
 season: "2025"
 winner: ""
 winningTeam: ""
