@@ -77,7 +77,7 @@ const topDrivers = sortedDrivers.slice(0, 3);
               <div>
                 <a
                   href="/seasons/2024/drivers"
-                  class="bg-red-600 transition-all duration-300 hover:bg-red-700 text-white font-bold py-2 px-4 rounded"
+                  class="bg-gray-800 transition-all duration-300 hover:bg-red-600 text-white font-bold py-2 px-4 rounded"
                   >View Drivers</a
                 >
               </div>
@@ -97,7 +97,7 @@ const topDrivers = sortedDrivers.slice(0, 3);
               <div>
                 <a
                   href="/seasons/2024/teams"
-                  class="bg-red-600 transition-all duration-300 hover:bg-red-700 text-white font-bold py-2 px-4 rounded"
+                  class="bg-gray-800 transition-all duration-300 hover:bg-red-600 text-white font-bold py-2 px-4 rounded"
                   >View Teams</a
                 >
               </div>
@@ -106,13 +106,13 @@ const topDrivers = sortedDrivers.slice(0, 3);
         </div>
       </section>
 
-      <!-- 2025 Drivers Section -->
+      <!-- 2024 Drivers Section -->
       <section class="py-5">
         <div class="mx-auto">
           <div class="p-6">
             <header class="flex items-center gap-3 mb-6">
               <h2 class="text-2xl font-bold">
-                Explore the 2025 Season Drivers
+                Explore the 2024 Season Drivers
               </h2>
             </header>
             <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
@@ -124,10 +124,10 @@ const topDrivers = sortedDrivers.slice(0, 3);
             </div>
             <div class="mt-8">
               <a
-                href="/seasons/2025/drivers"
-                class="bg-gray-600 transition-all duration-300 hover:bg-red-600 text-white py-2 px-4 rounded"
+                href="/seasons/2024/drivers"
+                class="text-gray-600 transition-all duration-300 hover:text-blue-600 py-2 px-4 rounded"
               >
-                View All 2025 Drivers
+                View All 2024 Drivers
               </a>
             </div>
           </div>
@@ -137,15 +137,7 @@ const topDrivers = sortedDrivers.slice(0, 3);
       <!-- Race Calendar -->
       <section class="py-6">
         <div class="container mx-auto px-4">
-          <div class="flex justify-between items-center mb-6">
-            <h2 class="text-2xl font-bold">Race Calendar</h2>
-            <a
-              href="/seasons/2024/races"
-              class="bg-red-600 hover:bg-red-700 text-white font-bold py-2 px-4 rounded"
-            >
-              View All Races
-            </a>
-          </div>
+          <h2 class="text-2xl font-bold mb-8">The 2024 Race Calendar</h2>
           <RaceCalendar season="2024" showAllRaces={true} />
         </div>
       </section>
