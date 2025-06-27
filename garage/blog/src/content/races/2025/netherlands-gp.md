@@ -1,7 +1,7 @@
 ---
-trackName: "Netherlands"
-location: "Montreal, Canada"
-date: 2025-08-25
+trackName: "Circuit Zandvoort"
+location: "North Holland, the Netherlands"
+date: 2025-08-31
 season: "2025"
 winner: ""
 winningTeam: ""
