@@ -1,7 +1,7 @@
 ---
-trackName: "Abu Dhabi"
-location: "Montreal, Canada"
-date: 2025-12-08
+trackName: "Yas Marina Circuit"
+location: "	Yas Island, Abu Dhabi, UAE"
+date: 2025-12-07
 season: "2025"
 winner: ""
 winningTeam: ""
