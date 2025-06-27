@@ -1,7 +1,7 @@
 ---
-trackName: "Qatar"
-location: "Montreal, Canada"
-date: 2025-12-01
+trackName: "Lusail International Circuit"
+location: "Lusail, Al Daayen, Qatar"
+date: 2025-11-30
 season: "2025"
 winner: ""
 winningTeam: ""
