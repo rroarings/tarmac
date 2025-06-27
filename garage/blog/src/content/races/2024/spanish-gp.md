@@ -3,13 +3,13 @@ trackName: "Circuit de Barcelona-Catalunya"
 location: "Barcelona, Spain"
 date: 2024-06-23
 season: "2024"
-winner: "To Be Determined"
-winningTeam: "To Be Determined"
-fastestLapTime: "0:00.000"
+winner: "Max Verstappen"
+winningTeam: "Red Bull Racing"
+fastestLapTime: "1.28.20"
 fastestLapDriver: "To Be Determined"
 trackImage: "/blog-placeholder-2.jpg"
-raceNumber: 9
-completed: false
+raceNumber: 10
+completed: true
 ---
 
 # Spanish Grand Prix 2024
