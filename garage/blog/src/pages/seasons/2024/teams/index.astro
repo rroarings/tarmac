@@ -1,185 +1,192 @@
 ---
-import BaseHead from "../../../../components/BaseHead.astro"
-import Header from "../../../../components/Header.astro"
-import Footer from "../../../../components/Footer.astro"
-import Breadcrumb from "../../../../components/Breadcrumb.astro"
-import { SITE_TITLE } from "../../../../consts"
-import { getCollection } from "astro:content"
+import BaseHead from "../../../../components/BaseHead.astro";
+import Header from "../../../../components/Header.astro";
+import Footer from "../../../../components/Footer.astro";
+import Breadcrumb from "../../../../components/Breadcrumb.astro";
+import { SITE_TITLE } from "../../../../consts";
+import { getCollection } from "astro:content";
 
 // Get all teams for 2024 season
 const teams = await getCollection("teams", ({ data }) => {
-	return data.season === "2024"
-})
+  return data.season === "2024";
+});
 
 // Get all drivers for 2024 season to match with teams
 const drivers = await getCollection("drivers", ({ data }) => {
-	return data.season === "2024"
-})
+  return data.season === "2024";
+});
 
 // Map driver names to their profile image and slug
-const driverMap = new Map()
+const driverMap = new Map();
 drivers.forEach((driver) => {
-	const fullName = `${driver.data.firstName} ${driver.data.lastName}`
-	driverMap.set(fullName, {
-		profileImage: driver.data.profileImage,
-		slug: driver.id,
-		countryCode: driver.data.countryCode,
-	})
-})
+  const fullName = `${driver.data.firstName} ${driver.data.lastName}`;
+  driverMap.set(fullName, {
+    profileImage: driver.data.profileImage,
+    slug: driver.id,
+    countryCode: driver.data.countryCode,
+  });
+});
 
 // Sort teams by championship position (1-10), falling back to constructor points
 const sortedTeams = teams.sort((a, b) => {
-	// Use championship position first, if equal fall back to constructor points
-	if (a.data.championshipPosition !== b.data.championshipPosition) {
-		return a.data.championshipPosition - b.data.championshipPosition
-	}
-	if (b.data.constructorPoints !== a.data.constructorPoints) {
-		return b.data.constructorPoints - a.data.constructorPoints
-	}
-	return b.data.championships - a.data.championships
-})
+  // Use championship position first, if equal fall back to constructor points
+  if (a.data.championshipPosition !== b.data.championshipPosition) {
+    return a.data.championshipPosition - b.data.championshipPosition;
+  }
+  if (b.data.constructorPoints !== a.data.constructorPoints) {
+    return b.data.constructorPoints - a.data.constructorPoints;
+  }
+  return b.data.championships - a.data.championships;
+});
 ---
 
 <!doctype html>
 <html lang="en">
-	<head>
-		<BaseHead
-			title={`2024 F1 Teams | ${SITE_TITLE}`}
-			description="2024 Formula 1 constructor teams and their cars"
-		/>
-	</head>
-	<body>
-		<Header />
-		<main>
-			<Breadcrumb
-				items={[
-					{ text: "Home", href: "/" },
-					{ text: "Seasons", href: "/seasons" },
-					{ text: "2025 Season", href: "/seasons/2025/" },
-					{ text: "Constructors", href: "/seasons/2025/teams" },
-				]}
-			/>
-			<!-- Teams Header -->
-			<section class="py-16 text-center">
-				<div class="container mx-auto px-4">
-					<h1 class="text-4xl font-bold mb-4">2024 Formula 1 Teams</h1>
-					<p class="text-lg text-gray-700">Constructor teams and their racing machines</p>
-				</div>
-			</section>
+  <head>
+    <BaseHead
+      title={`2024 F1 Teams | ${SITE_TITLE}`}
+      description="2024 Formula 1 constructor teams and their cars"
+    />
+  </head>
+  <body>
+    <Header />
+    <main>
+      <Breadcrumb
+        items={[
+          { text: "Home", href: "/" },
+          { text: "Seasons", href: "/seasons" },
+          { text: "2024 Season", href: "/seasons/2024/" },
+          { text: "Constructors", href: "/seasons/2024/teams" },
+        ]}
+      />
+      <!-- Teams Header -->
+      <section class="py-16 text-center">
+        <div class="container mx-auto px-4">
+          <h1 class="text-4xl font-bold mb-4">2024 Formula 1 Teams</h1>
+          <p class="text-lg text-gray-700">
+            Constructor teams and their racing machines
+          </p>
+        </div>
+      </section>
 
-			<!-- Teams Grid -->
-			<section class="py-12">
-				<div class="container mx-auto px-4">
-					<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-						{
-							sortedTeams.map((team) => (
-								<article class="bg-white border border-gray-300 rounded shadow-md overflow-hidden h-full flex flex-col hover:shadow-lg transition-shadow">
-									{/* Car Image - Team Link wraps only the image and name */}
-									<a
-										href={`/seasons/2024/teams/${team.id}`}
-										class="block">
-										<div class="h-48 overflow-hidden bg-gradient-to-b from-orange-600 to-orange-200 ">
-											{/* Placeholder for car image */}
-											<img
-												src={team.data.carImage || "/blog-placeholder-1.jpg"}
-												alt={`${team.data.name} ${team.data.carModel}`}
-												class="w-full h-full object-cover"
-											/>
-										</div>
+      <!-- Teams Grid -->
+      <section class="py-12">
+        <div class="container mx-auto px-4">
+          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            {
+              sortedTeams.map((team) => (
+                <article class="bg-white border border-gray-300 rounded shadow-md overflow-hidden h-full flex flex-col hover:shadow-lg transition-shadow">
+                  {/* Car Image - Team Link wraps only the image and name */}
+                  <a href={`/seasons/2024/teams/${team.id}`} class="block">
+                    <div class="h-48 overflow-hidden bg-gradient-to-b from-orange-600 to-orange-200 ">
+                      {/* Placeholder for car image */}
+                      <img
+                        src={team.data.carImage || "/blog-placeholder-1.jpg"}
+                        alt={`${team.data.name} ${team.data.carModel}`}
+                        class="w-full h-full object-cover"
+                      />
+                    </div>
 
-										{/* Team Name Section */}
-										<div class="border-b border-gray-200">
-											<div class="p-4">
-												{team.data.championshipPosition > 0 && (
-													<div class="flex justify-between items-center mb-3">
-														<span class="font-semibold text-4xl underline underline-offset-8">
-															{team.data.championshipPosition}
-														</span>
-														<div class="flex flex-col items-end w-[120px]">
-															<span class="font-semibold text-3xl w-full text-right">
-																{team.data.constructorPoints}
-															</span>
-															<span class="">pts</span>
-														</div>
-													</div>
-												)}
-												<h3 class="text-lg font-bold">{team.data.name}</h3>
-												<p class="text-gray-600 mt-1">Car: {team.data.carModel}</p>
-											</div>
-										</div>
-									</a>
+                    {/* Team Name Section */}
+                    <div class="border-b border-gray-200">
+                      <div class="p-4">
+                        {team.data.championshipPosition > 0 && (
+                          <div class="flex justify-between items-center mb-3">
+                            <span class="font-semibold text-4xl border-4 border-l-0 border-t-0 px-2 rounded-br-lg">
+                              {team.data.championshipPosition}
+                            </span>
+                            <div class="flex flex-col items-end w-[120px]">
+                              <span class="font-semibold text-3xl w-full text-right">
+                                {team.data.constructorPoints}
+                              </span>
+                              <span class="">pts</span>
+                            </div>
+                          </div>
+                        )}
+                        <h3 class="text-lg font-bold">{team.data.name}</h3>
+                        <p class="text-gray-600 mt-1">
+                          Car: {team.data.carModel}
+                        </p>
+                      </div>
+                    </div>
+                  </a>
 
-									{/* Content Section - separate from link */}
-									<div class="p-4 flex-grow flex flex-col">
-										{/* Driver Information with Avatars */}
-										<div class="flex flex-col gap-3 mb-4">
-											{team.data.drivers.map((driverName) => {
-												const driverInfo = driverMap.get(driverName)
-												return (
-													<div class="flex items-center gap-2">
-														{driverInfo ?
-															<a
-																href={`/seasons/2024/drivers/${driverInfo.slug}`}
-																class="flex items-center gap-2 hover:text-red-600">
-																<div class="w-8 h-8 rounded-full overflow-hidden bg-gray-200 flex-shrink-0 border border-gray-200">
-																	<img
-																		src={driverInfo.profileImage}
-																		alt={driverName}
-																		class="w-full h-full object-cover"
-																		width="32"
-																		height="32"
-																	/>
-																</div>
-																<div class="flex items-center">
-																	<span class="text-sm font-medium">{driverName}</span>
-																	{driverInfo.countryCode && (
-																		<span
-																			class={`fi fi-${driverInfo.countryCode} ml-1`}
-																			aria-hidden="true"
-																		/>
-																	)}
-																</div>
-															</a>
-														:	<div class="flex items-center gap-2">
-																<div class="w-8 h-8 rounded-full overflow-hidden bg-gray-200 flex-shrink-0" />
-																<span class="text-sm">{driverName}</span>
-															</div>
-														}
-													</div>
-												)
-											})}
-										</div>
+                  {/* Content Section - separate from link */}
+                  <div class="p-4 flex-grow flex flex-col">
+                    {/* Driver Information with Avatars */}
+                    <div class="flex flex-col gap-3 mb-4">
+                      {team.data.drivers.map((driverName) => {
+                        const driverInfo = driverMap.get(driverName);
+                        return (
+                          <div class="flex items-center gap-2">
+                            {driverInfo ? (
+                              <a
+                                href={`/seasons/2024/drivers/${driverInfo.slug}`}
+                                class="flex items-center gap-2 hover:text-red-600"
+                              >
+                                <div class="w-8 h-8 rounded-full overflow-hidden bg-gray-200 flex-shrink-0 border border-gray-200">
+                                  <img
+                                    src={driverInfo.profileImage}
+                                    alt={driverName}
+                                    class="w-full h-full object-cover"
+                                    width="32"
+                                    height="32"
+                                  />
+                                </div>
+                                <div class="flex items-center">
+                                  <span class="text-sm font-medium">
+                                    {driverName}
+                                  </span>
+                                  {driverInfo.countryCode && (
+                                    <span
+                                      class={`fi fi-${driverInfo.countryCode} ml-1`}
+                                      aria-hidden="true"
+                                    />
+                                  )}
+                                </div>
+                              </a>
+                            ) : (
+                              <div class="flex items-center gap-2">
+                                <div class="w-8 h-8 rounded-full overflow-hidden bg-gray-200 flex-shrink-0" />
+                                <span class="text-sm">{driverName}</span>
+                              </div>
+                            )}
+                          </div>
+                        );
+                      })}
+                    </div>
 
-										{/* Team Details */}
-										<div class="mt-auto pt-2 border-t border-gray-100">
-											<div class="text-sm text-gray-600 space-y-2 mt-2">
-												<div class="flex justify-between items-center">
-													<span>Team Principal:</span>
-													<span class="font-medium">{team.data.principal}</span>
-												</div>
-												<div class="flex justify-between items-center">
-													<span>Engine:</span>
-													<span>{team.data.engine}</span>
-												</div>
-											</div>
-										</div>
-									</div>
-								</article>
-							))
-						}
-					</div>
-				</div>
-			</section>
+                    {/* Team Details */}
+                    <div class="mt-auto pt-2 border-t border-gray-100">
+                      <div class="text-sm text-gray-600 space-y-2 mt-2">
+                        <div class="flex justify-between items-center">
+                          <span>Team Principal:</span>
+                          <span class="font-medium">{team.data.principal}</span>
+                        </div>
+                        <div class="flex justify-between items-center">
+                          <span>Engine:</span>
+                          <span>{team.data.engine}</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </article>
+              ))
+            }
+          </div>
+        </div>
+      </section>
 
-			<!-- Back Link -->
-			<section class="py-8 text-center">
-				<a
-					href="/seasons/2024"
-					class="bg-gray-600 hover:bg-gray-700 text-white font-bold py-2 px-4 rounded">
-					← Back to 2024 Season
-				</a>
-			</section>
-		</main>
-		<Footer />
-	</body>
+      <!-- Back Link -->
+      <section class="py-8 text-center">
+        <a
+          href="/seasons/2024"
+          class="bg-gray-600 hover:bg-gray-700 text-white font-bold py-2 px-4 rounded"
+        >
+          ← Back to 2024 Season
+        </a>
+      </section>
+    </main>
+    <Footer />
+  </body>
 </html>
