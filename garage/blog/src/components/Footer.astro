@@ -5,7 +5,7 @@ import { Icon } from "astro-icon/components";
 
 <footer>
   <div
-    class="mx-auto max-w-screen-xl space-y-8 px-4 py-16 sm:px-6 lg:space-y-16 lg:px-8"
+    class="mx-auto max-w-2xl md:max-w-4xl space-y-8 px-4 py-16 sm:px-6 lg:space-y-16 lg:px-8"
   >
     <div class="grid grid-cols-1 gap-8 lg:grid-cols-3">
       <div>
@@ -59,7 +59,7 @@ import { Icon } from "astro-icon/components";
               href="https://www.github.com/rroarings/tarmac"
               rel="noreferrer"
               target="_blank"
-              class="text-gray-700 transition hover:text-rose-600"
+              class="text-gray-700 transition-colors duration-300 hover:text-rose-600"
             >
               <span class="sr-only">GitHub</span>
               <Icon name="mdi:github" size={24} />
@@ -71,7 +71,7 @@ import { Icon } from "astro-icon/components";
               href="https://www.linkedin.com/in/nick-calvo-56b61218b/"
               rel="noreferrer"
               target="_blank"
-              class="text-gray-700 transition hover:text-rose-600"
+              class="text-gray-700 transition-colors duration-300 hover:text-rose-600"
             >
               <span class="sr-only">LinkedIn</span>
               <Icon name="mdi:linkedin" size={24} />
@@ -83,7 +83,7 @@ import { Icon } from "astro-icon/components";
               href="https://www.notnickcalvo.com"
               rel="noreferrer"
               target="_blank"
-              class="text-gray-700 transition hover:text-rose-600"
+              class="text-gray-700 transition-colors duration-300 hover:text-rose-600"
             >
               <span class="sr-only">Nick Calvo Personal Website</span>
               <Icon name="mdi:web" size={24} />
@@ -95,7 +95,7 @@ import { Icon } from "astro-icon/components";
               href="https://www.youtube.com/@0vlack"
               rel="noreferrer"
               target="_blank"
-              class="text-gray-700 transition-colors hover:text-rose-600"
+              class="text-gray-700 transition-colors duration-300 hover:text-rose-600"
             >
               <span class="sr-only">YouTube</span>
               <Icon name="mdi:youtube" size={24} />
@@ -111,14 +111,17 @@ import { Icon } from "astro-icon/components";
           <p class="font-medium text-gray-900">Learn F1</p>
           <ul class="mt-6 space-y-4 text-base">
             <li>
-              <a href="/" class="text-gray-700 transition hover:text-blue-600">
+              <a
+                href="/"
+                class="text-gray-700 transition duration-300 hover:text-blue-600"
+              >
                 Home
               </a>
             </li>
             <li>
               <a
                 href="/about/whatis"
-                class="text-gray-700 transition hover:text-blue-600"
+                class="text-gray-700 transition duration-300 hover:text-blue-600"
               >
                 What Is F1
               </a>
@@ -126,7 +129,7 @@ import { Icon } from "astro-icon/components";
             <li>
               <a
                 href="/about/technologies"
-                class="text-gray-700 transition hover:text-blue-600"
+                class="text-gray-700 transition duration-300 hover:text-blue-600"
               >
                 Technology
               </a>
@@ -134,7 +137,7 @@ import { Icon } from "astro-icon/components";
             <li>
               <a
                 href="/about/future"
-                class="text-gray-700 transition hover:text-blue-600"
+                class="text-gray-700 transition duration-300 hover:text-blue-600"
               >
                 Future of F1
               </a>
@@ -142,7 +145,7 @@ import { Icon } from "astro-icon/components";
             <li>
               <a
                 href="/about/rules"
-                class="text-gray-700 transition hover:text-blue-600"
+                class="text-gray-700 transition duration-300 hover:text-blue-600"
               >
                 Rules & Regulations
               </a>
@@ -150,7 +153,7 @@ import { Icon } from "astro-icon/components";
             <li>
               <a
                 href="/blog"
-                class="text-gray-700 transition hover:text-blue-600"
+                class="text-gray-700 transition duration-300 hover:text-blue-600"
               >
                 Blog
               </a>
@@ -164,7 +167,7 @@ import { Icon } from "astro-icon/components";
             <li>
               <a
                 href="/seasons/2025"
-                class="text-gray-700 transition hover:text-blue-600"
+                class="text-gray-700 transition duration-300 hover:text-blue-600"
               >
                 Season Overview
               </a>
@@ -172,7 +175,7 @@ import { Icon } from "astro-icon/components";
             <li>
               <a
                 href="/seasons/2025/drivers"
-                class="text-gray-700 transition hover:text-blue-600"
+                class="text-gray-700 transition duration-300 hover:text-blue-600"
               >
                 Drivers
               </a>
@@ -180,7 +183,7 @@ import { Icon } from "astro-icon/components";
             <li>
               <a
                 href="/seasons/2025/teams"
-                class="text-gray-700 transition hover:text-blue-600"
+                class="text-gray-700 transition duration-300 hover:text-blue-600"
               >
                 Teams
               </a>
@@ -188,7 +191,7 @@ import { Icon } from "astro-icon/components";
             <li>
               <a
                 href="/seasons/2025/races"
-                class="text-gray-700 transition hover:text-blue-600"
+                class="text-gray-700 transition duration-300 hover:text-blue-600"
               >
                 Race Calendar
               </a>
@@ -196,7 +199,7 @@ import { Icon } from "astro-icon/components";
             <li>
               <a
                 href="/seasons/2024"
-                class="text-gray-700 transition hover:text-blue-600"
+                class="text-gray-700 transition duration-300 hover:text-blue-600"
               >
                 2024 Archive
               </a>
@@ -210,7 +213,7 @@ import { Icon } from "astro-icon/components";
             <li>
               <a
                 href="/about"
-                class="text-gray-700 transition hover:text-blue-600"
+                class="text-gray-700 transition duration-300 hover:text-blue-600"
               >
                 About Trackside
               </a>
@@ -218,7 +221,7 @@ import { Icon } from "astro-icon/components";
             <li>
               <a
                 href="/faqs"
-                class="text-gray-700 transition hover:text-blue-600"
+                class="text-gray-700 transition duration-300 hover:text-blue-600"
               >
                 FAQs
               </a>
@@ -226,7 +229,7 @@ import { Icon } from "astro-icon/components";
             <li>
               <a
                 href="/contact"
-                class="text-gray-700 transition hover:text-blue-600"
+                class="text-gray-700 transition duration-300 hover:text-blue-600"
               >
                 Contact
               </a>
@@ -234,7 +237,7 @@ import { Icon } from "astro-icon/components";
             <li>
               <a
                 href="/attributions"
-                class="text-gray-700 transition hover:text-blue-600"
+                class="text-gray-700 transition duration-300 hover:text-blue-600"
               >
                 Attributions
               </a>
