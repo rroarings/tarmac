@@ -63,7 +63,7 @@ const racesToDisplay = showAllRaces
   : [...(lastCompletedRace ? [lastCompletedRace] : []), ...nextTwoRaces];
 ---
 
-<div class={`bg-gray-100 border border-gray-300 rounded p-6 ${customClass}`}>
+<div class={`bg-gray-100rounded p-6 ${customClass}`}>
   {
     showTitle && (
       <div class="flex items-center justify-between mb-6">
