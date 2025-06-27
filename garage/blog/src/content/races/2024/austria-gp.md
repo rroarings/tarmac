@@ -3,13 +3,13 @@ trackName: "Red Bull Ring"
 location: "Spielberg, Austria"
 date: 2024-06-30
 season: "2024"
-winner: "To Be Determined"
-winningTeam: "To Be Determined"
-fastestLapTime: "0:00.000"
+winner: "George Russell"
+winningTeam: "Mercedes"
+fastestLapTime: "1.24.22"
 fastestLapDriver: "To Be Determined"
 trackImage: "/blog-placeholder-2.jpg"
-raceNumber: 10
-completed: false
+raceNumber: 11
+completed: true
 ---
 
 # Austrian Grand Prix 2024
