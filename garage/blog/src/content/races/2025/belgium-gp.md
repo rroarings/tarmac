@@ -1,7 +1,7 @@
 ---
-trackName: "Belgium"
-location: "Montreal, Canada"
-date: 2025-07-21
+trackName: "Circuit de Spa-Francorchamps"
+location: "Stavelot, Belgium"
+date: 2025-07-27
 season: "2025"
 winner: ""
 winningTeam: ""
