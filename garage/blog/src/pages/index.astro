@@ -2,8 +2,7 @@
 import BaseHead from "../components/BaseHead.astro";
 import Header from "../components/Header.astro";
 import Footer from "../components/Footer.astro";
-import DriverCard from "../components/DriverCard.astro";
-import RaceCard from "../components/RaceCard.astro";
+import RaceCalendar from "../components/RaceCalendar.astro";
 import BreakpointIndicator from "../components/BreakpointIndicator.astro";
 import TwoColumnSection from "../components/TwoColumnSection.astro";
 import FeatureGrid from "../components/FeatureGrid.astro";
@@ -21,45 +20,6 @@ const formattedPosts = posts.map((post) => ({
 
 // Limit the formattedPosts array to the latest 3 posts
 const latestPosts = formattedPosts.slice(0, 3);
-
-// Get 2025 season drivers
-const drivers = await getCollection("drivers", ({ data }) => {
-  return data.season === "2025";
-});
-
-// Sort drivers by championship position (1-24)
-const sortedDrivers = drivers.sort((a, b) => {
-  // Use championship position first, if equal fall back to points
-  if (a.data.championshipPosition !== b.data.championshipPosition) {
-    return a.data.championshipPosition - b.data.championshipPosition;
-  }
-  return b.data.points - a.data.points;
-});
-
-// Get top 3 drivers for the grid section
-const topDrivers = sortedDrivers.slice(0, 3);
-
-// Get 2025 season teams
-const teams = await getCollection("teams", ({ data }) => {
-  return data.season === "2025";
-});
-
-// Sort teams by constructor points
-const sortedTeams = teams.sort(
-  (a, b) => b.data.constructorPoints - a.data.constructorPoints,
-);
-
-// Get upcoming 2025 races
-const races2025 = await getCollection("races", ({ data }) => {
-  return data.season === "2025" && data.completed === false;
-});
-
-// Sort races by date (earliest first) and take the next 3
-const upcomingRaces2025 = races2025
-  .sort(
-    (a, b) => new Date(a.data.date).getTime() - new Date(b.data.date).getTime(),
-  )
-  .slice(0, 3);
 
 const features = [
   {
@@ -147,13 +107,10 @@ const features = [
             </div>
           </div>
         </div>
-        <div class="bg-white">
+        <div class="">
           <div class="relative mx-auto mt-4 md:mt-8">
             <div class="lg:max-w-4xl lg:mx-auto">
-              <img
-                class="px-4 md:mpx-8"
-                src="https://images.unsplash.com/photo-1628277613967-6abca504d0ac"
-              />
+              <img class="px-4 md:mpx-8" src="/blog-placeholder-1.jpg" />
             </div>
           </div>
         </div>
@@ -166,7 +123,7 @@ const features = [
         ctaText="Explore 2025 Clips & Breakdowns"
         ctaLink="/seasons/2025"
         background="gray"
-        imageSrc="/blog-placeholder-1.jpg"
+        imageSrc="/blog-placeholder-2.jpg"
         imageAlt="F1 Technology"
       />
 
@@ -177,60 +134,27 @@ const features = [
         columns={2}
       />
 
-      <!-- Championship Standings Section -->
-
-      <!-- 2025 Drivers Section -->
-      <section class="py-5">
-        <div class="mx-auto">
-          <div class="p-6">
-            <header class="flex items-center gap-3 mb-6">
-              <h2 class="text-2xl font-bold">
-                Explore the 2025 Season Drivers
-              </h2>
-            </header>
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
-              {
-                topDrivers.map((driver) => (
-                  <DriverCard driver={driver} year="2025" />
-                ))
-              }
-            </div>
-            <div class="mt-8">
-              <a
-                href="/seasons/2025/drivers"
-                class="bg-gray-600 transition-all duration-300 hover:bg-red-600 text-white py-2 px-4 rounded"
-              >
-                View All 2025 Drivers
-              </a>
-            </div>
-          </div>
+      <!-- Race Spotlight Section -->
+      <section class="py-12 bg-gray-50">
+        <div class="container mx-auto px-4">
+          <header class="text-center mb-12">
+            <h2 class="text-3xl font-bold">Race Spotlight</h2>
+            <p class="text-lg text-gray-600 mt-2">
+              A look at the previous, next, and upcoming races on the 2025
+              calendar.
+            </p>
+          </header>
+          <RaceCalendar
+            season="2025"
+            showAllRaces={false}
+            showTitle={false}
+            customClass="!bg-transparent !border-none !p-0"
+          />
         </div>
       </section>
 
-      <!-- Upcoming 2025 Races Section -->
-      <section class="py-5">
-        <div class="mx-auto">
-          <div class="p-6">
-            <header class="flex items-center gap-3 mb-6">
-              <h2 class="text-2xl font-bold">Upcoming 2025 Races</h2>
-            </header>
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
-              {upcomingRaces2025.map((race) => <RaceCard race={race} />)}
-            </div>
-            <div class="mt-8">
-              <a
-                href="/seasons/2025/races"
-                class="bg-gray-600 transition-all duration-300 hover:bg-red-600 text-white py-2 px-4 rounded"
-              >
-                View All 2025 Races
-              </a>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!-- Recent Posts Section -->
-      <section class="py-5">
+      <!-- Latest Blog Posts Section -->
+      <section class="py-12 bg-white">
         <div class="mx-auto">
           <div class="p-6">
             <header class="flex items-center gap-3 mb-6">
