@@ -1,0 +1,232 @@
+---
+// /garage/blog/src/components/Standings.astro
+import { getCollection } from "astro:content";
+import RaceCard from "./RaceCard.astro";
+import StandingsCards from "./StandingsCards.astro";
+import TeamStandingsCards from "./TeamStandingsCards.astro";
+
+interface Props {
+  season: "2024" | "2025";
+}
+
+const { season } = Astro.props;
+
+// --- Data Fetching & Processing ---
+
+// Drivers
+const drivers = await getCollection(
+  "drivers",
+  ({ data }) => data.season === season,
+);
+const sortedDrivers = drivers.sort(
+  (a, b) => a.data.championshipPosition - b.data.championshipPosition,
+);
+const top5Drivers = sortedDrivers.slice(0, 5);
+
+// Constructors (Teams)
+const teams = await getCollection(
+  "teams",
+  ({ data }) => data.season === season,
+);
+const sortedTeams = teams.sort(
+  (a, b) => a.data.championshipPosition - b.data.championshipPosition,
+);
+const top5Teams = sortedTeams.slice(0, 5);
+
+// Last Race
+const races = await getCollection(
+  "races",
+  ({ data }) => data.season === season,
+);
+const toUTCMidnight = (date: Date) => {
+  const d = new Date(date);
+  d.setUTCHours(0, 0, 0, 0);
+  return d;
+};
+const nowUTC = toUTCMidnight(new Date());
+const completedRaces = races
+  .filter(
+    (race) =>
+      race.data.completed || toUTCMidnight(new Date(race.data.date)) < nowUTC,
+  )
+  .sort(
+    (a, b) => new Date(b.data.date).getTime() - new Date(a.data.date).getTime(),
+  );
+
+const lastRace = completedRaces.length > 0 ? completedRaces[0] : null;
+
+// Unique IDs for tabs
+const driversTabId = `drivers-tab-${season}`;
+const constructorsTabId = `constructors-tab-${season}`;
+const lastRaceTabId = `last-race-tab-${season}`;
+---
+
+<div class="standings-component w-full max-w-6xl mx-auto rounded-lg">
+  <!-- Hidden radio buttons for state management -->
+  <input
+    type="radio"
+    name="standings-tab-{season}"
+    id={driversTabId}
+    class="hidden"
+    checked
+  />
+  <input
+    type="radio"
+    name="standings-tab-{season}"
+    id={constructorsTabId}
+    class="hidden"
+  />
+  {
+    lastRace && (
+      <input
+        type="radio"
+        name="standings-tab-{season}"
+        id={lastRaceTabId}
+        class="hidden"
+      />
+    )
+  }
+
+  <!-- Tabs -->
+  <div class="flex border-b border-gray-200">
+    <label
+      for={driversTabId}
+      class="tab-button drivers-label cursor-pointer px-6 py-3 font-semibold"
+      >Drivers</label
+    >
+    <label
+      for={constructorsTabId}
+      class="tab-button constructors-label cursor-pointer px-6 py-3 font-semibold"
+      >Constructors</label
+    >
+    {
+      lastRace && (
+        <label
+          for={lastRaceTabId}
+          class="tab-button last-race-label cursor-pointer px-6 py-3 font-semibold"
+        >
+          Last Race
+        </label>
+      )
+    }
+  </div>
+
+  <!-- Tab Content -->
+  <div class="p-6">
+    <!-- Drivers Table -->
+    <div class="tab-content drivers-content">
+      <StandingsCards season={season} />
+      <table class="w-full text-left">
+        <thead>
+          <tr class="border-b">
+            <th class="py-2 w-16">Pos</th>
+            <th class="py-2 w-1/3">Driver</th>
+            <th class="py-2 w-1/3">Team</th>
+            <th class="py-2 text-right">Points</th>
+          </tr>
+        </thead>
+        <tbody>
+          {
+            top5Drivers.map((driver) => (
+              <tr class="border-b border-gray-300">
+                <td class="py-3">{driver.data.championshipPosition}</td>
+                <td class="py-3">
+                  {driver.data.firstName} {driver.data.lastName}
+                </td>
+                <td class="py-3">{driver.data.team}</td>
+                <td class="py-3 text-right">{driver.data.points}</td>
+              </tr>
+            ))
+          }
+        </tbody>
+      </table>
+      <div class="mt-8 text-center">
+        <a
+          href={`/seasons/${season}/drivers`}
+          class="text-white bg-gray-800 hover:bg-red-700 font-semibold py-2 px-4 rounded"
+          >View All Drivers</a
+        >
+      </div>
+    </div>
+
+    <!-- Constructors Table -->
+    <div class="tab-content constructors-content">
+      <TeamStandingsCards season={season} />
+      <table class="w-full text-left">
+        <thead>
+          <tr class="border-b">
+            <th class="py-2 w-16">Pos</th>
+            <th class="py-2 w-1/3">Team</th>
+            <th class="py-2 w-1/3">Drivers</th>
+            <th class="py-2 text-right">Points</th>
+          </tr>
+        </thead>
+        <tbody>
+          {
+            top5Teams.map((team) => (
+              <tr class="border-b border-gray-300">
+                <td class="py-3">{team.data.championshipPosition}</td>
+                <td class="py-3">{team.data.name}</td>
+                <td class="py-3">{team.data.drivers.join(", ")}</td>
+                <td class="py-3 text-right">{team.data.constructorPoints}</td>
+              </tr>
+            ))
+          }
+        </tbody>
+      </table>
+      <div class="mt-8 text-center">
+        <a
+          href={`/seasons/${season}/teams`}
+          class="text-white bg-gray-800 hover:bg-red-700 font-semibold py-2 px-4 rounded"
+          >View All Constructors</a
+        >
+      </div>
+    </div>
+
+    <!-- Last Race -->
+    {
+      lastRace && (
+        <div class="tab-content last-race-content">
+          <RaceCard race={lastRace} />
+        </div>
+      )
+    }
+  </div>
+</div>
+
+<style>
+  .tab-content {
+    display: none;
+  }
+  .tab-button {
+    color: #6b7280; /* text-gray-500 */
+    border-bottom: 2px solid transparent;
+    transition: all 0.2s ease-in-out;
+  }
+
+  /* Show content and style active tab */
+  .standings-component input[id^="drivers-tab"]:checked ~ .p-6 .drivers-content,
+  .standings-component
+    input[id^="constructors-tab"]:checked
+    ~ .p-6
+    .constructors-content,
+  .standings-component
+    input[id^="last-race-tab"]:checked
+    ~ .p-6
+    .last-race-content {
+    display: block;
+  }
+
+  .standings-component input[id^="drivers-tab"]:checked ~ .flex .drivers-label,
+  .standings-component
+    input[id^="constructors-tab"]:checked
+    ~ .flex
+    .constructors-label,
+  .standings-component
+    input[id^="last-race-tab"]:checked
+    ~ .flex
+    .last-race-label {
+    color: #1f2937; /* text-gray-800 */
+    border-bottom-color: #dc2626; /* border-red-600 */
+  }
+</style>
