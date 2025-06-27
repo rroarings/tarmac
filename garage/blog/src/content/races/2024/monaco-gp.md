@@ -7,7 +7,7 @@ winner: "Charles Leclerc"
 winningTeam: "Ferrari"
 fastestLapTime: "1:14.226"
 fastestLapDriver: "Lando Norris"
-trackImage: "/blog-placeholder-3.jpg"
+trackImage: "/blog-placeholder-2.jpg"
 raceNumber: 8
 completed: true
 ---
