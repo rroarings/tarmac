@@ -7,7 +7,7 @@ winner: "Lando Norris"
 winningTeam: "McLaren"
 fastestLapTime: "1:37.810"
 fastestLapDriver: "Lando Norris"
-trackImage: "/blog-placeholder-1.jpg"
+trackImage: "/blog-placeholder-2.jpg"
 raceNumber: 5
 completed: true
 ---
