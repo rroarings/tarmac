@@ -59,6 +59,7 @@ const sortedTeams = teams.sort((a, b) => {
 					{ text: "Constructors", href: "/seasons/2025/teams" },
 				]}
 			/>
+
 			<!-- Teams Header -->
 			<section class="py-16 text-center">
 				<div class="container mx-auto px-4">
@@ -91,7 +92,7 @@ const sortedTeams = teams.sort((a, b) => {
 											<div class="p-4">
 												{team.data.championshipPosition > 0 && (
 													<div class="flex justify-between items-center mb-3">
-														<span class="font-semibold text-4xl underline underline-offset-8">
+														<span class="font-semibold text-4xl border-4 border-l-0 border-t-0 px-2 rounded-br-lg">
 															{team.data.championshipPosition}
 														</span>
 														<div class="flex flex-col items-end w-[120px]">
@@ -133,7 +134,7 @@ const sortedTeams = teams.sort((a, b) => {
 																	<span class="text-sm font-medium">{driverName}</span>
 																	{driverInfo.countryCode && (
 																		<span
-																			class={`fi fi-${driverInfo.countryCode} ml-1`}
+																			class={`fi fi-${driverInfo.countryCode} ml-2`}
 																			aria-hidden="true"
 																		/>
 																	)}
