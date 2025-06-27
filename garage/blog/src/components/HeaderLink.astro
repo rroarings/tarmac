@@ -16,10 +16,11 @@ const isActive =
 <a
   href={href}
   class:list={[
-    "px-3 py-2 rounded-md text-sm font-medium transition-colors duration-150",
+    "px-3 py-2 rounded-md text-sm font-medium transition-all duration-300",
     {
-      "text-blue-600 hover:text-blue-700": isActive,
-      "text-gray-700 hover:text-gray-900 hover:bg-gray-200": !isActive,
+      "text-blue-600 transition-all duration-300 hover:text-blue-700": isActive,
+      "text-gray-700 transition-bg duration-300 hover:text-gray-900 ease-in-out hover:bg-gray-200":
+        !isActive,
     },
     className,
   ]}
