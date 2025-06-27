@@ -1,7 +1,7 @@
 ---
-trackName: "Hungary"
-location: "Montreal, Canada"
-date: 2025-07-28
+trackName: "Hungaroring"
+location: "Mogyoród, Hungary"
+date: 2025-08-03
 season: "2025"
 winner: ""
 winningTeam: ""
