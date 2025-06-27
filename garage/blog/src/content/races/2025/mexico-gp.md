@@ -1,7 +1,7 @@
 ---
-trackName: "Mexico"
-location: "Montreal, Canada"
-date: 2025-10-27
+trackName: "Autódromo Hermanos Rodríguez"
+location: "Mexico City, Mexico"
+date: 2025-10-26
 season: "2025"
 winner: ""
 winningTeam: ""
