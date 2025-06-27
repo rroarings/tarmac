@@ -19,11 +19,7 @@ import { Icon } from "astro-icon/components";
 
         <!-- Seasons Dropdown -->
         <div class="relative group">
-          <HeaderLink
-            href="/seasons"
-            class="inline-flex items-center"
-            isDropdown={true}
-            matchSubPaths={["/seasons"]}>
+          <HeaderLink href="/seasons" class="inline-flex items-center">
             <span>Seasons</span>
             <Icon name="mdi:chevron-down" size={16} class="ml-1" />
           </HeaderLink>
@@ -45,11 +41,7 @@ import { Icon } from "astro-icon/components";
 
         <!-- Learn Dropdown -->
         <div class="relative group">
-          <HeaderLink
-            href="/about/whatis"
-            class="inline-flex items-center"
-            isDropdown={true}
-            matchSubPaths={["/about/whatis", "/about/technologies", "/about/future"]}>
+          <HeaderLink href="/about/whatis" class="inline-flex items-center">
             <span>Learn</span>
             <Icon name="mdi:chevron-down" size={16} class="ml-1" />
           </HeaderLink>
@@ -77,11 +69,7 @@ import { Icon } from "astro-icon/components";
 
         <!-- More Dropdown -->
         <div class="relative group">
-          <HeaderLink
-            href="/more"
-            class="inline-flex items-center"
-            isDropdown={true}
-            matchSubPaths={["/about$", "/attributions", "/contact", "/faqs", "/components"]}>
+          <HeaderLink href="/more" class="inline-flex items-center">
             <span>More</span>
             <Icon name="mdi:chevron-down" size={16} class="ml-1" />
           </HeaderLink>
