@@ -7,10 +7,17 @@ import RaceCard from "./RaceCard.astro";
 interface Props {
   season: string;
   showAllRaces?: boolean;
+  showTitle?: boolean;
+  customClass?: string;
 }
 
 // Get props
-const { season, showAllRaces = false } = Astro.props;
+const {
+  season,
+  showAllRaces = false,
+  showTitle = true,
+  customClass = "",
+} = Astro.props;
 
 // Fetch races for the specified season
 const races = await getCollection("races", ({ data }) => {
@@ -56,29 +63,29 @@ const racesToDisplay = showAllRaces
   : [...(lastCompletedRace ? [lastCompletedRace] : []), ...nextTwoRaces];
 ---
 
-<div class="bg-gray-100 border border-gray-300 rounded p-6">
-  <div class="flex items-center justify-between mb-6">
-    <div class="flex items-center">
-      <i class="bi bi-calendar3 text-3xl text-gray-700 mr-4"></i>
-      <h3 class="text-2xl">{season} Race Calendar</h3>
-    </div>
-    {
-      lastCompletedRace && (
-        <a
-          href={`/seasons/${season}/races`}
-          class="text-gray-600 hover:text-red-600"
-        >
-          View Races
-        </a>
-      )
-    }
-  </div>
+<div class={`bg-gray-100 border border-gray-300 rounded p-6 ${customClass}`}>
+  {
+    showTitle && (
+      <div class="flex items-center justify-between mb-6">
+        <div class="flex items-center">
+          <i class="bi bi-calendar3 text-3xl text-gray-700 mr-4" />
+          <h3 class="text-2xl">{season} Race Calendar</h3>
+        </div>
+        {lastCompletedRace && (
+          <a
+            href={`/seasons/${season}/races`}
+            class="text-gray-600 hover:text-red-600"
+          >
+            View Races
+          </a>
+        )}
+      </div>
+    )
+  }
 
   <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-4">
-    {
-      racesToDisplay.map((race) => (
-        <RaceCard race={race} completedRaces={completedRaces} />
-      ))
-    }
+    {racesToDisplay.map((race) => (
+      <RaceCard race={race} completedRaces={completedRaces} />
+    ))}
   </div>
 </div>
