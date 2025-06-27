@@ -5,6 +5,7 @@ import Footer from "../components/Footer.astro";
 import RaceCalendar from "../components/RaceCalendar.astro";
 import BreakpointIndicator from "../components/BreakpointIndicator.astro";
 import TwoColumnSection from "../components/TwoColumnSection.astro";
+import Standings from "../components/Standings.astro";
 import FeatureGrid from "../components/FeatureGrid.astro";
 import { SITE_TITLE, SITE_DESCRIPTION } from "../consts";
 import { getCollection } from "astro:content";
@@ -133,6 +134,17 @@ const features = [
         features={features}
         columns={2}
       />
+
+      <!-- Standings Section -->
+      <section class="py-16">
+        <div class="container mx-auto px-4">
+          <h2 class="text-2xl font-bold mb-6 text-center">
+            2025 Championship Standings
+          </h2>
+
+          <Standings season="2025" />
+        </div>
+      </section>
 
       <!-- Race Spotlight Section -->
       <section class="py-12 bg-gray-50">
