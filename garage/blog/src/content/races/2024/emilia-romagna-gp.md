@@ -1,5 +1,5 @@
 ---
-trackName: "Emilia Romagna Circuit"
+trackName: "Imola Circuit"
 location: "Imola, Italy"
 date: 2024-05-19
 season: "2024"
@@ -7,7 +7,7 @@ winner: "Max Verstappen"
 winningTeam: "Red Bull Racing"
 fastestLapTime: "1:18.648"
 fastestLapDriver: "Oscar Piastri"
-trackImage: "/blog-placeholder-3.jpg"
+trackImage: "/blog-placeholder-2.jpg"
 raceNumber: 7
 completed: true
 ---
