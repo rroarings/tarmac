@@ -1,11 +1,11 @@
 ---
-trackName: "Emilia-Romagna"
-location: "Miami, Florida, USA"
+trackName: "Imola Circuit"
+location: "Imola, Italy"
 date: 2025-05-18
 season: "2025"
 winner: "Max Verstappen"
 winningTeam: "Red Bull Racing"
-fastestLapTime: ""
+fastestLapTime: "1.31.33"
 fastestLapDriver: ""
 trackImage: "/blog-placeholder-2.jpg"
 raceNumber: 7
