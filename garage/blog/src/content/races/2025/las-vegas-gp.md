@@ -1,7 +1,7 @@
 ---
-trackName: "Las Vegas"
-location: "Montreal, Canada"
-date: 2025-11-23
+trackName: "Las Vegas Strip Circuit"
+location: "Nevada, United States"
+date: 2025-11-22
 season: "2025"
 winner: ""
 winningTeam: ""
