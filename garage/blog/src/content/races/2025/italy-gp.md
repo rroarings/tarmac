@@ -1,7 +1,7 @@
 ---
-trackName: "Italy"
-location: "Montreal, Canada"
-date: 2025-08-01
+trackName: "Autodromo Nazionale di Monza"
+location: "Monza, Italy"
+date: 2025-09-07
 season: "2025"
 winner: ""
 winningTeam: ""
