@@ -1,7 +1,7 @@
 ---
-trackName: "Azerbaijan"
-location: "Montreal, Canada"
-date: 2025-09-15
+trackName: "Baku City Circuit"
+location: "Azadliq Square, Baku, Azerbaijan"
+date: 2025-09-21
 season: "2025"
 winner: ""
 winningTeam: ""
