@@ -1,6 +1,6 @@
 ---
-trackName: "Austria"
-location: "Montreal, Canada"
+trackName: "Red Bull Ring"
+location: "Spielberg, Austria"
 date: 2025-06-29
 season: "2025"
 winner: ""
