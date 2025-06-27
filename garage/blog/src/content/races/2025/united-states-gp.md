@@ -1,7 +1,7 @@
 ---
-trackName: "United States (COTA)"
-location: "Montreal, Canada"
-date: 2025-10-20
+trackName: "Circuit of the Americas"
+location: "Texas, United States"
+date: 2025-10-19
 season: "2025"
 winner: ""
 winningTeam: ""
