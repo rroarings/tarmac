@@ -7,7 +7,7 @@ winner: "Oscar Piastri"
 winningTeam: "McLaren"
 fastestLapTime: "1:42.06"
 fastestLapDriver: "Lando Norris"
-trackImage: "/blog-placeholder-5.jpg"
+trackImage: "/src/assets/circuits/02china/cn02.jpg"
 raceNumber: 2
 completed: true
 ---
