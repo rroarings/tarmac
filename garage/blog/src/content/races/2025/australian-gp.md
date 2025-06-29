@@ -7,7 +7,7 @@ winner: "Lando Norris"
 winningTeam: "McLaren"
 fastestLapTime: "1:42.06"
 fastestLapDriver: "Lando Norris"
-trackImage: "/blog-placeholder-5.jpg"
+trackImage: "/src/assets/circuits/01australia/aus01.jpg"
 raceNumber: 1
 completed: true
 ---
