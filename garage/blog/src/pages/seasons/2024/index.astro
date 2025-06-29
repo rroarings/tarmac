@@ -1,94 +1,95 @@
 ---
-import BaseHead from "../../../components/BaseHead.astro"
-import Header from "../../../components/Header.astro"
-import Footer from "../../../components/Footer.astro"
-import Breadcrumb from "../../../components/Breadcrumb.astro"
-import RaceCalendar from "../../../components/RaceCalendar.astro"
-import Standings from "../../../components/Standings.astro"
-import BreakpointIndicator from "../../../components/BreakpointIndicator.astro"
-import SeasonNavCards from "../../../components/SeasonNavCards.astro"
-import { SITE_TITLE } from "../../../consts"
-import { getCollection } from "astro:content"
+import BaseHead from "../../../components/BaseHead.astro";
+import Header from "../../../components/Header.astro";
+import Footer from "../../../components/Footer.astro";
+import Breadcrumb from "../../../components/Breadcrumb.astro";
+import RaceCalendar from "../../../components/RaceCalendar.astro";
+import Standings from "../../../components/Standings.astro";
+import BreakpointIndicator from "../../../components/BreakpointIndicator.astro";
+import SeasonNavCards from "../../../components/SeasonNavCards.astro";
+import { SITE_TITLE } from "../../../consts";
+import { getCollection } from "astro:content";
 
-const posts = await getCollection("blog")
+const posts = await getCollection("blog");
 // Map posts to include slug, title, and heroImage from data
 const formattedPosts = posts.map((post) => ({
-	slug: post.id,
-	title: post.data.title,
-	heroImage: post.data.heroImage,
-}))
+  slug: post.id,
+  title: post.data.title,
+  heroImage: post.data.heroImage,
+}));
 
 // Limit the formattedPosts array to the latest 3 posts
-const latestPosts = formattedPosts.slice(0, 3)
+const latestPosts = formattedPosts.slice(0, 3);
 
 // Get 2025 season drivers
 const drivers = await getCollection("drivers", ({ data }) => {
-	return data.season === "2024"
-})
+  return data.season === "2024";
+});
 
 // Sort drivers by championship position (1-24)
 const sortedDrivers = drivers.sort((a, b) => {
-	// Use championship position first, if equal fall back to points
-	if (a.data.championshipPosition !== b.data.championshipPosition) {
-		return a.data.championshipPosition - b.data.championshipPosition
-	}
-	return b.data.points - a.data.points
-})
+  // Use championship position first, if equal fall back to points
+  if (a.data.championshipPosition !== b.data.championshipPosition) {
+    return a.data.championshipPosition - b.data.championshipPosition;
+  }
+  return b.data.points - a.data.points;
+});
 
 // Get top 3 drivers for the grid section
-const topDrivers = sortedDrivers.slice(0, 3)
+const topDrivers = sortedDrivers.slice(0, 3);
 ---
 
 <!doctype html>
 <html lang="en">
-	<head>
-		<BaseHead
-			title={`2024 F1 Season | ${SITE_TITLE}`}
-			description="Complete 2024 Formula 1 race calendar and season overview"
-		/>
-	</head>
-	<body>
-		<BreakpointIndicator />
-		<Header />
-		<main>
-			<Breadcrumb
-				items={[
-					{ text: "Home", href: "/" },
-					{ text: "Seasons", href: "/seasons" },
-					{ text: "2024 Season", href: "/seasons/2024" },
-				]}
-			/>
-			<!-- 2024 Season Header -->
-			<section class="pt-6 pb-6 text-center">
-				<div class="container mx-auto px-4">
-					<h1 class="text-4xl font-bold mb-4">2024 Formula 1 Season</h1>
-					<p class="text-lg text-gray-700">Complete race calendar and season overview</p>
-				</div>
-			</section>
+  <head>
+    <BaseHead
+      title={`2024 F1 Season | ${SITE_TITLE}`}
+      description="Complete 2024 Formula 1 race calendar and season overview"
+    />
+  </head>
+  <body>
+    <BreakpointIndicator />
+    <Header />
+    <main>
+      <Breadcrumb
+        items={[
+          { text: "Home", href: "/" },
+          { text: "Seasons", href: "/seasons" },
+          { text: "2024 Season", href: "/seasons/2024" },
+        ]}
+      />
+      <!-- 2024 Season Header -->
+      <section class="pt-6 pb-6 text-center">
+        <div class="container mx-auto px-4">
+          <h1 class="text-4xl font-bold mb-4">2024 Formula 1 Season</h1>
+          <p class="text-lg text-gray-700">
+            Complete race calendar and season overview
+          </p>
+        </div>
+      </section>
 
-			<!-- Driver / Constructor Nav Cards -->
-			<SeasonNavCards season="2024" />
+      <!-- Driver / Constructor Nav Cards -->
+      <SeasonNavCards season="2024" />
 
-			<!-- Standings Section -->
-			<section class="py-16">
-				<div class="container mx-auto px-4">
-					<h2 class="text-2xl font-bold mb-6 text-center">2024 Championship Standings</h2>
+      <!-- Standings Section -->
+      <section class="py-16">
+        <div class="container mx-auto px-4">
+          <h2 class="text-2xl font-bold mb-6 text-center">
+            2024 Championship Standings
+          </h2>
 
-					<Standings season="2024" />
-				</div>
-			</section>
+          <Standings season="2024" />
+        </div>
+      </section>
 
-			<!-- Race Calendar -->
-			<section class="py-6">
-				<div class="container mx-auto px-4">
-					<h2 class="text-2xl font-bold mb-8">The 2024 Race Calendar</h2>
-					<RaceCalendar
-						season="2024"
-						showAllRaces={true}
-					/>
-				</div>
-			</section>
-		</main>
-		<Footer />
-	</body>
+      <!-- Race Calendar -->
+      <section class="py-6">
+        <div class="container mx-auto px-4">
+          <h2 class="text-2xl font-bold mb-8">The 2024 Race Calendar</h2>
+          <RaceCalendar season="2024" showAllRaces={true} />
+        </div>
+      </section>
+    </main>
+    <Footer />
+  </body>
 </html>
