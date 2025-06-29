@@ -7,7 +7,7 @@ winner: "Oscar Piastri"
 winningTeam: "McLaren"
 fastestLapTime: "Lando Norris"
 fastestLapDriver: "1.31.778"
-trackImage: "/blog-placeholder-2.jpg"
+trackImage: "/src/assets/circuits/06miami/mi02.jpg"
 raceNumber: 6
 completed: true
 ---
