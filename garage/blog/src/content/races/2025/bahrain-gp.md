@@ -7,7 +7,7 @@ winner: "Oscar Piastri"
 winningTeam: "McLaren"
 fastestLapTime: "1:42.06"
 fastestLapDriver: "Lando Norris"
-trackImage: "/blog-placeholder-5.jpg"
+trackImage: "/src/assets/circuits/04bahrain/bh01.jpg"
 raceNumber: 4
 completed: true
 ---
