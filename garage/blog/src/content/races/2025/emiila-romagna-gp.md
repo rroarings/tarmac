@@ -7,7 +7,7 @@ winner: "Max Verstappen"
 winningTeam: "Red Bull Racing"
 fastestLapTime: "1.31.33"
 fastestLapDriver: ""
-trackImage: "/blog-placeholder-2.jpg"
+trackImage: "/src/assets/circuits/07emiliaromagna/er01.jpg"
 raceNumber: 7
 completed: true
 ---
