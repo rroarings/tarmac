@@ -6,7 +6,7 @@ season: "2025"
 winner: "Lando Norris"
 winningTeam: "McLaren"
 fastestLapTime: "1.22.167"
-trackImage: "/blog-placeholder-3.jpg"
+trackImage: "/src/assets/circuits/08monaco/mc04.jpg"
 raceNumber: 8
 completed: true
 ---
