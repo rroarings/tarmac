@@ -7,7 +7,7 @@ winner: "Max Verstappen"
 winningTeam: "Red Bull Racing"
 fastestLapTime: "1:42.06"
 fastestLapDriver: "Lando Norris"
-trackImage: "/blog-placeholder-5.jpg"
+trackImage: "/src/assets/circuits/03japan/jp02.jpg"
 raceNumber: 3
 completed: true
 ---
