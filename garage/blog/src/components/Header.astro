@@ -2,6 +2,8 @@
 import HeaderLink from "./HeaderLink.astro";
 import { SITE_TITLE } from "../consts";
 import { Icon } from "astro-icon/components";
+import { Image } from "astro:assets";
+import tracksideLogo from "/src/assets/logos/trackside-logoblack.png"
 ---
 
 <header class="sticky top-0 z-50 bg-white shadow-sm">
@@ -9,7 +11,9 @@ import { Icon } from "astro-icon/components";
     <div class="flex items-center justify-between h-16">
       <!-- Logo -->
       <div class="flex-shrink-0">
-        <a href="/" class="text-xl font-bold">{SITE_TITLE}</a>
+        <a href="/" class="text-xl font-bold">
+        <Image src={tracksideLogo} alt="Trackside Logo" class="size-48" />
+      </a>
       </div>
 
       <!-- Desktop Navigation -->
