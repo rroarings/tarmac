@@ -1,8 +1,11 @@
 ---
+import { Image } from 'astro:assets';
+import type { ImageMetadata } from 'astro';
+
 interface GridItem {
   title: string;
   description: string;
-  imageSrc: string;
+  image: ImageMetadata;
   imageAlt?: string;
 }
 
@@ -21,16 +24,17 @@ const { title, items } = Astro.props;
     <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
       {
         items.map((item) => (
-          <div class="rounded-lg">
+          <div class="group rounded-lg overflow-hidden shadow-sm hover:shadow-md transition-all duration-300">
             <div class="p-6 flex flex-col h-full">
-              <h3 class="text-xl mb-3">{item.title}</h3>
+              <h3 class="text-xl font-semibold mb-3 group-hover:text-blue-600 transition-colors duration-300">{item.title}</h3>
               <p class="text-gray-600 mb-6">{item.description}</p>
-              <div class="mt-auto">
-                <img
-                  src={item.imageSrc}
+              <div class="mt-auto relative overflow-hidden rounded-lg">
+                <Image
+                  src={item.image}
                   alt={item.imageAlt || ""}
-                  class="w-full h-48 object-cover rounded-lg"
-                  loading="lazy"
+                  class="w-full h-48 object-cover transition-transform duration-500 group-hover:scale-105"
+                  width={800}
+                  height={400}
                 />
               </div>
             </div>
