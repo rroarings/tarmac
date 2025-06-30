@@ -3,12 +3,12 @@ trackName: "Red Bull Ring"
 location: "Spielberg, Austria"
 date: 2025-06-29
 season: "2025"
-winner: ""
-winningTeam: ""
-fastestLapTime: ""
+winner: "Lando Norris"
+winningTeam: "McLaren"
+fastestLapTime: "1.23.47"
 trackImage: "/blog-placeholder-2.jpg"
 raceNumber: 11
-completed: false
+completed: true
 ---
 
 # Austrian Grand Prix 2025
