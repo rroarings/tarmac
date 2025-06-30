@@ -31,10 +31,10 @@ const drivers = defineCollection({
     profileImageLarge: z.string().optional(), // Larger image for profile pages
     season: z.enum(["2024", "2025"]),
     championships: z.number().default(0),
+    championshipPosition: z.number().default(0),
     raceWins: z.number().default(0),
     podiums: z.number().default(0),
     points: z.number().default(0),
-    championshipPosition: z.number().default(0),
   }),
 });
 
@@ -46,7 +46,6 @@ const teams = defineCollection({
     carModel: z.string(),
     season: z.enum(["2024", "2025"]),
     drivers: z.array(z.string()),
-    driverRefs: z.array(reference("drivers")).optional(), // References to driver entries
     principal: z.string(),
     engine: z.string(),
     chassis: z.string(),
