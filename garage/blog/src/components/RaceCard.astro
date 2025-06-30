@@ -23,16 +23,16 @@ const toUTCMidnight = (date: Date) => {
 // Use UTC dates for consistent comparisons
 const nowUTC = toUTCMidnight(new Date());
 const raceDateUTC = toUTCMidnight(new Date(race.data.date));
-const fourDaysFromNowUTC = new Date(nowUTC);
-fourDaysFromNowUTC.setDate(nowUTC.getDate() + 4);
+const sevenDaysFromNowUTC = new Date(nowUTC);
+sevenDaysFromNowUTC.setDate(nowUTC.getDate() + 7);
 
 // Race status checks
 const isPastRace = raceDateUTC.getTime() < nowUTC.getTime();
 const isCurrentRace =
   !race.data.completed &&
   !isPastRace &&
-  raceDateUTC.getTime() <= fourDaysFromNowUTC.getTime();
-const lastRaceDate =
+  raceDateUTC.getTime() <= sevenDaysFromNowUTC.getTime();
+const lastCompletedRaceDate =
   completedRaces.length > 0
     ? Math.max(
         ...completedRaces.map((r) =>
@@ -40,20 +40,21 @@ const lastRaceDate =
         ),
       )
     : 0;
-const isLastRace =
-  race.data.completed && raceDateUTC.getTime() === lastRaceDate;
+
+const isPreviousRace =
+  race.data.completed && raceDateUTC.getTime() === lastCompletedRaceDate;
 ---
 
 <a href={`/seasons/${race.data.season}/races/${raceSlug}`} class="block h-full">
   <div
     class:list={[
-      "h-full border rounded-lg overflow-hidden shadow-sm transition-shadow duration-200 hover:shadow-md",
+      "h-full border rounded-lg overflow-hidden transition-shadow duration-200 hover:shadow-md",
       {
-        "border-red-200 bg-red-50": isCurrentRace,
-        "border-blue-200 bg-blue-50": isLastRace,
-        "border-green-100 bg-green-50": race.data.completed && !isLastRace,
+        "border-red-100 bg-red-50": isCurrentRace,
+        "border-blue-100 bg-blue-50": isPreviousRace,
+        "border-green-100 bg-green-50": race.data.completed && !isPreviousRace,
         "border-gray-200 bg-white":
-          !isCurrentRace && !isLastRace && !race.data.completed,
+          !isCurrentRace && !isPreviousRace && !race.data.completed,
       },
     ]}
   >
@@ -76,14 +77,14 @@ const isLastRace =
           )
         }
         {
-          isLastRace && (
+          isPreviousRace && (
             <span class="px-3 py-1 bg-blue-500 text-white text-xs rounded-full">
-              Last Race
+              Previous Race
             </span>
           )
         }
         {
-          race.data.completed && !isLastRace && (
+          race.data.completed && !isPreviousRace && (
             <span class="px-3 py-1 bg-green-600 text-white text-xs rounded-full">
               Completed
             </span>
@@ -92,7 +93,7 @@ const isLastRace =
         {
           !race.data.completed && isPastRace && (
             <span class="px-3 py-1 bg-yellow-500 text-white text-xs rounded-full">
-              Previous
+              Previous Race
             </span>
           )
         }
