@@ -110,9 +110,21 @@ const features = [
           </div>
         </div>
         <div class="">
-          <div class="relative mx-auto mt-4 md:mt-8">
-            <div class="lg:max-w-4xl lg:mx-auto">
-              <img class="px-4 md:mpx-8" src="/blog-placeholder-1.jpg" />
+          <div class="relative mx-auto mt-4 md:mt-8 overflow-hidden">
+            <div class="lg:max-w-4xl lg:mx-auto rounded-xl shadow-lg">
+              <video
+                class="w-full h-full object-cover rounded-xl"
+                autoplay
+                muted
+                loop
+                playsinline
+              >
+                <source
+                  src="/src/assets/videos/raceseq.webm"
+                  type="video/webm"
+                />
+                Your browser does not support the video tag.
+              </video>
             </div>
           </div>
         </div>
