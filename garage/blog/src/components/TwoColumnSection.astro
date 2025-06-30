@@ -1,11 +1,14 @@
 ---
+import { Image } from "astro:assets";
+import type { ImageMetadata } from "astro";
+
 interface Props {
   title: string;
   content?: string; // HTML content
   description?: string; // Plain text description
   ctaText?: string;
   ctaLink?: string;
-  imageSrc?: string;
+  imageSrc?: ImageMetadata; // Local image from src/assets
   imageAlt?: string;
   reversed?: boolean;
   background?: "white" | "gray";
@@ -73,14 +76,14 @@ const bgClass = background === "gray" ? "bg-gray-50" : "bg-white";
       <div class="flex-1 flex justify-center">
         {
           imageSrc ? (
-            <img
+            <Image
               src={imageSrc}
               alt={imageAlt}
               class="w-full max-w-lg rounded-lg shadow-md object-cover"
               loading="lazy"
             />
           ) : (
-            <div class="w-full max-w-lg aspect-video bg-gray-200 flex items-center justify-center rounded shadow">
+            <div class="w-full max-w-lg bg-gray-200 flex items-center justify-center rounded shadow">
               <span class="text-gray-400 text-lg">[Placeholder Image]</span>
             </div>
           )
