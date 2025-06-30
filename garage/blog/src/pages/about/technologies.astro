@@ -192,13 +192,19 @@ const description =
             </h2>
 
             <div class="rounded-xl overflow-hidden shadow-lg">
-              <Image
-                src="/blog-placeholder-2.jpg"
-                alt="Formula 1 Technology Showcase"
-                width={1920}
-                height={1080}
-                class="w-full h-full object-cover"
-              />
+              <video
+                class="w-full h-full object-cover rounded-xl"
+                autoplay
+                muted
+                loop
+                playsinline
+              >
+                <source
+                  src="/src/assets/videos/raceseq.webm"
+                  type="video/webm"
+                />
+                Your browser does not support the video tag.
+              </video>
             </div>
 
             <div class="mt-8 text-center">
