@@ -53,7 +53,7 @@ const isPreviousRace =
         "border-red-100 bg-red-50": isCurrentRace,
         "border-blue-100 bg-blue-50": isPreviousRace,
         "border-green-100 bg-green-50": race.data.completed && !isPreviousRace,
-        "border-gray-200 bg-white":
+        "border-gray-200 bg-gray-200/40":
           !isCurrentRace && !isPreviousRace && !race.data.completed,
       },
     ]}
