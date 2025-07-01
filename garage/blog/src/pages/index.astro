@@ -1,214 +1,221 @@
 ---
-import BaseHead from "../components/BaseHead.astro"
-import Header from "../components/Header.astro"
-import Footer from "../components/Footer.astro"
-import RaceCalendar from "../components/RaceCalendar.astro"
-import BreakpointIndicator from "../components/BreakpointIndicator.astro"
-import TwoColumnSection from "../components/TwoColumnSection.astro"
-import Standings from "../components/Standings.astro"
-import FeatureGrid from "../components/FeatureGrid.astro"
-import { SITE_TITLE, SITE_DESCRIPTION } from "../consts"
-import { getCollection } from "astro:content"
-import aus02 from "../assets/circuits/01australia/aus02.jpg"
-import race01 from "../assets/section/racei3.jpg"
+import BaseHead from "../components/BaseHead.astro";
+import Header from "../components/Header.astro";
+import Footer from "../components/Footer.astro";
+import RaceCalendar from "../components/RaceCalendar.astro";
+import BreakpointIndicator from "../components/BreakpointIndicator.astro";
+import TwoColumnSection from "../components/TwoColumnSection.astro";
+import Standings from "../components/Standings.astro";
+import FeatureGrid from "../components/FeatureGrid.astro";
+import { SITE_TITLE, SITE_DESCRIPTION } from "../consts";
+import { getCollection } from "astro:content";
+import aus02 from "../assets/circuits/01australia/aus02.jpg";
+import race01 from "../assets/section/racei3.jpg";
 
-const posts = await getCollection("blog")
+const posts = await getCollection("blog");
 
 // Map posts to include slug, title, and heroImage from data
 const formattedPosts = posts.map((post) => ({
-	slug: post.id,
-	title: post.data.title,
-	heroImage: post.data.heroImage,
-}))
+  slug: post.id,
+  title: post.data.title,
+  heroImage: post.data.heroImage,
+}));
 
 // Limit the formattedPosts array to the latest 3 posts
-const latestPosts = formattedPosts.slice(0, 3)
+const latestPosts = formattedPosts.slice(0, 3);
 
 const features = [
-	{
-		title: "Driver Profiles",
-		description:
-			"Explore in-depth profiles of the drivers competing in the FORMULA 1™ championship.",
-	},
-	{
-		title: "Constructor Profiles",
-		description: "Discover the constructors shaping the FORMULA 1™ grid in the recent seasons.",
-	},
-	{
-		title: "Championship Standings",
-		description:
-			"Follow the latest driver and constructor standings as the FORMULA 1™ season unfolds.",
-	},
-	{
-		title: "Race Highlights",
-		description: "Relive key moments and pivotal decisions from recent FORMULA 1™ races.",
-	},
-	{
-		title: "Season Breakdowns",
-		description:
-			"Analyze team and driver performances across the FORMULA 1™ season with insights and reviews.",
-	},
-	{
-		title: "F1 Technologies",
-		description:
-			"Trackside covers the cutting-edge technology driving Formula 1's rapid evolution.",
-	},
-	{
-		title: "Past Season Archive",
-		description:
-			"Travel through the rich history of F1 with a look at the 2023, 2024 and 2025 seasons.",
-	},
-	{
-		title: "Fan Community",
-		description: "Trackside celebrates the passion and excitement of Formula 1 culture.",
-	},
-]
+  {
+    title: "Driver Profiles",
+    description:
+      "Explore in-depth profiles of the drivers competing in the FORMULA 1™ championship.",
+  },
+  {
+    title: "Constructor Profiles",
+    description:
+      "Discover the constructors shaping the FORMULA 1™ grid in the recent seasons.",
+  },
+  {
+    title: "Championship Standings",
+    description:
+      "Follow the latest driver and constructor standings as the FORMULA 1™ season unfolds.",
+  },
+  {
+    title: "Race Highlights",
+    description:
+      "Relive key moments and pivotal decisions from recent FORMULA 1™ races.",
+  },
+  {
+    title: "Season Breakdowns",
+    description:
+      "Analyze team and driver performances across the FORMULA 1™ season with insights and reviews.",
+  },
+  {
+    title: "F1 Technologies",
+    description:
+      "Trackside covers the cutting-edge technology driving Formula 1's rapid evolution.",
+  },
+  {
+    title: "Past Season Archive",
+    description:
+      "Travel through the rich history of F1 with a look at the 2023, 2024 and 2025 seasons.",
+  },
+  {
+    title: "Fan Community",
+    description:
+      "Trackside celebrates the passion and excitement of Formula 1 culture.",
+  },
+];
 ---
 
 <!doctype html>
 <html lang="en">
-	<head>
-		<BaseHead
-			title={SITE_TITLE}
-			description={SITE_DESCRIPTION}
-		/>
-	</head>
-	<body>
-		<BreakpointIndicator />
-		<Header />
-		<main>
-			<!-- Hero Section -->
-			<section class="pb-10 bg-gray-100">
-				<div class="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
-					<div class="text-center">
-						<h1
-							class="max-w-4xl mx-auto mb-4 text-4xl font-bold leading-tight text-gray-900 sm:leading-tight sm:text-5xl lg:text-6xl lg:leading-tight">
-							Your Trackside View of Formula 1
-						</h1>
-						<p class="max-w-2xl mx-auto px-6 text-lg text-gray-600 font-inter">
-							Experience F1 through a fan's perspective. Get the latest race insights, driver
-							profiles, and in-depth analysis of the world's most exciting motorsport.
-						</p>
-						<div class="px-8 sm:items-start sm:justify-center sm:px-0 sm:space-x-5 sm:flex mt-9">
-							<a
-								href="/seasons/2025"
-								title=""
-								class="mb-3 sm:mb-0 inline-flex items-center justify-center w-full px-8 py-3 text-lg text-white transition-all duration-300 bg-gray-900 border-2 border-transparent sm:w-auto rounded-xl hover:bg-rose-600 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-900"
-								role="button">
-								Explore the 2025 Season
-							</a>
-							<a
-								href="/blog"
-								class="inline-flex items-center justify-center w-full px-8 py-3 text-lg text-gray-900 hover:text-white transition-all duration-300 bg-gray-100 border-2 border-gray-600 sm:w-auto rounded-xl hover:bg-gray-600 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-900"
-								role="button"
-								>Read Latest Analysis</a
-							>
-						</div>
-					</div>
-				</div>
-				<div class="">
-					<div class="relative mx-auto mt-4 md:mt-8 overflow-hidden">
-						<div class="lg:max-w-4xl lg:mx-auto rounded-xl shadow-lg">
-							<video
-								class="w-full h-full object-cover rounded-xl"
-								autoplay
-								muted
-								loop
-								playsinline>
-								<source
-									src="/src/assets/videos/raceseq.webm"
-									type="video/webm"
-								/>
-								Your browser does not support the video tag.
-							</video>
-						</div>
-					</div>
-				</div>
-			</section>
+  <head>
+    <BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
+  </head>
+  <body>
+    <BreakpointIndicator />
+    <Header />
+    <main>
+      <!-- Hero Section -->
+      <section class="pb-10 bg-gray-100">
+        <div class="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
+          <div class="text-center">
+            <h1
+              class="max-w-4xl mx-auto mb-4 text-4xl font-bold leading-tight text-gray-900 sm:leading-tight sm:text-5xl lg:text-6xl lg:leading-tight"
+            >
+              Your Trackside View of Formula 1
+            </h1>
+            <p class="max-w-2xl mx-auto px-6 text-lg text-gray-600 font-inter">
+              Experience F1 through a fan's perspective. Get the latest race
+              insights, driver profiles, and in-depth analysis of the world's
+              most exciting motorsport.
+            </p>
+            <div
+              class="px-8 sm:items-start sm:justify-center sm:px-0 sm:space-x-5 sm:flex mt-9"
+            >
+              <a
+                href="/seasons/2025"
+                title=""
+                class="mb-3 sm:mb-0 inline-flex items-center justify-center w-full px-8 py-3 text-lg text-white transition-all duration-300 bg-gray-900 border-2 border-transparent sm:w-auto rounded-xl hover:bg-rose-600 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-900"
+                role="button"
+              >
+                Explore the 2025 Season
+              </a>
+              <a
+                href="/blog"
+                class="inline-flex items-center justify-center w-full px-8 py-3 text-lg text-gray-900 hover:text-white transition-all duration-300 bg-gray-100 border-2 border-gray-600 sm:w-auto rounded-xl hover:bg-gray-600 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-900"
+                role="button">Read Latest Analysis</a
+              >
+            </div>
+          </div>
+        </div>
+        <div class="">
+          <div class="relative mx-auto mt-4 md:mt-8 overflow-hidden">
+            <div class="lg:max-w-4xl lg:mx-auto rounded-xl shadow-lg">
+              <video
+                class="w-full h-full object-cover rounded-xl"
+                autoplay
+                muted
+                loop
+                playsinline
+              >
+                <source
+                  src="/src/assets/videos/raceseq.webm"
+                  type="video/webm"
+                />
+                Your browser does not support the video tag.
+              </video>
+            </div>
+          </div>
+        </div>
+      </section>
 
-			<!-- 2025 Highlights Section -->
-			<TwoColumnSection
-				title="2025 Highlights"
-				description="Dive into the most exciting moments of the 2025 Formula 1 season. Explore race highlights, dramatic overtakes, and pivotal decisions that shaped the championship. Watch exclusive clips and read in-depth breakdowns of key races and driver performances."
-				ctaText="Explore 2025 Clips & Breakdowns"
-				ctaLink="/seasons/2025"
-				background="gray"
-				imageSrc={race01}
-				imageAlt="F1 Technology"
-			/>
+      <!-- 2025 Highlights Section -->
+      <TwoColumnSection
+        title="2025 Highlights"
+        description="Dive into the most exciting moments of the 2025 Formula 1 season. Explore race highlights, dramatic overtakes, and pivotal decisions that shaped the championship. Watch exclusive clips and read in-depth breakdowns of key races and driver performances."
+        ctaText="Explore 2025 Clips & Breakdowns"
+        ctaLink="/seasons/2025"
+        background="gray"
+        imageSrc={race01}
+        imageAlt="F1 Technology"
+      />
 
-			<!-- Features Grid Section -->
-			<FeatureGrid
-				title="What Trackside is about"
-				features={features}
-				columns={2}
-			/>
+      <!-- Features Grid Section -->
+      <FeatureGrid
+        title="What Trackside is about"
+        features={features}
+        columns={2}
+      />
 
-			<!-- Standings Section -->
-			<section class="py-16">
-				<div class="container mx-auto px-4">
-					<h2 class="text-2xl font-bold mb-6 text-center">2025 Championship Standings</h2>
+      <!-- Standings Section -->
+      <section class="py-16">
+        <div class="container mx-auto px-4">
+          <h2 class="text-2xl font-bold mb-6 text-center">
+            2025 Championship Standings
+          </h2>
 
-					<Standings season="2025" />
-				</div>
-			</section>
+          <Standings season="2025" />
+        </div>
+      </section>
 
-			<!-- Race Spotlight Section -->
-			<section class="py-12 bg-gray-50">
-				<div class="container mx-auto px-4">
-					<header class="text-center mb-12">
-						<h2 class="text-3xl font-bold">Race Spotlight</h2>
-						<p class="text-lg text-gray-600 mt-2">
-							A look at the previous, next, and upcoming races on the 2025 calendar.
-						</p>
-					</header>
-					<RaceCalendar
-						season="2025"
-						showAllRaces={false}
-						showTitle={false}
-						customClass="!bg-transparent !border-none !p-0"
-					/>
-				</div>
-			</section>
+      <!-- Race Spotlight Section -->
+      <section class="py-12 bg-gray-50">
+        <div class="container mx-auto px-4">
+          <header class="text-center mb-12">
+            <h2 class="text-3xl font-bold">Race Spotlight</h2>
+            <p class="text-lg text-gray-600 mt-2">
+              A look at the previous, next, and upcoming races on the 2025
+              calendar.
+            </p>
+          </header>
+          <RaceCalendar
+            season="2025"
+            showAllRaces={false}
+            showTitle={false}
+            customClass="!bg-transparent !border-none !p-0"
+          />
+        </div>
+      </section>
 
-			<!-- Latest Blog Posts Section -->
-			<section class="py-12 bg-white">
-				<div class="mx-auto">
-					<div class="p-6">
-						<header class="flex items-center gap-3 mb-6">
-							<h2 class="text-2xl font-bold">Recent Posts</h2>
-						</header>
-						<ul class="grid grid-cols-1 md:grid-cols-3 gap-4">
-							{
-								latestPosts.map((post) => (
-									<li class="bg-white border border-gray-300 rounded overflow-hidden">
-										<a
-											href={`/blog/${post.slug}`}
-											class="block">
-											<img
-												src={post.heroImage || "/public/blog-placeholder-1.jpg"}
-												alt={post.title}
-												class="w-full h-48 object-cover"
-											/>
-											<div class="p-4">
-												<h5 class="">{post.title}</h5>
-											</div>
-										</a>
-									</li>
-								))
-							}
-						</ul>
-						<div class="mt-8">
-							<a
-								href="/blog"
-								class="bg-gray-600 transition-all duration-300 hover:bg-red-600 text-white py-2 px-4 rounded">
-								View Recent Posts
-							</a>
-						</div>
-					</div>
-				</div>
-			</section>
-		</main>
-		<Footer />
-	</body>
+      <!-- Latest Blog Posts Section -->
+      <section class="py-12 bg-white">
+        <div class="mx-auto">
+          <div class="p-6">
+            <header class="flex items-center gap-3 mb-6">
+              <h2 class="text-2xl font-bold">Recent Posts</h2>
+            </header>
+            <ul class="grid grid-cols-1 md:grid-cols-3 gap-4">
+              {
+                latestPosts.map((post) => (
+                  <li class="bg-white border border-gray-300 rounded overflow-hidden">
+                    <a href={`/blog/${post.slug}`} class="block">
+                      <img
+                        src={post.heroImage || "/public/blog-placeholder-1.jpg"}
+                        alt={post.title}
+                        class="w-full h-48 object-cover"
+                      />
+                      <div class="p-4">
+                        <h5 class="">{post.title}</h5>
+                      </div>
+                    </a>
+                  </li>
+                ))
+              }
+            </ul>
+            <div class="mt-8">
+              <a
+                href="/blog"
+                class="bg-gray-600 transition-all duration-300 hover:bg-red-600 text-white py-2 px-4 rounded"
+              >
+                View Recent Posts
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <Footer />
+  </body>
 </html>
