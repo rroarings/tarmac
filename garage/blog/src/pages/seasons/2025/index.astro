@@ -1,120 +1,133 @@
 ---
-import BaseHead from "../../../components/BaseHead.astro";
-import Header from "../../../components/Header.astro";
-import Footer from "../../../components/Footer.astro";
-import RaceCalendar from "../../../components/RaceCalendar.astro";
-import Standings from "../../../components/Standings.astro";
-import Breadcrumb from "../../../components/Breadcrumb.astro";
-import SeasonNavCards from "../../../components/SeasonNavCards.astro";
-import { SITE_TITLE } from "../../../consts";
-import BreakpointIndicator from "../../../components/BreakpointIndicator.astro";
-import { getCollection } from "astro:content";
+import BaseHead from "../../../components/BaseHead.astro"
+import Header from "../../../components/Header.astro"
+import Footer from "../../../components/Footer.astro"
+import RaceCalendar from "../../../components/RaceCalendar.astro"
+import Standings from "../../../components/Standings.astro"
+import Breadcrumb from "../../../components/Breadcrumb.astro"
+import SeasonNavCards from "../../../components/SeasonNavCards.astro"
+import { SITE_TITLE } from "../../../consts"
+import BreakpointIndicator from "../../../components/BreakpointIndicator.astro"
+import { getCollection } from "astro:content"
 
-const posts = await getCollection("blog");
+const posts = await getCollection("blog")
+
+// Sort all posts by published date descending
+const sortedPosts = posts.sort((a, b) => {
+	const dateA = new Date(a.data.pubDate || a.data.updatedDate)
+	const dateB = new Date(b.data.pubDate || b.data.updatedDate)
+	const timeA = isNaN(dateA.getTime()) ? 0 : dateA.getTime()
+	const timeB = isNaN(dateB.getTime()) ? 0 : dateB.getTime()
+	return timeB - timeA
+})
+
 // Map posts to include slug, title, and heroImage from data
-const formattedPosts = posts.map((post) => ({
-  slug: post.id,
-  title: post.data.title,
-  heroImage: post.data.heroImage,
-}));
+const formattedPosts = sortedPosts.map((post) => ({
+	slug: post.id,
+	title: post.data.title,
+	heroImage: post.data.heroImage,
+}))
 
-// Limit the formattedPosts array to the latest 3 posts
-const latestPosts = formattedPosts.slice(0, 3);
+// Take the latest 3 posts
+const latestPosts = formattedPosts.slice(0, 3)
 ---
 
 <!doctype html>
 <html lang="en">
-  <head>
-    <BaseHead
-      title={`2025 F1 Season | ${SITE_TITLE}`}
-      description="Complete 2025 Formula 1 race calendar and season overview"
-    />
-  </head>
-  <body>
-    <BreakpointIndicator />
-    <Header />
-    <main>
-      <Breadcrumb
-        items={[
-          { text: "Home", href: "/" },
-          { text: "Seasons", href: "/seasons" },
-          { text: "2025 Season", href: "/seasons/2025" },
-        ]}
-      />
+	<head>
+		<BaseHead
+			title={`2025 F1 Season | ${SITE_TITLE}`}
+			description="Complete 2025 Formula 1 race calendar and season overview"
+		/>
+	</head>
+	<body>
+		<BreakpointIndicator />
+		<Header />
+		<main>
+			<Breadcrumb
+				items={[
+					{ text: "Home", href: "/" },
+					{ text: "Seasons", href: "/seasons" },
+					{ text: "2025 Season", href: "/seasons/2025" },
+				]}
+			/>
 
-      <!-- 2025 Season Header -->
-      <section class="pt-6 pb-6 text-center">
-        <div class="container mx-auto px-4">
-          <h1 class="text-4xl font-bold mb-4">State of the Season</h1>
-          <p class="max-w-3xl mx-auto text-lg text-gray-700">
-            The 2025 season is shaping up to be a thriller. With new regulations
-            shaking up the grid and fierce rivalries igniting, follow along for
-            real-time standings, race results, and in-depth analysis.
-          </p>
-        </div>
-      </section>
+			<!-- 2025 Season Header -->
+			<section class="pt-6 pb-6 text-center">
+				<div class="container mx-auto px-4">
+					<h1 class="text-4xl font-bold mb-4">State of the Season</h1>
+					<p class="max-w-3xl mx-auto text-lg text-gray-700">
+						The 2025 season is shaping up to be a thriller. With new regulations shaking up the grid
+						and fierce rivalries igniting, follow along for real-time standings, race results, and
+						in-depth analysis.
+					</p>
+				</div>
+			</section>
 
-      <!-- Driver / Constructor Nav Cards -->
-      <SeasonNavCards season="2025" />
+			<!-- Driver / Constructor Nav Cards -->
+			<SeasonNavCards season="2025" />
 
-      <!-- Standings Section -->
-      <section class="py-16">
-        <div class="container mx-auto px-4">
-          <h2 class="text-2xl font-bold mb-6 text-center">
-            2025 Championship Standings
-          </h2>
+			<!-- Standings Section -->
+			<section class="py-16">
+				<div class="container mx-auto px-4">
+					<h2 class="text-2xl font-bold mb-6 text-center">2025 Championship Standings</h2>
 
-          <Standings season="2025" />
-        </div>
-      </section>
+					<Standings season="2025" />
+				</div>
+			</section>
 
-      <!-- Race Calendar -->
-      <section class="py-16 bg-gray-50">
-        <div class="container mx-auto px-4">
-          <h2 class="text-2xl font-bold mb-8 text-center">
-            Race Spotlight: What's Next on the Calendar
-          </h2>
-          <RaceCalendar season="2025" showAllRaces={false} showTitle={true} />
-        </div>
-      </section>
+			<!-- Race Calendar -->
+			<section class="py-16 bg-gray-50">
+				<div class="container mx-auto px-4">
+					<h2 class="text-2xl font-bold mb-8 text-center">
+						Race Spotlight: What's Next on the Calendar
+					</h2>
+					<RaceCalendar
+						season="2025"
+						showAllRaces={false}
+						showTitle={true}
+					/>
+				</div>
+			</section>
 
-      <!-- Recent Posts Section -->
-      <section class="py-16">
-        <div class="mx-auto">
-          <div class="p-6">
-            <header class="flex items-center gap-3 mb-6">
-              <h2 class="text-2xl font-bold">Latest Season Analysis</h2>
-            </header>
-            <ul class="grid grid-cols-1 md:grid-cols-3 gap-4">
-              {
-                latestPosts.map((post) => (
-                  <li class="bg-white border border-gray-300 rounded overflow-hidden">
-                    <a href={`/blog/${post.slug}`} class="block">
-                      <img
-                        src={post.heroImage || "/public/blog-placeholder-1.jpg"}
-                        alt={post.title}
-                        class="w-full h-48 object-cover"
-                      />
-                      <div class="p-4">
-                        <h5 class="">{post.title}</h5>
-                      </div>
-                    </a>
-                  </li>
-                ))
-              }
-            </ul>
-            <div class="mt-8">
-              <a
-                href="/blog"
-                class="bg-gray-600 transition-all duration-300 hover:bg-red-600 text-white py-2 px-4 rounded"
-              >
-                View Recent Posts
-              </a>
-            </div>
-          </div>
-        </div>
-      </section>
-    </main>
-    <Footer />
-  </body>
+			<!-- Latest Blog Posts Section -->
+			<section class="py-12 bg-white">
+				<div class="mx-auto">
+					<div class="p-6">
+						<header class="flex items-center gap-3 mb-6">
+							<h2 class="text-2xl font-bold">Recent Posts</h2>
+						</header>
+						<ul class="grid grid-cols-1 md:grid-cols-3 gap-4">
+							{
+								latestPosts.map((post) => (
+									<li class="bg-white border border-gray-300 rounded overflow-hidden">
+										<a
+											href={`/blog/${post.slug}`}
+											class="block">
+											<img
+												src={post.heroImage || "/public/blog-placeholder-1.jpg"}
+												alt={post.title}
+												class="w-full h-48 object-cover"
+											/>
+											<div class="p-4">
+												<h5 class="">{post.title}</h5>
+											</div>
+										</a>
+									</li>
+								))
+							}
+						</ul>
+						<div class="mt-8 text-center">
+							<a
+								href="/blog"
+								class="bg-gray-800 transition-all duration-300 hover:bg-red-600 text-white py-2 px-4 rounded">
+								Explore the blog
+							</a>
+						</div>
+					</div>
+				</div>
+			</section>
+		</main>
+		<Footer />
+	</body>
 </html>
