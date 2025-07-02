@@ -171,4 +171,6 @@ dist
 .svelte-kit
 
 # Trackside
-garage/blog/package-lock.json
+package-lock.json
+/blog/package-lock.json
+/package-lock.json
