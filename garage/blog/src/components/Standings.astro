@@ -205,7 +205,10 @@ const lastRaceTabId = `last-race-tab-${season}`;
   }
 
   /* Show content and style active tab */
-  .standings-component input[id^="drivers-tab"]:checked ~ .p-6 .drivers-content,
+  .standings-component 
+    input[id^="drivers-tab"]:checked 
+    ~ .p-6 
+    .drivers-content,
   .standings-component
     input[id^="constructors-tab"]:checked
     ~ .p-6
@@ -227,6 +230,7 @@ const lastRaceTabId = `last-race-tab-${season}`;
     ~ .flex
     .last-race-label {
     color: #1f2937; /* text-gray-800 */
+    font-weight: 600;
     border-bottom-color: #dc2626; /* border-red-600 */
   }
 </style>
