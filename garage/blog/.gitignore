@@ -25,3 +25,7 @@ pnpm-debug.log*
 
 # circuit images
 /src/assets/circuits/
+
+package-lock.json
+/blog/package-lock.json
+/package-lock.json
