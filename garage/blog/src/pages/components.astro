@@ -10,6 +10,8 @@ import TwoColumnSection from "../components/TwoColumnSection.astro";
 import FeatureGrid from "../components/FeatureGrid.astro";
 import GridSection from "../components/GridSection.astro";
 import { getCollection } from "astro:content";
+import { Image } from "astro:assets";
+import bg01 from "/src/assets/circuits/01australia/aus01.jpg";
 
 // Get sample data for components
 const sampleDriver = (await getCollection("drivers"))[0];
@@ -454,7 +456,7 @@ const SITE_DESCRIPTION = "Visual testing page for Trackside components";
             description="This is a sample two-column section demonstrating the layout capabilities."
             ctaText="Learn More"
             ctaLink="#"
-            imageSrc="/blog-placeholder-1.jpg"
+            imageSrc={bg01}
             imageAlt="Sample image"
           />
         </div>
@@ -555,39 +557,7 @@ const SITE_DESCRIPTION = "Visual testing page for Trackside components";
         </div>
 
         <div class="component-demo">
-          <GridSection
-            title="Understanding the pinnacle of motorsports"
-            items={[
-              {
-                title: "The Introduction",
-                description:
-                  "Formula 1, often referred to as F1, is the pinnacle of motorsport and one of the most thrilling and prestigious racing championships in the world.",
-                imageSrc: "/blog-placeholder-1.jpg",
-                imageAlt: "What is Formula 1",
-              },
-              {
-                title: "The Machinery",
-                description:
-                  "Formula 1 cars are open-wheel, single-seater vehicles designed for maximum speed and performance.",
-                imageSrc: "/blog-placeholder-2.jpg",
-                imageAlt: "The Machinery",
-              },
-              {
-                title: "The Drivers",
-                description:
-                  "Behind the wheel are some of the most talented and daring drivers on the planet, competing for glory in a high-stakes environment.",
-                imageSrc: "/blog-placeholder-3.jpg",
-                imageAlt: "The Drivers",
-              },
-              {
-                title: "The Tracks",
-                description:
-                  "Races take place on a variety of circuits, ranging from iconic street tracks like Monaco to purpose-built circuits like Silverstone.",
-                imageSrc: "/blog-placeholder-4.jpg",
-                imageAlt: "The Tracks",
-              },
-            ]}
-          />
+         
         </div>
       </section>
     </main>
