@@ -1,6 +1,6 @@
 ---
 trackName: "Circuit de Barcelona-Catalunya"
-location: "Barcelona, Spain"
+location: "Spain"
 date: 2024-06-23
 season: "2024"
 winner: "Max Verstappen"

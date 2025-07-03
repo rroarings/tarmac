@@ -1,6 +1,6 @@
 ---
 trackName: "Circuit de Spa-Francorchamps"
-location: "Stavelot, Belgium"
+location: "Belgium"
 date: 2025-07-27
 season: "2025"
 winner: ""

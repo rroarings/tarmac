@@ -1,6 +1,6 @@
 ---
 trackName: "Shanghai International Circuit"
-location: "Shanghai, China"
+location: "China"
 date: 2024-04-21
 season: "2024"
 winner: "Lando Norris"

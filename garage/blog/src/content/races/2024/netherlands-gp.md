@@ -1,6 +1,6 @@
 ---
 trackName: "Circuit Zandvoort"
-location: "North Holland, the Netherlands"
+location: "Netherlands"
 date: 2024-08-25
 season: "2024"
 winner: "Lando Norris"

@@ -1,6 +1,6 @@
 ---
 trackName: "Marina Bay Street Circuit"
-location: "Marina Bay, Singapore"
+location: "Singapore"
 date: 2024-09-22
 season: "2024"
 winner: "Lando Norris"

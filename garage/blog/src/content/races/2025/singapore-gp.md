@@ -1,6 +1,6 @@
 ---
 trackName: "Marina Bay Street Circuit"
-location: "Marina Bay, Singapore"
+location: "Singapore"
 date: 2025-10-05
 season: "2025"
 winner: ""

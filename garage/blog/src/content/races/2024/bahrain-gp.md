@@ -1,6 +1,6 @@
 ---
 trackName: "Bahrain International Circuit"
-location: "Sakhir, Bahrain"
+location: "Bahrain"
 date: 2024-03-02
 season: "2024"
 winner: "Max Verstappen"

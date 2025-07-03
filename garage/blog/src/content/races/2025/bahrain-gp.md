@@ -1,6 +1,6 @@
 ---
 trackName: "Bahrain International Circuit"
-location: "Sakhir, Bahrain"
+location: "Bahrain"
 date: 2025-04-13
 season: "2025"
 winner: "Oscar Piastri"

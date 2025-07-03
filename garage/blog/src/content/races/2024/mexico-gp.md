@@ -1,6 +1,6 @@
 ---
 trackName: "Autódromo Hermanos Rodríguez"
-location: "Mexico City, Mexico"
+location: "Mexico"
 date: 2024-10-27
 season: "2024"
 winner: "Carlos Sainz"

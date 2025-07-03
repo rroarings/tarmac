@@ -1,6 +1,6 @@
 ---
 trackName: "Hungaroring"
-location: "Mogyoród, Hungary"
+location: "Hungary"
 date: 2024-07-21
 season: "2024"
 winner: "Oscar Piastri"

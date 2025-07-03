@@ -1,6 +1,6 @@
 ---
 trackName: "Imola Circuit"
-location: "Imola, Italy"
+location: "Imola"
 date: 2025-05-18
 season: "2025"
 winner: "Max Verstappen"

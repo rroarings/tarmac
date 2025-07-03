@@ -1,6 +1,6 @@
 ---
 trackName: "Yas Marina Circuit"
-location: "	Yas Island, Abu Dhabi, UAE"
+location: "Abu Dhabi"
 date: 2025-12-07
 season: "2025"
 winner: ""

@@ -1,6 +1,6 @@
 ---
 trackName: "Interlagos Circuit"
-location: "São Paulo, Brazil"
+location: "Brazil"
 date: 2024-11-03
 season: "2024"
 winner: "Max Verstappen"

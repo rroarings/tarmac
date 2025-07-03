@@ -1,6 +1,6 @@
 ---
 trackName: "Circuit de Barcelona-Catalunya"
-location: "Montmeló, Spain"
+location: "Spain"
 date: 2025-06-01
 season: "2025"
 winner: "Oscar Piastri"

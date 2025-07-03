@@ -1,6 +1,6 @@
 ---
 trackName: "Circuit Gilles Villeneuve"
-location: "Montreal, Quebec"
+location: "Canada"
 date: 2024-06-09
 season: "2024"
 winner: "Max Verstappen"

@@ -1,6 +1,6 @@
 ---
 trackName: "Circuit Gilles Villeneuve"
-location: "Montreal, Canada"
+location: "Canada"
 date: 2025-06-15
 season: "2025"
 winner: "George Russell"

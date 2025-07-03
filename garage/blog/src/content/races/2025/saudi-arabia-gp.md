@@ -1,6 +1,6 @@
 ---
 trackName: "Jeddah Corniche Circuit"
-location: "Jeddah, Saudi Arabia"
+location: "Saudi Arabia"
 date: 2025-04-20
 season: "2025"
 winner: "Oscar Piastri"

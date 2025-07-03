@@ -1,6 +1,6 @@
 ---
 trackName: "Albert Park Circuit"
-location: "Melbourne, Australia"
+location: "Australia"
 date: 2025-03-16
 season: "2025"
 winner: "Lando Norris"

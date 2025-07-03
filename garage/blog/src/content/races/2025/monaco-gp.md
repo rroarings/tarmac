@@ -1,6 +1,6 @@
 ---
 trackName: "Circuit de Monaco"
-location: "Monte Carlo, Monaco"
+location: "Monaco"
 date: 2025-05-25
 season: "2025"
 winner: "Lando Norris"

@@ -1,6 +1,6 @@
 ---
 trackName: "Yas Marina Circuit"
-location: "	Yas Island, Abu Dhabi, UAE"
+location: "Abu Dhabi"
 date: 2024-12-08
 season: "2024"
 winner: "Lando Norris"

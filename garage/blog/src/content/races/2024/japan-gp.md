@@ -1,6 +1,6 @@
 ---
 trackName: "Suzuka Circuit"
-location: "Suzuka, Japan"
+location: "Japan"
 date: 2024-04-07
 season: "2024"
 winner: "Max Verstappen"

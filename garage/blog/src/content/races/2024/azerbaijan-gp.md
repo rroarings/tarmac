@@ -1,6 +1,6 @@
 ---
 trackName: "Baku City Circuit"
-location: "Azadliq Square, Baku, Azerbaijan"
+location: "Azerbaijan"
 date: 2024-09-15
 season: "2024"
 winner: "Oscar Piastri"

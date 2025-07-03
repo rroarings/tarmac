@@ -1,6 +1,6 @@
 ---
 trackName: "Red Bull Ring"
-location: "Spielberg, Austria"
+location: "Austria"
 date: 2024-06-30
 season: "2024"
 winner: "George Russell"

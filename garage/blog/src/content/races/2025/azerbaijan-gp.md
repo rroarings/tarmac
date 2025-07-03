@@ -1,6 +1,6 @@
 ---
 trackName: "Baku City Circuit"
-location: "Azadliq Square, Baku, Azerbaijan"
+location: "Azerbaijan"
 date: 2025-09-21
 season: "2025"
 winner: ""

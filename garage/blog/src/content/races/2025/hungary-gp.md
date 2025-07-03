@@ -1,6 +1,6 @@
 ---
 trackName: "Hungaroring"
-location: "Mogyoród, Hungary"
+location: "Hungary"
 date: 2025-08-03
 season: "2025"
 winner: ""

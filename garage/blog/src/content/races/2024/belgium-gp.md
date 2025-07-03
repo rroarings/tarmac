@@ -1,6 +1,6 @@
 ---
 trackName: "Circuit de Spa-Francorchamps"
-location: "Stavelot, Belgium"
+location: "Belgium"
 date: 2024-07-28
 season: "2024"
 winner: "Lewis Hamilton"

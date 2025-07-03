@@ -1,6 +1,6 @@
 ---
 trackName: "Miami International Autodrome"
-location: "Miami, Florida, USA"
+location: "Miami"
 date: 2025-05-04
 season: "2025"
 winner: "Oscar Piastri"

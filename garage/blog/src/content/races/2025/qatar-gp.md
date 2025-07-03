@@ -1,6 +1,6 @@
 ---
 trackName: "Lusail International Circuit"
-location: "Lusail, Al Daayen, Qatar"
+location: "Qatar"
 date: 2025-11-30
 season: "2025"
 winner: ""

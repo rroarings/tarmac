@@ -1,6 +1,6 @@
 ---
 trackName: "Circuit de Monaco"
-location: "Monte Carlo, Monaco"
+location: "Monaco"
 date: 2024-05-26
 season: "2024"
 winner: "Charles Leclerc"

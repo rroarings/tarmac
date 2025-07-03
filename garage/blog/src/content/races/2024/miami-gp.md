@@ -1,6 +1,6 @@
 ---
 trackName: "Miami International Autodrome"
-location: "Miami, Florida, USA"
+location: "Miami"
 date: 2024-05-05
 season: "2024"
 winner: "Lando Norris"

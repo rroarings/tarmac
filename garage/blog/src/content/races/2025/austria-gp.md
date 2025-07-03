@@ -1,6 +1,6 @@
 ---
 trackName: "Red Bull Ring"
-location: "Spielberg, Austria"
+location: "Austria"
 date: 2025-06-29
 season: "2025"
 winner: "Lando Norris"

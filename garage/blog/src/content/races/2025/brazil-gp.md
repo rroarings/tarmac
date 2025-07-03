@@ -1,6 +1,6 @@
 ---
 trackName: "Interlagos Circuit"
-location: "São Paulo, Brazil"
+location: "Brazil"
 date: 2025-11-09
 season: "2025"
 winner: ""

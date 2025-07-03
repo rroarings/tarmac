@@ -1,6 +1,6 @@
 ---
 trackName: "Albert Park Circuit"
-location: "Melbourne, Australia"
+location: "Australia"
 date: 2024-03-24
 season: "2024"
 winner: "Carlos Sainz"

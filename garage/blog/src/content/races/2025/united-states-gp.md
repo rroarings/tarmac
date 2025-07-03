@@ -1,6 +1,6 @@
 ---
 trackName: "Circuit of the Americas"
-location: "Texas, United States"
+location: "Texas"
 date: 2025-10-19
 season: "2025"
 winner: ""

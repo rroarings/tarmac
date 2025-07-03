@@ -1,6 +1,6 @@
 ---
 trackName: "Circuit Zandvoort"
-location: "North Holland, the Netherlands"
+location: "Netherlands"
 date: 2025-08-31
 season: "2025"
 winner: ""

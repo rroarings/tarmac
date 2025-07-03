@@ -1,6 +1,6 @@
 ---
 trackName: "Shanghai International Circuit"
-location: "Shangia, China"
+location: "China"
 date: 2025-03-23
 season: "2025"
 winner: "Oscar Piastri"

@@ -1,6 +1,6 @@
 ---
 trackName: "Autodromo Nazionale di Monza"
-location: "Monza, Italy"
+location: "Italy"
 date: 2024-09-01
 season: "2024"
 winner: "Charles Leclerc"

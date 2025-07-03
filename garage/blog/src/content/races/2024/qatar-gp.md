@@ -1,6 +1,6 @@
 ---
 trackName: "Lusail International Circuit"
-location: "Lusail, Al Daayen, Qatar"
+location: "Qatar"
 date: 2024-12-01
 season: "2024"
 winner: "Max Verstappen"

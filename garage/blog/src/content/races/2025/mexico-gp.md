@@ -1,6 +1,6 @@
 ---
 trackName: "Autódromo Hermanos Rodríguez"
-location: "Mexico City, Mexico"
+location: "Mexico"
 date: 2025-10-26
 season: "2025"
 winner: ""

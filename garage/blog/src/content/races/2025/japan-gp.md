@@ -1,6 +1,6 @@
 ---
 trackName: "Suzuka International Racing Course"
-location: "Suzuka, Japan"
+location: "Japan"
 date: 2025-04-06
 season: "2025"
 winner: "Max Verstappen"

@@ -1,6 +1,6 @@
 ---
 trackName: "Las Vegas Strip Circuit"
-location: "Nevada, United States"
+location: "Las Vegas"
 date: 2024-11-23
 season: "2024"
 winner: "George Russell"

@@ -1,6 +1,6 @@
 ---
 trackName: "Silverstone Circuit"
-location: "Silverstone, UK"
+location: "Great Britain"
 date: 2025-07-06
 season: "2025"
 winner: ""

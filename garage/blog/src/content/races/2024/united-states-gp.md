@@ -1,6 +1,6 @@
 ---
 trackName: "Circuit of the Americas"
-location: "Texas, United States"
+location: "Texas"
 date: 2024-10-20
 season: "2024"
 winner: "Charles Leclerc"

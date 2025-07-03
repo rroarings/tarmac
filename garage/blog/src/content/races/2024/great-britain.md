@@ -1,6 +1,6 @@
 ---
 trackName: "Silverstone Circuit"
-location: "Silverstone, UK"
+location: "Great Britain"
 date: 2024-07-07
 season: "2024"
 winner: "Max Verstappen"

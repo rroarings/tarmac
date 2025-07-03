@@ -1,6 +1,6 @@
 ---
 trackName: "Jeddah Corniche Circuit"
-location: "Jeddah, Saudi Arabia"
+location: "Saudi Arabia"
 date: 2024-03-09
 season: "2024"
 winner: "Max Verstappen"

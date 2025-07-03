@@ -1,6 +1,6 @@
 ---
 trackName: "Imola Circuit"
-location: "Imola, Italy"
+location: "Imola"
 date: 2024-05-19
 season: "2024"
 winner: "Max Verstappen"

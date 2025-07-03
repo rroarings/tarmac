@@ -1,6 +1,6 @@
 ---
 trackName: "Las Vegas Strip Circuit"
-location: "Nevada, United States"
+location: "Las Vegas"
 date: 2025-11-22
 season: "2025"
 winner: ""

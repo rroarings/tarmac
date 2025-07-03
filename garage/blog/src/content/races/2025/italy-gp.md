@@ -1,6 +1,6 @@
 ---
 trackName: "Autodromo Nazionale di Monza"
-location: "Monza, Italy"
+location: "Italy"
 date: 2025-09-07
 season: "2025"
 winner: ""
