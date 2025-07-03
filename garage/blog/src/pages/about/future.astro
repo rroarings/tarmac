@@ -1,57 +1,62 @@
 ---
-import BaseHead from "../../components/BaseHead.astro";
-import Header from "../../components/Header.astro";
-import Footer from "../../components/Footer.astro";
-import BreakpointIndicator from "../../components/BreakpointIndicator.astro";
-import TwoColumnSection from "../../components/TwoColumnSection.astro";
-import { Image } from "astro:assets";
-import jp02 from "/src/assets/circuits/03japan/jp02.jpg";
-import bh03 from "/src/assets/circuits/04bahrain/bh03.jpg";
-import kimiPortrait from "/src/assets/drivers/f1/2024/antonelli-headcrop-01.png";
-import bearmanPortrait from "/src/assets/drivers/f1/2024/bearman-headcrop-01.png";
-import hadjarPortrait from "/src/assets/drivers/f1/2024/hadjar-headcrop-01.png";
-import bortoletoPortrait from "/src/assets/drivers/f1/2024/bortoleto-headcrop-01.png";
-import doohanPortrait from "/src/assets/drivers/f1/2024/doohan-headcrop-01.png";
-import lawsonPortrait from "/src/assets/drivers/f1/2024/lawson-headcrop-01.png";
+import BaseHead from "../../components/BaseHead.astro"
+import Header from "../../components/Header.astro"
+import Footer from "../../components/Footer.astro"
+import BreakpointIndicator from "../../components/BreakpointIndicator.astro"
+import TwoColumnSection from "../../components/TwoColumnSection.astro"
+import { Image } from "astro:assets"
+import jp02 from "/src/assets/circuits/03japan/jp02.jpg"
+import bh03 from "/src/assets/circuits/04bahrain/bh03.jpg"
+import kimiPortrait from "/src/assets/drivers/f1/2024/antonelli-headcrop-01.png"
+import bearmanPortrait from "/src/assets/drivers/f1/2024/bearman-headcrop-01.png"
+import hadjarPortrait from "/src/assets/drivers/f1/2024/hadjar-headcrop-01.png"
+import bortoletoPortrait from "/src/assets/drivers/f1/2024/bortoleto-headcrop-01.png"
+import doohanPortrait from "/src/assets/drivers/f1/2024/doohan-headcrop-01.png"
+import lawsonPortrait from "/src/assets/drivers/f1/2024/lawson-headcrop-01.png"
 
-const pageTitle = "Future of Formula 1";
+const pageTitle = "Future of Formula 1"
 const description =
-  "Discover what lies ahead for Formula 1 as we explore emerging technologies, sustainability initiatives, and the next generation of racing talent.";
+	"Discover what lies ahead for Formula 1 as we explore emerging technologies, sustainability initiatives, and the next generation of racing talent."
 ---
 
 <!doctype html>
 <html lang="en">
-  <head>
-    <BaseHead title={pageTitle} description={description} />
-  </head>
-  <body>
-    <BreakpointIndicator />
-    <Header />
+	<head>
+		<BaseHead
+			title={pageTitle}
+			description={description}
+		/>
+	</head>
+	<body>
+		<BreakpointIndicator />
+		<Header />
 
-    <main>
-      <!-- Hero Section -->
-      <div class="py-10 text-center">
-        <h1 class="text-4xl sm:text-5xl font-bold text-gray-900 mb-4">
-          {pageTitle}
-        </h1>
-        <div class="max-w-3xl mx-auto">
-          <p class="text-xl text-gray-600 mb-8">
-            Formula 1 has always been at the forefront of technological
-            advancements, and the future promises to be no different. From
-            cutting-edge aerodynamics to hybrid power units, the sport continues
-            to evolve, pushing the boundaries of speed, efficiency, and
-            performance.
-          </p>
-        </div>
-        <div class="max-w-4xl mx-auto overflow-hidden rounded-lg shadow-xl">
-          <Image src={bh03} alt="weepah" loading="eager" />
-        </div>
-      </div>
+		<main>
+			<!-- Hero Section -->
+			<div class="py-10 text-center">
+				<h1 class="text-4xl sm:text-5xl font-bold text-gray-900 mb-4">
+					{pageTitle}
+				</h1>
+				<div class="max-w-3xl mx-auto">
+					<p class="text-xl text-gray-600 mb-8">
+						Formula 1 has always been at the forefront of technological advancements, and the future
+						promises to be no different. From cutting-edge aerodynamics to hybrid power units, the
+						sport continues to evolve, pushing the boundaries of speed, efficiency, and performance.
+					</p>
+				</div>
+				<div class="max-w-4xl mx-auto overflow-hidden rounded-lg shadow-xl">
+					<Image
+						src={bh03}
+						alt="weepah"
+						loading="eager"
+					/>
+				</div>
+			</div>
 
-      <!-- Data & Analytics Section -->
-      <TwoColumnSection
-        title="Data and analytical revolution"
-        content={`
+			<!-- Data & Analytics Section -->
+			<TwoColumnSection
+				title="Data and analytical revolution"
+				content={`
         <p>
           The increasing use of data and analytics in Formula 1 is
           transforming the sport and opening up new possibilities for
@@ -70,15 +75,15 @@ const description =
           beyond the sport.
         </p>
       `}
-        imageSrc={jp02}
-        imageAlt="F1 Data Analytics"
-        background="gray"
-      />
+				imageSrc={jp02}
+				imageAlt="F1 Data Analytics"
+				background="gray"
+			/>
 
-      <!-- New Innovations Section -->
-      <TwoColumnSection
-        title="New innovations and dynamics"
-        content={`
+			<!-- New Innovations Section -->
+			<TwoColumnSection
+				title="New innovations and dynamics"
+				content={`
         <p>
           The future of the sport also promises to be shaped by a more diverse
           and inclusive culture. F1 is taking steps to increase diversity and
@@ -94,16 +99,16 @@ const description =
           and create a more sustainable and innovative future for the sport.
         </p>
       `}
-        imageSrc={jp02}
-        imageAlt="F1 Innovation and Development"
-        reversed={true}
-      />
+				imageSrc={jp02}
+				imageAlt="F1 Innovation and Development"
+				reversed={true}
+			/>
 
-      <!-- New Innovations Section -->
-      <TwoColumnSection
-        title="Harnessing the energy"
-        background="gray"
-        content={`
+			<!-- New Innovations Section -->
+			<TwoColumnSection
+				title="Harnessing the energy"
+				background="gray"
+				content={`
           <p>
             One of the emerging topics in the future of Formula 1 is
             sustainability. As a sport that relies heavily on technology and
@@ -123,145 +128,140 @@ const description =
             alike.
           </p>
       `}
-        imageSrc={jp02}
-        imageAlt="F1 Innovation and Development"
-        reversed={false}
-      />
+				imageSrc={jp02}
+				imageAlt="F1 Innovation and Development"
+				reversed={false}
+			/>
 
-      <!-- Rookies Showcase Section -->
-      <section class="py-12">
-        <div class="container mx-auto px-4">
-          <div class="text-center mb-12">
-            <h2 class="text-3xl font-bold mb-4">What does the future hold?</h2>
-            <p class="text-gray-600 text-lg">
-              These rising stars are already making headlines. Here's who to
-              watch as Formula 1 evolves into a new era.
-            </p>
-          </div>
+			<!-- Rookies Showcase Section -->
+			<section class="bg-gray-100 py-12">
+				<div class="container mx-auto px-4">
+					<div class="text-center mb-12">
+						<h2 class="text-3xl font-bold mb-4">What does the future hold?</h2>
+						<p class="text-gray-600 text-lg">
+							These rising stars are already making headlines. Here's who to watch as Formula 1
+							evolves into a new era.
+						</p>
+					</div>
 
-          <div
-            class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-7xl mx-auto"
-          >
-            <!-- Kimi Antonelli -->
-            <div class="rounded-xl bg-gradient-to-t from-gray-300 to-gray-100">
-              <div class="p-6">
-                <h3 class="text-xl font-bold mb-2">Kimi Antonelli</h3>
-                <p class="text-gray-600">
-                  Mercedes junior driver making waves in Formula 2 with
-                  exceptional race craft and maturity beyond his years.
-                </p>
-              </div>
-              <div class="overflow-hidden">
-                <Image
-                  src={kimiPortrait}
-                  alt="Kimi Antonelli driver portrait"
-                  class=""
-                  loading="lazy"
-                />
-              </div>
-            </div>
+					<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-7xl mx-auto">
+						<!-- Kimi Antonelli -->
+						<div class="rounded-xl bg-gray-200/80">
+							<div class="p-6">
+								<h3 class="text-xl font-bold mb-2">Kimi Antonelli</h3>
+								<p class="text-gray-600">
+									Mercedes junior driver making waves in Formula 2 with exceptional race craft and
+									maturity beyond his years.
+								</p>
+							</div>
+							<div class="overflow-hidden">
+								<Image
+									src={kimiPortrait}
+									alt="Kimi Antonelli driver portrait"
+									class=""
+									loading="lazy"
+								/>
+							</div>
+						</div>
 
-            <!-- Oliver Bearman -->
-            <div class="rounded-xl bg-gradient-to-t from-gray-300 to-gray-100">
-              <div class="p-6">
-                <h3 class="text-xl font-bold mb-2">Oliver Bearman</h3>
-                <p class="text-gray-600">
-                  Ferrari Academy standout showing impressive pace and
-                  consistency in Formula 2.
-                </p>
-              </div>
-              <div class="overflow-hidden">
-                <Image
-                  src={bearmanPortrait}
-                  alt="Oliver Bearman driver portrait"
-                  class=""
-                  loading="lazy"
-                />
-              </div>
-            </div>
+						<!-- Oliver Bearman -->
+						<div class="rounded-xl bg-gray-200/80">
+							<div class="p-6">
+								<h3 class="text-xl font-bold mb-2">Oliver Bearman</h3>
+								<p class="text-gray-600">
+									Ferrari Academy standout showing impressive pace and consistency in Formula 2.
+								</p>
+							</div>
+							<div class="overflow-hidden">
+								<Image
+									src={bearmanPortrait}
+									alt="Oliver Bearman driver portrait"
+									class=""
+									loading="lazy"
+								/>
+							</div>
+						</div>
 
-            <!-- Isack Hadjar -->
-            <div
-              class="rounded-xl bg-gradient-to-t from-gray-300 to-gray-100 border border-gray-200"
-            >
-              <div class="p-6">
-                <h3 class="text-xl font-bold mb-2">Isack Hadjar</h3>
-                <p class="text-gray-600">
-                  Red Bull junior proving his worth with aggressive yet
-                  calculated racing style in Formula 2.
-                </p>
-              </div>
-              <div class="overflow-hidden">
-                <Image
-                  src={hadjarPortrait}
-                  alt="Isack Hadjar driver portrait"
-                  class=""
-                  loading="lazy"
-                />
-              </div>
-            </div>
+						<!-- Isack Hadjar -->
+						<div class="rounded-xl bg-gray-200/80">
+							<div class="p-6">
+								<h3 class="text-xl font-bold mb-2">Isack Hadjar</h3>
+								<p class="text-gray-600">
+									Red Bull junior proving his worth with aggressive yet calculated racing style in
+									Formula 2.
+								</p>
+							</div>
+							<div class="overflow-hidden">
+								<Image
+									src={hadjarPortrait}
+									alt="Isack Hadjar driver portrait"
+									class=""
+									loading="lazy"
+								/>
+							</div>
+						</div>
 
-            <!-- Gabriel Bortoleto -->
-            <div class="rounded-xl">
-              <div class="pb-6">
-                <h3 class="text-xl font-bold mb-2">Gabriel Bortoleto</h3>
-                <p class="text-gray-600">
-                  McLaren junior talent displaying remarkable adaptability and
-                  raw speed in his rookie F2 campaign.
-                </p>
-              </div>
-              <div class="overflow-hidden">
-                <Image
-                  src={bortoletoPortrait}
-                  alt="Gabriel Bortoleto driver portrait"
-                  class=""
-                  loading="lazy"
-                />
-              </div>
-            </div>
+						<!-- Gabriel Bortoleto -->
+						<div class="rounded-xl bg-gray-200/80">
+							<div class="p-6">
+								<h3 class="text-xl font-bold mb-2">Gabriel Bortoleto</h3>
+								<p class="text-gray-600">
+									McLaren junior talent displaying remarkable adaptability and raw speed in his
+									rookie F2 campaign.
+								</p>
+							</div>
+							<div class="overflow-hidden">
+								<Image
+									src={bortoletoPortrait}
+									alt="Gabriel Bortoleto driver portrait"
+									class=""
+									loading="lazy"
+								/>
+							</div>
+						</div>
 
-            <!-- Jack Doohan -->
-            <div class="rounded-xl">
-              <div class="pb-6">
-                <h3 class="text-xl font-bold mb-2">Jack Doohan</h3>
-                <p class="text-gray-600">
-                  Alpine Academy driver showcasing F1-level pace and technical
-                  understanding in Formula 2.
-                </p>
-              </div>
-              <div class="overflow-hidden">
-                <Image
-                  src={doohanPortrait}
-                  alt="Jack Doohan driver portrait"
-                  class=""
-                  loading="lazy"
-                />
-              </div>
-            </div>
+						<!-- Jack Doohan -->
+						<div class="rounded-xl bg-gray-200/80">
+							<div class="p-6">
+								<h3 class="text-xl font-bold mb-2">Jack Doohan</h3>
+								<p class="text-gray-600">
+									Alpine Academy driver showcasing F1-level pace and technical understanding in
+									Formula 2.
+								</p>
+							</div>
+							<div class="overflow-hidden">
+								<Image
+									src={doohanPortrait}
+									alt="Jack Doohan driver portrait"
+									class=""
+									loading="lazy"
+								/>
+							</div>
+						</div>
 
-            <!-- Liam Lawson -->
-            <div class="rounded-xl">
-              <div class="pb-6">
-                <h3 class="text-xl font-bold mb-2">Liam Lawson</h3>
-                <p class="text-gray-600">
-                  Red Bull reserve driver with F1 experience, known for his
-                  adaptability and race-winning potential.
-                </p>
-              </div>
-              <div class="overflow-hidden">
-                <Image
-                  src={lawsonPortrait}
-                  alt="Liam Lawson driver portrait"
-                  class=""
-                  loading="lazy"
-                />
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-    </main>
+						<!-- Liam Lawson -->
+						<div class="rounded-xl bg-gray-200/80">
+							<div class="p-6">
+								<h3 class="text-xl font-bold mb-2">Liam Lawson</h3>
+								<p class="text-gray-600">
+									Red Bull reserve driver with F1 experience, known for his adaptability and
+									race-winning potential.
+								</p>
+							</div>
+							<div class="overflow-hidden">
+								<Image
+									src={lawsonPortrait}
+									alt="Liam Lawson driver portrait"
+									class=""
+									loading="lazy"
+								/>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+		</main>
 
-    <Footer />
-  </body>
+		<Footer />
+	</body>
 </html>
