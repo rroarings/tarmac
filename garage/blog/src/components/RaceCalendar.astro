@@ -1,95 +1,80 @@
 ---
-// Import necessary modules
-import { getCollection } from "astro:content";
-import RaceCard from "./RaceCard.astro";
+import { getCollection } from "astro:content"
+import RaceCard from "./RaceCard.astro"
 
-// Define props
 interface Props {
-  season: string;
-  showAllRaces?: boolean;
-  showTitle?: boolean;
-  customClass?: string;
+	season: string
+	showAllRaces?: boolean
+	showTitle?: boolean
+	customClass?: string
 }
 
-// Get props
-const {
-  season,
-  showAllRaces = false,
-  showTitle = true,
-  customClass = "",
-} = Astro.props;
+const { season, showAllRaces = false, showTitle = true, customClass = "" } = Astro.props
 
-// Fetch races for the specified season
 const races = await getCollection("races", ({ data }) => {
-  return data.season === season;
-});
+	return data.season === season
+})
 
-// Helper for UTC midnight conversion
-const toUTCMidnight = (date: Date) => {
-  const d = new Date(date);
-  d.setUTCHours(0, 0, 0, 0);
-  return d;
-};
+type DateInput = string | number | Date
+const toUTCMidnight = (date: DateInput): Date => {
+	const d = new Date(date)
+	d.setUTCHours(0, 0, 0, 0)
+	return d
+}
 
-// Get current date for comparison using UTC
-const nowUTC = toUTCMidnight(new Date());
+const nowUTC = toUTCMidnight(new Date())
 
-// Sort races by date using UTC
-const sortedRaces = races.sort((a, b) => {
-  const aDate = toUTCMidnight(new Date(a.data.date));
-  const bDate = toUTCMidnight(new Date(b.data.date));
-  return aDate.getTime() - bDate.getTime();
-});
+const sortedRaces = races.slice().sort((a, b) => {
+	const aDate = toUTCMidnight(a.data.date)
+	const bDate = toUTCMidnight(b.data.date)
+	return aDate.getTime() - bDate.getTime()
+})
 
-// Find completed and upcoming races using UTC dates
 const completedRaces = sortedRaces.filter((race) => {
-  const raceDate = toUTCMidnight(new Date(race.data.date));
-  return race.data.completed || raceDate < nowUTC;
-});
+	const raceDate = toUTCMidnight(race.data.date)
+	return race.data.completed || raceDate < nowUTC
+})
 const upcomingRaces = sortedRaces.filter((race) => {
-  const raceDate = toUTCMidnight(new Date(race.data.date));
-  return !race.data.completed && raceDate >= nowUTC;
-});
+	const raceDate = toUTCMidnight(race.data.date)
+	return !race.data.completed && raceDate >= nowUTC
+})
 
-// Get the most recent completed race
-const lastCompletedRace = completedRaces[completedRaces.length - 1];
+const lastCompletedRace = [...completedRaces].reverse().find(Boolean)
 
-// Take only the next two upcoming races when not showing all
-const nextTwoRaces = upcomingRaces.slice(0, 2);
+const nextTwoRaces = upcomingRaces.slice(0, 2)
 
-// Determine which races to display
-const racesToDisplay = showAllRaces
-  ? sortedRaces
-  : [...(lastCompletedRace ? [lastCompletedRace] : []), ...nextTwoRaces];
+const racesToDisplay =
+	showAllRaces ? sortedRaces : [...(lastCompletedRace ? [lastCompletedRace] : []), ...nextTwoRaces]
+
+const nextUpcomingRace = sortedRaces.find(
+	(race) => !race.data.completed && toUTCMidnight(race.data.date) >= nowUTC
+)
 ---
 
 <div class={`bg-gray-100 rounded ${customClass}`}>
-  {
-    showTitle && (
-      <div class="flex items-center justify-between mb-6">
-        <div class="flex items-center">
-          <i class="bi bi-calendar3 text-3xl text-gray-700 mr-4" />
-          <h3 class="text-2xl">{season} Race Calendar</h3>
-        </div>
-        {lastCompletedRace && (
-          <a
-            href={`/seasons/${season}/races`}
-            class="text-gray-600 hover:text-red-600"
-          >
-            View All Races
-          </a>
-        )}
-      </div>
-    )
-  }
+	{showTitle && (
+		<div class="flex items-center justify-between mb-6">
+			<div class="flex items-center">
+				<i class="bi bi-calendar3 text-3xl text-gray-700 mr-4" aria-label="Race Calendar Icon" />
+				<h3 class="text-2xl font-semibold tracking-tight text-gray-900">{season} Race Calendar</h3>
+			</div>
+			{lastCompletedRace && (
+				<a
+					href={`/seasons/${season}/races`}
+					class="text-gray-500 hover:text-red-600 font-medium transition-colors duration-200">
+					View All Races
+				</a>
+			)}
+		</div>
+	)}
 
-  <div
-    class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-4 mb-8"
-  >
-    {
-      racesToDisplay.map((race) => (
-        <RaceCard race={race} completedRaces={completedRaces} />
-      ))
-    }
-  </div>
+	<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-4 mb-8">
+		{racesToDisplay.map((race) => (
+			<RaceCard
+				race={race}
+				completedRaces={completedRaces}
+				isNextRace={nextUpcomingRace && race.id === nextUpcomingRace.id}
+			/>
+		))}
+	</div>
 </div>
