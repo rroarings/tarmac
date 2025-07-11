@@ -3,7 +3,7 @@ name: "Red Bull Racing"
 carModel: "RB21"
 season: "2025"
 drivers: ["Max Verstappen", "Yuki Tsunoda"]
-principal: "Christian Horner"
+principal: "Laurent Mekies"
 engine: "Honda RBPT"
 chassis: "RB21"
 constructorPoints: 144
