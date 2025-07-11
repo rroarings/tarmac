@@ -31,7 +31,14 @@ const { title, items } = Astro.props;
                 {item.title}
               </h3>
               <p class="text-gray-600 mb-4">{item.description}</p>
-              <a href={item.pageLink} class="text-gray-600 mb-6 transition-colors duration-300 hover:text-gray-800" target="_blank" rel="noopener noreferrer">Read more</a>
+              <a
+                href={item.pageLink}
+                class="text-gray-600 mb-6 transition-colors duration-300 hover:text-gray-800"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Read more
+              </a>
               <div class="mt-auto relative overflow-hidden rounded-lg">
                 <Image
                   src={item.image}
