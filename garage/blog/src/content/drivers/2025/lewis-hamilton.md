@@ -11,8 +11,9 @@ championships: 7
 championshipPosition: 6
 raceWins: 105
 podiums: 197
-points: 79
-profileImage: "/src/assets/drivers/f1/2024/hamilton-headcrop-01.png"
+points: 103
+profileImage: "/src/assets/drivers/hamilton-02.png"
+profileImageLarge: "/src/assets/drivers/hamilton-02.png"
 ---
 
 # Lewis Hamilton

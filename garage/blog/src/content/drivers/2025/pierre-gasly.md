@@ -8,11 +8,12 @@ countryCode: "fr"
 age: 27
 season: "2025"
 championships: 0
-championshipPosition: 14
+championshipPosition: 13
 raceWins: 1
 podiums: 5
-points: 11
-profileImage: "/src/assets/drivers/f1/2024/gasly-headcrop-01.png"
+points: 19
+profileImage: "/src/assets/drivers/gasly-02.png"
+profileImageLarge: "/src/assets/drivers/gasly-02.png"
 relatedDrivers:
   - lewis-hamilton
 ---

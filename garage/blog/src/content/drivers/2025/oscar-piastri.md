@@ -11,9 +11,9 @@ championships: 0
 championshipPosition: 1
 raceWins: 4
 podiums: 14
-points: 198
-profileImage: "/src/assets/drivers/f1/2024/piastri-headcrop-01.png"
-profileImageLarge: "/src/assets/drivers/f1/2024/piastri-portrait-side.png"
+points: 234
+profileImage: "/src/assets/drivers/piastri-02.png"
+profileImageLarge: "/src/assets/drivers/piastri-02.png"
 ---
 
 # Lando Norris

@@ -11,8 +11,9 @@ championships: 0
 championshipPosition: 19
 raceWins: 0
 podiums: 0
-points: 0
-profileImage: "/src/assets/drivers/f1/2024/bortoleto-headcrop-01.png"
+points: 4
+profileImage: "/src/assets/drivers/bortoleto-02.png"
+profileImageLarge: "/src/assets/drivers/bortoleto-02.png"
 ---
 
 # Andrea Kimi Antonelli

@@ -12,7 +12,8 @@ championshipPosition: 20
 raceWins: 0
 podiums: 0
 points: 0
-profileImage: "/src/assets/drivers/f1/2024/colapinto-headcrop-01.png"
+profileImage: "/src/assets/drivers/colapinto-02.png"
+profileImageLarge: "/src/assets/drivers/colapinto-02.png"
 ---
 
 # Andrea Kimi Antonelli

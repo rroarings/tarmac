@@ -8,11 +8,12 @@ countryCode: "jp"
 age: 27
 season: "2025"
 championships: 0
-championshipPosition: 15
+championshipPosition: 17
 raceWins: 0
 podiums: 0
-points: 10
-profileImage: "/src/assets/drivers/f1/2024/tsunoda-headcrop-01.png"
+points: 12
+profileImage: "/src/assets/drivers/tsunoda-02.png"
+profileImageLarge: "/src/assets/drivers/tsunoda-02.png"
 relatedDrivers:
   - lewis-hamilton
 ---

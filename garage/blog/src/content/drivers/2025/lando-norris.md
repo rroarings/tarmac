@@ -11,8 +11,9 @@ championships: 0
 championshipPosition: 2
 raceWins: 4
 podiums: 14
-points: 176
-profileImage: "/src/assets/drivers/f1/2024/norris-headcrop-01.png"
+points: 226
+profileImage: "/src/assets/drivers/norris-02.png"
+profileImageLarge: "/src/assets/drivers/norris-02.png"
 ---
 
 # Lando Norris

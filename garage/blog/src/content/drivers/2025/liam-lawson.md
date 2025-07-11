@@ -8,11 +8,12 @@ countryCode: "nz"
 age: 22
 season: "2025"
 championships: 0
-championshipPosition: 18
+championshipPosition: 16
 raceWins: 0
 podiums: 0
-points: 0
-profileImage: "/src/assets/drivers/f1/2024/lawson-headcrop-01.png"
+points: 12
+profileImage: "/src/assets/drivers/lawson-02.png"
+profileImageLarge: "/src/assets/drivers/lawson-02.png"
 relatedDrivers:
   - lewis-hamilton
 ---

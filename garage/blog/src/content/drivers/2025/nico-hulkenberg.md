@@ -8,11 +8,12 @@ countryCode: "de"
 age: 27
 season: "2025"
 championships: 0
-championshipPosition: 11
+championshipPosition: 9
 raceWins: 8
 podiums: 26
-points: 20
-profileImage: "/src/assets/drivers/f1/2024/hulkenberg-headcrop-01.png"
+points: 37
+profileImage: "/src/assets/drivers/hulkenberg-02.png"
+profileImageLarge: "/src/assets/drivers/hulkenberg-02.png"
 relatedDrivers:
   - lewis-hamilton
 ---

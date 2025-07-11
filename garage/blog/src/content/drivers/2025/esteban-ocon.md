@@ -8,11 +8,12 @@ countryCode: "fr"
 age: 27
 season: "2025"
 championships: 0
-championshipPosition: 9
+championshipPosition: 10
 raceWins: 8
 podiums: 26
-points: 22
-profileImage: "/src/assets/drivers/f1/2024/ocon-headcrop-01.png"
+points: 23
+profileImage: "/src/assets/drivers/ocon-02.png"
+profileImageLarge: "/src/assets/drivers/ocon-02.png"
 relatedDrivers:
   - oliver-bearman
 ---
