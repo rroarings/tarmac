@@ -58,29 +58,41 @@ const nextUpcomingRace = sortedRaces.find(
 ---
 
 <div class={`bg-gray-100 rounded ${customClass}`}>
-	{showTitle && (
-		<div class="flex items-center justify-between mb-6">
-			<div class="flex items-center">
-				<i class="bi bi-calendar3 text-3xl text-gray-700 mr-4" aria-label="Race Calendar Icon" />
-				<h3 class="text-2xl font-semibold tracking-tight text-gray-900">{season} Race Calendar</h3>
-			</div>
-			{lastCompletedRace && (
-				<a
-					href={`/seasons/${season}/races`}
-					class="text-gray-500 hover:text-red-600 font-medium transition-colors duration-200">
-					View All Races
-				</a>
-			)}
-		</div>
-	)}
+  {
+    showTitle && (
+      <div class="flex items-center justify-between mb-6">
+        <div class="flex items-center">
+          <i
+            class="bi bi-calendar3 text-3xl text-gray-700 mr-4"
+            aria-label="Race Calendar Icon"
+          />
+          <h3 class="text-2xl font-semibold tracking-tight text-gray-900">
+            {season} Race Calendar
+          </h3>
+        </div>
+        {lastCompletedRace && (
+          <a
+            href={`/seasons/${season}/races`}
+            class="text-gray-500 hover:text-red-600 font-medium transition-colors duration-200"
+          >
+            View All Races
+          </a>
+        )}
+      </div>
+    )
+  }
 
-	<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-4 mb-8">
-		{racesToDisplay.map((race) => (
-			<RaceCard
-				race={race}
-				completedRaces={completedRaces}
-				isNextRace={nextUpcomingRace && race.id === nextUpcomingRace.id}
-			/>
-		))}
-	</div>
+  <div
+    class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-4 mb-8"
+  >
+    {
+      racesToDisplay.map((race) => (
+        <RaceCard
+          race={race}
+          completedRaces={completedRaces}
+          isNextRace={nextUpcomingRace && race.id === nextUpcomingRace.id}
+        />
+      ))
+    }
+  </div>
 </div>
