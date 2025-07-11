@@ -12,7 +12,7 @@ championshipPosition: 16
 raceWins: 0
 podiums: 0
 points: 12
-profileImage: "/src/assets/drivers/lawson-02.png"
+profileImage: "/src/assets/drivers/f1/2024/lawson-headcrop-01.png"
 profileImageLarge: "/src/assets/drivers/lawson-02.png"
 relatedDrivers:
   - lewis-hamilton

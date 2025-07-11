@@ -12,7 +12,7 @@ championshipPosition: 14
 raceWins: 8
 podiums: 26
 points: 16
-profileImage: "/src/assets/drivers/alonso-02.png"
+profileImage: "/src/assets/drivers/f1/2024/alonso-headcrop-01.png"
 profileImageLarge: "/src/assets/drivers/alonso-02.png"
 relatedDrivers:
   - lewis-hamilton

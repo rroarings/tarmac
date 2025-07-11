@@ -12,7 +12,7 @@ championshipPosition: 6
 raceWins: 105
 podiums: 197
 points: 103
-profileImage: "/src/assets/drivers/hamilton-02.png"
+profileImage: "/src/assets/drivers/f1/2024/hamilton-headcrop-01.png"
 profileImageLarge: "/src/assets/drivers/hamilton-02.png"
 ---
 

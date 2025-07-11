@@ -12,7 +12,7 @@ championshipPosition: 18
 raceWins: 0
 podiums: 0
 points: 6
-profileImage: "/src/assets/drivers/bearman-02.png"
+profileImage: "/src/assets/drivers/f1/2024/bearman-headcrop-01.png"
 profileImageLarge: "/src/assets/drivers/bearman-02.png"
 relatedDrivers:
   - lewis-hamilton

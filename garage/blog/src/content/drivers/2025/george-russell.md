@@ -12,7 +12,7 @@ championshipPosition: 4
 raceWins: 2
 podiums: 13
 points: 147
-profileImage: "/src/assets/drivers/russell-02.png"
+profileImage: "/src/assets/drivers/f1/2024/russell-headcrop-01.png"
 profileImageLarge: "/src/assets/drivers/russell-02.png"
 ---
 

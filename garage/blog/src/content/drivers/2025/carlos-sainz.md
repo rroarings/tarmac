@@ -12,7 +12,7 @@ championshipPosition: 15
 raceWins: 8
 podiums: 26
 points: 13
-profileImage: "/src/assets/drivers/sainz-02.png"
+profileImage: "/src/assets/drivers/f1/2024/sainz-headcrop-01.png"
 profileImageLarge: "/src/assets/drivers/sainz-02.png"
 relatedDrivers:
   - lewis-hamilton

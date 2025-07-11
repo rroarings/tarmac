@@ -12,7 +12,7 @@ championshipPosition: 9
 raceWins: 8
 podiums: 26
 points: 37
-profileImage: "/src/assets/drivers/hulkenberg-02.png"
+profileImage: "/src/assets/drivers/f1/2024/hulkenberg-headcrop-01.png"
 profileImageLarge: "/src/assets/drivers/hulkenberg-02.png"
 relatedDrivers:
   - lewis-hamilton
