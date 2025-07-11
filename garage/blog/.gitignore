@@ -24,7 +24,7 @@ pnpm-debug.log*
 .idea/
 
 # circuit images
-/src/assets/circuits/
+/src/assets/
 
 package-lock.json
 /blog/package-lock.json
