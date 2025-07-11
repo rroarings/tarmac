@@ -32,15 +32,11 @@ The Circuit de Monaco winds through the streets of Monte Carlo and La Condamine,
 ![The Monaco Grand Prix circuit](/src/assets/circuits/08monaco/mc05.jpg)
 
 Almost clipping the barrier...
-<br>
 
 ![The Monaco Grand Prix circuit](/src/assets/circuits/08monaco/mc04.jpg)
 
 #MonacoGP #HP
 
-<br>
-
 ![The Monaco Grand Prix circuit](/src/assets/circuits/08monaco/mc03.jpg)
-<br>
 
 ![The Monaco Grand Prix circuit](/src/assets/circuits/08monaco/mc02.jpg)
