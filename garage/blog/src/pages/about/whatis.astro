@@ -6,11 +6,13 @@ import GridSection from "../../components/GridSection.astro";
 import TwoColumnSection from "../../components/TwoColumnSection.astro";
 import BreakpointIndicator from "../../components/BreakpointIndicator.astro";
 import { Image } from "astro:assets";
+import { getCollection } from "astro:content";
 import cn02 from "/src/assets/circuits/02china/cn02.jpg";
 import intro from "/src/assets/section/racei1.jpg";
 import machinery from "/src/assets/section/racei1.jpg";
 import drivers from "/src/assets/section/racei1.jpg";
 import tracks from "/src/assets/section/racei1.jpg";
+import LatestBlogPosts from "../../components/LatestBlogPosts.astro";
 
 const pageTitle = "What is Formula 1?";
 const description =
@@ -100,10 +102,10 @@ const f1BasicsItems = [
             <!-- The Basics -->
             <a
               href="#understanding"
-              class="h-full flex flex-col p-6 rounded-xl transition-colors duration-300 group hover:bg-gray-200"
+              class="h-full flex flex-col p-6 rounded-xl group"
             >
               <h3
-                class="text-xl text-gray-900 mb-2 font-bold group-hover:text-gray-800"
+                class="text-xl text-gray-900 mb-2 font-bold transition-colors duration-300 group-hover:text-blue-600"
               >
                 The Basics
               </h3>
@@ -116,10 +118,10 @@ const f1BasicsItems = [
             <!-- Behind the Machines -->
             <a
               href="#technology"
-              class="h-full flex flex-col p-6 rounded-xl transition-colors duration-300 group hover:bg-gray-200"
+              class="h-full flex flex-col p-6 rounded-xl group"
             >
               <h3
-                class="text-xl text-gray-900 mb-2 font-bold group-hover:text-gray-800"
+                class="text-xl text-gray-900 mb-2 font-bold transition-colors duration-300 group-hover:text-blue-600"
               >
                 Behind the Machines
               </h3>
@@ -129,12 +131,9 @@ const f1BasicsItems = [
             </a>
 
             <!-- Future of Racing -->
-            <a
-              href="#future"
-              class="h-full flex flex-col p-6 rounded-xl transition-colors duration-300 group hover:bg-gray-200"
-            >
+            <a href="#future" class="h-full flex flex-col p-6 rounded-xl group">
               <h3
-                class="text-xl text-gray-900 mb-2 font-bold group-hover:text-gray-800"
+                class="text-xl text-gray-900 mb-2 font-bold transition-colors duration-300 group-hover:text-blue-600"
               >
                 Future of Racing
               </h3>
@@ -147,10 +146,10 @@ const f1BasicsItems = [
             <!-- Scoring & Standings -->
             <a
               href="#championships"
-              class="h-full flex flex-col p-6 rounded-xl transition-colors duration-300 group hover:bg-gray-200"
+              class="h-full flex flex-col p-6 rounded-xl group"
             >
               <h3
-                class="text-xl text-gray-900 mb-2 font-bold group-hover:text-gray-800"
+                class="text-xl text-gray-900 mb-2 font-bold transition-colors duration-300 group-hover:text-blue-600"
               >
                 Scoring & Standings
               </h3>
@@ -163,10 +162,10 @@ const f1BasicsItems = [
             <!-- 2025 Season -->
             <a
               href="#spectacle"
-              class="h-full flex flex-col p-6 rounded-xl transition-colors duration-300 group hover:bg-gray-200"
+              class="h-full flex flex-col p-6 rounded-xl group"
             >
               <h3
-                class="text-xl text-gray-900 mb-2 font-bold group-hover:text-gray-800"
+                class="text-xl text-gray-900 mb-2 font-bold transition-colors duration-300 group-hover:text-blue-600"
               >
                 2025 Highlights
               </h3>
@@ -178,10 +177,10 @@ const f1BasicsItems = [
             <!-- 2025 Coverage -->
             <a
               href="#why-it-matters"
-              class="h-full flex flex-col p-6 rounded-xl transition-colors duration-300 group hover:bg-gray-200"
+              class="h-full flex flex-col p-6 rounded-xl group"
             >
               <h3
-                class="text-xl text-gray-900 mb-2 font-bold group-hover:text-gray-800"
+                class="text-xl text-gray-900 mb-2 font-bold transition-colors duration-300 group-hover:text-blue-600"
               >
                 2025 Coverage
               </h3>
@@ -382,6 +381,9 @@ const f1BasicsItems = [
           />
         </div>
       </div>
+
+      <!-- Latest Blog Posts Section -->
+      <LatestBlogPosts />
     </main>
 
     <Footer />
