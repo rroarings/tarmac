@@ -27,3 +27,7 @@ The reigning Constructors' Champions, Red Bull Racing continues their dominance 
 ## Recent Success
 
 Red Bull has been the dominant force in recent years, with Max Verstappen securing multiple championships and the team winning back-to-back constructors' titles.
+
+## Libido Levels PLUMMET
+
+Christian Horner has announced his operational duty deparation from the Red Bull Racing team on July 9th, 2025, mid-season. Speculation suggests this was done to please the camp surrounding Verstappen. Although, I don't think he pushed or lobbied like those that surround him. Max's priorities are different. Laurent Mekies from VCARB replaced Horner in the interim, can he restore some of the missing shine back to the Red Bull garages?
