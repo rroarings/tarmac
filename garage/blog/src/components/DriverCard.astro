@@ -2,6 +2,30 @@
 // Define the props that this component accepts
 import type { CollectionEntry } from "astro:content";
 import { Image } from "astro:assets";
+import williamsBG from "../assets/components/driverCard-template-williams.png";
+import ferrariBG from "../assets/components/driverCard-template-ferrari.png";
+import kickSauberBG from "../assets/components/driverCard-template-kicksauber.png";
+import mclarenBG from "../assets/components/driverCard-template-mclaren.png";
+import mercedesBG from "../assets/components/driverCard-template-mercedes.png";
+import astonMartinBG from "../assets/components/driverCard-template-astonmartin.png";
+import haasBG from "../assets/components/driverCard-template-haas.png";
+import alpineBG from "../assets/components/driverCard-template-alpine.png";
+import racingBullsBG from "../assets/components/driverCard-template-racingBulls.png";
+import redBullBG from "../assets/components/driverCard-template-redbull.png";
+
+// Team background mapping
+const teamBgMap: Record<string, any> = {
+  McLaren: mclarenBG,
+  Ferrari: ferrariBG,
+  Mercedes: mercedesBG,
+  "Red Bull Racing": redBullBG,
+  Williams: williamsBG,
+  "Kick Sauber": kickSauberBG,
+  "Racing Bulls": racingBullsBG,
+  "Aston Martin": astonMartinBG,
+  Haas: haasBG,
+  Alpine: alpineBG,
+};
 
 interface Props {
   driver: CollectionEntry<"drivers">;
@@ -9,6 +33,7 @@ interface Props {
 }
 
 const { driver, year = "2025" } = Astro.props;
+const teamBg = teamBgMap[driver.data.team] || null;
 ---
 
 <a href={`/seasons/${year}/drivers/${driver.id}`} class="block h-full">
