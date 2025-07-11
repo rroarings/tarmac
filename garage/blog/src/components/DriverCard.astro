@@ -58,7 +58,7 @@ const teamBg = teamBgMap[driver.data.team] || null;
               <span class="text-lg text-gray-100 block"
                 >{driver.data.firstName}</span
               >
-              <span class="text-2xl text-gray-100 font-bold block -mt-1"
+              <span class="text-4xl text-gray-100 font-bold block -mt-1"
                 >{driver.data.lastName}</span
               >
             </h3>
@@ -75,12 +75,10 @@ const teamBg = teamBgMap[driver.data.team] || null;
             aria-hidden="true"></span>
         </div>
         {/* Position and Points - Right side */}
-        <div class="text-end">
-          <span class="text-4xl font-bold text-gray-100 block">
-            {driver.data.championshipPosition || "-"}
-          </span>
-          <span class="font-medium text-gray-100 block -mt-1"
-            >{driver.data.points} pts</span
+        <div class="text-end text-gray-100">
+          <span class="text-2xl font-semibold block"
+            >{driver.data.points}
+            <span class="text-base font-normal">pts</span></span
           >
         </div>
       </div>
