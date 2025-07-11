@@ -7,12 +7,12 @@ import BreakpointIndicator from "../../../../components/BreakpointIndicator.astr
 import { SITE_TITLE } from "../../../../consts"
 import { getCollection } from "astro:content"
 
-// Get all teams for 2024 season
+// Get all teams for 2025 season
 const teams = await getCollection("teams", ({ data }) => {
 	return data.season === "2025"
 })
 
-// Get all drivers for 2024 season to match with teams
+// Get all drivers for 2025 season to match with teams
 const drivers = await getCollection("drivers", ({ data }) => {
 	return data.season === "2025"
 })
@@ -100,98 +100,90 @@ const teamBgMap: Record<string, any> = {
 			<section class="py-12">
 				<div class="container mx-auto px-4">
 					<div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-						{sortedTeams.map((team) => {
-							const teamBg = teamBgMap[team.data.name] || null
-							return (
-								<a
-									href={`/seasons/2025/teams/${team.id}`}
-									class="h-full block group"
-								>
-									<article
-										class="border border-gray-300 shadow-md rounded-lg overflow-hidden h-full flex flex-col hover:shadow-lg transition-shadow relative bg-white"
-										style={
-											teamBg ?
-												`background-image: url('${teamBg.src}'); background-size: cover; background-position: center;`
-											: ""
-										}
-									>
-										{/* Overlay for readability */}
-										<div class="absolute inset-0 backdrop-blur-sm pointer-events-none" />
-										<div class="relative z-10 flex flex-col h-full">
-											{/* Team Section */}
-											<div class="text-gray-100 border-b border-gray-100/20">
-												<div class="p-4">
-													<h3 class="text-lg font-bold mb-2 flex items-center justify-between">
-														<span>{team.data.name}</span>
-														<span class="font-semibold text-2xl">
-															{team.data.constructorPoints}
-															<span class="text-base font-normal">pts</span>
-														</span>
-													</h3>
+						{
+							sortedTeams.map((team) => {
+								const teamBg = teamBgMap[team.data.name] || null
+								return (
+									<a
+										href={`/seasons/2024/teams/${team.id}`}
+										class="h-full block group">
+										<article
+											class="border border-gray-300 shadow-md rounded-lg overflow-hidden h-full flex flex-col hover:shadow-lg transition-shadow relative bg-white"
+											style={
+												teamBg ?
+													`background-image: url('${teamBg.src}'); background-size: cover; background-position: center;`
+												:	""
+											}>
+											<div class="relative z-10 flex flex-col flex-1 h-full">
+												{/* Team Section */}
+												<div class="text-gray-100 border-b border-gray-100/20">
+													<div class="p-4">
+														<h3 class="text-lg font-bold mb-2 flex items-center justify-between">
+															<span>{team.data.name}</span>
+															<span class="font-semibold text-2xl">
+																{team.data.constructorPoints}
+																<span class="text-base font-normal">pts</span>
+															</span>
+														</h3>
 
-													{/* Driver Name + Avatars under team name */}
-													<div class="mt-2 flex flex-col gap-3 lg:flex-row lg:gap-8 lg:items-center lg:justify-start">
-														{team.data.drivers.map((driverName) => {
-															let driverInfo = driverMap.get(driverName)
-															return (
-																<div class="flex items-center gap-2 mb-1">
-																	<div class="size-6 rounded-full overflow-hidden bg-gray-300/30 flex-shrink-0 border border-gray-50/30 flex items-center justify-center">
-																		<img
-																			src={driverInfo?.profileImage}
-																			alt={driverName}
-																			class="object-cover"
-																			width="64"
-																			height="64"
-																			loading="lazy"
-																		/>
+														{/* Driver Name + Avatars under team name */}
+														<div class="mt-2 flex flex-col gap-3 lg:flex-row lg:gap-6 lg:items-center lg:justify-start">
+															{team.data.drivers.map((driverName) => {
+																let driverInfo = driverMap.get(driverName)
+																return (
+																	<div class="flex items-center gap-2 mb-1">
+																		<div class="size-6 rounded-full overflow-hidden bg-gray-300/20 flex-shrink-0 border border-gray-50/30 flex items-center justify-center">
+																			<img
+																				src={driverInfo?.profileImage}
+																				alt={driverName}
+																				class="object-cover"
+																				width="64"
+																				height="64"
+																				loading="lazy"
+																			/>
+																		</div>
+																		<span class="text-sm">{driverName}</span>
 																	</div>
-																	<span class="text-sm">
-																		{driverName}
-																	</span>
-																	{driverInfo?.countryCode && (
-																		<span
-																			class={`ml-2 fi fi-${driverInfo.countryCode} border-2 border-gray-100 rounded`}
-																			aria-hidden="true"
-																		/>
-																	)}
-																</div>
-															)
-														})}
+																)
+															})}
+														</div>
+													</div>
+												</div>
+
+												{/* Team Details (optional, still hidden) */}
+												<div class="p-4 pt-2 hidden">
+													<div class="text-sm text-gray-100 space-y-2 mt-2">
+														<div class="flex justify-between items-center">
+															<span>Team Principal:</span>
+															<span class="font-medium">{team.data.principal}</span>
+														</div>
+														<div class="flex justify-between items-center">
+															<span>Engine:</span>
+															<span>{team.data.engine}</span>
+														</div>
+														<div class="flex justify-between items-center">
+															<span>Car:</span>
+															<span>{team.data.carModel}</span>
+														</div>
 													</div>
 												</div>
 											</div>
-
-											{/* Team Details (optional, still hidden) */}
-											<div class="p-4 mt-auto pt-2 hidden">
-												<div class="text-sm text-gray-100 space-y-2 mt-2">
-													<div class="flex justify-between items-center">
-														<span>Team Principal:</span>
-														<span class="font-medium">{team.data.principal}</span>
-													</div>
-													<div class="flex justify-between items-center">
-														<span>Engine:</span>
-														<span>{team.data.engine}</span>
-													</div>
-													<div class="flex justify-between items-center">
-														<span>Car:</span>
-														<span>{team.data.carModel}</span>
-													</div>
-												</div>
-											</div>
-
-											{/* Car Image - now at the bottom */}
-											<div class="overflow-hidden bg-gradient-to-t from-gray-900 to-gray-900/20 ">
+											{/* Car Image - always flush to bottom, with blur overlay only here */}
+											<div class="relative overflow-hidden bg-gradient-to-t from-gray-900 to-gray-900/20 ">
+												{/* Blurred background layer */}
+												<div class="absolute inset-0 backdrop-blur-[4px] pointer-events-none z-0" />
+												{/* Car image stays sharp above the blur */}
 												<img
 													src={team.data.carImage || "/blog-placeholder-1.jpg"}
 													alt={`${team.data.name} ${team.data.carModel}`}
-													class="w-full h-full object-cover"
+													class="w-full h-full object-cover relative z-10"
 												/>
 											</div>
-										</div>
-									</article>
-								</a>
-							)
-						})}
+										</article>
+									</a>
+								)
+							})
+						}
 					</div>
 				</div>
 			</section>
