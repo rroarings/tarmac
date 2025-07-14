@@ -1,14 +1,18 @@
 ---
 import { type CollectionEntry } from "astro:content";
 import FormattedDate from "./FormattedDate.astro";
+import { Image } from "astro:assets";
+import { getCollection } from "astro:content";
+const allRaces25 = await getCollection("races");
 
 interface Props {
   race: CollectionEntry<"races">;
   completedRaces?: CollectionEntry<"races">[];
   isNextRace?: boolean;
+  loading?: "eager" | "lazy";
 }
 
-const { race, completedRaces = [], isNextRace } = Astro.props;
+const { race, completedRaces = [], isNextRace, loading = "lazy" } = Astro.props;
 
 const parts = race.id.split("/");
 const raceSlug = parts[parts.length - 1].replace(/\.(md|mdx)$/, "");
@@ -81,11 +85,11 @@ if (isNextRace) {
   >
     {
       race.data.trackImage && (
-        <img
+        <Image
           src={race.data.trackImage}
-          alt={`${race.data.trackName} circuit`}
+          alt={race.data.trackImageAlt ?? `${race.data.trackName} circuit`}
           class="w-full h-48 object-cover"
-          loading="lazy"
+          loading={loading}
         />
       )
     }
