@@ -12,6 +12,7 @@ interface Props {
   imageAlt?: string;
   reversed?: boolean;
   background?: "white" | "gray";
+  imageLoading?: "eager" | "lazy";
 }
 
 const {
@@ -24,6 +25,7 @@ const {
   imageAlt = "",
   reversed = false,
   background = "white",
+  imageLoading = "lazy",
 } = Astro.props;
 
 const bgClass = background === "gray" ? "bg-gray-50" : "bg-white";
@@ -80,7 +82,7 @@ const bgClass = background === "gray" ? "bg-gray-50" : "bg-white";
               src={imageSrc}
               alt={imageAlt}
               class="w-full max-w-lg rounded-lg shadow-md object-cover"
-              loading="lazy"
+              loading={imageLoading}
             />
           ) : (
             <div class="w-full max-w-lg bg-gray-200 flex items-center justify-center rounded shadow">
