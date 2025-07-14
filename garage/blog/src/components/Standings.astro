@@ -6,9 +6,10 @@ import TeamStandingsCards from "./TeamStandingsCards.astro";
 
 interface Props {
   season: "2024" | "2025";
+  imageLoading?: "eager" | "lazy";
 }
 
-const { season } = Astro.props;
+const { season, imageLoading = "lazy" } = Astro.props;
 
 // Drivers
 const drivers = await getCollection(
@@ -111,7 +112,7 @@ const lastRaceTabId = `last-race-tab-${season}`;
   <div class="p-6">
     <!-- Drivers Table -->
     <div class="tab-content drivers-content">
-      <StandingsCards season={season} />
+      <StandingsCards season={season} imageLoading={imageLoading} />
       <table class="w-full text-left">
         <thead>
           <tr class="border-b">
