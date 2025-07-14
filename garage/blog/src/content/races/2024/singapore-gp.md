@@ -6,7 +6,7 @@ season: "2024"
 winner: "Lando Norris"
 winningTeam: "McLaren"
 fastestLapTime: "1.40.52"
-trackImage: "/blog-placeholder-2.jpg"
+trackImage: "/src/assets/section/component/blog-placeholder-2.jpg"
 raceNumber: 18
 completed: true
 ---
