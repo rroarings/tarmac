@@ -6,7 +6,7 @@ season: "2024"
 winner: "Charles Leclerc"
 winningTeam: "Ferrari"
 fastestLapTime: "1.35.09"
-trackImage: "/blog-placeholder-2.jpg"
+trackImage: "/src/assets/section/component/blog-placeholder-2.jpg"
 raceNumber: 19
 completed: true
 ---
