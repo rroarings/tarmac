@@ -42,7 +42,7 @@ const { title, items } = Astro.props;
               <div class="mt-auto relative overflow-hidden rounded-lg">
                 <Image
                   src={item.image}
-                  alt={item.imageAlt || ""}
+                  alt={item.imageAlt || item.title}
                   class="w-full h-48 object-cover transition-transform duration-500 group-hover:scale-105"
                   width={800}
                   height={400}
