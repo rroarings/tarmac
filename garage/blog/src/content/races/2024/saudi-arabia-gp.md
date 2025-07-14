@@ -7,7 +7,7 @@ winner: "Max Verstappen"
 winningTeam: "Red Bull Racing"
 fastestLapTime: "1:31.603"
 fastestLapDriver: "Charles Leclerc"
-trackImage: "/blog-placeholder-2.jpg"
+trackImage: "/src/assets/section/component/blog-placeholder-2.jpg"
 raceNumber: 2
 completed: true
 ---

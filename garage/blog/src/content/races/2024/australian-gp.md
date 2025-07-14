@@ -7,7 +7,7 @@ winner: "Carlos Sainz"
 winningTeam: "Ferrari"
 fastestLapTime: "1:19.813"
 fastestLapDriver: "Carlos Sainz"
-trackImage: "/blog-placeholder-2.jpg"
+trackImage: "/src/assets/section/component/blog-placeholder-2.jpg"
 raceNumber: 3
 completed: true
 ---

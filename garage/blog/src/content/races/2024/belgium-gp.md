@@ -6,7 +6,7 @@ season: "2024"
 winner: "Lewis Hamilton"
 winningTeam: "Mercedes"
 fastestLapTime: "1.19.57"
-trackImage: "/blog-placeholder-2.jpg"
+trackImage: "/src/assets/section/component/blog-placeholder-2.jpg"
 raceNumber: 14
 completed: true
 ---

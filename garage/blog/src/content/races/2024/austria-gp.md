@@ -7,7 +7,7 @@ winner: "George Russell"
 winningTeam: "Mercedes"
 fastestLapTime: "1.24.22"
 fastestLapDriver: "To Be Determined"
-trackImage: "/blog-placeholder-2.jpg"
+trackImage: "/src/assets/section/component/blog-placeholder-2.jpg"
 raceNumber: 11
 completed: true
 ---

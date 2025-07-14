@@ -6,7 +6,7 @@ season: "2024"
 winner: "Carlos Sainz"
 winningTeam: "Ferrari"
 fastestLapTime: "1.40.55"
-trackImage: "/blog-placeholder-2.jpg"
+trackImage: "/src/assets/section/component/blog-placeholder-2.jpg"
 raceNumber: 20
 completed: true
 ---
