@@ -7,6 +7,7 @@ interface Props {
   showAllRaces?: boolean;
   showTitle?: boolean;
   customClass?: string;
+  eagerCount?: number;
 }
 
 const {
@@ -14,6 +15,7 @@ const {
   showAllRaces = false,
   showTitle = true,
   customClass = "",
+  eagerCount = 0,
 } = Astro.props;
 
 const races = await getCollection("races", ({ data }) => {
@@ -86,11 +88,12 @@ const nextUpcomingRace = sortedRaces.find(
     class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-4 mb-8"
   >
     {
-      racesToDisplay.map((race) => (
+      racesToDisplay.map((race, index) => (
         <RaceCard
           race={race}
           completedRaces={completedRaces}
           isNextRace={nextUpcomingRace && race.id === nextUpcomingRace.id}
+          {...(index < eagerCount ? { loading: "eager" } : {})}
         />
       ))
     }
