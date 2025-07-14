@@ -2,7 +2,7 @@
 title: "Intro to Trackside"
 description: "Lorem ipsum dolor sit amet"
 pubDate: "Jul 01 2025"
-heroImage: "/blog-placeholder-3.jpg"
+heroImage: "/src/assets/section/component/blog-placeholder-2.jpg"
 ---
 
 Trackside is a fan-driven Formula 1 website dedicated to celebrating the sport's rich history, thrilling moments, and ongoing developments. Whether you're a seasoned F1 enthusiast or a newcomer curious about the world of motorsport, Trackside offers a hub for exploring everything Formula 1 has to offer.

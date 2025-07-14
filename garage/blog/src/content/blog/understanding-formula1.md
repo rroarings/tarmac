@@ -2,7 +2,7 @@
 title: "Understanding Formula 1: A Beginner's Guide"
 description: "Learn the basics of Formula 1, from race formats to car technology, and discover why it's the pinnacle of motorsport."
 pubDate: "Jul 01 2025"
-heroImage: "/blog-placeholder-3.jpg"
+heroImage: "/src/assets/section/component/blog-placeholder-2.jpg"
 ---
 
 ## Understanding Formula 1
