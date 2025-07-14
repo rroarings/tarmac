@@ -18,33 +18,36 @@ const formattedPosts = sortedPosts.map((post) => ({
 }));
 const latestPosts = formattedPosts.slice(0, 3);
 ---
-<section class="py-12 bg-white">
+
+<section class="py-12 bg-gray-100">
   <div class="mx-auto">
     <div class="p-6">
       <header class="flex items-center gap-3 mb-6">
         <h2 class="text-2xl font-bold">Recent Posts</h2>
       </header>
       <ul class="grid grid-cols-1 md:grid-cols-3 gap-6">
-        {latestPosts.map((post) => (
-          <li class="group transition-all duration-300 overflow-hidden flex flex-col">
-            <a href={`/blog/${post.slug}`} class="block h-full">
-              <div class="bg-gray-100 overflow-hidden">
-                <img
-                  src={post.heroImage || "/blog-placeholder-1.jpg"}
-                  alt={post.title}
-                  class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
-                  loading="lazy"
-                />
-              </div>
-              <div class="p-4">
-                <h5 class="text-lg font-bold text-gray-900 mb-2 transition-colors duration-200">
-                  {post.title}
-                </h5>
-                {/* Optionally add date or excerpt here */}
-              </div>
-            </a>
-          </li>
-        ))}
+        {
+          latestPosts.map((post) => (
+            <li class="group transition-all duration-300 overflow-hidden flex flex-col">
+              <a href={`/blog/${post.slug}`} class="block h-full">
+                <div class="bg-gray-100 overflow-hidden">
+                  <Image
+                    src={post.heroImage}
+                    alt={post.heroImageAlt ?? post.title}
+                    class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                    loading="lazy"
+                  />
+                </div>
+                <div class="p-4">
+                  <h5 class="text-lg font-bold text-gray-900 mb-2 transition-colors duration-200">
+                    {post.title}
+                  </h5>
+                  {/* Optionally add date or excerpt here */}
+                </div>
+              </a>
+            </li>
+          ))
+        }
       </ul>
       <div class="mt-8 text-center">
         <a
