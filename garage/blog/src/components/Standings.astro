@@ -1,5 +1,4 @@
 ---
-// /garage/blog/src/components/Standings.astro
 import { getCollection } from "astro:content";
 import RaceCard from "./RaceCard.astro";
 import StandingsCards from "./StandingsCards.astro";
@@ -10,8 +9,6 @@ interface Props {
 }
 
 const { season } = Astro.props;
-
-// --- Data Fetching & Processing ---
 
 // Drivers
 const drivers = await getCollection(
