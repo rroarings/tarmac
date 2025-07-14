@@ -43,21 +43,23 @@ const drivers = defineCollection({
 // F1 Teams Collection
 const teams = defineCollection({
   loader: glob({ base: "./src/content/teams", pattern: "**/*.{md,mdx}" }),
-  schema: z.object({
-    name: z.string(),
-    carModel: z.string(),
-    season: z.enum(["2024", "2025"]),
-    drivers: z.array(z.string()),
-    driverRefs: z.array(reference("drivers")).optional(), // References to driver entries
-    principal: z.string(),
-    engine: z.string(),
-    chassis: z.string(),
-    carImage: z.string().optional(),
-    teamLogo: z.string().optional(),
-    constructorPoints: z.number().default(0),
-    championships: z.number().default(0),
-    championshipPosition: z.number().default(0),
-  }),
+  schema: ({ image }) =>
+    z.object({
+      name: z.string(),
+      carModel: z.string(),
+      season: z.enum(["2024", "2025"]),
+      drivers: z.array(z.string()),
+      driverRefs: z.array(reference("drivers")).optional(), // References to driver entries
+      principal: z.string(),
+      engine: z.string(),
+      chassis: z.string(),
+      carImage: image(),
+      carImageLarge: image().optional(),
+      teamLogo: z.string().optional(),
+      constructorPoints: z.number().default(0),
+      championships: z.number().default(0),
+      championshipPosition: z.number().default(0),
+    }),
 });
 
 // F1 Races Collection
