@@ -4,6 +4,7 @@
   License MIT: https://github.com/HermanMartinus/bearblog/blob/master/LICENSE.md
  */
 @import "tailwindcss";
+@plugin "@tailwindcss/typography";
 @import "bootstrap-icons/font/bootstrap-icons.css";
 @import "flag-icons/css/flag-icons.min.css";
 
