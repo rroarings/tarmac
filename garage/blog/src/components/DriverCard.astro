@@ -31,15 +31,18 @@ const teamBgMap: Record<string, any> = {
 interface Props {
   driver: CollectionEntry<"drivers">;
   year?: string;
+  index: number;
+  eagerCount?: number;
 }
 
-const { driver, year = "2025" } = Astro.props;
+const { driver, year = "2025", index, eagerCount = 0 } = Astro.props;
 const teamBg = teamBgMap[driver.data.team] || null;
+const imageLoading = index < eagerCount ? "eager" : "lazy";
 ---
 
 <a href={`/seasons/${year}/drivers/${driver.id}`} class="block h-full">
   <article
-    class="group rounded-xl overflow-hidden transition-all duration-300 h-full border border-neutral-400 relative"
+    class="group rounded-xl overflow-hidden transition-all duration-300 h-full border border-slate-800 relative"
     style={teamBg
       ? `background-image: url('${teamBg.src}'); background-size: cover; background-position: center;`
       : ""}
@@ -47,19 +50,17 @@ const teamBg = teamBgMap[driver.data.team] || null;
     {/* Overlay for readability */}
     <div class="absolute inset-0 bg-gray-900/20 pointer-events-none"></div>
     <div class="relative z-10 p-4 pb-0 h-full flex flex-col justify-between">
-      {
-        /* Main Grid Layout - 2 columns with flag and driver in first, position in second */
-      }
       <div class="flex justify-between gap-4 items-start">
-        {/* Left side with driver info */}
+        {/* Driver Info */}
         <div class="flex flex-col">
-          {/* Name with flag */}
+          {/* Driver Name */}
           <div class="flex items-start gap-2">
             <h3 class="">
               <span class="text-lg text-gray-100 block"
                 >{driver.data.firstName}</span
               >
-              <span class="text-4xl text-gray-100 font-bold block -mt-1"
+              <span
+                class="group text-4xl text-gray-100 font-bold block mt-2 transition-all duration-300 group-hover:dark:underline"
                 >{driver.data.lastName}</span
               >
             </h3>
@@ -72,15 +73,13 @@ const teamBg = teamBgMap[driver.data.team] || null;
           <span class="text-gray-200">#{driver.data.number}</span>
           {/* Flag */}
           <span
-            class={`mt-2 fi fi-${driver.data.countryCode} border-2 border-gray-100 rounded`}
+            class={`my-2 fi fi-${driver.data.countryCode} border-2 border-gray-100 rounded`}
             aria-hidden="true"></span>
-        </div>
-        {/* Position and Points - Right side */}
-        <div class="text-end text-gray-100">
-          <span class="text-2xl font-semibold block"
-            >{driver.data.points}
-            <span class="text-base font-normal">pts</span></span
-          >
+          {/* Points */}
+          <span class="text-2xl font-semibold block mt-2 text-gray-100">
+            {driver.data.points}
+            <span class="text-base font-normal">pts</span>
+          </span>
         </div>
       </div>
       {/* Driver Image */}
@@ -92,6 +91,7 @@ const teamBg = teamBgMap[driver.data.team] || null;
           class="object-contain"
           height={400}
           width={400}
+          loading={imageLoading}
         />
       </div>
     </div>
