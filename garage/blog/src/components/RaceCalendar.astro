@@ -59,23 +59,18 @@ const nextUpcomingRace = sortedRaces.find(
 );
 ---
 
-<div class={`bg-gray-100 rounded ${customClass}`}>
+<div class={`bg-gray-100 dark:bg-slate-950 rounded ${customClass}`}>
   {
     showTitle && (
-      <div class="flex items-center justify-between mb-6">
-        <div class="flex items-center">
-          <i
-            class="bi bi-calendar3 text-3xl text-gray-700 mr-4"
-            aria-label="Race Calendar Icon"
-          />
-          <h3 class="text-2xl font-semibold tracking-tight text-gray-900">
-            {season} Race Calendar
-          </h3>
-        </div>
+      <div class="flex items-center justify-end mb-6">
+        <i
+          class="bi bi-calendar3 text-3xl text-gray-700 dark:text-slate-400 mr-4"
+          aria-label="Race Calendar Icon"
+        />
         {lastCompletedRace && (
           <a
             href={`/seasons/${season}/races`}
-            class="text-gray-500 hover:text-red-600 font-medium transition-colors duration-200"
+            class="text-gray-500 dark:text-slate-400 hover:text-red-600 font-medium transition-colors duration-200"
           >
             View All Races
           </a>
