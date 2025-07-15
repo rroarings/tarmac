@@ -1,82 +1,75 @@
 ---
-import BaseHead from "../../../components/BaseHead.astro"
-import Header from "../../../components/Header.astro"
-import Footer from "../../../components/Footer.astro"
-import Breadcrumb from "../../../components/Breadcrumb.astro"
-import RaceCalendar from "../../../components/RaceCalendar.astro"
-import Standings from "../../../components/Standings.astro"
-import BreakpointIndicator from "../../../components/BreakpointIndicator.astro"
-import SeasonNavCards from "../../../components/SeasonNavCards.astro"
-import { SITE_TITLE } from "../../../consts"
-import LatestBlogPosts from "../../../components/LatestBlogPosts.astro"
+import BaseHead from "../../../components/BaseHead.astro";
+import Header from "../../../components/Header.astro";
+import Footer from "../../../components/Footer.astro";
+import Breadcrumb from "../../../components/Breadcrumb.astro";
+import RaceCalendar from "../../../components/RaceCalendar.astro";
+import Standings from "../../../components/Standings.astro";
+import BreakpointIndicator from "../../../components/BreakpointIndicator.astro";
+import SeasonNavCards from "../../../components/SeasonNavCards.astro";
+import { SITE_TITLE } from "../../../consts";
+import LatestBlogPosts from "../../../components/LatestBlogPosts.astro";
 ---
 
 <!doctype html>
-<html
-	lang="en"
-	class="bg-gray-100 dark:bg-slate-950">
-	<head>
-		<BaseHead
-			title={`2024 F1 Season | ${SITE_TITLE}`}
-			description="Complete 2024 Formula 1 race calendar and season overview"
-		/>
-	</head>
-	<body>
-		<BreakpointIndicator />
-		<Header />
-		<main>
-			<Breadcrumb
-				items={[
-					{ text: "Home", href: "/" },
-					{ text: "Seasons", href: "/seasons" },
-					{ text: "2024 Season", href: "/seasons/2024" },
-				]}
-			/>
+<html lang="en" class="bg-gray-100 dark:bg-slate-950">
+  <head>
+    <BaseHead
+      title={`2024 F1 Season | ${SITE_TITLE}`}
+      description="Complete 2024 Formula 1 race calendar and season overview"
+    />
+  </head>
+  <body>
+    <BreakpointIndicator />
+    <Header />
+    <main>
+      <Breadcrumb
+        items={[
+          { text: "Home", href: "/" },
+          { text: "Seasons", href: "/seasons" },
+          { text: "2024 Season", href: "/seasons/2024" },
+        ]}
+      />
 
-			<!-- 2024 Season Header -->
-			<section class="pt-6 pb-6 text-center">
-				<div class="container mx-auto px-4">
-					<h1 class="text-4xl font-bold mb-4 dark:text-slate-100">2024 Formula 1 Season</h1>
-					<p class="text-lg text-gray-700 dark:text-slate-400">
-						Complete race calendar and season overview
-					</p>
-				</div>
-			</section>
+      <!-- 2024 Season Header -->
+      <section class="pt-6 pb-6 text-center">
+        <div class="container mx-auto px-4">
+          <h1 class="text-4xl font-bold mb-4 dark:text-slate-100">
+            2024 Formula 1 Season
+          </h1>
+          <p class="text-lg text-gray-700 dark:text-slate-400">
+            Complete race calendar and season overview
+          </p>
+        </div>
+      </section>
 
-			<!-- Driver / Constructor Nav Cards -->
-			<SeasonNavCards season="2024" />
+      <!-- Driver / Constructor Nav Cards -->
+      <SeasonNavCards season="2024" />
 
-			<!-- Standings Section -->
-			<section class="py-16 bg-gray-100 dark:bg-slate-950">
-				<div class="container mx-auto px-4">
-					<h2 class="text-2xl font-bold mb-6 text-center dark:text-slate-100">
-						2024 Championship Standings
-					</h2>
+      <!-- Standings Section -->
+      <section class="py-16 bg-gray-100 dark:bg-slate-950">
+        <div class="container mx-auto px-4">
+          <h2 class="text-2xl font-bold mb-6 text-center dark:text-slate-100">
+            2024 Championship Standings
+          </h2>
 
-					<Standings
-						season="2024"
-						imageLoading="eager"
-					/>
-				</div>
-			</section>
+          <Standings season="2024" imageLoading="eager" />
+        </div>
+      </section>
 
-			<!-- Race Calendar -->
-			<section class="py-6">
-				<div class="container mx-auto px-4">
-					<h2 class="text-2xl text-center font-bold mb-8 dark:text-slate-100">
-						The 2024 Race Calendar
-					</h2>
-					<RaceCalendar
-						season="2024"
-						showAllRaces={true}
-						showTitle={true}
-					/>
-				</div>
-			</section>
+      <!-- Race Calendar -->
+      <section class="py-6">
+        <div class="container mx-auto px-4">
+          <h2 class="text-2xl text-center font-bold mb-8 dark:text-slate-100">
+            The 2024 Race Calendar
+          </h2>
+          <RaceCalendar season="2024" showAllRaces={true} showTitle={true} />
+        </div>
+      </section>
 
-			<!-- Latest Blog Posts Section -->
-			<LatestBlogPosts />
-		</main>
-		<Footer />
-	</body>
+      <!-- Latest Blog Posts Section -->
+      <LatestBlogPosts />
+    </main>
+    <Footer />
+  </body>
 </html>
