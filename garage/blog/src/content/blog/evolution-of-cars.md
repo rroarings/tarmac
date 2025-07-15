@@ -3,6 +3,7 @@ title: "The Evolution of F1 Cars: From Speed to Sustainability"
 description: "Examine how Formula 1 cars have changed over the decades, including hybrid engines and aerodynamics."
 pubDate: "Jul 02 2025"
 heroImage: "/src/assets/circuits/05saudiarabia/sa07.jpg"
+heroImageAlt: "Evolutions of Cars hero image"
 ---
 
 ## The Evolution of F1 Cars: From Speed to Sustainability
