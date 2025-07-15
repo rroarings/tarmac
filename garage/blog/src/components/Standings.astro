@@ -113,7 +113,7 @@ const lastRaceTabId = `last-race-tab-${season}`;
     <!-- Drivers Table -->
     <div class="tab-content drivers-content">
       <StandingsCards season={season} imageLoading={imageLoading} />
-      <table class="w-full text-left">
+      <table class="w-full text-left dark:text-slate-200">
         <thead>
           <tr class="border-b">
             <th class="py-2 w-16">Pos</th>
@@ -149,7 +149,7 @@ const lastRaceTabId = `last-race-tab-${season}`;
     <!-- Constructors Table -->
     <div class="tab-content constructors-content">
       <TeamStandingsCards season={season} />
-      <table class="w-full text-left">
+      <table class="w-full text-left dark:text-slate-200">
         <thead>
           <tr class="border-b">
             <th class="py-2 w-16">Pos</th>
@@ -196,12 +196,13 @@ const lastRaceTabId = `last-race-tab-${season}`;
     display: none;
   }
   .tab-button {
-    color: #6b7280; /* text-gray-500 */
+    color: oklch(86.9% 0.022 252.894); /* text-gray-500 */
     border-bottom: 2px solid transparent;
     transition: all 0.2s ease-in-out;
   }
-
-  /* Show content and style active tab */
+  .dark .tab-button {
+    color: #a1a1aa; /* text-gray-400 */
+  }
   .standings-component input[id^="drivers-tab"]:checked ~ .p-6 .drivers-content,
   .standings-component
     input[id^="constructors-tab"]:checked
@@ -213,7 +214,6 @@ const lastRaceTabId = `last-race-tab-${season}`;
     .last-race-content {
     display: block;
   }
-
   .standings-component input[id^="drivers-tab"]:checked ~ .flex .drivers-label,
   .standings-component
     input[id^="constructors-tab"]:checked
@@ -223,8 +223,26 @@ const lastRaceTabId = `last-race-tab-${season}`;
     input[id^="last-race-tab"]:checked
     ~ .flex
     .last-race-label {
-    color: #1f2937; /* text-gray-800 */
+    color: oklch(92.9% 0.013 255.508); /* text-gray-800 */
     font-weight: 600;
     border-bottom-color: #dc2626; /* border-red-600 */
+  }
+  .dark
+    .standings-component
+    input[id^="drivers-tab"]:checked
+    ~ .flex
+    .drivers-label,
+  .dark
+    .standings-component
+    input[id^="constructors-tab"]:checked
+    ~ .flex
+    .constructors-label,
+  .dark
+    .standings-component
+    input[id^="last-race-tab"]:checked
+    ~ .flex
+    .last-race-label {
+    color: #fff;
+    border-bottom-color: #f87171; /* red-400 or your accent */
   }
 </style>
