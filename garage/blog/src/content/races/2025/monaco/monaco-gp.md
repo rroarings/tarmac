@@ -7,6 +7,7 @@ winner: "Lando Norris"
 winningTeam: "McLaren"
 fastestLapTime: "1.22.167"
 trackImage: "/src/assets/circuits/08monaco/mc04.jpg"
+trackImageAlt: "Circuit de Monaco image"
 raceNumber: 8
 completed: true
 ---

@@ -8,6 +8,7 @@ winningTeam: "McLaren"
 fastestLapTime: "Lando Norris"
 fastestLapDriver: "1.31.778"
 trackImage: "/src/assets/circuits/06miami/mi02.jpg"
+trackImageAlt: "Miami International Autodrome image"
 raceNumber: 6
 completed: true
 ---

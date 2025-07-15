@@ -7,6 +7,7 @@ winner: ""
 winningTeam: ""
 fastestLapTime: ""
 trackImage: "/src/assets/circuits/01australia/aus01.jpg"
+trackImageAlt: "Las Vegas Strip Circuit image"
 raceNumber: 22
 completed: false
 ---

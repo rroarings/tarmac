@@ -8,6 +8,7 @@ winningTeam: "McLaren"
 fastestLapTime: "1:42.06"
 fastestLapDriver: "Lando Norris"
 trackImage: "/src/assets/circuits/02china/cn02.jpg"
+trackImageAlt: "Shangai International Circuit image"
 raceNumber: 2
 completed: true
 ---

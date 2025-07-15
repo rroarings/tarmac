@@ -7,6 +7,7 @@ winner: ""
 winningTeam: ""
 fastestLapTime: ""
 trackImage: "/src/assets/section/component/blog-placeholder-2.jpg"
+trackImageAlt: "Marina Bay Street Circuit image"
 raceNumber: 18
 completed: false
 ---

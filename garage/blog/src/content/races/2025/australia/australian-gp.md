@@ -8,6 +8,7 @@ winningTeam: "McLaren"
 fastestLapTime: "1:42.06"
 fastestLapDriver: "Lando Norris"
 trackImage: "/src/assets/circuits/01australia/aus01.jpg"
+trackImageAlt: "Albert Part Circuit image"
 raceNumber: 1
 completed: true
 ---

@@ -7,6 +7,7 @@ winner: ""
 winningTeam: ""
 fastestLapTime: ""
 trackImage: "/src/assets/circuits/01australia/aus01.jpg"
+trackImageAlt: "Circuit de Spa-Francorchamps image"
 raceNumber: 13
 completed: false
 ---

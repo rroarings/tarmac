@@ -8,6 +8,7 @@ winningTeam: "Ferrari"
 fastestLapTime: "1:14.226"
 fastestLapDriver: "Lando Norris"
 trackImage: "/src/assets/section/component/blog-placeholder-2.jpg"
+trackImageAlt: "Circuit de Monaco image"
 raceNumber: 8
 completed: true
 ---

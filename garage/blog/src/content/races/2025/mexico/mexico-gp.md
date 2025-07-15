@@ -7,6 +7,7 @@ winner: ""
 winningTeam: ""
 fastestLapTime: ""
 trackImage: "/src/assets/section/component/blog-placeholder-2.jpg"
+trackImageAlt: "Autódromo Hermanos Rodríguez image"
 raceNumber: 20
 completed: false
 ---

@@ -7,6 +7,7 @@ winner: "Lando Norris"
 winningTeam: "McLaren"
 fastestLapTime: "1.40.52"
 trackImage: "/src/assets/section/component/blog-placeholder-2.jpg"
+trackImageAlt: "Marina Bay Street Circuit image"
 raceNumber: 18
 completed: true
 ---

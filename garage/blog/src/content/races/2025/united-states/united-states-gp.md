@@ -7,6 +7,7 @@ winner: ""
 winningTeam: ""
 fastestLapTime: ""
 trackImage: "/src/assets/section/component/blog-placeholder-2.jpg"
+trackImageAlt: "Circuit of the Americas image"
 raceNumber: 19
 completed: false
 ---

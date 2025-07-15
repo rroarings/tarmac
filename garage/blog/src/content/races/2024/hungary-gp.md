@@ -7,6 +7,7 @@ winner: "Oscar Piastri"
 winningTeam: "McLaren"
 fastestLapTime: "1.38.01"
 trackImage: "/src/assets/section/component/blog-placeholder-2.jpg"
+trackImageAlt: "Hungaroring image"
 raceNumber: 13
 completed: true
 ---

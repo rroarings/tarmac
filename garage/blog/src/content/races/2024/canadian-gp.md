@@ -8,6 +8,7 @@ winningTeam: "Red Bull Racing"
 fastestLapTime: "1.45.47"
 fastestLapDriver: "Lando Norris"
 trackImage: "/src/assets/section/component/blog-placeholder-2.jpg"
+trackImageAlt: "Circuit Gilles Villeneuve image"
 raceNumber: 9
 completed: true
 ---

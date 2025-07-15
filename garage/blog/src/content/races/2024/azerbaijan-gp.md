@@ -7,6 +7,7 @@ winner: "Oscar Piastri"
 winningTeam: "McLaren"
 fastestLapTime: "1.32.58"
 trackImage: "/src/assets/section/component/blog-placeholder-2.jpg"
+trackImageAlt: "Baku City Circuit image"
 raceNumber: 17
 completed: true
 ---

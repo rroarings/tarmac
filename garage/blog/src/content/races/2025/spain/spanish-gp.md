@@ -7,6 +7,7 @@ winner: "Oscar Piastri"
 winningTeam: "McLaren"
 fastestLapTime: "1.32.57"
 trackImage: "/src/assets/circuits/09spain/sp02.jpg"
+trackImageAlt: "Circuit da Barcelona-Catalunya image"
 raceNumber: 9
 completed: true
 ---

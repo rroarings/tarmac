@@ -7,6 +7,7 @@ winner: "Lewis Hamilton"
 winningTeam: "Mercedes"
 fastestLapTime: "1.19.57"
 trackImage: "/src/assets/section/component/blog-placeholder-2.jpg"
+trackImageAlt: "Circuit de Spa-Francorchamps image"
 raceNumber: 14
 completed: true
 ---

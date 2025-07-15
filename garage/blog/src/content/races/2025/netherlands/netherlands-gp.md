@@ -7,6 +7,7 @@ winner: ""
 winningTeam: ""
 fastestLapTime: ""
 trackImage: "/src/assets/section/component/blog-placeholder-2.jpg"
+trackImageAlt: "Circuit Zandvoort image"
 raceNumber: 15
 completed: false
 ---

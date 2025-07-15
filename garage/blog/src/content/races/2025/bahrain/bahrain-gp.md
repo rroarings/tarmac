@@ -8,6 +8,7 @@ winningTeam: "McLaren"
 fastestLapTime: "1:42.06"
 fastestLapDriver: "Lando Norris"
 trackImage: "/src/assets/circuits/04bahrain/bh01.jpg"
+trackImageAlt: "Bahrain International Circuit image"
 raceNumber: 4
 completed: true
 ---

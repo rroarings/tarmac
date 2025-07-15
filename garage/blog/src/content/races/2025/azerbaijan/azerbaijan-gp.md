@@ -7,6 +7,7 @@ winner: ""
 winningTeam: ""
 fastestLapTime: ""
 trackImage: "/src/assets/section/component/blog-placeholder-2.jpg"
+trackImageAlt: "Baku City Circuit image"
 raceNumber: 17
 completed: false
 ---

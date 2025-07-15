@@ -7,6 +7,7 @@ winner: ""
 winningTeam: ""
 fastestLapTime: ""
 trackImage: "/src/assets/circuits/01australia/aus01.jpg"
+trackImageAlt: "Interlagos Circuit image"
 raceNumber: 21
 completed: false
 ---

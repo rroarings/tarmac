@@ -8,6 +8,7 @@ winningTeam: "Mercedes"
 fastestLapTime: "1.24.22"
 fastestLapDriver: "To Be Determined"
 trackImage: "/src/assets/section/component/blog-placeholder-2.jpg"
+trackImageAlt: "Red Bull Ring image"
 raceNumber: 11
 completed: true
 ---

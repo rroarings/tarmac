@@ -7,6 +7,7 @@ winner: "Charles Leclerc"
 winningTeam: "Ferrari"
 fastestLapTime: "1.14.40"
 trackImage: "/src/assets/section/component/blog-placeholder-2.jpg"
+trackImageAlt: "Autodromo Nazionale di Monza image"
 raceNumber: 16
 completed: true
 ---

@@ -8,6 +8,7 @@ winningTeam: "Red Bull Racing"
 fastestLapTime: "1.28.20"
 fastestLapDriver: "Max Verstappen"
 trackImage: "/src/assets/section/component/blog-placeholder-2.jpg"
+trackImageAlt: "Silverstone Circuit image"
 raceNumber: 12
 completed: true
 ---

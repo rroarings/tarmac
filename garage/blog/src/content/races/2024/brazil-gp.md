@@ -7,6 +7,7 @@ winner: "Max Verstappen"
 winningTeam: "Red Bull Racing"
 fastestLapTime: "2.06.54"
 trackImage: "/src/assets/section/component/blog-placeholder-2.jpg"
+trackImageAlt: "Interlagos Circuit image"
 raceNumber: 21
 completed: true
 ---

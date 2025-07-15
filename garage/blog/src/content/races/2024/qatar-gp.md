@@ -7,6 +7,7 @@ winner: "Max Verstappen"
 winningTeam: "Red Bull Racing"
 fastestLapTime: "1.31.05"
 trackImage: "/src/assets/section/component/blog-placeholder-2.jpg"
+trackImageAlt: "Lusail International Circuit image"
 raceNumber: 23
 completed: true
 ---

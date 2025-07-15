@@ -7,6 +7,7 @@ winner: "Lando Norris"
 winningTeam: "McLaren"
 fastestLapTime: "1.26.33"
 trackImage: "/src/assets/section/component/blog-placeholder-2.jpg"
+trackImageAlt: "Yas Marina Circuit image"
 raceNumber: 24
 completed: true
 ---

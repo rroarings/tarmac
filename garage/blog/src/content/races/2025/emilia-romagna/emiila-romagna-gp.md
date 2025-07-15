@@ -8,6 +8,7 @@ winningTeam: "Red Bull Racing"
 fastestLapTime: "1.31.33"
 fastestLapDriver: ""
 trackImage: "/src/assets/circuits/07emiliaromagna/er01.jpg"
+trackImageAlt: "Imola Circuit image"
 raceNumber: 7
 completed: true
 ---

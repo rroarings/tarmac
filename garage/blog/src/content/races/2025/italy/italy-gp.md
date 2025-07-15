@@ -7,6 +7,7 @@ winner: ""
 winningTeam: ""
 fastestLapTime: ""
 trackImage: "/src/assets/circuits/01australia/aus01.jpg"
+trackImageAlt: "Autodromo Nazionale di Monza image"
 raceNumber: 16
 completed: false
 ---

@@ -7,6 +7,7 @@ winner: "Lando Norris"
 winningTeam: "McLaren"
 fastestLapTime: "1.23.47"
 trackImage: "/src/assets/circuits/11austria/as07.jpg"
+trackImageAlt: "Red Bull Ring image"
 raceNumber: 11
 completed: true
 ---

@@ -8,6 +8,7 @@ winningTeam: "Red Bull Racing"
 fastestLapTime: "1:18.648"
 fastestLapDriver: "Oscar Piastri"
 trackImage: "/src/assets/section/component/blog-placeholder-2.jpg"
+trackImageAlt: "Imola Circuit image"
 raceNumber: 7
 completed: true
 ---

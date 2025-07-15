@@ -8,6 +8,7 @@ winningTeam: "Red Bull Racing"
 fastestLapTime: "1:32.608"
 fastestLapDriver: "Max Verstappen"
 trackImage: "/src/assets/section/component/blog-placeholder-2.jpg"
+trackImageAlt: "Bahrain International Circuit image"
 raceNumber: 1
 completed: true
 ---

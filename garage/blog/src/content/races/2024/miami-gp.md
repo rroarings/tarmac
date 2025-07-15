@@ -8,6 +8,7 @@ winningTeam: "McLaren"
 fastestLapTime: "1:30.120"
 fastestLapDriver: "Max Verstappen"
 trackImage: "/src/assets/section/component/blog-placeholder-2.jpg"
+trackImageAlt: "Miami International Autodrome image"
 raceNumber: 6
 completed: true
 ---

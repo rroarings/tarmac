@@ -8,6 +8,7 @@ winningTeam: "Red Bull Racing"
 fastestLapTime: "1:42.06"
 fastestLapDriver: "Lando Norris"
 trackImage: "/src/assets/circuits/03japan/jp02.jpg"
+trackImageAlt: "Suzuka Circuit image"
 raceNumber: 3
 completed: true
 ---

@@ -7,6 +7,7 @@ winner: "George Russell"
 winningTeam: "Mercedes"
 fastestLapTime: "1.22.05"
 trackImage: "/src/assets/section/component/blog-placeholder-2.jpg"
+trackImageAlt: "Las Vegas Strip Circuit image"
 raceNumber: 22
 completed: true
 ---

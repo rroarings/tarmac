@@ -8,6 +8,7 @@ winningTeam: "McLaren"
 fastestLapTime: "1:42.06"
 fastestLapDriver: "Lando Norris"
 trackImage: "/src/assets/circuits/05saudiarabia/sa01.jpg"
+trackImageAlt: "Jeddah Cornice Circuit image"
 raceNumber: 5
 completed: true
 ---

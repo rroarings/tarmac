@@ -7,6 +7,7 @@ winner: "Lando Norris"
 winningTeam: "McLaren"
 fastestLapTime: "1.37.15"
 trackImage: "/src/assets/circuits/12greatbritain/gb-19.jpg"
+trackImageAlt: "Silverstone Circuit image"
 raceNumber: 12
 completed: true
 ---

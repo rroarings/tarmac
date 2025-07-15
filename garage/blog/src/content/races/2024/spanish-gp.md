@@ -8,6 +8,7 @@ winningTeam: "Red Bull Racing"
 fastestLapTime: "1.28.20"
 fastestLapDriver: "To Be Determined"
 trackImage: "/src/assets/section/component/blog-placeholder-2.jpg"
+trackImageAlt: "Circuit da Barcelona-Catalunya image"
 raceNumber: 10
 completed: true
 ---
