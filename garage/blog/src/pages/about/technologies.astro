@@ -14,7 +14,7 @@ const description =
 ---
 
 <!doctype html>
-<html lang="en">
+<html lang="en" class="bg-gray-100 dark:bg-slate-950">
   <head>
     <BaseHead title={pageTitle} description={description} />
   </head>
@@ -24,13 +24,13 @@ const description =
 
     <main>
       <!-- Hero Section -->
-      <section
-        class="py-10 bg-gradient-to-b from-slate-50 to-white overflow-hidden"
-      >
+      <section class="py-16 bg-gray-100 dark:bg-slate-950">
         <div class="container mx-auto px-4">
           <div class="text-center mb-10">
-            <h1 class="text-4xl md:text-5xl font-bold mb-4">{pageTitle}</h1>
-            <p class="text-xl text-gray-600">
+            <h1 class="text-4xl md:text-5xl font-bold mb-4 dark:text-slate-100">
+              {pageTitle}
+            </h1>
+            <p class="text-xl text-gray-600 dark:text-slate-400">
               Technological prowess drives Formula 1 innovation
             </p>
           </div>
@@ -44,19 +44,23 @@ const description =
               class="group relative rounded-xl overflow-hidden flex flex-col"
             >
               <div
-                class="bg-gray-200/80 backdrop-blur-sm p-8 flex-1 flex flex-col"
+                class="bg-gray-200/80 dark:bg-slate-800 backdrop-blur-sm p-8 flex-1 flex flex-col"
               >
                 <div
                   class="flex flex-col items-center text-center mb-6 relative overflow-hidden"
                 >
-                  <div class="bg-gray-400/20 p-4 rounded-full">
+                  <div
+                    class="bg-gray-400/20 dark:bg-slate-300 p-4 rounded-full"
+                  >
                     <i
-                      class="bi bi-gear-fill text-gray-800 text-2xl inline-block"
+                      class="bi bi-gear-fill text-gray-800 dark:text-slate-900 text-2xl inline-block"
                     ></i>
                   </div>
-                  <h3 class="text-lg text-gray-800 mt-4">Engineering</h3>
+                  <h3 class="text-lg text-gray-800 dark:text-slate-200 mt-4">
+                    Engineering
+                  </h3>
                 </div>
-                <p class="text-gray-600 text-center">
+                <p class="text-gray-600 dark:text-slate-400 text-center">
                   Pushing the boundaries of automotive engineering with
                   cutting-edge solutions
                 </p>
@@ -68,11 +72,13 @@ const description =
               class="md:row-span-2 group relative rounded-xl overflow-hidden my-0 flex flex-col"
             >
               <div
-                class="bg-gray-200/80 backdrop-blur-sm p-8 flex-1 flex flex-col"
+                class="bg-gray-200/80 dark:bg-slate-800 backdrop-blur-sm p-8 flex-1 flex flex-col"
               >
                 <Image src={bh03} alt="f1 tech" class="mb-8" loading="eager" />
-                <h3 class="text-lg mb-4 text-gray-800">Sustainability</h3>
-                <p class="text-gray-600">
+                <h3 class="text-lg mb-4 text-gray-800 dark:text-slate-200">
+                  Sustainability
+                </h3>
+                <p class="text-gray-600 dark:text-slate-400">
                   Leading the charge in sustainable racing technologies while
                   pushing the boundaries of what's possible in motorsport
                 </p>
@@ -84,17 +90,21 @@ const description =
               class="group relative rounded-xl overflow-hidden flex flex-col"
             >
               <div
-                class="bg-gray-200/80 backdrop-blur-sm p-8 flex-1 flex flex-col"
+                class="bg-gray-200/80 dark:bg-slate-800 backdrop-blur-sm p-8 flex-1 flex flex-col"
               >
                 <div class="flex flex-col items-center text-center mb-6">
-                  <div class="bg-gray-400/20 p-4 rounded-full">
+                  <div
+                    class="bg-gray-400/20 dark:bg-slate-300 p-4 rounded-full"
+                  >
                     <i
-                      class="bi bi-graph-up text-gray-800 text-2xl inline-block"
+                      class="bi bi-graph-up text-gray-800 dark:text-slate-900 text-2xl inline-block"
                     ></i>
                   </div>
-                  <h3 class="text-lg text-gray-800 mt-4">Data Analytics</h3>
+                  <h3 class="text-lg text-gray-800 dark:text-slate-100 mt-4">
+                    Data Analytics
+                  </h3>
                 </div>
-                <p class="text-gray-600 text-center">
+                <p class="text-gray-600 dark:text-slate-400 text-center">
                   Real-time data analysis shapes strategy and performance
                   optimization
                 </p>
@@ -106,16 +116,21 @@ const description =
               class="group relative rounded-xl overflow-hidden flex flex-col"
             >
               <div
-                class="bg-gray-200/80 backdrop-blur-sm p-8 flex-1 flex flex-col"
+                class="bg-gray-200/80 dark:bg-slate-800 backdrop-blur-sm p-8 flex-1 flex flex-col"
               >
                 <div class="flex flex-col items-center text-center mb-6">
-                  <div class="bg-gray-400/20 p-4 rounded-full">
-                    <i class="bi bi-wind text-gray-800 text-2xl inline-block"
+                  <div
+                    class="bg-gray-400/20 dark:bg-slate-300 p-4 rounded-full"
+                  >
+                    <i
+                      class="bi bi-wind text-gray-800 dark:text-slate-900 text-2xl inline-block"
                     ></i>
                   </div>
-                  <h3 class="text-lg text-gray-800 mt-4">Aerodynamics</h3>
+                  <h3 class="text-lg text-gray-800 dark:text-slate-100 mt-4">
+                    Aerodynamics
+                  </h3>
                 </div>
-                <p class="text-gray-600 text-center">
+                <p class="text-gray-600 dark:text-slate-400 text-center">
                   Advanced research in airflow and downforce optimization
                 </p>
               </div>
@@ -126,17 +141,21 @@ const description =
               class="group relative rounded-xl overflow-hidden flex flex-col"
             >
               <div
-                class="bg-gray-200/80 backdrop-blur-sm p-8 flex-1 flex flex-col"
+                class="bg-gray-200/80 dark:bg-slate-800 backdrop-blur-sm p-8 flex-1 flex flex-col"
               >
                 <div class="flex flex-col items-center text-center mb-6">
-                  <div class="bg-gray-400/20 p-4 rounded-full">
+                  <div
+                    class="bg-gray-400/20 dark:bg-slate-300 p-4 rounded-full"
+                  >
                     <i
-                      class="bi bi-speedometer2 text-gray-800 text-2xl inline-block"
+                      class="bi bi-speedometer2 text-gray-800 dark:text-slate-900 text-2xl inline-block"
                     ></i>
                   </div>
-                  <h3 class="text-lg text-gray-800 mt-4">Performance</h3>
+                  <h3 class="text-lg text-gray-800 dark:text-slate-200 mt-4">
+                    Performance
+                  </h3>
                 </div>
-                <p class="text-gray-600 text-center">
+                <p class="text-gray-600 dark:text-slate-400 text-center">
                   Maximizing speed and efficiency through innovative solutions
                 </p>
               </div>
@@ -147,17 +166,21 @@ const description =
               class="md:col-span-3 group relative rounded-xl overflow-hidden flex flex-col"
             >
               <div
-                class="bg-gray-200/80 backdrop-blur-sm p-8 flex-1 flex flex-col"
+                class="bg-gray-200/80 dark:bg-slate-800 backdrop-blur-sm p-8 flex-1 flex flex-col"
               >
                 <div class="flex flex-col items-center text-center mb-6">
-                  <div class="bg-gray-400/20 p-4 rounded-full">
+                  <div
+                    class="bg-gray-400/20 dark:bg-slate-300 p-4 rounded-full"
+                  >
                     <i
-                      class="bi bi-leaf-fill text-gray-800 text-2xl inline-block"
+                      class="bi bi-leaf-fill text-gray-800 dark:text-slate-900 text-2xl inline-block"
                     ></i>
                   </div>
-                  <h3 class="text-lg text-gray-800 mt-4">Innovation</h3>
+                  <h3 class="text-lg text-gray-800 dark:text-slate-100 mt-4">
+                    Innovation
+                  </h3>
                 </div>
-                <p class="text-gray-600 text-center">
+                <p class="text-gray-600 dark:text-slate-400 text-center">
                   The heart of F1 technology, where engineering meets innovation
                   to create the future of motorsport. Every component is
                   optimized for maximum performance
@@ -202,14 +225,17 @@ const description =
       />
 
       <!-- Video Feature Section -->
-      <section class="py-12 bg-slate-50">
+      <section class="py-12 bg-gray-100 dark:bg-slate-950">
         <div class="container mx-auto px-4">
           <div class="max-w-4xl mx-auto">
-            <h2 class="text-3xl font-bold text-center mb-12">
+            <h2
+              class="text-3xl font-bold text-center mb-12 dark:text-slate-100"
+            >
               Experience F1 Technology
             </h2>
-
-            <div class="rounded-xl overflow-hidden shadow-lg">
+            <div
+              class="rounded-xl overflow-hidden shadow-lg dark:shadow-slate-700"
+            >
               <video
                 class="w-full h-full object-cover rounded-xl"
                 autoplay
@@ -226,7 +252,7 @@ const description =
             </div>
 
             <div class="mt-8 text-center">
-              <p class="text-gray-600 max-w-2xl mx-auto">
+              <p class="text-gray-600 dark:text-slate-400 max-w-2xl mx-auto">
                 Explore the cutting-edge technology that powers modern Formula 1
                 cars, from advanced aerodynamics to hybrid power units.
               </p>
@@ -236,15 +262,18 @@ const description =
       </section>
 
       <!-- Cost Cap Section -->
-      <section class="py-16 bg-gradient-to-b from-slate-50 to-white">
+      <section class="py-16 bg-gray-100 dark:bg-slate-950">
         <div class="container mx-auto px-4">
           <div class="max-w-7xl mx-auto">
-            <!-- Header with enhanced styling -->
             <div class="text-center mb-12">
-              <h2 class="text-3xl md:text-4xl font-bold mb-4">
+              <h2
+                class="text-3xl md:text-4xl font-bold mb-4 dark:text-slate-100"
+              >
                 Cost Cap Impact
               </h2>
-              <p class="text-lg text-gray-600 max-w-3xl mx-auto">
+              <p
+                class="text-lg text-gray-600 dark:text-slate-400 max-w-3xl mx-auto"
+              >
                 Transforming F1's financial landscape with a $140M cost cap,
                 creating a more competitive and sustainable future for the
                 sport.
@@ -255,13 +284,13 @@ const description =
             <div class="grid grid-cols-2 md:grid-cols-4 gap-4 mb-12">
               <div class="rounded-xl p-6">
                 <div class="flex items-center gap-4">
-                  <div class="p-3 bg-green-50 rounded-lg">
+                  <div class="p-3 bg-green-50 dark:bg-green-300 rounded-lg">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       width="16"
                       height="16"
                       fill="currentColor"
-                      class="bi bi-piggy-bank w-6 h-6 text-green-600"
+                      class="bi bi-piggy-bank w-6 h-6 text-green-600 dark:text-green-900"
                       viewBox="0 0 16 16"
                     >
                       <path
@@ -274,20 +303,22 @@ const description =
                     </svg>
                   </div>
                   <div>
-                    <p class="text-sm text-gray-600">Annual Budget</p>
-                    <p class="text-2xl font-bold text-gray-900">$140M</p>
+                    <p class="text-sm text-gray-600 dark:text-slate-500">
+                      Annual Budget
+                    </p>
+                    <p class="text-2xl font-bold dark:text-slate-300">$140M</p>
                   </div>
                 </div>
               </div>
               <div class="rounded-xl p-6">
                 <div class="flex items-center gap-4">
-                  <div class="p-3 bg-blue-50 rounded-lg">
+                  <div class="p-3 bg-blue-50 dark:bg-blue-300 rounded-lg">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       width="16"
                       height="16"
                       fill="currentColor"
-                      class="bi bi-calendar-event w-6 h-6 text-blue-600"
+                      class="bi bi-calendar-event w-6 h-6 text-blue-600 dark:text-blue-900"
                       viewBox="0 0 16 16"
                     >
                       <path
@@ -299,20 +330,24 @@ const description =
                     </svg>
                   </div>
                   <div>
-                    <p class="text-sm text-gray-600">Race Calendar</p>
-                    <p class="text-2xl font-bold text-gray-900">24 races</p>
+                    <p class="text-sm text-gray-600 dark:text-slate-500">
+                      Race Calendar
+                    </p>
+                    <p class="text-2xl font-bold dark:text-slate-300">
+                      24 races
+                    </p>
                   </div>
                 </div>
               </div>
               <div class="rounded-xl p-6">
                 <div class="flex items-center gap-4">
-                  <div class="p-3 bg-pink∂-50 rounded-lg">
+                  <div class="p-3 bg-pink-50 dark:bg-pink-300 rounded-lg">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       width="16"
                       height="16"
                       fill="currentColor"
-                      class="bi bi-people-fill w-6 h-6 text-pink-600"
+                      class="bi bi-people-fill w-6 h-6 text-pink-600 dark:text-pink-900"
                       viewBox="0 0 16 16"
                     >
                       <path
@@ -321,20 +356,22 @@ const description =
                     </svg>
                   </div>
                   <div>
-                    <p class="text-sm text-gray-600">Teams</p>
-                    <p class="text-2xl font-bold text-gray-900">10</p>
+                    <p class="text-sm text-gray-600 dark:text-slate-500">
+                      Teams
+                    </p>
+                    <p class="text-2xl font-bold dark:text-slate-300">10</p>
                   </div>
                 </div>
               </div>
               <div class="rounded-xl p-6">
                 <div class="flex items-center gap-4">
-                  <div class="p-3 bg-orange-50 rounded-lg">
+                  <div class="p-3 bg-orange-50 dark:bg-orange-300 rounded-lg">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       width="16"
                       height="16"
                       fill="currentColor"
-                      class="bi bi-speedometer w-6 h-6 text-orange-600"
+                      class="bi bi-speedometer w-6 h-6 text-orange-600 dark:text-orange-900"
                       viewBox="0 0 16 16"
                     >
                       <path
@@ -347,8 +384,10 @@ const description =
                     </svg>
                   </div>
                   <div>
-                    <p class="text-sm text-gray-600">Pressure</p>
-                    <p class="text-2xl font-bold text-gray-900">100%</p>
+                    <p class="text-sm text-gray-600 dark:text-slate-500">
+                      Pressure
+                    </p>
+                    <p class="text-2xl font-bold dark:text-slate-300">100%</p>
                   </div>
                 </div>
               </div>
@@ -357,10 +396,12 @@ const description =
             <!-- Content Grid -->
             <div class="grid md:grid-cols-2 gap-8">
               <div class="space-y-4">
-                <h3 class="text-xl font-semibold text-gray-900">
+                <h3
+                  class="text-xl font-semibold text-gray-900 dark:text-slate-200"
+                >
                   Financial Equality
                 </h3>
-                <p class="text-gray-600">
+                <p class="text-gray-600 dark:text-slate-400">
                   The introduction of a cost cap in Formula One marks a
                   significant shift towards financial sustainability. Teams are
                   now restricted to $140 million per year for car development,
@@ -368,7 +409,7 @@ const description =
                   smaller teams. This cap ensures that success is determined
                   more by innovation and efficiency than by financial might.
                 </p>
-                <ul class="space-y-2 text-gray-600">
+                <ul class="space-y-2 text-gray-600 dark:text-slate-400">
                   <li class="flex items-center gap-2">
                     <svg
                       class="w-5 h-5 text-green-500"
@@ -411,10 +452,12 @@ const description =
                 </ul>
               </div>
               <div class="space-y-4">
-                <h3 class="text-xl font-semibold text-gray-900">
+                <h3
+                  class="text-xl font-semibold text-gray-900 dark:text-slate-200"
+                >
                   Impact on Competition
                 </h3>
-                <p class="text-gray-600">
+                <p class="text-gray-600 dark:text-slate-400">
                   This new approach prevents financial dominance from
                   determining championship outcomes. Teams must now prioritize
                   efficiency and strategic resource allocation, leading to more
@@ -423,7 +466,7 @@ const description =
                   creating more opportunities for midfield teams to compete for
                   podiums.
                 </p>
-                <ul class="space-y-2 text-gray-600">
+                <ul class="space-y-2 text-gray-600 dark:text-slate-400">
                   <li class="flex items-center gap-2">
                     <svg
                       class="w-5 h-5 text-green-500"
@@ -471,12 +514,14 @@ const description =
       </section>
 
       <!-- Data-Driven Section -->
-      <section class="py-12">
+      <section class="py-12 bg-gray-100 dark:bg-slate-950">
         <div class="container mx-auto px-4">
           <!-- Header -->
           <div class="mb-16">
-            <h2 class="text-3xl font-bold mb-4">Data-Driven Edge</h2>
-            <div class="prose text-gray-600 text-lg">
+            <h2 class="text-3xl font-bold mb-4 dark:text-slate-100">
+              Data-Driven Edge
+            </h2>
+            <div class="prose text-gray-600 dark:text-slate-400 text-lg">
               <p>
                 In today's F1, data is as critical as horsepower. Teams harness
                 massive streams of telemetry and simulations to guide everything
@@ -496,9 +541,9 @@ const description =
       </section>
 
       <!-- Teamwork Section -->
-      <section class="py-12">
+      <section class="py-12 bg-gray-100 dark:bg-slate-950">
         <div class="container mx-auto px-4">
-          <h2 class="text-3xl font-bold mb-12">
+          <h2 class="text-3xl font-bold mb-12 dark:text-slate-100 text-center">
             Teamwork makes the dream work
           </h2>
 
@@ -508,7 +553,7 @@ const description =
             <!-- One Team Card -->
             <div class="space-y-4">
               <div
-                class="inline-flex items-center justify-center w-16 h-16 rounded-lg bg-gray-200 text-white"
+                class="inline-flex items-center justify-center w-16 h-16 rounded-lg bg-gray-200 text-white dark:bg-slate-300 dark:text-slate-900"
               >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -521,8 +566,8 @@ const description =
                   ></path>
                 </svg>
               </div>
-              <h3 class="">One Team, One Goal</h3>
-              <p class="text-gray-600">
+              <h3 class="dark:text-slate-200">One Team, One Goal</h3>
+              <p class="text-gray-600 dark:text-slate-400">
                 From factory to finish line, everyone works toward a single
                 mission: performance. Designers, mechanics, and support staff
                 all play a part. In F1, collaboration and unity turn potential
@@ -533,7 +578,7 @@ const description =
             <!-- Brains Behind Card -->
             <div class="space-y-4">
               <div
-                class="inline-flex items-center justify-center w-16 h-16 rounded-lg bg-gray-200 text-white"
+                class="inline-flex items-center justify-center w-16 h-16 rounded-lg bg-gray-200 text-white dark:bg-slate-300 dark:text-slate-900"
               >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -546,8 +591,8 @@ const description =
                   ></path>
                 </svg>
               </div>
-              <h3 class="">Brains Behind the Speed</h3>
-              <p class="text-gray-600">
+              <h3 class="dark:text-slate-200">Brains Behind the Speed</h3>
+              <p class="text-gray-600 dark:text-slate-400">
                 Race engineers and strategists are the unsung heroes. They
                 analyze live data, adapt to changing conditions, and guide the
                 driver through every lap. Success relies on trust, quick
@@ -558,7 +603,7 @@ const description =
             <!-- Precision Card -->
             <div class="space-y-4">
               <div
-                class="inline-flex items-center justify-center w-16 h-16 rounded-lg bg-gray-200 text-white"
+                class="inline-flex items-center justify-center w-16 h-16 rounded-lg bg-gray-200 text-white dark:bg-slate-300 dark:text-slate-900"
               >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -571,8 +616,8 @@ const description =
                   ></path>
                 </svg>
               </div>
-              <h3 class="">Precision Behind the Pit Wall</h3>
-              <p class="text-gray-600">
+              <h3 class="dark:text-slate-200">Precision Pit Wall</h3>
+              <p class="text-gray-600 dark:text-slate-400">
                 Teamwork in F1 is a finely tuned operation. Pit crews execute
                 lightning-fast stops, with each member playing a vital role. One
                 mistake can cost seconds — and the race.
