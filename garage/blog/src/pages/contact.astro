@@ -48,44 +48,60 @@ const contacts = [
   </head>
   <body>
     <Header />
-    <main class="max-w-4xl mx-auto py-20">
-      <h1 class="font-bold text-center dark:text-slate-100">Contact Us</h1>
-      <p class="text-center mb-6 dark:text-slate-400">
-        Connect with us on your favorite social platforms.
-      </p>
+    <main>
+      <!-- Hero Section -->
+      <section class="py-12 bg-gray-100 dark:bg-slate-950">
+        <div class="container mx-auto text-center mb-12">
+          <h1 class="text-4xl font-bold mb-4 dark:text-slate-100">
+            Contact Us
+          </h1>
+          <p class="text-xl text-gray-600 dark:text-slate-400">
+            Connect with us on your favorite social platforms.
+          </p>
+        </div>
+      </section>
 
-      <div class="space-y-8 max-w-6xl mx-auto py-20">
-        {
-          contacts.map((contact) => (
-            <div class="border border-gray-200 dark:border-slate-700 dark:bg-slate-900 rounded-lg p-6 flex gap-4 duration-300 ease-in-out hover:bg-gray-800 hover:text-gray-300 group">
-              <i
-                class={
-                  contact.icon +
-                  " text-3xl dark:text-slate-100 transition-colors duration-300 ease-in-out"
-                }
-              />
-              <div class="flex-1">
-                <p class="dark:text-slate-100 transition-colors duration-300 ease-in-out">
-                  {contact.label}
-                </p>
-                <p class="text-base dark:text-slate-400 transition-colors duration-300 ease-in-out group-hover:text-gray-400">
-                  {contact.description}
-                </p>
-                <a
-                  href={contact.link}
-                  class="text-gray-600 dark:text-slate-500 group-hover:underline group-hover:text-gray-300 mt-2 block transition-all duration-300 ease-in-out"
-                >
-                  {contact.linkText}
-                </a>
-              </div>
-            </div>
-          ))
-        }
-      </div>
+      <!-- Contact Cards Section -->
+      <section class="bg-gray-100 dark:bg-slate-950">
+        <div class="container mx-auto max-w-6xl">
+          <div class="space-y-8">
+            {
+              contacts.map((contact) => (
+                <div class="border border-gray-200 dark:border-slate-700 dark:bg-slate-900 rounded-lg p-6 flex gap-4 duration-300 ease-in-out hover:bg-gray-800 hover:text-gray-300 group">
+                  <i
+                    class={
+                      contact.icon +
+                      " text-3xl dark:text-slate-100 transition-colors duration-300 ease-in-out"
+                    }
+                  />
+                  <div class="flex-1">
+                    <p class="dark:text-slate-100 transition-colors duration-300 ease-in-out">
+                      {contact.label}
+                    </p>
+                    <p class="text-base dark:text-slate-400 transition-colors duration-300 ease-in-out group-hover:text-gray-400">
+                      {contact.description}
+                    </p>
+                    <a
+                      href={contact.link}
+                      class="text-gray-600 dark:text-slate-500 group-hover:underline group-hover:text-gray-300 mt-2 block transition-all duration-300 ease-in-out"
+                    >
+                      {contact.linkText}
+                    </a>
+                  </div>
+                </div>
+              ))
+            }
+          </div>
+        </div>
+      </section>
 
-      <QuestionsCard />
+      <!-- Questions Section -->
+      <section class="py-12 bg-gray-100 dark:bg-slate-950">
+        <div class="container mx-auto max-w-4xl">
+          <QuestionsCard />
+        </div>
+      </section>
     </main>
-
     <Footer />
   </body>
 </html>
