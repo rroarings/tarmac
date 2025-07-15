@@ -1,83 +1,86 @@
 ---
-import BaseHead from "../../../../components/BaseHead.astro";
-import Header from "../../../../components/Header.astro";
-import Footer from "../../../../components/Footer.astro";
-import Breadcrumb from "../../../../components/Breadcrumb.astro";
-import DriverCard from "../../../../components/DriverCard.astro";
-import { SITE_TITLE } from "../../../../consts";
-import { getCollection } from "astro:content";
-import BreakpointIndicator from "../../../../components/BreakpointIndicator.astro";
+import BaseHead from "../../../../components/BaseHead.astro"
+import Header from "../../../../components/Header.astro"
+import Footer from "../../../../components/Footer.astro"
+import Breadcrumb from "../../../../components/Breadcrumb.astro"
+import DriverCard from "../../../../components/DriverCard.astro"
+import { SITE_TITLE } from "../../../../consts"
+import { getCollection } from "astro:content"
+import BreakpointIndicator from "../../../../components/BreakpointIndicator.astro"
 
 // Get all drivers for 2025 season
 const drivers = await getCollection("drivers", ({ data }) => {
-  return data.season === "2025";
-});
+	return data.season === "2025"
+})
 
 // Sort drivers by championship position (1-24)
 const sortedDrivers = drivers.sort((a, b) => {
-  // Use championship position first, if equal fall back to points
-  if (a.data.championshipPosition !== b.data.championshipPosition) {
-    return a.data.championshipPosition - b.data.championshipPosition;
-  }
-  return b.data.points - a.data.points;
-});
+	// Use championship position first, if equal fall back to points
+	if (a.data.championshipPosition !== b.data.championshipPosition) {
+		return a.data.championshipPosition - b.data.championshipPosition
+	}
+	return b.data.points - a.data.points
+})
 ---
 
 <!doctype html>
-<html lang="en" class="bg-gray-100 dark:bg-slate-950">
-  <head>
-    <BaseHead
-      title={`2025 F1 Drivers | ${SITE_TITLE}`}
-      description="2025 Formula 1 driver profiles and statistics"
-    />
-  </head>
-  <body>
-    <BreakpointIndicator />
-    <Header />
-    <main>
-      <Breadcrumb
-        items={[
-          { text: "Home", href: "/" },
-          { text: "Seasons", href: "/seasons" },
-          { text: "2025 Season", href: "/seasons/2025/" },
-          { text: "Drivers", href: "/seasons/2025/drivers" },
-        ]}
-      />
-      <!-- Drivers Header -->
-      <section class="py-16 text-center">
-        <div class="container mx-auto px-4">
-          <h1 class="text-4xl font-bold mb-4 dark:text-slate-100">
-            2025 Formula 1 Drivers
-          </h1>
-          <p class="text-lg text-gray-700 dark:text-slate-400">
-            Complete driver profiles and season statistics
-          </p>
-        </div>
-      </section>
+<html
+	lang="en"
+	class="bg-gray-100 dark:bg-slate-950">
+	<head>
+		<BaseHead
+			title={`2025 F1 Drivers | ${SITE_TITLE}`}
+			description="2025 Formula 1 driver profiles and statistics"
+		/>
+	</head>
+	<body>
+		<BreakpointIndicator />
+		<Header />
+		<main>
+			<Breadcrumb
+				items={[
+					{ text: "Home", href: "/" },
+					{ text: "Seasons", href: "/seasons" },
+					{ text: "2025 Season", href: "/seasons/2025/" },
+					{ text: "Drivers", href: "/seasons/2025/drivers" },
+				]}
+			/>
+			<!-- Drivers Header -->
+			<section class="py-16 text-center">
+				<div class="container mx-auto px-4">
+					<h1 class="text-4xl font-bold mb-4 dark:text-slate-100">2025 Formula 1 Drivers</h1>
+					<p class="text-lg text-gray-700 dark:text-slate-400">
+						Complete driver profiles and season statistics
+					</p>
+				</div>
+			</section>
 
-      <!-- Drivers Grid -->
-      <section class="pt-4 pb-16">
-        <div class="container mx-auto">
-          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {
-              sortedDrivers.map((driver, i) => (
-                <DriverCard driver={driver} index={i} eagerCount={6} />
-              ))
-            }
-          </div>
-        </div>
-      </section>
+			<!-- Drivers Grid -->
+			<section class="pt-4 pb-16">
+				<div class="container mx-auto">
+					<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+						{
+							sortedDrivers.map((driver, i) => (
+								<DriverCard
+									driver={driver}
+									index={i}
+									eagerCount={6}
+								/>
+							))
+						}
+					</div>
+				</div>
+			</section>
 
-      <!-- Back Link -->
-      <section class="py-8 text-center">
-        <a
-          href="/seasons/2025"
-          class="border-2 border-transparent transition-all duration-300 bg-gray-600 hover:bg-gray-700 dark:bg-slate-700 dark:hover:bg-slate-800 dark:hover:border-slate-600 text-white font-bold py-2 px-4 rounded"
-        >
-          ← Back to 2025 Season
-        </a>
-      </section>
-    </main>
-    <Footer />
-  </body>
+			<!-- Back Link -->
+			<section class="py-8 text-center">
+				<a
+					href="/seasons/2025"
+					class="inline-block border-2 border-transparent transition-colors duration-300 bg-slate-600 dark:border-slate-600 dark:hover:bg-slate-800 hover:bg-slate-700 text-white py-2 px-4 rounded">
+					← Back to 2025 Season
+				</a>
+			</section>
+		</main>
+		<Footer />
+	</body>
 </html>
