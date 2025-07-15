@@ -4,9 +4,10 @@ import { SITE_TITLE } from "../consts";
 import { Icon } from "astro-icon/components";
 import { Image } from "astro:assets";
 import tracksideLogo from "/src/assets/logos/trackside-logoblack.png";
+import tracksideLogoWhite from "/src/assets/logos/trackside-logowhite.png";
 ---
 
-<header class="sticky top-0 z-50 bg-white shadow-sm">
+<header class="sticky top-0 z-50 bg-white dark:bg-slate-900 shadow-sm">
   <nav class="container mx-auto px-4">
     <div class="flex items-center justify-between h-16">
       <!-- Logo -->
@@ -15,8 +16,12 @@ import tracksideLogo from "/src/assets/logos/trackside-logoblack.png";
           <Image
             src={tracksideLogo}
             alt="Trackside Logo"
-            class="size-48"
-            loading="eager"
+            class="size-48 block dark:hidden"
+          />
+          <Image
+            src={tracksideLogoWhite}
+            alt="Trackside Logo (Dark)"
+            class="size-48 hidden dark:block"
           />
         </a>
       </div>
@@ -35,14 +40,18 @@ import tracksideLogo from "/src/assets/logos/trackside-logoblack.png";
           <div
             class="hidden group-hover:block absolute left-0 top-full pt-2 w-48"
           >
-            <div class="bg-white border border-gray-200 rounded-md shadow-lg">
+            <div
+              class="bg-white border dark:bg-slate-800 dark:border-slate-600 border-gray-200 rounded-md shadow-lg"
+            >
               <a
                 href="/seasons/2025"
-                class="block px-4 py-2 text-sm hover:bg-gray-200">2025 Season</a
+                class="block px-4 py-2 text-sm dark:text-slate-300 dark:hover:bg-slate-600 hover:bg-gray-200"
+                >2025 Season</a
               >
               <a
                 href="/seasons/2024"
-                class="block px-4 py-2 text-sm hover:bg-gray-200">2024 Season</a
+                class="block px-4 py-2 text-sm dark:text-slate-300 dark:hover:bg-slate-600 hover:bg-gray-200"
+                >2024 Season</a
               >
             </div>
           </div>
@@ -57,19 +66,22 @@ import tracksideLogo from "/src/assets/logos/trackside-logoblack.png";
           <div
             class="hidden group-hover:block absolute left-0 top-full pt-2 w-48"
           >
-            <div class="bg-white border border-gray-200 rounded-md shadow-lg">
+            <div
+              class="bg-white border dark:bg-slate-800 border-gray-200 dark:border-slate-600 rounded-md shadow-lg"
+            >
               <a
                 href="/about/whatis"
-                class="block px-4 py-2 text-sm hover:bg-gray-200">What is F1</a
+                class="block px-4 py-2 text-sm dark:text-slate-300 dark:hover:bg-slate-600 hover:bg-gray-200"
+                >What is F1</a
               >
               <a
                 href="/about/technologies"
-                class="block px-4 py-2 text-sm hover:bg-gray-200"
+                class="block px-4 py-2 text-sm dark:text-slate-300 dark:hover:bg-slate-600 hover:bg-gray-200"
                 >Technology of F1</a
               >
               <a
                 href="/about/future"
-                class="block px-4 py-2 text-sm hover:bg-gray-200"
+                class="block px-4 py-2 text-sm dark:text-slate-300 dark:hover:bg-slate-600 hover:bg-gray-200"
                 >Future of F1</a
               >
             </div>
@@ -78,32 +90,40 @@ import tracksideLogo from "/src/assets/logos/trackside-logoblack.png";
 
         <!-- More Dropdown -->
         <div class="relative group">
-          <HeaderLink href="/more" class="inline-flex items-center">
+          <HeaderLink href="/about/more" class="inline-flex items-center">
             <span>More</span>
             <Icon name="mdi:chevron-down" size={16} class="ml-1" />
           </HeaderLink>
           <div
             class="hidden group-hover:block absolute right-0 top-full pt-2 w-48"
           >
-            <div class="bg-white border border-gray-200 rounded-md shadow-lg">
-              <a href="/about" class="block px-4 py-2 text-sm hover:bg-gray-200"
+            <div
+              class="bg-white border dark:bg-slate-800 border-gray-200 dark:border-slate-600 rounded-md shadow-lg"
+            >
+              <a
+                href="/about"
+                class="block px-4 py-2 text-sm dark:text-slate-300 dark:hover:bg-slate-600 hover:bg-gray-200"
                 >About</a
               >
               <a
                 href="/attributions"
-                class="block px-4 py-2 text-sm hover:bg-gray-200"
+                class="block px-4 py-2 text-sm dark:text-slate-300 dark:hover:bg-slate-600 hover:bg-gray-200"
                 >Attributions</a
               >
               <a
                 href="/contact"
-                class="block px-4 py-2 text-sm hover:bg-gray-200">Contact</a
+                class="block px-4 py-2 text-sm dark:text-slate-300 dark:hover:bg-slate-600 hover:bg-gray-200"
+                >Contact</a
               >
-              <a href="/faqs" class="block px-4 py-2 text-sm hover:bg-gray-200"
+              <a
+                href="/faqs"
+                class="block px-4 py-2 text-sm dark:text-slate-300 dark:hover:bg-slate-600 hover:bg-gray-200"
                 >FAQs</a
               >
               <a
                 href="/components"
-                class="block px-4 py-2 text-sm hover:bg-gray-200">Components</a
+                class="block px-4 py-2 text-sm dark:text-slate-300 dark:hover:bg-slate-600 hover:bg-gray-200"
+                >Components</a
               >
             </div>
           </div>
