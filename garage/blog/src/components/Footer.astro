@@ -3,6 +3,7 @@ const today = new Date()
 import { Icon } from "astro-icon/components"
 import { Image } from "astro:assets"
 import tracksideLogo from "/src/assets/logos/trackside-logoblack.png"
+import tracksideLogoWhite from "/src/assets/logos/trackside-logowhite.png"
 ---
 
 <footer>
@@ -13,9 +14,13 @@ import tracksideLogo from "/src/assets/logos/trackside-logoblack.png"
 				<Image
 					src={tracksideLogo}
 					alt="Trackside Logo"
-					class="size-48"
+					class="size-48 block dark:hidden"
 				/>
-
+				<Image
+					src={tracksideLogoWhite}
+					alt="Trackside Logo (Dark)"
+					class="size-48 hidden dark:block"
+				/>
 				<p class="mt-4 max-w-xs text-gray-500 dark:text-slate-400">
 					Discover Formula 1 from a fan perspective.
 				</p>
