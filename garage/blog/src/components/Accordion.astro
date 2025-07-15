@@ -13,9 +13,9 @@ const { items } = Astro.props;
 
 {
   items.map((item) => (
-    <div class="accordion group relative rounded-md border border-slate-200 mb-4 last:mb-0">
+    <div class="accordion group relative rounded-md dark:bg-slate-900 border border-slate-200 dark:border-slate-700 mb-4 last:mb-0">
       <button
-        class="accordion__button flex w-full items-center justify-between p-4 text-lg font-medium text-gray-900 transition cursor-pointer"
+        class="accordion__button flex w-full items-center justify-between p-4 text-lg font-medium text-gray-900 dark:text-slate-300 transition cursor-pointer"
         type="button"
         id={`${item.question}-button`}
         aria-expanded="false"
@@ -33,7 +33,7 @@ const { items } = Astro.props;
         aria-labelledby={`${item.question}-button`}
         class="accordion__content hidden max-h-0 overflow-hidden px-4 transition-all duration-300 ease-in-out"
       >
-        <div class="text-gray-600 prose pb-4 pt-2">
+        <div class="text-gray-600 dark:text-slate-400 prose pb-4 pt-2">
           <Fragment set:html={item.answer} />
         </div>
       </div>
