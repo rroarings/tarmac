@@ -2,7 +2,8 @@
 title: "What Makes a Great Driver"
 description: "Lorem ipsum dolor sit amet"
 pubDate: "Jul 01 2025"
-heroImage: "/src/assets/section/component/blog-placeholder-2.jpg"
+heroImage: "/src/assets/circuits/05saudiarabia/sa07.jpg"
+heroImageAlt: "Evolutions of Cars hero image"
 ---
 
 ## How is Greatness Measured?
