@@ -1,97 +1,97 @@
 ---
 // Define the props that this component accepts
-import type { CollectionEntry } from "astro:content";
-import { Image } from "astro:assets";
-import williamsBG from "../assets/components/driverCard-template-williams.png";
-import ferrariBG from "../assets/components/driverCard-template-ferrari.png";
-import kickSauberBG from "../assets/components/driverCard-template-kicksauber.png";
-import mclarenBG from "../assets/components/driverCard-template-mclaren.png";
-import mercedesBG from "../assets/components/driverCard-template-mercedes.png";
-import astonMartinBG from "../assets/components/driverCard-template-astonmartin.png";
-import haasBG from "../assets/components/driverCard-template-haas.png";
-import alpineBG from "../assets/components/driverCard-template-alpine.png";
-import racingBullsBG from "../assets/components/driverCard-template-racingBulls.png";
-import redBullBG from "../assets/components/driverCard-template-redbull.png";
+import type { CollectionEntry } from "astro:content"
+import { getCollection } from "astro:content"
+import { Image } from "astro:assets"
+import williamsBG from "../assets/components/driverCard-template-williams.png"
+import ferrariBG from "../assets/components/driverCard-template-ferrari.png"
+import kickSauberBG from "../assets/components/driverCard-template-kicksauber.png"
+import mclarenBG from "../assets/components/driverCard-template-mclaren.png"
+import mercedesBG from "../assets/components/driverCard-template-mercedes.png"
+import astonMartinBG from "../assets/components/driverCard-template-astonmartin.png"
+import haasBG from "../assets/components/driverCard-template-haas.png"
+import alpineBG from "../assets/components/driverCard-template-alpine.png"
+import racingBullsBG from "../assets/components/driverCard-template-racingBulls.png"
+import redBullBG from "../assets/components/driverCard-template-redbull.png"
 
 // Team background mapping
 const teamBgMap: Record<string, any> = {
-  McLaren: mclarenBG,
-  Ferrari: ferrariBG,
-  Mercedes: mercedesBG,
-  "Red Bull Racing": redBullBG,
-  Williams: williamsBG,
-  "Kick Sauber": kickSauberBG,
-  "Racing Bulls": racingBullsBG,
-  "Aston Martin": astonMartinBG,
-  Haas: haasBG,
-  Alpine: alpineBG,
-};
-
-interface Props {
-  driver: CollectionEntry<"drivers">;
-  year?: string;
+	"McLaren": mclarenBG,
+	"Ferrari": ferrariBG,
+	"Mercedes": mercedesBG,
+	"Williams": williamsBG,
+	"Red Bull Racing": redBullBG,
+	"Kick Sauber": kickSauberBG,
+	"Racing Bulls": racingBullsBG,
+	"Aston Martin": astonMartinBG,
+	"Haas": haasBG,
+	"Alpine": alpineBG,
 }
 
-const { driver, year = "2025" } = Astro.props;
-const teamBg = teamBgMap[driver.data.team] || null;
+interface Props {
+	driver: CollectionEntry<"drivers">
+	year?: string
+}
+
+const { driver, year = "2025" } = Astro.props
+const teamBg = teamBgMap[driver.data.team] || null
 ---
 
-<a href={`/seasons/${year}/drivers/${driver.id}`} class="block h-full">
-  <article
-    class="group rounded-xl overflow-hidden transition-all duration-300 h-full border border-neutral-400 relative"
-    style={teamBg
-      ? `background-image: url('${teamBg.src}'); background-size: cover; background-position: center;`
-      : ""}
-  >
-    {/* Overlay for readability */}
-    <div class="absolute inset-0 bg-gray-900/20 pointer-events-none"></div>
-    <div class="relative z-10 p-4 pb-0 h-full flex flex-col justify-between">
-      {
-        /* Main Grid Layout - 2 columns with flag and driver in first, position in second */
-      }
-      <div class="flex justify-between gap-4 items-start">
-        {/* Left side with driver info */}
-        <div class="flex flex-col">
-          {/* Name with flag */}
-          <div class="flex items-start gap-2">
-            <h3 class="">
-              <span class="text-lg text-gray-100 block"
-                >{driver.data.firstName}</span
-              >
-              <span class="text-4xl text-gray-100 font-bold block -mt-1"
-                >{driver.data.lastName}</span
-              >
-            </h3>
-          </div>
-          {/* Team */}
-          <div class="">
-            <span class="text-gray-200">{driver.data.team}</span>
-          </div>
-          {/* Number */}
-          <span class="text-gray-200">#{driver.data.number}</span>
-          {/* Flag */}
-          <span
-            class={`mt-2 fi fi-${driver.data.countryCode} border-2 border-gray-100 rounded`}
-            aria-hidden="true"></span>
-        </div>
-        {/* Position and Points - Right side */}
-        <div class="text-end text-gray-100">
-          <span class="text-2xl font-semibold block"
-            >{driver.data.points}
-            <span class="text-base font-normal">pts</span></span
-          >
-        </div>
-      </div>
-      {/* Driver Image */}
-      <div class="overflow-hidden flex justify-end mt-4">
-        <img
-          src={driver.data.profileImage ||
-            "/src/assets/components/driverCard-template-placeholder.png"}
+<a
+	href={`/seasons/${year}/drivers/${driver.id}`}
+	class="block h-full">
+	<article
+		class="group rounded-xl overflow-hidden transition-all duration-300 h-full border border-neutral-400 relative"
+		style={teamBg ?
+			`background-image: url('${teamBg.src}'); background-size: cover; background-position: center;`
+		:	""}>
+		{/* Overlay for readability */}
+		<div class="absolute inset-0 bg-gray-900/20 pointer-events-none"></div>
+		<div class="relative z-10 p-4 pb-0 h-full flex flex-col justify-between">
+			{/* Main Grid Layout - 2 columns with flag and driver in first, position in second */}
+			<div class="flex justify-between gap-4 items-start">
+				{/* Left side with driver info */}
+				<div class="flex flex-col">
+					{/* Name with flag */}
+					<div class="flex items-start gap-2">
+						<h3 class="">
+							<span class="text-lg text-gray-100 block">{driver.data.firstName}</span>
+							<span class="text-4xl text-gray-100 font-bold block -mt-1"
+								>{driver.data.lastName}</span
+							>
+						</h3>
+					</div>
+					{/* Team */}
+					<div class="">
+						<span class="text-gray-200">{driver.data.team}</span>
+					</div>
+					{/* Number */}
+					<span class="text-gray-200">#{driver.data.number}</span>
+					{/* Flag */}
+					<span
+						class={`mt-2 fi fi-${driver.data.countryCode} border-2 border-gray-100 rounded`}
+						aria-hidden="true"
+					></span>
+				</div>
+				{/* Position and Points - Right side */}
+				<div class="text-end text-gray-100">
+					<span class="text-2xl font-semibold block"
+						>{driver.data.points}
+						<span class="text-base font-normal">pts</span></span
+					>
+				</div>
+			</div>
+			{/* Driver Image */}
+			<div class="overflow-hidden flex justify-end mt-4">
+        <Image
+          src={driver.data.profileImage || "/src/assets/components/driverCard-template-placeholder.png"}
           alt={`${driver.data.firstName} ${driver.data.lastName}`}
-          class="max-h-full object-contain"
-          loading="lazy"
-        />
-      </div>
-    </div>
-  </article>
+          class=" object-contain"
+          height={400}
+          width={400}
+          />
+				
+			</div>
+		</div>
+	</article>
 </a>
