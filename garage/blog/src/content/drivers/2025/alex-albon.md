@@ -12,8 +12,8 @@ championshipPosition: 8
 raceWins: 8
 podiums: 26
 points: 46
-profileImage: "/src/assets/drivers/albon-02.png"
-profileImageLarge: "/src/assets/drivers/albon-02.png"
+profileImage: "/src/assets/teams/williams/albon-02.png"
+profileImageLarge: "/src/assets/teams/williams/albon-02.png"
 relatedDrivers:
   - lewis-hamilton
 ---

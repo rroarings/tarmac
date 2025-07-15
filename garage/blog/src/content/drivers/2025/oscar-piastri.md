@@ -12,8 +12,8 @@ championshipPosition: 1
 raceWins: 4
 podiums: 14
 points: 234
-profileImage: "/src/assets/drivers/piastri-02.png"
-profileImageLarge: "/src/assets/drivers/piastri-02.png"
+profileImage: "/src/assets/teams/mclaren/piastri-02.png"
+profileImageLarge: "/src/assets/teams/mclaren/piastri-02.png"
 ---
 
 # Lando Norris

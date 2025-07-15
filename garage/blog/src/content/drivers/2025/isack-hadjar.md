@@ -12,8 +12,8 @@ championshipPosition: 11
 raceWins: 8
 podiums: 26
 points: 21
-profileImage: "/src/assets/drivers/f1/2024/hadjar-headcrop-01.png"
-profileImageLarge: "/src/assets/drivers/hadjar-02.png"
+profileImage: "/src/assets/teams/racingbulls/hadjar-02.png"
+profileImageLarge: "/src/assets/teams/racingbulls/hadjar-02.png"
 relatedDrivers:
   - lewis-hamilton
 ---

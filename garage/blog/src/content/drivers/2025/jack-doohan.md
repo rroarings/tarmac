@@ -12,8 +12,8 @@ championshipPosition: 21
 raceWins: 0
 podiums: 0
 points: 0
-profileImage: "/src/assets/drivers/f1/2024/doohan-headcrop-01.png"
-profileImageLarge: "/src/assets/drivers/doohan-02.png"
+profileImage: "/src/assets/teams/alpine/doohan-02.png"
+profileImageLarge: "/src/assets/teams/alpine/doohan-02.png"
 ---
 
 # Andrea Kimi Antonelli

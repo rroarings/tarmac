@@ -12,8 +12,8 @@ championshipPosition: 10
 raceWins: 8
 podiums: 26
 points: 23
-profileImage: "/src/assets/drivers/f1/2024/ocon-headcrop-01.png"
-profileImageLarge: "/src/assets/drivers/ocon-02.png"
+profileImage: "/src/assets/teams/haas/ocon-02.png"
+profileImageLarge: "/src/assets/teams/haas/ocon-02.png"
 relatedDrivers:
   - oliver-bearman
 ---

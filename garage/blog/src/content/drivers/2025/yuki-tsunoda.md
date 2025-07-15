@@ -12,8 +12,8 @@ championshipPosition: 17
 raceWins: 0
 podiums: 0
 points: 12
-profileImage: "/src/assets/drivers/f1/2024/tsunoda-headcrop-01.png"
-profileImageLarge: "/src/assets/drivers/tsunoda-02.png"
+profileImage: "/src/assets/teams/redbullracing/tsunoda-02.png"
+profileImageLarge: "/src/assets/teams/redbullracing/tsunoda-02.png"
 relatedDrivers:
   - lewis-hamilton
 ---

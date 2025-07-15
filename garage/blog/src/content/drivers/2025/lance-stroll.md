@@ -12,8 +12,8 @@ championshipPosition: 12
 raceWins: 8
 podiums: 26
 points: 20
-profileImage: "/src/assets/drivers/f1/2024/stroll-headcrop-01.png"
-profileImageLarge: "/src/assets/drivers/stroll-02.png"
+profileImage: "/src/assets/teams/astonmartin/stroll-02.png"
+profileImageLarge: "/src/assets/teams/astonmartin/stroll-02.png"
 relatedDrivers:
   - lewis-hamilton
 ---

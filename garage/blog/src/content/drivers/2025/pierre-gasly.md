@@ -12,8 +12,8 @@ championshipPosition: 13
 raceWins: 1
 podiums: 5
 points: 19
-profileImage: "/src/assets/drivers/f1/2024/gasly-headcrop-01.png"
-profileImageLarge: "/src/assets/drivers/gasly-02.png"
+profileImage: "/src/assets/teams/alpine/gasly-02.png"
+profileImageLarge: "/src/assets/teams/alpine/gasly-02.png"
 relatedDrivers:
   - lewis-hamilton
 ---
