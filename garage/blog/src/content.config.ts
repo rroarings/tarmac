@@ -29,8 +29,8 @@ const drivers = defineCollection({
       nationality: z.string(),
       countryCode: z.string(),
       age: z.number(),
-      profileImage: z.string(), // Smaller image for driver cards
-      profileImageLarge: z.string().optional(), // Larger image for profile pages
+      profileImage: z.string(),
+      profileImageLarge: z.string().optional(),
       season: z.enum(["2024", "2025"]),
       championships: z.number().default(0),
       championshipPosition: z.number().default(0),
