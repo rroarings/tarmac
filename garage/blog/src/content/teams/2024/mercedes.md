@@ -11,6 +11,7 @@ championshipPosition: 4
 championships: 6
 teamLogo: "/images/teams/mercedes-logo.jpg"
 carImage: "/src/assets/cars/2024/car-merc-side-main.png"
+carImageAlt: "Mercedes 2024 Constructor car"
 ---
 
 # Mercedes (2024)

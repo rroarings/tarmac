@@ -11,6 +11,7 @@ championshipPosition: 7
 championships: 0
 teamLogo: "/images/teams/redbull-logo.jpg"
 carImage: "/src/assets/cars/2024/car-haas-side-main.png"
+carImageAlt: "Haas 2024 Constructor car"
 ---
 
 # Haas (2024)

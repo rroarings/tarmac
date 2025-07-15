@@ -11,6 +11,7 @@ championshipPosition: 5
 championships: 6
 teamLogo: "/images/teams/redbull-logo.jpg"
 carImage: "/src/assets/cars/2024/car-williams-side-main.png"
+carImageAlt: "Williams 2025 Constructor car"
 ---
 
 # Williams

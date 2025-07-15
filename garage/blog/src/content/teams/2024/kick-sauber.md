@@ -11,6 +11,7 @@ championshipPosition: 10
 championships: 0
 teamLogo: "/images/teams/redbull-logo.jpg"
 carImage: "/src/assets/cars/2024/car-kicksauber-side-main.png"
+carImageAlt: "Kick Sauber 2024 Constructor car"
 ---
 
 # Kick Sauber (2024)

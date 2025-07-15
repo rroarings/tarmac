@@ -11,6 +11,7 @@ championshipPosition: 1
 championships: 6
 teamLogo: "/images/teams/mclaren-logo.jpg"
 carImage: "/src/assets/cars/2024/car-mclaren-side-main.png"
+carImageAlt: "McLaren 2024 Constructor car"
 ---
 
 # McLaren (2024)

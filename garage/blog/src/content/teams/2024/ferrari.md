@@ -11,6 +11,7 @@ championshipPosition: 2
 championships: 6
 teamLogo: "/images/teams/ferrari-logo.jpg"
 carImage: "/src/assets/cars/2024/car-ferrari-side-main.png"
+carImageAlt: "Ferrari 2024 Constructor car"
 ---
 
 # Ferrari (2024)

@@ -11,6 +11,7 @@ championshipPosition: 9
 championships: 0
 teamLogo: "/images/teams/redbull-logo.jpg"
 carImage: "/src/assets/cars/2024/car-astonmartin-side-main.png"
+carImageAlt: "Aston Martin 2025 Constructor car"
 ---
 
 # Aston Martin

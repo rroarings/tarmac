@@ -11,6 +11,7 @@ championshipPosition: 3
 championships: 6
 teamLogo: "/images/teams/redbull-logo.jpg"
 carImage: "/src/assets/cars/2024/car-redbull-side-main.png"
+carImageAlt: "Red Bull Racing 2024 Constructor car"
 ---
 
 # Red Bull Racing (2024)

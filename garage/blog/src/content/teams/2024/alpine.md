@@ -11,6 +11,7 @@ championshipPosition: 6
 championships: 0
 teamLogo: "/images/teams/redbull-logo.jpg"
 carImage: "/src/assets/cars/2024/car-alpine-side-main.png"
+carImageAlt: "Alpine 2024 Constructor car"
 ---
 
 # Alpine (2024)
