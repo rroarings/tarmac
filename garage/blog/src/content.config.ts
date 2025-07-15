@@ -49,7 +49,7 @@ const teams = defineCollection({
       carModel: z.string(),
       season: z.enum(["2024", "2025"]),
       drivers: z.array(z.string()),
-      driverRefs: z.array(reference("drivers")).optional(), // References to driver entries
+      driverRefs: z.array(reference("drivers")).optional(),
       principal: z.string(),
       engine: z.string(),
       chassis: z.string(),
