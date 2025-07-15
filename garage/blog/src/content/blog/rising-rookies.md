@@ -2,7 +2,8 @@
 title: "Spotlight: Rising Stars in Formula 1"
 description: "Profile young drivers making an impact in the sport and shaping the future of Formula 1."
 pubDate: "Jul 02 2025"
-heroImage: "/src/assets/circuits/08monaco/mc05.jpg"
+heroImage: "/src/assets/circuits/05saudiarabia/sa07.jpg"
+heroImageAlt: "Evolutions of Cars hero image"
 ---
 
 ## Spotlight: Rising Stars in Formula 1
