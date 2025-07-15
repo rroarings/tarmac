@@ -8,18 +8,17 @@ type Props = HTMLAttributes<"a"> & {
 
 const { href, class: className, ...props } = Astro.props;
 const { pathname } = Astro.url;
-const subpath = pathname.match(/[^\/]+/g);
-const isActive =
-  href === pathname || href === "/" + (subpath ? subpath[0] : "");
+// Only mark as active if href matches pathname exactly
+const isActive = href === pathname;
 ---
 
 <a
   href={href}
   class:list={[
-    "px-3 py-2 rounded-md text-sm font-medium transition-all duration-300",
+    "px-3 py-2 rounded-md transition-all duration-300",
     {
       "text-blue-500 transition-all duration-300 hover:text-blue-400": isActive,
-      "text-gray-700 dark:text-slate-400 transition-bg duration-300 hover:text-gray-900 ease-in-out hover:bg-gray-200":
+      "text-gray-700 dark:text-slate-400 transition-all duration-300 hover:text-gray-900 hover:bg-gray-200":
         !isActive,
     },
     className,
