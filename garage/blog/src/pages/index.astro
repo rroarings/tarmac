@@ -63,17 +63,19 @@ const features = [
   <body>
     <BreakpointIndicator />
     <Header />
-    <main>
+    <main class="bg-gray-100 dark:bg-slate-950">
       <!-- Hero Section -->
-      <section class="pb-10 bg-gray-100">
+      <section class="pb-10 bg-gray-100 dark:bg-slate-950">
         <div class="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
           <div class="text-center">
             <h1
-              class="max-w-4xl mx-auto mb-4 text-4xl font-bold leading-tight text-gray-900 sm:leading-tight sm:text-5xl lg:text-6xl lg:leading-tight"
+              class="max-w-4xl mx-auto mb-4 text-4xl font-bold leading-tight text-gray-900 sm:leading-tight sm:text-5xl lg:text-6xl lg:leading-tight dark:text-slate-100"
             >
               Your Trackside View of Formula 1
             </h1>
-            <p class="max-w-2xl mx-auto px-6 text-lg text-gray-600 font-inter">
+            <p
+              class="max-w-2xl mx-auto px-6 text-lg text-gray-600 dark:text-slate-300 font-inter"
+            >
               Experience F1 through a fan's perspective. Get the latest race
               insights, driver profiles, and in-depth analysis of the world's
               most exciting motorsport.
@@ -84,14 +86,14 @@ const features = [
               <a
                 href="/seasons/2025"
                 title=""
-                class="mb-3 sm:mb-0 inline-flex items-center justify-center w-full px-8 py-3 text-lg text-white transition-all duration-300 bg-gray-900 border-2 border-transparent sm:w-auto rounded-xl hover:bg-rose-600 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-900"
+                class="mb-3 sm:mb-0 inline-flex items-center justify-center w-full px-8 py-3 text-lg text-white transition-all duration-300 bg-gray-900 border-2 border-transparent sm:w-auto rounded-xl hover:bg-rose-600 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-900 dark:bg-slate-300 dark:text-slate-900 dark:hover:text-slate-100"
                 role="button"
               >
                 Explore the 2025 Season
               </a>
               <a
                 href="/blog"
-                class="inline-flex items-center justify-center w-full px-8 py-3 text-lg text-gray-900 hover:text-white transition-all duration-300 bg-gray-100 border-2 border-gray-600 sm:w-auto rounded-xl hover:bg-gray-600 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-900"
+                class="inline-flex items-center justify-center w-full px-8 py-3 text-lg text-gray-900 hover:text-white transition-all duration-300 bg-gray-100 border-2 border-gray-600 sm:w-auto rounded-xl hover:bg-gray-600 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-900 dark:bg-transparent dark:hover:bg-slate-900/50 dark:border-slate-700 dark:hover:border-slate-500 dark:text-slate-400"
                 role="button">Read Latest Analysis</a
               >
             </div>
