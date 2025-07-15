@@ -55,6 +55,7 @@ const teams = defineCollection({
       chassis: z.string(),
       carImage: image(),
       carImageLarge: image().optional(),
+      carImageAlt: z.string(),
       teamLogo: z.string().optional(),
       constructorPoints: z.number().default(0),
       championships: z.number().default(0),
