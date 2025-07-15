@@ -6,7 +6,7 @@ season: "2025"
 winner: ""
 winningTeam: ""
 fastestLapTime: ""
-trackImage: "/src/assets/circuits/01australia/aus01.jpg"
+trackImage: "/src/assets/section/component/blog-placeholder-2.jpg"
 trackImageAlt: "Las Vegas Strip Circuit image"
 raceNumber: 22
 completed: false
