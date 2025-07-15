@@ -21,7 +21,7 @@ const description =
 ---
 
 <!doctype html>
-<html lang="en">
+<html lang="en" class="bg-gray-100 dark:bg-slate-950">
   <head>
     <BaseHead title={pageTitle} description={description} />
   </head>
@@ -32,11 +32,13 @@ const description =
     <main>
       <!-- Hero Section -->
       <div class="py-10 text-center">
-        <h1 class="text-4xl sm:text-5xl font-bold text-gray-900 mb-4">
+        <h1
+          class="text-4xl sm:text-5xl font-bold text-gray-900 dark:text-slate-100 mb-4"
+        >
           {pageTitle}
         </h1>
         <div class="max-w-3xl mx-auto">
-          <p class="text-xl text-gray-600 mb-8">
+          <p class="text-xl text-gray-600 dark:text-slate-400 mb-8">
             Formula 1 has always been at the forefront of technological
             advancements, and the future promises to be no different. From
             cutting-edge aerodynamics to hybrid power units, the sport continues
@@ -44,7 +46,9 @@ const description =
             performance.
           </p>
         </div>
-        <div class="max-w-4xl mx-auto overflow-hidden rounded-lg shadow-xl">
+        <div
+          class="max-w-4xl mx-auto overflow-hidden rounded-lg shadow-xl dark:shadow-slate-800"
+        >
           <Image src={bh03} alt="weepah" loading="eager" />
         </div>
       </div>
@@ -131,11 +135,13 @@ const description =
       />
 
       <!-- Rookies Showcase Section -->
-      <section class="bg-gray-100 py-12">
+      <section class="bg-gray-100 dark:bg-slate-950 py-16">
         <div class="container mx-auto px-4">
           <div class="text-center mb-12">
-            <h2 class="text-3xl font-bold mb-4">What does the future hold?</h2>
-            <p class="text-gray-600 text-lg">
+            <h2 class="text-3xl font-bold mb-4 dark:text-slate-100">
+              What does the future hold?
+            </h2>
+            <p class="text-gray-600 dark:text-slate-400 text-lg">
               These rising stars are already making headlines. Here's who to
               watch as Formula 1 evolves into a new era.
             </p>
@@ -145,10 +151,12 @@ const description =
             class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-7xl mx-auto"
           >
             <!-- Kimi Antonelli -->
-            <div class="rounded-xl bg-gray-200/80">
+            <div class="rounded-xl bg-gray-200/80 dark:bg-slate-800">
               <div class="p-6">
-                <h3 class="text-xl font-bold mb-2">Kimi Antonelli</h3>
-                <p class="text-gray-600">
+                <h3 class="text-xl font-bold mb-2 dark:text-slate-100">
+                  Kimi Antonelli
+                </h3>
+                <p class="text-gray-600 dark:text-slate-400">
                   Mercedes junior driver making waves in Formula 2 with
                   exceptional race craft and maturity beyond his years.
                 </p>
@@ -162,10 +170,12 @@ const description =
             </div>
 
             <!-- Oliver Bearman -->
-            <div class="rounded-xl bg-gray-200/80">
+            <div class="rounded-xl bg-gray-200/80 dark:bg-slate-800">
               <div class="p-6">
-                <h3 class="text-xl font-bold mb-2">Oliver Bearman</h3>
-                <p class="text-gray-600">
+                <h3 class="text-xl font-bold mb-2 dark:text-slate-100">
+                  Oliver Bearman
+                </h3>
+                <p class="text-gray-600 dark:text-slate-400">
                   Ferrari Academy standout showing impressive pace and
                   consistency in Formula 2.
                 </p>
@@ -179,10 +189,12 @@ const description =
             </div>
 
             <!-- Isack Hadjar -->
-            <div class="rounded-xl bg-gray-200/80">
+            <div class="rounded-xl bg-gray-200/80 dark:bg-slate-800">
               <div class="p-6">
-                <h3 class="text-xl font-bold mb-2">Isack Hadjar</h3>
-                <p class="text-gray-600">
+                <h3 class="text-xl font-bold mb-2 dark:text-slate-100">
+                  Isack Hadjar
+                </h3>
+                <p class="text-gray-600 dark:text-slate-400">
                   Red Bull junior proving his worth with aggressive yet
                   calculated racing style in Formula 2.
                 </p>
@@ -196,10 +208,12 @@ const description =
             </div>
 
             <!-- Gabriel Bortoleto -->
-            <div class="rounded-xl bg-gray-200/80">
+            <div class="rounded-xl bg-gray-200/80 dark:bg-slate-800">
               <div class="p-6">
-                <h3 class="text-xl font-bold mb-2">Gabriel Bortoleto</h3>
-                <p class="text-gray-600">
+                <h3 class="text-xl font-bold mb-2 dark:text-slate-100">
+                  Gabriel Bortoleto
+                </h3>
+                <p class="text-gray-600 dark:text-slate-400">
                   McLaren junior talent displaying remarkable adaptability and
                   raw speed in his rookie F2 campaign.
                 </p>
@@ -213,10 +227,12 @@ const description =
             </div>
 
             <!-- Jack Doohan -->
-            <div class="rounded-xl bg-gray-200/80">
+            <div class="rounded-xl bg-gray-200/80 dark:bg-slate-800">
               <div class="p-6">
-                <h3 class="text-xl font-bold mb-2">Jack Doohan</h3>
-                <p class="text-gray-600">
+                <h3 class="text-xl font-bold mb-2 dark:text-slate-100">
+                  Jack Doohan
+                </h3>
+                <p class="text-gray-600 dark:text-slate-400">
                   Alpine Academy driver showcasing F1-level pace and technical
                   understanding in Formula 2.
                 </p>
@@ -227,10 +243,12 @@ const description =
             </div>
 
             <!-- Liam Lawson -->
-            <div class="rounded-xl bg-gray-200/80">
+            <div class="rounded-xl bg-gray-200/80 dark:bg-slate-800">
               <div class="p-6">
-                <h3 class="text-xl font-bold mb-2">Liam Lawson</h3>
-                <p class="text-gray-600">
+                <h3 class="text-xl font-bold mb-2 dark:text-slate-100">
+                  Liam Lawson
+                </h3>
+                <p class="text-gray-600 dark:text-slate-400">
                   Red Bull reserve driver with F1 experience, known for his
                   adaptability and race-winning potential.
                 </p>
