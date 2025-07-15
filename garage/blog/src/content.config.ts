@@ -70,7 +70,7 @@ const races = defineCollection({
     z.object({
       trackImage: image(),
       trackImageLarge: image().optional(),
-      trackImageAlt: z.string().optional(),
+      trackImageAlt: z.string(),
       trackName: z.string(),
       location: z.string(),
       date: z.coerce.date(),
