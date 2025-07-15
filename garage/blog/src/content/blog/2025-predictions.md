@@ -2,7 +2,8 @@
 title: "2025 Season Preview: Drivers, Teams, and Predictions"
 description: "Analyze the upcoming Formula 1 season, including driver changes, team updates, and championship predictions."
 pubDate: "Jul 01 2025"
-heroImage: "/src/assets/circuits/07emiliaromagna/er01.jpg"
+heroImage: "/src/assets/circuits/05saudiarabia/sa07.jpg"
+heroImageAlt: "Evolutions of Cars hero image"
 ---
 
 ## 2025 Season Preview: Drivers, Teams, and Predictions
