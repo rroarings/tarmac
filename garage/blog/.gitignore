@@ -23,9 +23,11 @@ pnpm-debug.log*
 # jetbrains setting folder
 .idea/
 
-# circuit images
-/src/assets/
+# Trackside assets
+/src/assets/*
+!/src/assets/placeholder/
 
+# npm lock files
 package-lock.json
 /blog/package-lock.json
 /package-lock.json
