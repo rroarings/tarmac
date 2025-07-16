@@ -38,9 +38,11 @@ interface Props {
 const { driver, year = "2025", index, eagerCount = 0 } = Astro.props;
 const teamBg = teamBgMap[driver.data.team] || null;
 const imageLoading = index < eagerCount ? "eager" : "lazy";
+// Extract just the slug for the driver
+const driverSlug = driver.id.split("/").pop();
 ---
 
-<a href={`/seasons/${year}/drivers/${driver.id}`} class="block h-full">
+<a href={`/seasons/${year}/drivers/${driverSlug}`} class="block h-full">
   <article
     class="group rounded-xl overflow-hidden transition-all duration-300 h-full border border-slate-800 relative"
     style={teamBg
