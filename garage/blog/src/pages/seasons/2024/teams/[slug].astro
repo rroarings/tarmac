@@ -1,0 +1,159 @@
+---
+import BaseHead from "../../../../components/BaseHead.astro"
+import Header from "../../../../components/Header.astro"
+import Footer from "../../../../components/Footer.astro"
+import Breadcrumb from "../../../../components/Breadcrumb.astro"
+import { SITE_TITLE } from "../../../../consts"
+import { getCollection } from "astro:content"
+
+export async function getStaticPaths() {
+	const teams = await getCollection("teams", ({ data }) => {
+		return data.season === "2024"
+	})
+
+	// Use only the slug (last segment) for the route param
+	return teams.map((team) => ({
+		params: { slug: team.id.split("/").pop() },
+		props: { team },
+	}))
+}
+
+const { team } = Astro.props
+// Import the Content component separately
+import { render } from "astro:content"
+import { Image } from "astro:assets"
+const { Content, headings } = await render(team)
+---
+
+<!doctype html>
+<html
+	lang="en"
+	class="bg-gray-100 dark:bg-slate-950">
+	<head>
+		<BaseHead
+			title={`${team.data.name} | ${SITE_TITLE}`}
+			description={`2024 F1 team profile for ${team.data.name} with their ${team.data.carModel} car`}
+		/>
+	</head>
+	<body>
+		<Header />
+		<main>
+			<Breadcrumb
+				items={[
+					{ text: "Formula 1", href: "/" },
+					{ text: "2024 Season", href: "/seasons/2024/" },
+					{ text: "Constructors", href: "/seasons/2024/teams" },
+					{ text: `${team.data.name}` },
+				]}
+			/>
+			<!-- Team Profile Header -->
+			<section class="py-16 bg-gray-100 dark:bg-slate-950">
+				<div class="container mx-auto px-4">
+					<div class="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
+						<div>
+							<Image
+								src={team.data.carImage || "/blog-placeholder-1.jpg"}
+								alt={`${team.data.name} ${team.data.carModel}`}
+								class="w-full rounded-lg shadow-lg"
+							/>
+						</div>
+						<div>
+							<h1 class="text-4xl font-bold mb-4 dark:text-slate-100">{team.data.name}</h1>
+							<div class="space-y-3 text-lg">
+								<div class="flex items-center">
+									<span class="w-40 dark:text-slate-400">Car Model:</span>
+									<span class="dark:text-slate-300">{team.data.carModel}</span>
+								</div>
+								<div class="flex items-center">
+									<span class="w-40 dark:text-slate-400">Team Principal:</span>
+									<span class="text-gray-700 dark:text-slate-300">{team.data.principal}</span>
+								</div>
+								<div class="flex items-center">
+									<span class="w-40 dark:text-slate-400">Engine:</span>
+									<span class="text-gray-700 dark:text-slate-300">{team.data.engine}</span>
+								</div>
+								<div class="flex items-center">
+									<span class="w-40 dark:text-slate-400">Drivers:</span>
+									<span class="text-gray-700 dark:text-slate-300"
+										>{team.data.drivers.join(", ")}</span
+									>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<!-- Driver Statistics -->
+			<section class="py-12 bg-gray-100 dark:bg-slate-950">
+				<div class="container mx-auto px-4">
+					<h2 class="text-3xl font-bold mb-10 text-center relative">
+						<span class="inline-block pb-2 dark:text-slate-200">Career Statistics</span>
+					</h2>
+
+					<div class="flex flex-wrap justify-center">
+						<div class="w-full max-w-4xl mx-auto">
+							<div class="flex justify-center gap-6 flex-wrap">
+								<!-- Championships -->
+								<div class="w-48 px-2 mb-6">
+									<div
+										class="darK:bg-slate-950 border border-gray-300 dark:border-slate-700 rounded-lg transition duration-300 hover:border-gray-400">
+										<div class="p-6 text-center">
+											<div class="text-4xl font-bold mb-1 dark:text-slate-200">
+												{team.data.championships}
+											</div>
+											<div
+												class="text-sm text-gray-600 dark:text-slate-400 uppercase tracking-wide">
+												Championships
+											</div>
+										</div>
+									</div>
+								</div>
+
+								<!-- Race Wins -->
+								<div class="w-48 px-2 mb-6">
+									<div
+										class="dark:bg-slate-950 border border-gray-300 dark:border-slate-700 rounded-lg transition duration-300 hover:border-gray-400">
+										<div class="p-6 text-center">
+											<div class="text-4xl font-bold mb-1 dark:text-slate-200">
+												{team.data.constructorPoints}
+											</div>
+											<div
+												class="text-sm text-gray-600 dark:text-slate-400 uppercase tracking-wide">
+												Race Wins
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<!-- Team Information -->
+			<section class="py-12 bg-gray-100 dark:bg-slate-950">
+				<div class="prose prose-lg dark:prose-invert max-w-none">
+					<Content />
+				</div>
+			</section>
+
+			<!-- Back Links -->
+			<section class="py-8 text-center">
+				<div class="space-x-4">
+					<a
+						href="/seasons/2024/teams"
+						class="inline-block border-2 border-transparent transition-colors duration-300 bg-rose-600 dark:border-rose-600 dark:hover:bg-rose-800 hover:bg-rose-700 dark:hover:border-rose-600 text-white py-2 px-4 rounded">
+						← Back to 2024 Teams
+					</a>
+					<a
+						href="/seasons/2024"
+						class="inline-block border-2 border-transparent transition-colors duration-300 bg-slate-600 dark:border-slate-600 dark:hover:bg-slate-800 hover:bg-slate-700 text-white py-2 px-4 rounded">
+						← Back to 2024 Season
+					</a>
+				</div>
+			</section>
+		</main>
+		<Footer />
+	</body>
+</html>
